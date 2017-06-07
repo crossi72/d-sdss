@@ -1,0 +1,14 @@
+C:\Lavoro\mathematica\SDSS\soluzione\SDSS\bin\Debug\mapControl.dll
+C:\Lavoro\mathematica\SDSS\soluzione\SDSS\bin\Debug\mapControl.pdb
+C:\Lavoro\mathematica\SDSS\soluzione\SDSS\bin\Debug\mapControl.xml
+C:\Lavoro\mathematica\SDSS\soluzione\SDSS\bin\Debug\Microsoft.Maps.MapControl.WPF.dll
+C:\Lavoro\mathematica\SDSS\soluzione\SDSS\bin\Debug\Microsoft.Maps.MapControl.WPF.xml
+C:\Lavoro\mathematica\SDSS\soluzione\SDSS\obj\Debug\mapControl.baml
+C:\Lavoro\mathematica\SDSS\soluzione\SDSS\obj\Debug\mapControl.g.vb
+C:\Lavoro\mathematica\SDSS\soluzione\SDSS\obj\Debug\mapControl_MarkupCompile.cache
+C:\Lavoro\mathematica\SDSS\soluzione\SDSS\obj\Debug\mapControl.g.resources
+C:\Lavoro\mathematica\SDSS\soluzione\SDSS\obj\Debug\mapControl.vbproj.GenerateResource.Cache
+C:\Lavoro\mathematica\SDSS\soluzione\SDSS\obj\Debug\mapControl.dll
+C:\Lavoro\mathematica\SDSS\soluzione\SDSS\obj\Debug\mapControl.xml
+C:\Lavoro\mathematica\SDSS\soluzione\SDSS\obj\Debug\mapControl.pdb
+C:\Lavoro\mathematica\SDSS\soluzione\SDSS\obj\Debug\SDSS.Resources.resources
