@@ -41,44 +41,44 @@ Public Class frmNegotiation
     Private gwsp, agruf, agrufro, induf, indufro, lanuf, lanufro, tpbx, tpsx, tpmz, envw, ecow, socw, totpla, sbqi, ssqi, smqi As Double
 
 	'output
-	Private outind(12, 1), outagr(12, 1), outlan(12, 1), outeco(12, 1), outsoc(12, 1), outenv(12, 1) As Double
+	Private outind(12), outagr(12, 1), outlan(12, 1), outeco(12, 1), outsoc(12, 1), outenv(12, 1) As Double
 
 #End Region
 
 #Region " New "
 
 	Public Sub New()
-        ' Chiamata richiesta da Progettazione Windows Form.
-        InitializeComponent()
+		' Chiamata richiesta da Progettazione Windows Form.
+		InitializeComponent()
 
-        ' Aggiungere le eventuali istruzioni di inizializzazione dopo la chiamata a InitializeComponent().
-        Me.SqlConnection.ConnectionString = My.Settings.SDSSConnectionString
+		' Aggiungere le eventuali istruzioni di inizializzazione dopo la chiamata a InitializeComponent().
+		Me.SqlConnection.ConnectionString = My.Settings.SDSSConnectionString
 
-        Me.daLocations.Fill(Me.DSLocations)
+		Me.daLocations.Fill(Me.DSLocations)
 
-        Me.myMap = DirectCast(Me.ElementHost1.Child, mapControl.mapControl)
+		Me.myMap = DirectCast(Me.ElementHost1.Child, mapControl.mapControl)
 
-        If Me.Init() Then
-            'init groupBoxes array
-            Me.groupBoxes(0) = Me.grbWaterCosts
-            Me.groupBoxes(1) = Me.grbWaterQuality
-            Me.groupBoxes(2) = Me.grbPopulation
-            Me.groupBoxes(3) = Me.grbIndustrialDistricts
-            Me.groupBoxes(4) = Me.grbMisc
-            Me.groupBoxes(5) = Me.grbOuput
+		If Me.Init() Then
+			'init groupBoxes array
+			Me.groupBoxes(0) = Me.grbWaterCosts
+			Me.groupBoxes(1) = Me.grbWaterQuality
+			Me.groupBoxes(2) = Me.grbPopulation
+			Me.groupBoxes(3) = Me.grbIndustrialDistricts
+			Me.groupBoxes(4) = Me.grbMisc
+			Me.groupBoxes(5) = Me.grbOuput
 
-            Me.groupBoxesID = 0
-            Me.ShowBox()
-        Else
-            End
-        End If
-    End Sub
+			Me.groupBoxesID = 0
+			Me.ShowBox()
+		Else
+			End
+		End If
+	End Sub
 
 #End Region
 
 #Region " Private methods "
 
-    Private Sub RefreshMap(sender As Object, e As EventArgs)
+	Private Sub RefreshMap(sender As Object, e As EventArgs)
         If Me.IsHandleCreated Then
             Dim tmpNumericUpDown As DSSNumericUpDown
             Dim tmpGroupBox As DSSGroupBox
@@ -327,7 +327,7 @@ Public Class frmNegotiation
 
 		'y 13 output for industries
 		For i = 0 To 12
-			Me.outind(i, 0) = Me.myMathWrapper.WaitAndEvaluateAsDouble("y" & (i + 1).ToString & "2/.marg[[1," & cursor & "]]")
+			Me.outind(i) = Me.myMathWrapper.WaitAndEvaluateAsDouble("y" & (i + 1).ToString & "2/.marg[[1," & cursor & "]]")
 			cursor += 1
 		Next
 
@@ -699,14 +699,27 @@ Public Class frmNegotiation
                 Me.nudsbqi.Value = CType(Me.sbqi, Decimal)
                 Me.nudssqi.Value = CType(Me.ssqi, Decimal)
                 Me.nudsmqi.Value = CType(Me.smqi, Decimal)
-            Case WriteToGUIType.output
-                For i = 0 To 12
-                    For j = 0 To 1
+			Case WriteToGUIType.output
+				'Agriculture
+				For i = 0 To 12
+					For j = 0 To 1
 						Me.lblCollection("lblAgr" & i + 1 & "_" & j + 1).Text = Me.outagr(i, j).ToString
 					Next
-                Next
-        End Select
-    End Sub
+				Next
+
+				'Industry
+				For i = 0 To 12
+					Me.lblCollection("lblInd" & i + 1 & "_2").Text = Me.outind(i).ToString
+				Next
+
+				'Landscape
+				For i = 0 To 12
+					For j = 0 To 1
+						Me.lblCollection("lblLan" & i + 1 & "_" & j + 1).Text = Me.outlan(i, j).ToString
+					Next
+				Next
+		End Select
+	End Sub
 
     ''' <summary>
     ''' read values from user interface to global variables
