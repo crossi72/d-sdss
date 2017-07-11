@@ -701,8 +701,8 @@ Public Class frmNegotiation
             Case WriteToGUIType.output
                 For i = 0 To 12
                     For j = 0 To 1
-                        Me.lblCollection("lblAgr" & i + 1 & j + 1).Text = Me.outagr(i, j).ToString
-                    Next
+						Me.lblCollection("lblAgr" & i + 1 & "_" & j + 1).Text = Me.outagr(i, j).ToString
+					Next
                 Next
         End Select
     End Sub
