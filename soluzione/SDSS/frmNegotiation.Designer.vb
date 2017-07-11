@@ -43,47 +43,77 @@ Partial Class frmNegotiation
 		Me.grbOuput = New SDSS.DSSGroupBox()
 		Me.TabControl1 = New System.Windows.Forms.TabControl()
 		Me.tpaUses = New System.Windows.Forms.TabPage()
-		Me.lblLan1_13 = New SDSS.DSSLabel()
-		Me.lblInd1_13 = New SDSS.DSSLabel()
-		Me.lblAgr1_13 = New SDSS.DSSLabel()
-		Me.lblLan1_10 = New SDSS.DSSLabel()
-		Me.lblInd1_10 = New SDSS.DSSLabel()
-		Me.lblAgr1_10 = New SDSS.DSSLabel()
-		Me.lblLan1_7 = New SDSS.DSSLabel()
-		Me.lblInd1_7 = New SDSS.DSSLabel()
-		Me.lblAgr1_7 = New SDSS.DSSLabel()
-		Me.lblLan1_3 = New SDSS.DSSLabel()
-		Me.lblInd1_3 = New SDSS.DSSLabel()
-		Me.lblAgr1_3 = New SDSS.DSSLabel()
-		Me.lblLan1_12 = New SDSS.DSSLabel()
-		Me.lblInd1_12 = New SDSS.DSSLabel()
-		Me.lblAgr1_12 = New SDSS.DSSLabel()
-		Me.lblLan1_9 = New SDSS.DSSLabel()
-		Me.lblInd1_9 = New SDSS.DSSLabel()
-		Me.lblAgr1_9 = New SDSS.DSSLabel()
-		Me.lblLan1_6 = New SDSS.DSSLabel()
-		Me.lblInd1_6 = New SDSS.DSSLabel()
-		Me.lblAgr1_6 = New SDSS.DSSLabel()
+		Me.Label94 = New System.Windows.Forms.Label()
+		Me.Label93 = New System.Windows.Forms.Label()
+		Me.lblLan13_2 = New SDSS.DSSLabel()
+		Me.lblInd13_2 = New SDSS.DSSLabel()
+		Me.lblAgr13_2 = New SDSS.DSSLabel()
+		Me.lblLan10_2 = New SDSS.DSSLabel()
+		Me.lblInd10_2 = New SDSS.DSSLabel()
+		Me.lblAgr10_2 = New SDSS.DSSLabel()
+		Me.lblLan7_2 = New SDSS.DSSLabel()
+		Me.lblInd7_2 = New SDSS.DSSLabel()
+		Me.lblAgr7_2 = New SDSS.DSSLabel()
+		Me.lblLan3_2 = New SDSS.DSSLabel()
+		Me.lblInd3_2 = New SDSS.DSSLabel()
+		Me.lblAgr3_2 = New SDSS.DSSLabel()
+		Me.lblLan12_2 = New SDSS.DSSLabel()
+		Me.lblInd12_2 = New SDSS.DSSLabel()
+		Me.lblAgr12_2 = New SDSS.DSSLabel()
+		Me.lblLan9_2 = New SDSS.DSSLabel()
+		Me.lblInd9_2 = New SDSS.DSSLabel()
+		Me.lblAgr9_2 = New SDSS.DSSLabel()
+		Me.lblLan6_2 = New SDSS.DSSLabel()
+		Me.lblInd6_2 = New SDSS.DSSLabel()
+		Me.lblAgr6_2 = New SDSS.DSSLabel()
+		Me.lblLan2_2 = New SDSS.DSSLabel()
+		Me.lblInd2_2 = New SDSS.DSSLabel()
+		Me.lblAgr2_2 = New SDSS.DSSLabel()
+		Me.lblLan11_2 = New SDSS.DSSLabel()
+		Me.lblInd11_2 = New SDSS.DSSLabel()
+		Me.lblAgr11_2 = New SDSS.DSSLabel()
+		Me.lblLan8_2 = New SDSS.DSSLabel()
+		Me.lblInd8_2 = New SDSS.DSSLabel()
+		Me.lblAgr8_2 = New SDSS.DSSLabel()
+		Me.lblLan4_2 = New SDSS.DSSLabel()
+		Me.lblInd4_2 = New SDSS.DSSLabel()
+		Me.lblAgr4_2 = New SDSS.DSSLabel()
+		Me.lblLan5_2 = New SDSS.DSSLabel()
+		Me.lblInd5_2 = New SDSS.DSSLabel()
+		Me.lblAgr5_2 = New SDSS.DSSLabel()
 		Me.lblLan1_2 = New SDSS.DSSLabel()
 		Me.lblInd1_2 = New SDSS.DSSLabel()
 		Me.lblAgr1_2 = New SDSS.DSSLabel()
-		Me.lblLan1_11 = New SDSS.DSSLabel()
-		Me.lblInd1_11 = New SDSS.DSSLabel()
-		Me.lblAgr1_11 = New SDSS.DSSLabel()
-		Me.lblLan1_8 = New SDSS.DSSLabel()
-		Me.lblInd1_8 = New SDSS.DSSLabel()
-		Me.lblAgr1_8 = New SDSS.DSSLabel()
-		Me.lblLan1_4 = New SDSS.DSSLabel()
-		Me.lblInd1_4 = New SDSS.DSSLabel()
-		Me.lblAgr1_4 = New SDSS.DSSLabel()
-		Me.lblLan1_5 = New SDSS.DSSLabel()
-		Me.lblInd1_5 = New SDSS.DSSLabel()
-		Me.lblAgr1_5 = New SDSS.DSSLabel()
+		Me.Label87 = New System.Windows.Forms.Label()
+		Me.Label89 = New System.Windows.Forms.Label()
+		Me.Label90 = New System.Windows.Forms.Label()
+		Me.lblLan13_1 = New SDSS.DSSLabel()
+		Me.lblAgr13_1 = New SDSS.DSSLabel()
+		Me.lblLan10_1 = New SDSS.DSSLabel()
+		Me.lblAgr10_1 = New SDSS.DSSLabel()
+		Me.lblLan7_1 = New SDSS.DSSLabel()
+		Me.lblAgr7_1 = New SDSS.DSSLabel()
+		Me.lblLan3_1 = New SDSS.DSSLabel()
+		Me.lblAgr3_1 = New SDSS.DSSLabel()
+		Me.lblLan12_1 = New SDSS.DSSLabel()
+		Me.lblAgr12_1 = New SDSS.DSSLabel()
+		Me.lblLan9_1 = New SDSS.DSSLabel()
+		Me.lblAgr9_1 = New SDSS.DSSLabel()
+		Me.lblLan6_1 = New SDSS.DSSLabel()
+		Me.lblAgr6_1 = New SDSS.DSSLabel()
+		Me.lblLan2_1 = New SDSS.DSSLabel()
+		Me.lblAgr2_1 = New SDSS.DSSLabel()
+		Me.lblLan11_1 = New SDSS.DSSLabel()
+		Me.lblAgr11_1 = New SDSS.DSSLabel()
+		Me.lblLan8_1 = New SDSS.DSSLabel()
+		Me.lblAgr8_1 = New SDSS.DSSLabel()
+		Me.lblLan4_1 = New SDSS.DSSLabel()
+		Me.lblAgr4_1 = New SDSS.DSSLabel()
+		Me.lblLan5_1 = New SDSS.DSSLabel()
+		Me.lblAgr5_1 = New SDSS.DSSLabel()
 		Me.lblLan1_1 = New SDSS.DSSLabel()
-		Me.lblInd1_1 = New SDSS.DSSLabel()
 		Me.lblAgr1_1 = New SDSS.DSSLabel()
 		Me.Label135 = New System.Windows.Forms.Label()
-		Me.Label134 = New System.Windows.Forms.Label()
 		Me.Label133 = New System.Windows.Forms.Label()
 		Me.Label31 = New System.Windows.Forms.Label()
 		Me.Label33 = New System.Windows.Forms.Label()
@@ -99,6 +129,50 @@ Partial Class frmNegotiation
 		Me.Label84 = New System.Windows.Forms.Label()
 		Me.Label85 = New System.Windows.Forms.Label()
 		Me.tpaImpacts = New System.Windows.Forms.TabPage()
+		Me.Label98 = New System.Windows.Forms.Label()
+		Me.Label99 = New System.Windows.Forms.Label()
+		Me.DssLabel40 = New SDSS.DSSLabel()
+		Me.DssLabel41 = New SDSS.DSSLabel()
+		Me.DssLabel42 = New SDSS.DSSLabel()
+		Me.DssLabel43 = New SDSS.DSSLabel()
+		Me.DssLabel44 = New SDSS.DSSLabel()
+		Me.DssLabel45 = New SDSS.DSSLabel()
+		Me.DssLabel46 = New SDSS.DSSLabel()
+		Me.DssLabel47 = New SDSS.DSSLabel()
+		Me.DssLabel48 = New SDSS.DSSLabel()
+		Me.DssLabel49 = New SDSS.DSSLabel()
+		Me.DssLabel50 = New SDSS.DSSLabel()
+		Me.DssLabel51 = New SDSS.DSSLabel()
+		Me.DssLabel52 = New SDSS.DSSLabel()
+		Me.DssLabel53 = New SDSS.DSSLabel()
+		Me.DssLabel54 = New SDSS.DSSLabel()
+		Me.DssLabel55 = New SDSS.DSSLabel()
+		Me.DssLabel56 = New SDSS.DSSLabel()
+		Me.DssLabel57 = New SDSS.DSSLabel()
+		Me.DssLabel58 = New SDSS.DSSLabel()
+		Me.DssLabel59 = New SDSS.DSSLabel()
+		Me.DssLabel60 = New SDSS.DSSLabel()
+		Me.DssLabel61 = New SDSS.DSSLabel()
+		Me.DssLabel62 = New SDSS.DSSLabel()
+		Me.DssLabel63 = New SDSS.DSSLabel()
+		Me.DssLabel64 = New SDSS.DSSLabel()
+		Me.DssLabel65 = New SDSS.DSSLabel()
+		Me.DssLabel66 = New SDSS.DSSLabel()
+		Me.DssLabel67 = New SDSS.DSSLabel()
+		Me.DssLabel68 = New SDSS.DSSLabel()
+		Me.DssLabel69 = New SDSS.DSSLabel()
+		Me.DssLabel70 = New SDSS.DSSLabel()
+		Me.DssLabel71 = New SDSS.DSSLabel()
+		Me.DssLabel72 = New SDSS.DSSLabel()
+		Me.DssLabel73 = New SDSS.DSSLabel()
+		Me.DssLabel74 = New SDSS.DSSLabel()
+		Me.DssLabel75 = New SDSS.DSSLabel()
+		Me.DssLabel76 = New SDSS.DSSLabel()
+		Me.DssLabel77 = New SDSS.DSSLabel()
+		Me.DssLabel78 = New SDSS.DSSLabel()
+		Me.Label95 = New System.Windows.Forms.Label()
+		Me.Label96 = New System.Windows.Forms.Label()
+		Me.Label97 = New System.Windows.Forms.Label()
 		Me.lblEnv13_1 = New SDSS.DSSLabel()
 		Me.lblSoc13_1 = New SDSS.DSSLabel()
 		Me.lblEco13_1 = New SDSS.DSSLabel()
@@ -394,94 +468,6 @@ Partial Class frmNegotiation
 		Me.Label47 = New System.Windows.Forms.Label()
 		Me.ElementHost1 = New System.Windows.Forms.Integration.ElementHost()
 		Me.mapControl = New mapControl.mapControl()
-		Me.DssLabel1 = New SDSS.DSSLabel()
-		Me.DssLabel2 = New SDSS.DSSLabel()
-		Me.DssLabel3 = New SDSS.DSSLabel()
-		Me.DssLabel4 = New SDSS.DSSLabel()
-		Me.DssLabel5 = New SDSS.DSSLabel()
-		Me.DssLabel6 = New SDSS.DSSLabel()
-		Me.DssLabel7 = New SDSS.DSSLabel()
-		Me.DssLabel8 = New SDSS.DSSLabel()
-		Me.DssLabel9 = New SDSS.DSSLabel()
-		Me.DssLabel10 = New SDSS.DSSLabel()
-		Me.DssLabel11 = New SDSS.DSSLabel()
-		Me.DssLabel12 = New SDSS.DSSLabel()
-		Me.DssLabel13 = New SDSS.DSSLabel()
-		Me.DssLabel14 = New SDSS.DSSLabel()
-		Me.DssLabel15 = New SDSS.DSSLabel()
-		Me.DssLabel16 = New SDSS.DSSLabel()
-		Me.DssLabel17 = New SDSS.DSSLabel()
-		Me.DssLabel18 = New SDSS.DSSLabel()
-		Me.DssLabel19 = New SDSS.DSSLabel()
-		Me.DssLabel20 = New SDSS.DSSLabel()
-		Me.DssLabel21 = New SDSS.DSSLabel()
-		Me.DssLabel22 = New SDSS.DSSLabel()
-		Me.DssLabel23 = New SDSS.DSSLabel()
-		Me.DssLabel24 = New SDSS.DSSLabel()
-		Me.DssLabel25 = New SDSS.DSSLabel()
-		Me.DssLabel26 = New SDSS.DSSLabel()
-		Me.DssLabel27 = New SDSS.DSSLabel()
-		Me.DssLabel28 = New SDSS.DSSLabel()
-		Me.DssLabel29 = New SDSS.DSSLabel()
-		Me.DssLabel30 = New SDSS.DSSLabel()
-		Me.DssLabel31 = New SDSS.DSSLabel()
-		Me.DssLabel32 = New SDSS.DSSLabel()
-		Me.DssLabel33 = New SDSS.DSSLabel()
-		Me.DssLabel34 = New SDSS.DSSLabel()
-		Me.DssLabel35 = New SDSS.DSSLabel()
-		Me.DssLabel36 = New SDSS.DSSLabel()
-		Me.DssLabel37 = New SDSS.DSSLabel()
-		Me.DssLabel38 = New SDSS.DSSLabel()
-		Me.DssLabel39 = New SDSS.DSSLabel()
-		Me.Label87 = New System.Windows.Forms.Label()
-		Me.Label89 = New System.Windows.Forms.Label()
-		Me.Label90 = New System.Windows.Forms.Label()
-		Me.Label93 = New System.Windows.Forms.Label()
-		Me.Label94 = New System.Windows.Forms.Label()
-		Me.DssLabel40 = New SDSS.DSSLabel()
-		Me.DssLabel41 = New SDSS.DSSLabel()
-		Me.DssLabel42 = New SDSS.DSSLabel()
-		Me.DssLabel43 = New SDSS.DSSLabel()
-		Me.DssLabel44 = New SDSS.DSSLabel()
-		Me.DssLabel45 = New SDSS.DSSLabel()
-		Me.DssLabel46 = New SDSS.DSSLabel()
-		Me.DssLabel47 = New SDSS.DSSLabel()
-		Me.DssLabel48 = New SDSS.DSSLabel()
-		Me.DssLabel49 = New SDSS.DSSLabel()
-		Me.DssLabel50 = New SDSS.DSSLabel()
-		Me.DssLabel51 = New SDSS.DSSLabel()
-		Me.DssLabel52 = New SDSS.DSSLabel()
-		Me.DssLabel53 = New SDSS.DSSLabel()
-		Me.DssLabel54 = New SDSS.DSSLabel()
-		Me.DssLabel55 = New SDSS.DSSLabel()
-		Me.DssLabel56 = New SDSS.DSSLabel()
-		Me.DssLabel57 = New SDSS.DSSLabel()
-		Me.DssLabel58 = New SDSS.DSSLabel()
-		Me.DssLabel59 = New SDSS.DSSLabel()
-		Me.DssLabel60 = New SDSS.DSSLabel()
-		Me.DssLabel61 = New SDSS.DSSLabel()
-		Me.DssLabel62 = New SDSS.DSSLabel()
-		Me.DssLabel63 = New SDSS.DSSLabel()
-		Me.DssLabel64 = New SDSS.DSSLabel()
-		Me.DssLabel65 = New SDSS.DSSLabel()
-		Me.DssLabel66 = New SDSS.DSSLabel()
-		Me.DssLabel67 = New SDSS.DSSLabel()
-		Me.DssLabel68 = New SDSS.DSSLabel()
-		Me.DssLabel69 = New SDSS.DSSLabel()
-		Me.DssLabel70 = New SDSS.DSSLabel()
-		Me.DssLabel71 = New SDSS.DSSLabel()
-		Me.DssLabel72 = New SDSS.DSSLabel()
-		Me.DssLabel73 = New SDSS.DSSLabel()
-		Me.DssLabel74 = New SDSS.DSSLabel()
-		Me.DssLabel75 = New SDSS.DSSLabel()
-		Me.DssLabel76 = New SDSS.DSSLabel()
-		Me.DssLabel77 = New SDSS.DSSLabel()
-		Me.DssLabel78 = New SDSS.DSSLabel()
-		Me.Label95 = New System.Windows.Forms.Label()
-		Me.Label96 = New System.Windows.Forms.Label()
-		Me.Label97 = New System.Windows.Forms.Label()
-		Me.Label98 = New System.Windows.Forms.Label()
-		Me.Label99 = New System.Windows.Forms.Label()
 		CType(Me.dsParameters, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.DSData, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.DSLocations, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -811,89 +797,75 @@ Partial Class frmNegotiation
 		'
 		Me.tpaUses.Controls.Add(Me.Label94)
 		Me.tpaUses.Controls.Add(Me.Label93)
-		Me.tpaUses.Controls.Add(Me.DssLabel1)
-		Me.tpaUses.Controls.Add(Me.DssLabel2)
-		Me.tpaUses.Controls.Add(Me.DssLabel3)
-		Me.tpaUses.Controls.Add(Me.DssLabel4)
-		Me.tpaUses.Controls.Add(Me.DssLabel5)
-		Me.tpaUses.Controls.Add(Me.DssLabel6)
-		Me.tpaUses.Controls.Add(Me.DssLabel7)
-		Me.tpaUses.Controls.Add(Me.DssLabel8)
-		Me.tpaUses.Controls.Add(Me.DssLabel9)
-		Me.tpaUses.Controls.Add(Me.DssLabel10)
-		Me.tpaUses.Controls.Add(Me.DssLabel11)
-		Me.tpaUses.Controls.Add(Me.DssLabel12)
-		Me.tpaUses.Controls.Add(Me.DssLabel13)
-		Me.tpaUses.Controls.Add(Me.DssLabel14)
-		Me.tpaUses.Controls.Add(Me.DssLabel15)
-		Me.tpaUses.Controls.Add(Me.DssLabel16)
-		Me.tpaUses.Controls.Add(Me.DssLabel17)
-		Me.tpaUses.Controls.Add(Me.DssLabel18)
-		Me.tpaUses.Controls.Add(Me.DssLabel19)
-		Me.tpaUses.Controls.Add(Me.DssLabel20)
-		Me.tpaUses.Controls.Add(Me.DssLabel21)
-		Me.tpaUses.Controls.Add(Me.DssLabel22)
-		Me.tpaUses.Controls.Add(Me.DssLabel23)
-		Me.tpaUses.Controls.Add(Me.DssLabel24)
-		Me.tpaUses.Controls.Add(Me.DssLabel25)
-		Me.tpaUses.Controls.Add(Me.DssLabel26)
-		Me.tpaUses.Controls.Add(Me.DssLabel27)
-		Me.tpaUses.Controls.Add(Me.DssLabel28)
-		Me.tpaUses.Controls.Add(Me.DssLabel29)
-		Me.tpaUses.Controls.Add(Me.DssLabel30)
-		Me.tpaUses.Controls.Add(Me.DssLabel31)
-		Me.tpaUses.Controls.Add(Me.DssLabel32)
-		Me.tpaUses.Controls.Add(Me.DssLabel33)
-		Me.tpaUses.Controls.Add(Me.DssLabel34)
-		Me.tpaUses.Controls.Add(Me.DssLabel35)
-		Me.tpaUses.Controls.Add(Me.DssLabel36)
-		Me.tpaUses.Controls.Add(Me.DssLabel37)
-		Me.tpaUses.Controls.Add(Me.DssLabel38)
-		Me.tpaUses.Controls.Add(Me.DssLabel39)
-		Me.tpaUses.Controls.Add(Me.Label87)
-		Me.tpaUses.Controls.Add(Me.Label89)
-		Me.tpaUses.Controls.Add(Me.Label90)
-		Me.tpaUses.Controls.Add(Me.lblLan1_13)
-		Me.tpaUses.Controls.Add(Me.lblInd1_13)
-		Me.tpaUses.Controls.Add(Me.lblAgr1_13)
-		Me.tpaUses.Controls.Add(Me.lblLan1_10)
-		Me.tpaUses.Controls.Add(Me.lblInd1_10)
-		Me.tpaUses.Controls.Add(Me.lblAgr1_10)
-		Me.tpaUses.Controls.Add(Me.lblLan1_7)
-		Me.tpaUses.Controls.Add(Me.lblInd1_7)
-		Me.tpaUses.Controls.Add(Me.lblAgr1_7)
-		Me.tpaUses.Controls.Add(Me.lblLan1_3)
-		Me.tpaUses.Controls.Add(Me.lblInd1_3)
-		Me.tpaUses.Controls.Add(Me.lblAgr1_3)
-		Me.tpaUses.Controls.Add(Me.lblLan1_12)
-		Me.tpaUses.Controls.Add(Me.lblInd1_12)
-		Me.tpaUses.Controls.Add(Me.lblAgr1_12)
-		Me.tpaUses.Controls.Add(Me.lblLan1_9)
-		Me.tpaUses.Controls.Add(Me.lblInd1_9)
-		Me.tpaUses.Controls.Add(Me.lblAgr1_9)
-		Me.tpaUses.Controls.Add(Me.lblLan1_6)
-		Me.tpaUses.Controls.Add(Me.lblInd1_6)
-		Me.tpaUses.Controls.Add(Me.lblAgr1_6)
+		Me.tpaUses.Controls.Add(Me.lblLan13_2)
+		Me.tpaUses.Controls.Add(Me.lblInd13_2)
+		Me.tpaUses.Controls.Add(Me.lblAgr13_2)
+		Me.tpaUses.Controls.Add(Me.lblLan10_2)
+		Me.tpaUses.Controls.Add(Me.lblInd10_2)
+		Me.tpaUses.Controls.Add(Me.lblAgr10_2)
+		Me.tpaUses.Controls.Add(Me.lblLan7_2)
+		Me.tpaUses.Controls.Add(Me.lblInd7_2)
+		Me.tpaUses.Controls.Add(Me.lblAgr7_2)
+		Me.tpaUses.Controls.Add(Me.lblLan3_2)
+		Me.tpaUses.Controls.Add(Me.lblInd3_2)
+		Me.tpaUses.Controls.Add(Me.lblAgr3_2)
+		Me.tpaUses.Controls.Add(Me.lblLan12_2)
+		Me.tpaUses.Controls.Add(Me.lblInd12_2)
+		Me.tpaUses.Controls.Add(Me.lblAgr12_2)
+		Me.tpaUses.Controls.Add(Me.lblLan9_2)
+		Me.tpaUses.Controls.Add(Me.lblInd9_2)
+		Me.tpaUses.Controls.Add(Me.lblAgr9_2)
+		Me.tpaUses.Controls.Add(Me.lblLan6_2)
+		Me.tpaUses.Controls.Add(Me.lblInd6_2)
+		Me.tpaUses.Controls.Add(Me.lblAgr6_2)
+		Me.tpaUses.Controls.Add(Me.lblLan2_2)
+		Me.tpaUses.Controls.Add(Me.lblInd2_2)
+		Me.tpaUses.Controls.Add(Me.lblAgr2_2)
+		Me.tpaUses.Controls.Add(Me.lblLan11_2)
+		Me.tpaUses.Controls.Add(Me.lblInd11_2)
+		Me.tpaUses.Controls.Add(Me.lblAgr11_2)
+		Me.tpaUses.Controls.Add(Me.lblLan8_2)
+		Me.tpaUses.Controls.Add(Me.lblInd8_2)
+		Me.tpaUses.Controls.Add(Me.lblAgr8_2)
+		Me.tpaUses.Controls.Add(Me.lblLan4_2)
+		Me.tpaUses.Controls.Add(Me.lblInd4_2)
+		Me.tpaUses.Controls.Add(Me.lblAgr4_2)
+		Me.tpaUses.Controls.Add(Me.lblLan5_2)
+		Me.tpaUses.Controls.Add(Me.lblInd5_2)
+		Me.tpaUses.Controls.Add(Me.lblAgr5_2)
 		Me.tpaUses.Controls.Add(Me.lblLan1_2)
 		Me.tpaUses.Controls.Add(Me.lblInd1_2)
 		Me.tpaUses.Controls.Add(Me.lblAgr1_2)
-		Me.tpaUses.Controls.Add(Me.lblLan1_11)
-		Me.tpaUses.Controls.Add(Me.lblInd1_11)
-		Me.tpaUses.Controls.Add(Me.lblAgr1_11)
-		Me.tpaUses.Controls.Add(Me.lblLan1_8)
-		Me.tpaUses.Controls.Add(Me.lblInd1_8)
-		Me.tpaUses.Controls.Add(Me.lblAgr1_8)
-		Me.tpaUses.Controls.Add(Me.lblLan1_4)
-		Me.tpaUses.Controls.Add(Me.lblInd1_4)
-		Me.tpaUses.Controls.Add(Me.lblAgr1_4)
-		Me.tpaUses.Controls.Add(Me.lblLan1_5)
-		Me.tpaUses.Controls.Add(Me.lblInd1_5)
-		Me.tpaUses.Controls.Add(Me.lblAgr1_5)
+		Me.tpaUses.Controls.Add(Me.Label87)
+		Me.tpaUses.Controls.Add(Me.Label89)
+		Me.tpaUses.Controls.Add(Me.Label90)
+		Me.tpaUses.Controls.Add(Me.lblLan13_1)
+		Me.tpaUses.Controls.Add(Me.lblAgr13_1)
+		Me.tpaUses.Controls.Add(Me.lblLan10_1)
+		Me.tpaUses.Controls.Add(Me.lblAgr10_1)
+		Me.tpaUses.Controls.Add(Me.lblLan7_1)
+		Me.tpaUses.Controls.Add(Me.lblAgr7_1)
+		Me.tpaUses.Controls.Add(Me.lblLan3_1)
+		Me.tpaUses.Controls.Add(Me.lblAgr3_1)
+		Me.tpaUses.Controls.Add(Me.lblLan12_1)
+		Me.tpaUses.Controls.Add(Me.lblAgr12_1)
+		Me.tpaUses.Controls.Add(Me.lblLan9_1)
+		Me.tpaUses.Controls.Add(Me.lblAgr9_1)
+		Me.tpaUses.Controls.Add(Me.lblLan6_1)
+		Me.tpaUses.Controls.Add(Me.lblAgr6_1)
+		Me.tpaUses.Controls.Add(Me.lblLan2_1)
+		Me.tpaUses.Controls.Add(Me.lblAgr2_1)
+		Me.tpaUses.Controls.Add(Me.lblLan11_1)
+		Me.tpaUses.Controls.Add(Me.lblAgr11_1)
+		Me.tpaUses.Controls.Add(Me.lblLan8_1)
+		Me.tpaUses.Controls.Add(Me.lblAgr8_1)
+		Me.tpaUses.Controls.Add(Me.lblLan4_1)
+		Me.tpaUses.Controls.Add(Me.lblAgr4_1)
+		Me.tpaUses.Controls.Add(Me.lblLan5_1)
+		Me.tpaUses.Controls.Add(Me.lblAgr5_1)
 		Me.tpaUses.Controls.Add(Me.lblLan1_1)
-		Me.tpaUses.Controls.Add(Me.lblInd1_1)
 		Me.tpaUses.Controls.Add(Me.lblAgr1_1)
 		Me.tpaUses.Controls.Add(Me.Label135)
-		Me.tpaUses.Controls.Add(Me.Label134)
 		Me.tpaUses.Controls.Add(Me.Label133)
 		Me.tpaUses.Controls.Add(Me.Label31)
 		Me.tpaUses.Controls.Add(Me.Label33)
@@ -913,282 +885,495 @@ Partial Class frmNegotiation
 		Me.tpaUses.Padding = New System.Windows.Forms.Padding(3)
 		Me.tpaUses.Size = New System.Drawing.Size(564, 454)
 		Me.tpaUses.TabIndex = 0
-		Me.tpaUses.Text = "Uses S"
+		Me.tpaUses.Text = "Uses"
 		Me.tpaUses.UseVisualStyleBackColor = True
 		'
-		'lblLan1_13
+		'Label94
 		'
-		Me.lblLan1_13.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblLan1_13.DSSElementName = Nothing
-		Me.lblLan1_13.DSSLocation = 0
-		Me.lblLan1_13.DSSOffset = 0R
-		Me.lblLan1_13.Location = New System.Drawing.Point(166, 326)
-		Me.lblLan1_13.Name = "lblLan1_13"
-		Me.lblLan1_13.Size = New System.Drawing.Size(34, 20)
-		Me.lblLan1_13.TabIndex = 63
-		Me.lblLan1_13.Text = "-"
-		Me.lblLan1_13.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.Label94.Location = New System.Drawing.Point(240, 8)
+		Me.Label94.Name = "Label94"
+		Me.Label94.Size = New System.Drawing.Size(97, 20)
+		Me.Label94.TabIndex = 107
+		Me.Label94.Text = "Large"
+		Me.Label94.TextAlign = System.Drawing.ContentAlignment.TopCenter
 		'
-		'lblInd1_13
+		'Label93
 		'
-		Me.lblInd1_13.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblInd1_13.DSSElementName = Nothing
-		Me.lblInd1_13.DSSLocation = 0
-		Me.lblInd1_13.DSSOffset = 0R
-		Me.lblInd1_13.Location = New System.Drawing.Point(126, 326)
-		Me.lblInd1_13.Name = "lblInd1_13"
-		Me.lblInd1_13.Size = New System.Drawing.Size(34, 20)
-		Me.lblInd1_13.TabIndex = 63
-		Me.lblInd1_13.Text = "-"
-		Me.lblInd1_13.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.Label93.Location = New System.Drawing.Point(103, 12)
+		Me.Label93.Name = "Label93"
+		Me.Label93.Size = New System.Drawing.Size(97, 20)
+		Me.Label93.TabIndex = 106
+		Me.Label93.Text = "Small"
+		Me.Label93.TextAlign = System.Drawing.ContentAlignment.TopCenter
 		'
-		'lblAgr1_13
+		'lblLan13_2
 		'
-		Me.lblAgr1_13.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblAgr1_13.DSSElementName = Nothing
-		Me.lblAgr1_13.DSSLocation = 0
-		Me.lblAgr1_13.DSSOffset = 0R
-		Me.lblAgr1_13.Location = New System.Drawing.Point(93, 326)
-		Me.lblAgr1_13.Name = "lblAgr1_13"
-		Me.lblAgr1_13.Size = New System.Drawing.Size(34, 20)
-		Me.lblAgr1_13.TabIndex = 63
-		Me.lblAgr1_13.Text = "-"
-		Me.lblAgr1_13.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblLan13_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan13_2.DSSElementName = Nothing
+		Me.lblLan13_2.DSSLocation = 0
+		Me.lblLan13_2.DSSOffset = 0R
+		Me.lblLan13_2.Location = New System.Drawing.Point(303, 326)
+		Me.lblLan13_2.Name = "lblLan13_2"
+		Me.lblLan13_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan13_2.TabIndex = 105
+		Me.lblLan13_2.Text = "-"
+		Me.lblLan13_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblLan1_10
+		'lblInd13_2
 		'
-		Me.lblLan1_10.AccessibleDescription = ""
-		Me.lblLan1_10.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblLan1_10.DSSElementName = Nothing
-		Me.lblLan1_10.DSSLocation = 0
-		Me.lblLan1_10.DSSOffset = 0R
-		Me.lblLan1_10.Location = New System.Drawing.Point(166, 257)
-		Me.lblLan1_10.Name = "lblLan1_10"
-		Me.lblLan1_10.Size = New System.Drawing.Size(34, 20)
-		Me.lblLan1_10.TabIndex = 63
-		Me.lblLan1_10.Text = "-"
-		Me.lblLan1_10.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblInd13_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblInd13_2.DSSElementName = Nothing
+		Me.lblInd13_2.DSSLocation = 0
+		Me.lblInd13_2.DSSOffset = 0R
+		Me.lblInd13_2.Location = New System.Drawing.Point(263, 326)
+		Me.lblInd13_2.Name = "lblInd13_2"
+		Me.lblInd13_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblInd13_2.TabIndex = 87
+		Me.lblInd13_2.Text = "-"
+		Me.lblInd13_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblInd1_10
+		'lblAgr13_2
 		'
-		Me.lblInd1_10.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblInd1_10.DSSElementName = Nothing
-		Me.lblInd1_10.DSSLocation = 0
-		Me.lblInd1_10.DSSOffset = 0R
-		Me.lblInd1_10.Location = New System.Drawing.Point(126, 257)
-		Me.lblInd1_10.Name = "lblInd1_10"
-		Me.lblInd1_10.Size = New System.Drawing.Size(34, 20)
-		Me.lblInd1_10.TabIndex = 63
-		Me.lblInd1_10.Text = "-"
-		Me.lblInd1_10.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblAgr13_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr13_2.DSSElementName = Nothing
+		Me.lblAgr13_2.DSSLocation = 0
+		Me.lblAgr13_2.DSSOffset = 0R
+		Me.lblAgr13_2.Location = New System.Drawing.Point(230, 326)
+		Me.lblAgr13_2.Name = "lblAgr13_2"
+		Me.lblAgr13_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr13_2.TabIndex = 88
+		Me.lblAgr13_2.Text = "-"
+		Me.lblAgr13_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblAgr1_10
+		'lblLan10_2
 		'
-		Me.lblAgr1_10.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblAgr1_10.DSSElementName = Nothing
-		Me.lblAgr1_10.DSSLocation = 0
-		Me.lblAgr1_10.DSSOffset = 0R
-		Me.lblAgr1_10.Location = New System.Drawing.Point(93, 257)
-		Me.lblAgr1_10.Name = "lblAgr1_10"
-		Me.lblAgr1_10.Size = New System.Drawing.Size(34, 20)
-		Me.lblAgr1_10.TabIndex = 63
-		Me.lblAgr1_10.Text = "-"
-		Me.lblAgr1_10.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblLan10_2.AccessibleDescription = ""
+		Me.lblLan10_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan10_2.DSSElementName = Nothing
+		Me.lblLan10_2.DSSLocation = 0
+		Me.lblLan10_2.DSSOffset = 0R
+		Me.lblLan10_2.Location = New System.Drawing.Point(303, 257)
+		Me.lblLan10_2.Name = "lblLan10_2"
+		Me.lblLan10_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan10_2.TabIndex = 89
+		Me.lblLan10_2.Text = "-"
+		Me.lblLan10_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblLan1_7
+		'lblInd10_2
 		'
-		Me.lblLan1_7.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblLan1_7.DSSElementName = Nothing
-		Me.lblLan1_7.DSSLocation = 0
-		Me.lblLan1_7.DSSOffset = 0R
-		Me.lblLan1_7.Location = New System.Drawing.Point(166, 188)
-		Me.lblLan1_7.Name = "lblLan1_7"
-		Me.lblLan1_7.Size = New System.Drawing.Size(34, 20)
-		Me.lblLan1_7.TabIndex = 63
-		Me.lblLan1_7.Text = "-"
-		Me.lblLan1_7.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblInd10_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblInd10_2.DSSElementName = Nothing
+		Me.lblInd10_2.DSSLocation = 0
+		Me.lblInd10_2.DSSOffset = 0R
+		Me.lblInd10_2.Location = New System.Drawing.Point(263, 257)
+		Me.lblInd10_2.Name = "lblInd10_2"
+		Me.lblInd10_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblInd10_2.TabIndex = 90
+		Me.lblInd10_2.Text = "-"
+		Me.lblInd10_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblInd1_7
+		'lblAgr10_2
 		'
-		Me.lblInd1_7.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblInd1_7.DSSElementName = Nothing
-		Me.lblInd1_7.DSSLocation = 0
-		Me.lblInd1_7.DSSOffset = 0R
-		Me.lblInd1_7.Location = New System.Drawing.Point(126, 188)
-		Me.lblInd1_7.Name = "lblInd1_7"
-		Me.lblInd1_7.Size = New System.Drawing.Size(34, 20)
-		Me.lblInd1_7.TabIndex = 63
-		Me.lblInd1_7.Text = "-"
-		Me.lblInd1_7.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblAgr10_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr10_2.DSSElementName = Nothing
+		Me.lblAgr10_2.DSSLocation = 0
+		Me.lblAgr10_2.DSSOffset = 0R
+		Me.lblAgr10_2.Location = New System.Drawing.Point(230, 257)
+		Me.lblAgr10_2.Name = "lblAgr10_2"
+		Me.lblAgr10_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr10_2.TabIndex = 91
+		Me.lblAgr10_2.Text = "-"
+		Me.lblAgr10_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblAgr1_7
+		'lblLan7_2
 		'
-		Me.lblAgr1_7.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblAgr1_7.DSSElementName = Nothing
-		Me.lblAgr1_7.DSSLocation = 0
-		Me.lblAgr1_7.DSSOffset = 0R
-		Me.lblAgr1_7.Location = New System.Drawing.Point(93, 188)
-		Me.lblAgr1_7.Name = "lblAgr1_7"
-		Me.lblAgr1_7.Size = New System.Drawing.Size(34, 20)
-		Me.lblAgr1_7.TabIndex = 63
-		Me.lblAgr1_7.Text = "-"
-		Me.lblAgr1_7.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblLan7_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan7_2.DSSElementName = Nothing
+		Me.lblLan7_2.DSSLocation = 0
+		Me.lblLan7_2.DSSOffset = 0R
+		Me.lblLan7_2.Location = New System.Drawing.Point(303, 188)
+		Me.lblLan7_2.Name = "lblLan7_2"
+		Me.lblLan7_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan7_2.TabIndex = 92
+		Me.lblLan7_2.Text = "-"
+		Me.lblLan7_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblLan1_3
+		'lblInd7_2
 		'
-		Me.lblLan1_3.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblLan1_3.DSSElementName = Nothing
-		Me.lblLan1_3.DSSLocation = 0
-		Me.lblLan1_3.DSSOffset = 0R
-		Me.lblLan1_3.Location = New System.Drawing.Point(166, 96)
-		Me.lblLan1_3.Name = "lblLan1_3"
-		Me.lblLan1_3.Size = New System.Drawing.Size(34, 20)
-		Me.lblLan1_3.TabIndex = 63
-		Me.lblLan1_3.Text = "-"
-		Me.lblLan1_3.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblInd7_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblInd7_2.DSSElementName = Nothing
+		Me.lblInd7_2.DSSLocation = 0
+		Me.lblInd7_2.DSSOffset = 0R
+		Me.lblInd7_2.Location = New System.Drawing.Point(263, 188)
+		Me.lblInd7_2.Name = "lblInd7_2"
+		Me.lblInd7_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblInd7_2.TabIndex = 93
+		Me.lblInd7_2.Text = "-"
+		Me.lblInd7_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblInd1_3
+		'lblAgr7_2
 		'
-		Me.lblInd1_3.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblInd1_3.DSSElementName = Nothing
-		Me.lblInd1_3.DSSLocation = 0
-		Me.lblInd1_3.DSSOffset = 0R
-		Me.lblInd1_3.Location = New System.Drawing.Point(126, 96)
-		Me.lblInd1_3.Name = "lblInd1_3"
-		Me.lblInd1_3.Size = New System.Drawing.Size(34, 20)
-		Me.lblInd1_3.TabIndex = 63
-		Me.lblInd1_3.Text = "-"
-		Me.lblInd1_3.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblAgr7_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr7_2.DSSElementName = Nothing
+		Me.lblAgr7_2.DSSLocation = 0
+		Me.lblAgr7_2.DSSOffset = 0R
+		Me.lblAgr7_2.Location = New System.Drawing.Point(230, 188)
+		Me.lblAgr7_2.Name = "lblAgr7_2"
+		Me.lblAgr7_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr7_2.TabIndex = 94
+		Me.lblAgr7_2.Text = "-"
+		Me.lblAgr7_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblAgr1_3
+		'lblLan3_2
 		'
-		Me.lblAgr1_3.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblAgr1_3.DSSElementName = Nothing
-		Me.lblAgr1_3.DSSLocation = 0
-		Me.lblAgr1_3.DSSOffset = 0R
-		Me.lblAgr1_3.Location = New System.Drawing.Point(93, 96)
-		Me.lblAgr1_3.Name = "lblAgr1_3"
-		Me.lblAgr1_3.Size = New System.Drawing.Size(34, 20)
-		Me.lblAgr1_3.TabIndex = 63
-		Me.lblAgr1_3.Text = "-"
-		Me.lblAgr1_3.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblLan3_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan3_2.DSSElementName = Nothing
+		Me.lblLan3_2.DSSLocation = 0
+		Me.lblLan3_2.DSSOffset = 0R
+		Me.lblLan3_2.Location = New System.Drawing.Point(303, 96)
+		Me.lblLan3_2.Name = "lblLan3_2"
+		Me.lblLan3_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan3_2.TabIndex = 95
+		Me.lblLan3_2.Text = "-"
+		Me.lblLan3_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblLan1_12
+		'lblInd3_2
 		'
-		Me.lblLan1_12.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblLan1_12.DSSElementName = Nothing
-		Me.lblLan1_12.DSSLocation = 0
-		Me.lblLan1_12.DSSOffset = 0R
-		Me.lblLan1_12.Location = New System.Drawing.Point(166, 303)
-		Me.lblLan1_12.Name = "lblLan1_12"
-		Me.lblLan1_12.Size = New System.Drawing.Size(34, 20)
-		Me.lblLan1_12.TabIndex = 63
-		Me.lblLan1_12.Text = "-"
-		Me.lblLan1_12.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblInd3_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblInd3_2.DSSElementName = Nothing
+		Me.lblInd3_2.DSSLocation = 0
+		Me.lblInd3_2.DSSOffset = 0R
+		Me.lblInd3_2.Location = New System.Drawing.Point(263, 96)
+		Me.lblInd3_2.Name = "lblInd3_2"
+		Me.lblInd3_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblInd3_2.TabIndex = 96
+		Me.lblInd3_2.Text = "-"
+		Me.lblInd3_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblInd1_12
+		'lblAgr3_2
 		'
-		Me.lblInd1_12.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblInd1_12.DSSElementName = Nothing
-		Me.lblInd1_12.DSSLocation = 0
-		Me.lblInd1_12.DSSOffset = 0R
-		Me.lblInd1_12.Location = New System.Drawing.Point(126, 303)
-		Me.lblInd1_12.Name = "lblInd1_12"
-		Me.lblInd1_12.Size = New System.Drawing.Size(34, 20)
-		Me.lblInd1_12.TabIndex = 63
-		Me.lblInd1_12.Text = "-"
-		Me.lblInd1_12.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblAgr3_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr3_2.DSSElementName = Nothing
+		Me.lblAgr3_2.DSSLocation = 0
+		Me.lblAgr3_2.DSSOffset = 0R
+		Me.lblAgr3_2.Location = New System.Drawing.Point(230, 96)
+		Me.lblAgr3_2.Name = "lblAgr3_2"
+		Me.lblAgr3_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr3_2.TabIndex = 97
+		Me.lblAgr3_2.Text = "-"
+		Me.lblAgr3_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblAgr1_12
+		'lblLan12_2
 		'
-		Me.lblAgr1_12.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblAgr1_12.DSSElementName = Nothing
-		Me.lblAgr1_12.DSSLocation = 0
-		Me.lblAgr1_12.DSSOffset = 0R
-		Me.lblAgr1_12.Location = New System.Drawing.Point(93, 303)
-		Me.lblAgr1_12.Name = "lblAgr1_12"
-		Me.lblAgr1_12.Size = New System.Drawing.Size(34, 20)
-		Me.lblAgr1_12.TabIndex = 63
-		Me.lblAgr1_12.Text = "-"
-		Me.lblAgr1_12.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblLan12_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan12_2.DSSElementName = Nothing
+		Me.lblLan12_2.DSSLocation = 0
+		Me.lblLan12_2.DSSOffset = 0R
+		Me.lblLan12_2.Location = New System.Drawing.Point(303, 303)
+		Me.lblLan12_2.Name = "lblLan12_2"
+		Me.lblLan12_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan12_2.TabIndex = 98
+		Me.lblLan12_2.Text = "-"
+		Me.lblLan12_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblLan1_9
+		'lblInd12_2
 		'
-		Me.lblLan1_9.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblLan1_9.DSSElementName = Nothing
-		Me.lblLan1_9.DSSLocation = 0
-		Me.lblLan1_9.DSSOffset = 0R
-		Me.lblLan1_9.Location = New System.Drawing.Point(166, 234)
-		Me.lblLan1_9.Name = "lblLan1_9"
-		Me.lblLan1_9.Size = New System.Drawing.Size(34, 20)
-		Me.lblLan1_9.TabIndex = 63
-		Me.lblLan1_9.Text = "-"
-		Me.lblLan1_9.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblInd12_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblInd12_2.DSSElementName = Nothing
+		Me.lblInd12_2.DSSLocation = 0
+		Me.lblInd12_2.DSSOffset = 0R
+		Me.lblInd12_2.Location = New System.Drawing.Point(263, 303)
+		Me.lblInd12_2.Name = "lblInd12_2"
+		Me.lblInd12_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblInd12_2.TabIndex = 99
+		Me.lblInd12_2.Text = "-"
+		Me.lblInd12_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblInd1_9
+		'lblAgr12_2
 		'
-		Me.lblInd1_9.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblInd1_9.DSSElementName = Nothing
-		Me.lblInd1_9.DSSLocation = 0
-		Me.lblInd1_9.DSSOffset = 0R
-		Me.lblInd1_9.Location = New System.Drawing.Point(126, 234)
-		Me.lblInd1_9.Name = "lblInd1_9"
-		Me.lblInd1_9.Size = New System.Drawing.Size(34, 20)
-		Me.lblInd1_9.TabIndex = 63
-		Me.lblInd1_9.Text = "-"
-		Me.lblInd1_9.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblAgr12_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr12_2.DSSElementName = Nothing
+		Me.lblAgr12_2.DSSLocation = 0
+		Me.lblAgr12_2.DSSOffset = 0R
+		Me.lblAgr12_2.Location = New System.Drawing.Point(230, 303)
+		Me.lblAgr12_2.Name = "lblAgr12_2"
+		Me.lblAgr12_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr12_2.TabIndex = 100
+		Me.lblAgr12_2.Text = "-"
+		Me.lblAgr12_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblAgr1_9
+		'lblLan9_2
 		'
-		Me.lblAgr1_9.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblAgr1_9.DSSElementName = Nothing
-		Me.lblAgr1_9.DSSLocation = 0
-		Me.lblAgr1_9.DSSOffset = 0R
-		Me.lblAgr1_9.Location = New System.Drawing.Point(93, 234)
-		Me.lblAgr1_9.Name = "lblAgr1_9"
-		Me.lblAgr1_9.Size = New System.Drawing.Size(34, 20)
-		Me.lblAgr1_9.TabIndex = 63
-		Me.lblAgr1_9.Text = "-"
-		Me.lblAgr1_9.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblLan9_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan9_2.DSSElementName = Nothing
+		Me.lblLan9_2.DSSLocation = 0
+		Me.lblLan9_2.DSSOffset = 0R
+		Me.lblLan9_2.Location = New System.Drawing.Point(303, 234)
+		Me.lblLan9_2.Name = "lblLan9_2"
+		Me.lblLan9_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan9_2.TabIndex = 101
+		Me.lblLan9_2.Text = "-"
+		Me.lblLan9_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblLan1_6
+		'lblInd9_2
 		'
-		Me.lblLan1_6.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblLan1_6.DSSElementName = Nothing
-		Me.lblLan1_6.DSSLocation = 0
-		Me.lblLan1_6.DSSOffset = 0R
-		Me.lblLan1_6.Location = New System.Drawing.Point(166, 165)
-		Me.lblLan1_6.Name = "lblLan1_6"
-		Me.lblLan1_6.Size = New System.Drawing.Size(34, 20)
-		Me.lblLan1_6.TabIndex = 63
-		Me.lblLan1_6.Text = "-"
-		Me.lblLan1_6.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblInd9_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblInd9_2.DSSElementName = Nothing
+		Me.lblInd9_2.DSSLocation = 0
+		Me.lblInd9_2.DSSOffset = 0R
+		Me.lblInd9_2.Location = New System.Drawing.Point(263, 234)
+		Me.lblInd9_2.Name = "lblInd9_2"
+		Me.lblInd9_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblInd9_2.TabIndex = 102
+		Me.lblInd9_2.Text = "-"
+		Me.lblInd9_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblInd1_6
+		'lblAgr9_2
 		'
-		Me.lblInd1_6.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblInd1_6.DSSElementName = Nothing
-		Me.lblInd1_6.DSSLocation = 0
-		Me.lblInd1_6.DSSOffset = 0R
-		Me.lblInd1_6.Location = New System.Drawing.Point(126, 165)
-		Me.lblInd1_6.Name = "lblInd1_6"
-		Me.lblInd1_6.Size = New System.Drawing.Size(34, 20)
-		Me.lblInd1_6.TabIndex = 63
-		Me.lblInd1_6.Text = "-"
-		Me.lblInd1_6.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblAgr9_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr9_2.DSSElementName = Nothing
+		Me.lblAgr9_2.DSSLocation = 0
+		Me.lblAgr9_2.DSSOffset = 0R
+		Me.lblAgr9_2.Location = New System.Drawing.Point(230, 234)
+		Me.lblAgr9_2.Name = "lblAgr9_2"
+		Me.lblAgr9_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr9_2.TabIndex = 103
+		Me.lblAgr9_2.Text = "-"
+		Me.lblAgr9_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblAgr1_6
+		'lblLan6_2
 		'
-		Me.lblAgr1_6.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblAgr1_6.DSSElementName = Nothing
-		Me.lblAgr1_6.DSSLocation = 0
-		Me.lblAgr1_6.DSSOffset = 0R
-		Me.lblAgr1_6.Location = New System.Drawing.Point(93, 165)
-		Me.lblAgr1_6.Name = "lblAgr1_6"
-		Me.lblAgr1_6.Size = New System.Drawing.Size(34, 20)
-		Me.lblAgr1_6.TabIndex = 63
-		Me.lblAgr1_6.Text = "-"
-		Me.lblAgr1_6.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblLan6_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan6_2.DSSElementName = Nothing
+		Me.lblLan6_2.DSSLocation = 0
+		Me.lblLan6_2.DSSOffset = 0R
+		Me.lblLan6_2.Location = New System.Drawing.Point(303, 165)
+		Me.lblLan6_2.Name = "lblLan6_2"
+		Me.lblLan6_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan6_2.TabIndex = 86
+		Me.lblLan6_2.Text = "-"
+		Me.lblLan6_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblInd6_2
+		'
+		Me.lblInd6_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblInd6_2.DSSElementName = Nothing
+		Me.lblInd6_2.DSSLocation = 0
+		Me.lblInd6_2.DSSOffset = 0R
+		Me.lblInd6_2.Location = New System.Drawing.Point(263, 165)
+		Me.lblInd6_2.Name = "lblInd6_2"
+		Me.lblInd6_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblInd6_2.TabIndex = 104
+		Me.lblInd6_2.Text = "-"
+		Me.lblInd6_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblAgr6_2
+		'
+		Me.lblAgr6_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr6_2.DSSElementName = Nothing
+		Me.lblAgr6_2.DSSLocation = 0
+		Me.lblAgr6_2.DSSOffset = 0R
+		Me.lblAgr6_2.Location = New System.Drawing.Point(230, 165)
+		Me.lblAgr6_2.Name = "lblAgr6_2"
+		Me.lblAgr6_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr6_2.TabIndex = 85
+		Me.lblAgr6_2.Text = "-"
+		Me.lblAgr6_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblLan2_2
+		'
+		Me.lblLan2_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan2_2.DSSElementName = Nothing
+		Me.lblLan2_2.DSSLocation = 0
+		Me.lblLan2_2.DSSOffset = 0R
+		Me.lblLan2_2.Location = New System.Drawing.Point(303, 73)
+		Me.lblLan2_2.Name = "lblLan2_2"
+		Me.lblLan2_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan2_2.TabIndex = 83
+		Me.lblLan2_2.Text = "-"
+		Me.lblLan2_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblInd2_2
+		'
+		Me.lblInd2_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblInd2_2.DSSElementName = Nothing
+		Me.lblInd2_2.DSSLocation = 0
+		Me.lblInd2_2.DSSOffset = 0R
+		Me.lblInd2_2.Location = New System.Drawing.Point(263, 73)
+		Me.lblInd2_2.Name = "lblInd2_2"
+		Me.lblInd2_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblInd2_2.TabIndex = 68
+		Me.lblInd2_2.Text = "-"
+		Me.lblInd2_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblAgr2_2
+		'
+		Me.lblAgr2_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr2_2.DSSElementName = Nothing
+		Me.lblAgr2_2.DSSLocation = 0
+		Me.lblAgr2_2.DSSOffset = 0R
+		Me.lblAgr2_2.Location = New System.Drawing.Point(230, 73)
+		Me.lblAgr2_2.Name = "lblAgr2_2"
+		Me.lblAgr2_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr2_2.TabIndex = 69
+		Me.lblAgr2_2.Text = "-"
+		Me.lblAgr2_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblLan11_2
+		'
+		Me.lblLan11_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan11_2.DSSElementName = Nothing
+		Me.lblLan11_2.DSSLocation = 0
+		Me.lblLan11_2.DSSOffset = 0R
+		Me.lblLan11_2.Location = New System.Drawing.Point(303, 280)
+		Me.lblLan11_2.Name = "lblLan11_2"
+		Me.lblLan11_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan11_2.TabIndex = 70
+		Me.lblLan11_2.Text = "-"
+		Me.lblLan11_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblInd11_2
+		'
+		Me.lblInd11_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblInd11_2.DSSElementName = Nothing
+		Me.lblInd11_2.DSSLocation = 0
+		Me.lblInd11_2.DSSOffset = 0R
+		Me.lblInd11_2.Location = New System.Drawing.Point(263, 280)
+		Me.lblInd11_2.Name = "lblInd11_2"
+		Me.lblInd11_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblInd11_2.TabIndex = 71
+		Me.lblInd11_2.Text = "-"
+		Me.lblInd11_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblAgr11_2
+		'
+		Me.lblAgr11_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr11_2.DSSElementName = Nothing
+		Me.lblAgr11_2.DSSLocation = 0
+		Me.lblAgr11_2.DSSOffset = 0R
+		Me.lblAgr11_2.Location = New System.Drawing.Point(230, 280)
+		Me.lblAgr11_2.Name = "lblAgr11_2"
+		Me.lblAgr11_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr11_2.TabIndex = 72
+		Me.lblAgr11_2.Text = "-"
+		Me.lblAgr11_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblLan8_2
+		'
+		Me.lblLan8_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan8_2.DSSElementName = Nothing
+		Me.lblLan8_2.DSSLocation = 0
+		Me.lblLan8_2.DSSOffset = 0R
+		Me.lblLan8_2.Location = New System.Drawing.Point(303, 211)
+		Me.lblLan8_2.Name = "lblLan8_2"
+		Me.lblLan8_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan8_2.TabIndex = 73
+		Me.lblLan8_2.Text = "-"
+		Me.lblLan8_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblInd8_2
+		'
+		Me.lblInd8_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblInd8_2.DSSElementName = Nothing
+		Me.lblInd8_2.DSSLocation = 0
+		Me.lblInd8_2.DSSOffset = 0R
+		Me.lblInd8_2.Location = New System.Drawing.Point(263, 211)
+		Me.lblInd8_2.Name = "lblInd8_2"
+		Me.lblInd8_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblInd8_2.TabIndex = 74
+		Me.lblInd8_2.Text = "-"
+		Me.lblInd8_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblAgr8_2
+		'
+		Me.lblAgr8_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr8_2.DSSElementName = Nothing
+		Me.lblAgr8_2.DSSLocation = 0
+		Me.lblAgr8_2.DSSOffset = 0R
+		Me.lblAgr8_2.Location = New System.Drawing.Point(230, 211)
+		Me.lblAgr8_2.Name = "lblAgr8_2"
+		Me.lblAgr8_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr8_2.TabIndex = 75
+		Me.lblAgr8_2.Text = "-"
+		Me.lblAgr8_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblLan4_2
+		'
+		Me.lblLan4_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan4_2.DSSElementName = Nothing
+		Me.lblLan4_2.DSSLocation = 0
+		Me.lblLan4_2.DSSOffset = 0R
+		Me.lblLan4_2.Location = New System.Drawing.Point(303, 119)
+		Me.lblLan4_2.Name = "lblLan4_2"
+		Me.lblLan4_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan4_2.TabIndex = 84
+		Me.lblLan4_2.Text = "-"
+		Me.lblLan4_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblInd4_2
+		'
+		Me.lblInd4_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblInd4_2.DSSElementName = Nothing
+		Me.lblInd4_2.DSSLocation = 0
+		Me.lblInd4_2.DSSOffset = 0R
+		Me.lblInd4_2.Location = New System.Drawing.Point(263, 119)
+		Me.lblInd4_2.Name = "lblInd4_2"
+		Me.lblInd4_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblInd4_2.TabIndex = 76
+		Me.lblInd4_2.Text = "-"
+		Me.lblInd4_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblAgr4_2
+		'
+		Me.lblAgr4_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr4_2.DSSElementName = Nothing
+		Me.lblAgr4_2.DSSLocation = 0
+		Me.lblAgr4_2.DSSOffset = 0R
+		Me.lblAgr4_2.Location = New System.Drawing.Point(230, 119)
+		Me.lblAgr4_2.Name = "lblAgr4_2"
+		Me.lblAgr4_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr4_2.TabIndex = 77
+		Me.lblAgr4_2.Text = "-"
+		Me.lblAgr4_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblLan5_2
+		'
+		Me.lblLan5_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan5_2.DSSElementName = Nothing
+		Me.lblLan5_2.DSSLocation = 0
+		Me.lblLan5_2.DSSOffset = 0R
+		Me.lblLan5_2.Location = New System.Drawing.Point(303, 142)
+		Me.lblLan5_2.Name = "lblLan5_2"
+		Me.lblLan5_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan5_2.TabIndex = 78
+		Me.lblLan5_2.Text = "-"
+		Me.lblLan5_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblInd5_2
+		'
+		Me.lblInd5_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblInd5_2.DSSElementName = Nothing
+		Me.lblInd5_2.DSSLocation = 0
+		Me.lblInd5_2.DSSOffset = 0R
+		Me.lblInd5_2.Location = New System.Drawing.Point(263, 142)
+		Me.lblInd5_2.Name = "lblInd5_2"
+		Me.lblInd5_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblInd5_2.TabIndex = 79
+		Me.lblInd5_2.Text = "-"
+		Me.lblInd5_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblAgr5_2
+		'
+		Me.lblAgr5_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr5_2.DSSElementName = Nothing
+		Me.lblAgr5_2.DSSLocation = 0
+		Me.lblAgr5_2.DSSOffset = 0R
+		Me.lblAgr5_2.Location = New System.Drawing.Point(230, 142)
+		Me.lblAgr5_2.Name = "lblAgr5_2"
+		Me.lblAgr5_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr5_2.TabIndex = 80
+		Me.lblAgr5_2.Text = "-"
+		Me.lblAgr5_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
 		'lblLan1_2
 		'
@@ -1196,10 +1381,10 @@ Partial Class frmNegotiation
 		Me.lblLan1_2.DSSElementName = Nothing
 		Me.lblLan1_2.DSSLocation = 0
 		Me.lblLan1_2.DSSOffset = 0R
-		Me.lblLan1_2.Location = New System.Drawing.Point(166, 73)
+		Me.lblLan1_2.Location = New System.Drawing.Point(303, 50)
 		Me.lblLan1_2.Name = "lblLan1_2"
 		Me.lblLan1_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblLan1_2.TabIndex = 63
+		Me.lblLan1_2.TabIndex = 81
 		Me.lblLan1_2.Text = "-"
 		Me.lblLan1_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
@@ -1209,10 +1394,10 @@ Partial Class frmNegotiation
 		Me.lblInd1_2.DSSElementName = Nothing
 		Me.lblInd1_2.DSSLocation = 0
 		Me.lblInd1_2.DSSOffset = 0R
-		Me.lblInd1_2.Location = New System.Drawing.Point(126, 73)
+		Me.lblInd1_2.Location = New System.Drawing.Point(263, 50)
 		Me.lblInd1_2.Name = "lblInd1_2"
 		Me.lblInd1_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblInd1_2.TabIndex = 63
+		Me.lblInd1_2.TabIndex = 82
 		Me.lblInd1_2.Text = "-"
 		Me.lblInd1_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
@@ -1222,168 +1407,352 @@ Partial Class frmNegotiation
 		Me.lblAgr1_2.DSSElementName = Nothing
 		Me.lblAgr1_2.DSSLocation = 0
 		Me.lblAgr1_2.DSSOffset = 0R
-		Me.lblAgr1_2.Location = New System.Drawing.Point(93, 73)
+		Me.lblAgr1_2.Location = New System.Drawing.Point(230, 50)
 		Me.lblAgr1_2.Name = "lblAgr1_2"
 		Me.lblAgr1_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblAgr1_2.TabIndex = 63
+		Me.lblAgr1_2.TabIndex = 67
 		Me.lblAgr1_2.Text = "-"
 		Me.lblAgr1_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblLan1_11
+		'Label87
 		'
-		Me.lblLan1_11.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblLan1_11.DSSElementName = Nothing
-		Me.lblLan1_11.DSSLocation = 0
-		Me.lblLan1_11.DSSOffset = 0R
-		Me.lblLan1_11.Location = New System.Drawing.Point(166, 280)
-		Me.lblLan1_11.Name = "lblLan1_11"
-		Me.lblLan1_11.Size = New System.Drawing.Size(34, 20)
-		Me.lblLan1_11.TabIndex = 63
-		Me.lblLan1_11.Text = "-"
-		Me.lblLan1_11.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.Label87.Location = New System.Drawing.Point(303, 33)
+		Me.Label87.Name = "Label87"
+		Me.Label87.Size = New System.Drawing.Size(34, 20)
+		Me.Label87.TabIndex = 66
+		Me.Label87.Text = "lan"
+		Me.Label87.TextAlign = System.Drawing.ContentAlignment.TopCenter
 		'
-		'lblInd1_11
+		'Label89
 		'
-		Me.lblInd1_11.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblInd1_11.DSSElementName = Nothing
-		Me.lblInd1_11.DSSLocation = 0
-		Me.lblInd1_11.DSSOffset = 0R
-		Me.lblInd1_11.Location = New System.Drawing.Point(126, 280)
-		Me.lblInd1_11.Name = "lblInd1_11"
-		Me.lblInd1_11.Size = New System.Drawing.Size(34, 20)
-		Me.lblInd1_11.TabIndex = 63
-		Me.lblInd1_11.Text = "-"
-		Me.lblInd1_11.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.Label89.Location = New System.Drawing.Point(263, 33)
+		Me.Label89.Name = "Label89"
+		Me.Label89.Size = New System.Drawing.Size(34, 20)
+		Me.Label89.TabIndex = 65
+		Me.Label89.Text = "ind"
+		Me.Label89.TextAlign = System.Drawing.ContentAlignment.TopCenter
 		'
-		'lblAgr1_11
+		'Label90
 		'
-		Me.lblAgr1_11.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblAgr1_11.DSSElementName = Nothing
-		Me.lblAgr1_11.DSSLocation = 0
-		Me.lblAgr1_11.DSSOffset = 0R
-		Me.lblAgr1_11.Location = New System.Drawing.Point(93, 280)
-		Me.lblAgr1_11.Name = "lblAgr1_11"
-		Me.lblAgr1_11.Size = New System.Drawing.Size(34, 20)
-		Me.lblAgr1_11.TabIndex = 63
-		Me.lblAgr1_11.Text = "-"
-		Me.lblAgr1_11.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.Label90.Location = New System.Drawing.Point(230, 33)
+		Me.Label90.Name = "Label90"
+		Me.Label90.Size = New System.Drawing.Size(34, 20)
+		Me.Label90.TabIndex = 64
+		Me.Label90.Text = "agr"
+		Me.Label90.TextAlign = System.Drawing.ContentAlignment.TopCenter
 		'
-		'lblLan1_8
+		'lblLan13_1
 		'
-		Me.lblLan1_8.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblLan1_8.DSSElementName = Nothing
-		Me.lblLan1_8.DSSLocation = 0
-		Me.lblLan1_8.DSSOffset = 0R
-		Me.lblLan1_8.Location = New System.Drawing.Point(166, 211)
-		Me.lblLan1_8.Name = "lblLan1_8"
-		Me.lblLan1_8.Size = New System.Drawing.Size(34, 20)
-		Me.lblLan1_8.TabIndex = 63
-		Me.lblLan1_8.Text = "-"
-		Me.lblLan1_8.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblLan13_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan13_1.DSSElementName = Nothing
+		Me.lblLan13_1.DSSLocation = 0
+		Me.lblLan13_1.DSSOffset = 0R
+		Me.lblLan13_1.Location = New System.Drawing.Point(166, 326)
+		Me.lblLan13_1.Name = "lblLan13_1"
+		Me.lblLan13_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan13_1.TabIndex = 63
+		Me.lblLan13_1.Text = "-"
+		Me.lblLan13_1.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblInd1_8
+		'lblAgr13_1
 		'
-		Me.lblInd1_8.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblInd1_8.DSSElementName = Nothing
-		Me.lblInd1_8.DSSLocation = 0
-		Me.lblInd1_8.DSSOffset = 0R
-		Me.lblInd1_8.Location = New System.Drawing.Point(126, 211)
-		Me.lblInd1_8.Name = "lblInd1_8"
-		Me.lblInd1_8.Size = New System.Drawing.Size(34, 20)
-		Me.lblInd1_8.TabIndex = 63
-		Me.lblInd1_8.Text = "-"
-		Me.lblInd1_8.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblAgr13_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr13_1.DSSElementName = Nothing
+		Me.lblAgr13_1.DSSLocation = 0
+		Me.lblAgr13_1.DSSOffset = 0R
+		Me.lblAgr13_1.Location = New System.Drawing.Point(93, 326)
+		Me.lblAgr13_1.Name = "lblAgr13_1"
+		Me.lblAgr13_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr13_1.TabIndex = 63
+		Me.lblAgr13_1.Text = "-"
+		Me.lblAgr13_1.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblAgr1_8
+		'lblLan10_1
 		'
-		Me.lblAgr1_8.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblAgr1_8.DSSElementName = Nothing
-		Me.lblAgr1_8.DSSLocation = 0
-		Me.lblAgr1_8.DSSOffset = 0R
-		Me.lblAgr1_8.Location = New System.Drawing.Point(93, 211)
-		Me.lblAgr1_8.Name = "lblAgr1_8"
-		Me.lblAgr1_8.Size = New System.Drawing.Size(34, 20)
-		Me.lblAgr1_8.TabIndex = 63
-		Me.lblAgr1_8.Text = "-"
-		Me.lblAgr1_8.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblLan10_1.AccessibleDescription = ""
+		Me.lblLan10_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan10_1.DSSElementName = Nothing
+		Me.lblLan10_1.DSSLocation = 0
+		Me.lblLan10_1.DSSOffset = 0R
+		Me.lblLan10_1.Location = New System.Drawing.Point(166, 257)
+		Me.lblLan10_1.Name = "lblLan10_1"
+		Me.lblLan10_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan10_1.TabIndex = 63
+		Me.lblLan10_1.Text = "-"
+		Me.lblLan10_1.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblLan1_4
+		'lblAgr10_1
 		'
-		Me.lblLan1_4.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblLan1_4.DSSElementName = Nothing
-		Me.lblLan1_4.DSSLocation = 0
-		Me.lblLan1_4.DSSOffset = 0R
-		Me.lblLan1_4.Location = New System.Drawing.Point(166, 119)
-		Me.lblLan1_4.Name = "lblLan1_4"
-		Me.lblLan1_4.Size = New System.Drawing.Size(34, 20)
-		Me.lblLan1_4.TabIndex = 63
-		Me.lblLan1_4.Text = "-"
-		Me.lblLan1_4.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblAgr10_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr10_1.DSSElementName = Nothing
+		Me.lblAgr10_1.DSSLocation = 0
+		Me.lblAgr10_1.DSSOffset = 0R
+		Me.lblAgr10_1.Location = New System.Drawing.Point(93, 257)
+		Me.lblAgr10_1.Name = "lblAgr10_1"
+		Me.lblAgr10_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr10_1.TabIndex = 63
+		Me.lblAgr10_1.Text = "-"
+		Me.lblAgr10_1.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblInd1_4
+		'lblLan7_1
 		'
-		Me.lblInd1_4.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblInd1_4.DSSElementName = Nothing
-		Me.lblInd1_4.DSSLocation = 0
-		Me.lblInd1_4.DSSOffset = 0R
-		Me.lblInd1_4.Location = New System.Drawing.Point(126, 119)
-		Me.lblInd1_4.Name = "lblInd1_4"
-		Me.lblInd1_4.Size = New System.Drawing.Size(34, 20)
-		Me.lblInd1_4.TabIndex = 63
-		Me.lblInd1_4.Text = "-"
-		Me.lblInd1_4.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblLan7_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan7_1.DSSElementName = Nothing
+		Me.lblLan7_1.DSSLocation = 0
+		Me.lblLan7_1.DSSOffset = 0R
+		Me.lblLan7_1.Location = New System.Drawing.Point(166, 188)
+		Me.lblLan7_1.Name = "lblLan7_1"
+		Me.lblLan7_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan7_1.TabIndex = 63
+		Me.lblLan7_1.Text = "-"
+		Me.lblLan7_1.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblAgr1_4
+		'lblAgr7_1
 		'
-		Me.lblAgr1_4.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblAgr1_4.DSSElementName = Nothing
-		Me.lblAgr1_4.DSSLocation = 0
-		Me.lblAgr1_4.DSSOffset = 0R
-		Me.lblAgr1_4.Location = New System.Drawing.Point(93, 119)
-		Me.lblAgr1_4.Name = "lblAgr1_4"
-		Me.lblAgr1_4.Size = New System.Drawing.Size(34, 20)
-		Me.lblAgr1_4.TabIndex = 63
-		Me.lblAgr1_4.Text = "-"
-		Me.lblAgr1_4.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblAgr7_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr7_1.DSSElementName = Nothing
+		Me.lblAgr7_1.DSSLocation = 0
+		Me.lblAgr7_1.DSSOffset = 0R
+		Me.lblAgr7_1.Location = New System.Drawing.Point(93, 188)
+		Me.lblAgr7_1.Name = "lblAgr7_1"
+		Me.lblAgr7_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr7_1.TabIndex = 63
+		Me.lblAgr7_1.Text = "-"
+		Me.lblAgr7_1.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblLan1_5
+		'lblLan3_1
 		'
-		Me.lblLan1_5.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblLan1_5.DSSElementName = Nothing
-		Me.lblLan1_5.DSSLocation = 0
-		Me.lblLan1_5.DSSOffset = 0R
-		Me.lblLan1_5.Location = New System.Drawing.Point(166, 142)
-		Me.lblLan1_5.Name = "lblLan1_5"
-		Me.lblLan1_5.Size = New System.Drawing.Size(34, 20)
-		Me.lblLan1_5.TabIndex = 63
-		Me.lblLan1_5.Text = "-"
-		Me.lblLan1_5.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblLan3_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan3_1.DSSElementName = Nothing
+		Me.lblLan3_1.DSSLocation = 0
+		Me.lblLan3_1.DSSOffset = 0R
+		Me.lblLan3_1.Location = New System.Drawing.Point(166, 96)
+		Me.lblLan3_1.Name = "lblLan3_1"
+		Me.lblLan3_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan3_1.TabIndex = 63
+		Me.lblLan3_1.Text = "-"
+		Me.lblLan3_1.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblInd1_5
+		'lblAgr3_1
 		'
-		Me.lblInd1_5.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblInd1_5.DSSElementName = Nothing
-		Me.lblInd1_5.DSSLocation = 0
-		Me.lblInd1_5.DSSOffset = 0R
-		Me.lblInd1_5.Location = New System.Drawing.Point(126, 142)
-		Me.lblInd1_5.Name = "lblInd1_5"
-		Me.lblInd1_5.Size = New System.Drawing.Size(34, 20)
-		Me.lblInd1_5.TabIndex = 63
-		Me.lblInd1_5.Text = "-"
-		Me.lblInd1_5.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblAgr3_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr3_1.DSSElementName = Nothing
+		Me.lblAgr3_1.DSSLocation = 0
+		Me.lblAgr3_1.DSSOffset = 0R
+		Me.lblAgr3_1.Location = New System.Drawing.Point(93, 96)
+		Me.lblAgr3_1.Name = "lblAgr3_1"
+		Me.lblAgr3_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr3_1.TabIndex = 63
+		Me.lblAgr3_1.Text = "-"
+		Me.lblAgr3_1.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
-		'lblAgr1_5
+		'lblLan12_1
 		'
-		Me.lblAgr1_5.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblAgr1_5.DSSElementName = Nothing
-		Me.lblAgr1_5.DSSLocation = 0
-		Me.lblAgr1_5.DSSOffset = 0R
-		Me.lblAgr1_5.Location = New System.Drawing.Point(93, 142)
-		Me.lblAgr1_5.Name = "lblAgr1_5"
-		Me.lblAgr1_5.Size = New System.Drawing.Size(34, 20)
-		Me.lblAgr1_5.TabIndex = 63
-		Me.lblAgr1_5.Text = "-"
-		Me.lblAgr1_5.TextAlign = System.Drawing.ContentAlignment.TopRight
+		Me.lblLan12_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan12_1.DSSElementName = Nothing
+		Me.lblLan12_1.DSSLocation = 0
+		Me.lblLan12_1.DSSOffset = 0R
+		Me.lblLan12_1.Location = New System.Drawing.Point(166, 303)
+		Me.lblLan12_1.Name = "lblLan12_1"
+		Me.lblLan12_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan12_1.TabIndex = 63
+		Me.lblLan12_1.Text = "-"
+		Me.lblLan12_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblAgr12_1
+		'
+		Me.lblAgr12_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr12_1.DSSElementName = Nothing
+		Me.lblAgr12_1.DSSLocation = 0
+		Me.lblAgr12_1.DSSOffset = 0R
+		Me.lblAgr12_1.Location = New System.Drawing.Point(93, 303)
+		Me.lblAgr12_1.Name = "lblAgr12_1"
+		Me.lblAgr12_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr12_1.TabIndex = 63
+		Me.lblAgr12_1.Text = "-"
+		Me.lblAgr12_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblLan9_1
+		'
+		Me.lblLan9_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan9_1.DSSElementName = Nothing
+		Me.lblLan9_1.DSSLocation = 0
+		Me.lblLan9_1.DSSOffset = 0R
+		Me.lblLan9_1.Location = New System.Drawing.Point(166, 234)
+		Me.lblLan9_1.Name = "lblLan9_1"
+		Me.lblLan9_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan9_1.TabIndex = 63
+		Me.lblLan9_1.Text = "-"
+		Me.lblLan9_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblAgr9_1
+		'
+		Me.lblAgr9_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr9_1.DSSElementName = Nothing
+		Me.lblAgr9_1.DSSLocation = 0
+		Me.lblAgr9_1.DSSOffset = 0R
+		Me.lblAgr9_1.Location = New System.Drawing.Point(93, 234)
+		Me.lblAgr9_1.Name = "lblAgr9_1"
+		Me.lblAgr9_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr9_1.TabIndex = 63
+		Me.lblAgr9_1.Text = "-"
+		Me.lblAgr9_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblLan6_1
+		'
+		Me.lblLan6_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan6_1.DSSElementName = Nothing
+		Me.lblLan6_1.DSSLocation = 0
+		Me.lblLan6_1.DSSOffset = 0R
+		Me.lblLan6_1.Location = New System.Drawing.Point(166, 165)
+		Me.lblLan6_1.Name = "lblLan6_1"
+		Me.lblLan6_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan6_1.TabIndex = 63
+		Me.lblLan6_1.Text = "-"
+		Me.lblLan6_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblAgr6_1
+		'
+		Me.lblAgr6_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr6_1.DSSElementName = Nothing
+		Me.lblAgr6_1.DSSLocation = 0
+		Me.lblAgr6_1.DSSOffset = 0R
+		Me.lblAgr6_1.Location = New System.Drawing.Point(93, 165)
+		Me.lblAgr6_1.Name = "lblAgr6_1"
+		Me.lblAgr6_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr6_1.TabIndex = 63
+		Me.lblAgr6_1.Text = "-"
+		Me.lblAgr6_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblLan2_1
+		'
+		Me.lblLan2_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan2_1.DSSElementName = Nothing
+		Me.lblLan2_1.DSSLocation = 0
+		Me.lblLan2_1.DSSOffset = 0R
+		Me.lblLan2_1.Location = New System.Drawing.Point(166, 73)
+		Me.lblLan2_1.Name = "lblLan2_1"
+		Me.lblLan2_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan2_1.TabIndex = 63
+		Me.lblLan2_1.Text = "-"
+		Me.lblLan2_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblAgr2_1
+		'
+		Me.lblAgr2_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr2_1.DSSElementName = Nothing
+		Me.lblAgr2_1.DSSLocation = 0
+		Me.lblAgr2_1.DSSOffset = 0R
+		Me.lblAgr2_1.Location = New System.Drawing.Point(93, 73)
+		Me.lblAgr2_1.Name = "lblAgr2_1"
+		Me.lblAgr2_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr2_1.TabIndex = 63
+		Me.lblAgr2_1.Text = "-"
+		Me.lblAgr2_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblLan11_1
+		'
+		Me.lblLan11_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan11_1.DSSElementName = Nothing
+		Me.lblLan11_1.DSSLocation = 0
+		Me.lblLan11_1.DSSOffset = 0R
+		Me.lblLan11_1.Location = New System.Drawing.Point(166, 280)
+		Me.lblLan11_1.Name = "lblLan11_1"
+		Me.lblLan11_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan11_1.TabIndex = 63
+		Me.lblLan11_1.Text = "-"
+		Me.lblLan11_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblAgr11_1
+		'
+		Me.lblAgr11_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr11_1.DSSElementName = Nothing
+		Me.lblAgr11_1.DSSLocation = 0
+		Me.lblAgr11_1.DSSOffset = 0R
+		Me.lblAgr11_1.Location = New System.Drawing.Point(93, 280)
+		Me.lblAgr11_1.Name = "lblAgr11_1"
+		Me.lblAgr11_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr11_1.TabIndex = 63
+		Me.lblAgr11_1.Text = "-"
+		Me.lblAgr11_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblLan8_1
+		'
+		Me.lblLan8_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan8_1.DSSElementName = Nothing
+		Me.lblLan8_1.DSSLocation = 0
+		Me.lblLan8_1.DSSOffset = 0R
+		Me.lblLan8_1.Location = New System.Drawing.Point(166, 211)
+		Me.lblLan8_1.Name = "lblLan8_1"
+		Me.lblLan8_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan8_1.TabIndex = 63
+		Me.lblLan8_1.Text = "-"
+		Me.lblLan8_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblAgr8_1
+		'
+		Me.lblAgr8_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr8_1.DSSElementName = Nothing
+		Me.lblAgr8_1.DSSLocation = 0
+		Me.lblAgr8_1.DSSOffset = 0R
+		Me.lblAgr8_1.Location = New System.Drawing.Point(93, 211)
+		Me.lblAgr8_1.Name = "lblAgr8_1"
+		Me.lblAgr8_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr8_1.TabIndex = 63
+		Me.lblAgr8_1.Text = "-"
+		Me.lblAgr8_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblLan4_1
+		'
+		Me.lblLan4_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan4_1.DSSElementName = Nothing
+		Me.lblLan4_1.DSSLocation = 0
+		Me.lblLan4_1.DSSOffset = 0R
+		Me.lblLan4_1.Location = New System.Drawing.Point(166, 119)
+		Me.lblLan4_1.Name = "lblLan4_1"
+		Me.lblLan4_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan4_1.TabIndex = 63
+		Me.lblLan4_1.Text = "-"
+		Me.lblLan4_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblAgr4_1
+		'
+		Me.lblAgr4_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr4_1.DSSElementName = Nothing
+		Me.lblAgr4_1.DSSLocation = 0
+		Me.lblAgr4_1.DSSOffset = 0R
+		Me.lblAgr4_1.Location = New System.Drawing.Point(93, 119)
+		Me.lblAgr4_1.Name = "lblAgr4_1"
+		Me.lblAgr4_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr4_1.TabIndex = 63
+		Me.lblAgr4_1.Text = "-"
+		Me.lblAgr4_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblLan5_1
+		'
+		Me.lblLan5_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblLan5_1.DSSElementName = Nothing
+		Me.lblLan5_1.DSSLocation = 0
+		Me.lblLan5_1.DSSOffset = 0R
+		Me.lblLan5_1.Location = New System.Drawing.Point(166, 142)
+		Me.lblLan5_1.Name = "lblLan5_1"
+		Me.lblLan5_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan5_1.TabIndex = 63
+		Me.lblLan5_1.Text = "-"
+		Me.lblLan5_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblAgr5_1
+		'
+		Me.lblAgr5_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblAgr5_1.DSSElementName = Nothing
+		Me.lblAgr5_1.DSSLocation = 0
+		Me.lblAgr5_1.DSSOffset = 0R
+		Me.lblAgr5_1.Location = New System.Drawing.Point(93, 142)
+		Me.lblAgr5_1.Name = "lblAgr5_1"
+		Me.lblAgr5_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr5_1.TabIndex = 63
+		Me.lblAgr5_1.Text = "-"
+		Me.lblAgr5_1.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
 		'lblLan1_1
 		'
@@ -1397,19 +1766,6 @@ Partial Class frmNegotiation
 		Me.lblLan1_1.TabIndex = 63
 		Me.lblLan1_1.Text = "-"
 		Me.lblLan1_1.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblInd1_1
-		'
-		Me.lblInd1_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblInd1_1.DSSElementName = Nothing
-		Me.lblInd1_1.DSSLocation = 0
-		Me.lblInd1_1.DSSOffset = 0R
-		Me.lblInd1_1.Location = New System.Drawing.Point(126, 50)
-		Me.lblInd1_1.Name = "lblInd1_1"
-		Me.lblInd1_1.Size = New System.Drawing.Size(34, 20)
-		Me.lblInd1_1.TabIndex = 63
-		Me.lblInd1_1.Text = "-"
-		Me.lblInd1_1.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
 		'lblAgr1_1
 		'
@@ -1432,15 +1788,6 @@ Partial Class frmNegotiation
 		Me.Label135.TabIndex = 62
 		Me.Label135.Text = "lan"
 		Me.Label135.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'Label134
-		'
-		Me.Label134.Location = New System.Drawing.Point(126, 33)
-		Me.Label134.Name = "Label134"
-		Me.Label134.Size = New System.Drawing.Size(34, 20)
-		Me.Label134.TabIndex = 62
-		Me.Label134.Text = "ind"
-		Me.Label134.TextAlign = System.Drawing.ContentAlignment.TopCenter
 		'
 		'Label133
 		'
@@ -1661,8 +2008,561 @@ Partial Class frmNegotiation
 		Me.tpaImpacts.Padding = New System.Windows.Forms.Padding(3)
 		Me.tpaImpacts.Size = New System.Drawing.Size(564, 454)
 		Me.tpaImpacts.TabIndex = 2
-		Me.tpaImpacts.Text = "Impacts S"
+		Me.tpaImpacts.Text = "Impacts"
 		Me.tpaImpacts.UseVisualStyleBackColor = True
+		'
+		'Label98
+		'
+		Me.Label98.Location = New System.Drawing.Point(239, 6)
+		Me.Label98.Name = "Label98"
+		Me.Label98.Size = New System.Drawing.Size(97, 20)
+		Me.Label98.TabIndex = 190
+		Me.Label98.Text = "Large"
+		Me.Label98.TextAlign = System.Drawing.ContentAlignment.TopCenter
+		'
+		'Label99
+		'
+		Me.Label99.Location = New System.Drawing.Point(102, 10)
+		Me.Label99.Name = "Label99"
+		Me.Label99.Size = New System.Drawing.Size(97, 20)
+		Me.Label99.TabIndex = 189
+		Me.Label99.Text = "Small"
+		Me.Label99.TextAlign = System.Drawing.ContentAlignment.TopCenter
+		'
+		'DssLabel40
+		'
+		Me.DssLabel40.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel40.DSSElementName = Nothing
+		Me.DssLabel40.DSSLocation = 0
+		Me.DssLabel40.DSSOffset = 0R
+		Me.DssLabel40.Location = New System.Drawing.Point(304, 328)
+		Me.DssLabel40.Name = "DssLabel40"
+		Me.DssLabel40.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel40.TabIndex = 150
+		Me.DssLabel40.Text = "-"
+		Me.DssLabel40.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel41
+		'
+		Me.DssLabel41.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel41.DSSElementName = Nothing
+		Me.DssLabel41.DSSLocation = 0
+		Me.DssLabel41.DSSOffset = 0R
+		Me.DssLabel41.Location = New System.Drawing.Point(264, 328)
+		Me.DssLabel41.Name = "DssLabel41"
+		Me.DssLabel41.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel41.TabIndex = 171
+		Me.DssLabel41.Text = "-"
+		Me.DssLabel41.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel42
+		'
+		Me.DssLabel42.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel42.DSSElementName = Nothing
+		Me.DssLabel42.DSSLocation = 0
+		Me.DssLabel42.DSSOffset = 0R
+		Me.DssLabel42.Location = New System.Drawing.Point(231, 328)
+		Me.DssLabel42.Name = "DssLabel42"
+		Me.DssLabel42.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel42.TabIndex = 172
+		Me.DssLabel42.Text = "-"
+		Me.DssLabel42.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel43
+		'
+		Me.DssLabel43.AccessibleDescription = ""
+		Me.DssLabel43.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel43.DSSElementName = Nothing
+		Me.DssLabel43.DSSLocation = 0
+		Me.DssLabel43.DSSOffset = 0R
+		Me.DssLabel43.Location = New System.Drawing.Point(304, 259)
+		Me.DssLabel43.Name = "DssLabel43"
+		Me.DssLabel43.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel43.TabIndex = 173
+		Me.DssLabel43.Text = "-"
+		Me.DssLabel43.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel44
+		'
+		Me.DssLabel44.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel44.DSSElementName = Nothing
+		Me.DssLabel44.DSSLocation = 0
+		Me.DssLabel44.DSSOffset = 0R
+		Me.DssLabel44.Location = New System.Drawing.Point(264, 259)
+		Me.DssLabel44.Name = "DssLabel44"
+		Me.DssLabel44.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel44.TabIndex = 174
+		Me.DssLabel44.Text = "-"
+		Me.DssLabel44.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel45
+		'
+		Me.DssLabel45.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel45.DSSElementName = Nothing
+		Me.DssLabel45.DSSLocation = 0
+		Me.DssLabel45.DSSOffset = 0R
+		Me.DssLabel45.Location = New System.Drawing.Point(231, 259)
+		Me.DssLabel45.Name = "DssLabel45"
+		Me.DssLabel45.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel45.TabIndex = 175
+		Me.DssLabel45.Text = "-"
+		Me.DssLabel45.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel46
+		'
+		Me.DssLabel46.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel46.DSSElementName = Nothing
+		Me.DssLabel46.DSSLocation = 0
+		Me.DssLabel46.DSSOffset = 0R
+		Me.DssLabel46.Location = New System.Drawing.Point(304, 190)
+		Me.DssLabel46.Name = "DssLabel46"
+		Me.DssLabel46.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel46.TabIndex = 176
+		Me.DssLabel46.Text = "-"
+		Me.DssLabel46.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel47
+		'
+		Me.DssLabel47.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel47.DSSElementName = Nothing
+		Me.DssLabel47.DSSLocation = 0
+		Me.DssLabel47.DSSOffset = 0R
+		Me.DssLabel47.Location = New System.Drawing.Point(264, 190)
+		Me.DssLabel47.Name = "DssLabel47"
+		Me.DssLabel47.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel47.TabIndex = 177
+		Me.DssLabel47.Text = "-"
+		Me.DssLabel47.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel48
+		'
+		Me.DssLabel48.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel48.DSSElementName = Nothing
+		Me.DssLabel48.DSSLocation = 0
+		Me.DssLabel48.DSSOffset = 0R
+		Me.DssLabel48.Location = New System.Drawing.Point(231, 190)
+		Me.DssLabel48.Name = "DssLabel48"
+		Me.DssLabel48.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel48.TabIndex = 179
+		Me.DssLabel48.Text = "-"
+		Me.DssLabel48.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel49
+		'
+		Me.DssLabel49.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel49.DSSElementName = Nothing
+		Me.DssLabel49.DSSLocation = 0
+		Me.DssLabel49.DSSOffset = 0R
+		Me.DssLabel49.Location = New System.Drawing.Point(304, 98)
+		Me.DssLabel49.Name = "DssLabel49"
+		Me.DssLabel49.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel49.TabIndex = 187
+		Me.DssLabel49.Text = "-"
+		Me.DssLabel49.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel50
+		'
+		Me.DssLabel50.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel50.DSSElementName = Nothing
+		Me.DssLabel50.DSSLocation = 0
+		Me.DssLabel50.DSSOffset = 0R
+		Me.DssLabel50.Location = New System.Drawing.Point(264, 98)
+		Me.DssLabel50.Name = "DssLabel50"
+		Me.DssLabel50.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel50.TabIndex = 180
+		Me.DssLabel50.Text = "-"
+		Me.DssLabel50.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel51
+		'
+		Me.DssLabel51.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel51.DSSElementName = Nothing
+		Me.DssLabel51.DSSLocation = 0
+		Me.DssLabel51.DSSOffset = 0R
+		Me.DssLabel51.Location = New System.Drawing.Point(231, 98)
+		Me.DssLabel51.Name = "DssLabel51"
+		Me.DssLabel51.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel51.TabIndex = 181
+		Me.DssLabel51.Text = "-"
+		Me.DssLabel51.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel52
+		'
+		Me.DssLabel52.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel52.DSSElementName = Nothing
+		Me.DssLabel52.DSSLocation = 0
+		Me.DssLabel52.DSSOffset = 0R
+		Me.DssLabel52.Location = New System.Drawing.Point(304, 305)
+		Me.DssLabel52.Name = "DssLabel52"
+		Me.DssLabel52.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel52.TabIndex = 182
+		Me.DssLabel52.Text = "-"
+		Me.DssLabel52.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel53
+		'
+		Me.DssLabel53.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel53.DSSElementName = Nothing
+		Me.DssLabel53.DSSLocation = 0
+		Me.DssLabel53.DSSOffset = 0R
+		Me.DssLabel53.Location = New System.Drawing.Point(264, 305)
+		Me.DssLabel53.Name = "DssLabel53"
+		Me.DssLabel53.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel53.TabIndex = 183
+		Me.DssLabel53.Text = "-"
+		Me.DssLabel53.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel54
+		'
+		Me.DssLabel54.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel54.DSSElementName = Nothing
+		Me.DssLabel54.DSSLocation = 0
+		Me.DssLabel54.DSSOffset = 0R
+		Me.DssLabel54.Location = New System.Drawing.Point(231, 305)
+		Me.DssLabel54.Name = "DssLabel54"
+		Me.DssLabel54.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel54.TabIndex = 184
+		Me.DssLabel54.Text = "-"
+		Me.DssLabel54.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel55
+		'
+		Me.DssLabel55.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel55.DSSElementName = Nothing
+		Me.DssLabel55.DSSLocation = 0
+		Me.DssLabel55.DSSOffset = 0R
+		Me.DssLabel55.Location = New System.Drawing.Point(304, 236)
+		Me.DssLabel55.Name = "DssLabel55"
+		Me.DssLabel55.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel55.TabIndex = 185
+		Me.DssLabel55.Text = "-"
+		Me.DssLabel55.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel56
+		'
+		Me.DssLabel56.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel56.DSSElementName = Nothing
+		Me.DssLabel56.DSSLocation = 0
+		Me.DssLabel56.DSSOffset = 0R
+		Me.DssLabel56.Location = New System.Drawing.Point(264, 236)
+		Me.DssLabel56.Name = "DssLabel56"
+		Me.DssLabel56.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel56.TabIndex = 186
+		Me.DssLabel56.Text = "-"
+		Me.DssLabel56.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel57
+		'
+		Me.DssLabel57.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel57.DSSElementName = Nothing
+		Me.DssLabel57.DSSLocation = 0
+		Me.DssLabel57.DSSOffset = 0R
+		Me.DssLabel57.Location = New System.Drawing.Point(231, 236)
+		Me.DssLabel57.Name = "DssLabel57"
+		Me.DssLabel57.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel57.TabIndex = 170
+		Me.DssLabel57.Text = "-"
+		Me.DssLabel57.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel58
+		'
+		Me.DssLabel58.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel58.DSSElementName = Nothing
+		Me.DssLabel58.DSSLocation = 0
+		Me.DssLabel58.DSSOffset = 0R
+		Me.DssLabel58.Location = New System.Drawing.Point(304, 167)
+		Me.DssLabel58.Name = "DssLabel58"
+		Me.DssLabel58.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel58.TabIndex = 178
+		Me.DssLabel58.Text = "-"
+		Me.DssLabel58.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel59
+		'
+		Me.DssLabel59.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel59.DSSElementName = Nothing
+		Me.DssLabel59.DSSLocation = 0
+		Me.DssLabel59.DSSOffset = 0R
+		Me.DssLabel59.Location = New System.Drawing.Point(264, 167)
+		Me.DssLabel59.Name = "DssLabel59"
+		Me.DssLabel59.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel59.TabIndex = 169
+		Me.DssLabel59.Text = "-"
+		Me.DssLabel59.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel60
+		'
+		Me.DssLabel60.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel60.DSSElementName = Nothing
+		Me.DssLabel60.DSSLocation = 0
+		Me.DssLabel60.DSSOffset = 0R
+		Me.DssLabel60.Location = New System.Drawing.Point(231, 167)
+		Me.DssLabel60.Name = "DssLabel60"
+		Me.DssLabel60.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel60.TabIndex = 158
+		Me.DssLabel60.Text = "-"
+		Me.DssLabel60.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel61
+		'
+		Me.DssLabel61.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel61.DSSElementName = Nothing
+		Me.DssLabel61.DSSLocation = 0
+		Me.DssLabel61.DSSOffset = 0R
+		Me.DssLabel61.Location = New System.Drawing.Point(304, 75)
+		Me.DssLabel61.Name = "DssLabel61"
+		Me.DssLabel61.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel61.TabIndex = 151
+		Me.DssLabel61.Text = "-"
+		Me.DssLabel61.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel62
+		'
+		Me.DssLabel62.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel62.DSSElementName = Nothing
+		Me.DssLabel62.DSSLocation = 0
+		Me.DssLabel62.DSSOffset = 0R
+		Me.DssLabel62.Location = New System.Drawing.Point(264, 75)
+		Me.DssLabel62.Name = "DssLabel62"
+		Me.DssLabel62.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel62.TabIndex = 152
+		Me.DssLabel62.Text = "-"
+		Me.DssLabel62.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel63
+		'
+		Me.DssLabel63.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel63.DSSElementName = Nothing
+		Me.DssLabel63.DSSLocation = 0
+		Me.DssLabel63.DSSOffset = 0R
+		Me.DssLabel63.Location = New System.Drawing.Point(231, 75)
+		Me.DssLabel63.Name = "DssLabel63"
+		Me.DssLabel63.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel63.TabIndex = 153
+		Me.DssLabel63.Text = "-"
+		Me.DssLabel63.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel64
+		'
+		Me.DssLabel64.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel64.DSSElementName = Nothing
+		Me.DssLabel64.DSSLocation = 0
+		Me.DssLabel64.DSSOffset = 0R
+		Me.DssLabel64.Location = New System.Drawing.Point(304, 282)
+		Me.DssLabel64.Name = "DssLabel64"
+		Me.DssLabel64.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel64.TabIndex = 154
+		Me.DssLabel64.Text = "-"
+		Me.DssLabel64.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel65
+		'
+		Me.DssLabel65.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel65.DSSElementName = Nothing
+		Me.DssLabel65.DSSLocation = 0
+		Me.DssLabel65.DSSOffset = 0R
+		Me.DssLabel65.Location = New System.Drawing.Point(264, 282)
+		Me.DssLabel65.Name = "DssLabel65"
+		Me.DssLabel65.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel65.TabIndex = 155
+		Me.DssLabel65.Text = "-"
+		Me.DssLabel65.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel66
+		'
+		Me.DssLabel66.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel66.DSSElementName = Nothing
+		Me.DssLabel66.DSSLocation = 0
+		Me.DssLabel66.DSSOffset = 0R
+		Me.DssLabel66.Location = New System.Drawing.Point(231, 282)
+		Me.DssLabel66.Name = "DssLabel66"
+		Me.DssLabel66.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel66.TabIndex = 156
+		Me.DssLabel66.Text = "-"
+		Me.DssLabel66.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel67
+		'
+		Me.DssLabel67.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel67.DSSElementName = Nothing
+		Me.DssLabel67.DSSLocation = 0
+		Me.DssLabel67.DSSOffset = 0R
+		Me.DssLabel67.Location = New System.Drawing.Point(304, 213)
+		Me.DssLabel67.Name = "DssLabel67"
+		Me.DssLabel67.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel67.TabIndex = 157
+		Me.DssLabel67.Text = "-"
+		Me.DssLabel67.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel68
+		'
+		Me.DssLabel68.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel68.DSSElementName = Nothing
+		Me.DssLabel68.DSSLocation = 0
+		Me.DssLabel68.DSSOffset = 0R
+		Me.DssLabel68.Location = New System.Drawing.Point(264, 213)
+		Me.DssLabel68.Name = "DssLabel68"
+		Me.DssLabel68.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel68.TabIndex = 159
+		Me.DssLabel68.Text = "-"
+		Me.DssLabel68.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel69
+		'
+		Me.DssLabel69.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel69.DSSElementName = Nothing
+		Me.DssLabel69.DSSLocation = 0
+		Me.DssLabel69.DSSOffset = 0R
+		Me.DssLabel69.Location = New System.Drawing.Point(231, 213)
+		Me.DssLabel69.Name = "DssLabel69"
+		Me.DssLabel69.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel69.TabIndex = 167
+		Me.DssLabel69.Text = "-"
+		Me.DssLabel69.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel70
+		'
+		Me.DssLabel70.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel70.DSSElementName = Nothing
+		Me.DssLabel70.DSSLocation = 0
+		Me.DssLabel70.DSSOffset = 0R
+		Me.DssLabel70.Location = New System.Drawing.Point(304, 121)
+		Me.DssLabel70.Name = "DssLabel70"
+		Me.DssLabel70.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel70.TabIndex = 160
+		Me.DssLabel70.Text = "-"
+		Me.DssLabel70.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel71
+		'
+		Me.DssLabel71.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel71.DSSElementName = Nothing
+		Me.DssLabel71.DSSLocation = 0
+		Me.DssLabel71.DSSOffset = 0R
+		Me.DssLabel71.Location = New System.Drawing.Point(264, 121)
+		Me.DssLabel71.Name = "DssLabel71"
+		Me.DssLabel71.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel71.TabIndex = 161
+		Me.DssLabel71.Text = "-"
+		Me.DssLabel71.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel72
+		'
+		Me.DssLabel72.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel72.DSSElementName = Nothing
+		Me.DssLabel72.DSSLocation = 0
+		Me.DssLabel72.DSSOffset = 0R
+		Me.DssLabel72.Location = New System.Drawing.Point(231, 121)
+		Me.DssLabel72.Name = "DssLabel72"
+		Me.DssLabel72.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel72.TabIndex = 162
+		Me.DssLabel72.Text = "-"
+		Me.DssLabel72.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel73
+		'
+		Me.DssLabel73.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel73.DSSElementName = Nothing
+		Me.DssLabel73.DSSLocation = 0
+		Me.DssLabel73.DSSOffset = 0R
+		Me.DssLabel73.Location = New System.Drawing.Point(304, 144)
+		Me.DssLabel73.Name = "DssLabel73"
+		Me.DssLabel73.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel73.TabIndex = 163
+		Me.DssLabel73.Text = "-"
+		Me.DssLabel73.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel74
+		'
+		Me.DssLabel74.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel74.DSSElementName = Nothing
+		Me.DssLabel74.DSSLocation = 0
+		Me.DssLabel74.DSSOffset = 0R
+		Me.DssLabel74.Location = New System.Drawing.Point(264, 144)
+		Me.DssLabel74.Name = "DssLabel74"
+		Me.DssLabel74.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel74.TabIndex = 164
+		Me.DssLabel74.Text = "-"
+		Me.DssLabel74.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel75
+		'
+		Me.DssLabel75.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel75.DSSElementName = Nothing
+		Me.DssLabel75.DSSLocation = 0
+		Me.DssLabel75.DSSOffset = 0R
+		Me.DssLabel75.Location = New System.Drawing.Point(231, 144)
+		Me.DssLabel75.Name = "DssLabel75"
+		Me.DssLabel75.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel75.TabIndex = 165
+		Me.DssLabel75.Text = "-"
+		Me.DssLabel75.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel76
+		'
+		Me.DssLabel76.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel76.DSSElementName = Nothing
+		Me.DssLabel76.DSSLocation = 0
+		Me.DssLabel76.DSSOffset = 0R
+		Me.DssLabel76.Location = New System.Drawing.Point(304, 52)
+		Me.DssLabel76.Name = "DssLabel76"
+		Me.DssLabel76.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel76.TabIndex = 166
+		Me.DssLabel76.Text = "-"
+		Me.DssLabel76.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel77
+		'
+		Me.DssLabel77.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel77.DSSElementName = Nothing
+		Me.DssLabel77.DSSLocation = 0
+		Me.DssLabel77.DSSOffset = 0R
+		Me.DssLabel77.Location = New System.Drawing.Point(264, 52)
+		Me.DssLabel77.Name = "DssLabel77"
+		Me.DssLabel77.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel77.TabIndex = 168
+		Me.DssLabel77.Text = "-"
+		Me.DssLabel77.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssLabel78
+		'
+		Me.DssLabel78.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.DssLabel78.DSSElementName = Nothing
+		Me.DssLabel78.DSSLocation = 0
+		Me.DssLabel78.DSSOffset = 0R
+		Me.DssLabel78.Location = New System.Drawing.Point(231, 52)
+		Me.DssLabel78.Name = "DssLabel78"
+		Me.DssLabel78.Size = New System.Drawing.Size(34, 20)
+		Me.DssLabel78.TabIndex = 188
+		Me.DssLabel78.Text = "-"
+		Me.DssLabel78.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'Label95
+		'
+		Me.Label95.Location = New System.Drawing.Point(304, 35)
+		Me.Label95.Name = "Label95"
+		Me.Label95.Size = New System.Drawing.Size(34, 20)
+		Me.Label95.TabIndex = 147
+		Me.Label95.Text = "env"
+		Me.Label95.TextAlign = System.Drawing.ContentAlignment.TopCenter
+		'
+		'Label96
+		'
+		Me.Label96.Location = New System.Drawing.Point(264, 35)
+		Me.Label96.Name = "Label96"
+		Me.Label96.Size = New System.Drawing.Size(34, 20)
+		Me.Label96.TabIndex = 148
+		Me.Label96.Text = "soc"
+		Me.Label96.TextAlign = System.Drawing.ContentAlignment.TopCenter
+		'
+		'Label97
+		'
+		Me.Label97.Location = New System.Drawing.Point(231, 35)
+		Me.Label97.Name = "Label97"
+		Me.Label97.Size = New System.Drawing.Size(34, 20)
+		Me.Label97.TabIndex = 149
+		Me.Label97.Text = "eco"
+		Me.Label97.TextAlign = System.Drawing.ContentAlignment.TopCenter
 		'
 		'lblEnv13_1
 		'
@@ -5456,1112 +6356,6 @@ Partial Class frmNegotiation
 		Me.ElementHost1.Text = "ElementHost1"
 		Me.ElementHost1.Child = Me.mapControl
 		'
-		'DssLabel1
-		'
-		Me.DssLabel1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel1.DSSElementName = Nothing
-		Me.DssLabel1.DSSLocation = 0
-		Me.DssLabel1.DSSOffset = 0R
-		Me.DssLabel1.Location = New System.Drawing.Point(303, 326)
-		Me.DssLabel1.Name = "DssLabel1"
-		Me.DssLabel1.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel1.TabIndex = 105
-		Me.DssLabel1.Text = "-"
-		Me.DssLabel1.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel2
-		'
-		Me.DssLabel2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel2.DSSElementName = Nothing
-		Me.DssLabel2.DSSLocation = 0
-		Me.DssLabel2.DSSOffset = 0R
-		Me.DssLabel2.Location = New System.Drawing.Point(263, 326)
-		Me.DssLabel2.Name = "DssLabel2"
-		Me.DssLabel2.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel2.TabIndex = 87
-		Me.DssLabel2.Text = "-"
-		Me.DssLabel2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel3
-		'
-		Me.DssLabel3.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel3.DSSElementName = Nothing
-		Me.DssLabel3.DSSLocation = 0
-		Me.DssLabel3.DSSOffset = 0R
-		Me.DssLabel3.Location = New System.Drawing.Point(230, 326)
-		Me.DssLabel3.Name = "DssLabel3"
-		Me.DssLabel3.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel3.TabIndex = 88
-		Me.DssLabel3.Text = "-"
-		Me.DssLabel3.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel4
-		'
-		Me.DssLabel4.AccessibleDescription = ""
-		Me.DssLabel4.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel4.DSSElementName = Nothing
-		Me.DssLabel4.DSSLocation = 0
-		Me.DssLabel4.DSSOffset = 0R
-		Me.DssLabel4.Location = New System.Drawing.Point(303, 257)
-		Me.DssLabel4.Name = "DssLabel4"
-		Me.DssLabel4.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel4.TabIndex = 89
-		Me.DssLabel4.Text = "-"
-		Me.DssLabel4.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel5
-		'
-		Me.DssLabel5.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel5.DSSElementName = Nothing
-		Me.DssLabel5.DSSLocation = 0
-		Me.DssLabel5.DSSOffset = 0R
-		Me.DssLabel5.Location = New System.Drawing.Point(263, 257)
-		Me.DssLabel5.Name = "DssLabel5"
-		Me.DssLabel5.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel5.TabIndex = 90
-		Me.DssLabel5.Text = "-"
-		Me.DssLabel5.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel6
-		'
-		Me.DssLabel6.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel6.DSSElementName = Nothing
-		Me.DssLabel6.DSSLocation = 0
-		Me.DssLabel6.DSSOffset = 0R
-		Me.DssLabel6.Location = New System.Drawing.Point(230, 257)
-		Me.DssLabel6.Name = "DssLabel6"
-		Me.DssLabel6.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel6.TabIndex = 91
-		Me.DssLabel6.Text = "-"
-		Me.DssLabel6.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel7
-		'
-		Me.DssLabel7.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel7.DSSElementName = Nothing
-		Me.DssLabel7.DSSLocation = 0
-		Me.DssLabel7.DSSOffset = 0R
-		Me.DssLabel7.Location = New System.Drawing.Point(303, 188)
-		Me.DssLabel7.Name = "DssLabel7"
-		Me.DssLabel7.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel7.TabIndex = 92
-		Me.DssLabel7.Text = "-"
-		Me.DssLabel7.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel8
-		'
-		Me.DssLabel8.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel8.DSSElementName = Nothing
-		Me.DssLabel8.DSSLocation = 0
-		Me.DssLabel8.DSSOffset = 0R
-		Me.DssLabel8.Location = New System.Drawing.Point(263, 188)
-		Me.DssLabel8.Name = "DssLabel8"
-		Me.DssLabel8.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel8.TabIndex = 93
-		Me.DssLabel8.Text = "-"
-		Me.DssLabel8.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel9
-		'
-		Me.DssLabel9.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel9.DSSElementName = Nothing
-		Me.DssLabel9.DSSLocation = 0
-		Me.DssLabel9.DSSOffset = 0R
-		Me.DssLabel9.Location = New System.Drawing.Point(230, 188)
-		Me.DssLabel9.Name = "DssLabel9"
-		Me.DssLabel9.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel9.TabIndex = 94
-		Me.DssLabel9.Text = "-"
-		Me.DssLabel9.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel10
-		'
-		Me.DssLabel10.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel10.DSSElementName = Nothing
-		Me.DssLabel10.DSSLocation = 0
-		Me.DssLabel10.DSSOffset = 0R
-		Me.DssLabel10.Location = New System.Drawing.Point(303, 96)
-		Me.DssLabel10.Name = "DssLabel10"
-		Me.DssLabel10.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel10.TabIndex = 95
-		Me.DssLabel10.Text = "-"
-		Me.DssLabel10.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel11
-		'
-		Me.DssLabel11.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel11.DSSElementName = Nothing
-		Me.DssLabel11.DSSLocation = 0
-		Me.DssLabel11.DSSOffset = 0R
-		Me.DssLabel11.Location = New System.Drawing.Point(263, 96)
-		Me.DssLabel11.Name = "DssLabel11"
-		Me.DssLabel11.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel11.TabIndex = 96
-		Me.DssLabel11.Text = "-"
-		Me.DssLabel11.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel12
-		'
-		Me.DssLabel12.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel12.DSSElementName = Nothing
-		Me.DssLabel12.DSSLocation = 0
-		Me.DssLabel12.DSSOffset = 0R
-		Me.DssLabel12.Location = New System.Drawing.Point(230, 96)
-		Me.DssLabel12.Name = "DssLabel12"
-		Me.DssLabel12.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel12.TabIndex = 97
-		Me.DssLabel12.Text = "-"
-		Me.DssLabel12.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel13
-		'
-		Me.DssLabel13.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel13.DSSElementName = Nothing
-		Me.DssLabel13.DSSLocation = 0
-		Me.DssLabel13.DSSOffset = 0R
-		Me.DssLabel13.Location = New System.Drawing.Point(303, 303)
-		Me.DssLabel13.Name = "DssLabel13"
-		Me.DssLabel13.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel13.TabIndex = 98
-		Me.DssLabel13.Text = "-"
-		Me.DssLabel13.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel14
-		'
-		Me.DssLabel14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel14.DSSElementName = Nothing
-		Me.DssLabel14.DSSLocation = 0
-		Me.DssLabel14.DSSOffset = 0R
-		Me.DssLabel14.Location = New System.Drawing.Point(263, 303)
-		Me.DssLabel14.Name = "DssLabel14"
-		Me.DssLabel14.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel14.TabIndex = 99
-		Me.DssLabel14.Text = "-"
-		Me.DssLabel14.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel15
-		'
-		Me.DssLabel15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel15.DSSElementName = Nothing
-		Me.DssLabel15.DSSLocation = 0
-		Me.DssLabel15.DSSOffset = 0R
-		Me.DssLabel15.Location = New System.Drawing.Point(230, 303)
-		Me.DssLabel15.Name = "DssLabel15"
-		Me.DssLabel15.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel15.TabIndex = 100
-		Me.DssLabel15.Text = "-"
-		Me.DssLabel15.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel16
-		'
-		Me.DssLabel16.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel16.DSSElementName = Nothing
-		Me.DssLabel16.DSSLocation = 0
-		Me.DssLabel16.DSSOffset = 0R
-		Me.DssLabel16.Location = New System.Drawing.Point(303, 234)
-		Me.DssLabel16.Name = "DssLabel16"
-		Me.DssLabel16.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel16.TabIndex = 101
-		Me.DssLabel16.Text = "-"
-		Me.DssLabel16.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel17
-		'
-		Me.DssLabel17.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel17.DSSElementName = Nothing
-		Me.DssLabel17.DSSLocation = 0
-		Me.DssLabel17.DSSOffset = 0R
-		Me.DssLabel17.Location = New System.Drawing.Point(263, 234)
-		Me.DssLabel17.Name = "DssLabel17"
-		Me.DssLabel17.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel17.TabIndex = 102
-		Me.DssLabel17.Text = "-"
-		Me.DssLabel17.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel18
-		'
-		Me.DssLabel18.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel18.DSSElementName = Nothing
-		Me.DssLabel18.DSSLocation = 0
-		Me.DssLabel18.DSSOffset = 0R
-		Me.DssLabel18.Location = New System.Drawing.Point(230, 234)
-		Me.DssLabel18.Name = "DssLabel18"
-		Me.DssLabel18.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel18.TabIndex = 103
-		Me.DssLabel18.Text = "-"
-		Me.DssLabel18.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel19
-		'
-		Me.DssLabel19.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel19.DSSElementName = Nothing
-		Me.DssLabel19.DSSLocation = 0
-		Me.DssLabel19.DSSOffset = 0R
-		Me.DssLabel19.Location = New System.Drawing.Point(303, 165)
-		Me.DssLabel19.Name = "DssLabel19"
-		Me.DssLabel19.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel19.TabIndex = 86
-		Me.DssLabel19.Text = "-"
-		Me.DssLabel19.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel20
-		'
-		Me.DssLabel20.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel20.DSSElementName = Nothing
-		Me.DssLabel20.DSSLocation = 0
-		Me.DssLabel20.DSSOffset = 0R
-		Me.DssLabel20.Location = New System.Drawing.Point(263, 165)
-		Me.DssLabel20.Name = "DssLabel20"
-		Me.DssLabel20.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel20.TabIndex = 104
-		Me.DssLabel20.Text = "-"
-		Me.DssLabel20.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel21
-		'
-		Me.DssLabel21.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel21.DSSElementName = Nothing
-		Me.DssLabel21.DSSLocation = 0
-		Me.DssLabel21.DSSOffset = 0R
-		Me.DssLabel21.Location = New System.Drawing.Point(230, 165)
-		Me.DssLabel21.Name = "DssLabel21"
-		Me.DssLabel21.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel21.TabIndex = 85
-		Me.DssLabel21.Text = "-"
-		Me.DssLabel21.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel22
-		'
-		Me.DssLabel22.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel22.DSSElementName = Nothing
-		Me.DssLabel22.DSSLocation = 0
-		Me.DssLabel22.DSSOffset = 0R
-		Me.DssLabel22.Location = New System.Drawing.Point(303, 73)
-		Me.DssLabel22.Name = "DssLabel22"
-		Me.DssLabel22.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel22.TabIndex = 83
-		Me.DssLabel22.Text = "-"
-		Me.DssLabel22.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel23
-		'
-		Me.DssLabel23.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel23.DSSElementName = Nothing
-		Me.DssLabel23.DSSLocation = 0
-		Me.DssLabel23.DSSOffset = 0R
-		Me.DssLabel23.Location = New System.Drawing.Point(263, 73)
-		Me.DssLabel23.Name = "DssLabel23"
-		Me.DssLabel23.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel23.TabIndex = 68
-		Me.DssLabel23.Text = "-"
-		Me.DssLabel23.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel24
-		'
-		Me.DssLabel24.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel24.DSSElementName = Nothing
-		Me.DssLabel24.DSSLocation = 0
-		Me.DssLabel24.DSSOffset = 0R
-		Me.DssLabel24.Location = New System.Drawing.Point(230, 73)
-		Me.DssLabel24.Name = "DssLabel24"
-		Me.DssLabel24.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel24.TabIndex = 69
-		Me.DssLabel24.Text = "-"
-		Me.DssLabel24.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel25
-		'
-		Me.DssLabel25.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel25.DSSElementName = Nothing
-		Me.DssLabel25.DSSLocation = 0
-		Me.DssLabel25.DSSOffset = 0R
-		Me.DssLabel25.Location = New System.Drawing.Point(303, 280)
-		Me.DssLabel25.Name = "DssLabel25"
-		Me.DssLabel25.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel25.TabIndex = 70
-		Me.DssLabel25.Text = "-"
-		Me.DssLabel25.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel26
-		'
-		Me.DssLabel26.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel26.DSSElementName = Nothing
-		Me.DssLabel26.DSSLocation = 0
-		Me.DssLabel26.DSSOffset = 0R
-		Me.DssLabel26.Location = New System.Drawing.Point(263, 280)
-		Me.DssLabel26.Name = "DssLabel26"
-		Me.DssLabel26.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel26.TabIndex = 71
-		Me.DssLabel26.Text = "-"
-		Me.DssLabel26.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel27
-		'
-		Me.DssLabel27.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel27.DSSElementName = Nothing
-		Me.DssLabel27.DSSLocation = 0
-		Me.DssLabel27.DSSOffset = 0R
-		Me.DssLabel27.Location = New System.Drawing.Point(230, 280)
-		Me.DssLabel27.Name = "DssLabel27"
-		Me.DssLabel27.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel27.TabIndex = 72
-		Me.DssLabel27.Text = "-"
-		Me.DssLabel27.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel28
-		'
-		Me.DssLabel28.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel28.DSSElementName = Nothing
-		Me.DssLabel28.DSSLocation = 0
-		Me.DssLabel28.DSSOffset = 0R
-		Me.DssLabel28.Location = New System.Drawing.Point(303, 211)
-		Me.DssLabel28.Name = "DssLabel28"
-		Me.DssLabel28.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel28.TabIndex = 73
-		Me.DssLabel28.Text = "-"
-		Me.DssLabel28.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel29
-		'
-		Me.DssLabel29.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel29.DSSElementName = Nothing
-		Me.DssLabel29.DSSLocation = 0
-		Me.DssLabel29.DSSOffset = 0R
-		Me.DssLabel29.Location = New System.Drawing.Point(263, 211)
-		Me.DssLabel29.Name = "DssLabel29"
-		Me.DssLabel29.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel29.TabIndex = 74
-		Me.DssLabel29.Text = "-"
-		Me.DssLabel29.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel30
-		'
-		Me.DssLabel30.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel30.DSSElementName = Nothing
-		Me.DssLabel30.DSSLocation = 0
-		Me.DssLabel30.DSSOffset = 0R
-		Me.DssLabel30.Location = New System.Drawing.Point(230, 211)
-		Me.DssLabel30.Name = "DssLabel30"
-		Me.DssLabel30.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel30.TabIndex = 75
-		Me.DssLabel30.Text = "-"
-		Me.DssLabel30.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel31
-		'
-		Me.DssLabel31.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel31.DSSElementName = Nothing
-		Me.DssLabel31.DSSLocation = 0
-		Me.DssLabel31.DSSOffset = 0R
-		Me.DssLabel31.Location = New System.Drawing.Point(303, 119)
-		Me.DssLabel31.Name = "DssLabel31"
-		Me.DssLabel31.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel31.TabIndex = 84
-		Me.DssLabel31.Text = "-"
-		Me.DssLabel31.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel32
-		'
-		Me.DssLabel32.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel32.DSSElementName = Nothing
-		Me.DssLabel32.DSSLocation = 0
-		Me.DssLabel32.DSSOffset = 0R
-		Me.DssLabel32.Location = New System.Drawing.Point(263, 119)
-		Me.DssLabel32.Name = "DssLabel32"
-		Me.DssLabel32.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel32.TabIndex = 76
-		Me.DssLabel32.Text = "-"
-		Me.DssLabel32.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel33
-		'
-		Me.DssLabel33.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel33.DSSElementName = Nothing
-		Me.DssLabel33.DSSLocation = 0
-		Me.DssLabel33.DSSOffset = 0R
-		Me.DssLabel33.Location = New System.Drawing.Point(230, 119)
-		Me.DssLabel33.Name = "DssLabel33"
-		Me.DssLabel33.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel33.TabIndex = 77
-		Me.DssLabel33.Text = "-"
-		Me.DssLabel33.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel34
-		'
-		Me.DssLabel34.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel34.DSSElementName = Nothing
-		Me.DssLabel34.DSSLocation = 0
-		Me.DssLabel34.DSSOffset = 0R
-		Me.DssLabel34.Location = New System.Drawing.Point(303, 142)
-		Me.DssLabel34.Name = "DssLabel34"
-		Me.DssLabel34.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel34.TabIndex = 78
-		Me.DssLabel34.Text = "-"
-		Me.DssLabel34.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel35
-		'
-		Me.DssLabel35.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel35.DSSElementName = Nothing
-		Me.DssLabel35.DSSLocation = 0
-		Me.DssLabel35.DSSOffset = 0R
-		Me.DssLabel35.Location = New System.Drawing.Point(263, 142)
-		Me.DssLabel35.Name = "DssLabel35"
-		Me.DssLabel35.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel35.TabIndex = 79
-		Me.DssLabel35.Text = "-"
-		Me.DssLabel35.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel36
-		'
-		Me.DssLabel36.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel36.DSSElementName = Nothing
-		Me.DssLabel36.DSSLocation = 0
-		Me.DssLabel36.DSSOffset = 0R
-		Me.DssLabel36.Location = New System.Drawing.Point(230, 142)
-		Me.DssLabel36.Name = "DssLabel36"
-		Me.DssLabel36.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel36.TabIndex = 80
-		Me.DssLabel36.Text = "-"
-		Me.DssLabel36.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel37
-		'
-		Me.DssLabel37.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel37.DSSElementName = Nothing
-		Me.DssLabel37.DSSLocation = 0
-		Me.DssLabel37.DSSOffset = 0R
-		Me.DssLabel37.Location = New System.Drawing.Point(303, 50)
-		Me.DssLabel37.Name = "DssLabel37"
-		Me.DssLabel37.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel37.TabIndex = 81
-		Me.DssLabel37.Text = "-"
-		Me.DssLabel37.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel38
-		'
-		Me.DssLabel38.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel38.DSSElementName = Nothing
-		Me.DssLabel38.DSSLocation = 0
-		Me.DssLabel38.DSSOffset = 0R
-		Me.DssLabel38.Location = New System.Drawing.Point(263, 50)
-		Me.DssLabel38.Name = "DssLabel38"
-		Me.DssLabel38.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel38.TabIndex = 82
-		Me.DssLabel38.Text = "-"
-		Me.DssLabel38.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel39
-		'
-		Me.DssLabel39.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel39.DSSElementName = Nothing
-		Me.DssLabel39.DSSLocation = 0
-		Me.DssLabel39.DSSOffset = 0R
-		Me.DssLabel39.Location = New System.Drawing.Point(230, 50)
-		Me.DssLabel39.Name = "DssLabel39"
-		Me.DssLabel39.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel39.TabIndex = 67
-		Me.DssLabel39.Text = "-"
-		Me.DssLabel39.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'Label87
-		'
-		Me.Label87.Location = New System.Drawing.Point(303, 33)
-		Me.Label87.Name = "Label87"
-		Me.Label87.Size = New System.Drawing.Size(34, 20)
-		Me.Label87.TabIndex = 66
-		Me.Label87.Text = "lan"
-		Me.Label87.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'Label89
-		'
-		Me.Label89.Location = New System.Drawing.Point(263, 33)
-		Me.Label89.Name = "Label89"
-		Me.Label89.Size = New System.Drawing.Size(34, 20)
-		Me.Label89.TabIndex = 65
-		Me.Label89.Text = "ind"
-		Me.Label89.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'Label90
-		'
-		Me.Label90.Location = New System.Drawing.Point(230, 33)
-		Me.Label90.Name = "Label90"
-		Me.Label90.Size = New System.Drawing.Size(34, 20)
-		Me.Label90.TabIndex = 64
-		Me.Label90.Text = "agr"
-		Me.Label90.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'Label93
-		'
-		Me.Label93.Location = New System.Drawing.Point(103, 12)
-		Me.Label93.Name = "Label93"
-		Me.Label93.Size = New System.Drawing.Size(97, 20)
-		Me.Label93.TabIndex = 106
-		Me.Label93.Text = "Small"
-		Me.Label93.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'Label94
-		'
-		Me.Label94.Location = New System.Drawing.Point(240, 8)
-		Me.Label94.Name = "Label94"
-		Me.Label94.Size = New System.Drawing.Size(97, 20)
-		Me.Label94.TabIndex = 107
-		Me.Label94.Text = "Large"
-		Me.Label94.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'DssLabel40
-		'
-		Me.DssLabel40.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel40.DSSElementName = Nothing
-		Me.DssLabel40.DSSLocation = 0
-		Me.DssLabel40.DSSOffset = 0R
-		Me.DssLabel40.Location = New System.Drawing.Point(304, 328)
-		Me.DssLabel40.Name = "DssLabel40"
-		Me.DssLabel40.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel40.TabIndex = 150
-		Me.DssLabel40.Text = "-"
-		Me.DssLabel40.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel41
-		'
-		Me.DssLabel41.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel41.DSSElementName = Nothing
-		Me.DssLabel41.DSSLocation = 0
-		Me.DssLabel41.DSSOffset = 0R
-		Me.DssLabel41.Location = New System.Drawing.Point(264, 328)
-		Me.DssLabel41.Name = "DssLabel41"
-		Me.DssLabel41.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel41.TabIndex = 171
-		Me.DssLabel41.Text = "-"
-		Me.DssLabel41.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel42
-		'
-		Me.DssLabel42.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel42.DSSElementName = Nothing
-		Me.DssLabel42.DSSLocation = 0
-		Me.DssLabel42.DSSOffset = 0R
-		Me.DssLabel42.Location = New System.Drawing.Point(231, 328)
-		Me.DssLabel42.Name = "DssLabel42"
-		Me.DssLabel42.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel42.TabIndex = 172
-		Me.DssLabel42.Text = "-"
-		Me.DssLabel42.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel43
-		'
-		Me.DssLabel43.AccessibleDescription = ""
-		Me.DssLabel43.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel43.DSSElementName = Nothing
-		Me.DssLabel43.DSSLocation = 0
-		Me.DssLabel43.DSSOffset = 0R
-		Me.DssLabel43.Location = New System.Drawing.Point(304, 259)
-		Me.DssLabel43.Name = "DssLabel43"
-		Me.DssLabel43.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel43.TabIndex = 173
-		Me.DssLabel43.Text = "-"
-		Me.DssLabel43.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel44
-		'
-		Me.DssLabel44.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel44.DSSElementName = Nothing
-		Me.DssLabel44.DSSLocation = 0
-		Me.DssLabel44.DSSOffset = 0R
-		Me.DssLabel44.Location = New System.Drawing.Point(264, 259)
-		Me.DssLabel44.Name = "DssLabel44"
-		Me.DssLabel44.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel44.TabIndex = 174
-		Me.DssLabel44.Text = "-"
-		Me.DssLabel44.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel45
-		'
-		Me.DssLabel45.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel45.DSSElementName = Nothing
-		Me.DssLabel45.DSSLocation = 0
-		Me.DssLabel45.DSSOffset = 0R
-		Me.DssLabel45.Location = New System.Drawing.Point(231, 259)
-		Me.DssLabel45.Name = "DssLabel45"
-		Me.DssLabel45.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel45.TabIndex = 175
-		Me.DssLabel45.Text = "-"
-		Me.DssLabel45.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel46
-		'
-		Me.DssLabel46.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel46.DSSElementName = Nothing
-		Me.DssLabel46.DSSLocation = 0
-		Me.DssLabel46.DSSOffset = 0R
-		Me.DssLabel46.Location = New System.Drawing.Point(304, 190)
-		Me.DssLabel46.Name = "DssLabel46"
-		Me.DssLabel46.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel46.TabIndex = 176
-		Me.DssLabel46.Text = "-"
-		Me.DssLabel46.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel47
-		'
-		Me.DssLabel47.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel47.DSSElementName = Nothing
-		Me.DssLabel47.DSSLocation = 0
-		Me.DssLabel47.DSSOffset = 0R
-		Me.DssLabel47.Location = New System.Drawing.Point(264, 190)
-		Me.DssLabel47.Name = "DssLabel47"
-		Me.DssLabel47.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel47.TabIndex = 177
-		Me.DssLabel47.Text = "-"
-		Me.DssLabel47.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel48
-		'
-		Me.DssLabel48.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel48.DSSElementName = Nothing
-		Me.DssLabel48.DSSLocation = 0
-		Me.DssLabel48.DSSOffset = 0R
-		Me.DssLabel48.Location = New System.Drawing.Point(231, 190)
-		Me.DssLabel48.Name = "DssLabel48"
-		Me.DssLabel48.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel48.TabIndex = 179
-		Me.DssLabel48.Text = "-"
-		Me.DssLabel48.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel49
-		'
-		Me.DssLabel49.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel49.DSSElementName = Nothing
-		Me.DssLabel49.DSSLocation = 0
-		Me.DssLabel49.DSSOffset = 0R
-		Me.DssLabel49.Location = New System.Drawing.Point(304, 98)
-		Me.DssLabel49.Name = "DssLabel49"
-		Me.DssLabel49.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel49.TabIndex = 187
-		Me.DssLabel49.Text = "-"
-		Me.DssLabel49.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel50
-		'
-		Me.DssLabel50.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel50.DSSElementName = Nothing
-		Me.DssLabel50.DSSLocation = 0
-		Me.DssLabel50.DSSOffset = 0R
-		Me.DssLabel50.Location = New System.Drawing.Point(264, 98)
-		Me.DssLabel50.Name = "DssLabel50"
-		Me.DssLabel50.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel50.TabIndex = 180
-		Me.DssLabel50.Text = "-"
-		Me.DssLabel50.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel51
-		'
-		Me.DssLabel51.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel51.DSSElementName = Nothing
-		Me.DssLabel51.DSSLocation = 0
-		Me.DssLabel51.DSSOffset = 0R
-		Me.DssLabel51.Location = New System.Drawing.Point(231, 98)
-		Me.DssLabel51.Name = "DssLabel51"
-		Me.DssLabel51.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel51.TabIndex = 181
-		Me.DssLabel51.Text = "-"
-		Me.DssLabel51.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel52
-		'
-		Me.DssLabel52.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel52.DSSElementName = Nothing
-		Me.DssLabel52.DSSLocation = 0
-		Me.DssLabel52.DSSOffset = 0R
-		Me.DssLabel52.Location = New System.Drawing.Point(304, 305)
-		Me.DssLabel52.Name = "DssLabel52"
-		Me.DssLabel52.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel52.TabIndex = 182
-		Me.DssLabel52.Text = "-"
-		Me.DssLabel52.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel53
-		'
-		Me.DssLabel53.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel53.DSSElementName = Nothing
-		Me.DssLabel53.DSSLocation = 0
-		Me.DssLabel53.DSSOffset = 0R
-		Me.DssLabel53.Location = New System.Drawing.Point(264, 305)
-		Me.DssLabel53.Name = "DssLabel53"
-		Me.DssLabel53.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel53.TabIndex = 183
-		Me.DssLabel53.Text = "-"
-		Me.DssLabel53.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel54
-		'
-		Me.DssLabel54.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel54.DSSElementName = Nothing
-		Me.DssLabel54.DSSLocation = 0
-		Me.DssLabel54.DSSOffset = 0R
-		Me.DssLabel54.Location = New System.Drawing.Point(231, 305)
-		Me.DssLabel54.Name = "DssLabel54"
-		Me.DssLabel54.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel54.TabIndex = 184
-		Me.DssLabel54.Text = "-"
-		Me.DssLabel54.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel55
-		'
-		Me.DssLabel55.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel55.DSSElementName = Nothing
-		Me.DssLabel55.DSSLocation = 0
-		Me.DssLabel55.DSSOffset = 0R
-		Me.DssLabel55.Location = New System.Drawing.Point(304, 236)
-		Me.DssLabel55.Name = "DssLabel55"
-		Me.DssLabel55.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel55.TabIndex = 185
-		Me.DssLabel55.Text = "-"
-		Me.DssLabel55.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel56
-		'
-		Me.DssLabel56.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel56.DSSElementName = Nothing
-		Me.DssLabel56.DSSLocation = 0
-		Me.DssLabel56.DSSOffset = 0R
-		Me.DssLabel56.Location = New System.Drawing.Point(264, 236)
-		Me.DssLabel56.Name = "DssLabel56"
-		Me.DssLabel56.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel56.TabIndex = 186
-		Me.DssLabel56.Text = "-"
-		Me.DssLabel56.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel57
-		'
-		Me.DssLabel57.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel57.DSSElementName = Nothing
-		Me.DssLabel57.DSSLocation = 0
-		Me.DssLabel57.DSSOffset = 0R
-		Me.DssLabel57.Location = New System.Drawing.Point(231, 236)
-		Me.DssLabel57.Name = "DssLabel57"
-		Me.DssLabel57.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel57.TabIndex = 170
-		Me.DssLabel57.Text = "-"
-		Me.DssLabel57.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel58
-		'
-		Me.DssLabel58.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel58.DSSElementName = Nothing
-		Me.DssLabel58.DSSLocation = 0
-		Me.DssLabel58.DSSOffset = 0R
-		Me.DssLabel58.Location = New System.Drawing.Point(304, 167)
-		Me.DssLabel58.Name = "DssLabel58"
-		Me.DssLabel58.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel58.TabIndex = 178
-		Me.DssLabel58.Text = "-"
-		Me.DssLabel58.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel59
-		'
-		Me.DssLabel59.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel59.DSSElementName = Nothing
-		Me.DssLabel59.DSSLocation = 0
-		Me.DssLabel59.DSSOffset = 0R
-		Me.DssLabel59.Location = New System.Drawing.Point(264, 167)
-		Me.DssLabel59.Name = "DssLabel59"
-		Me.DssLabel59.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel59.TabIndex = 169
-		Me.DssLabel59.Text = "-"
-		Me.DssLabel59.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel60
-		'
-		Me.DssLabel60.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel60.DSSElementName = Nothing
-		Me.DssLabel60.DSSLocation = 0
-		Me.DssLabel60.DSSOffset = 0R
-		Me.DssLabel60.Location = New System.Drawing.Point(231, 167)
-		Me.DssLabel60.Name = "DssLabel60"
-		Me.DssLabel60.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel60.TabIndex = 158
-		Me.DssLabel60.Text = "-"
-		Me.DssLabel60.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel61
-		'
-		Me.DssLabel61.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel61.DSSElementName = Nothing
-		Me.DssLabel61.DSSLocation = 0
-		Me.DssLabel61.DSSOffset = 0R
-		Me.DssLabel61.Location = New System.Drawing.Point(304, 75)
-		Me.DssLabel61.Name = "DssLabel61"
-		Me.DssLabel61.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel61.TabIndex = 151
-		Me.DssLabel61.Text = "-"
-		Me.DssLabel61.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel62
-		'
-		Me.DssLabel62.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel62.DSSElementName = Nothing
-		Me.DssLabel62.DSSLocation = 0
-		Me.DssLabel62.DSSOffset = 0R
-		Me.DssLabel62.Location = New System.Drawing.Point(264, 75)
-		Me.DssLabel62.Name = "DssLabel62"
-		Me.DssLabel62.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel62.TabIndex = 152
-		Me.DssLabel62.Text = "-"
-		Me.DssLabel62.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel63
-		'
-		Me.DssLabel63.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel63.DSSElementName = Nothing
-		Me.DssLabel63.DSSLocation = 0
-		Me.DssLabel63.DSSOffset = 0R
-		Me.DssLabel63.Location = New System.Drawing.Point(231, 75)
-		Me.DssLabel63.Name = "DssLabel63"
-		Me.DssLabel63.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel63.TabIndex = 153
-		Me.DssLabel63.Text = "-"
-		Me.DssLabel63.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel64
-		'
-		Me.DssLabel64.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel64.DSSElementName = Nothing
-		Me.DssLabel64.DSSLocation = 0
-		Me.DssLabel64.DSSOffset = 0R
-		Me.DssLabel64.Location = New System.Drawing.Point(304, 282)
-		Me.DssLabel64.Name = "DssLabel64"
-		Me.DssLabel64.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel64.TabIndex = 154
-		Me.DssLabel64.Text = "-"
-		Me.DssLabel64.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel65
-		'
-		Me.DssLabel65.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel65.DSSElementName = Nothing
-		Me.DssLabel65.DSSLocation = 0
-		Me.DssLabel65.DSSOffset = 0R
-		Me.DssLabel65.Location = New System.Drawing.Point(264, 282)
-		Me.DssLabel65.Name = "DssLabel65"
-		Me.DssLabel65.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel65.TabIndex = 155
-		Me.DssLabel65.Text = "-"
-		Me.DssLabel65.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel66
-		'
-		Me.DssLabel66.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel66.DSSElementName = Nothing
-		Me.DssLabel66.DSSLocation = 0
-		Me.DssLabel66.DSSOffset = 0R
-		Me.DssLabel66.Location = New System.Drawing.Point(231, 282)
-		Me.DssLabel66.Name = "DssLabel66"
-		Me.DssLabel66.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel66.TabIndex = 156
-		Me.DssLabel66.Text = "-"
-		Me.DssLabel66.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel67
-		'
-		Me.DssLabel67.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel67.DSSElementName = Nothing
-		Me.DssLabel67.DSSLocation = 0
-		Me.DssLabel67.DSSOffset = 0R
-		Me.DssLabel67.Location = New System.Drawing.Point(304, 213)
-		Me.DssLabel67.Name = "DssLabel67"
-		Me.DssLabel67.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel67.TabIndex = 157
-		Me.DssLabel67.Text = "-"
-		Me.DssLabel67.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel68
-		'
-		Me.DssLabel68.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel68.DSSElementName = Nothing
-		Me.DssLabel68.DSSLocation = 0
-		Me.DssLabel68.DSSOffset = 0R
-		Me.DssLabel68.Location = New System.Drawing.Point(264, 213)
-		Me.DssLabel68.Name = "DssLabel68"
-		Me.DssLabel68.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel68.TabIndex = 159
-		Me.DssLabel68.Text = "-"
-		Me.DssLabel68.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel69
-		'
-		Me.DssLabel69.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel69.DSSElementName = Nothing
-		Me.DssLabel69.DSSLocation = 0
-		Me.DssLabel69.DSSOffset = 0R
-		Me.DssLabel69.Location = New System.Drawing.Point(231, 213)
-		Me.DssLabel69.Name = "DssLabel69"
-		Me.DssLabel69.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel69.TabIndex = 167
-		Me.DssLabel69.Text = "-"
-		Me.DssLabel69.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel70
-		'
-		Me.DssLabel70.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel70.DSSElementName = Nothing
-		Me.DssLabel70.DSSLocation = 0
-		Me.DssLabel70.DSSOffset = 0R
-		Me.DssLabel70.Location = New System.Drawing.Point(304, 121)
-		Me.DssLabel70.Name = "DssLabel70"
-		Me.DssLabel70.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel70.TabIndex = 160
-		Me.DssLabel70.Text = "-"
-		Me.DssLabel70.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel71
-		'
-		Me.DssLabel71.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel71.DSSElementName = Nothing
-		Me.DssLabel71.DSSLocation = 0
-		Me.DssLabel71.DSSOffset = 0R
-		Me.DssLabel71.Location = New System.Drawing.Point(264, 121)
-		Me.DssLabel71.Name = "DssLabel71"
-		Me.DssLabel71.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel71.TabIndex = 161
-		Me.DssLabel71.Text = "-"
-		Me.DssLabel71.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel72
-		'
-		Me.DssLabel72.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel72.DSSElementName = Nothing
-		Me.DssLabel72.DSSLocation = 0
-		Me.DssLabel72.DSSOffset = 0R
-		Me.DssLabel72.Location = New System.Drawing.Point(231, 121)
-		Me.DssLabel72.Name = "DssLabel72"
-		Me.DssLabel72.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel72.TabIndex = 162
-		Me.DssLabel72.Text = "-"
-		Me.DssLabel72.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel73
-		'
-		Me.DssLabel73.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel73.DSSElementName = Nothing
-		Me.DssLabel73.DSSLocation = 0
-		Me.DssLabel73.DSSOffset = 0R
-		Me.DssLabel73.Location = New System.Drawing.Point(304, 144)
-		Me.DssLabel73.Name = "DssLabel73"
-		Me.DssLabel73.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel73.TabIndex = 163
-		Me.DssLabel73.Text = "-"
-		Me.DssLabel73.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel74
-		'
-		Me.DssLabel74.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel74.DSSElementName = Nothing
-		Me.DssLabel74.DSSLocation = 0
-		Me.DssLabel74.DSSOffset = 0R
-		Me.DssLabel74.Location = New System.Drawing.Point(264, 144)
-		Me.DssLabel74.Name = "DssLabel74"
-		Me.DssLabel74.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel74.TabIndex = 164
-		Me.DssLabel74.Text = "-"
-		Me.DssLabel74.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel75
-		'
-		Me.DssLabel75.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel75.DSSElementName = Nothing
-		Me.DssLabel75.DSSLocation = 0
-		Me.DssLabel75.DSSOffset = 0R
-		Me.DssLabel75.Location = New System.Drawing.Point(231, 144)
-		Me.DssLabel75.Name = "DssLabel75"
-		Me.DssLabel75.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel75.TabIndex = 165
-		Me.DssLabel75.Text = "-"
-		Me.DssLabel75.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel76
-		'
-		Me.DssLabel76.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel76.DSSElementName = Nothing
-		Me.DssLabel76.DSSLocation = 0
-		Me.DssLabel76.DSSOffset = 0R
-		Me.DssLabel76.Location = New System.Drawing.Point(304, 52)
-		Me.DssLabel76.Name = "DssLabel76"
-		Me.DssLabel76.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel76.TabIndex = 166
-		Me.DssLabel76.Text = "-"
-		Me.DssLabel76.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel77
-		'
-		Me.DssLabel77.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel77.DSSElementName = Nothing
-		Me.DssLabel77.DSSLocation = 0
-		Me.DssLabel77.DSSOffset = 0R
-		Me.DssLabel77.Location = New System.Drawing.Point(264, 52)
-		Me.DssLabel77.Name = "DssLabel77"
-		Me.DssLabel77.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel77.TabIndex = 168
-		Me.DssLabel77.Text = "-"
-		Me.DssLabel77.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'DssLabel78
-		'
-		Me.DssLabel78.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.DssLabel78.DSSElementName = Nothing
-		Me.DssLabel78.DSSLocation = 0
-		Me.DssLabel78.DSSOffset = 0R
-		Me.DssLabel78.Location = New System.Drawing.Point(231, 52)
-		Me.DssLabel78.Name = "DssLabel78"
-		Me.DssLabel78.Size = New System.Drawing.Size(34, 20)
-		Me.DssLabel78.TabIndex = 188
-		Me.DssLabel78.Text = "-"
-		Me.DssLabel78.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'Label95
-		'
-		Me.Label95.Location = New System.Drawing.Point(304, 35)
-		Me.Label95.Name = "Label95"
-		Me.Label95.Size = New System.Drawing.Size(34, 20)
-		Me.Label95.TabIndex = 147
-		Me.Label95.Text = "env"
-		Me.Label95.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'Label96
-		'
-		Me.Label96.Location = New System.Drawing.Point(264, 35)
-		Me.Label96.Name = "Label96"
-		Me.Label96.Size = New System.Drawing.Size(34, 20)
-		Me.Label96.TabIndex = 148
-		Me.Label96.Text = "soc"
-		Me.Label96.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'Label97
-		'
-		Me.Label97.Location = New System.Drawing.Point(231, 35)
-		Me.Label97.Name = "Label97"
-		Me.Label97.Size = New System.Drawing.Size(34, 20)
-		Me.Label97.TabIndex = 149
-		Me.Label97.Text = "eco"
-		Me.Label97.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'Label98
-		'
-		Me.Label98.Location = New System.Drawing.Point(239, 6)
-		Me.Label98.Name = "Label98"
-		Me.Label98.Size = New System.Drawing.Size(97, 20)
-		Me.Label98.TabIndex = 190
-		Me.Label98.Text = "Large"
-		Me.Label98.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'Label99
-		'
-		Me.Label99.Location = New System.Drawing.Point(102, 10)
-		Me.Label99.Name = "Label99"
-		Me.Label99.Size = New System.Drawing.Size(97, 20)
-		Me.Label99.TabIndex = 189
-		Me.Label99.Text = "Small"
-		Me.Label99.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
 		'frmNegotiation
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -6739,308 +6533,308 @@ Partial Class frmNegotiation
 
 	End Sub
 	Friend WithEvents nudDes1 As DSSNumericUpDown
-    Friend WithEvents nudDes2 As DSSNumericUpDown
-    Friend WithEvents nudDes3 As DSSNumericUpDown
-    Friend WithEvents grbMisc As DSSGroupBox
-    Friend WithEvents grbWaterQuality As DSSGroupBox
-    Friend WithEvents grbPopulation As DSSGroupBox
-    Friend WithEvents grbIndustrialDistricts As DSSGroupBox
-    Friend WithEvents grbWaterCosts As DSSGroupBox
-    Friend WithEvents grbOuput As DSSGroupBox
-    Friend WithEvents btnNext As System.Windows.Forms.Button
-    Friend WithEvents btnPrev As System.Windows.Forms.Button
-    Friend WithEvents DatIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTmaxagrwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTminagrwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTindwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTminenewatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTmaxintwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTpopDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTwatperDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTpopwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTevaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTretDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatImaxagrwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatIminagrwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatIindwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatImarwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatInavwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatIpopDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatIwatperDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatIpopwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatStotwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatOwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTbDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTcDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTdDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTeDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTgDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTfDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTmaxpolintcDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatIaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatIbDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatIcDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTmarwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTnshDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTsidpayDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatInshDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatIsidpayDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTagrwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTnbDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF1DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF2DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF3DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF4DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF5DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF6DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF7DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF8DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF9DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF10DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF11DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF12DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF13DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF14DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF15DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF16DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF17DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatF18DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatIequthrDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTequthrDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatInshthrDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTnshthrDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTequDifPerF3DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTequDifPerF7DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTequDifPerF11DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTequDifPerF15DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTnshDifPerF3DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTnshDifPerF7DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTnshDifPerF11DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTnshDifPerF15DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatIequDifPerF4DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatIequDifPerF8DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatIequDifPerF12DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatIequDifPerF16DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatInshDifPerF4DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatInshDifPerF8DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatInshDifPerF12DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatInshDifPerF16DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DatTurkishAgreementDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents DatIraqiAgreementDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents DataCreazioneDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents UtenteCreazioneDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataAggiornamentoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents UtenteAggiornamentoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AnnullatoDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents DataEstrazioneDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents dsParameters As parameters
-    Friend WithEvents TAParameters As SDSS.parametersTableAdapters.parametersTableAdapter
-    Friend WithEvents Label51 As System.Windows.Forms.Label
-    Friend WithEvents Label50 As System.Windows.Forms.Label
-    Friend WithEvents Label47 As System.Windows.Forms.Label
-    Friend WithEvents Label54 As System.Windows.Forms.Label
-    Friend WithEvents Label53 As System.Windows.Forms.Label
-    Friend WithEvents Label52 As System.Windows.Forms.Label
-    Friend WithEvents Label63 As System.Windows.Forms.Label
-    Friend WithEvents Label55 As System.Windows.Forms.Label
-    Friend WithEvents Label62 As System.Windows.Forms.Label
-    Friend WithEvents Label57 As System.Windows.Forms.Label
-    Friend WithEvents Label56 As System.Windows.Forms.Label
-    Friend WithEvents nudDes7 As DSSNumericUpDown
-    Friend WithEvents nudGro13 As DSSNumericUpDown
-    Friend WithEvents nudDes8 As DSSNumericUpDown
-    Friend WithEvents nudDes4 As DSSNumericUpDown
-    Friend WithEvents nudDes5 As DSSNumericUpDown
-    Friend WithEvents nudDes9 As DSSNumericUpDown
-    Friend WithEvents nudDes6 As DSSNumericUpDown
-    Friend WithEvents nudGro7 As DSSNumericUpDown
-    Friend WithEvents nudGro12 As DSSNumericUpDown
-    Friend WithEvents nudDes12 As DSSNumericUpDown
-    Friend WithEvents nudDes13 As DSSNumericUpDown
-    Friend WithEvents nudGro8 As DSSNumericUpDown
-    Friend WithEvents nudGro4 As DSSNumericUpDown
-    Friend WithEvents nudGro11 As DSSNumericUpDown
-    Friend WithEvents nudGro5 As DSSNumericUpDown
-    Friend WithEvents nudGro9 As DSSNumericUpDown
-    Friend WithEvents nudGro1 As DSSNumericUpDown
-    Friend WithEvents nudGro6 As DSSNumericUpDown
-    Friend WithEvents nudGro10 As DSSNumericUpDown
-    Friend WithEvents nudGro2 As DSSNumericUpDown
-    Friend WithEvents nudGro3 As DSSNumericUpDown
-    Friend WithEvents DSData As DSData
-    Friend WithEvents daData As SqlClient.SqlDataAdapter
-    Friend WithEvents Label121 As System.Windows.Forms.Label
-    Friend WithEvents Label120 As System.Windows.Forms.Label
-    Friend WithEvents nudDes11 As DSSNumericUpDown
-    Friend WithEvents nudDes10 As DSSNumericUpDown
-    Friend WithEvents Label130 As System.Windows.Forms.Label
-    Friend WithEvents Label128 As System.Windows.Forms.Label
-    Friend WithEvents btnLoadData As System.Windows.Forms.Button
-    Friend WithEvents SqlInsertCommand As System.Data.SqlClient.SqlCommand
-    Friend WithEvents SqlConnection As System.Data.SqlClient.SqlConnection
-    Friend WithEvents SqlSelectCommand As System.Data.SqlClient.SqlCommand
-    Friend WithEvents ElementHost1 As System.Windows.Forms.Integration.ElementHost
-    Friend mapControl As mapControl.mapControl
-    Friend WithEvents daLocations As System.Data.SqlClient.SqlDataAdapter
-    Friend WithEvents SqlCommand2 As System.Data.SqlClient.SqlCommand
-    Friend WithEvents DSLocations As SDSS.DSLocations
-    Friend WithEvents pnlMain As System.Windows.Forms.Panel
-    Friend WithEvents SplitContainer As System.Windows.Forms.SplitContainer
-    Friend WithEvents nudTSS7 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTDS7 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudBOD7 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTSS12 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTDS12 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudBOD12 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTSS13 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTDS13 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudBOD13 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTSS8 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTDS8 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudBOD8 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTSS4 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTDS4 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudBOD4 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTSS11 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTDS11 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTSS5 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTDS5 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudBOD5 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudBOD11 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudBOD10 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudBOD9 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTSS9 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTDS9 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTSS1 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTSS6 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTDS1 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTSS10 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTDS6 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTDS10 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTSS2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudBOD1 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTDS2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTSS3 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudBOD6 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTDS3 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudBOD2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudBOD3 As SDSS.DSSNumericUpDown
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents Label15 As System.Windows.Forms.Label
-    Friend WithEvents Label16 As System.Windows.Forms.Label
-    Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents Label21 As System.Windows.Forms.Label
-    Friend WithEvents Label18 As System.Windows.Forms.Label
-    Friend WithEvents Label19 As System.Windows.Forms.Label
-    Friend WithEvents Label20 As System.Windows.Forms.Label
-    Friend WithEvents nudPop20_7_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_7_1 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_12_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_12_1 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_13_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_13_1 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_8_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_8_1 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_4_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_4_1 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_11_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_5_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_5_1 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_11_1 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_10_1 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_9_1 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_9_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_1_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_6_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_10_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_1_1 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_2_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_6_1 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_3_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_2_1 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudPop20_3_1 As SDSS.DSSNumericUpDown
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label22 As System.Windows.Forms.Label
-    Friend WithEvents Label32 As System.Windows.Forms.Label
-    Friend WithEvents Label37 As System.Windows.Forms.Label
-    Friend WithEvents Label44 As System.Windows.Forms.Label
-    Friend WithEvents Label45 As System.Windows.Forms.Label
-    Friend WithEvents Label46 As System.Windows.Forms.Label
-    Friend WithEvents Label48 As System.Windows.Forms.Label
-    Friend WithEvents Label49 As System.Windows.Forms.Label
-    Friend WithEvents Label58 As System.Windows.Forms.Label
-    Friend WithEvents Label59 As System.Windows.Forms.Label
-    Friend WithEvents Label65 As System.Windows.Forms.Label
-    Friend WithEvents Label66 As System.Windows.Forms.Label
-    Friend WithEvents Label69 As System.Windows.Forms.Label
-    Friend WithEvents Label67 As System.Windows.Forms.Label
-    Friend WithEvents nudInddispln7_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddiscur7_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddispln12_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddiscur12_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddispln13_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddiscur13_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddispln8_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddiscur8_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddispln4_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddiscur4_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddispln11_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddispln5_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddiscur5_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddiscur11_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddiscur10_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddiscur9_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddispln9_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddispln1_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddispln6_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddispln10_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddiscur1_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddispln2_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddiscur6_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddispln3_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddiscur2_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents nudInddiscur3_2 As SDSS.DSSNumericUpDown
-    Friend WithEvents Label38 As System.Windows.Forms.Label
-    Friend WithEvents Label39 As System.Windows.Forms.Label
-    Friend WithEvents Label40 As System.Windows.Forms.Label
-    Friend WithEvents Label41 As System.Windows.Forms.Label
-    Friend WithEvents Label42 As System.Windows.Forms.Label
-    Friend WithEvents Label43 As System.Windows.Forms.Label
-    Friend WithEvents Label71 As System.Windows.Forms.Label
-    Friend WithEvents Label72 As System.Windows.Forms.Label
-    Friend WithEvents Label73 As System.Windows.Forms.Label
-    Friend WithEvents Label74 As System.Windows.Forms.Label
-    Friend WithEvents Label75 As System.Windows.Forms.Label
-    Friend WithEvents Label76 As System.Windows.Forms.Label
-    Friend WithEvents Label77 As System.Windows.Forms.Label
-    Friend WithEvents Label86 As System.Windows.Forms.Label
-    Friend WithEvents Label88 As System.Windows.Forms.Label
+	Friend WithEvents nudDes2 As DSSNumericUpDown
+	Friend WithEvents nudDes3 As DSSNumericUpDown
+	Friend WithEvents grbMisc As DSSGroupBox
+	Friend WithEvents grbWaterQuality As DSSGroupBox
+	Friend WithEvents grbPopulation As DSSGroupBox
+	Friend WithEvents grbIndustrialDistricts As DSSGroupBox
+	Friend WithEvents grbWaterCosts As DSSGroupBox
+	Friend WithEvents grbOuput As DSSGroupBox
+	Friend WithEvents btnNext As System.Windows.Forms.Button
+	Friend WithEvents btnPrev As System.Windows.Forms.Button
+	Friend WithEvents DatIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTmaxagrwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTminagrwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTindwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTminenewatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTmaxintwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTpopDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTwatperDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTpopwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTevaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTretDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatImaxagrwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatIminagrwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatIindwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatImarwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatInavwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatIpopDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatIwatperDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatIpopwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatStotwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatOwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTbDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTcDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTdDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTeDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTgDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTfDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTmaxpolintcDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatIaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatIbDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatIcDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTmarwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTnshDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTsidpayDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatInshDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatIsidpayDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTagrwatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTnbDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF1DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF2DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF3DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF4DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF5DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF6DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF7DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF8DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF9DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF10DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF11DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF12DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF13DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF14DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF15DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF16DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF17DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatF18DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatIequthrDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTequthrDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatInshthrDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTnshthrDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTequDifPerF3DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTequDifPerF7DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTequDifPerF11DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTequDifPerF15DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTnshDifPerF3DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTnshDifPerF7DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTnshDifPerF11DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTnshDifPerF15DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatIequDifPerF4DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatIequDifPerF8DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatIequDifPerF12DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatIequDifPerF16DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatInshDifPerF4DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatInshDifPerF8DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatInshDifPerF12DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatInshDifPerF16DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DatTurkishAgreementDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
+	Friend WithEvents DatIraqiAgreementDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
+	Friend WithEvents DataCreazioneDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents UtenteCreazioneDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents DataAggiornamentoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents UtenteAggiornamentoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents AnnullatoDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
+	Friend WithEvents DataEstrazioneDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+	Friend WithEvents dsParameters As parameters
+	Friend WithEvents TAParameters As SDSS.parametersTableAdapters.parametersTableAdapter
+	Friend WithEvents Label51 As System.Windows.Forms.Label
+	Friend WithEvents Label50 As System.Windows.Forms.Label
+	Friend WithEvents Label47 As System.Windows.Forms.Label
+	Friend WithEvents Label54 As System.Windows.Forms.Label
+	Friend WithEvents Label53 As System.Windows.Forms.Label
+	Friend WithEvents Label52 As System.Windows.Forms.Label
+	Friend WithEvents Label63 As System.Windows.Forms.Label
+	Friend WithEvents Label55 As System.Windows.Forms.Label
+	Friend WithEvents Label62 As System.Windows.Forms.Label
+	Friend WithEvents Label57 As System.Windows.Forms.Label
+	Friend WithEvents Label56 As System.Windows.Forms.Label
+	Friend WithEvents nudDes7 As DSSNumericUpDown
+	Friend WithEvents nudGro13 As DSSNumericUpDown
+	Friend WithEvents nudDes8 As DSSNumericUpDown
+	Friend WithEvents nudDes4 As DSSNumericUpDown
+	Friend WithEvents nudDes5 As DSSNumericUpDown
+	Friend WithEvents nudDes9 As DSSNumericUpDown
+	Friend WithEvents nudDes6 As DSSNumericUpDown
+	Friend WithEvents nudGro7 As DSSNumericUpDown
+	Friend WithEvents nudGro12 As DSSNumericUpDown
+	Friend WithEvents nudDes12 As DSSNumericUpDown
+	Friend WithEvents nudDes13 As DSSNumericUpDown
+	Friend WithEvents nudGro8 As DSSNumericUpDown
+	Friend WithEvents nudGro4 As DSSNumericUpDown
+	Friend WithEvents nudGro11 As DSSNumericUpDown
+	Friend WithEvents nudGro5 As DSSNumericUpDown
+	Friend WithEvents nudGro9 As DSSNumericUpDown
+	Friend WithEvents nudGro1 As DSSNumericUpDown
+	Friend WithEvents nudGro6 As DSSNumericUpDown
+	Friend WithEvents nudGro10 As DSSNumericUpDown
+	Friend WithEvents nudGro2 As DSSNumericUpDown
+	Friend WithEvents nudGro3 As DSSNumericUpDown
+	Friend WithEvents DSData As DSData
+	Friend WithEvents daData As SqlClient.SqlDataAdapter
+	Friend WithEvents Label121 As System.Windows.Forms.Label
+	Friend WithEvents Label120 As System.Windows.Forms.Label
+	Friend WithEvents nudDes11 As DSSNumericUpDown
+	Friend WithEvents nudDes10 As DSSNumericUpDown
+	Friend WithEvents Label130 As System.Windows.Forms.Label
+	Friend WithEvents Label128 As System.Windows.Forms.Label
+	Friend WithEvents btnLoadData As System.Windows.Forms.Button
+	Friend WithEvents SqlInsertCommand As System.Data.SqlClient.SqlCommand
+	Friend WithEvents SqlConnection As System.Data.SqlClient.SqlConnection
+	Friend WithEvents SqlSelectCommand As System.Data.SqlClient.SqlCommand
+	Friend WithEvents ElementHost1 As System.Windows.Forms.Integration.ElementHost
+	Friend mapControl As mapControl.mapControl
+	Friend WithEvents daLocations As System.Data.SqlClient.SqlDataAdapter
+	Friend WithEvents SqlCommand2 As System.Data.SqlClient.SqlCommand
+	Friend WithEvents DSLocations As SDSS.DSLocations
+	Friend WithEvents pnlMain As System.Windows.Forms.Panel
+	Friend WithEvents SplitContainer As System.Windows.Forms.SplitContainer
+	Friend WithEvents nudTSS7 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS7 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD7 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS12 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS12 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD12 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS13 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS13 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD13 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS8 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS8 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD8 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS4 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS4 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD4 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS11 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS11 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS5 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS5 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD5 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD11 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD10 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD9 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS9 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS9 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS1 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS6 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS1 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS10 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS6 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS10 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD1 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS3 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD6 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS3 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD3 As SDSS.DSSNumericUpDown
+	Friend WithEvents Label3 As System.Windows.Forms.Label
+	Friend WithEvents Label4 As System.Windows.Forms.Label
+	Friend WithEvents Label5 As System.Windows.Forms.Label
+	Friend WithEvents Label6 As System.Windows.Forms.Label
+	Friend WithEvents Label7 As System.Windows.Forms.Label
+	Friend WithEvents Label8 As System.Windows.Forms.Label
+	Friend WithEvents Label9 As System.Windows.Forms.Label
+	Friend WithEvents Label11 As System.Windows.Forms.Label
+	Friend WithEvents Label14 As System.Windows.Forms.Label
+	Friend WithEvents Label15 As System.Windows.Forms.Label
+	Friend WithEvents Label16 As System.Windows.Forms.Label
+	Friend WithEvents Label17 As System.Windows.Forms.Label
+	Friend WithEvents Label21 As System.Windows.Forms.Label
+	Friend WithEvents Label18 As System.Windows.Forms.Label
+	Friend WithEvents Label19 As System.Windows.Forms.Label
+	Friend WithEvents Label20 As System.Windows.Forms.Label
+	Friend WithEvents nudPop20_7_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_7_1 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_12_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_12_1 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_13_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_13_1 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_8_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_8_1 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_4_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_4_1 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_11_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_5_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_5_1 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_11_1 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_10_1 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_9_1 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_9_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_1_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_6_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_10_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_1_1 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_2_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_6_1 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_3_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_2_1 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_3_1 As SDSS.DSSNumericUpDown
+	Friend WithEvents Label1 As System.Windows.Forms.Label
+	Friend WithEvents Label2 As System.Windows.Forms.Label
+	Friend WithEvents Label22 As System.Windows.Forms.Label
+	Friend WithEvents Label32 As System.Windows.Forms.Label
+	Friend WithEvents Label37 As System.Windows.Forms.Label
+	Friend WithEvents Label44 As System.Windows.Forms.Label
+	Friend WithEvents Label45 As System.Windows.Forms.Label
+	Friend WithEvents Label46 As System.Windows.Forms.Label
+	Friend WithEvents Label48 As System.Windows.Forms.Label
+	Friend WithEvents Label49 As System.Windows.Forms.Label
+	Friend WithEvents Label58 As System.Windows.Forms.Label
+	Friend WithEvents Label59 As System.Windows.Forms.Label
+	Friend WithEvents Label65 As System.Windows.Forms.Label
+	Friend WithEvents Label66 As System.Windows.Forms.Label
+	Friend WithEvents Label69 As System.Windows.Forms.Label
+	Friend WithEvents Label67 As System.Windows.Forms.Label
+	Friend WithEvents nudInddispln7_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur7_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln12_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur12_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln13_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur13_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln8_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur8_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln4_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur4_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln11_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln5_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur5_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur11_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur10_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur9_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln9_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln1_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln6_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln10_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur1_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln2_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur6_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln3_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur2_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur3_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents Label38 As System.Windows.Forms.Label
+	Friend WithEvents Label39 As System.Windows.Forms.Label
+	Friend WithEvents Label40 As System.Windows.Forms.Label
+	Friend WithEvents Label41 As System.Windows.Forms.Label
+	Friend WithEvents Label42 As System.Windows.Forms.Label
+	Friend WithEvents Label43 As System.Windows.Forms.Label
+	Friend WithEvents Label71 As System.Windows.Forms.Label
+	Friend WithEvents Label72 As System.Windows.Forms.Label
+	Friend WithEvents Label73 As System.Windows.Forms.Label
+	Friend WithEvents Label74 As System.Windows.Forms.Label
+	Friend WithEvents Label75 As System.Windows.Forms.Label
+	Friend WithEvents Label76 As System.Windows.Forms.Label
+	Friend WithEvents Label77 As System.Windows.Forms.Label
+	Friend WithEvents Label86 As System.Windows.Forms.Label
+	Friend WithEvents Label88 As System.Windows.Forms.Label
 	Friend WithEvents lblTDS As DSSLabel
 	Friend WithEvents nudSocw As SDSS.DSSNumericUpDown
-    Friend WithEvents nudEcow As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTpbx As SDSS.DSSNumericUpDown
-    Friend WithEvents nudEnvw As SDSS.DSSNumericUpDown
-    Friend WithEvents nudTpsx As SDSS.DSSNumericUpDown
-    Friend WithEvents Label25 As System.Windows.Forms.Label
-    Friend WithEvents Label34 As System.Windows.Forms.Label
-    Friend WithEvents Label78 As System.Windows.Forms.Label
-    Friend WithEvents Label91 As System.Windows.Forms.Label
+	Friend WithEvents nudEcow As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTpbx As SDSS.DSSNumericUpDown
+	Friend WithEvents nudEnvw As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTpsx As SDSS.DSSNumericUpDown
+	Friend WithEvents Label25 As System.Windows.Forms.Label
+	Friend WithEvents Label34 As System.Windows.Forms.Label
+	Friend WithEvents Label78 As System.Windows.Forms.Label
+	Friend WithEvents Label91 As System.Windows.Forms.Label
 	Friend WithEvents lblBOD As DSSLabel
 	Friend WithEvents Label68 As System.Windows.Forms.Label
-    Friend WithEvents Label64 As System.Windows.Forms.Label
-    Friend WithEvents Label92 As System.Windows.Forms.Label
-    Friend WithEvents Label70 As System.Windows.Forms.Label
-    Friend WithEvents nudTpmz As SDSS.DSSNumericUpDown
+	Friend WithEvents Label64 As System.Windows.Forms.Label
+	Friend WithEvents Label92 As System.Windows.Forms.Label
+	Friend WithEvents Label70 As System.Windows.Forms.Label
+	Friend WithEvents nudTpmz As SDSS.DSSNumericUpDown
 	Friend WithEvents Label13 As System.Windows.Forms.Label
 	Friend WithEvents nudTotpla As SDSS.DSSNumericUpDown
 	Friend WithEvents Label23 As System.Windows.Forms.Label
@@ -7078,7 +6872,6 @@ Partial Class frmNegotiation
 	Friend WithEvents tpaStandards As System.Windows.Forms.TabPage
 	Friend WithEvents tpaEfficencies As System.Windows.Forms.TabPage
 	Friend WithEvents Label135 As System.Windows.Forms.Label
-	Friend WithEvents Label134 As System.Windows.Forms.Label
 	Friend WithEvents Label133 As System.Windows.Forms.Label
 	Friend WithEvents Label31 As System.Windows.Forms.Label
 	Friend WithEvents Label33 As System.Windows.Forms.Label
@@ -7106,44 +6899,31 @@ Partial Class frmNegotiation
 	Friend WithEvents Label113 As System.Windows.Forms.Label
 	Friend WithEvents Label114 As System.Windows.Forms.Label
 	Friend WithEvents Label115 As System.Windows.Forms.Label
-	Friend WithEvents lblLan1_13 As DSSLabel
-	Friend WithEvents lblInd1_13 As DSSLabel
-	Friend WithEvents lblAgr1_13 As DSSLabel
-	Friend WithEvents lblLan1_10 As DSSLabel
-	Friend WithEvents lblInd1_10 As DSSLabel
-	Friend WithEvents lblAgr1_10 As DSSLabel
-	Friend WithEvents lblLan1_7 As DSSLabel
-	Friend WithEvents lblInd1_7 As DSSLabel
-	Friend WithEvents lblAgr1_7 As DSSLabel
-	Friend WithEvents lblLan1_3 As DSSLabel
-	Friend WithEvents lblInd1_3 As DSSLabel
-	Friend WithEvents lblAgr1_3 As DSSLabel
-	Friend WithEvents lblLan1_12 As DSSLabel
-	Friend WithEvents lblInd1_12 As DSSLabel
-	Friend WithEvents lblAgr1_12 As DSSLabel
-	Friend WithEvents lblLan1_9 As DSSLabel
-	Friend WithEvents lblInd1_9 As DSSLabel
-	Friend WithEvents lblAgr1_9 As DSSLabel
-	Friend WithEvents lblLan1_6 As DSSLabel
-	Friend WithEvents lblInd1_6 As DSSLabel
-	Friend WithEvents lblAgr1_6 As DSSLabel
-	Friend WithEvents lblLan1_2 As DSSLabel
-	Friend WithEvents lblInd1_2 As DSSLabel
-	Friend WithEvents lblAgr1_2 As DSSLabel
-	Friend WithEvents lblLan1_11 As DSSLabel
-	Friend WithEvents lblInd1_11 As DSSLabel
-	Friend WithEvents lblAgr1_11 As DSSLabel
-	Friend WithEvents lblLan1_8 As DSSLabel
-	Friend WithEvents lblInd1_8 As DSSLabel
-	Friend WithEvents lblAgr1_8 As DSSLabel
-	Friend WithEvents lblLan1_4 As DSSLabel
-	Friend WithEvents lblInd1_4 As DSSLabel
-	Friend WithEvents lblAgr1_4 As DSSLabel
-	Friend WithEvents lblLan1_5 As DSSLabel
-	Friend WithEvents lblInd1_5 As DSSLabel
-	Friend WithEvents lblAgr1_5 As DSSLabel
+	Friend WithEvents lblLan13_1 As DSSLabel
+	Friend WithEvents lblAgr13_1 As DSSLabel
+	Friend WithEvents lblLan10_1 As DSSLabel
+	Friend WithEvents lblAgr10_1 As DSSLabel
+	Friend WithEvents lblLan7_1 As DSSLabel
+	Friend WithEvents lblAgr7_1 As DSSLabel
+	Friend WithEvents lblLan3_1 As DSSLabel
+	Friend WithEvents lblAgr3_1 As DSSLabel
+	Friend WithEvents lblLan12_1 As DSSLabel
+	Friend WithEvents lblAgr12_1 As DSSLabel
+	Friend WithEvents lblLan9_1 As DSSLabel
+	Friend WithEvents lblAgr9_1 As DSSLabel
+	Friend WithEvents lblLan6_1 As DSSLabel
+	Friend WithEvents lblAgr6_1 As DSSLabel
+	Friend WithEvents lblLan2_1 As DSSLabel
+	Friend WithEvents lblAgr2_1 As DSSLabel
+	Friend WithEvents lblLan11_1 As DSSLabel
+	Friend WithEvents lblAgr11_1 As DSSLabel
+	Friend WithEvents lblLan8_1 As DSSLabel
+	Friend WithEvents lblAgr8_1 As DSSLabel
+	Friend WithEvents lblLan4_1 As DSSLabel
+	Friend WithEvents lblAgr4_1 As DSSLabel
+	Friend WithEvents lblLan5_1 As DSSLabel
+	Friend WithEvents lblAgr5_1 As DSSLabel
 	Friend WithEvents lblLan1_1 As DSSLabel
-	Friend WithEvents lblInd1_1 As DSSLabel
 	Friend WithEvents lblAgr1_1 As DSSLabel
 	Friend WithEvents lblEnv13_1 As DSSLabel
 	Friend WithEvents lblSoc13_1 As DSSLabel
@@ -7196,45 +6976,45 @@ Partial Class frmNegotiation
     Friend WithEvents Label117 As System.Windows.Forms.Label
 	Friend WithEvents Label94 As Label
 	Friend WithEvents Label93 As Label
-	Friend WithEvents DssLabel1 As DSSLabel
-	Friend WithEvents DssLabel2 As DSSLabel
-	Friend WithEvents DssLabel3 As DSSLabel
-	Friend WithEvents DssLabel4 As DSSLabel
-	Friend WithEvents DssLabel5 As DSSLabel
-	Friend WithEvents DssLabel6 As DSSLabel
-	Friend WithEvents DssLabel7 As DSSLabel
-	Friend WithEvents DssLabel8 As DSSLabel
-	Friend WithEvents DssLabel9 As DSSLabel
-	Friend WithEvents DssLabel10 As DSSLabel
-	Friend WithEvents DssLabel11 As DSSLabel
-	Friend WithEvents DssLabel12 As DSSLabel
-	Friend WithEvents DssLabel13 As DSSLabel
-	Friend WithEvents DssLabel14 As DSSLabel
-	Friend WithEvents DssLabel15 As DSSLabel
-	Friend WithEvents DssLabel16 As DSSLabel
-	Friend WithEvents DssLabel17 As DSSLabel
-	Friend WithEvents DssLabel18 As DSSLabel
-	Friend WithEvents DssLabel19 As DSSLabel
-	Friend WithEvents DssLabel20 As DSSLabel
-	Friend WithEvents DssLabel21 As DSSLabel
-	Friend WithEvents DssLabel22 As DSSLabel
-	Friend WithEvents DssLabel23 As DSSLabel
-	Friend WithEvents DssLabel24 As DSSLabel
-	Friend WithEvents DssLabel25 As DSSLabel
-	Friend WithEvents DssLabel26 As DSSLabel
-	Friend WithEvents DssLabel27 As DSSLabel
-	Friend WithEvents DssLabel28 As DSSLabel
-	Friend WithEvents DssLabel29 As DSSLabel
-	Friend WithEvents DssLabel30 As DSSLabel
-	Friend WithEvents DssLabel31 As DSSLabel
-	Friend WithEvents DssLabel32 As DSSLabel
-	Friend WithEvents DssLabel33 As DSSLabel
-	Friend WithEvents DssLabel34 As DSSLabel
-	Friend WithEvents DssLabel35 As DSSLabel
-	Friend WithEvents DssLabel36 As DSSLabel
-	Friend WithEvents DssLabel37 As DSSLabel
-	Friend WithEvents DssLabel38 As DSSLabel
-	Friend WithEvents DssLabel39 As DSSLabel
+	Friend WithEvents lblLan13_2 As DSSLabel
+	Friend WithEvents lblInd13_2 As DSSLabel
+	Friend WithEvents lblAgr13_2 As DSSLabel
+	Friend WithEvents lblLan10_2 As DSSLabel
+	Friend WithEvents lblInd10_2 As DSSLabel
+	Friend WithEvents lblAgr10_2 As DSSLabel
+	Friend WithEvents lblLan7_2 As DSSLabel
+	Friend WithEvents lblInd7_2 As DSSLabel
+	Friend WithEvents lblAgr7_2 As DSSLabel
+	Friend WithEvents lblLan3_2 As DSSLabel
+	Friend WithEvents lblInd3_2 As DSSLabel
+	Friend WithEvents lblAgr3_2 As DSSLabel
+	Friend WithEvents lblLan12_2 As DSSLabel
+	Friend WithEvents lblInd12_2 As DSSLabel
+	Friend WithEvents lblAgr12_2 As DSSLabel
+	Friend WithEvents lblLan9_2 As DSSLabel
+	Friend WithEvents lblInd9_2 As DSSLabel
+	Friend WithEvents lblAgr9_2 As DSSLabel
+	Friend WithEvents lblLan6_2 As DSSLabel
+	Friend WithEvents lblInd6_2 As DSSLabel
+	Friend WithEvents lblAgr6_2 As DSSLabel
+	Friend WithEvents lblLan2_2 As DSSLabel
+	Friend WithEvents lblInd2_2 As DSSLabel
+	Friend WithEvents lblAgr2_2 As DSSLabel
+	Friend WithEvents lblLan11_2 As DSSLabel
+	Friend WithEvents lblInd11_2 As DSSLabel
+	Friend WithEvents lblAgr11_2 As DSSLabel
+	Friend WithEvents lblLan8_2 As DSSLabel
+	Friend WithEvents lblInd8_2 As DSSLabel
+	Friend WithEvents lblAgr8_2 As DSSLabel
+	Friend WithEvents lblLan4_2 As DSSLabel
+	Friend WithEvents lblInd4_2 As DSSLabel
+	Friend WithEvents lblAgr4_2 As DSSLabel
+	Friend WithEvents lblLan5_2 As DSSLabel
+	Friend WithEvents lblInd5_2 As DSSLabel
+	Friend WithEvents lblAgr5_2 As DSSLabel
+	Friend WithEvents lblLan1_2 As DSSLabel
+	Friend WithEvents lblInd1_2 As DSSLabel
+	Friend WithEvents lblAgr1_2 As DSSLabel
 	Friend WithEvents Label87 As Label
 	Friend WithEvents Label89 As Label
 	Friend WithEvents Label90 As Label

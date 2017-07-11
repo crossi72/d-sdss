@@ -39,14 +39,15 @@ Public Class frmNegotiation
 	Private inddis(12, 1), inddiscur(12, 1), inddispln(12, 1) As Integer
 	'misc
     Private gwsp, agruf, agrufro, induf, indufro, lanuf, lanufro, tpbx, tpsx, tpmz, envw, ecow, socw, totpla, sbqi, ssqi, smqi As Double
-    'output
-    Private outind(12, 1), outagr(12, 1), outlan(12, 1), outeco(12, 1), outsoc(12, 1), outenv(12, 1) As Double
+
+	'output
+	Private outind(12, 1), outagr(12, 1), outlan(12, 1), outeco(12, 1), outsoc(12, 1), outenv(12, 1) As Double
 
 #End Region
 
 #Region " New "
 
-    Public Sub New()
+	Public Sub New()
         ' Chiamata richiesta da Progettazione Windows Form.
         InitializeComponent()
 
