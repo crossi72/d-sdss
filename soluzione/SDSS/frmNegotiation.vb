@@ -131,17 +131,19 @@ Public Class frmNegotiation
 		Dim tmpDataRowView As DataRowView
 		Dim normalizedValue, locLatitude, locLongitude As Double
 
-		Me.DSLocations.locations.DefaultView.RowFilter = "locID = " & DSSLocation
+		If DSSLocation <> 0 Then
+			Me.DSLocations.locations.DefaultView.RowFilter = "locID = " & DSSLocation
 
-		tmpDataRowView = Me.DSLocations.locations.DefaultView(0)
+			tmpDataRowView = Me.DSLocations.locations.DefaultView(0)
 
-		locLatitude = Utility.NullToDouble(tmpDataRowView("locLatitude"))
-		locLongitude = Utility.NullToDouble(tmpDataRowView("locLongitude"))
-		normalizedValue = value / avgValue * columnMaxHeight - columnMaxHeight
-		'normalizedValue *= 10
+			locLatitude = Utility.NullToDouble(tmpDataRowView("locLatitude"))
+			locLongitude = Utility.NullToDouble(tmpDataRowView("locLongitude"))
+			normalizedValue = value / avgValue * columnMaxHeight - columnMaxHeight
 
-		Me.myMap.AddLine("line_" & elementName, Colors.Black, locLatitude, locLongitude - offset, locLatitude, locLongitude + offset + barWidth)
-		Me.myMap.AddBar("bar_" & elementName, elementColor, locLatitude, locLongitude + offset, barWidth, normalizedValue)
+			Me.myMap.AddLine("line_" & elementName, Colors.Black, locLatitude, locLongitude - offset, locLatitude, locLongitude + offset + barWidth)
+			Me.myMap.AddBar("bar_" & elementName, elementColor, locLatitude, locLongitude + offset, barWidth, normalizedValue)
+		End If
+
 	End Sub
 
 	''' <summary>
@@ -722,6 +724,27 @@ Public Class frmNegotiation
 				For i = 0 To 12
 					For j = 0 To 1
 						Me.lblCollection("lblLan" & i + 1 & "_" & j + 1).Text = Me.outlan(i, j).ToString
+					Next
+				Next
+
+				'economics
+				For i = 0 To 12
+					For j = 0 To 1
+						Me.lblCollection("lblEco" & i + 1 & "_" & j + 1).Text = Me.outeco(i, j).ToString
+					Next
+				Next
+
+				'Social
+				For i = 0 To 12
+					For j = 0 To 1
+						Me.lblCollection("lblSoc" & i + 1 & "_" & j + 1).Text = Me.outsoc(i, j).ToString
+					Next
+				Next
+
+				'Environment
+				For i = 0 To 12
+					For j = 0 To 1
+						Me.lblCollection("lblEnv" & i + 1 & "_" & j + 1).Text = Me.outenv(i, j).ToString
 					Next
 				Next
 		End Select

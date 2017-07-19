@@ -1,9 +1,9 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmNegotiation
 	Inherits System.Windows.Forms.Form
 
 	'Form esegue l'override del metodo Dispose per pulire l'elenco dei componenti.
-	<System.Diagnostics.DebuggerNonUserCode()> _
+	<System.Diagnostics.DebuggerNonUserCode()>
 	Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 		Try
 			If disposing AndAlso components IsNot Nothing Then
@@ -344,7 +344,6 @@ Partial Class frmNegotiation
 		Me.Label77 = New System.Windows.Forms.Label()
 		Me.grbMisc = New SDSS.DSSGroupBox()
 		Me.DssPanel1 = New SDSS.DSSPanel()
-		Me.grbResetMap = New SDSS.DSSGroupBox()
 		Me.Label10 = New System.Windows.Forms.Label()
 		Me.Label13 = New System.Windows.Forms.Label()
 		Me.lblBOD = New SDSS.DSSLabel()
@@ -789,10 +788,10 @@ Partial Class frmNegotiation
 		'
 		'SplitContainer.Panel1
 		'
+		Me.SplitContainer.Panel1.Controls.Add(Me.grbMisc)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbOuput)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbPopulation)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbIndustrialDistricts)
-		Me.SplitContainer.Panel1.Controls.Add(Me.grbMisc)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbWaterQuality)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbWaterCosts)
 		'
@@ -875,11 +874,12 @@ Partial Class frmNegotiation
 		Me.gboOutputUses.Controls.Add(Me.Label61)
 		Me.gboOutputUses.DSSDrawOnMap = True
 		Me.gboOutputUses.DSSVisible = False
-		Me.gboOutputUses.Location = New System.Drawing.Point(18, 11)
+		Me.gboOutputUses.Location = New System.Drawing.Point(15, 11)
 		Me.gboOutputUses.Name = "gboOutputUses"
 		Me.gboOutputUses.Size = New System.Drawing.Size(451, 406)
 		Me.gboOutputUses.TabIndex = 112
 		Me.gboOutputUses.TabStop = False
+		Me.gboOutputUses.Visible = False
 		'
 		'pnlOutAgrSmall
 		'
@@ -897,7 +897,7 @@ Partial Class frmNegotiation
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr10_1)
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr13_1)
 		Me.pnlOutAgrSmall.DSSVisible = False
-		Me.pnlOutAgrSmall.Location = New System.Drawing.Point(94, 56)
+		Me.pnlOutAgrSmall.Location = New System.Drawing.Point(94, 55)
 		Me.pnlOutAgrSmall.Name = "pnlOutAgrSmall"
 		Me.pnlOutAgrSmall.Size = New System.Drawing.Size(49, 317)
 		Me.pnlOutAgrSmall.TabIndex = 108
@@ -1096,7 +1096,7 @@ Partial Class frmNegotiation
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd10_2)
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd7_2)
 		Me.pnlOutIndLarge.DSSVisible = False
-		Me.pnlOutIndLarge.Location = New System.Drawing.Point(293, 54)
+		Me.pnlOutIndLarge.Location = New System.Drawing.Point(285, 55)
 		Me.pnlOutIndLarge.Name = "pnlOutIndLarge"
 		Me.pnlOutIndLarge.Size = New System.Drawing.Size(49, 317)
 		Me.pnlOutIndLarge.TabIndex = 111
@@ -4683,7 +4683,7 @@ Partial Class frmNegotiation
 		Me.grbMisc.Controls.Add(Me.Label78)
 		Me.grbMisc.Controls.Add(Me.Label117)
 		Me.grbMisc.Controls.Add(Me.Label91)
-		Me.grbMisc.DSSDrawOnMap = False
+		Me.grbMisc.DSSDrawOnMap = True
 		Me.grbMisc.DSSVisible = True
 		Me.grbMisc.ForeColor = System.Drawing.Color.Black
 		Me.grbMisc.Location = New System.Drawing.Point(0, 0)
@@ -4696,7 +4696,6 @@ Partial Class frmNegotiation
 		'
 		'DssPanel1
 		'
-		Me.DssPanel1.Controls.Add(Me.grbResetMap)
 		Me.DssPanel1.Controls.Add(Me.Label10)
 		Me.DssPanel1.Controls.Add(Me.Label13)
 		Me.DssPanel1.Controls.Add(Me.lblBOD)
@@ -4734,17 +4733,6 @@ Partial Class frmNegotiation
 		Me.DssPanel1.Name = "DssPanel1"
 		Me.DssPanel1.Size = New System.Drawing.Size(575, 367)
 		Me.DssPanel1.TabIndex = 193
-		'
-		'grbResetMap
-		'
-		Me.grbResetMap.DSSDrawOnMap = True
-		Me.grbResetMap.DSSVisible = True
-		Me.grbResetMap.Location = New System.Drawing.Point(430, 231)
-		Me.grbResetMap.Name = "grbResetMap"
-		Me.grbResetMap.Size = New System.Drawing.Size(200, 100)
-		Me.grbResetMap.TabIndex = 193
-		Me.grbResetMap.TabStop = False
-		Me.grbResetMap.Visible = False
 		'
 		'Label10
 		'
@@ -4854,7 +4842,7 @@ Partial Class frmNegotiation
 		Me.nudTpsx.DecimalPlaces = 2
 		Me.nudTpsx.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
 		Me.nudTpsx.DSSElementName = "inddiscur2_1"
-		Me.nudTpsx.DSSLocation = 2
+		Me.nudTpsx.DSSLocation = 0
 		Me.nudTpsx.DSSOffset = -0.2R
 		Me.nudTpsx.Location = New System.Drawing.Point(291, 43)
 		Me.nudTpsx.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
@@ -4878,7 +4866,7 @@ Partial Class frmNegotiation
 		Me.nudTpmz.DecimalPlaces = 2
 		Me.nudTpmz.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
 		Me.nudTpmz.DSSElementName = "inddiscur2_1"
-		Me.nudTpmz.DSSLocation = 2
+		Me.nudTpmz.DSSLocation = 0
 		Me.nudTpmz.DSSOffset = -0.2R
 		Me.nudTpmz.Location = New System.Drawing.Point(389, 89)
 		Me.nudTpmz.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
@@ -4902,7 +4890,7 @@ Partial Class frmNegotiation
 		Me.nudAgrUFRO.DecimalPlaces = 2
 		Me.nudAgrUFRO.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
 		Me.nudAgrUFRO.DSSElementName = "inddiscur2_1"
-		Me.nudAgrUFRO.DSSLocation = 2
+		Me.nudAgrUFRO.DSSLocation = 0
 		Me.nudAgrUFRO.DSSOffset = -0.2R
 		Me.nudAgrUFRO.Location = New System.Drawing.Point(98, 43)
 		Me.nudAgrUFRO.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
@@ -4926,7 +4914,7 @@ Partial Class frmNegotiation
 		Me.nudEnvw.DecimalPlaces = 2
 		Me.nudEnvw.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
 		Me.nudEnvw.DSSElementName = "inddiscur6_1"
-		Me.nudEnvw.DSSLocation = 6
+		Me.nudEnvw.DSSLocation = 0
 		Me.nudEnvw.DSSOffset = -0.2R
 		Me.nudEnvw.Location = New System.Drawing.Point(195, 158)
 		Me.nudEnvw.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
@@ -4954,7 +4942,7 @@ Partial Class frmNegotiation
 		Me.nudgwsp.DecimalPlaces = 2
 		Me.nudgwsp.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
 		Me.nudgwsp.DSSElementName = "inddiscur6_1"
-		Me.nudgwsp.DSSLocation = 6
+		Me.nudgwsp.DSSLocation = 0
 		Me.nudgwsp.DSSOffset = -0.2R
 		Me.nudgwsp.Location = New System.Drawing.Point(2, 234)
 		Me.nudgwsp.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
@@ -4969,7 +4957,7 @@ Partial Class frmNegotiation
 		Me.nudTotpla.DecimalPlaces = 2
 		Me.nudTotpla.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
 		Me.nudTotpla.DSSElementName = "inddiscur7_1"
-		Me.nudTotpla.DSSLocation = 7
+		Me.nudTotpla.DSSLocation = 0
 		Me.nudTotpla.DSSOffset = -0.2R
 		Me.nudTotpla.Location = New System.Drawing.Point(486, 191)
 		Me.nudTotpla.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
@@ -4984,7 +4972,7 @@ Partial Class frmNegotiation
 		Me.nudIndUFRO.DecimalPlaces = 2
 		Me.nudIndUFRO.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
 		Me.nudIndUFRO.DSSElementName = "inddiscur2_1"
-		Me.nudIndUFRO.DSSLocation = 2
+		Me.nudIndUFRO.DSSLocation = 0
 		Me.nudIndUFRO.DSSOffset = -0.2R
 		Me.nudIndUFRO.Location = New System.Drawing.Point(98, 66)
 		Me.nudIndUFRO.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
@@ -4999,7 +4987,7 @@ Partial Class frmNegotiation
 		Me.nudSocw.DecimalPlaces = 2
 		Me.nudSocw.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
 		Me.nudSocw.DSSElementName = "inddiscur7_1"
-		Me.nudSocw.DSSLocation = 7
+		Me.nudSocw.DSSLocation = 0
 		Me.nudSocw.DSSOffset = -0.2R
 		Me.nudSocw.Location = New System.Drawing.Point(389, 158)
 		Me.nudSocw.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
@@ -5014,7 +5002,7 @@ Partial Class frmNegotiation
 		Me.nudTpbx.DecimalPlaces = 2
 		Me.nudTpbx.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
 		Me.nudTpbx.DSSElementName = "inddiscur1_1"
-		Me.nudTpbx.DSSLocation = 1
+		Me.nudTpbx.DSSLocation = 0
 		Me.nudTpbx.DSSOffset = -0.2R
 		Me.nudTpbx.Location = New System.Drawing.Point(195, 43)
 		Me.nudTpbx.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
@@ -5029,7 +5017,7 @@ Partial Class frmNegotiation
 		Me.nudEcow.DecimalPlaces = 2
 		Me.nudEcow.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
 		Me.nudEcow.DSSElementName = "inddiscur5_1"
-		Me.nudEcow.DSSLocation = 5
+		Me.nudEcow.DSSLocation = 0
 		Me.nudEcow.DSSOffset = -0.2R
 		Me.nudEcow.Location = New System.Drawing.Point(291, 158)
 		Me.nudEcow.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
@@ -5044,7 +5032,7 @@ Partial Class frmNegotiation
 		Me.nudsmqi.DecimalPlaces = 2
 		Me.nudsmqi.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
 		Me.nudsmqi.DSSElementName = "inddiscur1_1"
-		Me.nudsmqi.DSSLocation = 1
+		Me.nudsmqi.DSSLocation = 0
 		Me.nudsmqi.DSSOffset = -0.2R
 		Me.nudsmqi.Location = New System.Drawing.Point(2, 343)
 		Me.nudsmqi.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
@@ -5059,7 +5047,7 @@ Partial Class frmNegotiation
 		Me.nudLanUFRO.DecimalPlaces = 2
 		Me.nudLanUFRO.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
 		Me.nudLanUFRO.DSSElementName = "inddiscur2_1"
-		Me.nudLanUFRO.DSSLocation = 2
+		Me.nudLanUFRO.DSSLocation = 0
 		Me.nudLanUFRO.DSSOffset = -0.2R
 		Me.nudLanUFRO.Location = New System.Drawing.Point(98, 89)
 		Me.nudLanUFRO.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
@@ -5074,7 +5062,7 @@ Partial Class frmNegotiation
 		Me.nudsbqi.DecimalPlaces = 2
 		Me.nudsbqi.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
 		Me.nudsbqi.DSSElementName = "inddiscur1_1"
-		Me.nudsbqi.DSSLocation = 1
+		Me.nudsbqi.DSSLocation = 0
 		Me.nudsbqi.DSSOffset = -0.2R
 		Me.nudsbqi.Location = New System.Drawing.Point(2, 297)
 		Me.nudsbqi.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
@@ -5089,7 +5077,7 @@ Partial Class frmNegotiation
 		Me.nudLanUF.DecimalPlaces = 2
 		Me.nudLanUF.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
 		Me.nudLanUF.DSSElementName = "inddiscur1_1"
-		Me.nudLanUF.DSSLocation = 1
+		Me.nudLanUF.DSSLocation = 0
 		Me.nudLanUF.DSSOffset = -0.2R
 		Me.nudLanUF.Location = New System.Drawing.Point(2, 89)
 		Me.nudLanUF.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
@@ -5104,7 +5092,7 @@ Partial Class frmNegotiation
 		Me.nudssqi.DecimalPlaces = 2
 		Me.nudssqi.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
 		Me.nudssqi.DSSElementName = "inddiscur1_1"
-		Me.nudssqi.DSSLocation = 1
+		Me.nudssqi.DSSLocation = 0
 		Me.nudssqi.DSSOffset = -0.2R
 		Me.nudssqi.Location = New System.Drawing.Point(2, 320)
 		Me.nudssqi.Maximum = New Decimal(New Integer() {2000, 0, 0, 0})
@@ -5119,7 +5107,7 @@ Partial Class frmNegotiation
 		Me.nudAgrUF.DecimalPlaces = 2
 		Me.nudAgrUF.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
 		Me.nudAgrUF.DSSElementName = "inddiscur1_1"
-		Me.nudAgrUF.DSSLocation = 1
+		Me.nudAgrUF.DSSLocation = 0
 		Me.nudAgrUF.DSSOffset = -0.2R
 		Me.nudAgrUF.Location = New System.Drawing.Point(2, 43)
 		Me.nudAgrUF.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
@@ -5134,7 +5122,7 @@ Partial Class frmNegotiation
 		Me.nudIndUF.DecimalPlaces = 2
 		Me.nudIndUF.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
 		Me.nudIndUF.DSSElementName = "inddiscur1_1"
-		Me.nudIndUF.DSSLocation = 1
+		Me.nudIndUF.DSSLocation = 0
 		Me.nudIndUF.DSSOffset = -0.2R
 		Me.nudIndUF.Location = New System.Drawing.Point(2, 66)
 		Me.nudIndUF.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
@@ -7257,11 +7245,11 @@ Partial Class frmNegotiation
 	Friend WithEvents Label180 As System.Windows.Forms.Label
 	Friend WithEvents Label116 As System.Windows.Forms.Label
 	Friend WithEvents nudsmqi As SDSS.DSSNumericUpDown
-    Friend WithEvents nudsbqi As SDSS.DSSNumericUpDown
-    Friend WithEvents nudssqi As SDSS.DSSNumericUpDown
-    Friend WithEvents Label119 As System.Windows.Forms.Label
-    Friend WithEvents Label118 As System.Windows.Forms.Label
-    Friend WithEvents Label117 As System.Windows.Forms.Label
+	Friend WithEvents nudsbqi As SDSS.DSSNumericUpDown
+	Friend WithEvents nudssqi As SDSS.DSSNumericUpDown
+	Friend WithEvents Label119 As System.Windows.Forms.Label
+	Friend WithEvents Label118 As System.Windows.Forms.Label
+	Friend WithEvents Label117 As System.Windows.Forms.Label
 	Friend WithEvents Label94 As Label
 	Friend WithEvents Label93 As Label
 	Friend WithEvents lblLan13_2 As DSSLabel
@@ -7372,5 +7360,4 @@ Partial Class frmNegotiation
 	Friend WithEvents pnlOutEcoLarge As DSSPanel
 	Friend WithEvents pnlOutSocLarge As DSSPanel
 	Friend WithEvents pnlOutEcoSmall As DSSPanel
-	Friend WithEvents grbResetMap As DSSGroupBox
 End Class
