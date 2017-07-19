@@ -12,6 +12,16 @@
 
 #Region " Properties "
 
+	Public ReadOnly Property DSSValue() As Double
+		Get
+			If IsNumeric(Me.Text) Then
+				Return CDbl(Me.Text)
+			Else
+				Return 0
+			End If
+		End Get
+	End Property
+
 	Public Property DSSOffset() As Double
 		Get
 			Return Me.myOffset

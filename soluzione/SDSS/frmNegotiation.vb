@@ -80,18 +80,17 @@ Public Class frmNegotiation
 
 	Private Sub RefreshMap(sender As Object, e As EventArgs)
         If Me.IsHandleCreated Then
-            Dim tmpNumericUpDown As DSSNumericUpDown
-            Dim tmpGroupBox As DSSGroupBox
-            Dim tmpPanel As DSSPanel
-            Dim tmpDataRowView As DataRowView
-            Dim avgValue, normalizedValue, locLatitude, locLongitude As Double
+			Dim tmpNumericUpDown As DSSNumericUpDown
+			Dim tmpLabel As DSSLabel
+			Dim tmpGroupBox As DSSGroupBox
+			Dim tmpPanel As DSSPanel
+			Dim avgValue As Double
 
-            tmpNumericUpDown = Nothing
+			tmpNumericUpDown = Nothing
             tmpPanel = Nothing
             tmpGroupBox = Nothing
-            myMap.ClearMap()
 
-            Select Case sender.GetType
+			Select Case sender.GetType
                 Case GetType(DSSGroupBox)
                     tmpGroupBox = DirectCast(sender, DSSGroupBox)
                 Case GetType(DSSPanel)
@@ -104,31 +103,53 @@ Public Class frmNegotiation
             End Select
 
             If tmpGroupBox.DSSDrawOnMap Then
-                For Each tmpPanel In tmpGroupBox.DSSpnlCollection
-                    avgValue = tmpPanel.DSSAverageValue
+				Me.myMap.ClearMap()
 
-                    For Each tmpNumericUpDown In tmpPanel.DSSnudCollection
-                        Me.DSLocations.locations.DefaultView.RowFilter = "locID = " & tmpNumericUpDown.DSSLocation
+				For Each tmpPanel In tmpGroupBox.DSSpnlCollection
+					avgValue = tmpPanel.DSSAverageValue
 
-                        tmpDataRowView = Me.DSLocations.locations.DefaultView(0)
+					For Each tmpNumericUpDown In tmpPanel.DSSnudCollection
+						Me.DrawOnMap(tmpNumericUpDown.DSSLocation, tmpNumericUpDown.Value, avgValue, tmpNumericUpDown.DSSElementName, tmpNumericUpDown.DSSOffset, tmpNumericUpDown.DSSElementColor)
+					Next
+					For Each tmpLabel In tmpPanel.DSSlblCollection
+						Me.DrawOnMap(tmpLabel.DSSLocation, tmpLabel.DSSValue, avgValue, tmpLabel.DSSElementName, tmpLabel.DSSOffset, tmpLabel.DSSElementColor)
+					Next
+				Next
+			End If
+		End If
+	End Sub
 
-                        locLatitude = Utility.NullToDouble(tmpDataRowView("locLatitude"))
-                        locLongitude = Utility.NullToDouble(tmpDataRowView("locLongitude"))
-                        normalizedValue = tmpNumericUpDown.Value / avgValue * columnMaxHeight - columnMaxHeight
+	''' <summary>
+	''' Plots graphical data on map
+	''' </summary>
+	''' <param name="DSSLocation">ID of the target location</param>
+	''' <param name="value">value to rapresent</param>
+	''' <param name="avgValue">medium value for the location</param>
+	''' <param name="elementName">name of graphical element (must be unique)</param>
+	''' <param name="offset">horizontal offset of the data bar</param>
+	''' <param name="elementColor">bar color</param>
+	Private Sub DrawOnMap(DSSLocation As Integer, value As Double, avgValue As Double, elementName As String, offset As Double, elementColor As Color)
+		Dim tmpDataRowView As DataRowView
+		Dim normalizedValue, locLatitude, locLongitude As Double
 
-                        Me.myMap.AddLine("line_" & tmpNumericUpDown.DSSElementName, Colors.Black, locLatitude, locLongitude - tmpNumericUpDown.DSSOffset, locLatitude, locLongitude + tmpNumericUpDown.DSSOffset + barWidth)
-                        Me.myMap.AddBar("bar_" & tmpNumericUpDown.DSSElementName, tmpNumericUpDown.DSSElementColor, locLatitude, locLongitude + tmpNumericUpDown.DSSOffset, barWidth, normalizedValue)
-                    Next
-                Next
-            End If
-        End If
-    End Sub
+		Me.DSLocations.locations.DefaultView.RowFilter = "locID = " & DSSLocation
 
-    ''' <summary>
-    ''' execute computation using Wolfram Mathematica kernel
-    ''' </summary>
-    ''' <remarks></remarks>
-    Private Sub Calculate()
+		tmpDataRowView = Me.DSLocations.locations.DefaultView(0)
+
+		locLatitude = Utility.NullToDouble(tmpDataRowView("locLatitude"))
+		locLongitude = Utility.NullToDouble(tmpDataRowView("locLongitude"))
+		normalizedValue = value / avgValue * columnMaxHeight - columnMaxHeight
+		'normalizedValue *= 10
+
+		Me.myMap.AddLine("line_" & elementName, Colors.Black, locLatitude, locLongitude - offset, locLatitude, locLongitude + offset + barWidth)
+		Me.myMap.AddBar("bar_" & elementName, elementColor, locLatitude, locLongitude + offset, barWidth, normalizedValue)
+	End Sub
+
+	''' <summary>
+	''' execute computation using Wolfram Mathematica kernel
+	''' </summary>
+	''' <remarks></remarks>
+	Private Sub Calculate()
         Dim i, j As Integer
 
         Me.ReadValuesFromGUI()
@@ -494,12 +515,10 @@ Public Class frmNegotiation
 
         Me.groupBoxes(Me.groupBoxesID).DSSVisible = True
 
-        'Me.mapControl.ClearMap()
-
-        Try
-            Me.SplitContainer.SplitterDistance = Me.groupBoxes(Me.groupBoxesID).Width
-        Catch ex As Exception
-        End Try
+		Try
+			Me.SplitContainer.SplitterDistance = Me.groupBoxes(Me.groupBoxesID).Width
+		Catch ex As Exception
+		End Try
     End Sub
 
     ''' <summary>
@@ -815,15 +834,15 @@ Public Class frmNegotiation
         Dim tmpPanel As DSSPanel
 
         If ctl.HasChildren AndAlso Not TypeOf (ctl) Is DSSNumericUpDown Then
-            Select Case ctl.GetType
-                Case GetType(DSSGroupBox)
-                    tmpGroupBox = DirectCast(ctl, DSSGroupBox)
-                    AddHandler tmpGroupBox.DSSInit, AddressOf Me.RefreshMap
-                Case GetType(DSSPanel)
-                    tmpPanel = DirectCast(ctl, DSSPanel)
-                    DirectCast(tmpPanel.Parent, DSSGroupBox).DSSpnlCollection.Add(tmpPanel)
-            End Select
-            For Each children In ctl.Controls
+			Select Case ctl.GetType
+				Case GetType(DSSGroupBox)
+					tmpGroupBox = DirectCast(ctl, DSSGroupBox)
+					AddHandler tmpGroupBox.DSSInit, AddressOf Me.RefreshMap
+				Case GetType(DSSPanel)
+					tmpPanel = DirectCast(ctl, DSSPanel)
+					DirectCast(tmpPanel.Parent, DSSGroupBox).DSSpnlCollection.Add(tmpPanel)
+			End Select
+			For Each children In ctl.Controls
                 Me.AddEventHandler(children)
             Next
         Else
@@ -840,8 +859,12 @@ Public Class frmNegotiation
                 Case GetType(DSSLabel)
                     tmpLabel = DirectCast(ctl, DSSLabel)
                     Me.lblCollection.Add(tmpLabel)
-            End Select
-        End If
+					Try
+						DirectCast(tmpLabel.Parent, DSSPanel).DSSlblCollection.Add(tmpLabel)
+					Catch ex As Exception
+					End Try
+			End Select
+		End If
     End Sub
 
 #End Region
@@ -876,6 +899,17 @@ Public Class frmNegotiation
 			Me.ReadValuesFromDB(frmScenario.ScenarioID)
 		End If
 	End Sub
+
+	'Private Sub gboOutputUses_dssinit(sender As Object, e As EventArgs) Handles gboOutputUses.DSSInit
+	'	Me.RefreshMap(Me.gboOutputUses, New System.EventArgs)
+	'End Sub
+
+	Private Sub tpaUses_VisibleChanged(sender As Object, e As EventArgs) Handles tpaUses.VisibleChanged
+		If Me.tpaUses.Visible Then
+			Me.gboOutputUses.DSSVisible = True
+		End If
+	End Sub
+
 
 #End Region
 
