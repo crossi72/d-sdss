@@ -1300,7 +1300,7 @@ Partial Class frmNegotiation
 		Me.lblLan1_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
 		Me.lblLan1_1.DSSElementName = "OutLan1_1"
 		Me.lblLan1_1.DSSLocation = 1
-		Me.lblLan1_1.DSSOffset = 0R
+		Me.lblLan1_1.DSSOffset = -0.2R
 		Me.lblLan1_1.Location = New System.Drawing.Point(3, 2)
 		Me.lblLan1_1.Name = "lblLan1_1"
 		Me.lblLan1_1.Size = New System.Drawing.Size(34, 20)
@@ -1313,7 +1313,7 @@ Partial Class frmNegotiation
 		Me.lblLan5_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
 		Me.lblLan5_1.DSSElementName = "OutLan5_1"
 		Me.lblLan5_1.DSSLocation = 5
-		Me.lblLan5_1.DSSOffset = 0R
+		Me.lblLan5_1.DSSOffset = -0.2R
 		Me.lblLan5_1.Location = New System.Drawing.Point(3, 94)
 		Me.lblLan5_1.Name = "lblLan5_1"
 		Me.lblLan5_1.Size = New System.Drawing.Size(34, 20)
@@ -1326,7 +1326,7 @@ Partial Class frmNegotiation
 		Me.lblLan4_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
 		Me.lblLan4_1.DSSElementName = "OutLan4_1"
 		Me.lblLan4_1.DSSLocation = 4
-		Me.lblLan4_1.DSSOffset = 0R
+		Me.lblLan4_1.DSSOffset = -0.2R
 		Me.lblLan4_1.Location = New System.Drawing.Point(3, 71)
 		Me.lblLan4_1.Name = "lblLan4_1"
 		Me.lblLan4_1.Size = New System.Drawing.Size(34, 20)
@@ -1339,7 +1339,7 @@ Partial Class frmNegotiation
 		Me.lblLan8_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
 		Me.lblLan8_1.DSSElementName = "OutLan8_1"
 		Me.lblLan8_1.DSSLocation = 8
-		Me.lblLan8_1.DSSOffset = 0R
+		Me.lblLan8_1.DSSOffset = -0.2R
 		Me.lblLan8_1.Location = New System.Drawing.Point(3, 163)
 		Me.lblLan8_1.Name = "lblLan8_1"
 		Me.lblLan8_1.Size = New System.Drawing.Size(34, 20)
@@ -1352,7 +1352,7 @@ Partial Class frmNegotiation
 		Me.lblLan11_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
 		Me.lblLan11_1.DSSElementName = "OutLan11_1"
 		Me.lblLan11_1.DSSLocation = 11
-		Me.lblLan11_1.DSSOffset = 0R
+		Me.lblLan11_1.DSSOffset = -0.2R
 		Me.lblLan11_1.Location = New System.Drawing.Point(3, 232)
 		Me.lblLan11_1.Name = "lblLan11_1"
 		Me.lblLan11_1.Size = New System.Drawing.Size(34, 20)
@@ -1365,7 +1365,7 @@ Partial Class frmNegotiation
 		Me.lblLan2_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
 		Me.lblLan2_1.DSSElementName = "OutLan2_1"
 		Me.lblLan2_1.DSSLocation = 2
-		Me.lblLan2_1.DSSOffset = 0R
+		Me.lblLan2_1.DSSOffset = -0.2R
 		Me.lblLan2_1.Location = New System.Drawing.Point(3, 25)
 		Me.lblLan2_1.Name = "lblLan2_1"
 		Me.lblLan2_1.Size = New System.Drawing.Size(34, 20)
@@ -1378,7 +1378,7 @@ Partial Class frmNegotiation
 		Me.lblLan6_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
 		Me.lblLan6_1.DSSElementName = "OutLan6_1"
 		Me.lblLan6_1.DSSLocation = 6
-		Me.lblLan6_1.DSSOffset = 0R
+		Me.lblLan6_1.DSSOffset = -0.2R
 		Me.lblLan6_1.Location = New System.Drawing.Point(3, 117)
 		Me.lblLan6_1.Name = "lblLan6_1"
 		Me.lblLan6_1.Size = New System.Drawing.Size(34, 20)
@@ -1391,7 +1391,7 @@ Partial Class frmNegotiation
 		Me.lblLan9_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
 		Me.lblLan9_1.DSSElementName = "OutLan9_1"
 		Me.lblLan9_1.DSSLocation = 9
-		Me.lblLan9_1.DSSOffset = 0R
+		Me.lblLan9_1.DSSOffset = -0.2R
 		Me.lblLan9_1.Location = New System.Drawing.Point(3, 186)
 		Me.lblLan9_1.Name = "lblLan9_1"
 		Me.lblLan9_1.Size = New System.Drawing.Size(34, 20)
@@ -1404,7 +1404,7 @@ Partial Class frmNegotiation
 		Me.lblLan12_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
 		Me.lblLan12_1.DSSElementName = "OutLan12_1"
 		Me.lblLan12_1.DSSLocation = 12
-		Me.lblLan12_1.DSSOffset = 0R
+		Me.lblLan12_1.DSSOffset = -0.2R
 		Me.lblLan12_1.Location = New System.Drawing.Point(3, 255)
 		Me.lblLan12_1.Name = "lblLan12_1"
 		Me.lblLan12_1.Size = New System.Drawing.Size(34, 20)
@@ -1417,7 +1417,7 @@ Partial Class frmNegotiation
 		Me.lblLan3_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
 		Me.lblLan3_1.DSSElementName = "OutLan3_1"
 		Me.lblLan3_1.DSSLocation = 3
-		Me.lblLan3_1.DSSOffset = 0R
+		Me.lblLan3_1.DSSOffset = -0.2R
 		Me.lblLan3_1.Location = New System.Drawing.Point(3, 48)
 		Me.lblLan3_1.Name = "lblLan3_1"
 		Me.lblLan3_1.Size = New System.Drawing.Size(34, 20)
@@ -1430,7 +1430,7 @@ Partial Class frmNegotiation
 		Me.lblLan7_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
 		Me.lblLan7_1.DSSElementName = "OutLan7_1"
 		Me.lblLan7_1.DSSLocation = 7
-		Me.lblLan7_1.DSSOffset = 0R
+		Me.lblLan7_1.DSSOffset = -0.2R
 		Me.lblLan7_1.Location = New System.Drawing.Point(3, 140)
 		Me.lblLan7_1.Name = "lblLan7_1"
 		Me.lblLan7_1.Size = New System.Drawing.Size(34, 20)
@@ -1444,7 +1444,7 @@ Partial Class frmNegotiation
 		Me.lblLan10_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
 		Me.lblLan10_1.DSSElementName = "OutLan10_1"
 		Me.lblLan10_1.DSSLocation = 10
-		Me.lblLan10_1.DSSOffset = 0R
+		Me.lblLan10_1.DSSOffset = -0.2R
 		Me.lblLan10_1.Location = New System.Drawing.Point(3, 209)
 		Me.lblLan10_1.Name = "lblLan10_1"
 		Me.lblLan10_1.Size = New System.Drawing.Size(34, 20)
@@ -1457,7 +1457,7 @@ Partial Class frmNegotiation
 		Me.lblLan13_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
 		Me.lblLan13_1.DSSElementName = "OutLan13_1"
 		Me.lblLan13_1.DSSLocation = 13
-		Me.lblLan13_1.DSSOffset = 0R
+		Me.lblLan13_1.DSSOffset = -0.2R
 		Me.lblLan13_1.Location = New System.Drawing.Point(3, 278)
 		Me.lblLan13_1.Name = "lblLan13_1"
 		Me.lblLan13_1.Size = New System.Drawing.Size(34, 20)
@@ -1500,7 +1500,7 @@ Partial Class frmNegotiation
 		Me.lblLan1_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(102, Byte), CType(255, Byte), CType(102, Byte), CType(0, Byte))
 		Me.lblLan1_2.DSSElementName = "OutLan1_2"
 		Me.lblLan1_2.DSSLocation = 1
-		Me.lblLan1_2.DSSOffset = 0R
+		Me.lblLan1_2.DSSOffset = 0.2R
 		Me.lblLan1_2.Location = New System.Drawing.Point(3, 0)
 		Me.lblLan1_2.Name = "lblLan1_2"
 		Me.lblLan1_2.Size = New System.Drawing.Size(34, 20)
@@ -1513,7 +1513,7 @@ Partial Class frmNegotiation
 		Me.lblLan5_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(102, Byte), CType(255, Byte), CType(102, Byte), CType(0, Byte))
 		Me.lblLan5_2.DSSElementName = "OutLan5_2"
 		Me.lblLan5_2.DSSLocation = 5
-		Me.lblLan5_2.DSSOffset = 0R
+		Me.lblLan5_2.DSSOffset = 0.2R
 		Me.lblLan5_2.Location = New System.Drawing.Point(3, 92)
 		Me.lblLan5_2.Name = "lblLan5_2"
 		Me.lblLan5_2.Size = New System.Drawing.Size(34, 20)
@@ -1526,7 +1526,7 @@ Partial Class frmNegotiation
 		Me.lblLan4_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(102, Byte), CType(255, Byte), CType(102, Byte), CType(0, Byte))
 		Me.lblLan4_2.DSSElementName = "OutLan4_2"
 		Me.lblLan4_2.DSSLocation = 4
-		Me.lblLan4_2.DSSOffset = 0R
+		Me.lblLan4_2.DSSOffset = 0.2R
 		Me.lblLan4_2.Location = New System.Drawing.Point(3, 69)
 		Me.lblLan4_2.Name = "lblLan4_2"
 		Me.lblLan4_2.Size = New System.Drawing.Size(34, 20)
@@ -1539,7 +1539,7 @@ Partial Class frmNegotiation
 		Me.lblLan8_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(102, Byte), CType(255, Byte), CType(102, Byte), CType(0, Byte))
 		Me.lblLan8_2.DSSElementName = "OutLan8_2"
 		Me.lblLan8_2.DSSLocation = 8
-		Me.lblLan8_2.DSSOffset = 0R
+		Me.lblLan8_2.DSSOffset = 0.2R
 		Me.lblLan8_2.Location = New System.Drawing.Point(3, 161)
 		Me.lblLan8_2.Name = "lblLan8_2"
 		Me.lblLan8_2.Size = New System.Drawing.Size(34, 20)
@@ -1552,7 +1552,7 @@ Partial Class frmNegotiation
 		Me.lblLan11_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(102, Byte), CType(255, Byte), CType(102, Byte), CType(0, Byte))
 		Me.lblLan11_2.DSSElementName = "OutLan11_2"
 		Me.lblLan11_2.DSSLocation = 11
-		Me.lblLan11_2.DSSOffset = 0R
+		Me.lblLan11_2.DSSOffset = 0.2R
 		Me.lblLan11_2.Location = New System.Drawing.Point(3, 230)
 		Me.lblLan11_2.Name = "lblLan11_2"
 		Me.lblLan11_2.Size = New System.Drawing.Size(34, 20)
@@ -1565,7 +1565,7 @@ Partial Class frmNegotiation
 		Me.lblLan2_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(102, Byte), CType(255, Byte), CType(102, Byte), CType(0, Byte))
 		Me.lblLan2_2.DSSElementName = "OutLan2_2"
 		Me.lblLan2_2.DSSLocation = 2
-		Me.lblLan2_2.DSSOffset = 0R
+		Me.lblLan2_2.DSSOffset = 0.2R
 		Me.lblLan2_2.Location = New System.Drawing.Point(3, 23)
 		Me.lblLan2_2.Name = "lblLan2_2"
 		Me.lblLan2_2.Size = New System.Drawing.Size(34, 20)
@@ -1578,7 +1578,7 @@ Partial Class frmNegotiation
 		Me.lblLan6_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(102, Byte), CType(255, Byte), CType(102, Byte), CType(0, Byte))
 		Me.lblLan6_2.DSSElementName = "OutLan6_2"
 		Me.lblLan6_2.DSSLocation = 6
-		Me.lblLan6_2.DSSOffset = 0R
+		Me.lblLan6_2.DSSOffset = 0.2R
 		Me.lblLan6_2.Location = New System.Drawing.Point(3, 115)
 		Me.lblLan6_2.Name = "lblLan6_2"
 		Me.lblLan6_2.Size = New System.Drawing.Size(34, 20)
@@ -1591,7 +1591,7 @@ Partial Class frmNegotiation
 		Me.lblLan13_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(102, Byte), CType(255, Byte), CType(102, Byte), CType(0, Byte))
 		Me.lblLan13_2.DSSElementName = "OutLan13_2"
 		Me.lblLan13_2.DSSLocation = 13
-		Me.lblLan13_2.DSSOffset = 0R
+		Me.lblLan13_2.DSSOffset = 0.2R
 		Me.lblLan13_2.Location = New System.Drawing.Point(3, 276)
 		Me.lblLan13_2.Name = "lblLan13_2"
 		Me.lblLan13_2.Size = New System.Drawing.Size(34, 20)
@@ -1604,7 +1604,7 @@ Partial Class frmNegotiation
 		Me.lblLan9_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(102, Byte), CType(255, Byte), CType(102, Byte), CType(0, Byte))
 		Me.lblLan9_2.DSSElementName = "OutLan9_2"
 		Me.lblLan9_2.DSSLocation = 9
-		Me.lblLan9_2.DSSOffset = 0R
+		Me.lblLan9_2.DSSOffset = 0.2R
 		Me.lblLan9_2.Location = New System.Drawing.Point(3, 184)
 		Me.lblLan9_2.Name = "lblLan9_2"
 		Me.lblLan9_2.Size = New System.Drawing.Size(34, 20)
@@ -1618,7 +1618,7 @@ Partial Class frmNegotiation
 		Me.lblLan10_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(102, Byte), CType(255, Byte), CType(102, Byte), CType(0, Byte))
 		Me.lblLan10_2.DSSElementName = "OutLan10_2"
 		Me.lblLan10_2.DSSLocation = 10
-		Me.lblLan10_2.DSSOffset = 0R
+		Me.lblLan10_2.DSSOffset = 0.2R
 		Me.lblLan10_2.Location = New System.Drawing.Point(3, 207)
 		Me.lblLan10_2.Name = "lblLan10_2"
 		Me.lblLan10_2.Size = New System.Drawing.Size(34, 20)
@@ -1631,7 +1631,7 @@ Partial Class frmNegotiation
 		Me.lblLan12_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(102, Byte), CType(255, Byte), CType(102, Byte), CType(0, Byte))
 		Me.lblLan12_2.DSSElementName = "OutLan12_2"
 		Me.lblLan12_2.DSSLocation = 12
-		Me.lblLan12_2.DSSOffset = 0R
+		Me.lblLan12_2.DSSOffset = 0.2R
 		Me.lblLan12_2.Location = New System.Drawing.Point(3, 253)
 		Me.lblLan12_2.Name = "lblLan12_2"
 		Me.lblLan12_2.Size = New System.Drawing.Size(34, 20)
@@ -1644,7 +1644,7 @@ Partial Class frmNegotiation
 		Me.lblLan7_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(102, Byte), CType(255, Byte), CType(102, Byte), CType(0, Byte))
 		Me.lblLan7_2.DSSElementName = "OutLan7_2"
 		Me.lblLan7_2.DSSLocation = 7
-		Me.lblLan7_2.DSSOffset = 0R
+		Me.lblLan7_2.DSSOffset = 0.2R
 		Me.lblLan7_2.Location = New System.Drawing.Point(3, 138)
 		Me.lblLan7_2.Name = "lblLan7_2"
 		Me.lblLan7_2.Size = New System.Drawing.Size(34, 20)
@@ -1657,7 +1657,7 @@ Partial Class frmNegotiation
 		Me.lblLan3_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(102, Byte), CType(255, Byte), CType(102, Byte), CType(0, Byte))
 		Me.lblLan3_2.DSSElementName = "OutLan3_2"
 		Me.lblLan3_2.DSSLocation = 3
-		Me.lblLan3_2.DSSOffset = 0R
+		Me.lblLan3_2.DSSOffset = 0.2R
 		Me.lblLan3_2.Location = New System.Drawing.Point(3, 46)
 		Me.lblLan3_2.Name = "lblLan3_2"
 		Me.lblLan3_2.Size = New System.Drawing.Size(34, 20)
