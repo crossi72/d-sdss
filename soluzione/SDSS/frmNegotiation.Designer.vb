@@ -165,8 +165,47 @@ Partial Class frmNegotiation
 		Me.lblEnv7_2 = New SDSS.DSSLabel()
 		Me.lblEnv10_2 = New SDSS.DSSLabel()
 		Me.pnlOutEnvSmall = New SDSS.DSSPanel()
+		Me.lblEnv1_1 = New SDSS.DSSLabel()
+		Me.lblEnv5_1 = New SDSS.DSSLabel()
+		Me.lblEnv4_1 = New SDSS.DSSLabel()
+		Me.lblEnv8_1 = New SDSS.DSSLabel()
+		Me.lblEnv11_1 = New SDSS.DSSLabel()
+		Me.lblEnv2_1 = New SDSS.DSSLabel()
+		Me.lblEnv6_1 = New SDSS.DSSLabel()
+		Me.lblEnv9_1 = New SDSS.DSSLabel()
+		Me.lblEnv12_1 = New SDSS.DSSLabel()
+		Me.lblEnv13_1 = New SDSS.DSSLabel()
+		Me.lblEnv3_1 = New SDSS.DSSLabel()
+		Me.lblEnv10_1 = New SDSS.DSSLabel()
+		Me.lblEnv7_1 = New SDSS.DSSLabel()
 		Me.pnlOutEcoLarge = New SDSS.DSSPanel()
+		Me.lblEco1_2 = New SDSS.DSSLabel()
+		Me.lblEco5_2 = New SDSS.DSSLabel()
+		Me.lblEco4_2 = New SDSS.DSSLabel()
+		Me.lblEco8_2 = New SDSS.DSSLabel()
+		Me.lblEco11_2 = New SDSS.DSSLabel()
+		Me.lblEco2_2 = New SDSS.DSSLabel()
+		Me.lblEco6_2 = New SDSS.DSSLabel()
+		Me.lblEco9_2 = New SDSS.DSSLabel()
+		Me.lblEco12_2 = New SDSS.DSSLabel()
+		Me.lblEco13_2 = New SDSS.DSSLabel()
+		Me.lblEco3_2 = New SDSS.DSSLabel()
+		Me.lblEco10_2 = New SDSS.DSSLabel()
+		Me.lblEco7_2 = New SDSS.DSSLabel()
 		Me.pnlOutSocLarge = New SDSS.DSSPanel()
+		Me.lblSoc1_2 = New SDSS.DSSLabel()
+		Me.lblSoc5_2 = New SDSS.DSSLabel()
+		Me.lblSoc4_2 = New SDSS.DSSLabel()
+		Me.lblSoc8_2 = New SDSS.DSSLabel()
+		Me.lblSoc11_2 = New SDSS.DSSLabel()
+		Me.lblSoc2_2 = New SDSS.DSSLabel()
+		Me.lblSoc6_2 = New SDSS.DSSLabel()
+		Me.lblSoc9_2 = New SDSS.DSSLabel()
+		Me.lblSoc12_2 = New SDSS.DSSLabel()
+		Me.lblSoc13_2 = New SDSS.DSSLabel()
+		Me.lblSoc3_2 = New SDSS.DSSLabel()
+		Me.lblSoc7_2 = New SDSS.DSSLabel()
+		Me.lblSoc10_2 = New SDSS.DSSLabel()
 		Me.pnlOutEcoSmall = New SDSS.DSSPanel()
 		Me.lblEco1_1 = New SDSS.DSSLabel()
 		Me.lblEco5_1 = New SDSS.DSSLabel()
@@ -182,71 +221,32 @@ Partial Class frmNegotiation
 		Me.lblEco10_1 = New SDSS.DSSLabel()
 		Me.lblEco13_1 = New SDSS.DSSLabel()
 		Me.Label180 = New System.Windows.Forms.Label()
+		Me.Label103 = New System.Windows.Forms.Label()
+		Me.Label98 = New System.Windows.Forms.Label()
+		Me.Label104 = New System.Windows.Forms.Label()
 		Me.Label179 = New System.Windows.Forms.Label()
+		Me.Label105 = New System.Windows.Forms.Label()
+		Me.Label99 = New System.Windows.Forms.Label()
+		Me.Label106 = New System.Windows.Forms.Label()
 		Me.Label95 = New System.Windows.Forms.Label()
+		Me.Label107 = New System.Windows.Forms.Label()
+		Me.Label178 = New System.Windows.Forms.Label()
+		Me.Label108 = New System.Windows.Forms.Label()
+		Me.Label97 = New System.Windows.Forms.Label()
+		Me.Label109 = New System.Windows.Forms.Label()
+		Me.Label96 = New System.Windows.Forms.Label()
+		Me.Label110 = New System.Windows.Forms.Label()
+		Me.Label115 = New System.Windows.Forms.Label()
+		Me.Label111 = New System.Windows.Forms.Label()
+		Me.Label114 = New System.Windows.Forms.Label()
+		Me.Label112 = New System.Windows.Forms.Label()
+		Me.Label113 = New System.Windows.Forms.Label()
 		Me.DssPanel7 = New SDSS.DSSPanel()
 		Me.DssPanel8 = New SDSS.DSSPanel()
 		Me.DssPanel9 = New SDSS.DSSPanel()
 		Me.DssPanel5 = New SDSS.DSSPanel()
 		Me.DssPanel6 = New SDSS.DSSPanel()
 		Me.DssPanel4 = New SDSS.DSSPanel()
-		Me.Label98 = New System.Windows.Forms.Label()
-		Me.Label99 = New System.Windows.Forms.Label()
-		Me.lblSoc13_2 = New SDSS.DSSLabel()
-		Me.lblEco13_2 = New SDSS.DSSLabel()
-		Me.lblSoc10_2 = New SDSS.DSSLabel()
-		Me.lblEco10_2 = New SDSS.DSSLabel()
-		Me.lblSoc7_2 = New SDSS.DSSLabel()
-		Me.lblEco7_2 = New SDSS.DSSLabel()
-		Me.lblSoc3_2 = New SDSS.DSSLabel()
-		Me.lblEco3_2 = New SDSS.DSSLabel()
-		Me.lblSoc12_2 = New SDSS.DSSLabel()
-		Me.lblEco12_2 = New SDSS.DSSLabel()
-		Me.lblSoc9_2 = New SDSS.DSSLabel()
-		Me.lblEco9_2 = New SDSS.DSSLabel()
-		Me.lblSoc6_2 = New SDSS.DSSLabel()
-		Me.lblEco6_2 = New SDSS.DSSLabel()
-		Me.lblSoc2_2 = New SDSS.DSSLabel()
-		Me.lblEco2_2 = New SDSS.DSSLabel()
-		Me.lblSoc11_2 = New SDSS.DSSLabel()
-		Me.lblEco11_2 = New SDSS.DSSLabel()
-		Me.lblSoc8_2 = New SDSS.DSSLabel()
-		Me.lblEco8_2 = New SDSS.DSSLabel()
-		Me.lblSoc4_2 = New SDSS.DSSLabel()
-		Me.lblEco4_2 = New SDSS.DSSLabel()
-		Me.lblSoc5_2 = New SDSS.DSSLabel()
-		Me.lblEco5_2 = New SDSS.DSSLabel()
-		Me.lblSoc1_2 = New SDSS.DSSLabel()
-		Me.lblEco1_2 = New SDSS.DSSLabel()
-		Me.Label96 = New System.Windows.Forms.Label()
-		Me.Label97 = New System.Windows.Forms.Label()
-		Me.lblEnv13_1 = New SDSS.DSSLabel()
-		Me.lblEnv10_1 = New SDSS.DSSLabel()
-		Me.lblEnv7_1 = New SDSS.DSSLabel()
-		Me.lblEnv3_1 = New SDSS.DSSLabel()
-		Me.lblEnv12_1 = New SDSS.DSSLabel()
-		Me.lblEnv9_1 = New SDSS.DSSLabel()
-		Me.lblEnv6_1 = New SDSS.DSSLabel()
-		Me.lblEnv2_1 = New SDSS.DSSLabel()
-		Me.lblEnv11_1 = New SDSS.DSSLabel()
-		Me.lblEnv8_1 = New SDSS.DSSLabel()
-		Me.lblEnv4_1 = New SDSS.DSSLabel()
-		Me.lblEnv5_1 = New SDSS.DSSLabel()
-		Me.lblEnv1_1 = New SDSS.DSSLabel()
-		Me.Label178 = New System.Windows.Forms.Label()
-		Me.Label103 = New System.Windows.Forms.Label()
-		Me.Label104 = New System.Windows.Forms.Label()
-		Me.Label105 = New System.Windows.Forms.Label()
-		Me.Label106 = New System.Windows.Forms.Label()
-		Me.Label107 = New System.Windows.Forms.Label()
-		Me.Label108 = New System.Windows.Forms.Label()
-		Me.Label109 = New System.Windows.Forms.Label()
-		Me.Label110 = New System.Windows.Forms.Label()
-		Me.Label111 = New System.Windows.Forms.Label()
-		Me.Label112 = New System.Windows.Forms.Label()
-		Me.Label113 = New System.Windows.Forms.Label()
-		Me.Label114 = New System.Windows.Forms.Label()
-		Me.Label115 = New System.Windows.Forms.Label()
 		Me.tpaWeights = New System.Windows.Forms.TabPage()
 		Me.pboGraphWeights = New System.Windows.Forms.PictureBox()
 		Me.tpaStandards = New System.Windows.Forms.TabPage()
@@ -880,7 +880,6 @@ Partial Class frmNegotiation
 		Me.gboOutputUses.Size = New System.Drawing.Size(451, 406)
 		Me.gboOutputUses.TabIndex = 112
 		Me.gboOutputUses.TabStop = False
-		Me.gboOutputUses.Visible = False
 		'
 		'pnlOutAgrSmall
 		'
@@ -1097,7 +1096,7 @@ Partial Class frmNegotiation
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd10_2)
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd7_2)
 		Me.pnlOutIndLarge.DSSVisible = False
-		Me.pnlOutIndLarge.Location = New System.Drawing.Point(281, 56)
+		Me.pnlOutIndLarge.Location = New System.Drawing.Point(293, 54)
 		Me.pnlOutIndLarge.Name = "pnlOutIndLarge"
 		Me.pnlOutIndLarge.Size = New System.Drawing.Size(49, 317)
 		Me.pnlOutIndLarge.TabIndex = 111
@@ -1505,7 +1504,7 @@ Partial Class frmNegotiation
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan7_2)
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan3_2)
 		Me.pnlOutLanLarge.DSSVisible = False
-		Me.pnlOutLanLarge.Location = New System.Drawing.Point(342, 55)
+		Me.pnlOutLanLarge.Location = New System.Drawing.Point(347, 56)
 		Me.pnlOutLanLarge.Name = "pnlOutLanLarge"
 		Me.pnlOutLanLarge.Size = New System.Drawing.Size(49, 317)
 		Me.pnlOutLanLarge.TabIndex = 111
@@ -1705,7 +1704,7 @@ Partial Class frmNegotiation
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr7_2)
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr10_2)
 		Me.pnlOutAgrLarge.DSSVisible = False
-		Me.pnlOutAgrLarge.Location = New System.Drawing.Point(224, 57)
+		Me.pnlOutAgrLarge.Location = New System.Drawing.Point(223, 57)
 		Me.pnlOutAgrLarge.Name = "pnlOutAgrLarge"
 		Me.pnlOutAgrLarge.Size = New System.Drawing.Size(49, 317)
 		Me.pnlOutAgrLarge.TabIndex = 110
@@ -2054,7 +2053,6 @@ Partial Class frmNegotiation
 		Me.gboOutputImpacts.Size = New System.Drawing.Size(422, 391)
 		Me.gboOutputImpacts.TabIndex = 195
 		Me.gboOutputImpacts.TabStop = False
-		Me.gboOutputImpacts.Visible = False
 		'
 		'pnlOutSocSmall
 		'
@@ -2458,6 +2456,176 @@ Partial Class frmNegotiation
 		Me.pnlOutEnvSmall.Size = New System.Drawing.Size(49, 317)
 		Me.pnlOutEnvSmall.TabIndex = 1
 		'
+		'lblEnv1_1
+		'
+		Me.lblEnv1_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEnv1_1.DSSElementName = Nothing
+		Me.lblEnv1_1.DSSLocation = 1
+		Me.lblEnv1_1.DSSOffset = -0.2R
+		Me.lblEnv1_1.Location = New System.Drawing.Point(3, 0)
+		Me.lblEnv1_1.Name = "lblEnv1_1"
+		Me.lblEnv1_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnv1_1.TabIndex = 124
+		Me.lblEnv1_1.Text = "-"
+		Me.lblEnv1_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnv5_1
+		'
+		Me.lblEnv5_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEnv5_1.DSSElementName = Nothing
+		Me.lblEnv5_1.DSSLocation = 5
+		Me.lblEnv5_1.DSSOffset = -0.2R
+		Me.lblEnv5_1.Location = New System.Drawing.Point(3, 92)
+		Me.lblEnv5_1.Name = "lblEnv5_1"
+		Me.lblEnv5_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnv5_1.TabIndex = 121
+		Me.lblEnv5_1.Text = "-"
+		Me.lblEnv5_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnv4_1
+		'
+		Me.lblEnv4_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEnv4_1.DSSElementName = Nothing
+		Me.lblEnv4_1.DSSLocation = 4
+		Me.lblEnv4_1.DSSOffset = -0.2R
+		Me.lblEnv4_1.Location = New System.Drawing.Point(3, 69)
+		Me.lblEnv4_1.Name = "lblEnv4_1"
+		Me.lblEnv4_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnv4_1.TabIndex = 118
+		Me.lblEnv4_1.Text = "-"
+		Me.lblEnv4_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnv8_1
+		'
+		Me.lblEnv8_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEnv8_1.DSSElementName = Nothing
+		Me.lblEnv8_1.DSSLocation = 8
+		Me.lblEnv8_1.DSSOffset = -0.2R
+		Me.lblEnv8_1.Location = New System.Drawing.Point(3, 161)
+		Me.lblEnv8_1.Name = "lblEnv8_1"
+		Me.lblEnv8_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnv8_1.TabIndex = 115
+		Me.lblEnv8_1.Text = "-"
+		Me.lblEnv8_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnv11_1
+		'
+		Me.lblEnv11_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEnv11_1.DSSElementName = Nothing
+		Me.lblEnv11_1.DSSLocation = 11
+		Me.lblEnv11_1.DSSOffset = -0.2R
+		Me.lblEnv11_1.Location = New System.Drawing.Point(3, 230)
+		Me.lblEnv11_1.Name = "lblEnv11_1"
+		Me.lblEnv11_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnv11_1.TabIndex = 112
+		Me.lblEnv11_1.Text = "-"
+		Me.lblEnv11_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnv2_1
+		'
+		Me.lblEnv2_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEnv2_1.DSSElementName = Nothing
+		Me.lblEnv2_1.DSSLocation = 2
+		Me.lblEnv2_1.DSSOffset = -0.2R
+		Me.lblEnv2_1.Location = New System.Drawing.Point(3, 23)
+		Me.lblEnv2_1.Name = "lblEnv2_1"
+		Me.lblEnv2_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnv2_1.TabIndex = 109
+		Me.lblEnv2_1.Text = "-"
+		Me.lblEnv2_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnv6_1
+		'
+		Me.lblEnv6_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEnv6_1.DSSElementName = Nothing
+		Me.lblEnv6_1.DSSLocation = 6
+		Me.lblEnv6_1.DSSOffset = -0.2R
+		Me.lblEnv6_1.Location = New System.Drawing.Point(3, 115)
+		Me.lblEnv6_1.Name = "lblEnv6_1"
+		Me.lblEnv6_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnv6_1.TabIndex = 136
+		Me.lblEnv6_1.Text = "-"
+		Me.lblEnv6_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnv9_1
+		'
+		Me.lblEnv9_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEnv9_1.DSSElementName = Nothing
+		Me.lblEnv9_1.DSSLocation = 9
+		Me.lblEnv9_1.DSSOffset = -0.2R
+		Me.lblEnv9_1.Location = New System.Drawing.Point(3, 184)
+		Me.lblEnv9_1.Name = "lblEnv9_1"
+		Me.lblEnv9_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnv9_1.TabIndex = 143
+		Me.lblEnv9_1.Text = "-"
+		Me.lblEnv9_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnv12_1
+		'
+		Me.lblEnv12_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEnv12_1.DSSElementName = Nothing
+		Me.lblEnv12_1.DSSLocation = 12
+		Me.lblEnv12_1.DSSOffset = -0.2R
+		Me.lblEnv12_1.Location = New System.Drawing.Point(3, 253)
+		Me.lblEnv12_1.Name = "lblEnv12_1"
+		Me.lblEnv12_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnv12_1.TabIndex = 140
+		Me.lblEnv12_1.Text = "-"
+		Me.lblEnv12_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnv13_1
+		'
+		Me.lblEnv13_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEnv13_1.DSSElementName = Nothing
+		Me.lblEnv13_1.DSSLocation = 13
+		Me.lblEnv13_1.DSSOffset = -0.2R
+		Me.lblEnv13_1.Location = New System.Drawing.Point(3, 276)
+		Me.lblEnv13_1.Name = "lblEnv13_1"
+		Me.lblEnv13_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnv13_1.TabIndex = 108
+		Me.lblEnv13_1.Text = "-"
+		Me.lblEnv13_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnv3_1
+		'
+		Me.lblEnv3_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEnv3_1.DSSElementName = Nothing
+		Me.lblEnv3_1.DSSLocation = 3
+		Me.lblEnv3_1.DSSOffset = -0.2R
+		Me.lblEnv3_1.Location = New System.Drawing.Point(3, 46)
+		Me.lblEnv3_1.Name = "lblEnv3_1"
+		Me.lblEnv3_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnv3_1.TabIndex = 145
+		Me.lblEnv3_1.Text = "-"
+		Me.lblEnv3_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnv10_1
+		'
+		Me.lblEnv10_1.AccessibleDescription = ""
+		Me.lblEnv10_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEnv10_1.DSSElementName = Nothing
+		Me.lblEnv10_1.DSSLocation = 10
+		Me.lblEnv10_1.DSSOffset = -0.2R
+		Me.lblEnv10_1.Location = New System.Drawing.Point(3, 207)
+		Me.lblEnv10_1.Name = "lblEnv10_1"
+		Me.lblEnv10_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnv10_1.TabIndex = 131
+		Me.lblEnv10_1.Text = "-"
+		Me.lblEnv10_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnv7_1
+		'
+		Me.lblEnv7_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEnv7_1.DSSElementName = Nothing
+		Me.lblEnv7_1.DSSLocation = 7
+		Me.lblEnv7_1.DSSOffset = -0.2R
+		Me.lblEnv7_1.Location = New System.Drawing.Point(3, 138)
+		Me.lblEnv7_1.Name = "lblEnv7_1"
+		Me.lblEnv7_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnv7_1.TabIndex = 134
+		Me.lblEnv7_1.Text = "-"
+		Me.lblEnv7_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
 		'pnlOutEcoLarge
 		'
 		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco1_2)
@@ -2479,6 +2647,175 @@ Partial Class frmNegotiation
 		Me.pnlOutEcoLarge.Size = New System.Drawing.Size(49, 317)
 		Me.pnlOutEcoLarge.TabIndex = 1
 		'
+		'lblEco1_2
+		'
+		Me.lblEco1_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEco1_2.DSSElementName = Nothing
+		Me.lblEco1_2.DSSLocation = 1
+		Me.lblEco1_2.DSSOffset = 0.2R
+		Me.lblEco1_2.Location = New System.Drawing.Point(3, 0)
+		Me.lblEco1_2.Name = "lblEco1_2"
+		Me.lblEco1_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEco1_2.TabIndex = 188
+		Me.lblEco1_2.Text = "-"
+		Me.lblEco1_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEco5_2
+		'
+		Me.lblEco5_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEco5_2.DSSElementName = Nothing
+		Me.lblEco5_2.DSSLocation = 5
+		Me.lblEco5_2.DSSOffset = 0.2R
+		Me.lblEco5_2.Location = New System.Drawing.Point(3, 92)
+		Me.lblEco5_2.Name = "lblEco5_2"
+		Me.lblEco5_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEco5_2.TabIndex = 165
+		Me.lblEco5_2.Text = "-"
+		Me.lblEco5_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEco4_2
+		'
+		Me.lblEco4_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEco4_2.DSSElementName = Nothing
+		Me.lblEco4_2.DSSLocation = 4
+		Me.lblEco4_2.DSSOffset = 0.2R
+		Me.lblEco4_2.Location = New System.Drawing.Point(3, 69)
+		Me.lblEco4_2.Name = "lblEco4_2"
+		Me.lblEco4_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEco4_2.TabIndex = 162
+		Me.lblEco4_2.Text = "-"
+		Me.lblEco4_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEco8_2
+		'
+		Me.lblEco8_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEco8_2.DSSElementName = Nothing
+		Me.lblEco8_2.DSSLocation = 8
+		Me.lblEco8_2.DSSOffset = 0.2R
+		Me.lblEco8_2.Location = New System.Drawing.Point(3, 161)
+		Me.lblEco8_2.Name = "lblEco8_2"
+		Me.lblEco8_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEco8_2.TabIndex = 167
+		Me.lblEco8_2.Text = "-"
+		Me.lblEco8_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEco11_2
+		'
+		Me.lblEco11_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEco11_2.DSSElementName = Nothing
+		Me.lblEco11_2.DSSLocation = 11
+		Me.lblEco11_2.DSSOffset = 0.2R
+		Me.lblEco11_2.Location = New System.Drawing.Point(3, 230)
+		Me.lblEco11_2.Name = "lblEco11_2"
+		Me.lblEco11_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEco11_2.TabIndex = 156
+		Me.lblEco11_2.Text = "-"
+		Me.lblEco11_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEco2_2
+		'
+		Me.lblEco2_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEco2_2.DSSElementName = Nothing
+		Me.lblEco2_2.DSSLocation = 2
+		Me.lblEco2_2.DSSOffset = 0.2R
+		Me.lblEco2_2.Location = New System.Drawing.Point(3, 23)
+		Me.lblEco2_2.Name = "lblEco2_2"
+		Me.lblEco2_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEco2_2.TabIndex = 153
+		Me.lblEco2_2.Text = "-"
+		Me.lblEco2_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEco6_2
+		'
+		Me.lblEco6_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEco6_2.DSSElementName = Nothing
+		Me.lblEco6_2.DSSLocation = 6
+		Me.lblEco6_2.DSSOffset = 0.2R
+		Me.lblEco6_2.Location = New System.Drawing.Point(3, 115)
+		Me.lblEco6_2.Name = "lblEco6_2"
+		Me.lblEco6_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEco6_2.TabIndex = 158
+		Me.lblEco6_2.Text = "-"
+		Me.lblEco6_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEco9_2
+		'
+		Me.lblEco9_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEco9_2.DSSElementName = Nothing
+		Me.lblEco9_2.DSSLocation = 9
+		Me.lblEco9_2.DSSOffset = 0.2R
+		Me.lblEco9_2.Location = New System.Drawing.Point(3, 184)
+		Me.lblEco9_2.Name = "lblEco9_2"
+		Me.lblEco9_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEco9_2.TabIndex = 170
+		Me.lblEco9_2.Text = "-"
+		Me.lblEco9_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEco12_2
+		'
+		Me.lblEco12_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEco12_2.DSSElementName = Nothing
+		Me.lblEco12_2.DSSLocation = 12
+		Me.lblEco12_2.DSSOffset = 0.2R
+		Me.lblEco12_2.Location = New System.Drawing.Point(3, 253)
+		Me.lblEco12_2.Name = "lblEco12_2"
+		Me.lblEco12_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEco12_2.TabIndex = 184
+		Me.lblEco12_2.Text = "-"
+		Me.lblEco12_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEco13_2
+		'
+		Me.lblEco13_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEco13_2.DSSElementName = Nothing
+		Me.lblEco13_2.DSSLocation = 13
+		Me.lblEco13_2.DSSOffset = 0.2R
+		Me.lblEco13_2.Location = New System.Drawing.Point(3, 276)
+		Me.lblEco13_2.Name = "lblEco13_2"
+		Me.lblEco13_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEco13_2.TabIndex = 172
+		Me.lblEco13_2.Text = "-"
+		Me.lblEco13_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEco3_2
+		'
+		Me.lblEco3_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEco3_2.DSSElementName = Nothing
+		Me.lblEco3_2.DSSLocation = 3
+		Me.lblEco3_2.DSSOffset = 0.2R
+		Me.lblEco3_2.Location = New System.Drawing.Point(3, 46)
+		Me.lblEco3_2.Name = "lblEco3_2"
+		Me.lblEco3_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEco3_2.TabIndex = 181
+		Me.lblEco3_2.Text = "-"
+		Me.lblEco3_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEco10_2
+		'
+		Me.lblEco10_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEco10_2.DSSElementName = Nothing
+		Me.lblEco10_2.DSSLocation = 10
+		Me.lblEco10_2.DSSOffset = 0.2R
+		Me.lblEco10_2.Location = New System.Drawing.Point(3, 207)
+		Me.lblEco10_2.Name = "lblEco10_2"
+		Me.lblEco10_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEco10_2.TabIndex = 175
+		Me.lblEco10_2.Text = "-"
+		Me.lblEco10_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEco7_2
+		'
+		Me.lblEco7_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEco7_2.DSSElementName = Nothing
+		Me.lblEco7_2.DSSLocation = 7
+		Me.lblEco7_2.DSSOffset = 0.2R
+		Me.lblEco7_2.Location = New System.Drawing.Point(3, 138)
+		Me.lblEco7_2.Name = "lblEco7_2"
+		Me.lblEco7_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEco7_2.TabIndex = 179
+		Me.lblEco7_2.Text = "-"
+		Me.lblEco7_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
 		'pnlOutSocLarge
 		'
 		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc1_2)
@@ -2499,6 +2836,175 @@ Partial Class frmNegotiation
 		Me.pnlOutSocLarge.Name = "pnlOutSocLarge"
 		Me.pnlOutSocLarge.Size = New System.Drawing.Size(49, 317)
 		Me.pnlOutSocLarge.TabIndex = 1
+		'
+		'lblSoc1_2
+		'
+		Me.lblSoc1_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
+		Me.lblSoc1_2.DSSElementName = Nothing
+		Me.lblSoc1_2.DSSLocation = 1
+		Me.lblSoc1_2.DSSOffset = 0.2R
+		Me.lblSoc1_2.Location = New System.Drawing.Point(3, 0)
+		Me.lblSoc1_2.Name = "lblSoc1_2"
+		Me.lblSoc1_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblSoc1_2.TabIndex = 168
+		Me.lblSoc1_2.Text = "-"
+		Me.lblSoc1_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSoc5_2
+		'
+		Me.lblSoc5_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
+		Me.lblSoc5_2.DSSElementName = Nothing
+		Me.lblSoc5_2.DSSLocation = 5
+		Me.lblSoc5_2.DSSOffset = 0.2R
+		Me.lblSoc5_2.Location = New System.Drawing.Point(3, 92)
+		Me.lblSoc5_2.Name = "lblSoc5_2"
+		Me.lblSoc5_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblSoc5_2.TabIndex = 164
+		Me.lblSoc5_2.Text = "-"
+		Me.lblSoc5_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSoc4_2
+		'
+		Me.lblSoc4_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
+		Me.lblSoc4_2.DSSElementName = Nothing
+		Me.lblSoc4_2.DSSLocation = 4
+		Me.lblSoc4_2.DSSOffset = 0.2R
+		Me.lblSoc4_2.Location = New System.Drawing.Point(3, 69)
+		Me.lblSoc4_2.Name = "lblSoc4_2"
+		Me.lblSoc4_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblSoc4_2.TabIndex = 161
+		Me.lblSoc4_2.Text = "-"
+		Me.lblSoc4_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSoc8_2
+		'
+		Me.lblSoc8_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
+		Me.lblSoc8_2.DSSElementName = Nothing
+		Me.lblSoc8_2.DSSLocation = 8
+		Me.lblSoc8_2.DSSOffset = 0.2R
+		Me.lblSoc8_2.Location = New System.Drawing.Point(3, 161)
+		Me.lblSoc8_2.Name = "lblSoc8_2"
+		Me.lblSoc8_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblSoc8_2.TabIndex = 159
+		Me.lblSoc8_2.Text = "-"
+		Me.lblSoc8_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSoc11_2
+		'
+		Me.lblSoc11_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
+		Me.lblSoc11_2.DSSElementName = Nothing
+		Me.lblSoc11_2.DSSLocation = 11
+		Me.lblSoc11_2.DSSOffset = 0.2R
+		Me.lblSoc11_2.Location = New System.Drawing.Point(3, 230)
+		Me.lblSoc11_2.Name = "lblSoc11_2"
+		Me.lblSoc11_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblSoc11_2.TabIndex = 155
+		Me.lblSoc11_2.Text = "-"
+		Me.lblSoc11_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSoc2_2
+		'
+		Me.lblSoc2_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
+		Me.lblSoc2_2.DSSElementName = Nothing
+		Me.lblSoc2_2.DSSLocation = 2
+		Me.lblSoc2_2.DSSOffset = 0.2R
+		Me.lblSoc2_2.Location = New System.Drawing.Point(3, 23)
+		Me.lblSoc2_2.Name = "lblSoc2_2"
+		Me.lblSoc2_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblSoc2_2.TabIndex = 152
+		Me.lblSoc2_2.Text = "-"
+		Me.lblSoc2_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSoc6_2
+		'
+		Me.lblSoc6_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
+		Me.lblSoc6_2.DSSElementName = Nothing
+		Me.lblSoc6_2.DSSLocation = 6
+		Me.lblSoc6_2.DSSOffset = 0.2R
+		Me.lblSoc6_2.Location = New System.Drawing.Point(3, 115)
+		Me.lblSoc6_2.Name = "lblSoc6_2"
+		Me.lblSoc6_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblSoc6_2.TabIndex = 169
+		Me.lblSoc6_2.Text = "-"
+		Me.lblSoc6_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSoc9_2
+		'
+		Me.lblSoc9_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
+		Me.lblSoc9_2.DSSElementName = Nothing
+		Me.lblSoc9_2.DSSLocation = 9
+		Me.lblSoc9_2.DSSOffset = 0.2R
+		Me.lblSoc9_2.Location = New System.Drawing.Point(3, 184)
+		Me.lblSoc9_2.Name = "lblSoc9_2"
+		Me.lblSoc9_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblSoc9_2.TabIndex = 186
+		Me.lblSoc9_2.Text = "-"
+		Me.lblSoc9_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSoc12_2
+		'
+		Me.lblSoc12_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
+		Me.lblSoc12_2.DSSElementName = Nothing
+		Me.lblSoc12_2.DSSLocation = 12
+		Me.lblSoc12_2.DSSOffset = 0.2R
+		Me.lblSoc12_2.Location = New System.Drawing.Point(3, 253)
+		Me.lblSoc12_2.Name = "lblSoc12_2"
+		Me.lblSoc12_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblSoc12_2.TabIndex = 183
+		Me.lblSoc12_2.Text = "-"
+		Me.lblSoc12_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSoc13_2
+		'
+		Me.lblSoc13_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
+		Me.lblSoc13_2.DSSElementName = Nothing
+		Me.lblSoc13_2.DSSLocation = 13
+		Me.lblSoc13_2.DSSOffset = 0.2R
+		Me.lblSoc13_2.Location = New System.Drawing.Point(3, 276)
+		Me.lblSoc13_2.Name = "lblSoc13_2"
+		Me.lblSoc13_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblSoc13_2.TabIndex = 171
+		Me.lblSoc13_2.Text = "-"
+		Me.lblSoc13_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSoc3_2
+		'
+		Me.lblSoc3_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
+		Me.lblSoc3_2.DSSElementName = Nothing
+		Me.lblSoc3_2.DSSLocation = 3
+		Me.lblSoc3_2.DSSOffset = 0.2R
+		Me.lblSoc3_2.Location = New System.Drawing.Point(3, 46)
+		Me.lblSoc3_2.Name = "lblSoc3_2"
+		Me.lblSoc3_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblSoc3_2.TabIndex = 180
+		Me.lblSoc3_2.Text = "-"
+		Me.lblSoc3_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSoc7_2
+		'
+		Me.lblSoc7_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
+		Me.lblSoc7_2.DSSElementName = Nothing
+		Me.lblSoc7_2.DSSLocation = 7
+		Me.lblSoc7_2.DSSOffset = 0.2R
+		Me.lblSoc7_2.Location = New System.Drawing.Point(3, 138)
+		Me.lblSoc7_2.Name = "lblSoc7_2"
+		Me.lblSoc7_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblSoc7_2.TabIndex = 177
+		Me.lblSoc7_2.Text = "-"
+		Me.lblSoc7_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSoc10_2
+		'
+		Me.lblSoc10_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
+		Me.lblSoc10_2.DSSElementName = Nothing
+		Me.lblSoc10_2.DSSLocation = 10
+		Me.lblSoc10_2.DSSOffset = 0.2R
+		Me.lblSoc10_2.Location = New System.Drawing.Point(3, 207)
+		Me.lblSoc10_2.Name = "lblSoc10_2"
+		Me.lblSoc10_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblSoc10_2.TabIndex = 174
+		Me.lblSoc10_2.Text = "-"
+		Me.lblSoc10_2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
 		'pnlOutEcoSmall
 		'
@@ -2525,7 +3031,7 @@ Partial Class frmNegotiation
 		'
 		Me.lblEco1_1.Cursor = System.Windows.Forms.Cursors.IBeam
 		Me.lblEco1_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
-		Me.lblEco1_1.DSSElementName = Nothing
+		Me.lblEco1_1.DSSElementName = "OutEco1_1"
 		Me.lblEco1_1.DSSLocation = 1
 		Me.lblEco1_1.DSSOffset = -0.2R
 		Me.lblEco1_1.Location = New System.Drawing.Point(3, 0)
@@ -2539,7 +3045,7 @@ Partial Class frmNegotiation
 		'
 		Me.lblEco5_1.Cursor = System.Windows.Forms.Cursors.IBeam
 		Me.lblEco5_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
-		Me.lblEco5_1.DSSElementName = Nothing
+		Me.lblEco5_1.DSSElementName = "OutEco5_1"
 		Me.lblEco5_1.DSSLocation = 5
 		Me.lblEco5_1.DSSOffset = -0.2R
 		Me.lblEco5_1.Location = New System.Drawing.Point(3, 92)
@@ -2553,7 +3059,7 @@ Partial Class frmNegotiation
 		'
 		Me.lblEco4_1.Cursor = System.Windows.Forms.Cursors.IBeam
 		Me.lblEco4_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
-		Me.lblEco4_1.DSSElementName = Nothing
+		Me.lblEco4_1.DSSElementName = "OutEco4_1"
 		Me.lblEco4_1.DSSLocation = 4
 		Me.lblEco4_1.DSSOffset = -0.2R
 		Me.lblEco4_1.Location = New System.Drawing.Point(3, 69)
@@ -2567,7 +3073,7 @@ Partial Class frmNegotiation
 		'
 		Me.lblEco8_1.Cursor = System.Windows.Forms.Cursors.IBeam
 		Me.lblEco8_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
-		Me.lblEco8_1.DSSElementName = Nothing
+		Me.lblEco8_1.DSSElementName = "OutEco8_1"
 		Me.lblEco8_1.DSSLocation = 8
 		Me.lblEco8_1.DSSOffset = -0.2R
 		Me.lblEco8_1.Location = New System.Drawing.Point(3, 161)
@@ -2581,7 +3087,7 @@ Partial Class frmNegotiation
 		'
 		Me.lblEco11_1.Cursor = System.Windows.Forms.Cursors.IBeam
 		Me.lblEco11_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
-		Me.lblEco11_1.DSSElementName = Nothing
+		Me.lblEco11_1.DSSElementName = "OutEco11_1"
 		Me.lblEco11_1.DSSLocation = 11
 		Me.lblEco11_1.DSSOffset = -0.2R
 		Me.lblEco11_1.Location = New System.Drawing.Point(3, 230)
@@ -2595,7 +3101,7 @@ Partial Class frmNegotiation
 		'
 		Me.lblEco2_1.Cursor = System.Windows.Forms.Cursors.IBeam
 		Me.lblEco2_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
-		Me.lblEco2_1.DSSElementName = Nothing
+		Me.lblEco2_1.DSSElementName = "OutEco2_1"
 		Me.lblEco2_1.DSSLocation = 2
 		Me.lblEco2_1.DSSOffset = -0.2R
 		Me.lblEco2_1.Location = New System.Drawing.Point(3, 23)
@@ -2609,7 +3115,7 @@ Partial Class frmNegotiation
 		'
 		Me.lblEco6_1.Cursor = System.Windows.Forms.Cursors.IBeam
 		Me.lblEco6_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
-		Me.lblEco6_1.DSSElementName = Nothing
+		Me.lblEco6_1.DSSElementName = "OutEco6_1"
 		Me.lblEco6_1.DSSLocation = 6
 		Me.lblEco6_1.DSSOffset = -0.2R
 		Me.lblEco6_1.Location = New System.Drawing.Point(3, 115)
@@ -2623,7 +3129,7 @@ Partial Class frmNegotiation
 		'
 		Me.lblEco9_1.Cursor = System.Windows.Forms.Cursors.IBeam
 		Me.lblEco9_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
-		Me.lblEco9_1.DSSElementName = Nothing
+		Me.lblEco9_1.DSSElementName = "OutEco9_1"
 		Me.lblEco9_1.DSSLocation = 9
 		Me.lblEco9_1.DSSOffset = -0.2R
 		Me.lblEco9_1.Location = New System.Drawing.Point(3, 184)
@@ -2637,7 +3143,7 @@ Partial Class frmNegotiation
 		'
 		Me.lblEco12_1.Cursor = System.Windows.Forms.Cursors.IBeam
 		Me.lblEco12_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
-		Me.lblEco12_1.DSSElementName = Nothing
+		Me.lblEco12_1.DSSElementName = "OutEco12_1"
 		Me.lblEco12_1.DSSLocation = 12
 		Me.lblEco12_1.DSSOffset = -0.2R
 		Me.lblEco12_1.Location = New System.Drawing.Point(3, 253)
@@ -2651,7 +3157,7 @@ Partial Class frmNegotiation
 		'
 		Me.lblEco3_1.Cursor = System.Windows.Forms.Cursors.IBeam
 		Me.lblEco3_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
-		Me.lblEco3_1.DSSElementName = Nothing
+		Me.lblEco3_1.DSSElementName = "OutEco3_1"
 		Me.lblEco3_1.DSSLocation = 3
 		Me.lblEco3_1.DSSOffset = -0.2R
 		Me.lblEco3_1.Location = New System.Drawing.Point(3, 46)
@@ -2665,7 +3171,7 @@ Partial Class frmNegotiation
 		'
 		Me.lblEco7_1.Cursor = System.Windows.Forms.Cursors.IBeam
 		Me.lblEco7_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
-		Me.lblEco7_1.DSSElementName = Nothing
+		Me.lblEco7_1.DSSElementName = "OutEco7_1"
 		Me.lblEco7_1.DSSLocation = 7
 		Me.lblEco7_1.DSSOffset = -0.2R
 		Me.lblEco7_1.Location = New System.Drawing.Point(3, 138)
@@ -2679,7 +3185,7 @@ Partial Class frmNegotiation
 		'
 		Me.lblEco10_1.Cursor = System.Windows.Forms.Cursors.IBeam
 		Me.lblEco10_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
-		Me.lblEco10_1.DSSElementName = Nothing
+		Me.lblEco10_1.DSSElementName = "OutEco10_1"
 		Me.lblEco10_1.DSSLocation = 10
 		Me.lblEco10_1.DSSOffset = -0.2R
 		Me.lblEco10_1.Location = New System.Drawing.Point(3, 207)
@@ -2693,7 +3199,7 @@ Partial Class frmNegotiation
 		'
 		Me.lblEco13_1.Cursor = System.Windows.Forms.Cursors.IBeam
 		Me.lblEco13_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
-		Me.lblEco13_1.DSSElementName = Nothing
+		Me.lblEco13_1.DSSElementName = "OutEco13_1"
 		Me.lblEco13_1.DSSLocation = 13
 		Me.lblEco13_1.DSSOffset = -0.2R
 		Me.lblEco13_1.Location = New System.Drawing.Point(3, 276)
@@ -2712,6 +3218,31 @@ Partial Class frmNegotiation
 		Me.Label180.Text = "eco"
 		Me.Label180.TextAlign = System.Drawing.ContentAlignment.TopCenter
 		'
+		'Label103
+		'
+		Me.Label103.Location = New System.Drawing.Point(8, 339)
+		Me.Label103.Name = "Label103"
+		Me.Label103.Size = New System.Drawing.Size(68, 20)
+		Me.Label103.TabIndex = 49
+		Me.Label103.Text = "Tabouk"
+		'
+		'Label98
+		'
+		Me.Label98.Location = New System.Drawing.Point(263, 14)
+		Me.Label98.Name = "Label98"
+		Me.Label98.Size = New System.Drawing.Size(97, 20)
+		Me.Label98.TabIndex = 190
+		Me.Label98.Text = "Large"
+		Me.Label98.TextAlign = System.Drawing.ContentAlignment.TopCenter
+		'
+		'Label104
+		'
+		Me.Label104.Location = New System.Drawing.Point(8, 201)
+		Me.Label104.Name = "Label104"
+		Me.Label104.Size = New System.Drawing.Size(68, 20)
+		Me.Label104.TabIndex = 50
+		Me.Label104.Text = "Jizan"
+		'
 		'Label179
 		'
 		Me.Label179.Location = New System.Drawing.Point(141, 34)
@@ -2721,6 +3252,31 @@ Partial Class frmNegotiation
 		Me.Label179.Text = "soc"
 		Me.Label179.TextAlign = System.Drawing.ContentAlignment.TopCenter
 		'
+		'Label105
+		'
+		Me.Label105.Location = New System.Drawing.Point(8, 316)
+		Me.Label105.Name = "Label105"
+		Me.Label105.Size = New System.Drawing.Size(68, 20)
+		Me.Label105.TabIndex = 51
+		Me.Label105.Text = "Riyadh"
+		'
+		'Label99
+		'
+		Me.Label99.Location = New System.Drawing.Point(110, 14)
+		Me.Label99.Name = "Label99"
+		Me.Label99.Size = New System.Drawing.Size(97, 20)
+		Me.Label99.TabIndex = 189
+		Me.Label99.Text = "Small"
+		Me.Label99.TextAlign = System.Drawing.ContentAlignment.TopCenter
+		'
+		'Label106
+		'
+		Me.Label106.Location = New System.Drawing.Point(8, 178)
+		Me.Label106.Name = "Label106"
+		Me.Label106.Size = New System.Drawing.Size(68, 20)
+		Me.Label106.TabIndex = 52
+		Me.Label106.Text = "Hail"
+		'
 		'Label95
 		'
 		Me.Label95.Location = New System.Drawing.Point(356, 34)
@@ -2729,6 +3285,105 @@ Partial Class frmNegotiation
 		Me.Label95.TabIndex = 147
 		Me.Label95.Text = "env"
 		Me.Label95.TextAlign = System.Drawing.ContentAlignment.TopCenter
+		'
+		'Label107
+		'
+		Me.Label107.Location = New System.Drawing.Point(8, 293)
+		Me.Label107.Name = "Label107"
+		Me.Label107.Size = New System.Drawing.Size(68, 20)
+		Me.Label107.TabIndex = 53
+		Me.Label107.Text = "North Border"
+		'
+		'Label178
+		'
+		Me.Label178.Location = New System.Drawing.Point(190, 34)
+		Me.Label178.Name = "Label178"
+		Me.Label178.Size = New System.Drawing.Size(34, 20)
+		Me.Label178.TabIndex = 105
+		Me.Label178.Text = "env"
+		Me.Label178.TextAlign = System.Drawing.ContentAlignment.TopCenter
+		'
+		'Label108
+		'
+		Me.Label108.Location = New System.Drawing.Point(8, 270)
+		Me.Label108.Name = "Label108"
+		Me.Label108.Size = New System.Drawing.Size(68, 20)
+		Me.Label108.TabIndex = 61
+		Me.Label108.Text = "Najran"
+		'
+		'Label97
+		'
+		Me.Label97.Location = New System.Drawing.Point(244, 34)
+		Me.Label97.Name = "Label97"
+		Me.Label97.Size = New System.Drawing.Size(34, 20)
+		Me.Label97.TabIndex = 149
+		Me.Label97.Text = "eco"
+		Me.Label97.TextAlign = System.Drawing.ContentAlignment.TopCenter
+		'
+		'Label109
+		'
+		Me.Label109.Location = New System.Drawing.Point(8, 109)
+		Me.Label109.Name = "Label109"
+		Me.Label109.Size = New System.Drawing.Size(68, 20)
+		Me.Label109.TabIndex = 54
+		Me.Label109.Text = "Al - Jouf"
+		'
+		'Label96
+		'
+		Me.Label96.Location = New System.Drawing.Point(294, 34)
+		Me.Label96.Name = "Label96"
+		Me.Label96.Size = New System.Drawing.Size(34, 20)
+		Me.Label96.TabIndex = 148
+		Me.Label96.Text = "soc"
+		Me.Label96.TextAlign = System.Drawing.ContentAlignment.TopCenter
+		'
+		'Label110
+		'
+		Me.Label110.Location = New System.Drawing.Point(8, 247)
+		Me.Label110.Name = "Label110"
+		Me.Label110.Size = New System.Drawing.Size(68, 20)
+		Me.Label110.TabIndex = 55
+		Me.Label110.Text = "Mecca"
+		'
+		'Label115
+		'
+		Me.Label115.Location = New System.Drawing.Point(8, 63)
+		Me.Label115.Name = "Label115"
+		Me.Label115.Size = New System.Drawing.Size(68, 20)
+		Me.Label115.TabIndex = 60
+		Me.Label115.Text = "Al - Baha"
+		'
+		'Label111
+		'
+		Me.Label111.Location = New System.Drawing.Point(8, 155)
+		Me.Label111.Name = "Label111"
+		Me.Label111.Size = New System.Drawing.Size(68, 20)
+		Me.Label111.TabIndex = 56
+		Me.Label111.Text = "Eastern Area"
+		'
+		'Label114
+		'
+		Me.Label114.Location = New System.Drawing.Point(8, 132)
+		Me.Label114.Name = "Label114"
+		Me.Label114.Size = New System.Drawing.Size(68, 20)
+		Me.Label114.TabIndex = 59
+		Me.Label114.Text = "Aseer"
+		'
+		'Label112
+		'
+		Me.Label112.Location = New System.Drawing.Point(8, 86)
+		Me.Label112.Name = "Label112"
+		Me.Label112.Size = New System.Drawing.Size(68, 20)
+		Me.Label112.TabIndex = 57
+		Me.Label112.Text = "Al - Gassem"
+		'
+		'Label113
+		'
+		Me.Label113.Location = New System.Drawing.Point(8, 224)
+		Me.Label113.Name = "Label113"
+		Me.Label113.Size = New System.Drawing.Size(68, 20)
+		Me.Label113.TabIndex = 58
+		Me.Label113.Text = "Madina"
 		'
 		'DssPanel7
 		'
@@ -2778,669 +3433,12 @@ Partial Class frmNegotiation
 		Me.DssPanel4.Size = New System.Drawing.Size(49, 317)
 		Me.DssPanel4.TabIndex = 191
 		'
-		'Label98
-		'
-		Me.Label98.Location = New System.Drawing.Point(272, 8)
-		Me.Label98.Name = "Label98"
-		Me.Label98.Size = New System.Drawing.Size(97, 20)
-		Me.Label98.TabIndex = 190
-		Me.Label98.Text = "Large"
-		Me.Label98.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'Label99
-		'
-		Me.Label99.Location = New System.Drawing.Point(135, 12)
-		Me.Label99.Name = "Label99"
-		Me.Label99.Size = New System.Drawing.Size(97, 20)
-		Me.Label99.TabIndex = 189
-		Me.Label99.Text = "Small"
-		Me.Label99.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'lblSoc13_2
-		'
-		Me.lblSoc13_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
-		Me.lblSoc13_2.DSSElementName = Nothing
-		Me.lblSoc13_2.DSSLocation = 13
-		Me.lblSoc13_2.DSSOffset = 0.2R
-		Me.lblSoc13_2.Location = New System.Drawing.Point(3, 276)
-		Me.lblSoc13_2.Name = "lblSoc13_2"
-		Me.lblSoc13_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblSoc13_2.TabIndex = 171
-		Me.lblSoc13_2.Text = "-"
-		Me.lblSoc13_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEco13_2
-		'
-		Me.lblEco13_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEco13_2.DSSElementName = Nothing
-		Me.lblEco13_2.DSSLocation = 13
-		Me.lblEco13_2.DSSOffset = 0.2R
-		Me.lblEco13_2.Location = New System.Drawing.Point(3, 276)
-		Me.lblEco13_2.Name = "lblEco13_2"
-		Me.lblEco13_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblEco13_2.TabIndex = 172
-		Me.lblEco13_2.Text = "-"
-		Me.lblEco13_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblSoc10_2
-		'
-		Me.lblSoc10_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
-		Me.lblSoc10_2.DSSElementName = Nothing
-		Me.lblSoc10_2.DSSLocation = 10
-		Me.lblSoc10_2.DSSOffset = 0.2R
-		Me.lblSoc10_2.Location = New System.Drawing.Point(3, 207)
-		Me.lblSoc10_2.Name = "lblSoc10_2"
-		Me.lblSoc10_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblSoc10_2.TabIndex = 174
-		Me.lblSoc10_2.Text = "-"
-		Me.lblSoc10_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEco10_2
-		'
-		Me.lblEco10_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEco10_2.DSSElementName = Nothing
-		Me.lblEco10_2.DSSLocation = 10
-		Me.lblEco10_2.DSSOffset = 0.2R
-		Me.lblEco10_2.Location = New System.Drawing.Point(3, 207)
-		Me.lblEco10_2.Name = "lblEco10_2"
-		Me.lblEco10_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblEco10_2.TabIndex = 175
-		Me.lblEco10_2.Text = "-"
-		Me.lblEco10_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblSoc7_2
-		'
-		Me.lblSoc7_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
-		Me.lblSoc7_2.DSSElementName = Nothing
-		Me.lblSoc7_2.DSSLocation = 7
-		Me.lblSoc7_2.DSSOffset = 0.2R
-		Me.lblSoc7_2.Location = New System.Drawing.Point(3, 138)
-		Me.lblSoc7_2.Name = "lblSoc7_2"
-		Me.lblSoc7_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblSoc7_2.TabIndex = 177
-		Me.lblSoc7_2.Text = "-"
-		Me.lblSoc7_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEco7_2
-		'
-		Me.lblEco7_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEco7_2.DSSElementName = Nothing
-		Me.lblEco7_2.DSSLocation = 7
-		Me.lblEco7_2.DSSOffset = 0.2R
-		Me.lblEco7_2.Location = New System.Drawing.Point(3, 138)
-		Me.lblEco7_2.Name = "lblEco7_2"
-		Me.lblEco7_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblEco7_2.TabIndex = 179
-		Me.lblEco7_2.Text = "-"
-		Me.lblEco7_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblSoc3_2
-		'
-		Me.lblSoc3_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
-		Me.lblSoc3_2.DSSElementName = Nothing
-		Me.lblSoc3_2.DSSLocation = 3
-		Me.lblSoc3_2.DSSOffset = 0.2R
-		Me.lblSoc3_2.Location = New System.Drawing.Point(3, 46)
-		Me.lblSoc3_2.Name = "lblSoc3_2"
-		Me.lblSoc3_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblSoc3_2.TabIndex = 180
-		Me.lblSoc3_2.Text = "-"
-		Me.lblSoc3_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEco3_2
-		'
-		Me.lblEco3_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEco3_2.DSSElementName = Nothing
-		Me.lblEco3_2.DSSLocation = 3
-		Me.lblEco3_2.DSSOffset = 0.2R
-		Me.lblEco3_2.Location = New System.Drawing.Point(3, 46)
-		Me.lblEco3_2.Name = "lblEco3_2"
-		Me.lblEco3_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblEco3_2.TabIndex = 181
-		Me.lblEco3_2.Text = "-"
-		Me.lblEco3_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblSoc12_2
-		'
-		Me.lblSoc12_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
-		Me.lblSoc12_2.DSSElementName = Nothing
-		Me.lblSoc12_2.DSSLocation = 12
-		Me.lblSoc12_2.DSSOffset = 0.2R
-		Me.lblSoc12_2.Location = New System.Drawing.Point(3, 253)
-		Me.lblSoc12_2.Name = "lblSoc12_2"
-		Me.lblSoc12_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblSoc12_2.TabIndex = 183
-		Me.lblSoc12_2.Text = "-"
-		Me.lblSoc12_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEco12_2
-		'
-		Me.lblEco12_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEco12_2.DSSElementName = Nothing
-		Me.lblEco12_2.DSSLocation = 12
-		Me.lblEco12_2.DSSOffset = 0.2R
-		Me.lblEco12_2.Location = New System.Drawing.Point(3, 253)
-		Me.lblEco12_2.Name = "lblEco12_2"
-		Me.lblEco12_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblEco12_2.TabIndex = 184
-		Me.lblEco12_2.Text = "-"
-		Me.lblEco12_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblSoc9_2
-		'
-		Me.lblSoc9_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
-		Me.lblSoc9_2.DSSElementName = Nothing
-		Me.lblSoc9_2.DSSLocation = 9
-		Me.lblSoc9_2.DSSOffset = 0.2R
-		Me.lblSoc9_2.Location = New System.Drawing.Point(3, 184)
-		Me.lblSoc9_2.Name = "lblSoc9_2"
-		Me.lblSoc9_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblSoc9_2.TabIndex = 186
-		Me.lblSoc9_2.Text = "-"
-		Me.lblSoc9_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEco9_2
-		'
-		Me.lblEco9_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEco9_2.DSSElementName = Nothing
-		Me.lblEco9_2.DSSLocation = 9
-		Me.lblEco9_2.DSSOffset = 0.2R
-		Me.lblEco9_2.Location = New System.Drawing.Point(3, 184)
-		Me.lblEco9_2.Name = "lblEco9_2"
-		Me.lblEco9_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblEco9_2.TabIndex = 170
-		Me.lblEco9_2.Text = "-"
-		Me.lblEco9_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblSoc6_2
-		'
-		Me.lblSoc6_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
-		Me.lblSoc6_2.DSSElementName = Nothing
-		Me.lblSoc6_2.DSSLocation = 6
-		Me.lblSoc6_2.DSSOffset = 0.2R
-		Me.lblSoc6_2.Location = New System.Drawing.Point(3, 115)
-		Me.lblSoc6_2.Name = "lblSoc6_2"
-		Me.lblSoc6_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblSoc6_2.TabIndex = 169
-		Me.lblSoc6_2.Text = "-"
-		Me.lblSoc6_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEco6_2
-		'
-		Me.lblEco6_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEco6_2.DSSElementName = Nothing
-		Me.lblEco6_2.DSSLocation = 6
-		Me.lblEco6_2.DSSOffset = 0.2R
-		Me.lblEco6_2.Location = New System.Drawing.Point(3, 115)
-		Me.lblEco6_2.Name = "lblEco6_2"
-		Me.lblEco6_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblEco6_2.TabIndex = 158
-		Me.lblEco6_2.Text = "-"
-		Me.lblEco6_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblSoc2_2
-		'
-		Me.lblSoc2_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
-		Me.lblSoc2_2.DSSElementName = Nothing
-		Me.lblSoc2_2.DSSLocation = 2
-		Me.lblSoc2_2.DSSOffset = 0.2R
-		Me.lblSoc2_2.Location = New System.Drawing.Point(3, 23)
-		Me.lblSoc2_2.Name = "lblSoc2_2"
-		Me.lblSoc2_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblSoc2_2.TabIndex = 152
-		Me.lblSoc2_2.Text = "-"
-		Me.lblSoc2_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEco2_2
-		'
-		Me.lblEco2_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEco2_2.DSSElementName = Nothing
-		Me.lblEco2_2.DSSLocation = 2
-		Me.lblEco2_2.DSSOffset = 0.2R
-		Me.lblEco2_2.Location = New System.Drawing.Point(3, 23)
-		Me.lblEco2_2.Name = "lblEco2_2"
-		Me.lblEco2_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblEco2_2.TabIndex = 153
-		Me.lblEco2_2.Text = "-"
-		Me.lblEco2_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblSoc11_2
-		'
-		Me.lblSoc11_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
-		Me.lblSoc11_2.DSSElementName = Nothing
-		Me.lblSoc11_2.DSSLocation = 11
-		Me.lblSoc11_2.DSSOffset = 0.2R
-		Me.lblSoc11_2.Location = New System.Drawing.Point(3, 230)
-		Me.lblSoc11_2.Name = "lblSoc11_2"
-		Me.lblSoc11_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblSoc11_2.TabIndex = 155
-		Me.lblSoc11_2.Text = "-"
-		Me.lblSoc11_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEco11_2
-		'
-		Me.lblEco11_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEco11_2.DSSElementName = Nothing
-		Me.lblEco11_2.DSSLocation = 11
-		Me.lblEco11_2.DSSOffset = 0.2R
-		Me.lblEco11_2.Location = New System.Drawing.Point(3, 230)
-		Me.lblEco11_2.Name = "lblEco11_2"
-		Me.lblEco11_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblEco11_2.TabIndex = 156
-		Me.lblEco11_2.Text = "-"
-		Me.lblEco11_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblSoc8_2
-		'
-		Me.lblSoc8_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
-		Me.lblSoc8_2.DSSElementName = Nothing
-		Me.lblSoc8_2.DSSLocation = 8
-		Me.lblSoc8_2.DSSOffset = 0.2R
-		Me.lblSoc8_2.Location = New System.Drawing.Point(3, 161)
-		Me.lblSoc8_2.Name = "lblSoc8_2"
-		Me.lblSoc8_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblSoc8_2.TabIndex = 159
-		Me.lblSoc8_2.Text = "-"
-		Me.lblSoc8_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEco8_2
-		'
-		Me.lblEco8_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEco8_2.DSSElementName = Nothing
-		Me.lblEco8_2.DSSLocation = 8
-		Me.lblEco8_2.DSSOffset = 0.2R
-		Me.lblEco8_2.Location = New System.Drawing.Point(3, 161)
-		Me.lblEco8_2.Name = "lblEco8_2"
-		Me.lblEco8_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblEco8_2.TabIndex = 167
-		Me.lblEco8_2.Text = "-"
-		Me.lblEco8_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblSoc4_2
-		'
-		Me.lblSoc4_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
-		Me.lblSoc4_2.DSSElementName = Nothing
-		Me.lblSoc4_2.DSSLocation = 4
-		Me.lblSoc4_2.DSSOffset = 0.2R
-		Me.lblSoc4_2.Location = New System.Drawing.Point(3, 69)
-		Me.lblSoc4_2.Name = "lblSoc4_2"
-		Me.lblSoc4_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblSoc4_2.TabIndex = 161
-		Me.lblSoc4_2.Text = "-"
-		Me.lblSoc4_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEco4_2
-		'
-		Me.lblEco4_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEco4_2.DSSElementName = Nothing
-		Me.lblEco4_2.DSSLocation = 4
-		Me.lblEco4_2.DSSOffset = 0.2R
-		Me.lblEco4_2.Location = New System.Drawing.Point(3, 69)
-		Me.lblEco4_2.Name = "lblEco4_2"
-		Me.lblEco4_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblEco4_2.TabIndex = 162
-		Me.lblEco4_2.Text = "-"
-		Me.lblEco4_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblSoc5_2
-		'
-		Me.lblSoc5_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
-		Me.lblSoc5_2.DSSElementName = Nothing
-		Me.lblSoc5_2.DSSLocation = 5
-		Me.lblSoc5_2.DSSOffset = 0.2R
-		Me.lblSoc5_2.Location = New System.Drawing.Point(3, 92)
-		Me.lblSoc5_2.Name = "lblSoc5_2"
-		Me.lblSoc5_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblSoc5_2.TabIndex = 164
-		Me.lblSoc5_2.Text = "-"
-		Me.lblSoc5_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEco5_2
-		'
-		Me.lblEco5_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEco5_2.DSSElementName = Nothing
-		Me.lblEco5_2.DSSLocation = 5
-		Me.lblEco5_2.DSSOffset = 0.2R
-		Me.lblEco5_2.Location = New System.Drawing.Point(3, 92)
-		Me.lblEco5_2.Name = "lblEco5_2"
-		Me.lblEco5_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblEco5_2.TabIndex = 165
-		Me.lblEco5_2.Text = "-"
-		Me.lblEco5_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblSoc1_2
-		'
-		Me.lblSoc1_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
-		Me.lblSoc1_2.DSSElementName = Nothing
-		Me.lblSoc1_2.DSSLocation = 1
-		Me.lblSoc1_2.DSSOffset = 0.2R
-		Me.lblSoc1_2.Location = New System.Drawing.Point(3, 0)
-		Me.lblSoc1_2.Name = "lblSoc1_2"
-		Me.lblSoc1_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblSoc1_2.TabIndex = 168
-		Me.lblSoc1_2.Text = "-"
-		Me.lblSoc1_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEco1_2
-		'
-		Me.lblEco1_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEco1_2.DSSElementName = Nothing
-		Me.lblEco1_2.DSSLocation = 1
-		Me.lblEco1_2.DSSOffset = 0.2R
-		Me.lblEco1_2.Location = New System.Drawing.Point(3, 0)
-		Me.lblEco1_2.Name = "lblEco1_2"
-		Me.lblEco1_2.Size = New System.Drawing.Size(34, 20)
-		Me.lblEco1_2.TabIndex = 188
-		Me.lblEco1_2.Text = "-"
-		Me.lblEco1_2.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'Label96
-		'
-		Me.Label96.Location = New System.Drawing.Point(294, 34)
-		Me.Label96.Name = "Label96"
-		Me.Label96.Size = New System.Drawing.Size(34, 20)
-		Me.Label96.TabIndex = 148
-		Me.Label96.Text = "soc"
-		Me.Label96.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'Label97
-		'
-		Me.Label97.Location = New System.Drawing.Point(244, 34)
-		Me.Label97.Name = "Label97"
-		Me.Label97.Size = New System.Drawing.Size(34, 20)
-		Me.Label97.TabIndex = 149
-		Me.Label97.Text = "eco"
-		Me.Label97.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'lblEnv13_1
-		'
-		Me.lblEnv13_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEnv13_1.DSSElementName = Nothing
-		Me.lblEnv13_1.DSSLocation = 13
-		Me.lblEnv13_1.DSSOffset = -0.2R
-		Me.lblEnv13_1.Location = New System.Drawing.Point(3, 276)
-		Me.lblEnv13_1.Name = "lblEnv13_1"
-		Me.lblEnv13_1.Size = New System.Drawing.Size(34, 20)
-		Me.lblEnv13_1.TabIndex = 108
-		Me.lblEnv13_1.Text = "-"
-		Me.lblEnv13_1.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEnv10_1
-		'
-		Me.lblEnv10_1.AccessibleDescription = ""
-		Me.lblEnv10_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEnv10_1.DSSElementName = Nothing
-		Me.lblEnv10_1.DSSLocation = 10
-		Me.lblEnv10_1.DSSOffset = -0.2R
-		Me.lblEnv10_1.Location = New System.Drawing.Point(3, 207)
-		Me.lblEnv10_1.Name = "lblEnv10_1"
-		Me.lblEnv10_1.Size = New System.Drawing.Size(34, 20)
-		Me.lblEnv10_1.TabIndex = 131
-		Me.lblEnv10_1.Text = "-"
-		Me.lblEnv10_1.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEnv7_1
-		'
-		Me.lblEnv7_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEnv7_1.DSSElementName = Nothing
-		Me.lblEnv7_1.DSSLocation = 7
-		Me.lblEnv7_1.DSSOffset = -0.2R
-		Me.lblEnv7_1.Location = New System.Drawing.Point(3, 138)
-		Me.lblEnv7_1.Name = "lblEnv7_1"
-		Me.lblEnv7_1.Size = New System.Drawing.Size(34, 20)
-		Me.lblEnv7_1.TabIndex = 134
-		Me.lblEnv7_1.Text = "-"
-		Me.lblEnv7_1.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEnv3_1
-		'
-		Me.lblEnv3_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEnv3_1.DSSElementName = Nothing
-		Me.lblEnv3_1.DSSLocation = 3
-		Me.lblEnv3_1.DSSOffset = -0.2R
-		Me.lblEnv3_1.Location = New System.Drawing.Point(3, 46)
-		Me.lblEnv3_1.Name = "lblEnv3_1"
-		Me.lblEnv3_1.Size = New System.Drawing.Size(34, 20)
-		Me.lblEnv3_1.TabIndex = 145
-		Me.lblEnv3_1.Text = "-"
-		Me.lblEnv3_1.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEnv12_1
-		'
-		Me.lblEnv12_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEnv12_1.DSSElementName = Nothing
-		Me.lblEnv12_1.DSSLocation = 12
-		Me.lblEnv12_1.DSSOffset = -0.2R
-		Me.lblEnv12_1.Location = New System.Drawing.Point(3, 253)
-		Me.lblEnv12_1.Name = "lblEnv12_1"
-		Me.lblEnv12_1.Size = New System.Drawing.Size(34, 20)
-		Me.lblEnv12_1.TabIndex = 140
-		Me.lblEnv12_1.Text = "-"
-		Me.lblEnv12_1.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEnv9_1
-		'
-		Me.lblEnv9_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEnv9_1.DSSElementName = Nothing
-		Me.lblEnv9_1.DSSLocation = 9
-		Me.lblEnv9_1.DSSOffset = -0.2R
-		Me.lblEnv9_1.Location = New System.Drawing.Point(3, 184)
-		Me.lblEnv9_1.Name = "lblEnv9_1"
-		Me.lblEnv9_1.Size = New System.Drawing.Size(34, 20)
-		Me.lblEnv9_1.TabIndex = 143
-		Me.lblEnv9_1.Text = "-"
-		Me.lblEnv9_1.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEnv6_1
-		'
-		Me.lblEnv6_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEnv6_1.DSSElementName = Nothing
-		Me.lblEnv6_1.DSSLocation = 6
-		Me.lblEnv6_1.DSSOffset = -0.2R
-		Me.lblEnv6_1.Location = New System.Drawing.Point(3, 115)
-		Me.lblEnv6_1.Name = "lblEnv6_1"
-		Me.lblEnv6_1.Size = New System.Drawing.Size(34, 20)
-		Me.lblEnv6_1.TabIndex = 136
-		Me.lblEnv6_1.Text = "-"
-		Me.lblEnv6_1.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEnv2_1
-		'
-		Me.lblEnv2_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEnv2_1.DSSElementName = Nothing
-		Me.lblEnv2_1.DSSLocation = 2
-		Me.lblEnv2_1.DSSOffset = -0.2R
-		Me.lblEnv2_1.Location = New System.Drawing.Point(3, 23)
-		Me.lblEnv2_1.Name = "lblEnv2_1"
-		Me.lblEnv2_1.Size = New System.Drawing.Size(34, 20)
-		Me.lblEnv2_1.TabIndex = 109
-		Me.lblEnv2_1.Text = "-"
-		Me.lblEnv2_1.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEnv11_1
-		'
-		Me.lblEnv11_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEnv11_1.DSSElementName = Nothing
-		Me.lblEnv11_1.DSSLocation = 11
-		Me.lblEnv11_1.DSSOffset = -0.2R
-		Me.lblEnv11_1.Location = New System.Drawing.Point(3, 230)
-		Me.lblEnv11_1.Name = "lblEnv11_1"
-		Me.lblEnv11_1.Size = New System.Drawing.Size(34, 20)
-		Me.lblEnv11_1.TabIndex = 112
-		Me.lblEnv11_1.Text = "-"
-		Me.lblEnv11_1.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEnv8_1
-		'
-		Me.lblEnv8_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEnv8_1.DSSElementName = Nothing
-		Me.lblEnv8_1.DSSLocation = 8
-		Me.lblEnv8_1.DSSOffset = -0.2R
-		Me.lblEnv8_1.Location = New System.Drawing.Point(3, 161)
-		Me.lblEnv8_1.Name = "lblEnv8_1"
-		Me.lblEnv8_1.Size = New System.Drawing.Size(34, 20)
-		Me.lblEnv8_1.TabIndex = 115
-		Me.lblEnv8_1.Text = "-"
-		Me.lblEnv8_1.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEnv4_1
-		'
-		Me.lblEnv4_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEnv4_1.DSSElementName = Nothing
-		Me.lblEnv4_1.DSSLocation = 4
-		Me.lblEnv4_1.DSSOffset = -0.2R
-		Me.lblEnv4_1.Location = New System.Drawing.Point(3, 69)
-		Me.lblEnv4_1.Name = "lblEnv4_1"
-		Me.lblEnv4_1.Size = New System.Drawing.Size(34, 20)
-		Me.lblEnv4_1.TabIndex = 118
-		Me.lblEnv4_1.Text = "-"
-		Me.lblEnv4_1.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEnv5_1
-		'
-		Me.lblEnv5_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEnv5_1.DSSElementName = Nothing
-		Me.lblEnv5_1.DSSLocation = 5
-		Me.lblEnv5_1.DSSOffset = -0.2R
-		Me.lblEnv5_1.Location = New System.Drawing.Point(3, 92)
-		Me.lblEnv5_1.Name = "lblEnv5_1"
-		Me.lblEnv5_1.Size = New System.Drawing.Size(34, 20)
-		Me.lblEnv5_1.TabIndex = 121
-		Me.lblEnv5_1.Text = "-"
-		Me.lblEnv5_1.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'lblEnv1_1
-		'
-		Me.lblEnv1_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblEnv1_1.DSSElementName = Nothing
-		Me.lblEnv1_1.DSSLocation = 1
-		Me.lblEnv1_1.DSSOffset = -0.2R
-		Me.lblEnv1_1.Location = New System.Drawing.Point(3, 0)
-		Me.lblEnv1_1.Name = "lblEnv1_1"
-		Me.lblEnv1_1.Size = New System.Drawing.Size(34, 20)
-		Me.lblEnv1_1.TabIndex = 124
-		Me.lblEnv1_1.Text = "-"
-		Me.lblEnv1_1.TextAlign = System.Drawing.ContentAlignment.TopRight
-		'
-		'Label178
-		'
-		Me.Label178.Location = New System.Drawing.Point(190, 34)
-		Me.Label178.Name = "Label178"
-		Me.Label178.Size = New System.Drawing.Size(34, 20)
-		Me.Label178.TabIndex = 105
-		Me.Label178.Text = "env"
-		Me.Label178.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'Label103
-		'
-		Me.Label103.Location = New System.Drawing.Point(8, 339)
-		Me.Label103.Name = "Label103"
-		Me.Label103.Size = New System.Drawing.Size(68, 20)
-		Me.Label103.TabIndex = 49
-		Me.Label103.Text = "Tabouk"
-		'
-		'Label104
-		'
-		Me.Label104.Location = New System.Drawing.Point(8, 201)
-		Me.Label104.Name = "Label104"
-		Me.Label104.Size = New System.Drawing.Size(68, 20)
-		Me.Label104.TabIndex = 50
-		Me.Label104.Text = "Jizan"
-		'
-		'Label105
-		'
-		Me.Label105.Location = New System.Drawing.Point(8, 316)
-		Me.Label105.Name = "Label105"
-		Me.Label105.Size = New System.Drawing.Size(68, 20)
-		Me.Label105.TabIndex = 51
-		Me.Label105.Text = "Riyadh"
-		'
-		'Label106
-		'
-		Me.Label106.Location = New System.Drawing.Point(8, 178)
-		Me.Label106.Name = "Label106"
-		Me.Label106.Size = New System.Drawing.Size(68, 20)
-		Me.Label106.TabIndex = 52
-		Me.Label106.Text = "Hail"
-		'
-		'Label107
-		'
-		Me.Label107.Location = New System.Drawing.Point(8, 293)
-		Me.Label107.Name = "Label107"
-		Me.Label107.Size = New System.Drawing.Size(68, 20)
-		Me.Label107.TabIndex = 53
-		Me.Label107.Text = "North Border"
-		'
-		'Label108
-		'
-		Me.Label108.Location = New System.Drawing.Point(8, 270)
-		Me.Label108.Name = "Label108"
-		Me.Label108.Size = New System.Drawing.Size(68, 20)
-		Me.Label108.TabIndex = 61
-		Me.Label108.Text = "Najran"
-		'
-		'Label109
-		'
-		Me.Label109.Location = New System.Drawing.Point(8, 109)
-		Me.Label109.Name = "Label109"
-		Me.Label109.Size = New System.Drawing.Size(68, 20)
-		Me.Label109.TabIndex = 54
-		Me.Label109.Text = "Al - Jouf"
-		'
-		'Label110
-		'
-		Me.Label110.Location = New System.Drawing.Point(8, 247)
-		Me.Label110.Name = "Label110"
-		Me.Label110.Size = New System.Drawing.Size(68, 20)
-		Me.Label110.TabIndex = 55
-		Me.Label110.Text = "Mecca"
-		'
-		'Label111
-		'
-		Me.Label111.Location = New System.Drawing.Point(8, 155)
-		Me.Label111.Name = "Label111"
-		Me.Label111.Size = New System.Drawing.Size(68, 20)
-		Me.Label111.TabIndex = 56
-		Me.Label111.Text = "Eastern Area"
-		'
-		'Label112
-		'
-		Me.Label112.Location = New System.Drawing.Point(8, 86)
-		Me.Label112.Name = "Label112"
-		Me.Label112.Size = New System.Drawing.Size(68, 20)
-		Me.Label112.TabIndex = 57
-		Me.Label112.Text = "Al - Gassem"
-		'
-		'Label113
-		'
-		Me.Label113.Location = New System.Drawing.Point(8, 224)
-		Me.Label113.Name = "Label113"
-		Me.Label113.Size = New System.Drawing.Size(68, 20)
-		Me.Label113.TabIndex = 58
-		Me.Label113.Text = "Madina"
-		'
-		'Label114
-		'
-		Me.Label114.Location = New System.Drawing.Point(8, 132)
-		Me.Label114.Name = "Label114"
-		Me.Label114.Size = New System.Drawing.Size(68, 20)
-		Me.Label114.TabIndex = 59
-		Me.Label114.Text = "Aseer"
-		'
-		'Label115
-		'
-		Me.Label115.Location = New System.Drawing.Point(8, 63)
-		Me.Label115.Name = "Label115"
-		Me.Label115.Size = New System.Drawing.Size(68, 20)
-		Me.Label115.TabIndex = 60
-		Me.Label115.Text = "Al - Baha"
-		'
 		'tpaWeights
 		'
 		Me.tpaWeights.Controls.Add(Me.pboGraphWeights)
 		Me.tpaWeights.Location = New System.Drawing.Point(4, 22)
 		Me.tpaWeights.Name = "tpaWeights"
-		Me.tpaWeights.Size = New System.Drawing.Size(938, 454)
+		Me.tpaWeights.Size = New System.Drawing.Size(465, 454)
 		Me.tpaWeights.TabIndex = 4
 		Me.tpaWeights.Text = "Weights"
 		Me.tpaWeights.UseVisualStyleBackColor = True
@@ -3458,7 +3456,7 @@ Partial Class frmNegotiation
 		Me.tpaStandards.Controls.Add(Me.pboGraphStandards)
 		Me.tpaStandards.Location = New System.Drawing.Point(4, 22)
 		Me.tpaStandards.Name = "tpaStandards"
-		Me.tpaStandards.Size = New System.Drawing.Size(938, 454)
+		Me.tpaStandards.Size = New System.Drawing.Size(465, 454)
 		Me.tpaStandards.TabIndex = 5
 		Me.tpaStandards.Text = "Standards"
 		Me.tpaStandards.UseVisualStyleBackColor = True
@@ -3476,7 +3474,7 @@ Partial Class frmNegotiation
 		Me.tpaEfficencies.Controls.Add(Me.pboGraphEfficiencies)
 		Me.tpaEfficencies.Location = New System.Drawing.Point(4, 22)
 		Me.tpaEfficencies.Name = "tpaEfficencies"
-		Me.tpaEfficencies.Size = New System.Drawing.Size(938, 454)
+		Me.tpaEfficencies.Size = New System.Drawing.Size(465, 454)
 		Me.tpaEfficencies.TabIndex = 6
 		Me.tpaEfficencies.Text = "Efficiencies"
 		Me.tpaEfficencies.UseVisualStyleBackColor = True
