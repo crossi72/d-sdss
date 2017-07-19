@@ -15,6 +15,12 @@ Public Class DSSGroupBox
 
 #Region " Properties "
 
+	''' <summary>
+	''' Define if control triggers map redraw on DSSInit
+	''' </summary>
+	''' <returns></returns>
+	<System.ComponentModel.Category("RuntimeDisplay"), System.ComponentModel.Description("Define if control triggers map redraw on DSSInit")>
+	<System.ComponentModel.DefaultValue(True)>
 	Public Property DSSDrawOnMap() As Boolean
 		Get
 			Return Me.myDrawOnMap
@@ -23,6 +29,11 @@ Public Class DSSGroupBox
 			Me.myDrawOnMap = value
 		End Set
 	End Property
+
+	''' <summary>
+	''' Collection of inner DSS Panels
+	''' </summary>
+	''' <returns></returns>
 
 	Public Property DSSpnlCollection() As pnlCollection
 		Get
@@ -33,15 +44,20 @@ Public Class DSSGroupBox
 		End Set
 	End Property
 
+	''' <summary>
+	''' Toggle control visibility, if control become visible raises DSSInit event
+	''' </summary>
+	''' <returns></returns>
+	<System.ComponentModel.Category("RuntimeDisplay"), System.ComponentModel.Description("Toggle control visibility, if control become visible raises DSSInit event")>
+	<System.ComponentModel.DefaultValue(True)>
 	Public Property DSSVisible() As Boolean
 		Get
 			Return Me.Visible
 		End Get
 		Set(ByVal value As Boolean)
 			Me.Visible = value
-			'If value AndAlso Me.firstIteration Then
+			'when control become visible raises DSSInit event (will cause map update)
 			If value Then
-				'Me.firstIteration = False
 				RaiseEvent DSSInit(Me, New System.EventArgs)
 			End If
 		End Set

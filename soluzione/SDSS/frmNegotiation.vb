@@ -922,16 +922,17 @@ Public Class frmNegotiation
 		End If
 	End Sub
 
-	'Private Sub gboOutputUses_dssinit(sender As Object, e As EventArgs) Handles gboOutputUses.DSSInit
-	'	Me.RefreshMap(Me.gboOutputUses, New System.EventArgs)
-	'End Sub
-
-	Private Sub tpaUses_VisibleChanged(sender As Object, e As EventArgs) Handles tpaUses.VisibleChanged
+	Private Sub tpauses_visiblechanged(sender As Object, e As EventArgs) Handles tpaUses.VisibleChanged
 		If Me.tpaUses.Visible Then
 			Me.gboOutputUses.DSSVisible = True
 		End If
 	End Sub
 
+	Private Sub tpaImpacts_visiblechanged(sender As Object, e As EventArgs) Handles tpaImpacts.VisibleChanged
+		If Me.tpaImpacts.Visible Then
+			Me.gboOutputImpacts.DSSVisible = True
+		End If
+	End Sub
 
 #End Region
 
