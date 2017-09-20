@@ -329,6 +329,8 @@ Public Class frmNegotiation
 			Next
 		Next
 
+		'free varibles used for graph plotting
+
 		Me.myMathWrapper.WaitAndDiscardAnswer("sbqi=.")
 		Me.myMathWrapper.WaitAndDiscardAnswer("ssqi=.")
 		Me.myMathWrapper.WaitAndDiscardAnswer("smqi=.")
@@ -344,10 +346,25 @@ Public Class frmNegotiation
 		Me.myMathWrapper.WaitAndDiscardAnswer("lanw=.")
 		Me.myMathWrapper.WaitAndDiscardAnswer("gwsp=.")
 		Me.myMathWrapper.WaitAndDiscardAnswer("totpla=.")
+		Me.myMathWrapper.WaitAndDiscardAnswer("tpbx=.")
+		Me.myMathWrapper.WaitAndDiscardAnswer("tpmz =.")
 
-		Me.pboGraphWeights.Image = Me.myMathWrapper.WaitAndEvaluateAsImage("ContourPlot[totobj20rWEL, {socw, 0, 1}, {envw, 0, 1}, PlotRange -> {50, 92.16522172266298`}, ContourLabels -> All, FrameLabel -> {""socw %"", ""envw %""}]", Me.pboGraphWeights)
-		Me.pboGraphStandards.Image = Me.myMathWrapper.WaitAndEvaluateAsImage("ContourPlot[totobj20rSUS, {smqi, 0, 40}, {sbqi, 0, 40}, PlotRange -> {50, 92.16522172266298`}, ContourLabels -> All, FrameLabel -> {""TSS mg/l"", ""BOD mg/l""}]", Me.pboGraphStandards)
-		Me.pboGraphEfficiencies.Image = Me.myMathWrapper.WaitAndEvaluateAsImage("ContourPlot[totobj20rEFF, {tpbx, 0.35, 1}, {tpmz, 0.30, 1}, PlotRange -> {50, 92.16522172266298`}, ContourLabels -> All, FrameLabel -> {""TSS % cut"", ""BOD % cut""}]", Me.pboGraphEfficiencies)
+		'defining graph parameters
+		Me.myMathWrapper.WaitAndDiscardAnswer("ssqi=1000")
+		Me.myMathWrapper.WaitAndDiscardAnswer("ecow = 1 - socw - envw")
+		Me.myMathWrapper.WaitAndDiscardAnswer("agrw = 0.33")
+		Me.myMathWrapper.WaitAndDiscardAnswer("indw = 0.33")
+		Me.myMathWrapper.WaitAndDiscardAnswer("lanw = 0.33")
+		Me.myMathWrapper.WaitAndDiscardAnswer("gwsp = 1.518")
+		Me.myMathWrapper.WaitAndDiscardAnswer("totpla = 20")
+
+		Me.myMathWrapper.WaitAndDiscardAnswer("totobj20rWEL = totobj20r*100 /. {x11 -> 0, x12 -> 0, x21 -> 0, x22 -> 0, x31 -> 0, x32 -> 0, x41 -> 1, x42 -> 1, x51 -> 0, x52 -> 0, x61 -> 0, x62 -> 1, x71 -> 1, x72 -> 0, x81 -> 0, x82 -> 1, x91 -> 0, x92 -> 1, x101 -> 0, x102 -> 0, x111 -> 0, x112 -> 0, x121 -> 1, x122 -> 1, x131 -> 0, x132 -> 0, y12 -> 0, y22 -> 0, y32 -> 0, y42 -> 1, y52 -> 1, y62 -> 0, y72 -> 0, y82 -> 0, y92 -> 0, y102 -> 0, y112 -> 0, y122 -> 1, y132 -> 1, z11 -> 0, z12 -> 0, z21 -> 0, z22 -> 0, z31 -> 0, z32 -> 0, z41 -> 1, z42 -> 1, z51 -> 0, z52 -> 0, z61 -> 0, z62 -> 1, z71 -> 1, z72 -> 0, z81 -> 0, z82 -> 1, z91 -> 0, z92 -> 1, z101 -> 0, z102 -> 0, z111 -> 0, z112 -> 0, z121 -> 1, z122 -> 1, z131 -> 0, z132 -> 0, sbqi -> 20, smqi -> 20, tpbx -> 0.35, tpmz -> 0.30}")
+		Me.myMathWrapper.WaitAndDiscardAnswer("totobj20rSUS = totobj20r*100 /. {x11 -> 0, x12 -> 0, x21 -> 0, x22 -> 0, x31 -> 0, x32 -> 0, x41 -> 1, x42 -> 1, x51 -> 0, x52 -> 0, x61 -> 0, x62 -> 1, x71 -> 1, x72 -> 0, x81 -> 0, x82 -> 1, x91 -> 0, x92 -> 1, x101 -> 0, x102 -> 0, x111 -> 0, x112 -> 0, x121 -> 1, x122 -> 1, x131 -> 0, x132 -> 0, y12 -> 0, y22 -> 0, y32 -> 0, y42 -> 1, y52 -> 1, y62 -> 0, y72 -> 0, y82 -> 0, y92 -> 0, y102 -> 0, y112 -> 0, y122 -> 1, y132 -> 1, z11 -> 0, z12 -> 0, z21 -> 0, z22 -> 0, z31 -> 0, z32 -> 0, z41 -> 1, z42 -> 1, z51 -> 0, z52 -> 0, z61 -> 0, z62 -> 1, z71 -> 1, z72 -> 0, z81 -> 0, z82 -> 1, z91 -> 0, z92 -> 1, z101 -> 0, z102 -> 0, z111 -> 0, z112 -> 0, z121 -> 1, z122 -> 1, z131 -> 0, z132 -> 0, socw -> 0.33, envw -> 0.33, tpbx -> 0.35, tpmz -> 0.30}")
+		Me.myMathWrapper.WaitAndDiscardAnswer("totobj20rEFF = totobj20r*100 /. {x11 -> 0, x12 -> 0, x21 -> 0, x22 -> 0, x31 -> 0, x32 -> 0, x41 -> 1, x42 -> 1, x51 -> 0, x52 -> 0, x61 -> 0, x62 -> 1, x71 -> 1, x72 -> 0, x81 -> 0, x82 -> 1, x91 -> 0, x92 -> 1, x101 -> 0, x102 -> 0, x111 -> 0, x112 -> 0, x121 -> 1, x122 -> 1, x131 -> 0, x132 -> 0, y12 -> 0, y22 -> 0, y32 -> 0, y42 -> 1, y52 -> 1, y62 -> 0, y72 -> 0, y82 -> 0, y92 -> 0, y102 -> 0, y112 -> 0, y122 -> 1, y132 -> 1, z11 -> 0, z12 -> 0, z21 -> 0, z22 -> 0, z31 -> 0, z32 -> 0, z41 -> 1, z42 -> 1, z51 -> 0, z52 -> 0, z61 -> 0, z62 -> 1, z71 -> 1, z72 -> 0, z81 -> 0, z82 -> 1, z91 -> 0, z92 -> 1, z101 -> 0, z102 -> 0, z111 -> 0, z112 -> 0, z121 -> 1, z122 -> 1, z131 -> 0, z132 -> 0, sbqi -> 20, smqi -> 20, socw -> 0.33, envw -> 0.33}")
+
+		Me.pboGraphWeights.Image = Me.myMathWrapper.WaitAndEvaluateAsImage("ContourPlot[totobj20rWEL, {socw, 0, 1}, {envw, 0, 1}, PlotRange -> {69, 84}, ContourLabels -> All, FrameLabel -> {""socw %"", ""envw %""}]", Me.pboGraphWeights)
+		Me.pboGraphStandards.Image = Me.myMathWrapper.WaitAndEvaluateAsImage("ContourPlot[totobj20rSUS, {smqi, 0, 40}, {sbqi, 0, 40}, PlotRange -> {69, 84}, ContourLabels -> All, FrameLabel -> {""TSS mg/l"", ""BOD mg/l""}]", Me.pboGraphStandards)
+		Me.pboGraphEfficiencies.Image = Me.myMathWrapper.WaitAndEvaluateAsImage("ContourPlot[totobj20rEFF, {tpbx, 0, 1}, {tpmz, 0, 1}, PlotRange -> {69, 84}, ContourLabels -> All, FrameLabel -> {""TSS % cut"", ""BOD % cut""}]", Me.pboGraphEfficiencies)
 
 		Me.WriteValuesToDB()
     End Sub
