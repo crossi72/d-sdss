@@ -150,6 +150,7 @@ Partial Class frmNegotiation
 		Me.lblSoc7_1 = New SDSS.DSSLabel()
 		Me.lblSoc10_1 = New SDSS.DSSLabel()
 		Me.lblSoc13_1 = New SDSS.DSSLabel()
+		Me.DssPanel7 = New SDSS.DSSPanel()
 		Me.pnlOutEnvLarge = New SDSS.DSSPanel()
 		Me.lblEnv1_2 = New SDSS.DSSLabel()
 		Me.lblEnv5_2 = New SDSS.DSSLabel()
@@ -241,7 +242,6 @@ Partial Class frmNegotiation
 		Me.Label114 = New System.Windows.Forms.Label()
 		Me.Label112 = New System.Windows.Forms.Label()
 		Me.Label113 = New System.Windows.Forms.Label()
-		Me.DssPanel7 = New SDSS.DSSPanel()
 		Me.tpaWeights = New System.Windows.Forms.TabPage()
 		Me.pboGraphWeights = New System.Windows.Forms.PictureBox()
 		Me.tpaStandards = New System.Windows.Forms.TabPage()
@@ -783,12 +783,12 @@ Partial Class frmNegotiation
 		'
 		'SplitContainer.Panel1
 		'
-		Me.SplitContainer.Panel1.Controls.Add(Me.grbOuput)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbMisc)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbPopulation)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbIndustrialDistricts)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbWaterQuality)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbWaterCosts)
+		Me.SplitContainer.Panel1.Controls.Add(Me.grbOuput)
 		'
 		'SplitContainer.Panel2
 		'
@@ -805,7 +805,6 @@ Partial Class frmNegotiation
 			Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
 		Me.grbOuput.Controls.Add(Me.tcoOutput)
 		Me.grbOuput.DSSDrawOnMap = False
-		Me.grbOuput.DSSVisible = True
 		Me.grbOuput.ForeColor = System.Drawing.Color.Black
 		Me.grbOuput.Location = New System.Drawing.Point(0, 0)
 		Me.grbOuput.Name = "grbOuput"
@@ -817,11 +816,11 @@ Partial Class frmNegotiation
 		'
 		'tcoOutput
 		'
-		Me.tcoOutput.Controls.Add(Me.tpaUses)
 		Me.tcoOutput.Controls.Add(Me.tpaImpacts)
 		Me.tcoOutput.Controls.Add(Me.tpaWeights)
 		Me.tcoOutput.Controls.Add(Me.tpaStandards)
 		Me.tcoOutput.Controls.Add(Me.tpaEfficencies)
+		Me.tcoOutput.Controls.Add(Me.tpaUses)
 		Me.tcoOutput.Dock = System.Windows.Forms.DockStyle.Fill
 		Me.tcoOutput.Location = New System.Drawing.Point(3, 16)
 		Me.tcoOutput.Name = "tcoOutput"
@@ -867,13 +866,13 @@ Partial Class frmNegotiation
 		Me.gboOutputUses.Controls.Add(Me.Label79)
 		Me.gboOutputUses.Controls.Add(Me.Label60)
 		Me.gboOutputUses.Controls.Add(Me.Label61)
-		Me.gboOutputUses.DSSDrawOnMap = True
-		Me.gboOutputUses.DSSVisible = True
+		Me.gboOutputUses.DSSVisible = False
 		Me.gboOutputUses.Location = New System.Drawing.Point(15, 11)
 		Me.gboOutputUses.Name = "gboOutputUses"
 		Me.gboOutputUses.Size = New System.Drawing.Size(451, 406)
 		Me.gboOutputUses.TabIndex = 112
 		Me.gboOutputUses.TabStop = False
+		Me.gboOutputUses.Visible = False
 		'
 		'pnlOutAgrSmall
 		'
@@ -890,7 +889,7 @@ Partial Class frmNegotiation
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr7_1)
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr10_1)
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr13_1)
-		Me.pnlOutAgrSmall.DSSVisible = True
+		Me.pnlOutAgrSmall.DSSVisible = False
 		Me.pnlOutAgrSmall.Location = New System.Drawing.Point(94, 55)
 		Me.pnlOutAgrSmall.Name = "pnlOutAgrSmall"
 		Me.pnlOutAgrSmall.Size = New System.Drawing.Size(49, 317)
@@ -1089,7 +1088,7 @@ Partial Class frmNegotiation
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd3_2)
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd10_2)
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd7_2)
-		Me.pnlOutIndLarge.DSSVisible = True
+		Me.pnlOutIndLarge.DSSVisible = False
 		Me.pnlOutIndLarge.Location = New System.Drawing.Point(285, 55)
 		Me.pnlOutIndLarge.Name = "pnlOutIndLarge"
 		Me.pnlOutIndLarge.Size = New System.Drawing.Size(49, 317)
@@ -1297,7 +1296,7 @@ Partial Class frmNegotiation
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan7_1)
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan10_1)
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan13_1)
-		Me.pnlOutLanSmall.DSSVisible = True
+		Me.pnlOutLanSmall.DSSVisible = False
 		Me.pnlOutLanSmall.Location = New System.Drawing.Point(153, 55)
 		Me.pnlOutLanSmall.Name = "pnlOutLanSmall"
 		Me.pnlOutLanSmall.Size = New System.Drawing.Size(49, 317)
@@ -1497,7 +1496,7 @@ Partial Class frmNegotiation
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan12_2)
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan7_2)
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan3_2)
-		Me.pnlOutLanLarge.DSSVisible = True
+		Me.pnlOutLanLarge.DSSVisible = False
 		Me.pnlOutLanLarge.Location = New System.Drawing.Point(347, 56)
 		Me.pnlOutLanLarge.Name = "pnlOutLanLarge"
 		Me.pnlOutLanLarge.Size = New System.Drawing.Size(49, 317)
@@ -1697,7 +1696,7 @@ Partial Class frmNegotiation
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr3_2)
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr7_2)
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr10_2)
-		Me.pnlOutAgrLarge.DSSVisible = True
+		Me.pnlOutAgrLarge.DSSVisible = False
 		Me.pnlOutAgrLarge.Location = New System.Drawing.Point(223, 57)
 		Me.pnlOutAgrLarge.Name = "pnlOutAgrLarge"
 		Me.pnlOutAgrLarge.Size = New System.Drawing.Size(49, 317)
@@ -2035,7 +2034,6 @@ Partial Class frmNegotiation
 		Me.gboOutputImpacts.Controls.Add(Me.Label114)
 		Me.gboOutputImpacts.Controls.Add(Me.Label112)
 		Me.gboOutputImpacts.Controls.Add(Me.Label113)
-		Me.gboOutputImpacts.DSSDrawOnMap = True
 		Me.gboOutputImpacts.DSSVisible = False
 		Me.gboOutputImpacts.Location = New System.Drawing.Point(15, 11)
 		Me.gboOutputImpacts.Name = "gboOutputImpacts"
@@ -2233,6 +2231,14 @@ Partial Class frmNegotiation
 		Me.lblSoc13_1.TabIndex = 129
 		Me.lblSoc13_1.Text = "-"
 		Me.lblSoc13_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'DssPanel7
+		'
+		Me.DssPanel7.DSSVisible = False
+		Me.DssPanel7.Location = New System.Drawing.Point(-135, 184)
+		Me.DssPanel7.Name = "DssPanel7"
+		Me.DssPanel7.Size = New System.Drawing.Size(49, 317)
+		Me.DssPanel7.TabIndex = 192
 		'
 		'pnlOutEnvLarge
 		'
@@ -3375,14 +3381,6 @@ Partial Class frmNegotiation
 		Me.Label113.TabIndex = 58
 		Me.Label113.Text = "Madina"
 		'
-		'DssPanel7
-		'
-		Me.DssPanel7.DSSVisible = False
-		Me.DssPanel7.Location = New System.Drawing.Point(-135, 184)
-		Me.DssPanel7.Name = "DssPanel7"
-		Me.DssPanel7.Size = New System.Drawing.Size(49, 317)
-		Me.DssPanel7.TabIndex = 192
-		'
 		'tpaWeights
 		'
 		Me.tpaWeights.Controls.Add(Me.pboGraphWeights)
@@ -3413,9 +3411,9 @@ Partial Class frmNegotiation
 		'
 		'pboGraphStandards
 		'
-		Me.pboGraphStandards.Location = New System.Drawing.Point(48, 36)
+		Me.pboGraphStandards.Location = New System.Drawing.Point(37, 43)
 		Me.pboGraphStandards.Name = "pboGraphStandards"
-		Me.pboGraphStandards.Size = New System.Drawing.Size(432, 329)
+		Me.pboGraphStandards.Size = New System.Drawing.Size(441, 334)
 		Me.pboGraphStandards.TabIndex = 0
 		Me.pboGraphStandards.TabStop = False
 		'
@@ -3431,9 +3429,9 @@ Partial Class frmNegotiation
 		'
 		'pboGraphEfficiencies
 		'
-		Me.pboGraphEfficiencies.Location = New System.Drawing.Point(56, 24)
+		Me.pboGraphEfficiencies.Location = New System.Drawing.Point(37, 43)
 		Me.pboGraphEfficiencies.Name = "pboGraphEfficiencies"
-		Me.pboGraphEfficiencies.Size = New System.Drawing.Size(436, 224)
+		Me.pboGraphEfficiencies.Size = New System.Drawing.Size(441, 334)
 		Me.pboGraphEfficiencies.TabIndex = 0
 		Me.pboGraphEfficiencies.TabStop = False
 		'
@@ -3451,8 +3449,6 @@ Partial Class frmNegotiation
 		Me.grbMisc.Controls.Add(Me.Label78)
 		Me.grbMisc.Controls.Add(Me.Label117)
 		Me.grbMisc.Controls.Add(Me.Label91)
-		Me.grbMisc.DSSDrawOnMap = True
-		Me.grbMisc.DSSVisible = True
 		Me.grbMisc.ForeColor = System.Drawing.Color.Black
 		Me.grbMisc.Location = New System.Drawing.Point(0, 0)
 		Me.grbMisc.Name = "grbMisc"
@@ -3496,7 +3492,6 @@ Partial Class frmNegotiation
 		Me.DssPanel1.Controls.Add(Me.nudssqi)
 		Me.DssPanel1.Controls.Add(Me.nudAgrUF)
 		Me.DssPanel1.Controls.Add(Me.nudIndUF)
-		Me.DssPanel1.DSSVisible = True
 		Me.DssPanel1.Location = New System.Drawing.Point(178, 16)
 		Me.DssPanel1.Name = "DssPanel1"
 		Me.DssPanel1.Size = New System.Drawing.Size(575, 367)
@@ -3508,7 +3503,7 @@ Partial Class frmNegotiation
 		Me.Label10.Name = "Label10"
 		Me.Label10.Size = New System.Drawing.Size(90, 13)
 		Me.Label10.TabIndex = 179
-		Me.Label10.Text = "Cost"
+		Me.Label10.Text = "Cost UF"
 		Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 		'
 		'Label13
@@ -3650,7 +3645,7 @@ Partial Class frmNegotiation
 		Me.Label24.Name = "Label24"
 		Me.Label24.Size = New System.Drawing.Size(90, 13)
 		Me.Label24.TabIndex = 191
-		Me.Label24.Text = "Cost"
+		Me.Label24.Text = "Cost UF RO"
 		Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 		'
 		'nudAgrUFRO
@@ -3992,8 +3987,6 @@ Partial Class frmNegotiation
 		Me.grbPopulation.Controls.Add(Me.Label59)
 		Me.grbPopulation.Controls.Add(Me.Label65)
 		Me.grbPopulation.Controls.Add(Me.Label69)
-		Me.grbPopulation.DSSDrawOnMap = True
-		Me.grbPopulation.DSSVisible = True
 		Me.grbPopulation.ForeColor = System.Drawing.Color.Black
 		Me.grbPopulation.Location = New System.Drawing.Point(0, 0)
 		Me.grbPopulation.Name = "grbPopulation"
@@ -4019,7 +4012,6 @@ Partial Class frmNegotiation
 		Me.pnlPop20_2.Controls.Add(Me.nudPop20_9_2)
 		Me.pnlPop20_2.Controls.Add(Me.nudPop20_11_2)
 		Me.pnlPop20_2.Controls.Add(Me.nudPop20_5_2)
-		Me.pnlPop20_2.DSSVisible = True
 		Me.pnlPop20_2.Location = New System.Drawing.Point(201, 35)
 		Me.pnlPop20_2.Name = "pnlPop20_2"
 		Me.pnlPop20_2.Size = New System.Drawing.Size(90, 338)
@@ -4245,7 +4237,6 @@ Partial Class frmNegotiation
 		Me.pnlPop20_1.Controls.Add(Me.nudPop20_8_1)
 		Me.pnlPop20_1.Controls.Add(Me.nudPop20_5_1)
 		Me.pnlPop20_1.Controls.Add(Me.nudPop20_4_1)
-		Me.pnlPop20_1.DSSVisible = True
 		Me.pnlPop20_1.Location = New System.Drawing.Point(96, 35)
 		Me.pnlPop20_1.Name = "pnlPop20_1"
 		Me.pnlPop20_1.Size = New System.Drawing.Size(90, 338)
@@ -4587,8 +4578,6 @@ Partial Class frmNegotiation
 		Me.grbIndustrialDistricts.Controls.Add(Me.Label75)
 		Me.grbIndustrialDistricts.Controls.Add(Me.Label76)
 		Me.grbIndustrialDistricts.Controls.Add(Me.Label77)
-		Me.grbIndustrialDistricts.DSSDrawOnMap = True
-		Me.grbIndustrialDistricts.DSSVisible = True
 		Me.grbIndustrialDistricts.ForeColor = System.Drawing.Color.Black
 		Me.grbIndustrialDistricts.Location = New System.Drawing.Point(0, 0)
 		Me.grbIndustrialDistricts.Name = "grbIndustrialDistricts"
@@ -4614,7 +4603,6 @@ Partial Class frmNegotiation
 		Me.pnlInddispln.Controls.Add(Me.nudInddispln9_2)
 		Me.pnlInddispln.Controls.Add(Me.nudInddispln11_2)
 		Me.pnlInddispln.Controls.Add(Me.nudInddispln5_2)
-		Me.pnlInddispln.DSSVisible = True
 		Me.pnlInddispln.Location = New System.Drawing.Point(198, 12)
 		Me.pnlInddispln.Name = "pnlInddispln"
 		Me.pnlInddispln.Size = New System.Drawing.Size(90, 333)
@@ -4840,7 +4828,6 @@ Partial Class frmNegotiation
 		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur8_2)
 		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur5_2)
 		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur4_2)
-		Me.pnlInddiscur.DSSVisible = True
 		Me.pnlInddiscur.Location = New System.Drawing.Point(99, 12)
 		Me.pnlInddiscur.Name = "pnlInddiscur"
 		Me.pnlInddiscur.Size = New System.Drawing.Size(90, 333)
@@ -5174,8 +5161,6 @@ Partial Class frmNegotiation
 		Me.grbWaterQuality.Controls.Add(Me.Label16)
 		Me.grbWaterQuality.Controls.Add(Me.Label17)
 		Me.grbWaterQuality.Controls.Add(Me.Label18)
-		Me.grbWaterQuality.DSSDrawOnMap = True
-		Me.grbWaterQuality.DSSVisible = True
 		Me.grbWaterQuality.ForeColor = System.Drawing.Color.Black
 		Me.grbWaterQuality.Location = New System.Drawing.Point(0, 0)
 		Me.grbWaterQuality.Name = "grbWaterQuality"
@@ -5201,7 +5186,6 @@ Partial Class frmNegotiation
 		Me.pnlTSS.Controls.Add(Me.nudTSS4)
 		Me.pnlTSS.Controls.Add(Me.nudTSS5)
 		Me.pnlTSS.Controls.Add(Me.nudTSS11)
-		Me.pnlTSS.DSSVisible = True
 		Me.pnlTSS.Location = New System.Drawing.Point(306, 15)
 		Me.pnlTSS.Name = "pnlTSS"
 		Me.pnlTSS.Size = New System.Drawing.Size(90, 338)
@@ -5427,7 +5411,6 @@ Partial Class frmNegotiation
 		Me.pnlTDS.Controls.Add(Me.nudTDS11)
 		Me.pnlTDS.Controls.Add(Me.nudTDS8)
 		Me.pnlTDS.Controls.Add(Me.nudTDS4)
-		Me.pnlTDS.DSSVisible = True
 		Me.pnlTDS.Location = New System.Drawing.Point(210, 15)
 		Me.pnlTDS.Name = "pnlTDS"
 		Me.pnlTDS.Size = New System.Drawing.Size(90, 338)
@@ -5653,7 +5636,6 @@ Partial Class frmNegotiation
 		Me.pnlBOD.Controls.Add(Me.nudBOD13)
 		Me.pnlBOD.Controls.Add(Me.nudBOD4)
 		Me.pnlBOD.Controls.Add(Me.nudBOD8)
-		Me.pnlBOD.DSSVisible = True
 		Me.pnlBOD.Location = New System.Drawing.Point(113, 15)
 		Me.pnlBOD.Name = "pnlBOD"
 		Me.pnlBOD.Size = New System.Drawing.Size(90, 338)
@@ -5986,8 +5968,6 @@ Partial Class frmNegotiation
 		Me.grbWaterCosts.Controls.Add(Me.Label56)
 		Me.grbWaterCosts.Controls.Add(Me.Label52)
 		Me.grbWaterCosts.Controls.Add(Me.Label47)
-		Me.grbWaterCosts.DSSDrawOnMap = True
-		Me.grbWaterCosts.DSSVisible = True
 		Me.grbWaterCosts.ForeColor = System.Drawing.Color.Black
 		Me.grbWaterCosts.Location = New System.Drawing.Point(0, 0)
 		Me.grbWaterCosts.Name = "grbWaterCosts"
@@ -6013,7 +5993,6 @@ Partial Class frmNegotiation
 		Me.pnlGro.Controls.Add(Me.nudGro9)
 		Me.pnlGro.Controls.Add(Me.nudGro11)
 		Me.pnlGro.Controls.Add(Me.nudGro5)
-		Me.pnlGro.DSSVisible = True
 		Me.pnlGro.Location = New System.Drawing.Point(238, 12)
 		Me.pnlGro.Name = "pnlGro"
 		Me.pnlGro.Size = New System.Drawing.Size(90, 332)
@@ -6239,7 +6218,6 @@ Partial Class frmNegotiation
 		Me.pnlDes.Controls.Add(Me.nudDes8)
 		Me.pnlDes.Controls.Add(Me.nudDes5)
 		Me.pnlDes.Controls.Add(Me.nudDes4)
-		Me.pnlDes.DSSVisible = True
 		Me.pnlDes.Location = New System.Drawing.Point(133, 12)
 		Me.pnlDes.Name = "pnlDes"
 		Me.pnlDes.Size = New System.Drawing.Size(90, 332)
