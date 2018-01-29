@@ -381,12 +381,13 @@ Public Class frmNegotiation
 		Me.myMathWrapper.WaitAndDiscardAnswer("totobj20rEFF = totobj20*100 /. marg")
 		Me.myMathWrapper.WaitAndDiscardAnswer("totobj20rEFF = totobj20rEFF /. {sbqi -> 20, smqi -> 20, socw -> 0.33, envw -> 0.33}")
 
-		'Me.pboGraphWeights.Image = Me.myMathWrapper.WaitAndEvaluateAsImage("ContourPlot[totobj20rWEL, {socw, 0, 1}, {envw, 0, 1}, PlotRange -> {69, 84}, ContourLabels -> All, FrameLabel -> {""socw %"", ""envw %""}]", Me.pboGraphWeights)
-		Me.pboGraphWeights.Image = Me.myMathWrapper.WaitAndEvaluateAsImage("ContourPlot[totobj20rWEL, {socw, 0, 1}, {envw, 0, 1}, ContourLabels -> All, FrameLabel -> {""socw %"", ""envw %""}]", Me.pboGraphWeights)
-		'Me.pboGraphStandards.Image = Me.myMathWrapper.WaitAndEvaluateAsImage("ContourPlot[totobj20rSUS, {smqi, 0, 40}, {sbqi, 0, 40}, PlotRange -> {69, 84}, ContourLabels -> All, FrameLabel -> {""TSS mg/l"", ""BOD mg/l""}]", Me.pboGraphStandards)
-		Me.pboGraphStandards.Image = Me.myMathWrapper.WaitAndEvaluateAsImage("ContourPlot[totobj20rSUS, {smqi, 0, 40}, {sbqi, 0, 40}, ContourLabels -> All, FrameLabel -> {""TSS mg/l"", ""BOD mg/l""}]", Me.pboGraphStandards)
-		'Me.pboGraphEfficiencies.Image = Me.myMathWrapper.WaitAndEvaluateAsImage("ContourPlot[totobj20rEFF, {tpbx, 0, 1}, {tpmz, 0, 1}, PlotRange -> {69, 84}, ContourLabels -> All, FrameLabel -> {""TSS % cut"", ""BOD % cut""}]", Me.pboGraphEfficiencies)
-		Me.pboGraphEfficiencies.Image = Me.myMathWrapper.WaitAndEvaluateAsImage("ContourPlot[totobj20rEFF, {tpbx, 0, 1}, {tpmz, 0, 1}, ContourLabels -> All, FrameLabel -> {""TSS % cut"", ""BOD % cut""}]", Me.pboGraphEfficiencies)
+		Me.myMathWrapper.WaitAndDiscardAnswer("mobj = m[[1]]")
+		Me.myMathWrapper.WaitAndDiscardAnswer("ranup = mobj * 1.1")
+		Me.myMathWrapper.WaitAndDiscardAnswer("rando = mobj * 0.9")
+
+		Me.pboGraphWeights.Image = Me.myMathWrapper.WaitAndEvaluateAsImage("ContourPlot[totobj20rWEL, {socw, 0, 1}, {envw, 0, 1}, PlotRange -> {ranup, rando}, ContourLabels -> All, FrameLabel -> {""socw %"", ""envw %""}]", Me.pboGraphWeights)
+		Me.pboGraphStandards.Image = Me.myMathWrapper.WaitAndEvaluateAsImage("ContourPlot[totobj20rSUS, {smqi, 0, 40}, {sbqi, 0, 40}, PlotRange -> {ranup, rando}, ContourLabels -> All, FrameLabel -> {""TSS mg/l"", ""BOD mg/l""}]", Me.pboGraphStandards)
+		Me.pboGraphEfficiencies.Image = Me.myMathWrapper.WaitAndEvaluateAsImage("ContourPlot[totobj20rEFF, {tpbx, 0, 1}, {tpmz, 0, 1}, PlotRange -> {ranup, rando}, ContourLabels -> All, FrameLabel -> {""TSS % cut"", ""BOD % cut""}]", Me.pboGraphEfficiencies)
 
 		Me.WriteValuesToDB()
 	End Sub
