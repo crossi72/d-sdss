@@ -875,7 +875,6 @@ Partial Class frmNegotiation
 		Me.gboOutputImpacts.Size = New System.Drawing.Size(422, 391)
 		Me.gboOutputImpacts.TabIndex = 195
 		Me.gboOutputImpacts.TabStop = False
-		Me.gboOutputImpacts.Visible = False
 		'
 		'pnlOutSocSmall
 		'
@@ -892,7 +891,6 @@ Partial Class frmNegotiation
 		Me.pnlOutSocSmall.Controls.Add(Me.lblSoc7_1)
 		Me.pnlOutSocSmall.Controls.Add(Me.lblSoc10_1)
 		Me.pnlOutSocSmall.Controls.Add(Me.lblSoc13_1)
-		Me.pnlOutSocSmall.DSSVisible = False
 		Me.pnlOutSocSmall.Location = New System.Drawing.Point(133, 59)
 		Me.pnlOutSocSmall.Name = "pnlOutSocSmall"
 		Me.pnlOutSocSmall.Size = New System.Drawing.Size(49, 317)
@@ -2308,7 +2306,6 @@ Partial Class frmNegotiation
 		Me.gboOutputUses.Controls.Add(Me.Label79)
 		Me.gboOutputUses.Controls.Add(Me.Label60)
 		Me.gboOutputUses.Controls.Add(Me.Label61)
-		Me.gboOutputUses.DSSVisible = False
 		Me.gboOutputUses.Location = New System.Drawing.Point(15, 11)
 		Me.gboOutputUses.Name = "gboOutputUses"
 		Me.gboOutputUses.Size = New System.Drawing.Size(451, 406)
@@ -2331,7 +2328,6 @@ Partial Class frmNegotiation
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr7_1)
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr10_1)
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr13_1)
-		Me.pnlOutAgrSmall.DSSVisible = False
 		Me.pnlOutAgrSmall.Location = New System.Drawing.Point(94, 55)
 		Me.pnlOutAgrSmall.Name = "pnlOutAgrSmall"
 		Me.pnlOutAgrSmall.Size = New System.Drawing.Size(49, 317)
@@ -2530,7 +2526,6 @@ Partial Class frmNegotiation
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd3_2)
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd10_2)
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd7_2)
-		Me.pnlOutIndLarge.DSSVisible = False
 		Me.pnlOutIndLarge.Location = New System.Drawing.Point(285, 55)
 		Me.pnlOutIndLarge.Name = "pnlOutIndLarge"
 		Me.pnlOutIndLarge.Size = New System.Drawing.Size(49, 317)
@@ -2738,7 +2733,6 @@ Partial Class frmNegotiation
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan7_1)
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan10_1)
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan13_1)
-		Me.pnlOutLanSmall.DSSVisible = False
 		Me.pnlOutLanSmall.Location = New System.Drawing.Point(153, 55)
 		Me.pnlOutLanSmall.Name = "pnlOutLanSmall"
 		Me.pnlOutLanSmall.Size = New System.Drawing.Size(49, 317)
@@ -2938,7 +2932,6 @@ Partial Class frmNegotiation
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan12_2)
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan7_2)
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan3_2)
-		Me.pnlOutLanLarge.DSSVisible = False
 		Me.pnlOutLanLarge.Location = New System.Drawing.Point(347, 56)
 		Me.pnlOutLanLarge.Name = "pnlOutLanLarge"
 		Me.pnlOutLanLarge.Size = New System.Drawing.Size(49, 317)
@@ -3138,7 +3131,6 @@ Partial Class frmNegotiation
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr3_2)
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr7_2)
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr10_2)
-		Me.pnlOutAgrLarge.DSSVisible = False
 		Me.pnlOutAgrLarge.Location = New System.Drawing.Point(223, 57)
 		Me.pnlOutAgrLarge.Name = "pnlOutAgrLarge"
 		Me.pnlOutAgrLarge.Size = New System.Drawing.Size(49, 317)

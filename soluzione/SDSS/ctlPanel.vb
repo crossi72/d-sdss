@@ -76,8 +76,10 @@
 			Return Me.Visible
 		End Get
 		Set(ByVal value As Boolean)
+			value = True
 			Me.Visible = value
 			'when control become visible raises DSSInit event (will cause map update)
+			'debug
 			If value Then
 				RaiseEvent DSSInit(Me, New System.EventArgs)
 			End If
