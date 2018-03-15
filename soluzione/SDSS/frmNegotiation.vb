@@ -41,6 +41,7 @@ Public Class frmNegotiation
 	Private gwsp, agruf, agrufro, induf, indufro, lanuf, lanufro, tpbx, tpsx, tpmz, envw, ecow, socw, totpla, sbqi, ssqi, smqi As Double
 	'output
 	Private outind(12), outagr(12, 1), outlan(12, 1), outeco(12, 1), outsoc(12, 1), outenv(12, 1) As Double
+	Private outecomean1, outecomean2, outecogini1, outecogini2, outsocmean1, outsocmean2, outsocgini1, outsocgini2, outenvmean1, outenvmean2, outenvgini1, outenvgini2 As Double
 
 #End Region
 
@@ -273,7 +274,6 @@ Public Class frmNegotiation
 		Next
 
 		Me.myMathWrapper.WaitAndDiscardAnswer("ecomea1=(eco11+eco21+eco31+eco41+eco51+eco61+eco71+eco81+eco91+eco101+eco111+eco121+eco131)/13")
-
 		Me.myMathWrapper.WaitAndDiscardAnswer("ecogin1=N[(1/2*1/13^2*(1/ecomea1))(Abs[eco11-eco11]+Abs[eco11-eco21]+Abs[eco11-eco31]+Abs[eco11-eco41]+Abs[eco11-eco51]+Abs[eco11-eco61]+Abs[eco11-eco71]+Abs[eco11-eco81]+Abs[eco11-eco91]+Abs[eco11-eco101]+Abs[eco11-eco111]+Abs[eco11-eco121]+Abs[eco11-eco131]+Abs[eco21-eco11]+Abs[eco21-eco21]+Abs[eco21-eco31]+Abs[eco21-eco41]+Abs[eco21-eco51]+Abs[eco21-eco61]+Abs[eco21-eco71]+Abs[eco21-eco81]+Abs[eco21-eco91]+Abs[eco21-eco101]+Abs[eco21-eco111]+Abs[eco21-eco121]+Abs[eco21-eco131]+Abs[eco31-eco11]+Abs[eco31-eco21]+Abs[eco31-eco31]+Abs[eco31-eco41]+Abs[eco31-eco51]+Abs[eco31-eco61]+Abs[eco31-eco71]+Abs[eco31-eco81]+Abs[eco31-eco91]+Abs[eco31-eco101]+Abs[eco31-eco111]+Abs[eco31-eco121]+Abs[eco31-eco131]+Abs[eco41-eco11]+Abs[eco41-eco21]+Abs[eco41-eco31]+Abs[eco41-eco41]+Abs[eco41-eco51]+Abs[eco41-eco61]+Abs[eco41-eco71]+Abs[eco41-eco81]+Abs[eco41-eco91]+Abs[eco41-eco101]+Abs[eco41-eco111]+Abs[eco41-eco121]+Abs[eco41-eco131]+Abs[eco51-eco11]+Abs[eco51-eco21]+Abs[eco51-eco31]+Abs[eco51-eco41]+Abs[eco51-eco51]+Abs[eco51-eco61]+Abs[eco51-eco71]+Abs[eco51-eco81]+Abs[eco51-eco91]+Abs[eco51-eco101]+Abs[eco51-eco111]+Abs[eco51-eco121]+Abs[eco51-eco131]+Abs[eco61-eco11]+Abs[eco61-eco21]+Abs[eco61-eco31]+Abs[eco61-eco41]+Abs[eco61-eco51]+Abs[eco61-eco61]+Abs[eco61-eco71]+Abs[eco61-eco81]+Abs[eco61-eco91]+Abs[eco61-eco101]+Abs[eco61-eco111]+Abs[eco61-eco121]+Abs[eco61-eco131]+Abs[eco71-eco11]+Abs[eco71-eco21]+Abs[eco71-eco31]+Abs[eco71-eco41]+Abs[eco71-eco51]+Abs[eco71-eco61]+Abs[eco71-eco71]+Abs[eco71-eco81]+Abs[eco71-eco91]+Abs[eco71-eco101]+Abs[eco71-eco111]+Abs[eco71-eco121]+Abs[eco71-eco131]+Abs[eco81-eco11]+Abs[eco81-eco21]+Abs[eco81-eco31]+Abs[eco81-eco41]+Abs[eco81-eco51]+Abs[eco81-eco61]+Abs[eco81-eco71]+Abs[eco81-eco81]+Abs[eco81-eco91]+Abs[eco81-eco101]+Abs[eco81-eco111]+Abs[eco81-eco121]+Abs[eco81-eco131]+Abs[eco91-eco11]+Abs[eco91-eco21]+Abs[eco91-eco31]+Abs[eco91-eco41]+Abs[eco91-eco51]+Abs[eco91-eco61]+Abs[eco91-eco71]+Abs[eco91-eco81]+Abs[eco91-eco91]+Abs[eco91-eco101]+Abs[eco91-eco111]+Abs[eco91-eco121]+Abs[eco91-eco131]+Abs[eco101-eco11]+Abs[eco101-eco21]+Abs[eco101-eco31]+Abs[eco101-eco41]+Abs[eco101-eco51]+Abs[eco101-eco61]+Abs[eco101-eco71]+Abs[eco101-eco81]+Abs[eco101-eco91]+Abs[eco101-eco101]+Abs[eco101-eco111]+Abs[eco101-eco121]+Abs[eco101-eco131]+Abs[eco111-eco11]+Abs[eco111-eco21]+Abs[eco111-eco31]+Abs[eco111-eco41]+Abs[eco111-eco51]+Abs[eco111-eco61]+Abs[eco111-eco71]+Abs[eco111-eco81]+Abs[eco111-eco91]+Abs[eco111-eco101]+Abs[eco111-eco111]+Abs[eco111-eco121]+Abs[eco111-eco131]+Abs[eco121-eco11]+Abs[eco121-eco21]+Abs[eco121-eco31]+Abs[eco121-eco41]+Abs[eco121-eco51]+Abs[eco121-eco61]+Abs[eco121-eco71]+Abs[eco121-eco81]+Abs[eco121-eco91]+Abs[eco121-eco101]+Abs[eco121-eco111]+Abs[eco121-eco121]+Abs[eco121-eco131]+Abs[eco131-eco11]+Abs[eco131-eco21]+Abs[eco131-eco31]+Abs[eco131-eco41]+Abs[eco131-eco51]+Abs[eco131-eco61]+Abs[eco131-eco71]+Abs[eco131-eco81]+Abs[eco131-eco91]+Abs[eco131-eco101]+Abs[eco131-eco111]+Abs[eco131-eco121]+Abs[eco131-eco131])]")
 
 		For i = 0 To 12
@@ -347,6 +347,10 @@ Public Class frmNegotiation
 			'Next
 			Me.outeco(i, 1) = Me.myMathWrapper.WaitAndEvaluateAsDouble("ecolis2[[1," & (i + 1).ToString & "]]")
 		Next
+		Me.outecomean1 = Me.myMathWrapper.WaitAndEvaluateAsDouble("ecomea1")
+		Me.outecomean2 = Me.myMathWrapper.WaitAndEvaluateAsDouble("ecomea2")
+		Me.outecogini1 = Me.myMathWrapper.WaitAndEvaluateAsDouble("ecogin1")
+		Me.outecogini2 = Me.myMathWrapper.WaitAndEvaluateAsDouble("ecogin2")
 
 		'output for social
 		For i = 0 To 12
@@ -356,6 +360,10 @@ Public Class frmNegotiation
 			'Next
 			Me.outsoc(i, 1) = Me.myMathWrapper.WaitAndEvaluateAsDouble("soclis2[[1," & (i + 1).ToString & "]]")
 		Next
+		Me.outsocmean1 = Me.myMathWrapper.WaitAndEvaluateAsDouble("socmea1")
+		Me.outsocmean2 = Me.myMathWrapper.WaitAndEvaluateAsDouble("socmea2")
+		Me.outsocgini1 = Me.myMathWrapper.WaitAndEvaluateAsDouble("socgin1")
+		Me.outsocgini2 = Me.myMathWrapper.WaitAndEvaluateAsDouble("socgin2")
 
 		'output for environment
 		For i = 0 To 12
@@ -365,6 +373,10 @@ Public Class frmNegotiation
 			'Next
 			Me.outenv(i, 1) = Me.myMathWrapper.WaitAndEvaluateAsDouble("envlis2[[1," & (i + 1).ToString & "]]")
 		Next
+		Me.outenvmean1 = Me.myMathWrapper.WaitAndEvaluateAsDouble("envmea1")
+		Me.outenvmean2 = Me.myMathWrapper.WaitAndEvaluateAsDouble("envmea2")
+		Me.outenvgini1 = Me.myMathWrapper.WaitAndEvaluateAsDouble("envgin1")
+		Me.outenvgini2 = Me.myMathWrapper.WaitAndEvaluateAsDouble("envgin2")
 
 		'free varibles used for graph plotting
 
@@ -800,6 +812,10 @@ Public Class frmNegotiation
 						Me.lblCollection("lblEco" & i + 1 & "_" & j + 1).Text = Me.outeco(i, j).ToString
 					Next
 				Next
+				Me.lblEcoMean1.Text = Me.outecomean1.ToString
+				Me.lblEcoMean2.Text = Me.outecomean2.ToString
+				Me.lblEcoGini1.Text = Me.outecogini1.ToString
+				Me.lblEcoGini2.Text = Me.outecogini2.ToString
 
 				'Social
 				For i = 0 To 12
@@ -807,6 +823,10 @@ Public Class frmNegotiation
 						Me.lblCollection("lblSoc" & i + 1 & "_" & j + 1).Text = Me.outsoc(i, j).ToString
 					Next
 				Next
+				Me.lblSocMean1.Text = Me.outsocmean1.ToString
+				Me.lblSocMean2.Text = Me.outsocmean2.ToString
+				Me.lblSocGini1.Text = Me.outsocgini1.ToString
+				Me.lblSocGini2.Text = Me.outsocgini2.ToString
 
 				'Environment
 				For i = 0 To 12
@@ -814,6 +834,11 @@ Public Class frmNegotiation
 						Me.lblCollection("lblEnv" & i + 1 & "_" & j + 1).Text = Me.outenv(i, j).ToString
 					Next
 				Next
+				Me.lblEnvMean1.Text = Me.outenvmean1.ToString
+				Me.lblEnvMean2.Text = Me.outenvmean2.ToString
+				Me.lblEnvGini1.Text = Me.outenvgini1.ToString
+				Me.lblEnvGini2.Text = Me.outenvgini2.ToString
+
 		End Select
 	End Sub
 

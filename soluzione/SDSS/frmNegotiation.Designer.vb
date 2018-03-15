@@ -485,6 +485,20 @@ Partial Class frmNegotiation
 		Me.Label91 = New System.Windows.Forms.Label()
 		Me.ElementHost1 = New System.Windows.Forms.Integration.ElementHost()
 		Me.mapControl = New mapControl.mapControl()
+		Me.Label100 = New System.Windows.Forms.Label()
+		Me.Label101 = New System.Windows.Forms.Label()
+		Me.lblEcoMean1 = New SDSS.DSSLabel()
+		Me.lblEcoGini1 = New SDSS.DSSLabel()
+		Me.lblSocGini1 = New SDSS.DSSLabel()
+		Me.lblSocMean1 = New SDSS.DSSLabel()
+		Me.lblEnvGini1 = New SDSS.DSSLabel()
+		Me.lblEnvMean1 = New SDSS.DSSLabel()
+		Me.lblEnvGini2 = New SDSS.DSSLabel()
+		Me.lblEnvMean2 = New SDSS.DSSLabel()
+		Me.lblSocGini2 = New SDSS.DSSLabel()
+		Me.lblSocMean2 = New SDSS.DSSLabel()
+		Me.lblEcoGini2 = New SDSS.DSSLabel()
+		Me.lblEcoMean2 = New SDSS.DSSLabel()
 		CType(Me.dsParameters, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.DSData, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.DSLocations, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -707,7 +721,7 @@ Partial Class frmNegotiation
 		'btnNext
 		'
 		Me.btnNext.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-		Me.btnNext.Location = New System.Drawing.Point(441, 505)
+		Me.btnNext.Location = New System.Drawing.Point(441, 522)
 		Me.btnNext.Name = "btnNext"
 		Me.btnNext.Size = New System.Drawing.Size(90, 36)
 		Me.btnNext.TabIndex = 0
@@ -717,7 +731,7 @@ Partial Class frmNegotiation
 		'btnPrev
 		'
 		Me.btnPrev.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-		Me.btnPrev.Location = New System.Drawing.Point(342, 505)
+		Me.btnPrev.Location = New System.Drawing.Point(342, 522)
 		Me.btnPrev.Name = "btnPrev"
 		Me.btnPrev.Size = New System.Drawing.Size(90, 36)
 		Me.btnPrev.TabIndex = 29
@@ -727,7 +741,7 @@ Partial Class frmNegotiation
 		'btnLoadData
 		'
 		Me.btnLoadData.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-		Me.btnLoadData.Location = New System.Drawing.Point(114, 505)
+		Me.btnLoadData.Location = New System.Drawing.Point(114, 522)
 		Me.btnLoadData.Name = "btnLoadData"
 		Me.btnLoadData.Size = New System.Drawing.Size(90, 36)
 		Me.btnLoadData.TabIndex = 29
@@ -772,7 +786,7 @@ Partial Class frmNegotiation
 		Me.pnlMain.Controls.Add(Me.SplitContainer)
 		Me.pnlMain.Location = New System.Drawing.Point(0, 0)
 		Me.pnlMain.Name = "pnlMain"
-		Me.pnlMain.Size = New System.Drawing.Size(940, 499)
+		Me.pnlMain.Size = New System.Drawing.Size(940, 516)
 		Me.pnlMain.TabIndex = 30
 		'
 		'SplitContainer
@@ -793,7 +807,7 @@ Partial Class frmNegotiation
 		'SplitContainer.Panel2
 		'
 		Me.SplitContainer.Panel2.Controls.Add(Me.ElementHost1)
-		Me.SplitContainer.Size = New System.Drawing.Size(940, 499)
+		Me.SplitContainer.Size = New System.Drawing.Size(940, 516)
 		Me.SplitContainer.SplitterDistance = 746
 		Me.SplitContainer.SplitterWidth = 2
 		Me.SplitContainer.TabIndex = 0
@@ -808,7 +822,7 @@ Partial Class frmNegotiation
 		Me.grbOuput.ForeColor = System.Drawing.Color.Black
 		Me.grbOuput.Location = New System.Drawing.Point(0, 0)
 		Me.grbOuput.Name = "grbOuput"
-		Me.grbOuput.Size = New System.Drawing.Size(479, 499)
+		Me.grbOuput.Size = New System.Drawing.Size(479, 516)
 		Me.grbOuput.TabIndex = 26
 		Me.grbOuput.TabStop = False
 		Me.grbOuput.Text = "Summary"
@@ -825,7 +839,7 @@ Partial Class frmNegotiation
 		Me.tcoOutput.Location = New System.Drawing.Point(3, 16)
 		Me.tcoOutput.Name = "tcoOutput"
 		Me.tcoOutput.SelectedIndex = 0
-		Me.tcoOutput.Size = New System.Drawing.Size(473, 480)
+		Me.tcoOutput.Size = New System.Drawing.Size(473, 497)
 		Me.tcoOutput.TabIndex = 0
 		'
 		'tpaImpacts
@@ -834,13 +848,27 @@ Partial Class frmNegotiation
 		Me.tpaImpacts.Location = New System.Drawing.Point(4, 22)
 		Me.tpaImpacts.Name = "tpaImpacts"
 		Me.tpaImpacts.Padding = New System.Windows.Forms.Padding(3)
-		Me.tpaImpacts.Size = New System.Drawing.Size(465, 454)
+		Me.tpaImpacts.Size = New System.Drawing.Size(465, 471)
 		Me.tpaImpacts.TabIndex = 2
 		Me.tpaImpacts.Text = "Impacts"
 		Me.tpaImpacts.UseVisualStyleBackColor = True
 		'
 		'gboOutputImpacts
 		'
+		Me.gboOutputImpacts.Controls.Add(Me.lblEnvGini2)
+		Me.gboOutputImpacts.Controls.Add(Me.lblEnvMean2)
+		Me.gboOutputImpacts.Controls.Add(Me.lblSocGini2)
+		Me.gboOutputImpacts.Controls.Add(Me.lblSocMean2)
+		Me.gboOutputImpacts.Controls.Add(Me.lblEcoGini2)
+		Me.gboOutputImpacts.Controls.Add(Me.lblEcoMean2)
+		Me.gboOutputImpacts.Controls.Add(Me.lblEnvGini1)
+		Me.gboOutputImpacts.Controls.Add(Me.lblEnvMean1)
+		Me.gboOutputImpacts.Controls.Add(Me.lblSocGini1)
+		Me.gboOutputImpacts.Controls.Add(Me.lblSocMean1)
+		Me.gboOutputImpacts.Controls.Add(Me.lblEcoGini1)
+		Me.gboOutputImpacts.Controls.Add(Me.lblEcoMean1)
+		Me.gboOutputImpacts.Controls.Add(Me.Label101)
+		Me.gboOutputImpacts.Controls.Add(Me.Label100)
 		Me.gboOutputImpacts.Controls.Add(Me.pnlOutSocSmall)
 		Me.gboOutputImpacts.Controls.Add(Me.DssPanel7)
 		Me.gboOutputImpacts.Controls.Add(Me.pnlOutEnvLarge)
@@ -869,12 +897,12 @@ Partial Class frmNegotiation
 		Me.gboOutputImpacts.Controls.Add(Me.Label114)
 		Me.gboOutputImpacts.Controls.Add(Me.Label112)
 		Me.gboOutputImpacts.Controls.Add(Me.Label113)
-		Me.gboOutputImpacts.DSSVisible = False
 		Me.gboOutputImpacts.Location = New System.Drawing.Point(15, 11)
 		Me.gboOutputImpacts.Name = "gboOutputImpacts"
-		Me.gboOutputImpacts.Size = New System.Drawing.Size(422, 391)
+		Me.gboOutputImpacts.Size = New System.Drawing.Size(422, 446)
 		Me.gboOutputImpacts.TabIndex = 195
 		Me.gboOutputImpacts.TabStop = False
+		Me.gboOutputImpacts.Visible = False
 		'
 		'pnlOutSocSmall
 		'
@@ -1067,7 +1095,6 @@ Partial Class frmNegotiation
 		'
 		'DssPanel7
 		'
-		Me.DssPanel7.DSSVisible = False
 		Me.DssPanel7.Location = New System.Drawing.Point(-135, 184)
 		Me.DssPanel7.Name = "DssPanel7"
 		Me.DssPanel7.Size = New System.Drawing.Size(49, 317)
@@ -1088,7 +1115,6 @@ Partial Class frmNegotiation
 		Me.pnlOutEnvLarge.Controls.Add(Me.lblEnv3_2)
 		Me.pnlOutEnvLarge.Controls.Add(Me.lblEnv7_2)
 		Me.pnlOutEnvLarge.Controls.Add(Me.lblEnv10_2)
-		Me.pnlOutEnvLarge.DSSVisible = False
 		Me.pnlOutEnvLarge.Location = New System.Drawing.Point(349, 59)
 		Me.pnlOutEnvLarge.Name = "pnlOutEnvLarge"
 		Me.pnlOutEnvLarge.Size = New System.Drawing.Size(49, 317)
@@ -1279,7 +1305,6 @@ Partial Class frmNegotiation
 		Me.pnlOutEnvSmall.Controls.Add(Me.lblEnv3_1)
 		Me.pnlOutEnvSmall.Controls.Add(Me.lblEnv10_1)
 		Me.pnlOutEnvSmall.Controls.Add(Me.lblEnv7_1)
-		Me.pnlOutEnvSmall.DSSVisible = False
 		Me.pnlOutEnvSmall.Location = New System.Drawing.Point(187, 59)
 		Me.pnlOutEnvSmall.Name = "pnlOutEnvSmall"
 		Me.pnlOutEnvSmall.Size = New System.Drawing.Size(49, 317)
@@ -1470,7 +1495,6 @@ Partial Class frmNegotiation
 		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco3_2)
 		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco10_2)
 		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco7_2)
-		Me.pnlOutEcoLarge.DSSVisible = False
 		Me.pnlOutEcoLarge.Location = New System.Drawing.Point(241, 59)
 		Me.pnlOutEcoLarge.Name = "pnlOutEcoLarge"
 		Me.pnlOutEcoLarge.Size = New System.Drawing.Size(49, 317)
@@ -1660,7 +1684,6 @@ Partial Class frmNegotiation
 		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc3_2)
 		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc7_2)
 		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc10_2)
-		Me.pnlOutSocLarge.DSSVisible = False
 		Me.pnlOutSocLarge.Location = New System.Drawing.Point(295, 59)
 		Me.pnlOutSocLarge.Name = "pnlOutSocLarge"
 		Me.pnlOutSocLarge.Size = New System.Drawing.Size(49, 317)
@@ -1850,7 +1873,6 @@ Partial Class frmNegotiation
 		Me.pnlOutEcoSmall.Controls.Add(Me.lblEco7_1)
 		Me.pnlOutEcoSmall.Controls.Add(Me.lblEco10_1)
 		Me.pnlOutEcoSmall.Controls.Add(Me.lblEco13_1)
-		Me.pnlOutEcoSmall.DSSVisible = False
 		Me.pnlOutEcoSmall.Location = New System.Drawing.Point(79, 59)
 		Me.pnlOutEcoSmall.Name = "pnlOutEcoSmall"
 		Me.pnlOutEcoSmall.Size = New System.Drawing.Size(49, 317)
@@ -2306,6 +2328,7 @@ Partial Class frmNegotiation
 		Me.gboOutputUses.Controls.Add(Me.Label79)
 		Me.gboOutputUses.Controls.Add(Me.Label60)
 		Me.gboOutputUses.Controls.Add(Me.Label61)
+		Me.gboOutputUses.DSSVisible = False
 		Me.gboOutputUses.Location = New System.Drawing.Point(15, 11)
 		Me.gboOutputUses.Name = "gboOutputUses"
 		Me.gboOutputUses.Size = New System.Drawing.Size(451, 406)
@@ -2328,6 +2351,7 @@ Partial Class frmNegotiation
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr7_1)
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr10_1)
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr13_1)
+		Me.pnlOutAgrSmall.DSSVisible = False
 		Me.pnlOutAgrSmall.Location = New System.Drawing.Point(94, 55)
 		Me.pnlOutAgrSmall.Name = "pnlOutAgrSmall"
 		Me.pnlOutAgrSmall.Size = New System.Drawing.Size(49, 317)
@@ -2526,6 +2550,7 @@ Partial Class frmNegotiation
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd3_2)
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd10_2)
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd7_2)
+		Me.pnlOutIndLarge.DSSVisible = False
 		Me.pnlOutIndLarge.Location = New System.Drawing.Point(285, 55)
 		Me.pnlOutIndLarge.Name = "pnlOutIndLarge"
 		Me.pnlOutIndLarge.Size = New System.Drawing.Size(49, 317)
@@ -2733,6 +2758,7 @@ Partial Class frmNegotiation
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan7_1)
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan10_1)
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan13_1)
+		Me.pnlOutLanSmall.DSSVisible = False
 		Me.pnlOutLanSmall.Location = New System.Drawing.Point(153, 55)
 		Me.pnlOutLanSmall.Name = "pnlOutLanSmall"
 		Me.pnlOutLanSmall.Size = New System.Drawing.Size(49, 317)
@@ -2932,6 +2958,7 @@ Partial Class frmNegotiation
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan12_2)
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan7_2)
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan3_2)
+		Me.pnlOutLanLarge.DSSVisible = False
 		Me.pnlOutLanLarge.Location = New System.Drawing.Point(347, 56)
 		Me.pnlOutLanLarge.Name = "pnlOutLanLarge"
 		Me.pnlOutLanLarge.Size = New System.Drawing.Size(49, 317)
@@ -3131,6 +3158,7 @@ Partial Class frmNegotiation
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr3_2)
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr7_2)
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr10_2)
+		Me.pnlOutAgrLarge.DSSVisible = False
 		Me.pnlOutAgrLarge.Location = New System.Drawing.Point(223, 57)
 		Me.pnlOutAgrLarge.Name = "pnlOutAgrLarge"
 		Me.pnlOutAgrLarge.Size = New System.Drawing.Size(49, 317)
@@ -3450,7 +3478,7 @@ Partial Class frmNegotiation
 		Me.grbPopulation.ForeColor = System.Drawing.Color.Black
 		Me.grbPopulation.Location = New System.Drawing.Point(0, 0)
 		Me.grbPopulation.Name = "grbPopulation"
-		Me.grbPopulation.Size = New System.Drawing.Size(294, 499)
+		Me.grbPopulation.Size = New System.Drawing.Size(294, 516)
 		Me.grbPopulation.TabIndex = 22
 		Me.grbPopulation.TabStop = False
 		Me.grbPopulation.Text = "Total population"
@@ -4041,7 +4069,7 @@ Partial Class frmNegotiation
 		Me.grbIndustrialDistricts.ForeColor = System.Drawing.Color.Black
 		Me.grbIndustrialDistricts.Location = New System.Drawing.Point(0, 0)
 		Me.grbIndustrialDistricts.Name = "grbIndustrialDistricts"
-		Me.grbIndustrialDistricts.Size = New System.Drawing.Size(300, 499)
+		Me.grbIndustrialDistricts.Size = New System.Drawing.Size(300, 516)
 		Me.grbIndustrialDistricts.TabIndex = 23
 		Me.grbIndustrialDistricts.TabStop = False
 		Me.grbIndustrialDistricts.Text = "Industril districts"
@@ -4624,7 +4652,7 @@ Partial Class frmNegotiation
 		Me.grbWaterQuality.ForeColor = System.Drawing.Color.Black
 		Me.grbWaterQuality.Location = New System.Drawing.Point(0, 0)
 		Me.grbWaterQuality.Name = "grbWaterQuality"
-		Me.grbWaterQuality.Size = New System.Drawing.Size(413, 499)
+		Me.grbWaterQuality.Size = New System.Drawing.Size(413, 516)
 		Me.grbWaterQuality.TabIndex = 21
 		Me.grbWaterQuality.TabStop = False
 		Me.grbWaterQuality.Text = "Water quality indicator"
@@ -5431,7 +5459,7 @@ Partial Class frmNegotiation
 		Me.grbWaterCosts.ForeColor = System.Drawing.Color.Black
 		Me.grbWaterCosts.Location = New System.Drawing.Point(0, 0)
 		Me.grbWaterCosts.Name = "grbWaterCosts"
-		Me.grbWaterCosts.Size = New System.Drawing.Size(349, 499)
+		Me.grbWaterCosts.Size = New System.Drawing.Size(349, 516)
 		Me.grbWaterCosts.TabIndex = 24
 		Me.grbWaterCosts.TabStop = False
 		Me.grbWaterCosts.Text = "Water costs"
@@ -6008,7 +6036,7 @@ Partial Class frmNegotiation
 		Me.grbMisc.ForeColor = System.Drawing.Color.Black
 		Me.grbMisc.Location = New System.Drawing.Point(0, 0)
 		Me.grbMisc.Name = "grbMisc"
-		Me.grbMisc.Size = New System.Drawing.Size(759, 499)
+		Me.grbMisc.Size = New System.Drawing.Size(759, 516)
 		Me.grbMisc.TabIndex = 13
 		Me.grbMisc.TabStop = False
 		Me.grbMisc.Text = "Costs, efficiencies, standards, preferences and constraints"
@@ -6528,16 +6556,200 @@ Partial Class frmNegotiation
 		Me.ElementHost1.Dock = System.Windows.Forms.DockStyle.Fill
 		Me.ElementHost1.Location = New System.Drawing.Point(0, 0)
 		Me.ElementHost1.Name = "ElementHost1"
-		Me.ElementHost1.Size = New System.Drawing.Size(192, 499)
+		Me.ElementHost1.Size = New System.Drawing.Size(192, 516)
 		Me.ElementHost1.TabIndex = 0
 		Me.ElementHost1.Text = "ElementHost1"
 		Me.ElementHost1.Child = Me.mapControl
+		'
+		'Label100
+		'
+		Me.Label100.Location = New System.Drawing.Point(8, 379)
+		Me.Label100.Name = "Label100"
+		Me.Label100.Size = New System.Drawing.Size(68, 20)
+		Me.Label100.TabIndex = 193
+		Me.Label100.Text = "Mean"
+		'
+		'Label101
+		'
+		Me.Label101.Location = New System.Drawing.Point(8, 399)
+		Me.Label101.Name = "Label101"
+		Me.Label101.Size = New System.Drawing.Size(68, 20)
+		Me.Label101.TabIndex = 194
+		Me.Label101.Text = "Gini index"
+		'
+		'lblEcoMean1
+		'
+		Me.lblEcoMean1.Cursor = System.Windows.Forms.Cursors.IBeam
+		Me.lblEcoMean1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
+		Me.lblEcoMean1.DSSElementName = "OutEco13_1"
+		Me.lblEcoMean1.DSSLocation = 13
+		Me.lblEcoMean1.DSSOffset = -0.2R
+		Me.lblEcoMean1.Location = New System.Drawing.Point(82, 379)
+		Me.lblEcoMean1.Name = "lblEcoMean1"
+		Me.lblEcoMean1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEcoMean1.TabIndex = 195
+		Me.lblEcoMean1.Text = "-"
+		Me.lblEcoMean1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEcoGini1
+		'
+		Me.lblEcoGini1.Cursor = System.Windows.Forms.Cursors.IBeam
+		Me.lblEcoGini1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
+		Me.lblEcoGini1.DSSElementName = "OutEco13_1"
+		Me.lblEcoGini1.DSSLocation = 13
+		Me.lblEcoGini1.DSSOffset = -0.2R
+		Me.lblEcoGini1.Location = New System.Drawing.Point(82, 399)
+		Me.lblEcoGini1.Name = "lblEcoGini1"
+		Me.lblEcoGini1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEcoGini1.TabIndex = 196
+		Me.lblEcoGini1.Text = "-"
+		Me.lblEcoGini1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSocGini1
+		'
+		Me.lblSocGini1.Cursor = System.Windows.Forms.Cursors.IBeam
+		Me.lblSocGini1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
+		Me.lblSocGini1.DSSElementName = "OutEco13_1"
+		Me.lblSocGini1.DSSLocation = 13
+		Me.lblSocGini1.DSSOffset = -0.2R
+		Me.lblSocGini1.Location = New System.Drawing.Point(137, 399)
+		Me.lblSocGini1.Name = "lblSocGini1"
+		Me.lblSocGini1.Size = New System.Drawing.Size(34, 20)
+		Me.lblSocGini1.TabIndex = 198
+		Me.lblSocGini1.Text = "-"
+		Me.lblSocGini1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSocMean1
+		'
+		Me.lblSocMean1.Cursor = System.Windows.Forms.Cursors.IBeam
+		Me.lblSocMean1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
+		Me.lblSocMean1.DSSElementName = "OutEco13_1"
+		Me.lblSocMean1.DSSLocation = 13
+		Me.lblSocMean1.DSSOffset = -0.2R
+		Me.lblSocMean1.Location = New System.Drawing.Point(137, 379)
+		Me.lblSocMean1.Name = "lblSocMean1"
+		Me.lblSocMean1.Size = New System.Drawing.Size(34, 20)
+		Me.lblSocMean1.TabIndex = 197
+		Me.lblSocMean1.Text = "-"
+		Me.lblSocMean1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnvGini1
+		'
+		Me.lblEnvGini1.Cursor = System.Windows.Forms.Cursors.IBeam
+		Me.lblEnvGini1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
+		Me.lblEnvGini1.DSSElementName = "OutEco13_1"
+		Me.lblEnvGini1.DSSLocation = 13
+		Me.lblEnvGini1.DSSOffset = -0.2R
+		Me.lblEnvGini1.Location = New System.Drawing.Point(190, 399)
+		Me.lblEnvGini1.Name = "lblEnvGini1"
+		Me.lblEnvGini1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnvGini1.TabIndex = 200
+		Me.lblEnvGini1.Text = "-"
+		Me.lblEnvGini1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnvMean1
+		'
+		Me.lblEnvMean1.Cursor = System.Windows.Forms.Cursors.IBeam
+		Me.lblEnvMean1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
+		Me.lblEnvMean1.DSSElementName = "OutEco13_1"
+		Me.lblEnvMean1.DSSLocation = 13
+		Me.lblEnvMean1.DSSOffset = -0.2R
+		Me.lblEnvMean1.Location = New System.Drawing.Point(190, 379)
+		Me.lblEnvMean1.Name = "lblEnvMean1"
+		Me.lblEnvMean1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnvMean1.TabIndex = 199
+		Me.lblEnvMean1.Text = "-"
+		Me.lblEnvMean1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnvGini2
+		'
+		Me.lblEnvGini2.Cursor = System.Windows.Forms.Cursors.IBeam
+		Me.lblEnvGini2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
+		Me.lblEnvGini2.DSSElementName = "OutEco13_1"
+		Me.lblEnvGini2.DSSLocation = 13
+		Me.lblEnvGini2.DSSOffset = -0.2R
+		Me.lblEnvGini2.Location = New System.Drawing.Point(351, 399)
+		Me.lblEnvGini2.Name = "lblEnvGini2"
+		Me.lblEnvGini2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnvGini2.TabIndex = 206
+		Me.lblEnvGini2.Text = "-"
+		Me.lblEnvGini2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnvMean2
+		'
+		Me.lblEnvMean2.Cursor = System.Windows.Forms.Cursors.IBeam
+		Me.lblEnvMean2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
+		Me.lblEnvMean2.DSSElementName = "OutEco13_1"
+		Me.lblEnvMean2.DSSLocation = 13
+		Me.lblEnvMean2.DSSOffset = -0.2R
+		Me.lblEnvMean2.Location = New System.Drawing.Point(351, 379)
+		Me.lblEnvMean2.Name = "lblEnvMean2"
+		Me.lblEnvMean2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnvMean2.TabIndex = 205
+		Me.lblEnvMean2.Text = "-"
+		Me.lblEnvMean2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSocGini2
+		'
+		Me.lblSocGini2.Cursor = System.Windows.Forms.Cursors.IBeam
+		Me.lblSocGini2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
+		Me.lblSocGini2.DSSElementName = "OutEco13_1"
+		Me.lblSocGini2.DSSLocation = 13
+		Me.lblSocGini2.DSSOffset = -0.2R
+		Me.lblSocGini2.Location = New System.Drawing.Point(298, 399)
+		Me.lblSocGini2.Name = "lblSocGini2"
+		Me.lblSocGini2.Size = New System.Drawing.Size(34, 20)
+		Me.lblSocGini2.TabIndex = 204
+		Me.lblSocGini2.Text = "-"
+		Me.lblSocGini2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSocMean2
+		'
+		Me.lblSocMean2.Cursor = System.Windows.Forms.Cursors.IBeam
+		Me.lblSocMean2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
+		Me.lblSocMean2.DSSElementName = "OutEco13_1"
+		Me.lblSocMean2.DSSLocation = 13
+		Me.lblSocMean2.DSSOffset = -0.2R
+		Me.lblSocMean2.Location = New System.Drawing.Point(298, 379)
+		Me.lblSocMean2.Name = "lblSocMean2"
+		Me.lblSocMean2.Size = New System.Drawing.Size(34, 20)
+		Me.lblSocMean2.TabIndex = 203
+		Me.lblSocMean2.Text = "-"
+		Me.lblSocMean2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEcoGini2
+		'
+		Me.lblEcoGini2.Cursor = System.Windows.Forms.Cursors.IBeam
+		Me.lblEcoGini2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
+		Me.lblEcoGini2.DSSElementName = "OutEco13_1"
+		Me.lblEcoGini2.DSSLocation = 13
+		Me.lblEcoGini2.DSSOffset = -0.2R
+		Me.lblEcoGini2.Location = New System.Drawing.Point(246, 399)
+		Me.lblEcoGini2.Name = "lblEcoGini2"
+		Me.lblEcoGini2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEcoGini2.TabIndex = 202
+		Me.lblEcoGini2.Text = "-"
+		Me.lblEcoGini2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEcoMean2
+		'
+		Me.lblEcoMean2.Cursor = System.Windows.Forms.Cursors.IBeam
+		Me.lblEcoMean2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(102, Byte), CType(102, Byte), CType(0, Byte))
+		Me.lblEcoMean2.DSSElementName = "OutEco13_1"
+		Me.lblEcoMean2.DSSLocation = 13
+		Me.lblEcoMean2.DSSOffset = -0.2R
+		Me.lblEcoMean2.Location = New System.Drawing.Point(246, 379)
+		Me.lblEcoMean2.Name = "lblEcoMean2"
+		Me.lblEcoMean2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEcoMean2.TabIndex = 201
+		Me.lblEcoMean2.Text = "-"
+		Me.lblEcoMean2.TextAlign = System.Drawing.ContentAlignment.TopRight
 		'
 		'frmNegotiation
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-		Me.ClientSize = New System.Drawing.Size(941, 553)
+		Me.ClientSize = New System.Drawing.Size(941, 570)
 		Me.Controls.Add(Me.btnNext)
 		Me.Controls.Add(Me.btnPrev)
 		Me.Controls.Add(Me.btnLoadData)
@@ -7275,4 +7487,18 @@ Partial Class frmNegotiation
 	Friend WithEvents pnlOutEcoLarge As DSSPanel
 	Friend WithEvents pnlOutSocLarge As DSSPanel
 	Friend WithEvents pnlOutEcoSmall As DSSPanel
+	Friend WithEvents lblEnvGini2 As DSSLabel
+	Friend WithEvents lblEnvMean2 As DSSLabel
+	Friend WithEvents lblSocGini2 As DSSLabel
+	Friend WithEvents lblSocMean2 As DSSLabel
+	Friend WithEvents lblEcoGini2 As DSSLabel
+	Friend WithEvents lblEcoMean2 As DSSLabel
+	Friend WithEvents lblEnvGini1 As DSSLabel
+	Friend WithEvents lblEnvMean1 As DSSLabel
+	Friend WithEvents lblSocGini1 As DSSLabel
+	Friend WithEvents lblSocMean1 As DSSLabel
+	Friend WithEvents lblEcoGini1 As DSSLabel
+	Friend WithEvents lblEcoMean1 As DSSLabel
+	Friend WithEvents Label101 As Label
+	Friend WithEvents Label100 As Label
 End Class
