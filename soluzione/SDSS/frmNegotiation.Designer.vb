@@ -4072,7 +4072,7 @@ Partial Class frmNegotiation
 		Me.grbIndustrialDistricts.Size = New System.Drawing.Size(300, 516)
 		Me.grbIndustrialDistricts.TabIndex = 23
 		Me.grbIndustrialDistricts.TabStop = False
-		Me.grbIndustrialDistricts.Text = "Industril districts"
+		Me.grbIndustrialDistricts.Text = "Industrial districts"
 		Me.grbIndustrialDistricts.Visible = False
 		'
 		'pnlInddispln
@@ -6192,7 +6192,6 @@ Partial Class frmNegotiation
 		Me.nudTpsx.DSSLocation = 0
 		Me.nudTpsx.DSSOffset = -0.2R
 		Me.nudTpsx.Location = New System.Drawing.Point(291, 43)
-		Me.nudTpsx.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudTpsx.Name = "nudTpsx"
 		Me.nudTpsx.Size = New System.Drawing.Size(90, 20)
 		Me.nudTpsx.TabIndex = 1
@@ -6216,7 +6215,6 @@ Partial Class frmNegotiation
 		Me.nudTpmz.DSSLocation = 0
 		Me.nudTpmz.DSSOffset = -0.2R
 		Me.nudTpmz.Location = New System.Drawing.Point(389, 89)
-		Me.nudTpmz.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudTpmz.Name = "nudTpmz"
 		Me.nudTpmz.Size = New System.Drawing.Size(90, 20)
 		Me.nudTpmz.TabIndex = 2
@@ -6337,7 +6335,6 @@ Partial Class frmNegotiation
 		Me.nudSocw.DSSLocation = 0
 		Me.nudSocw.DSSOffset = -0.2R
 		Me.nudSocw.Location = New System.Drawing.Point(389, 158)
-		Me.nudSocw.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudSocw.Name = "nudSocw"
 		Me.nudSocw.Size = New System.Drawing.Size(90, 20)
 		Me.nudSocw.TabIndex = 5
@@ -6367,7 +6364,6 @@ Partial Class frmNegotiation
 		Me.nudEcow.DSSLocation = 0
 		Me.nudEcow.DSSOffset = -0.2R
 		Me.nudEcow.Location = New System.Drawing.Point(291, 158)
-		Me.nudEcow.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudEcow.Name = "nudEcow"
 		Me.nudEcow.Size = New System.Drawing.Size(90, 20)
 		Me.nudEcow.TabIndex = 4
