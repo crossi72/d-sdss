@@ -342,39 +342,39 @@ Public Class frmNegotiation
 		'output for economy
 		For i = 0 To 12
 			'For j = 0 To 1
-			Me.outeco(i, 0) = Me.myMathWrapper.WaitAndEvaluateAsDouble("ecolis1[[1," & (i + 1).ToString & "]]")
+			Me.outeco(i, 0) = Math.Round(Me.myMathWrapper.WaitAndEvaluateAsDouble("ecolis1[[1," & (i + 1).ToString & "]]") * 100, 0, MidpointRounding.AwayFromZero)
 			cursor += 1
 			'Next
-			Me.outeco(i, 1) = Me.myMathWrapper.WaitAndEvaluateAsDouble("ecolis2[[1," & (i + 1).ToString & "]]")
+			Me.outeco(i, 1) = Math.Round(Me.myMathWrapper.WaitAndEvaluateAsDouble("ecolis2[[1," & (i + 1).ToString & "]]") * 100, 0, MidpointRounding.AwayFromZero)
 		Next
-		Me.outecomean1 = Me.myMathWrapper.WaitAndEvaluateAsDouble("ecomea1")
-		Me.outecomean2 = Me.myMathWrapper.WaitAndEvaluateAsDouble("ecomea2")
+		Me.outecomean1 = Math.Round(Me.myMathWrapper.WaitAndEvaluateAsDouble("ecomea1") * 100, 0, MidpointRounding.AwayFromZero)
+		Me.outecomean2 = Math.Round(Me.myMathWrapper.WaitAndEvaluateAsDouble("ecomea2") * 100, 0, MidpointRounding.AwayFromZero)
 		Me.outecogini1 = Me.myMathWrapper.WaitAndEvaluateAsDouble("ecogin1")
 		Me.outecogini2 = Me.myMathWrapper.WaitAndEvaluateAsDouble("ecogin2")
 
 		'output for social
 		For i = 0 To 12
 			'For j = 0 To 1
-			Me.outsoc(i, 0) = Me.myMathWrapper.WaitAndEvaluateAsDouble("soclis1[[1," & (i + 1).ToString & "]]")
+			Me.outsoc(i, 0) = Math.Round(Me.myMathWrapper.WaitAndEvaluateAsDouble("soclis1[[1," & (i + 1).ToString & "]]") * 100, 0, MidpointRounding.AwayFromZero)
 			cursor += 1
 			'Next
-			Me.outsoc(i, 1) = Me.myMathWrapper.WaitAndEvaluateAsDouble("soclis2[[1," & (i + 1).ToString & "]]")
+			Me.outsoc(i, 1) = Math.Round(Me.myMathWrapper.WaitAndEvaluateAsDouble("soclis2[[1," & (i + 1).ToString & "]]") * 100, 0, MidpointRounding.AwayFromZero)
 		Next
-		Me.outsocmean1 = Me.myMathWrapper.WaitAndEvaluateAsDouble("socmea1")
-		Me.outsocmean2 = Me.myMathWrapper.WaitAndEvaluateAsDouble("socmea2")
+		Me.outsocmean1 = Math.Round(Me.myMathWrapper.WaitAndEvaluateAsDouble("socmea1") * 100, 0, MidpointRounding.AwayFromZero)
+		Me.outsocmean2 = Math.Round(Me.myMathWrapper.WaitAndEvaluateAsDouble("socmea2") * 100, 0, MidpointRounding.AwayFromZero)
 		Me.outsocgini1 = Me.myMathWrapper.WaitAndEvaluateAsDouble("socgin1")
 		Me.outsocgini2 = Me.myMathWrapper.WaitAndEvaluateAsDouble("socgin2")
 
 		'output for environment
 		For i = 0 To 12
 			'For j = 0 To 1
-			Me.outenv(i, 0) = Me.myMathWrapper.WaitAndEvaluateAsDouble("envlis1[[1," & (i + 1).ToString & "]]")
+			Me.outenv(i, 0) = Math.Round(Me.myMathWrapper.WaitAndEvaluateAsDouble("envlis1[[1," & (i + 1).ToString & "]]") * 100, 0, MidpointRounding.AwayFromZero)
 			cursor += 1
 			'Next
-			Me.outenv(i, 1) = Me.myMathWrapper.WaitAndEvaluateAsDouble("envlis2[[1," & (i + 1).ToString & "]]")
+			Me.outenv(i, 1) = Math.Round(Me.myMathWrapper.WaitAndEvaluateAsDouble("envlis2[[1," & (i + 1).ToString & "]]") * 100, 0, MidpointRounding.AwayFromZero)
 		Next
-		Me.outenvmean1 = Me.myMathWrapper.WaitAndEvaluateAsDouble("envmea1")
-		Me.outenvmean2 = Me.myMathWrapper.WaitAndEvaluateAsDouble("envmea2")
+		Me.outenvmean1 = Math.Round(Me.myMathWrapper.WaitAndEvaluateAsDouble("envmea1") * 100, 0, MidpointRounding.AwayFromZero)
+		Me.outenvmean2 = Math.Round(Me.myMathWrapper.WaitAndEvaluateAsDouble("envmea2") * 100, 0, MidpointRounding.AwayFromZero)
 		Me.outenvgini1 = Me.myMathWrapper.WaitAndEvaluateAsDouble("envgin1")
 		Me.outenvgini2 = Me.myMathWrapper.WaitAndEvaluateAsDouble("envgin2")
 
