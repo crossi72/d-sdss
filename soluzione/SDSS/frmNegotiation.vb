@@ -226,7 +226,10 @@ Public Class frmNegotiation
 
 		'(*scenario 2020*)
 		Me.myMathWrapper.WaitAndDiscardAnswer("ecoobj20=Sum[(pop20[i][j]/totpop20)(agrw*agrobj+indw*indobj+lanw*lanobj),{i,1,13},{j,1,2}]")
+		'if TSS has to be considered
 		Me.myMathWrapper.WaitAndDiscardAnswer("socobj20=Sum[(pop20[i][j]/totpop20)*(((lmqi[i][j]*(1-tpmz*z[i][j]))/smqi)),{i,1,13},{j,1,2}]")
+		'if TSS has not to be considered
+		Me.myMathWrapper.WaitAndDiscardAnswer("socobj20=0")
 		Me.myMathWrapper.WaitAndDiscardAnswer("envobj20=Sum[(pop20[i][j]/totpop20)*(((lbqi[i][j]*(1-tpbx*x[i][j]))/sbqi)),{i,1,13},{j,1,2}]")
 
 		Me.myMathWrapper.WaitAndDiscardAnswer("totobj20=ecow*ecoobj20+socw*socobj20+envw*envobj20")
@@ -395,8 +398,6 @@ Public Class frmNegotiation
 		Me.myMathWrapper.WaitAndDiscardAnswer("lanw=.")
 		Me.myMathWrapper.WaitAndDiscardAnswer("gwsp=.")
 		Me.myMathWrapper.WaitAndDiscardAnswer("totpla=.")
-		Me.myMathWrapper.WaitAndDiscardAnswer("tpbx=.")
-		Me.myMathWrapper.WaitAndDiscardAnswer("tpmz =.")
 
 		'defining graph parameters
 		Me.myMathWrapper.WaitAndDiscardAnswer("ssqi = 1000")
