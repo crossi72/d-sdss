@@ -32,93 +32,93 @@ Partial Class frmNegotiation
 		Me.btnNext = New System.Windows.Forms.Button()
 		Me.btnPrev = New System.Windows.Forms.Button()
 		Me.btnLoadData = New System.Windows.Forms.Button()
-		Me.dsParameters = New SDSS.parameters()
-		Me.TAParameters = New SDSS.parametersTableAdapters.parametersTableAdapter()
-		Me.DSData = New SDSS.DSData()
+		Me.dsParameters = New DSDSS.parameters()
+		Me.TAParameters = New DSDSS.parametersTableAdapters.parametersTableAdapter()
+		Me.DSData = New DSDSS.DSData()
 		Me.daLocations = New System.Data.SqlClient.SqlDataAdapter()
 		Me.SqlCommand2 = New System.Data.SqlClient.SqlCommand()
-		Me.DSLocations = New SDSS.DSLocations()
+		Me.DSLocations = New DSDSS.DSLocations()
 		Me.pnlMain = New System.Windows.Forms.Panel()
 		Me.SplitContainer = New System.Windows.Forms.SplitContainer()
-		Me.grbOuput = New SDSS.DSSGroupBox()
+		Me.grbOuput = New DSDSS.DSSGroupBox()
 		Me.tcoOutput = New System.Windows.Forms.TabControl()
 		Me.tpaUses = New System.Windows.Forms.TabPage()
-		Me.gboOutputUses = New SDSS.DSSGroupBox()
-		Me.pnlOutAgrSmall = New SDSS.DSSPanel()
-		Me.lblAgr1_1 = New SDSS.DSSLabel()
-		Me.lblAgr5_1 = New SDSS.DSSLabel()
-		Me.lblAgr4_1 = New SDSS.DSSLabel()
-		Me.lblAgr8_1 = New SDSS.DSSLabel()
-		Me.lblAgr11_1 = New SDSS.DSSLabel()
-		Me.lblAgr2_1 = New SDSS.DSSLabel()
-		Me.lblAgr6_1 = New SDSS.DSSLabel()
-		Me.lblAgr9_1 = New SDSS.DSSLabel()
-		Me.lblAgr12_1 = New SDSS.DSSLabel()
-		Me.lblAgr3_1 = New SDSS.DSSLabel()
-		Me.lblAgr7_1 = New SDSS.DSSLabel()
-		Me.lblAgr10_1 = New SDSS.DSSLabel()
-		Me.lblAgr13_1 = New SDSS.DSSLabel()
+		Me.gboOutputUses = New DSDSS.DSSGroupBox()
+		Me.pnlOutAgrSmall = New DSDSS.DSSPanel()
+		Me.lblAgr1_1 = New DSDSS.DSSLabel()
+		Me.lblAgr5_1 = New DSDSS.DSSLabel()
+		Me.lblAgr4_1 = New DSDSS.DSSLabel()
+		Me.lblAgr8_1 = New DSDSS.DSSLabel()
+		Me.lblAgr11_1 = New DSDSS.DSSLabel()
+		Me.lblAgr2_1 = New DSDSS.DSSLabel()
+		Me.lblAgr6_1 = New DSDSS.DSSLabel()
+		Me.lblAgr9_1 = New DSDSS.DSSLabel()
+		Me.lblAgr12_1 = New DSDSS.DSSLabel()
+		Me.lblAgr3_1 = New DSDSS.DSSLabel()
+		Me.lblAgr7_1 = New DSDSS.DSSLabel()
+		Me.lblAgr10_1 = New DSDSS.DSSLabel()
+		Me.lblAgr13_1 = New DSDSS.DSSLabel()
 		Me.Label94 = New System.Windows.Forms.Label()
-		Me.pnlOutIndLarge = New SDSS.DSSPanel()
-		Me.lblInd1_2 = New SDSS.DSSLabel()
-		Me.lblInd5_2 = New SDSS.DSSLabel()
-		Me.lblInd4_2 = New SDSS.DSSLabel()
-		Me.lblInd8_2 = New SDSS.DSSLabel()
-		Me.lblInd11_2 = New SDSS.DSSLabel()
-		Me.lblInd2_2 = New SDSS.DSSLabel()
-		Me.lblInd6_2 = New SDSS.DSSLabel()
-		Me.lblInd9_2 = New SDSS.DSSLabel()
-		Me.lblInd13_2 = New SDSS.DSSLabel()
-		Me.lblInd12_2 = New SDSS.DSSLabel()
-		Me.lblInd3_2 = New SDSS.DSSLabel()
-		Me.lblInd10_2 = New SDSS.DSSLabel()
-		Me.lblInd7_2 = New SDSS.DSSLabel()
+		Me.pnlOutIndLarge = New DSDSS.DSSPanel()
+		Me.lblInd1_2 = New DSDSS.DSSLabel()
+		Me.lblInd5_2 = New DSDSS.DSSLabel()
+		Me.lblInd4_2 = New DSDSS.DSSLabel()
+		Me.lblInd8_2 = New DSDSS.DSSLabel()
+		Me.lblInd11_2 = New DSDSS.DSSLabel()
+		Me.lblInd2_2 = New DSDSS.DSSLabel()
+		Me.lblInd6_2 = New DSDSS.DSSLabel()
+		Me.lblInd9_2 = New DSDSS.DSSLabel()
+		Me.lblInd13_2 = New DSDSS.DSSLabel()
+		Me.lblInd12_2 = New DSDSS.DSSLabel()
+		Me.lblInd3_2 = New DSDSS.DSSLabel()
+		Me.lblInd10_2 = New DSDSS.DSSLabel()
+		Me.lblInd7_2 = New DSDSS.DSSLabel()
 		Me.Label93 = New System.Windows.Forms.Label()
 		Me.Label87 = New System.Windows.Forms.Label()
-		Me.pnlOutLanSmall = New SDSS.DSSPanel()
-		Me.lblLan1_1 = New SDSS.DSSLabel()
-		Me.lblLan5_1 = New SDSS.DSSLabel()
-		Me.lblLan4_1 = New SDSS.DSSLabel()
-		Me.lblLan8_1 = New SDSS.DSSLabel()
-		Me.lblLan11_1 = New SDSS.DSSLabel()
-		Me.lblLan2_1 = New SDSS.DSSLabel()
-		Me.lblLan6_1 = New SDSS.DSSLabel()
-		Me.lblLan9_1 = New SDSS.DSSLabel()
-		Me.lblLan12_1 = New SDSS.DSSLabel()
-		Me.lblLan3_1 = New SDSS.DSSLabel()
-		Me.lblLan7_1 = New SDSS.DSSLabel()
-		Me.lblLan10_1 = New SDSS.DSSLabel()
-		Me.lblLan13_1 = New SDSS.DSSLabel()
+		Me.pnlOutLanSmall = New DSDSS.DSSPanel()
+		Me.lblLan1_1 = New DSDSS.DSSLabel()
+		Me.lblLan5_1 = New DSDSS.DSSLabel()
+		Me.lblLan4_1 = New DSDSS.DSSLabel()
+		Me.lblLan8_1 = New DSDSS.DSSLabel()
+		Me.lblLan11_1 = New DSDSS.DSSLabel()
+		Me.lblLan2_1 = New DSDSS.DSSLabel()
+		Me.lblLan6_1 = New DSDSS.DSSLabel()
+		Me.lblLan9_1 = New DSDSS.DSSLabel()
+		Me.lblLan12_1 = New DSDSS.DSSLabel()
+		Me.lblLan3_1 = New DSDSS.DSSLabel()
+		Me.lblLan7_1 = New DSDSS.DSSLabel()
+		Me.lblLan10_1 = New DSDSS.DSSLabel()
+		Me.lblLan13_1 = New DSDSS.DSSLabel()
 		Me.Label89 = New System.Windows.Forms.Label()
-		Me.pnlOutLanLarge = New SDSS.DSSPanel()
-		Me.lblLan1_2 = New SDSS.DSSLabel()
-		Me.lblLan5_2 = New SDSS.DSSLabel()
-		Me.lblLan4_2 = New SDSS.DSSLabel()
-		Me.lblLan8_2 = New SDSS.DSSLabel()
-		Me.lblLan11_2 = New SDSS.DSSLabel()
-		Me.lblLan2_2 = New SDSS.DSSLabel()
-		Me.lblLan6_2 = New SDSS.DSSLabel()
-		Me.lblLan13_2 = New SDSS.DSSLabel()
-		Me.lblLan9_2 = New SDSS.DSSLabel()
-		Me.lblLan10_2 = New SDSS.DSSLabel()
-		Me.lblLan12_2 = New SDSS.DSSLabel()
-		Me.lblLan7_2 = New SDSS.DSSLabel()
-		Me.lblLan3_2 = New SDSS.DSSLabel()
+		Me.pnlOutLanLarge = New DSDSS.DSSPanel()
+		Me.lblLan1_2 = New DSDSS.DSSLabel()
+		Me.lblLan5_2 = New DSDSS.DSSLabel()
+		Me.lblLan4_2 = New DSDSS.DSSLabel()
+		Me.lblLan8_2 = New DSDSS.DSSLabel()
+		Me.lblLan11_2 = New DSDSS.DSSLabel()
+		Me.lblLan2_2 = New DSDSS.DSSLabel()
+		Me.lblLan6_2 = New DSDSS.DSSLabel()
+		Me.lblLan13_2 = New DSDSS.DSSLabel()
+		Me.lblLan9_2 = New DSDSS.DSSLabel()
+		Me.lblLan10_2 = New DSDSS.DSSLabel()
+		Me.lblLan12_2 = New DSDSS.DSSLabel()
+		Me.lblLan7_2 = New DSDSS.DSSLabel()
+		Me.lblLan3_2 = New DSDSS.DSSLabel()
 		Me.Label90 = New System.Windows.Forms.Label()
-		Me.pnlOutAgrLarge = New SDSS.DSSPanel()
-		Me.lblAgr1_2 = New SDSS.DSSLabel()
-		Me.lblAgr5_2 = New SDSS.DSSLabel()
-		Me.lblAgr4_2 = New SDSS.DSSLabel()
-		Me.lblAgr8_2 = New SDSS.DSSLabel()
-		Me.lblAgr11_2 = New SDSS.DSSLabel()
-		Me.lblAgr2_2 = New SDSS.DSSLabel()
-		Me.lblAgr6_2 = New SDSS.DSSLabel()
-		Me.lblAgr9_2 = New SDSS.DSSLabel()
-		Me.lblAgr12_2 = New SDSS.DSSLabel()
-		Me.lblAgr13_2 = New SDSS.DSSLabel()
-		Me.lblAgr3_2 = New SDSS.DSSLabel()
-		Me.lblAgr7_2 = New SDSS.DSSLabel()
-		Me.lblAgr10_2 = New SDSS.DSSLabel()
+		Me.pnlOutAgrLarge = New DSDSS.DSSPanel()
+		Me.lblAgr1_2 = New DSDSS.DSSLabel()
+		Me.lblAgr5_2 = New DSDSS.DSSLabel()
+		Me.lblAgr4_2 = New DSDSS.DSSLabel()
+		Me.lblAgr8_2 = New DSDSS.DSSLabel()
+		Me.lblAgr11_2 = New DSDSS.DSSLabel()
+		Me.lblAgr2_2 = New DSDSS.DSSLabel()
+		Me.lblAgr6_2 = New DSDSS.DSSLabel()
+		Me.lblAgr9_2 = New DSDSS.DSSLabel()
+		Me.lblAgr12_2 = New DSDSS.DSSLabel()
+		Me.lblAgr13_2 = New DSDSS.DSSLabel()
+		Me.lblAgr3_2 = New DSDSS.DSSLabel()
+		Me.lblAgr7_2 = New DSDSS.DSSLabel()
+		Me.lblAgr10_2 = New DSDSS.DSSLabel()
 		Me.Label135 = New System.Windows.Forms.Label()
 		Me.Label85 = New System.Windows.Forms.Label()
 		Me.Label133 = New System.Windows.Forms.Label()
@@ -135,106 +135,106 @@ Partial Class frmNegotiation
 		Me.Label60 = New System.Windows.Forms.Label()
 		Me.Label61 = New System.Windows.Forms.Label()
 		Me.tpaImpacts = New System.Windows.Forms.TabPage()
-		Me.gboOutputImpacts = New SDSS.DSSGroupBox()
-		Me.lblEnvGini2 = New SDSS.DSSLabel()
-		Me.lblEnvMean2 = New SDSS.DSSLabel()
-		Me.lblSocGini2 = New SDSS.DSSLabel()
-		Me.lblSocMean2 = New SDSS.DSSLabel()
-		Me.lblEcoGini2 = New SDSS.DSSLabel()
-		Me.lblEcoMean2 = New SDSS.DSSLabel()
-		Me.lblEnvGini1 = New SDSS.DSSLabel()
-		Me.lblEnvMean1 = New SDSS.DSSLabel()
-		Me.lblSocGini1 = New SDSS.DSSLabel()
-		Me.lblSocMean1 = New SDSS.DSSLabel()
-		Me.lblEcoGini1 = New SDSS.DSSLabel()
-		Me.lblEcoMean1 = New SDSS.DSSLabel()
+		Me.gboOutputImpacts = New DSDSS.DSSGroupBox()
+		Me.lblEnvGini2 = New DSDSS.DSSLabel()
+		Me.lblEnvMean2 = New DSDSS.DSSLabel()
+		Me.lblSocGini2 = New DSDSS.DSSLabel()
+		Me.lblSocMean2 = New DSDSS.DSSLabel()
+		Me.lblEcoGini2 = New DSDSS.DSSLabel()
+		Me.lblEcoMean2 = New DSDSS.DSSLabel()
+		Me.lblEnvGini1 = New DSDSS.DSSLabel()
+		Me.lblEnvMean1 = New DSDSS.DSSLabel()
+		Me.lblSocGini1 = New DSDSS.DSSLabel()
+		Me.lblSocMean1 = New DSDSS.DSSLabel()
+		Me.lblEcoGini1 = New DSDSS.DSSLabel()
+		Me.lblEcoMean1 = New DSDSS.DSSLabel()
 		Me.Label101 = New System.Windows.Forms.Label()
 		Me.Label100 = New System.Windows.Forms.Label()
-		Me.pnlOutSocSmall = New SDSS.DSSPanel()
-		Me.lblSoc1_1 = New SDSS.DSSLabel()
-		Me.lblSoc5_1 = New SDSS.DSSLabel()
-		Me.lblSoc4_1 = New SDSS.DSSLabel()
-		Me.lblSoc8_1 = New SDSS.DSSLabel()
-		Me.lblSoc11_1 = New SDSS.DSSLabel()
-		Me.lblSoc2_1 = New SDSS.DSSLabel()
-		Me.lblSoc6_1 = New SDSS.DSSLabel()
-		Me.lblSoc9_1 = New SDSS.DSSLabel()
-		Me.lblSoc12_1 = New SDSS.DSSLabel()
-		Me.lblSoc3_1 = New SDSS.DSSLabel()
-		Me.lblSoc7_1 = New SDSS.DSSLabel()
-		Me.lblSoc10_1 = New SDSS.DSSLabel()
-		Me.lblSoc13_1 = New SDSS.DSSLabel()
-		Me.DssPanel7 = New SDSS.DSSPanel()
-		Me.pnlOutEnvLarge = New SDSS.DSSPanel()
-		Me.lblEnv1_2 = New SDSS.DSSLabel()
-		Me.lblEnv5_2 = New SDSS.DSSLabel()
-		Me.lblEnv4_2 = New SDSS.DSSLabel()
-		Me.lblEnv8_2 = New SDSS.DSSLabel()
-		Me.lblEnv11_2 = New SDSS.DSSLabel()
-		Me.lblEnv2_2 = New SDSS.DSSLabel()
-		Me.lblEnv6_2 = New SDSS.DSSLabel()
-		Me.lblEnv9_2 = New SDSS.DSSLabel()
-		Me.lblEnv12_2 = New SDSS.DSSLabel()
-		Me.lblEnv13_2 = New SDSS.DSSLabel()
-		Me.lblEnv3_2 = New SDSS.DSSLabel()
-		Me.lblEnv7_2 = New SDSS.DSSLabel()
-		Me.lblEnv10_2 = New SDSS.DSSLabel()
-		Me.pnlOutEnvSmall = New SDSS.DSSPanel()
-		Me.lblEnv1_1 = New SDSS.DSSLabel()
-		Me.lblEnv5_1 = New SDSS.DSSLabel()
-		Me.lblEnv4_1 = New SDSS.DSSLabel()
-		Me.lblEnv8_1 = New SDSS.DSSLabel()
-		Me.lblEnv11_1 = New SDSS.DSSLabel()
-		Me.lblEnv2_1 = New SDSS.DSSLabel()
-		Me.lblEnv6_1 = New SDSS.DSSLabel()
-		Me.lblEnv9_1 = New SDSS.DSSLabel()
-		Me.lblEnv12_1 = New SDSS.DSSLabel()
-		Me.lblEnv13_1 = New SDSS.DSSLabel()
-		Me.lblEnv3_1 = New SDSS.DSSLabel()
-		Me.lblEnv10_1 = New SDSS.DSSLabel()
-		Me.lblEnv7_1 = New SDSS.DSSLabel()
-		Me.pnlOutEcoLarge = New SDSS.DSSPanel()
-		Me.lblEco1_2 = New SDSS.DSSLabel()
-		Me.lblEco5_2 = New SDSS.DSSLabel()
-		Me.lblEco4_2 = New SDSS.DSSLabel()
-		Me.lblEco8_2 = New SDSS.DSSLabel()
-		Me.lblEco11_2 = New SDSS.DSSLabel()
-		Me.lblEco2_2 = New SDSS.DSSLabel()
-		Me.lblEco6_2 = New SDSS.DSSLabel()
-		Me.lblEco9_2 = New SDSS.DSSLabel()
-		Me.lblEco12_2 = New SDSS.DSSLabel()
-		Me.lblEco13_2 = New SDSS.DSSLabel()
-		Me.lblEco3_2 = New SDSS.DSSLabel()
-		Me.lblEco10_2 = New SDSS.DSSLabel()
-		Me.lblEco7_2 = New SDSS.DSSLabel()
-		Me.pnlOutSocLarge = New SDSS.DSSPanel()
-		Me.lblSoc1_2 = New SDSS.DSSLabel()
-		Me.lblSoc5_2 = New SDSS.DSSLabel()
-		Me.lblSoc4_2 = New SDSS.DSSLabel()
-		Me.lblSoc8_2 = New SDSS.DSSLabel()
-		Me.lblSoc11_2 = New SDSS.DSSLabel()
-		Me.lblSoc2_2 = New SDSS.DSSLabel()
-		Me.lblSoc6_2 = New SDSS.DSSLabel()
-		Me.lblSoc9_2 = New SDSS.DSSLabel()
-		Me.lblSoc12_2 = New SDSS.DSSLabel()
-		Me.lblSoc13_2 = New SDSS.DSSLabel()
-		Me.lblSoc3_2 = New SDSS.DSSLabel()
-		Me.lblSoc7_2 = New SDSS.DSSLabel()
-		Me.lblSoc10_2 = New SDSS.DSSLabel()
-		Me.pnlOutEcoSmall = New SDSS.DSSPanel()
-		Me.lblEco1_1 = New SDSS.DSSLabel()
-		Me.lblEco5_1 = New SDSS.DSSLabel()
-		Me.lblEco4_1 = New SDSS.DSSLabel()
-		Me.lblEco8_1 = New SDSS.DSSLabel()
-		Me.lblEco11_1 = New SDSS.DSSLabel()
-		Me.lblEco2_1 = New SDSS.DSSLabel()
-		Me.lblEco6_1 = New SDSS.DSSLabel()
-		Me.lblEco9_1 = New SDSS.DSSLabel()
-		Me.lblEco12_1 = New SDSS.DSSLabel()
-		Me.lblEco3_1 = New SDSS.DSSLabel()
-		Me.lblEco7_1 = New SDSS.DSSLabel()
-		Me.lblEco10_1 = New SDSS.DSSLabel()
-		Me.lblEco13_1 = New SDSS.DSSLabel()
+		Me.pnlOutSocSmall = New DSDSS.DSSPanel()
+		Me.lblSoc1_1 = New DSDSS.DSSLabel()
+		Me.lblSoc5_1 = New DSDSS.DSSLabel()
+		Me.lblSoc4_1 = New DSDSS.DSSLabel()
+		Me.lblSoc8_1 = New DSDSS.DSSLabel()
+		Me.lblSoc11_1 = New DSDSS.DSSLabel()
+		Me.lblSoc2_1 = New DSDSS.DSSLabel()
+		Me.lblSoc6_1 = New DSDSS.DSSLabel()
+		Me.lblSoc9_1 = New DSDSS.DSSLabel()
+		Me.lblSoc12_1 = New DSDSS.DSSLabel()
+		Me.lblSoc3_1 = New DSDSS.DSSLabel()
+		Me.lblSoc7_1 = New DSDSS.DSSLabel()
+		Me.lblSoc10_1 = New DSDSS.DSSLabel()
+		Me.lblSoc13_1 = New DSDSS.DSSLabel()
+		Me.DssPanel7 = New DSDSS.DSSPanel()
+		Me.pnlOutEnvLarge = New DSDSS.DSSPanel()
+		Me.lblEnv1_2 = New DSDSS.DSSLabel()
+		Me.lblEnv5_2 = New DSDSS.DSSLabel()
+		Me.lblEnv4_2 = New DSDSS.DSSLabel()
+		Me.lblEnv8_2 = New DSDSS.DSSLabel()
+		Me.lblEnv11_2 = New DSDSS.DSSLabel()
+		Me.lblEnv2_2 = New DSDSS.DSSLabel()
+		Me.lblEnv6_2 = New DSDSS.DSSLabel()
+		Me.lblEnv9_2 = New DSDSS.DSSLabel()
+		Me.lblEnv12_2 = New DSDSS.DSSLabel()
+		Me.lblEnv13_2 = New DSDSS.DSSLabel()
+		Me.lblEnv3_2 = New DSDSS.DSSLabel()
+		Me.lblEnv7_2 = New DSDSS.DSSLabel()
+		Me.lblEnv10_2 = New DSDSS.DSSLabel()
+		Me.pnlOutEnvSmall = New DSDSS.DSSPanel()
+		Me.lblEnv1_1 = New DSDSS.DSSLabel()
+		Me.lblEnv5_1 = New DSDSS.DSSLabel()
+		Me.lblEnv4_1 = New DSDSS.DSSLabel()
+		Me.lblEnv8_1 = New DSDSS.DSSLabel()
+		Me.lblEnv11_1 = New DSDSS.DSSLabel()
+		Me.lblEnv2_1 = New DSDSS.DSSLabel()
+		Me.lblEnv6_1 = New DSDSS.DSSLabel()
+		Me.lblEnv9_1 = New DSDSS.DSSLabel()
+		Me.lblEnv12_1 = New DSDSS.DSSLabel()
+		Me.lblEnv13_1 = New DSDSS.DSSLabel()
+		Me.lblEnv3_1 = New DSDSS.DSSLabel()
+		Me.lblEnv10_1 = New DSDSS.DSSLabel()
+		Me.lblEnv7_1 = New DSDSS.DSSLabel()
+		Me.pnlOutEcoLarge = New DSDSS.DSSPanel()
+		Me.lblEco1_2 = New DSDSS.DSSLabel()
+		Me.lblEco5_2 = New DSDSS.DSSLabel()
+		Me.lblEco4_2 = New DSDSS.DSSLabel()
+		Me.lblEco8_2 = New DSDSS.DSSLabel()
+		Me.lblEco11_2 = New DSDSS.DSSLabel()
+		Me.lblEco2_2 = New DSDSS.DSSLabel()
+		Me.lblEco6_2 = New DSDSS.DSSLabel()
+		Me.lblEco9_2 = New DSDSS.DSSLabel()
+		Me.lblEco12_2 = New DSDSS.DSSLabel()
+		Me.lblEco13_2 = New DSDSS.DSSLabel()
+		Me.lblEco3_2 = New DSDSS.DSSLabel()
+		Me.lblEco10_2 = New DSDSS.DSSLabel()
+		Me.lblEco7_2 = New DSDSS.DSSLabel()
+		Me.pnlOutSocLarge = New DSDSS.DSSPanel()
+		Me.lblSoc1_2 = New DSDSS.DSSLabel()
+		Me.lblSoc5_2 = New DSDSS.DSSLabel()
+		Me.lblSoc4_2 = New DSDSS.DSSLabel()
+		Me.lblSoc8_2 = New DSDSS.DSSLabel()
+		Me.lblSoc11_2 = New DSDSS.DSSLabel()
+		Me.lblSoc2_2 = New DSDSS.DSSLabel()
+		Me.lblSoc6_2 = New DSDSS.DSSLabel()
+		Me.lblSoc9_2 = New DSDSS.DSSLabel()
+		Me.lblSoc12_2 = New DSDSS.DSSLabel()
+		Me.lblSoc13_2 = New DSDSS.DSSLabel()
+		Me.lblSoc3_2 = New DSDSS.DSSLabel()
+		Me.lblSoc7_2 = New DSDSS.DSSLabel()
+		Me.lblSoc10_2 = New DSDSS.DSSLabel()
+		Me.pnlOutEcoSmall = New DSDSS.DSSPanel()
+		Me.lblEco1_1 = New DSDSS.DSSLabel()
+		Me.lblEco5_1 = New DSDSS.DSSLabel()
+		Me.lblEco4_1 = New DSDSS.DSSLabel()
+		Me.lblEco8_1 = New DSDSS.DSSLabel()
+		Me.lblEco11_1 = New DSDSS.DSSLabel()
+		Me.lblEco2_1 = New DSDSS.DSSLabel()
+		Me.lblEco6_1 = New DSDSS.DSSLabel()
+		Me.lblEco9_1 = New DSDSS.DSSLabel()
+		Me.lblEco12_1 = New DSDSS.DSSLabel()
+		Me.lblEco3_1 = New DSDSS.DSSLabel()
+		Me.lblEco7_1 = New DSDSS.DSSLabel()
+		Me.lblEco10_1 = New DSDSS.DSSLabel()
+		Me.lblEco13_1 = New DSDSS.DSSLabel()
 		Me.Label180 = New System.Windows.Forms.Label()
 		Me.Label103 = New System.Windows.Forms.Label()
 		Me.Label98 = New System.Windows.Forms.Label()
@@ -262,37 +262,37 @@ Partial Class frmNegotiation
 		Me.pboGraphStandards = New System.Windows.Forms.PictureBox()
 		Me.tpaEfficencies = New System.Windows.Forms.TabPage()
 		Me.pboGraphEfficiencies = New System.Windows.Forms.PictureBox()
-		Me.grbPopulation = New SDSS.DSSGroupBox()
-		Me.pnlPop20_2 = New SDSS.DSSPanel()
+		Me.grbPopulation = New DSDSS.DSSGroupBox()
+		Me.pnlPop20_2 = New DSDSS.DSSPanel()
 		Me.Label66 = New System.Windows.Forms.Label()
-		Me.nudPop20_3_2 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_7_2 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_2_2 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_12_2 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_10_2 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_13_2 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_6_2 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_8_2 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_1_2 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_4_2 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_9_2 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_11_2 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_5_2 = New SDSS.DSSNumericUpDown()
-		Me.pnlPop20_1 = New SDSS.DSSPanel()
+		Me.nudPop20_3_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_7_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_2_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_12_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_10_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_13_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_6_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_8_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_1_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_4_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_9_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_11_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_5_2 = New DSDSS.DSSNumericUpDown()
+		Me.pnlPop20_1 = New DSDSS.DSSPanel()
 		Me.Label67 = New System.Windows.Forms.Label()
-		Me.nudPop20_3_1 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_7_1 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_2_1 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_6_1 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_12_1 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_1_1 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_9_1 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_13_1 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_10_1 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_11_1 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_8_1 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_5_1 = New SDSS.DSSNumericUpDown()
-		Me.nudPop20_4_1 = New SDSS.DSSNumericUpDown()
+		Me.nudPop20_3_1 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_7_1 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_2_1 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_6_1 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_12_1 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_1_1 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_9_1 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_13_1 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_10_1 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_11_1 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_8_1 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_5_1 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_4_1 = New DSDSS.DSSNumericUpDown()
 		Me.Label1 = New System.Windows.Forms.Label()
 		Me.Label2 = New System.Windows.Forms.Label()
 		Me.Label22 = New System.Windows.Forms.Label()
@@ -307,37 +307,37 @@ Partial Class frmNegotiation
 		Me.Label59 = New System.Windows.Forms.Label()
 		Me.Label65 = New System.Windows.Forms.Label()
 		Me.Label69 = New System.Windows.Forms.Label()
-		Me.grbIndustrialDistricts = New SDSS.DSSGroupBox()
-		Me.pnlInddispln = New SDSS.DSSPanel()
+		Me.grbIndustrialDistricts = New DSDSS.DSSGroupBox()
+		Me.pnlInddispln = New DSDSS.DSSPanel()
 		Me.Label86 = New System.Windows.Forms.Label()
-		Me.nudInddispln3_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddispln7_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddispln2_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddispln12_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddispln10_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddispln13_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddispln6_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddispln8_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddispln1_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddispln4_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddispln9_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddispln11_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddispln5_2 = New SDSS.DSSNumericUpDown()
-		Me.pnlInddiscur = New SDSS.DSSPanel()
+		Me.nudInddispln3_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln7_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln2_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln12_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln10_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln13_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln6_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln8_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln1_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln4_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln9_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln11_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln5_2 = New DSDSS.DSSNumericUpDown()
+		Me.pnlInddiscur = New DSDSS.DSSPanel()
 		Me.Label88 = New System.Windows.Forms.Label()
-		Me.nudInddiscur3_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddiscur7_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddiscur2_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddiscur6_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddiscur12_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddiscur1_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddiscur9_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddiscur13_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddiscur10_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddiscur11_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddiscur8_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddiscur5_2 = New SDSS.DSSNumericUpDown()
-		Me.nudInddiscur4_2 = New SDSS.DSSNumericUpDown()
+		Me.nudInddiscur3_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur7_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur2_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur6_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur12_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur1_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur9_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur13_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur10_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur11_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur8_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur5_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur4_2 = New DSDSS.DSSNumericUpDown()
 		Me.Label38 = New System.Windows.Forms.Label()
 		Me.Label39 = New System.Windows.Forms.Label()
 		Me.Label40 = New System.Windows.Forms.Label()
@@ -351,52 +351,52 @@ Partial Class frmNegotiation
 		Me.Label75 = New System.Windows.Forms.Label()
 		Me.Label76 = New System.Windows.Forms.Label()
 		Me.Label77 = New System.Windows.Forms.Label()
-		Me.grbWaterQuality = New SDSS.DSSGroupBox()
-		Me.pnlTSS = New SDSS.DSSPanel()
+		Me.grbWaterQuality = New DSDSS.DSSGroupBox()
+		Me.pnlTSS = New DSDSS.DSSPanel()
 		Me.Label21 = New System.Windows.Forms.Label()
-		Me.nudTSS3 = New SDSS.DSSNumericUpDown()
-		Me.nudTSS2 = New SDSS.DSSNumericUpDown()
-		Me.nudTSS7 = New SDSS.DSSNumericUpDown()
-		Me.nudTSS10 = New SDSS.DSSNumericUpDown()
-		Me.nudTSS12 = New SDSS.DSSNumericUpDown()
-		Me.nudTSS6 = New SDSS.DSSNumericUpDown()
-		Me.nudTSS13 = New SDSS.DSSNumericUpDown()
-		Me.nudTSS1 = New SDSS.DSSNumericUpDown()
-		Me.nudTSS8 = New SDSS.DSSNumericUpDown()
-		Me.nudTSS9 = New SDSS.DSSNumericUpDown()
-		Me.nudTSS4 = New SDSS.DSSNumericUpDown()
-		Me.nudTSS5 = New SDSS.DSSNumericUpDown()
-		Me.nudTSS11 = New SDSS.DSSNumericUpDown()
-		Me.pnlTDS = New SDSS.DSSPanel()
+		Me.nudTSS3 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS2 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS7 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS10 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS12 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS6 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS13 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS1 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS8 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS9 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS4 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS5 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS11 = New DSDSS.DSSNumericUpDown()
+		Me.pnlTDS = New DSDSS.DSSPanel()
 		Me.Label19 = New System.Windows.Forms.Label()
-		Me.nudTDS3 = New SDSS.DSSNumericUpDown()
-		Me.nudTDS2 = New SDSS.DSSNumericUpDown()
-		Me.nudTDS7 = New SDSS.DSSNumericUpDown()
-		Me.nudTDS10 = New SDSS.DSSNumericUpDown()
-		Me.nudTDS6 = New SDSS.DSSNumericUpDown()
-		Me.nudTDS12 = New SDSS.DSSNumericUpDown()
-		Me.nudTDS1 = New SDSS.DSSNumericUpDown()
-		Me.nudTDS9 = New SDSS.DSSNumericUpDown()
-		Me.nudTDS13 = New SDSS.DSSNumericUpDown()
-		Me.nudTDS5 = New SDSS.DSSNumericUpDown()
-		Me.nudTDS11 = New SDSS.DSSNumericUpDown()
-		Me.nudTDS8 = New SDSS.DSSNumericUpDown()
-		Me.nudTDS4 = New SDSS.DSSNumericUpDown()
-		Me.pnlBOD = New SDSS.DSSPanel()
+		Me.nudTDS3 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS2 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS7 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS10 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS6 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS12 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS1 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS9 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS13 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS5 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS11 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS8 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS4 = New DSDSS.DSSNumericUpDown()
+		Me.pnlBOD = New DSDSS.DSSPanel()
 		Me.Label20 = New System.Windows.Forms.Label()
-		Me.nudBOD3 = New SDSS.DSSNumericUpDown()
-		Me.nudBOD2 = New SDSS.DSSNumericUpDown()
-		Me.nudBOD7 = New SDSS.DSSNumericUpDown()
-		Me.nudBOD6 = New SDSS.DSSNumericUpDown()
-		Me.nudBOD1 = New SDSS.DSSNumericUpDown()
-		Me.nudBOD9 = New SDSS.DSSNumericUpDown()
-		Me.nudBOD12 = New SDSS.DSSNumericUpDown()
-		Me.nudBOD10 = New SDSS.DSSNumericUpDown()
-		Me.nudBOD11 = New SDSS.DSSNumericUpDown()
-		Me.nudBOD5 = New SDSS.DSSNumericUpDown()
-		Me.nudBOD13 = New SDSS.DSSNumericUpDown()
-		Me.nudBOD4 = New SDSS.DSSNumericUpDown()
-		Me.nudBOD8 = New SDSS.DSSNumericUpDown()
+		Me.nudBOD3 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD2 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD7 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD6 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD1 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD9 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD12 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD10 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD11 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD5 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD13 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD4 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD8 = New DSDSS.DSSNumericUpDown()
 		Me.Label3 = New System.Windows.Forms.Label()
 		Me.Label4 = New System.Windows.Forms.Label()
 		Me.Label5 = New System.Windows.Forms.Label()
@@ -410,11 +410,11 @@ Partial Class frmNegotiation
 		Me.Label16 = New System.Windows.Forms.Label()
 		Me.Label17 = New System.Windows.Forms.Label()
 		Me.Label18 = New System.Windows.Forms.Label()
-		Me.grbMisc = New SDSS.DSSGroupBox()
-		Me.DssPanel1 = New SDSS.DSSPanel()
+		Me.grbMisc = New DSDSS.DSSGroupBox()
+		Me.DssPanel1 = New DSDSS.DSSPanel()
 		Me.Label10 = New System.Windows.Forms.Label()
 		Me.Label13 = New System.Windows.Forms.Label()
-		Me.lblBOD = New SDSS.DSSLabel()
+		Me.lblBOD = New DSDSS.DSSLabel()
 		Me.Label92 = New System.Windows.Forms.Label()
 		Me.Label28 = New System.Windows.Forms.Label()
 		Me.Label30 = New System.Windows.Forms.Label()
@@ -423,27 +423,27 @@ Partial Class frmNegotiation
 		Me.Label116 = New System.Windows.Forms.Label()
 		Me.Label12 = New System.Windows.Forms.Label()
 		Me.Label26 = New System.Windows.Forms.Label()
-		Me.nudTpsx = New SDSS.DSSNumericUpDown()
+		Me.nudTpsx = New DSDSS.DSSNumericUpDown()
 		Me.Label68 = New System.Windows.Forms.Label()
-		Me.nudTpmz = New SDSS.DSSNumericUpDown()
+		Me.nudTpmz = New DSDSS.DSSNumericUpDown()
 		Me.Label24 = New System.Windows.Forms.Label()
-		Me.nudAgrUFRO = New SDSS.DSSNumericUpDown()
+		Me.nudAgrUFRO = New DSDSS.DSSNumericUpDown()
 		Me.Label29 = New System.Windows.Forms.Label()
-		Me.nudEnvw = New SDSS.DSSNumericUpDown()
-		Me.lblTDS = New SDSS.DSSLabel()
-		Me.nudgwsp = New SDSS.DSSNumericUpDown()
-		Me.nudTotpla = New SDSS.DSSNumericUpDown()
-		Me.nudIndUFRO = New SDSS.DSSNumericUpDown()
-		Me.nudSocw = New SDSS.DSSNumericUpDown()
-		Me.nudTpbx = New SDSS.DSSNumericUpDown()
-		Me.nudEcow = New SDSS.DSSNumericUpDown()
-		Me.nudsmqi = New SDSS.DSSNumericUpDown()
-		Me.nudLanUFRO = New SDSS.DSSNumericUpDown()
-		Me.nudsbqi = New SDSS.DSSNumericUpDown()
-		Me.nudLanUF = New SDSS.DSSNumericUpDown()
-		Me.nudssqi = New SDSS.DSSNumericUpDown()
-		Me.nudAgrUF = New SDSS.DSSNumericUpDown()
-		Me.nudIndUF = New SDSS.DSSNumericUpDown()
+		Me.nudEnvw = New DSDSS.DSSNumericUpDown()
+		Me.lblTDS = New DSDSS.DSSLabel()
+		Me.nudgwsp = New DSDSS.DSSNumericUpDown()
+		Me.nudTotpla = New DSDSS.DSSNumericUpDown()
+		Me.nudIndUFRO = New DSDSS.DSSNumericUpDown()
+		Me.nudSocw = New DSDSS.DSSNumericUpDown()
+		Me.nudTpbx = New DSDSS.DSSNumericUpDown()
+		Me.nudEcow = New DSDSS.DSSNumericUpDown()
+		Me.nudsmqi = New DSDSS.DSSNumericUpDown()
+		Me.nudLanUFRO = New DSDSS.DSSNumericUpDown()
+		Me.nudsbqi = New DSDSS.DSSNumericUpDown()
+		Me.nudLanUF = New DSDSS.DSSNumericUpDown()
+		Me.nudssqi = New DSDSS.DSSNumericUpDown()
+		Me.nudAgrUF = New DSDSS.DSSNumericUpDown()
+		Me.nudIndUF = New DSDSS.DSSNumericUpDown()
 		Me.Label25 = New System.Windows.Forms.Label()
 		Me.Label119 = New System.Windows.Forms.Label()
 		Me.Label34 = New System.Windows.Forms.Label()
@@ -453,37 +453,37 @@ Partial Class frmNegotiation
 		Me.Label78 = New System.Windows.Forms.Label()
 		Me.Label117 = New System.Windows.Forms.Label()
 		Me.Label91 = New System.Windows.Forms.Label()
-		Me.grbWaterCosts = New SDSS.DSSGroupBox()
-		Me.pnlGro = New SDSS.DSSPanel()
+		Me.grbWaterCosts = New DSDSS.DSSGroupBox()
+		Me.pnlGro = New DSDSS.DSSPanel()
 		Me.Label121 = New System.Windows.Forms.Label()
-		Me.nudGro3 = New SDSS.DSSNumericUpDown()
-		Me.nudGro7 = New SDSS.DSSNumericUpDown()
-		Me.nudGro2 = New SDSS.DSSNumericUpDown()
-		Me.nudGro12 = New SDSS.DSSNumericUpDown()
-		Me.nudGro10 = New SDSS.DSSNumericUpDown()
-		Me.nudGro13 = New SDSS.DSSNumericUpDown()
-		Me.nudGro6 = New SDSS.DSSNumericUpDown()
-		Me.nudGro8 = New SDSS.DSSNumericUpDown()
-		Me.nudGro1 = New SDSS.DSSNumericUpDown()
-		Me.nudGro4 = New SDSS.DSSNumericUpDown()
-		Me.nudGro9 = New SDSS.DSSNumericUpDown()
-		Me.nudGro11 = New SDSS.DSSNumericUpDown()
-		Me.nudGro5 = New SDSS.DSSNumericUpDown()
-		Me.pnlDes = New SDSS.DSSPanel()
+		Me.nudGro3 = New DSDSS.DSSNumericUpDown()
+		Me.nudGro7 = New DSDSS.DSSNumericUpDown()
+		Me.nudGro2 = New DSDSS.DSSNumericUpDown()
+		Me.nudGro12 = New DSDSS.DSSNumericUpDown()
+		Me.nudGro10 = New DSDSS.DSSNumericUpDown()
+		Me.nudGro13 = New DSDSS.DSSNumericUpDown()
+		Me.nudGro6 = New DSDSS.DSSNumericUpDown()
+		Me.nudGro8 = New DSDSS.DSSNumericUpDown()
+		Me.nudGro1 = New DSDSS.DSSNumericUpDown()
+		Me.nudGro4 = New DSDSS.DSSNumericUpDown()
+		Me.nudGro9 = New DSDSS.DSSNumericUpDown()
+		Me.nudGro11 = New DSDSS.DSSNumericUpDown()
+		Me.nudGro5 = New DSDSS.DSSNumericUpDown()
+		Me.pnlDes = New DSDSS.DSSPanel()
 		Me.Label120 = New System.Windows.Forms.Label()
-		Me.nudDes3 = New SDSS.DSSNumericUpDown()
-		Me.nudDes7 = New SDSS.DSSNumericUpDown()
-		Me.nudDes2 = New SDSS.DSSNumericUpDown()
-		Me.nudDes6 = New SDSS.DSSNumericUpDown()
-		Me.nudDes12 = New SDSS.DSSNumericUpDown()
-		Me.nudDes1 = New SDSS.DSSNumericUpDown()
-		Me.nudDes9 = New SDSS.DSSNumericUpDown()
-		Me.nudDes13 = New SDSS.DSSNumericUpDown()
-		Me.nudDes10 = New SDSS.DSSNumericUpDown()
-		Me.nudDes11 = New SDSS.DSSNumericUpDown()
-		Me.nudDes8 = New SDSS.DSSNumericUpDown()
-		Me.nudDes5 = New SDSS.DSSNumericUpDown()
-		Me.nudDes4 = New SDSS.DSSNumericUpDown()
+		Me.nudDes3 = New DSDSS.DSSNumericUpDown()
+		Me.nudDes7 = New DSDSS.DSSNumericUpDown()
+		Me.nudDes2 = New DSDSS.DSSNumericUpDown()
+		Me.nudDes6 = New DSDSS.DSSNumericUpDown()
+		Me.nudDes12 = New DSDSS.DSSNumericUpDown()
+		Me.nudDes1 = New DSDSS.DSSNumericUpDown()
+		Me.nudDes9 = New DSDSS.DSSNumericUpDown()
+		Me.nudDes13 = New DSDSS.DSSNumericUpDown()
+		Me.nudDes10 = New DSDSS.DSSNumericUpDown()
+		Me.nudDes11 = New DSDSS.DSSNumericUpDown()
+		Me.nudDes8 = New DSDSS.DSSNumericUpDown()
+		Me.nudDes5 = New DSDSS.DSSNumericUpDown()
+		Me.nudDes4 = New DSDSS.DSSNumericUpDown()
 		Me.Label63 = New System.Windows.Forms.Label()
 		Me.Label55 = New System.Windows.Forms.Label()
 		Me.Label62 = New System.Windows.Forms.Label()
@@ -7033,7 +7033,7 @@ Partial Class frmNegotiation
 	Friend WithEvents AnnullatoDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
 	Friend WithEvents DataEstrazioneDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
 	Friend WithEvents dsParameters As parameters
-	Friend WithEvents TAParameters As SDSS.parametersTableAdapters.parametersTableAdapter
+	Friend WithEvents TAParameters As DSDSS.parametersTableAdapters.parametersTableAdapter
 	Friend WithEvents Label51 As System.Windows.Forms.Label
 	Friend WithEvents Label50 As System.Windows.Forms.Label
 	Friend WithEvents Label47 As System.Windows.Forms.Label
@@ -7082,48 +7082,48 @@ Partial Class frmNegotiation
 	Friend mapControl As mapControl.mapControl
 	Friend WithEvents daLocations As System.Data.SqlClient.SqlDataAdapter
 	Friend WithEvents SqlCommand2 As System.Data.SqlClient.SqlCommand
-	Friend WithEvents DSLocations As SDSS.DSLocations
+	Friend WithEvents DSLocations As DSDSS.DSLocations
 	Friend WithEvents pnlMain As System.Windows.Forms.Panel
 	Friend WithEvents SplitContainer As System.Windows.Forms.SplitContainer
-	Friend WithEvents nudTSS7 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTDS7 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudBOD7 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTSS12 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTDS12 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudBOD12 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTSS13 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTDS13 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudBOD13 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTSS8 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTDS8 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudBOD8 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTSS4 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTDS4 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudBOD4 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTSS11 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTDS11 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTSS5 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTDS5 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudBOD5 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudBOD11 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudBOD10 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudBOD9 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTSS9 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTDS9 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTSS1 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTSS6 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTDS1 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTSS10 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTDS6 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTDS10 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTSS2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudBOD1 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTDS2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTSS3 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudBOD6 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTDS3 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudBOD2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudBOD3 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS7 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS7 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD7 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS12 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS12 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD12 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS13 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS13 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD13 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS8 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS8 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD8 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS4 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS4 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD4 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS11 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS11 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS5 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS5 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD5 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD11 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD10 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD9 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS9 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS9 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS1 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS6 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS1 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS10 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS6 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS10 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD1 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTSS3 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD6 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTDS3 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudBOD3 As DSDSS.DSSNumericUpDown
 	Friend WithEvents Label3 As System.Windows.Forms.Label
 	Friend WithEvents Label4 As System.Windows.Forms.Label
 	Friend WithEvents Label5 As System.Windows.Forms.Label
@@ -7140,32 +7140,32 @@ Partial Class frmNegotiation
 	Friend WithEvents Label18 As System.Windows.Forms.Label
 	Friend WithEvents Label19 As System.Windows.Forms.Label
 	Friend WithEvents Label20 As System.Windows.Forms.Label
-	Friend WithEvents nudPop20_7_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_7_1 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_12_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_12_1 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_13_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_13_1 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_8_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_8_1 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_4_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_4_1 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_11_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_5_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_5_1 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_11_1 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_10_1 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_9_1 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_9_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_1_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_6_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_10_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_1_1 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_2_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_6_1 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_3_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_2_1 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudPop20_3_1 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_7_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_7_1 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_12_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_12_1 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_13_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_13_1 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_8_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_8_1 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_4_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_4_1 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_11_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_5_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_5_1 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_11_1 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_10_1 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_9_1 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_9_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_1_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_6_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_10_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_1_1 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_2_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_6_1 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_3_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_2_1 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudPop20_3_1 As DSDSS.DSSNumericUpDown
 	Friend WithEvents Label1 As System.Windows.Forms.Label
 	Friend WithEvents Label2 As System.Windows.Forms.Label
 	Friend WithEvents Label22 As System.Windows.Forms.Label
@@ -7182,32 +7182,32 @@ Partial Class frmNegotiation
 	Friend WithEvents Label66 As System.Windows.Forms.Label
 	Friend WithEvents Label69 As System.Windows.Forms.Label
 	Friend WithEvents Label67 As System.Windows.Forms.Label
-	Friend WithEvents nudInddispln7_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddiscur7_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddispln12_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddiscur12_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddispln13_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddiscur13_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddispln8_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddiscur8_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddispln4_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddiscur4_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddispln11_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddispln5_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddiscur5_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddiscur11_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddiscur10_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddiscur9_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddispln9_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddispln1_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddispln6_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddispln10_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddiscur1_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddispln2_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddiscur6_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddispln3_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddiscur2_2 As SDSS.DSSNumericUpDown
-	Friend WithEvents nudInddiscur3_2 As SDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln7_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur7_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln12_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur12_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln13_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur13_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln8_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur8_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln4_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur4_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln11_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln5_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur5_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur11_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur10_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur9_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln9_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln1_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln6_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln10_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur1_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln2_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur6_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddispln3_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur2_2 As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudInddiscur3_2 As DSDSS.DSSNumericUpDown
 	Friend WithEvents Label38 As System.Windows.Forms.Label
 	Friend WithEvents Label39 As System.Windows.Forms.Label
 	Friend WithEvents Label40 As System.Windows.Forms.Label
@@ -7224,11 +7224,11 @@ Partial Class frmNegotiation
 	Friend WithEvents Label86 As System.Windows.Forms.Label
 	Friend WithEvents Label88 As System.Windows.Forms.Label
 	Friend WithEvents lblTDS As DSSLabel
-	Friend WithEvents nudSocw As SDSS.DSSNumericUpDown
-	Friend WithEvents nudEcow As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTpbx As SDSS.DSSNumericUpDown
-	Friend WithEvents nudEnvw As SDSS.DSSNumericUpDown
-	Friend WithEvents nudTpsx As SDSS.DSSNumericUpDown
+	Friend WithEvents nudSocw As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudEcow As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTpbx As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudEnvw As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudTpsx As DSDSS.DSSNumericUpDown
 	Friend WithEvents Label25 As System.Windows.Forms.Label
 	Friend WithEvents Label34 As System.Windows.Forms.Label
 	Friend WithEvents Label78 As System.Windows.Forms.Label
@@ -7238,37 +7238,37 @@ Partial Class frmNegotiation
 	Friend WithEvents Label64 As System.Windows.Forms.Label
 	Friend WithEvents Label92 As System.Windows.Forms.Label
 	Friend WithEvents Label70 As System.Windows.Forms.Label
-	Friend WithEvents nudTpmz As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTpmz As DSDSS.DSSNumericUpDown
 	Friend WithEvents Label13 As System.Windows.Forms.Label
-	Friend WithEvents nudTotpla As SDSS.DSSNumericUpDown
+	Friend WithEvents nudTotpla As DSDSS.DSSNumericUpDown
 	Friend WithEvents Label23 As System.Windows.Forms.Label
 	Friend WithEvents SqlDeleteCommand As System.Data.SqlClient.SqlCommand
 	Friend WithEvents SqlUpdateCommand As System.Data.SqlClient.SqlCommand
 	Friend WithEvents Label26 As System.Windows.Forms.Label
 	Friend WithEvents Label24 As System.Windows.Forms.Label
-	Friend WithEvents nudLanUF As SDSS.DSSNumericUpDown
-	Friend WithEvents nudIndUF As SDSS.DSSNumericUpDown
-	Friend WithEvents nudAgrUF As SDSS.DSSNumericUpDown
-	Friend WithEvents nudLanUFRO As SDSS.DSSNumericUpDown
-	Friend WithEvents nudIndUFRO As SDSS.DSSNumericUpDown
-	Friend WithEvents nudAgrUFRO As SDSS.DSSNumericUpDown
+	Friend WithEvents nudLanUF As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudIndUF As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudAgrUF As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudLanUFRO As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudIndUFRO As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudAgrUFRO As DSDSS.DSSNumericUpDown
 	Friend WithEvents Label12 As System.Windows.Forms.Label
 	Friend WithEvents Label10 As System.Windows.Forms.Label
 	Friend WithEvents Label30 As System.Windows.Forms.Label
 	Friend WithEvents Label29 As System.Windows.Forms.Label
-	Friend WithEvents nudgwsp As SDSS.DSSNumericUpDown
+	Friend WithEvents nudgwsp As DSDSS.DSSNumericUpDown
 	Friend WithEvents Label27 As System.Windows.Forms.Label
 	Friend WithEvents Label28 As System.Windows.Forms.Label
-	Friend WithEvents pnlGro As SDSS.DSSPanel
-	Friend WithEvents pnlDes As SDSS.DSSPanel
-	Friend WithEvents pnlInddispln As SDSS.DSSPanel
-	Friend WithEvents pnlInddiscur As SDSS.DSSPanel
-	Friend WithEvents pnlTSS As SDSS.DSSPanel
-	Friend WithEvents pnlTDS As SDSS.DSSPanel
-	Friend WithEvents pnlBOD As SDSS.DSSPanel
-	Friend WithEvents pnlPop20_2 As SDSS.DSSPanel
-	Friend WithEvents pnlPop20_1 As SDSS.DSSPanel
-	Friend WithEvents DssPanel1 As SDSS.DSSPanel
+	Friend WithEvents pnlGro As DSDSS.DSSPanel
+	Friend WithEvents pnlDes As DSDSS.DSSPanel
+	Friend WithEvents pnlInddispln As DSDSS.DSSPanel
+	Friend WithEvents pnlInddiscur As DSDSS.DSSPanel
+	Friend WithEvents pnlTSS As DSDSS.DSSPanel
+	Friend WithEvents pnlTDS As DSDSS.DSSPanel
+	Friend WithEvents pnlBOD As DSDSS.DSSPanel
+	Friend WithEvents pnlPop20_2 As DSDSS.DSSPanel
+	Friend WithEvents pnlPop20_1 As DSDSS.DSSPanel
+	Friend WithEvents DssPanel1 As DSDSS.DSSPanel
 	Friend WithEvents tcoOutput As System.Windows.Forms.TabControl
 	Friend WithEvents tpaUses As System.Windows.Forms.TabPage
 	Friend WithEvents tpaImpacts As System.Windows.Forms.TabPage
@@ -7372,9 +7372,9 @@ Partial Class frmNegotiation
 	Friend WithEvents Label179 As System.Windows.Forms.Label
 	Friend WithEvents Label180 As System.Windows.Forms.Label
 	Friend WithEvents Label116 As System.Windows.Forms.Label
-	Friend WithEvents nudsmqi As SDSS.DSSNumericUpDown
-	Friend WithEvents nudsbqi As SDSS.DSSNumericUpDown
-	Friend WithEvents nudssqi As SDSS.DSSNumericUpDown
+	Friend WithEvents nudsmqi As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudsbqi As DSDSS.DSSNumericUpDown
+	Friend WithEvents nudssqi As DSDSS.DSSNumericUpDown
 	Friend WithEvents Label119 As System.Windows.Forms.Label
 	Friend WithEvents Label118 As System.Windows.Forms.Label
 	Friend WithEvents Label117 As System.Windows.Forms.Label

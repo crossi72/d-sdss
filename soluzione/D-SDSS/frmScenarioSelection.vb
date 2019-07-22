@@ -48,7 +48,7 @@ Public Class frmScenarioSelection
 		InitializeComponent()
 
 		' Aggiungere le eventuali istruzioni di inizializzazione dopo la chiamata a InitializeComponent().
-		Me.SqlConnection1.ConnectionString = My.Settings.SDSSConnectionString
+		Me.SqlConnection1.ConnectionString = My.Settings.DSDSSConnectionString
 
 		Me.myScenarioID = 0
 	End Sub

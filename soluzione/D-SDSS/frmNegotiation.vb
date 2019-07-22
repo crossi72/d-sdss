@@ -52,7 +52,7 @@ Public Class frmNegotiation
 		InitializeComponent()
 
 		' Aggiungere le eventuali istruzioni di inizializzazione dopo la chiamata a InitializeComponent().
-		Me.SqlConnection.ConnectionString = My.Settings.SDSSConnectionString
+		Me.SqlConnection.ConnectionString = My.Settings.DSDSSConnectionString
 
 		Me.daLocations.Fill(Me.DSLocations)
 
