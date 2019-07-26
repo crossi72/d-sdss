@@ -13,20 +13,15 @@ Public Class frmNegotiation
 		output = 1
 	End Enum
 
-	Private myMap As mapControl.mapControl
+	Private ReadOnly myMap As mapControl.mapControl
 
 	Private nudCollection As New nudCollection
 	Private lblCollection As New lblCollection
-
-	Private dummy As Double
 
 	Private myMathWrapper As MW.MathWrapper
 
 	Private groupBoxesID As Integer
 	Private groupBoxes(5) As DSSGroupBox
-
-	Private regions() As String = {"Al - Baha", "Al - Gassem", "Al - Jouf", "Aseer", "Eastern Area", "Hail", "Jizan", "Madina", "Mecca", "Najran", "North Border", "Riyadh", "Tabouk"}
-	Private sizes() As String = {"small", "medium"}
 
 	'mathematica algorithm variables
 	'current costs
@@ -739,8 +734,7 @@ Public Class frmNegotiation
 
 				Me.daData.Update(Me.DSData, "data")
 			Catch ex As Exception
-				Dim a As Integer
-				a = 1
+
 			End Try
 		End If
 	End Sub

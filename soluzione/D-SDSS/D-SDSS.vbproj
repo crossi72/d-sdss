@@ -79,8 +79,9 @@
     <Reference Include="UIAutomationProvider" />
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
-    <Reference Include="Wolfram.NETLink">
-      <HintPath>..\..\..\..\NETLink\Wolfram.NETLink.dll</HintPath>
+    <Reference Include="Wolfram.NETLink, Version=1.6.5450.33325, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Wolfram Research\Mathematica\11.1\SystemFiles\Links\NETLink\Wolfram.NETLink.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
