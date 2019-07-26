@@ -36,13 +36,14 @@ Public Class frmNegotiation
 	Private _gwsp, _agruf, _agrufro, _induf, _indufro, _lanuf, _lanufro, _tpbx, _tpsx, _tpmz, _envw, _ecow, _socw, _totpla, _sbqi, _ssqi, _smqi As Double
 	'output
 	Private _outind(14), _outagr(14, 1), _outlan(14, 1), _outeco(14, 1), _outsoc(14, 1), _outenv(14, 1) As Double
+
 	Private _outecomean1, _outecomean2, _outecogini1, _outecogini2, _outsocmean1, _outsocmean2, _outsocgini1, _outsocgini2, _outenvmean1, _outenvmean2, _outenvgini1, _outenvgini2 As Double
 
 	Private _usedLocations, _usedDimensions As Integer
 
 #End Region
 
-#Region " New "
+#Region " Constructor "
 
 	Public Sub New()
 		' Chiamata richiesta da Progettazione Windows Form.
@@ -74,6 +75,17 @@ Public Class frmNegotiation
 #End Region
 
 #Region " Private methods "
+
+	''' <summary>
+	''' Open the settings forms and set local options
+	''' </summary>
+	Private Sub SetParameters()
+		Dim frmParameters As New frmParameters()
+
+		frmParameters.ShowDialog()
+
+
+	End Sub
 
 	Private Sub RefreshMap(sender As Object, e As EventArgs)
 		If Me.IsHandleCreated Then
@@ -245,13 +257,6 @@ Public Class frmNegotiation
 
 		Me._MathWrapper.WaitAndDiscardAnswer("mobj = m[[1]]")
 		Me._MathWrapper.WaitAndDiscardAnswer("marg = m[[2]]")
-
-		'Me.myMathWrapper.WaitAndDiscardAnswer("sbqi=.")
-		'Me.myMathWrapper.WaitAndDiscardAnswer("smqi=.")
-		'Me.myMathWrapper.WaitAndDiscardAnswer("tpbx=.")
-		'Me.myMathWrapper.WaitAndDiscardAnswer("tpmz=.")
-		'Me.myMathWrapper.WaitAndDiscardAnswer("socw=.")
-		'Me.myMathWrapper.WaitAndDiscardAnswer("envw=.")
 
 		Me._MathWrapper.WaitAndDiscardAnswer("totobj20rWEL = totobj20r*100 /. {x11 -> 0, x12 -> 0, x21 -> 0, x22 -> 0, x31 -> 0, x32 -> 0, x41 -> 1, x42 -> 1, x51 -> 0, x52 -> 1, x61 -> 0, x62 -> 1, x71 -> 1, x72 -> 0, x81 -> 0, x82 -> 1, x91 -> 0, x92 -> 1, x101 -> 0, x102 -> 0, x111 -> 0, x112 -> 0, x121 -> 1, x122 -> 0, x131 -> 0, x132 -> 0, y12 -> 0, y22 -> 0, y32 -> 0, y42 -> 1, y52 -> 1, y62 -> 0, y72 -> 0, y82 -> 0, y92 -> 0, y102 -> 0, y112 -> 0, y122 -> 1, y132 -> 1, z11 -> 0, z12 -> 0, z21 -> 0, z22 -> 0, z31 -> 0, z32 -> 0, z41 -> 1, z42 -> 1, z51 -> 0, z52 -> 1, z61 -> 0, z62 -> 1, z71 -> 1, z72 -> 0, z81 -> 0, z82 -> 1, z91 -> 0, z92 -> 1, z101 -> 0, z102 -> 0, z111 -> 0, z112 -> 0, z121 -> 1, z122 -> 0, z131 -> 0, z132 -> 0, sbqi -> 20, smqi -> 20, tpbx -> 0.35, tpmz -> 0.30}")
 		Me._MathWrapper.WaitAndDiscardAnswer("totobj20rSUS = totobj20r*100 /. {x11 -> 0, x12 -> 0, x21 -> 0, x22 -> 0, x31 -> 0, x32 -> 0, x41 -> 1, x42 -> 1, x51 -> 0, x52 -> 1, x61 -> 0, x62 -> 1, x71 -> 1, x72 -> 0, x81 -> 0, x82 -> 1, x91 -> 0, x92 -> 1, x101 -> 0, x102 -> 0, x111 -> 0, x112 -> 0, x121 -> 1, x122 -> 0, x131 -> 0, x132 -> 0, y12 -> 0, y22 -> 0, y32 -> 0, y42 -> 1, y52 -> 1, y62 -> 0, y72 -> 0, y82 -> 0, y92 -> 0, y102 -> 0, y112 -> 0, y122 -> 1, y132 -> 1, z11 -> 0, z12 -> 0, z21 -> 0, z22 -> 0, z31 -> 0, z32 -> 0, z41 -> 1, z42 -> 1, z51 -> 0, z52 -> 1, z61 -> 0, z62 -> 1, z71 -> 1, z72 -> 0, z81 -> 0, z82 -> 1, z91 -> 0, z92 -> 1, z101 -> 0, z102 -> 0, z111 -> 0, z112 -> 0, z121 -> 1, z122 -> 0, z131 -> 0, z132 -> 0, socw -> 0.33, envw -> 0.33, tpbx -> 0.35, tpmz -> 0.30}")
@@ -901,9 +906,11 @@ Public Class frmNegotiation
 		kernelPath = ""
 
 		Try
-			Me.TAParameters.Fill(Me.dsParameters._parameters)
+			Me.TAParameters.Fill(Me.dsParameters.parameters)
 			'read parameters
-			kernelPath = Me.dsParameters._parameters.Rows(0).Item("parKernelPath").ToString
+			kernelPath = Me.dsParameters.parameters.Rows(0).Item("parKernelPath").ToString
+			Me._usedLocations = CInt(Me.dsParameters.parameters.Rows(0).Item("parLocations"))
+			Me._usedDimensions = CInt(Me.dsParameters.parameters.Rows(0).Item("parDimensions"))
 		Catch ex As Exception
 			MessageBox.Show("Error reading parameters form database", "CRITICAL ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error)
 		End Try
@@ -981,6 +988,10 @@ Public Class frmNegotiation
 #End Region
 
 #Region " Event management "
+
+	Private Sub BtnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
+		Me.SetParameters()
+	End Sub
 
 	Private Sub frmNegotiation_HandleCreated(sender As Object, e As EventArgs) Handles Me.HandleCreated
 		Me.RefreshMap(Me._groupBoxes(0), New System.EventArgs)

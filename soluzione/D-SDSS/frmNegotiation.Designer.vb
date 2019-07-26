@@ -32,8 +32,8 @@ Partial Class frmNegotiation
 		Me.btnNext = New System.Windows.Forms.Button()
 		Me.btnPrev = New System.Windows.Forms.Button()
 		Me.btnLoadData = New System.Windows.Forms.Button()
-		Me.dsParameters = New DSDSS.parameters()
-		Me.TAParameters = New DSDSS.parametersTableAdapters.parametersTableAdapter()
+		Me.dsParameters = New DSDSS.DSParameters()
+		Me.TAParameters = New DSDSS.DSParametersTableAdapters.parametersTableAdapter()
 		Me.DSData = New DSDSS.DSData()
 		Me.daLocations = New System.Data.SqlClient.SqlDataAdapter()
 		Me.SqlCommand2 = New System.Data.SqlClient.SqlCommand()
@@ -499,6 +499,7 @@ Partial Class frmNegotiation
 		Me.Label47 = New System.Windows.Forms.Label()
 		Me.ElementHost1 = New System.Windows.Forms.Integration.ElementHost()
 		Me.mapControl = New mapControl.mapControl()
+		Me.btnSettings = New System.Windows.Forms.Button()
 		CType(Me.dsParameters, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.DSData, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.DSLocations, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -724,7 +725,7 @@ Partial Class frmNegotiation
 		Me.btnNext.Location = New System.Drawing.Point(441, 522)
 		Me.btnNext.Name = "btnNext"
 		Me.btnNext.Size = New System.Drawing.Size(90, 36)
-		Me.btnNext.TabIndex = 0
+		Me.btnNext.TabIndex = 103
 		Me.btnNext.Text = "Next"
 		Me.btnNext.UseVisualStyleBackColor = True
 		'
@@ -734,17 +735,17 @@ Partial Class frmNegotiation
 		Me.btnPrev.Location = New System.Drawing.Point(342, 522)
 		Me.btnPrev.Name = "btnPrev"
 		Me.btnPrev.Size = New System.Drawing.Size(90, 36)
-		Me.btnPrev.TabIndex = 29
+		Me.btnPrev.TabIndex = 102
 		Me.btnPrev.Text = "Previous"
 		Me.btnPrev.UseVisualStyleBackColor = True
 		'
 		'btnLoadData
 		'
 		Me.btnLoadData.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-		Me.btnLoadData.Location = New System.Drawing.Point(114, 522)
+		Me.btnLoadData.Location = New System.Drawing.Point(12, 522)
 		Me.btnLoadData.Name = "btnLoadData"
 		Me.btnLoadData.Size = New System.Drawing.Size(90, 36)
-		Me.btnLoadData.TabIndex = 29
+		Me.btnLoadData.TabIndex = 100
 		Me.btnLoadData.Text = "Load data"
 		Me.btnLoadData.UseVisualStyleBackColor = True
 		'
@@ -880,7 +881,6 @@ Partial Class frmNegotiation
 		Me.gboOutputUses.Controls.Add(Me.Label79)
 		Me.gboOutputUses.Controls.Add(Me.Label60)
 		Me.gboOutputUses.Controls.Add(Me.Label61)
-		Me.gboOutputUses.DSSVisible = False
 		Me.gboOutputUses.Location = New System.Drawing.Point(15, 15)
 		Me.gboOutputUses.Name = "gboOutputUses"
 		Me.gboOutputUses.Size = New System.Drawing.Size(451, 406)
@@ -903,7 +903,6 @@ Partial Class frmNegotiation
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr7_1)
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr10_1)
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr13_1)
-		Me.pnlOutAgrSmall.DSSVisible = False
 		Me.pnlOutAgrSmall.Location = New System.Drawing.Point(94, 55)
 		Me.pnlOutAgrSmall.Name = "pnlOutAgrSmall"
 		Me.pnlOutAgrSmall.Size = New System.Drawing.Size(49, 317)
@@ -1102,7 +1101,6 @@ Partial Class frmNegotiation
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd3_2)
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd10_2)
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd7_2)
-		Me.pnlOutIndLarge.DSSVisible = False
 		Me.pnlOutIndLarge.Location = New System.Drawing.Point(285, 55)
 		Me.pnlOutIndLarge.Name = "pnlOutIndLarge"
 		Me.pnlOutIndLarge.Size = New System.Drawing.Size(49, 317)
@@ -1310,7 +1308,6 @@ Partial Class frmNegotiation
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan7_1)
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan10_1)
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan13_1)
-		Me.pnlOutLanSmall.DSSVisible = False
 		Me.pnlOutLanSmall.Location = New System.Drawing.Point(153, 55)
 		Me.pnlOutLanSmall.Name = "pnlOutLanSmall"
 		Me.pnlOutLanSmall.Size = New System.Drawing.Size(49, 317)
@@ -1510,7 +1507,6 @@ Partial Class frmNegotiation
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan12_2)
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan7_2)
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan3_2)
-		Me.pnlOutLanLarge.DSSVisible = False
 		Me.pnlOutLanLarge.Location = New System.Drawing.Point(347, 56)
 		Me.pnlOutLanLarge.Name = "pnlOutLanLarge"
 		Me.pnlOutLanLarge.Size = New System.Drawing.Size(49, 317)
@@ -1710,7 +1706,6 @@ Partial Class frmNegotiation
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr3_2)
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr7_2)
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr10_2)
-		Me.pnlOutAgrLarge.DSSVisible = False
 		Me.pnlOutAgrLarge.Location = New System.Drawing.Point(223, 57)
 		Me.pnlOutAgrLarge.Name = "pnlOutAgrLarge"
 		Me.pnlOutAgrLarge.Size = New System.Drawing.Size(49, 317)
@@ -2062,6 +2057,7 @@ Partial Class frmNegotiation
 		Me.gboOutputImpacts.Controls.Add(Me.Label114)
 		Me.gboOutputImpacts.Controls.Add(Me.Label112)
 		Me.gboOutputImpacts.Controls.Add(Me.Label113)
+		Me.gboOutputImpacts.DSSVisible = False
 		Me.gboOutputImpacts.Location = New System.Drawing.Point(15, 11)
 		Me.gboOutputImpacts.Name = "gboOutputImpacts"
 		Me.gboOutputImpacts.Size = New System.Drawing.Size(422, 446)
@@ -2268,6 +2264,7 @@ Partial Class frmNegotiation
 		Me.pnlOutSocSmall.Controls.Add(Me.lblSoc7_1)
 		Me.pnlOutSocSmall.Controls.Add(Me.lblSoc10_1)
 		Me.pnlOutSocSmall.Controls.Add(Me.lblSoc13_1)
+		Me.pnlOutSocSmall.DSSVisible = False
 		Me.pnlOutSocSmall.Location = New System.Drawing.Point(133, 59)
 		Me.pnlOutSocSmall.Name = "pnlOutSocSmall"
 		Me.pnlOutSocSmall.Size = New System.Drawing.Size(49, 317)
@@ -2444,6 +2441,7 @@ Partial Class frmNegotiation
 		'
 		'DssPanel7
 		'
+		Me.DssPanel7.DSSVisible = False
 		Me.DssPanel7.Location = New System.Drawing.Point(-135, 184)
 		Me.DssPanel7.Name = "DssPanel7"
 		Me.DssPanel7.Size = New System.Drawing.Size(49, 317)
@@ -2464,6 +2462,7 @@ Partial Class frmNegotiation
 		Me.pnlOutEnvLarge.Controls.Add(Me.lblEnv3_2)
 		Me.pnlOutEnvLarge.Controls.Add(Me.lblEnv7_2)
 		Me.pnlOutEnvLarge.Controls.Add(Me.lblEnv10_2)
+		Me.pnlOutEnvLarge.DSSVisible = False
 		Me.pnlOutEnvLarge.Location = New System.Drawing.Point(349, 59)
 		Me.pnlOutEnvLarge.Name = "pnlOutEnvLarge"
 		Me.pnlOutEnvLarge.Size = New System.Drawing.Size(49, 317)
@@ -2654,6 +2653,7 @@ Partial Class frmNegotiation
 		Me.pnlOutEnvSmall.Controls.Add(Me.lblEnv3_1)
 		Me.pnlOutEnvSmall.Controls.Add(Me.lblEnv10_1)
 		Me.pnlOutEnvSmall.Controls.Add(Me.lblEnv7_1)
+		Me.pnlOutEnvSmall.DSSVisible = False
 		Me.pnlOutEnvSmall.Location = New System.Drawing.Point(187, 59)
 		Me.pnlOutEnvSmall.Name = "pnlOutEnvSmall"
 		Me.pnlOutEnvSmall.Size = New System.Drawing.Size(49, 317)
@@ -2844,6 +2844,7 @@ Partial Class frmNegotiation
 		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco3_2)
 		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco10_2)
 		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco7_2)
+		Me.pnlOutEcoLarge.DSSVisible = False
 		Me.pnlOutEcoLarge.Location = New System.Drawing.Point(241, 59)
 		Me.pnlOutEcoLarge.Name = "pnlOutEcoLarge"
 		Me.pnlOutEcoLarge.Size = New System.Drawing.Size(49, 317)
@@ -3033,6 +3034,7 @@ Partial Class frmNegotiation
 		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc3_2)
 		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc7_2)
 		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc10_2)
+		Me.pnlOutSocLarge.DSSVisible = False
 		Me.pnlOutSocLarge.Location = New System.Drawing.Point(295, 59)
 		Me.pnlOutSocLarge.Name = "pnlOutSocLarge"
 		Me.pnlOutSocLarge.Size = New System.Drawing.Size(49, 317)
@@ -3222,6 +3224,7 @@ Partial Class frmNegotiation
 		Me.pnlOutEcoSmall.Controls.Add(Me.lblEco7_1)
 		Me.pnlOutEcoSmall.Controls.Add(Me.lblEco10_1)
 		Me.pnlOutEcoSmall.Controls.Add(Me.lblEco13_1)
+		Me.pnlOutEcoSmall.DSSVisible = False
 		Me.pnlOutEcoSmall.Location = New System.Drawing.Point(79, 59)
 		Me.pnlOutEcoSmall.Name = "pnlOutEcoSmall"
 		Me.pnlOutEcoSmall.Size = New System.Drawing.Size(49, 317)
@@ -6741,11 +6744,22 @@ Partial Class frmNegotiation
 		Me.ElementHost1.Text = "ElementHost1"
 		Me.ElementHost1.Child = Me.mapControl
 		'
+		'btnSettings
+		'
+		Me.btnSettings.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+		Me.btnSettings.Location = New System.Drawing.Point(148, 522)
+		Me.btnSettings.Name = "btnSettings"
+		Me.btnSettings.Size = New System.Drawing.Size(90, 36)
+		Me.btnSettings.TabIndex = 101
+		Me.btnSettings.Text = "Settings"
+		Me.btnSettings.UseVisualStyleBackColor = True
+		'
 		'frmNegotiation
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.ClientSize = New System.Drawing.Size(941, 570)
+		Me.Controls.Add(Me.btnSettings)
 		Me.Controls.Add(Me.btnNext)
 		Me.Controls.Add(Me.btnPrev)
 		Me.Controls.Add(Me.btnLoadData)
@@ -7032,8 +7046,8 @@ Partial Class frmNegotiation
 	Friend WithEvents UtenteAggiornamentoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
 	Friend WithEvents AnnullatoDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
 	Friend WithEvents DataEstrazioneDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-	Friend WithEvents dsParameters As parameters
-	Friend WithEvents TAParameters As DSDSS.parametersTableAdapters.parametersTableAdapter
+	Friend WithEvents dsParameters As DSParameters
+	Friend WithEvents TAParameters As DSDSS.DSParametersTableAdapters.parametersTableAdapter
 	Friend WithEvents Label51 As System.Windows.Forms.Label
 	Friend WithEvents Label50 As System.Windows.Forms.Label
 	Friend WithEvents Label47 As System.Windows.Forms.Label
@@ -7497,4 +7511,5 @@ Partial Class frmNegotiation
 	Friend WithEvents lblEcoMean1 As DSSLabel
 	Friend WithEvents Label101 As Label
 	Friend WithEvents Label100 As Label
+	Friend WithEvents btnSettings As Button
 End Class

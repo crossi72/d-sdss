@@ -285,6 +285,10 @@ Partial Public Class DSParameters
         
         Private columnparKernelPath As Global.System.Data.DataColumn
         
+        Private columnparLocations As Global.System.Data.DataColumn
+        
+        Private columnparDimensions As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub New()
@@ -329,6 +333,22 @@ Partial Public Class DSParameters
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property parLocationsColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnparLocations
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property parDimensionsColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnparDimensions
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -365,9 +385,9 @@ Partial Public Class DSParameters
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Overloads Function AddparametersRow(ByVal parKernelPath As String) As parametersRow
+        Public Overloads Function AddparametersRow(ByVal parKernelPath As String, ByVal parLocations As Integer, ByVal parDimensions As Integer) As parametersRow
             Dim rowparametersRow As parametersRow = CType(Me.NewRow,parametersRow)
-            Dim columnValuesArray() As Object = New Object() {parKernelPath}
+            Dim columnValuesArray() As Object = New Object() {parKernelPath, parLocations, parDimensions}
             rowparametersRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowparametersRow)
             Return rowparametersRow
@@ -391,6 +411,8 @@ Partial Public Class DSParameters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Friend Sub InitVars()
             Me.columnparKernelPath = MyBase.Columns("parKernelPath")
+            Me.columnparLocations = MyBase.Columns("parLocations")
+            Me.columnparDimensions = MyBase.Columns("parDimensions")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -398,6 +420,10 @@ Partial Public Class DSParameters
         Private Sub InitClass()
             Me.columnparKernelPath = New Global.System.Data.DataColumn("parKernelPath", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnparKernelPath)
+            Me.columnparLocations = New Global.System.Data.DataColumn("parLocations", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnparLocations)
+            Me.columnparDimensions = New Global.System.Data.DataColumn("parDimensions", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnparDimensions)
             Me.columnparKernelPath.MaxLength = 250
         End Sub
         
@@ -560,6 +586,36 @@ Partial Public Class DSParameters
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property parLocations() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableparameters.parLocationsColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("Il valore della colonna 'parLocations' nella tabella 'parameters' è DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableparameters.parLocationsColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property parDimensions() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableparameters.parDimensionsColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("Il valore della colonna 'parDimensions' nella tabella 'parameters' è DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableparameters.parDimensionsColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Function IsparKernelPathNull() As Boolean
             Return Me.IsNull(Me.tableparameters.parKernelPathColumn)
         End Function
@@ -568,6 +624,30 @@ Partial Public Class DSParameters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub SetparKernelPathNull()
             Me(Me.tableparameters.parKernelPathColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsparLocationsNull() As Boolean
+            Return Me.IsNull(Me.tableparameters.parLocationsColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetparLocationsNull()
+            Me(Me.tableparameters.parLocationsColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsparDimensionsNull() As Boolean
+            Return Me.IsNull(Me.tableparameters.parDimensionsColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetparDimensionsNull()
+            Me(Me.tableparameters.parDimensionsColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -738,20 +818,25 @@ Namespace DSParametersTableAdapters
             tableMapping.SourceTable = "Table"
             tableMapping.DataSetTable = "parameters"
             tableMapping.ColumnMappings.Add("parKernelPath", "parKernelPath")
+            tableMapping.ColumnMappings.Add("parLocations", "parLocations")
+            tableMapping.ColumnMappings.Add("parDimensions", "parDimensions")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [parameters] ([parKernelPath]) VALUES (@parKernelPath)"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [parameters] ([parKernelPath], [parLocations], [parDimensions]) VALUE"& _ 
+                "S (@parKernelPath, @parLocations, @parDimensions)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@parKernelPath", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "parKernelPath", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@parLocations", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "parLocations", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@parDimensions", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "parDimensions", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-			Me._connection.ConnectionString = Global.DSDSS.My.MySettings.Default.DSDSSConnectionString
-		End Sub
+            Me._connection.ConnectionString = Global.DSDSS.My.MySettings.Default.DSDSSConnectionString
+        End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
@@ -759,7 +844,8 @@ Namespace DSParametersTableAdapters
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT        parKernelPath"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            parameters"
+            Me._commandCollection(0).CommandText = "SELECT        parKernelPath, parLocations, parDimensions"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            paramet"& _ 
+                "ers"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -819,11 +905,21 @@ Namespace DSParametersTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal parKernelPath As String) As Integer
+        Public Overloads Overridable Function Insert(ByVal parKernelPath As String, ByVal parLocations As Global.System.Nullable(Of Integer), ByVal parDimensions As Global.System.Nullable(Of Integer)) As Integer
             If (parKernelPath Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.InsertCommand.Parameters(0).Value = CType(parKernelPath,String)
+            End If
+            If (parLocations.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(parLocations.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
+            End If
+            If (parDimensions.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(parDimensions.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _

@@ -22,20 +22,26 @@ Partial Class frmParameters
 	'Non modificarla nell'editor del codice.
 	<System.Diagnostics.DebuggerStepThrough()> _
 	Private Sub InitializeComponent()
-		Me.components = New System.ComponentModel.Container
-		Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog
-		Me.txtParKernelPath = New System.Windows.Forms.TextBox
-		Me.Label1 = New System.Windows.Forms.Label
-		Me.btnSetPath = New System.Windows.Forms.Button
-		Me.Parameters = New parameters
+		Me.components = New System.ComponentModel.Container()
+		Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+		Me.txtParKernelPath = New System.Windows.Forms.TextBox()
+		Me.lblParKernelPath = New System.Windows.Forms.Label()
+		Me.btnSetPath = New System.Windows.Forms.Button()
 		Me.ParametersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-		Me.TAParameters = New parametersTableAdapters.parametersTableAdapter
-		Me.Label2 = New System.Windows.Forms.Label
-		Me.LinkLabel1 = New System.Windows.Forms.LinkLabel
-		Me.btnConfirm = New System.Windows.Forms.Button
-		Me.btnCancel = New System.Windows.Forms.Button
-		CType(Me.Parameters, System.ComponentModel.ISupportInitialize).BeginInit()
+		Me.TAParameters = New DSDSS.DSParametersTableAdapters.parametersTableAdapter()
+		Me.Label2 = New System.Windows.Forms.Label()
+		Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+		Me.btnConfirm = New System.Windows.Forms.Button()
+		Me.btnCancel = New System.Windows.Forms.Button()
+		Me.nudparLocations = New System.Windows.Forms.NumericUpDown()
+		Me.lblparLocations = New System.Windows.Forms.Label()
+		Me.lblparSizes = New System.Windows.Forms.Label()
+		Me.nudparDimensions = New System.Windows.Forms.NumericUpDown()
+		Me.DSParameters = New DSDSS.DSParameters()
 		CType(Me.ParametersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudparLocations, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudparDimensions, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.DSParameters, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
 		'
 		'OpenFileDialog1
@@ -50,14 +56,14 @@ Partial Class frmParameters
 		Me.txtParKernelPath.Size = New System.Drawing.Size(420, 20)
 		Me.txtParKernelPath.TabIndex = 0
 		'
-		'Label1
+		'lblParKernelPath
 		'
-		Me.Label1.AutoSize = True
-		Me.Label1.Location = New System.Drawing.Point(12, 41)
-		Me.Label1.Name = "Label1"
-		Me.Label1.Size = New System.Drawing.Size(166, 13)
-		Me.Label1.TabIndex = 1
-		Me.Label1.Text = "Wolfram Mathematica kernel path"
+		Me.lblParKernelPath.AutoSize = True
+		Me.lblParKernelPath.Location = New System.Drawing.Point(12, 41)
+		Me.lblParKernelPath.Name = "lblParKernelPath"
+		Me.lblParKernelPath.Size = New System.Drawing.Size(166, 13)
+		Me.lblParKernelPath.TabIndex = 1
+		Me.lblParKernelPath.Text = "Wolfram Mathematica kernel path"
 		'
 		'btnSetPath
 		'
@@ -68,15 +74,9 @@ Partial Class frmParameters
 		Me.btnSetPath.Text = "..."
 		Me.btnSetPath.UseVisualStyleBackColor = True
 		'
-		'Parameters
+		'TAParameters
 		'
-		Me.Parameters.DataSetName = "parameters"
-		Me.Parameters.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-		'
-		'ParametersBindingSource
-		'
-		Me.ParametersBindingSource.DataMember = "parameters"
-		Me.ParametersBindingSource.DataSource = Me.Parameters
+		Me.TAParameters.ClearBeforeFill = True
 		'
 		'Label2
 		'
@@ -99,51 +99,100 @@ Partial Class frmParameters
 		'
 		'btnConfirm
 		'
-		Me.btnConfirm.Location = New System.Drawing.Point(277, 175)
+		Me.btnConfirm.Location = New System.Drawing.Point(280, 249)
 		Me.btnConfirm.Name = "btnConfirm"
 		Me.btnConfirm.Size = New System.Drawing.Size(75, 23)
-		Me.btnConfirm.TabIndex = 4
+		Me.btnConfirm.TabIndex = 6
 		Me.btnConfirm.Text = "Confirm"
 		Me.btnConfirm.UseVisualStyleBackColor = True
 		'
 		'btnCancel
 		'
-		Me.btnCancel.Location = New System.Drawing.Point(196, 175)
+		Me.btnCancel.Location = New System.Drawing.Point(199, 249)
 		Me.btnCancel.Name = "btnCancel"
 		Me.btnCancel.Size = New System.Drawing.Size(75, 23)
-		Me.btnCancel.TabIndex = 3
+		Me.btnCancel.TabIndex = 5
 		Me.btnCancel.Text = "Cancel"
 		Me.btnCancel.UseVisualStyleBackColor = True
+		'
+		'nudparLocations
+		'
+		Me.nudparLocations.Location = New System.Drawing.Point(12, 190)
+		Me.nudparLocations.Name = "nudparLocations"
+		Me.nudparLocations.Size = New System.Drawing.Size(50, 20)
+		Me.nudparLocations.TabIndex = 3
+		Me.nudparLocations.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'lblparLocations
+		'
+		Me.lblparLocations.AutoSize = True
+		Me.lblparLocations.Location = New System.Drawing.Point(9, 174)
+		Me.lblparLocations.Name = "lblparLocations"
+		Me.lblparLocations.Size = New System.Drawing.Size(53, 13)
+		Me.lblparLocations.TabIndex = 1
+		Me.lblparLocations.Text = "Locations"
+		'
+		'lblparSizes
+		'
+		Me.lblparSizes.AutoSize = True
+		Me.lblparSizes.Location = New System.Drawing.Point(78, 174)
+		Me.lblparSizes.Name = "lblparSizes"
+		Me.lblparSizes.Size = New System.Drawing.Size(32, 13)
+		Me.lblparSizes.TabIndex = 1
+		Me.lblparSizes.Text = "Sizes"
+		'
+		'nudparDimensions
+		'
+		Me.nudparDimensions.Location = New System.Drawing.Point(81, 190)
+		Me.nudparDimensions.Name = "nudparDimensions"
+		Me.nudparDimensions.Size = New System.Drawing.Size(50, 20)
+		Me.nudparDimensions.TabIndex = 4
+		Me.nudparDimensions.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'DSParameters
+		'
+		Me.DSParameters.DataSetName = "DSParameters"
+		Me.DSParameters.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
 		'
 		'frmParameters
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.ClientSize = New System.Drawing.Size(566, 451)
+		Me.Controls.Add(Me.nudparDimensions)
+		Me.Controls.Add(Me.nudparLocations)
 		Me.Controls.Add(Me.btnCancel)
 		Me.Controls.Add(Me.btnConfirm)
 		Me.Controls.Add(Me.LinkLabel1)
 		Me.Controls.Add(Me.btnSetPath)
+		Me.Controls.Add(Me.lblparSizes)
 		Me.Controls.Add(Me.Label2)
-		Me.Controls.Add(Me.Label1)
+		Me.Controls.Add(Me.lblparLocations)
+		Me.Controls.Add(Me.lblParKernelPath)
 		Me.Controls.Add(Me.txtParKernelPath)
 		Me.Name = "frmParameters"
 		Me.Text = "parameters setting"
-		CType(Me.Parameters, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.ParametersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudparLocations, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudparDimensions, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.DSParameters, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.ResumeLayout(False)
 		Me.PerformLayout()
 
 	End Sub
 	Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
 	Friend WithEvents txtParKernelPath As System.Windows.Forms.TextBox
-	Friend WithEvents Label1 As System.Windows.Forms.Label
+	Friend WithEvents lblParKernelPath As System.Windows.Forms.Label
 	Friend WithEvents btnSetPath As System.Windows.Forms.Button
-	Friend WithEvents Parameters As parameters
 	Friend WithEvents ParametersBindingSource As System.Windows.Forms.BindingSource
-	Friend WithEvents TAParameters As parametersTableAdapters.parametersTableAdapter
+	Friend WithEvents TAParameters As DSParametersTableAdapters.parametersTableAdapter
 	Friend WithEvents Label2 As System.Windows.Forms.Label
 	Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
 	Friend WithEvents btnConfirm As System.Windows.Forms.Button
 	Friend WithEvents btnCancel As System.Windows.Forms.Button
+	Friend WithEvents nudparLocations As NumericUpDown
+	Friend WithEvents lblparLocations As Label
+	Friend WithEvents lblparSizes As Label
+	Friend WithEvents nudparDimensions As NumericUpDown
+	Friend WithEvents DSParameters As DSParameters
 End Class
