@@ -202,9 +202,6 @@ SELECT datID, indcc1_1, indcc2_1, indcc3_1, indcc4_1, indcc5_1, indcc6_1, indcc7
   <metadata name="TAParameters.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>223, 17</value>
   </metadata>
-  <metadata name="DSData.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>350, 17</value>
-  </metadata>
   <metadata name="daLocations.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>573, 17</value>
   </metadata>
@@ -219,6 +216,9 @@ SELECT datID, indcc1_1, indcc2_1, indcc3_1, indcc4_1, indcc5_1, indcc6_1, indcc7
   </metadata>
   <metadata name="DSLocations.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 18</value>
+  </metadata>
+  <metadata name="DSData.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>350, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>61</value>

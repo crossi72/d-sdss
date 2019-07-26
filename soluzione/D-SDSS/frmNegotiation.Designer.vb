@@ -34,7 +34,6 @@ Partial Class frmNegotiation
 		Me.btnLoadData = New System.Windows.Forms.Button()
 		Me.dsParameters = New DSDSS.DSParameters()
 		Me.TAParameters = New DSDSS.DSParametersTableAdapters.parametersTableAdapter()
-		Me.DSData = New DSDSS.DSData()
 		Me.daLocations = New System.Data.SqlClient.SqlDataAdapter()
 		Me.SqlCommand2 = New System.Data.SqlClient.SqlCommand()
 		Me.DSLocations = New DSDSS.DSLocations()
@@ -43,6 +42,163 @@ Partial Class frmNegotiation
 		Me.ElementHost1 = New System.Windows.Forms.Integration.ElementHost()
 		Me.mapControl = New mapControl.mapControl()
 		Me.btnSettings = New System.Windows.Forms.Button()
+		Me.DSData = New DSDSS.DSData()
+		Me.grbIndustrialDistricts = New DSDSS.DSSGroupBox()
+		Me.pnlInddispln = New DSDSS.DSSPanel()
+		Me.nudInddispln14_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln15_2 = New DSDSS.DSSNumericUpDown()
+		Me.Label86 = New System.Windows.Forms.Label()
+		Me.nudInddispln3_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln7_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln2_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln12_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln10_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln13_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln6_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln8_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln1_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln4_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln9_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln11_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln5_2 = New DSDSS.DSSNumericUpDown()
+		Me.pnlInddiscur = New DSDSS.DSSPanel()
+		Me.nudInddiscur14_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur15_2 = New DSDSS.DSSNumericUpDown()
+		Me.Label88 = New System.Windows.Forms.Label()
+		Me.nudInddiscur3_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur7_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur2_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur6_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur12_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur1_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur9_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur13_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur10_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur11_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur8_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur5_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur4_2 = New DSDSS.DSSNumericUpDown()
+		Me.Label38 = New System.Windows.Forms.Label()
+		Me.Label39 = New System.Windows.Forms.Label()
+		Me.Label40 = New System.Windows.Forms.Label()
+		Me.Label41 = New System.Windows.Forms.Label()
+		Me.Label42 = New System.Windows.Forms.Label()
+		Me.Label43 = New System.Windows.Forms.Label()
+		Me.Label71 = New System.Windows.Forms.Label()
+		Me.Label72 = New System.Windows.Forms.Label()
+		Me.Label73 = New System.Windows.Forms.Label()
+		Me.Label74 = New System.Windows.Forms.Label()
+		Me.Label75 = New System.Windows.Forms.Label()
+		Me.Label76 = New System.Windows.Forms.Label()
+		Me.Label77 = New System.Windows.Forms.Label()
+		Me.grbWaterQuality = New DSDSS.DSSGroupBox()
+		Me.pnlTSS = New DSDSS.DSSPanel()
+		Me.nudTSS14 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS15 = New DSDSS.DSSNumericUpDown()
+		Me.Label21 = New System.Windows.Forms.Label()
+		Me.nudTSS3 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS2 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS7 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS10 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS12 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS6 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS13 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS1 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS8 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS9 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS4 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS5 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS11 = New DSDSS.DSSNumericUpDown()
+		Me.pnlTDS = New DSDSS.DSSPanel()
+		Me.nudTDS14 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS15 = New DSDSS.DSSNumericUpDown()
+		Me.Label19 = New System.Windows.Forms.Label()
+		Me.nudTDS3 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS2 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS7 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS10 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS6 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS12 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS1 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS9 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS13 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS5 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS11 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS8 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS4 = New DSDSS.DSSNumericUpDown()
+		Me.pnlBOD = New DSDSS.DSSPanel()
+		Me.nudBOD14 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD15 = New DSDSS.DSSNumericUpDown()
+		Me.Label20 = New System.Windows.Forms.Label()
+		Me.nudBOD3 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD2 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD7 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD6 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD1 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD9 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD12 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD10 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD11 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD5 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD13 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD4 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD8 = New DSDSS.DSSNumericUpDown()
+		Me.Label3 = New System.Windows.Forms.Label()
+		Me.Label4 = New System.Windows.Forms.Label()
+		Me.Label5 = New System.Windows.Forms.Label()
+		Me.Label6 = New System.Windows.Forms.Label()
+		Me.Label7 = New System.Windows.Forms.Label()
+		Me.Label8 = New System.Windows.Forms.Label()
+		Me.Label9 = New System.Windows.Forms.Label()
+		Me.Label11 = New System.Windows.Forms.Label()
+		Me.Label14 = New System.Windows.Forms.Label()
+		Me.Label15 = New System.Windows.Forms.Label()
+		Me.Label16 = New System.Windows.Forms.Label()
+		Me.Label17 = New System.Windows.Forms.Label()
+		Me.Label18 = New System.Windows.Forms.Label()
+		Me.grbMisc = New DSDSS.DSSGroupBox()
+		Me.DssPanel1 = New DSDSS.DSSPanel()
+		Me.Label10 = New System.Windows.Forms.Label()
+		Me.Label13 = New System.Windows.Forms.Label()
+		Me.lblBOD = New DSDSS.DSSLabel()
+		Me.Label92 = New System.Windows.Forms.Label()
+		Me.Label28 = New System.Windows.Forms.Label()
+		Me.Label30 = New System.Windows.Forms.Label()
+		Me.Label64 = New System.Windows.Forms.Label()
+		Me.Label70 = New System.Windows.Forms.Label()
+		Me.Label116 = New System.Windows.Forms.Label()
+		Me.Label12 = New System.Windows.Forms.Label()
+		Me.Label26 = New System.Windows.Forms.Label()
+		Me.nudTpsx = New DSDSS.DSSNumericUpDown()
+		Me.Label68 = New System.Windows.Forms.Label()
+		Me.nudTpmz = New DSDSS.DSSNumericUpDown()
+		Me.Label24 = New System.Windows.Forms.Label()
+		Me.nudAgrUFRO = New DSDSS.DSSNumericUpDown()
+		Me.Label29 = New System.Windows.Forms.Label()
+		Me.nudEnvw = New DSDSS.DSSNumericUpDown()
+		Me.lblTDS = New DSDSS.DSSLabel()
+		Me.nudgwsp = New DSDSS.DSSNumericUpDown()
+		Me.nudTotpla = New DSDSS.DSSNumericUpDown()
+		Me.nudIndUFRO = New DSDSS.DSSNumericUpDown()
+		Me.nudSocw = New DSDSS.DSSNumericUpDown()
+		Me.nudTpbx = New DSDSS.DSSNumericUpDown()
+		Me.nudEcow = New DSDSS.DSSNumericUpDown()
+		Me.nudsmqi = New DSDSS.DSSNumericUpDown()
+		Me.nudLanUFRO = New DSDSS.DSSNumericUpDown()
+		Me.nudsbqi = New DSDSS.DSSNumericUpDown()
+		Me.nudLanUF = New DSDSS.DSSNumericUpDown()
+		Me.nudssqi = New DSDSS.DSSNumericUpDown()
+		Me.nudAgrUF = New DSDSS.DSSNumericUpDown()
+		Me.nudIndUF = New DSDSS.DSSNumericUpDown()
+		Me.Label25 = New System.Windows.Forms.Label()
+		Me.Label119 = New System.Windows.Forms.Label()
+		Me.Label34 = New System.Windows.Forms.Label()
+		Me.Label27 = New System.Windows.Forms.Label()
+		Me.Label23 = New System.Windows.Forms.Label()
+		Me.Label118 = New System.Windows.Forms.Label()
+		Me.Label78 = New System.Windows.Forms.Label()
+		Me.Label117 = New System.Windows.Forms.Label()
+		Me.Label91 = New System.Windows.Forms.Label()
 		Me.grbWaterCosts = New DSDSS.DSSGroupBox()
 		Me.pnlGro = New DSDSS.DSSPanel()
 		Me.nudGro14 = New DSDSS.DSSNumericUpDown()
@@ -384,259 +540,14 @@ Partial Class frmNegotiation
 		Me.Label59 = New System.Windows.Forms.Label()
 		Me.Label65 = New System.Windows.Forms.Label()
 		Me.Label69 = New System.Windows.Forms.Label()
-		Me.grbIndustrialDistricts = New DSDSS.DSSGroupBox()
-		Me.pnlInddispln = New DSDSS.DSSPanel()
-		Me.nudInddispln14_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddispln15_2 = New DSDSS.DSSNumericUpDown()
-		Me.Label86 = New System.Windows.Forms.Label()
-		Me.nudInddispln3_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddispln7_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddispln2_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddispln12_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddispln10_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddispln13_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddispln6_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddispln8_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddispln1_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddispln4_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddispln9_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddispln11_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddispln5_2 = New DSDSS.DSSNumericUpDown()
-		Me.pnlInddiscur = New DSDSS.DSSPanel()
-		Me.nudInddiscur14_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddiscur15_2 = New DSDSS.DSSNumericUpDown()
-		Me.Label88 = New System.Windows.Forms.Label()
-		Me.nudInddiscur3_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddiscur7_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddiscur2_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddiscur6_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddiscur12_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddiscur1_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddiscur9_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddiscur13_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddiscur10_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddiscur11_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddiscur8_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddiscur5_2 = New DSDSS.DSSNumericUpDown()
-		Me.nudInddiscur4_2 = New DSDSS.DSSNumericUpDown()
-		Me.Label38 = New System.Windows.Forms.Label()
-		Me.Label39 = New System.Windows.Forms.Label()
-		Me.Label40 = New System.Windows.Forms.Label()
-		Me.Label41 = New System.Windows.Forms.Label()
-		Me.Label42 = New System.Windows.Forms.Label()
-		Me.Label43 = New System.Windows.Forms.Label()
-		Me.Label71 = New System.Windows.Forms.Label()
-		Me.Label72 = New System.Windows.Forms.Label()
-		Me.Label73 = New System.Windows.Forms.Label()
-		Me.Label74 = New System.Windows.Forms.Label()
-		Me.Label75 = New System.Windows.Forms.Label()
-		Me.Label76 = New System.Windows.Forms.Label()
-		Me.Label77 = New System.Windows.Forms.Label()
-		Me.grbWaterQuality = New DSDSS.DSSGroupBox()
-		Me.pnlTSS = New DSDSS.DSSPanel()
-		Me.nudTSS14 = New DSDSS.DSSNumericUpDown()
-		Me.nudTSS15 = New DSDSS.DSSNumericUpDown()
-		Me.Label21 = New System.Windows.Forms.Label()
-		Me.nudTSS3 = New DSDSS.DSSNumericUpDown()
-		Me.nudTSS2 = New DSDSS.DSSNumericUpDown()
-		Me.nudTSS7 = New DSDSS.DSSNumericUpDown()
-		Me.nudTSS10 = New DSDSS.DSSNumericUpDown()
-		Me.nudTSS12 = New DSDSS.DSSNumericUpDown()
-		Me.nudTSS6 = New DSDSS.DSSNumericUpDown()
-		Me.nudTSS13 = New DSDSS.DSSNumericUpDown()
-		Me.nudTSS1 = New DSDSS.DSSNumericUpDown()
-		Me.nudTSS8 = New DSDSS.DSSNumericUpDown()
-		Me.nudTSS9 = New DSDSS.DSSNumericUpDown()
-		Me.nudTSS4 = New DSDSS.DSSNumericUpDown()
-		Me.nudTSS5 = New DSDSS.DSSNumericUpDown()
-		Me.nudTSS11 = New DSDSS.DSSNumericUpDown()
-		Me.pnlTDS = New DSDSS.DSSPanel()
-		Me.nudTDS14 = New DSDSS.DSSNumericUpDown()
-		Me.nudTDS15 = New DSDSS.DSSNumericUpDown()
-		Me.Label19 = New System.Windows.Forms.Label()
-		Me.nudTDS3 = New DSDSS.DSSNumericUpDown()
-		Me.nudTDS2 = New DSDSS.DSSNumericUpDown()
-		Me.nudTDS7 = New DSDSS.DSSNumericUpDown()
-		Me.nudTDS10 = New DSDSS.DSSNumericUpDown()
-		Me.nudTDS6 = New DSDSS.DSSNumericUpDown()
-		Me.nudTDS12 = New DSDSS.DSSNumericUpDown()
-		Me.nudTDS1 = New DSDSS.DSSNumericUpDown()
-		Me.nudTDS9 = New DSDSS.DSSNumericUpDown()
-		Me.nudTDS13 = New DSDSS.DSSNumericUpDown()
-		Me.nudTDS5 = New DSDSS.DSSNumericUpDown()
-		Me.nudTDS11 = New DSDSS.DSSNumericUpDown()
-		Me.nudTDS8 = New DSDSS.DSSNumericUpDown()
-		Me.nudTDS4 = New DSDSS.DSSNumericUpDown()
-		Me.pnlBOD = New DSDSS.DSSPanel()
-		Me.nudBOD14 = New DSDSS.DSSNumericUpDown()
-		Me.nudBOD15 = New DSDSS.DSSNumericUpDown()
-		Me.Label20 = New System.Windows.Forms.Label()
-		Me.nudBOD3 = New DSDSS.DSSNumericUpDown()
-		Me.nudBOD2 = New DSDSS.DSSNumericUpDown()
-		Me.nudBOD7 = New DSDSS.DSSNumericUpDown()
-		Me.nudBOD6 = New DSDSS.DSSNumericUpDown()
-		Me.nudBOD1 = New DSDSS.DSSNumericUpDown()
-		Me.nudBOD9 = New DSDSS.DSSNumericUpDown()
-		Me.nudBOD12 = New DSDSS.DSSNumericUpDown()
-		Me.nudBOD10 = New DSDSS.DSSNumericUpDown()
-		Me.nudBOD11 = New DSDSS.DSSNumericUpDown()
-		Me.nudBOD5 = New DSDSS.DSSNumericUpDown()
-		Me.nudBOD13 = New DSDSS.DSSNumericUpDown()
-		Me.nudBOD4 = New DSDSS.DSSNumericUpDown()
-		Me.nudBOD8 = New DSDSS.DSSNumericUpDown()
-		Me.Label3 = New System.Windows.Forms.Label()
-		Me.Label4 = New System.Windows.Forms.Label()
-		Me.Label5 = New System.Windows.Forms.Label()
-		Me.Label6 = New System.Windows.Forms.Label()
-		Me.Label7 = New System.Windows.Forms.Label()
-		Me.Label8 = New System.Windows.Forms.Label()
-		Me.Label9 = New System.Windows.Forms.Label()
-		Me.Label11 = New System.Windows.Forms.Label()
-		Me.Label14 = New System.Windows.Forms.Label()
-		Me.Label15 = New System.Windows.Forms.Label()
-		Me.Label16 = New System.Windows.Forms.Label()
-		Me.Label17 = New System.Windows.Forms.Label()
-		Me.Label18 = New System.Windows.Forms.Label()
-		Me.grbMisc = New DSDSS.DSSGroupBox()
-		Me.DssPanel1 = New DSDSS.DSSPanel()
-		Me.Label10 = New System.Windows.Forms.Label()
-		Me.Label13 = New System.Windows.Forms.Label()
-		Me.lblBOD = New DSDSS.DSSLabel()
-		Me.Label92 = New System.Windows.Forms.Label()
-		Me.Label28 = New System.Windows.Forms.Label()
-		Me.Label30 = New System.Windows.Forms.Label()
-		Me.Label64 = New System.Windows.Forms.Label()
-		Me.Label70 = New System.Windows.Forms.Label()
-		Me.Label116 = New System.Windows.Forms.Label()
-		Me.Label12 = New System.Windows.Forms.Label()
-		Me.Label26 = New System.Windows.Forms.Label()
-		Me.nudTpsx = New DSDSS.DSSNumericUpDown()
-		Me.Label68 = New System.Windows.Forms.Label()
-		Me.nudTpmz = New DSDSS.DSSNumericUpDown()
-		Me.Label24 = New System.Windows.Forms.Label()
-		Me.nudAgrUFRO = New DSDSS.DSSNumericUpDown()
-		Me.Label29 = New System.Windows.Forms.Label()
-		Me.nudEnvw = New DSDSS.DSSNumericUpDown()
-		Me.lblTDS = New DSDSS.DSSLabel()
-		Me.nudgwsp = New DSDSS.DSSNumericUpDown()
-		Me.nudTotpla = New DSDSS.DSSNumericUpDown()
-		Me.nudIndUFRO = New DSDSS.DSSNumericUpDown()
-		Me.nudSocw = New DSDSS.DSSNumericUpDown()
-		Me.nudTpbx = New DSDSS.DSSNumericUpDown()
-		Me.nudEcow = New DSDSS.DSSNumericUpDown()
-		Me.nudsmqi = New DSDSS.DSSNumericUpDown()
-		Me.nudLanUFRO = New DSDSS.DSSNumericUpDown()
-		Me.nudsbqi = New DSDSS.DSSNumericUpDown()
-		Me.nudLanUF = New DSDSS.DSSNumericUpDown()
-		Me.nudssqi = New DSDSS.DSSNumericUpDown()
-		Me.nudAgrUF = New DSDSS.DSSNumericUpDown()
-		Me.nudIndUF = New DSDSS.DSSNumericUpDown()
-		Me.Label25 = New System.Windows.Forms.Label()
-		Me.Label119 = New System.Windows.Forms.Label()
-		Me.Label34 = New System.Windows.Forms.Label()
-		Me.Label27 = New System.Windows.Forms.Label()
-		Me.Label23 = New System.Windows.Forms.Label()
-		Me.Label118 = New System.Windows.Forms.Label()
-		Me.Label78 = New System.Windows.Forms.Label()
-		Me.Label117 = New System.Windows.Forms.Label()
-		Me.Label91 = New System.Windows.Forms.Label()
 		CType(Me.dsParameters, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.DSData, System.ComponentModel.ISupportInitialize).BeginInit
 		CType(Me.DSLocations, System.ComponentModel.ISupportInitialize).BeginInit
 		Me.pnlMain.SuspendLayout
 		CType(Me.SplitContainer, System.ComponentModel.ISupportInitialize).BeginInit
 		Me.SplitContainer.Panel1.SuspendLayout
 		Me.SplitContainer.Panel2.SuspendLayout
 		Me.SplitContainer.SuspendLayout
-		Me.grbWaterCosts.SuspendLayout
-		Me.pnlGro.SuspendLayout
-		CType(Me.nudGro14, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudGro15, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudGro3, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudGro7, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudGro2, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudGro12, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudGro10, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudGro13, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudGro6, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudGro8, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudGro1, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudGro4, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudGro9, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudGro11, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudGro5, System.ComponentModel.ISupportInitialize).BeginInit
-		Me.pnlDes.SuspendLayout
-		CType(Me.nudDes14, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudDes15, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudDes3, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudDes7, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudDes2, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudDes6, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudDes12, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudDes1, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudDes9, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudDes13, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudDes10, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudDes11, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudDes8, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudDes5, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudDes4, System.ComponentModel.ISupportInitialize).BeginInit
-		Me.grbOuput.SuspendLayout
-		Me.tcoOutput.SuspendLayout
-		Me.tpaUses.SuspendLayout
-		Me.gboOutputUses.SuspendLayout
-		Me.pnlOutAgrSmall.SuspendLayout
-		Me.pnlOutIndLarge.SuspendLayout
-		Me.pnlOutLanSmall.SuspendLayout
-		Me.pnlOutLanLarge.SuspendLayout
-		Me.pnlOutAgrLarge.SuspendLayout
-		Me.tpaImpacts.SuspendLayout
-		Me.gboOutputImpacts.SuspendLayout
-		Me.pnlOutSocSmall.SuspendLayout
-		Me.pnlOutEnvLarge.SuspendLayout
-		Me.pnlOutEnvSmall.SuspendLayout
-		Me.pnlOutEcoLarge.SuspendLayout
-		Me.pnlOutSocLarge.SuspendLayout
-		Me.pnlOutEcoSmall.SuspendLayout
-		Me.tpaWeights.SuspendLayout
-		CType(Me.pboGraphWeights, System.ComponentModel.ISupportInitialize).BeginInit
-		Me.tpaStandards.SuspendLayout
-		CType(Me.pboGraphStandards, System.ComponentModel.ISupportInitialize).BeginInit
-		Me.tpaEfficencies.SuspendLayout
-		CType(Me.pboGraphEfficiencies, System.ComponentModel.ISupportInitialize).BeginInit
-		Me.grbPopulation.SuspendLayout
-		Me.pnlPop20_2.SuspendLayout
-		CType(Me.nudPop20_14_2, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_15_2, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_3_2, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_7_2, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_2_2, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_12_2, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_10_2, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_13_2, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_6_2, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_8_2, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_1_2, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_4_2, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_9_2, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_11_2, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_5_2, System.ComponentModel.ISupportInitialize).BeginInit
-		Me.pnlPop20_1.SuspendLayout
-		CType(Me.nudPop20_14_1, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_15_1, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_3_1, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_7_1, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_2_1, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_6_1, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_12_1, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_1_1, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_9_1, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_13_1, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_10_1, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_11_1, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_8_1, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_5_1, System.ComponentModel.ISupportInitialize).BeginInit
-		CType(Me.nudPop20_4_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.DSData, System.ComponentModel.ISupportInitialize).BeginInit
 		Me.grbIndustrialDistricts.SuspendLayout
 		Me.pnlInddispln.SuspendLayout
 		CType(Me.nudInddispln14_2, System.ComponentModel.ISupportInitialize).BeginInit
@@ -738,6 +649,95 @@ Partial Class frmNegotiation
 		CType(Me.nudssqi, System.ComponentModel.ISupportInitialize).BeginInit
 		CType(Me.nudAgrUF, System.ComponentModel.ISupportInitialize).BeginInit
 		CType(Me.nudIndUF, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.grbWaterCosts.SuspendLayout
+		Me.pnlGro.SuspendLayout
+		CType(Me.nudGro14, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro15, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro3, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro7, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro12, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro10, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro13, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro6, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro8, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro4, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro9, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro11, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro5, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.pnlDes.SuspendLayout
+		CType(Me.nudDes14, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes15, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes3, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes7, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes6, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes12, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes9, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes13, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes10, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes11, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes8, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes5, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes4, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.grbOuput.SuspendLayout
+		Me.tcoOutput.SuspendLayout
+		Me.tpaUses.SuspendLayout
+		Me.gboOutputUses.SuspendLayout
+		Me.pnlOutAgrSmall.SuspendLayout
+		Me.pnlOutIndLarge.SuspendLayout
+		Me.pnlOutLanSmall.SuspendLayout
+		Me.pnlOutLanLarge.SuspendLayout
+		Me.pnlOutAgrLarge.SuspendLayout
+		Me.tpaImpacts.SuspendLayout
+		Me.gboOutputImpacts.SuspendLayout
+		Me.pnlOutSocSmall.SuspendLayout
+		Me.pnlOutEnvLarge.SuspendLayout
+		Me.pnlOutEnvSmall.SuspendLayout
+		Me.pnlOutEcoLarge.SuspendLayout
+		Me.pnlOutSocLarge.SuspendLayout
+		Me.pnlOutEcoSmall.SuspendLayout
+		Me.tpaWeights.SuspendLayout
+		CType(Me.pboGraphWeights, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.tpaStandards.SuspendLayout
+		CType(Me.pboGraphStandards, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.tpaEfficencies.SuspendLayout
+		CType(Me.pboGraphEfficiencies, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.grbPopulation.SuspendLayout
+		Me.pnlPop20_2.SuspendLayout
+		CType(Me.nudPop20_14_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_15_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_3_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_7_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_2_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_12_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_10_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_13_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_6_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_8_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_1_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_4_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_9_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_11_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_5_2, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.pnlPop20_1.SuspendLayout
+		CType(Me.nudPop20_14_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_15_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_3_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_7_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_2_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_6_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_12_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_1_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_9_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_13_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_10_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_11_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_8_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_5_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_4_1, System.ComponentModel.ISupportInitialize).BeginInit
 		Me.SuspendLayout
 		'
 		'daData
@@ -816,11 +816,6 @@ Partial Class frmNegotiation
 		'
 		Me.TAParameters.ClearBeforeFill = True
 		'
-		'DSData
-		'
-		Me.DSData.DataSetName = "DSData"
-		Me.DSData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-		'
 		'daLocations
 		'
 		Me.daLocations.SelectCommand = Me.SqlCommand2
@@ -856,12 +851,12 @@ Partial Class frmNegotiation
 		'
 		'SplitContainer.Panel1
 		'
-		Me.SplitContainer.Panel1.Controls.Add(Me.grbMisc)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbWaterCosts)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbOuput)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbPopulation)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbIndustrialDistricts)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbWaterQuality)
+		Me.SplitContainer.Panel1.Controls.Add(Me.grbMisc)
 		'
 		'SplitContainer.Panel2
 		'
@@ -891,6 +886,2089 @@ Partial Class frmNegotiation
 		Me.btnSettings.TabIndex = 101
 		Me.btnSettings.Text = "Settings"
 		Me.btnSettings.UseVisualStyleBackColor = True
+		'
+		'DSData
+		'
+		Me.DSData.DataSetName = "DSData"
+		Me.DSData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+		'
+		'grbIndustrialDistricts
+		'
+		Me.grbIndustrialDistricts.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+			Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+		Me.grbIndustrialDistricts.Controls.Add(Me.pnlInddispln)
+		Me.grbIndustrialDistricts.Controls.Add(Me.pnlInddiscur)
+		Me.grbIndustrialDistricts.Controls.Add(Me.Label38)
+		Me.grbIndustrialDistricts.Controls.Add(Me.Label39)
+		Me.grbIndustrialDistricts.Controls.Add(Me.Label40)
+		Me.grbIndustrialDistricts.Controls.Add(Me.Label41)
+		Me.grbIndustrialDistricts.Controls.Add(Me.Label42)
+		Me.grbIndustrialDistricts.Controls.Add(Me.Label43)
+		Me.grbIndustrialDistricts.Controls.Add(Me.Label71)
+		Me.grbIndustrialDistricts.Controls.Add(Me.Label72)
+		Me.grbIndustrialDistricts.Controls.Add(Me.Label73)
+		Me.grbIndustrialDistricts.Controls.Add(Me.Label74)
+		Me.grbIndustrialDistricts.Controls.Add(Me.Label75)
+		Me.grbIndustrialDistricts.Controls.Add(Me.Label76)
+		Me.grbIndustrialDistricts.Controls.Add(Me.Label77)
+		Me.grbIndustrialDistricts.ForeColor = System.Drawing.Color.Black
+		Me.grbIndustrialDistricts.Location = New System.Drawing.Point(0, 0)
+		Me.grbIndustrialDistricts.Name = "grbIndustrialDistricts"
+		Me.grbIndustrialDistricts.Size = New System.Drawing.Size(300, 516)
+		Me.grbIndustrialDistricts.TabIndex = 23
+		Me.grbIndustrialDistricts.TabStop = False
+		Me.grbIndustrialDistricts.Text = "Industrial districts"
+		Me.grbIndustrialDistricts.Visible = False
+		'
+		'pnlInddispln
+		'
+		Me.pnlInddispln.Controls.Add(Me.nudInddispln14_2)
+		Me.pnlInddispln.Controls.Add(Me.nudInddispln15_2)
+		Me.pnlInddispln.Controls.Add(Me.Label86)
+		Me.pnlInddispln.Controls.Add(Me.nudInddispln3_2)
+		Me.pnlInddispln.Controls.Add(Me.nudInddispln7_2)
+		Me.pnlInddispln.Controls.Add(Me.nudInddispln2_2)
+		Me.pnlInddispln.Controls.Add(Me.nudInddispln12_2)
+		Me.pnlInddispln.Controls.Add(Me.nudInddispln10_2)
+		Me.pnlInddispln.Controls.Add(Me.nudInddispln13_2)
+		Me.pnlInddispln.Controls.Add(Me.nudInddispln6_2)
+		Me.pnlInddispln.Controls.Add(Me.nudInddispln8_2)
+		Me.pnlInddispln.Controls.Add(Me.nudInddispln1_2)
+		Me.pnlInddispln.Controls.Add(Me.nudInddispln4_2)
+		Me.pnlInddispln.Controls.Add(Me.nudInddispln9_2)
+		Me.pnlInddispln.Controls.Add(Me.nudInddispln11_2)
+		Me.pnlInddispln.Controls.Add(Me.nudInddispln5_2)
+		Me.pnlInddispln.Location = New System.Drawing.Point(198, 12)
+		Me.pnlInddispln.Name = "pnlInddispln"
+		Me.pnlInddispln.Size = New System.Drawing.Size(90, 393)
+		Me.pnlInddispln.TabIndex = 147
+		'
+		'nudInddispln14_2
+		'
+		Me.nudInddispln14_2.DecimalPlaces = 2
+		Me.nudInddispln14_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
+		Me.nudInddispln14_2.DSSElementName = "inddispln14_1"
+		Me.nudInddispln14_2.DSSLocation = 14
+		Me.nudInddispln14_2.DSSOffset = 0.2R
+		Me.nudInddispln14_2.Location = New System.Drawing.Point(0, 332)
+		Me.nudInddispln14_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddispln14_2.Name = "nudInddispln14_2"
+		Me.nudInddispln14_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddispln14_2.TabIndex = 113
+		Me.nudInddispln14_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddispln14_2.Value = New Decimal(New Integer() {3, 0, 0, 65536})
+		'
+		'nudInddispln15_2
+		'
+		Me.nudInddispln15_2.DecimalPlaces = 2
+		Me.nudInddispln15_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
+		Me.nudInddispln15_2.DSSElementName = "inddispln15_1"
+		Me.nudInddispln15_2.DSSLocation = 15
+		Me.nudInddispln15_2.DSSOffset = 0.2R
+		Me.nudInddispln15_2.Location = New System.Drawing.Point(0, 355)
+		Me.nudInddispln15_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddispln15_2.Name = "nudInddispln15_2"
+		Me.nudInddispln15_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddispln15_2.TabIndex = 114
+		Me.nudInddispln15_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddispln15_2.Value = New Decimal(New Integer() {5, 0, 0, 65536})
+		'
+		'Label86
+		'
+		Me.Label86.Location = New System.Drawing.Point(0, 10)
+		Me.Label86.Name = "Label86"
+		Me.Label86.Size = New System.Drawing.Size(90, 13)
+		Me.Label86.TabIndex = 144
+		Me.Label86.Text = "Planned"
+		Me.Label86.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'nudInddispln3_2
+		'
+		Me.nudInddispln3_2.DecimalPlaces = 2
+		Me.nudInddispln3_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
+		Me.nudInddispln3_2.DSSElementName = "inddispln3_1"
+		Me.nudInddispln3_2.DSSLocation = 3
+		Me.nudInddispln3_2.DSSOffset = 0.2R
+		Me.nudInddispln3_2.Location = New System.Drawing.Point(0, 79)
+		Me.nudInddispln3_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddispln3_2.Name = "nudInddispln3_2"
+		Me.nudInddispln3_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddispln3_2.TabIndex = 102
+		Me.nudInddispln3_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddispln3_2.Value = New Decimal(New Integer() {4, 0, 0, 65536})
+		'
+		'nudInddispln7_2
+		'
+		Me.nudInddispln7_2.DecimalPlaces = 2
+		Me.nudInddispln7_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
+		Me.nudInddispln7_2.DSSElementName = "inddispln7_1"
+		Me.nudInddispln7_2.DSSLocation = 7
+		Me.nudInddispln7_2.DSSOffset = 0.2R
+		Me.nudInddispln7_2.Location = New System.Drawing.Point(0, 171)
+		Me.nudInddispln7_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddispln7_2.Name = "nudInddispln7_2"
+		Me.nudInddispln7_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddispln7_2.TabIndex = 106
+		Me.nudInddispln7_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddispln7_2.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudInddispln2_2
+		'
+		Me.nudInddispln2_2.DecimalPlaces = 2
+		Me.nudInddispln2_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
+		Me.nudInddispln2_2.DSSElementName = "inddispln2_1"
+		Me.nudInddispln2_2.DSSLocation = 2
+		Me.nudInddispln2_2.DSSOffset = 0.2R
+		Me.nudInddispln2_2.Location = New System.Drawing.Point(0, 56)
+		Me.nudInddispln2_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddispln2_2.Name = "nudInddispln2_2"
+		Me.nudInddispln2_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddispln2_2.TabIndex = 101
+		Me.nudInddispln2_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddispln2_2.Value = New Decimal(New Integer() {4, 0, 0, 65536})
+		'
+		'nudInddispln12_2
+		'
+		Me.nudInddispln12_2.DecimalPlaces = 2
+		Me.nudInddispln12_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
+		Me.nudInddispln12_2.DSSElementName = "inddispln12_1"
+		Me.nudInddispln12_2.DSSLocation = 12
+		Me.nudInddispln12_2.DSSOffset = 0.2R
+		Me.nudInddispln12_2.Location = New System.Drawing.Point(0, 286)
+		Me.nudInddispln12_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddispln12_2.Name = "nudInddispln12_2"
+		Me.nudInddispln12_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddispln12_2.TabIndex = 111
+		Me.nudInddispln12_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddispln12_2.Value = New Decimal(New Integer() {3, 0, 0, 65536})
+		'
+		'nudInddispln10_2
+		'
+		Me.nudInddispln10_2.DecimalPlaces = 2
+		Me.nudInddispln10_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
+		Me.nudInddispln10_2.DSSElementName = "inddispln10_1"
+		Me.nudInddispln10_2.DSSLocation = 10
+		Me.nudInddispln10_2.DSSOffset = 0.2R
+		Me.nudInddispln10_2.Location = New System.Drawing.Point(0, 240)
+		Me.nudInddispln10_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddispln10_2.Name = "nudInddispln10_2"
+		Me.nudInddispln10_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddispln10_2.TabIndex = 109
+		Me.nudInddispln10_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddispln10_2.Value = New Decimal(New Integer() {1, 0, 0, 0})
+		'
+		'nudInddispln13_2
+		'
+		Me.nudInddispln13_2.DecimalPlaces = 2
+		Me.nudInddispln13_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
+		Me.nudInddispln13_2.DSSElementName = "inddispln13_1"
+		Me.nudInddispln13_2.DSSLocation = 13
+		Me.nudInddispln13_2.DSSOffset = 0.2R
+		Me.nudInddispln13_2.Location = New System.Drawing.Point(0, 309)
+		Me.nudInddispln13_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddispln13_2.Name = "nudInddispln13_2"
+		Me.nudInddispln13_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddispln13_2.TabIndex = 112
+		Me.nudInddispln13_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddispln13_2.Value = New Decimal(New Integer() {5, 0, 0, 65536})
+		'
+		'nudInddispln6_2
+		'
+		Me.nudInddispln6_2.DecimalPlaces = 2
+		Me.nudInddispln6_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
+		Me.nudInddispln6_2.DSSElementName = "inddispln6_1"
+		Me.nudInddispln6_2.DSSLocation = 6
+		Me.nudInddispln6_2.DSSOffset = 0.2R
+		Me.nudInddispln6_2.Location = New System.Drawing.Point(0, 148)
+		Me.nudInddispln6_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddispln6_2.Name = "nudInddispln6_2"
+		Me.nudInddispln6_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddispln6_2.TabIndex = 105
+		Me.nudInddispln6_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddispln6_2.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudInddispln8_2
+		'
+		Me.nudInddispln8_2.DecimalPlaces = 2
+		Me.nudInddispln8_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
+		Me.nudInddispln8_2.DSSElementName = "inddispln8_1"
+		Me.nudInddispln8_2.DSSLocation = 8
+		Me.nudInddispln8_2.DSSOffset = 0.2R
+		Me.nudInddispln8_2.Location = New System.Drawing.Point(0, 194)
+		Me.nudInddispln8_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddispln8_2.Name = "nudInddispln8_2"
+		Me.nudInddispln8_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddispln8_2.TabIndex = 107
+		Me.nudInddispln8_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddispln8_2.Value = New Decimal(New Integer() {6, 0, 0, 65536})
+		'
+		'nudInddispln1_2
+		'
+		Me.nudInddispln1_2.DecimalPlaces = 2
+		Me.nudInddispln1_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
+		Me.nudInddispln1_2.DSSElementName = "inddispln1_1"
+		Me.nudInddispln1_2.DSSLocation = 1
+		Me.nudInddispln1_2.DSSOffset = 0.2R
+		Me.nudInddispln1_2.Location = New System.Drawing.Point(0, 33)
+		Me.nudInddispln1_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddispln1_2.Name = "nudInddispln1_2"
+		Me.nudInddispln1_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddispln1_2.TabIndex = 100
+		Me.nudInddispln1_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddispln1_2.Value = New Decimal(New Integer() {4, 0, 0, 65536})
+		'
+		'nudInddispln4_2
+		'
+		Me.nudInddispln4_2.DecimalPlaces = 2
+		Me.nudInddispln4_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
+		Me.nudInddispln4_2.DSSElementName = "inddispln4_1"
+		Me.nudInddispln4_2.DSSLocation = 4
+		Me.nudInddispln4_2.DSSOffset = 0.2R
+		Me.nudInddispln4_2.Location = New System.Drawing.Point(0, 102)
+		Me.nudInddispln4_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddispln4_2.Name = "nudInddispln4_2"
+		Me.nudInddispln4_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddispln4_2.TabIndex = 103
+		Me.nudInddispln4_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddispln4_2.Value = New Decimal(New Integer() {4, 0, 0, 65536})
+		'
+		'nudInddispln9_2
+		'
+		Me.nudInddispln9_2.DecimalPlaces = 2
+		Me.nudInddispln9_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
+		Me.nudInddispln9_2.DSSElementName = "inddispln9_1"
+		Me.nudInddispln9_2.DSSLocation = 9
+		Me.nudInddispln9_2.DSSOffset = 0.2R
+		Me.nudInddispln9_2.Location = New System.Drawing.Point(0, 217)
+		Me.nudInddispln9_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddispln9_2.Name = "nudInddispln9_2"
+		Me.nudInddispln9_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddispln9_2.TabIndex = 108
+		Me.nudInddispln9_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddispln9_2.Value = New Decimal(New Integer() {1, 0, 0, 0})
+		'
+		'nudInddispln11_2
+		'
+		Me.nudInddispln11_2.DecimalPlaces = 2
+		Me.nudInddispln11_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
+		Me.nudInddispln11_2.DSSElementName = "inddispln11_1"
+		Me.nudInddispln11_2.DSSLocation = 11
+		Me.nudInddispln11_2.DSSOffset = 0.2R
+		Me.nudInddispln11_2.Location = New System.Drawing.Point(0, 263)
+		Me.nudInddispln11_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddispln11_2.Name = "nudInddispln11_2"
+		Me.nudInddispln11_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddispln11_2.TabIndex = 110
+		Me.nudInddispln11_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddispln11_2.Value = New Decimal(New Integer() {4, 0, 0, 65536})
+		'
+		'nudInddispln5_2
+		'
+		Me.nudInddispln5_2.DecimalPlaces = 2
+		Me.nudInddispln5_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
+		Me.nudInddispln5_2.DSSElementName = "inddispln5_1"
+		Me.nudInddispln5_2.DSSLocation = 5
+		Me.nudInddispln5_2.DSSOffset = 0.2R
+		Me.nudInddispln5_2.Location = New System.Drawing.Point(0, 125)
+		Me.nudInddispln5_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddispln5_2.Name = "nudInddispln5_2"
+		Me.nudInddispln5_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddispln5_2.TabIndex = 104
+		Me.nudInddispln5_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddispln5_2.Value = New Decimal(New Integer() {8, 0, 0, 65536})
+		'
+		'pnlInddiscur
+		'
+		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur14_2)
+		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur15_2)
+		Me.pnlInddiscur.Controls.Add(Me.Label88)
+		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur3_2)
+		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur7_2)
+		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur2_2)
+		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur6_2)
+		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur12_2)
+		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur1_2)
+		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur9_2)
+		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur13_2)
+		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur10_2)
+		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur11_2)
+		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur8_2)
+		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur5_2)
+		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur4_2)
+		Me.pnlInddiscur.Location = New System.Drawing.Point(99, 12)
+		Me.pnlInddiscur.Name = "pnlInddiscur"
+		Me.pnlInddiscur.Size = New System.Drawing.Size(90, 393)
+		Me.pnlInddiscur.TabIndex = 146
+		'
+		'nudInddiscur14_2
+		'
+		Me.nudInddiscur14_2.DecimalPlaces = 2
+		Me.nudInddiscur14_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
+		Me.nudInddiscur14_2.DSSElementName = "inddiscur14_1"
+		Me.nudInddiscur14_2.DSSLocation = 14
+		Me.nudInddiscur14_2.DSSOffset = -0.2R
+		Me.nudInddiscur14_2.Location = New System.Drawing.Point(0, 332)
+		Me.nudInddiscur14_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddiscur14_2.Name = "nudInddiscur14_2"
+		Me.nudInddiscur14_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddiscur14_2.TabIndex = 13
+		Me.nudInddiscur14_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddiscur14_2.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudInddiscur15_2
+		'
+		Me.nudInddiscur15_2.DecimalPlaces = 2
+		Me.nudInddiscur15_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
+		Me.nudInddiscur15_2.DSSElementName = "inddiscur15_1"
+		Me.nudInddiscur15_2.DSSLocation = 15
+		Me.nudInddiscur15_2.DSSOffset = -0.2R
+		Me.nudInddiscur15_2.Location = New System.Drawing.Point(0, 355)
+		Me.nudInddiscur15_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddiscur15_2.Name = "nudInddiscur15_2"
+		Me.nudInddiscur15_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddiscur15_2.TabIndex = 14
+		Me.nudInddiscur15_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddiscur15_2.Value = New Decimal(New Integer() {1054794521, 0, 0, 589824})
+		'
+		'Label88
+		'
+		Me.Label88.Location = New System.Drawing.Point(0, 10)
+		Me.Label88.Name = "Label88"
+		Me.Label88.Size = New System.Drawing.Size(90, 13)
+		Me.Label88.TabIndex = 145
+		Me.Label88.Text = "Current"
+		Me.Label88.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'nudInddiscur3_2
+		'
+		Me.nudInddiscur3_2.DecimalPlaces = 2
+		Me.nudInddiscur3_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
+		Me.nudInddiscur3_2.DSSElementName = "inddiscur3_1"
+		Me.nudInddiscur3_2.DSSLocation = 3
+		Me.nudInddiscur3_2.DSSOffset = -0.2R
+		Me.nudInddiscur3_2.Location = New System.Drawing.Point(0, 79)
+		Me.nudInddiscur3_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddiscur3_2.Name = "nudInddiscur3_2"
+		Me.nudInddiscur3_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddiscur3_2.TabIndex = 2
+		Me.nudInddiscur3_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddiscur3_2.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'nudInddiscur7_2
+		'
+		Me.nudInddiscur7_2.DecimalPlaces = 2
+		Me.nudInddiscur7_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
+		Me.nudInddiscur7_2.DSSElementName = "inddiscur7_1"
+		Me.nudInddiscur7_2.DSSLocation = 7
+		Me.nudInddiscur7_2.DSSOffset = -0.2R
+		Me.nudInddiscur7_2.Location = New System.Drawing.Point(0, 171)
+		Me.nudInddiscur7_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddiscur7_2.Name = "nudInddiscur7_2"
+		Me.nudInddiscur7_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddiscur7_2.TabIndex = 6
+		Me.nudInddiscur7_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddiscur7_2.Value = New Decimal(New Integer() {10, 0, 0, 0})
+		'
+		'nudInddiscur2_2
+		'
+		Me.nudInddiscur2_2.DecimalPlaces = 2
+		Me.nudInddiscur2_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
+		Me.nudInddiscur2_2.DSSElementName = "inddiscur2_1"
+		Me.nudInddiscur2_2.DSSLocation = 2
+		Me.nudInddiscur2_2.DSSOffset = -0.2R
+		Me.nudInddiscur2_2.Location = New System.Drawing.Point(0, 56)
+		Me.nudInddiscur2_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddiscur2_2.Name = "nudInddiscur2_2"
+		Me.nudInddiscur2_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddiscur2_2.TabIndex = 1
+		Me.nudInddiscur2_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddiscur2_2.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'nudInddiscur6_2
+		'
+		Me.nudInddiscur6_2.DecimalPlaces = 2
+		Me.nudInddiscur6_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
+		Me.nudInddiscur6_2.DSSElementName = "inddiscur6_1"
+		Me.nudInddiscur6_2.DSSLocation = 6
+		Me.nudInddiscur6_2.DSSOffset = -0.2R
+		Me.nudInddiscur6_2.Location = New System.Drawing.Point(0, 148)
+		Me.nudInddiscur6_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddiscur6_2.Name = "nudInddiscur6_2"
+		Me.nudInddiscur6_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddiscur6_2.TabIndex = 5
+		Me.nudInddiscur6_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddiscur6_2.Value = New Decimal(New Integer() {6, 0, 0, 0})
+		'
+		'nudInddiscur12_2
+		'
+		Me.nudInddiscur12_2.DecimalPlaces = 2
+		Me.nudInddiscur12_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
+		Me.nudInddiscur12_2.DSSElementName = "inddiscur12_1"
+		Me.nudInddiscur12_2.DSSLocation = 12
+		Me.nudInddiscur12_2.DSSOffset = -0.2R
+		Me.nudInddiscur12_2.Location = New System.Drawing.Point(0, 286)
+		Me.nudInddiscur12_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddiscur12_2.Name = "nudInddiscur12_2"
+		Me.nudInddiscur12_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddiscur12_2.TabIndex = 11
+		Me.nudInddiscur12_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddiscur12_2.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudInddiscur1_2
+		'
+		Me.nudInddiscur1_2.DecimalPlaces = 2
+		Me.nudInddiscur1_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
+		Me.nudInddiscur1_2.DSSElementName = "inddiscur1_1"
+		Me.nudInddiscur1_2.DSSLocation = 1
+		Me.nudInddiscur1_2.DSSOffset = -0.2R
+		Me.nudInddiscur1_2.Location = New System.Drawing.Point(0, 33)
+		Me.nudInddiscur1_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddiscur1_2.Name = "nudInddiscur1_2"
+		Me.nudInddiscur1_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddiscur1_2.TabIndex = 0
+		Me.nudInddiscur1_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddiscur1_2.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'nudInddiscur9_2
+		'
+		Me.nudInddiscur9_2.DecimalPlaces = 2
+		Me.nudInddiscur9_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
+		Me.nudInddiscur9_2.DSSElementName = "inddiscur9_1"
+		Me.nudInddiscur9_2.DSSLocation = 9
+		Me.nudInddiscur9_2.DSSOffset = -0.2R
+		Me.nudInddiscur9_2.Location = New System.Drawing.Point(0, 217)
+		Me.nudInddiscur9_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddiscur9_2.Name = "nudInddiscur9_2"
+		Me.nudInddiscur9_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddiscur9_2.TabIndex = 8
+		Me.nudInddiscur9_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddiscur9_2.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudInddiscur13_2
+		'
+		Me.nudInddiscur13_2.DecimalPlaces = 2
+		Me.nudInddiscur13_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
+		Me.nudInddiscur13_2.DSSElementName = "inddiscur13_1"
+		Me.nudInddiscur13_2.DSSLocation = 13
+		Me.nudInddiscur13_2.DSSOffset = -0.2R
+		Me.nudInddiscur13_2.Location = New System.Drawing.Point(0, 309)
+		Me.nudInddiscur13_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddiscur13_2.Name = "nudInddiscur13_2"
+		Me.nudInddiscur13_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddiscur13_2.TabIndex = 12
+		Me.nudInddiscur13_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddiscur13_2.Value = New Decimal(New Integer() {1054794521, 0, 0, 589824})
+		'
+		'nudInddiscur10_2
+		'
+		Me.nudInddiscur10_2.DecimalPlaces = 2
+		Me.nudInddiscur10_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
+		Me.nudInddiscur10_2.DSSElementName = "inddiscur10_1"
+		Me.nudInddiscur10_2.DSSLocation = 10
+		Me.nudInddiscur10_2.DSSOffset = -0.2R
+		Me.nudInddiscur10_2.Location = New System.Drawing.Point(0, 240)
+		Me.nudInddiscur10_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddiscur10_2.Name = "nudInddiscur10_2"
+		Me.nudInddiscur10_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddiscur10_2.TabIndex = 9
+		Me.nudInddiscur10_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddiscur10_2.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudInddiscur11_2
+		'
+		Me.nudInddiscur11_2.DecimalPlaces = 2
+		Me.nudInddiscur11_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
+		Me.nudInddiscur11_2.DSSElementName = "inddiscur11_1"
+		Me.nudInddiscur11_2.DSSLocation = 11
+		Me.nudInddiscur11_2.DSSOffset = -0.2R
+		Me.nudInddiscur11_2.Location = New System.Drawing.Point(0, 263)
+		Me.nudInddiscur11_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddiscur11_2.Name = "nudInddiscur11_2"
+		Me.nudInddiscur11_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddiscur11_2.TabIndex = 10
+		Me.nudInddiscur11_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddiscur11_2.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudInddiscur8_2
+		'
+		Me.nudInddiscur8_2.DecimalPlaces = 2
+		Me.nudInddiscur8_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
+		Me.nudInddiscur8_2.DSSElementName = "inddiscur8_1"
+		Me.nudInddiscur8_2.DSSLocation = 8
+		Me.nudInddiscur8_2.DSSOffset = -0.2R
+		Me.nudInddiscur8_2.Location = New System.Drawing.Point(0, 194)
+		Me.nudInddiscur8_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddiscur8_2.Name = "nudInddiscur8_2"
+		Me.nudInddiscur8_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddiscur8_2.TabIndex = 7
+		Me.nudInddiscur8_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddiscur8_2.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'nudInddiscur5_2
+		'
+		Me.nudInddiscur5_2.DecimalPlaces = 2
+		Me.nudInddiscur5_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
+		Me.nudInddiscur5_2.DSSElementName = "inddiscur5_1"
+		Me.nudInddiscur5_2.DSSLocation = 5
+		Me.nudInddiscur5_2.DSSOffset = -0.2R
+		Me.nudInddiscur5_2.Location = New System.Drawing.Point(0, 125)
+		Me.nudInddiscur5_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddiscur5_2.Name = "nudInddiscur5_2"
+		Me.nudInddiscur5_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddiscur5_2.TabIndex = 4
+		Me.nudInddiscur5_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddiscur5_2.Value = New Decimal(New Integer() {12, 0, 0, 0})
+		'
+		'nudInddiscur4_2
+		'
+		Me.nudInddiscur4_2.DecimalPlaces = 2
+		Me.nudInddiscur4_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
+		Me.nudInddiscur4_2.DSSElementName = "inddiscur4_1"
+		Me.nudInddiscur4_2.DSSLocation = 4
+		Me.nudInddiscur4_2.DSSOffset = -0.2R
+		Me.nudInddiscur4_2.Location = New System.Drawing.Point(0, 102)
+		Me.nudInddiscur4_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddiscur4_2.Name = "nudInddiscur4_2"
+		Me.nudInddiscur4_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddiscur4_2.TabIndex = 3
+		Me.nudInddiscur4_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddiscur4_2.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'Label38
+		'
+		Me.Label38.Location = New System.Drawing.Point(15, 322)
+		Me.Label38.Name = "Label38"
+		Me.Label38.Size = New System.Drawing.Size(76, 20)
+		Me.Label38.TabIndex = 131
+		Me.Label38.Text = "Tabouk"
+		'
+		'Label39
+		'
+		Me.Label39.Location = New System.Drawing.Point(15, 184)
+		Me.Label39.Name = "Label39"
+		Me.Label39.Size = New System.Drawing.Size(76, 20)
+		Me.Label39.TabIndex = 132
+		Me.Label39.Text = "Jizan"
+		'
+		'Label40
+		'
+		Me.Label40.Location = New System.Drawing.Point(15, 299)
+		Me.Label40.Name = "Label40"
+		Me.Label40.Size = New System.Drawing.Size(76, 20)
+		Me.Label40.TabIndex = 133
+		Me.Label40.Text = "Riyadh"
+		'
+		'Label41
+		'
+		Me.Label41.Location = New System.Drawing.Point(15, 161)
+		Me.Label41.Name = "Label41"
+		Me.Label41.Size = New System.Drawing.Size(76, 20)
+		Me.Label41.TabIndex = 134
+		Me.Label41.Text = "Hail"
+		'
+		'Label42
+		'
+		Me.Label42.Location = New System.Drawing.Point(15, 276)
+		Me.Label42.Name = "Label42"
+		Me.Label42.Size = New System.Drawing.Size(76, 20)
+		Me.Label42.TabIndex = 135
+		Me.Label42.Text = "North Border"
+		'
+		'Label43
+		'
+		Me.Label43.Location = New System.Drawing.Point(15, 253)
+		Me.Label43.Name = "Label43"
+		Me.Label43.Size = New System.Drawing.Size(76, 20)
+		Me.Label43.TabIndex = 143
+		Me.Label43.Text = "Najran"
+		'
+		'Label71
+		'
+		Me.Label71.Location = New System.Drawing.Point(15, 92)
+		Me.Label71.Name = "Label71"
+		Me.Label71.Size = New System.Drawing.Size(76, 20)
+		Me.Label71.TabIndex = 136
+		Me.Label71.Text = "Al - Jouf"
+		'
+		'Label72
+		'
+		Me.Label72.Location = New System.Drawing.Point(15, 230)
+		Me.Label72.Name = "Label72"
+		Me.Label72.Size = New System.Drawing.Size(76, 20)
+		Me.Label72.TabIndex = 137
+		Me.Label72.Text = "Mecca"
+		'
+		'Label73
+		'
+		Me.Label73.Location = New System.Drawing.Point(15, 138)
+		Me.Label73.Name = "Label73"
+		Me.Label73.Size = New System.Drawing.Size(76, 20)
+		Me.Label73.TabIndex = 138
+		Me.Label73.Text = "Eastern Area"
+		'
+		'Label74
+		'
+		Me.Label74.Location = New System.Drawing.Point(15, 69)
+		Me.Label74.Name = "Label74"
+		Me.Label74.Size = New System.Drawing.Size(76, 20)
+		Me.Label74.TabIndex = 139
+		Me.Label74.Text = "Al - Gassem"
+		'
+		'Label75
+		'
+		Me.Label75.Location = New System.Drawing.Point(15, 207)
+		Me.Label75.Name = "Label75"
+		Me.Label75.Size = New System.Drawing.Size(76, 20)
+		Me.Label75.TabIndex = 140
+		Me.Label75.Text = "Madina"
+		'
+		'Label76
+		'
+		Me.Label76.Location = New System.Drawing.Point(15, 115)
+		Me.Label76.Name = "Label76"
+		Me.Label76.Size = New System.Drawing.Size(76, 20)
+		Me.Label76.TabIndex = 141
+		Me.Label76.Text = "Aseer"
+		'
+		'Label77
+		'
+		Me.Label77.Location = New System.Drawing.Point(15, 46)
+		Me.Label77.Name = "Label77"
+		Me.Label77.Size = New System.Drawing.Size(76, 20)
+		Me.Label77.TabIndex = 142
+		Me.Label77.Text = "Al - Baha"
+		'
+		'grbWaterQuality
+		'
+		Me.grbWaterQuality.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+			Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+		Me.grbWaterQuality.Controls.Add(Me.pnlTSS)
+		Me.grbWaterQuality.Controls.Add(Me.pnlTDS)
+		Me.grbWaterQuality.Controls.Add(Me.pnlBOD)
+		Me.grbWaterQuality.Controls.Add(Me.Label3)
+		Me.grbWaterQuality.Controls.Add(Me.Label4)
+		Me.grbWaterQuality.Controls.Add(Me.Label5)
+		Me.grbWaterQuality.Controls.Add(Me.Label6)
+		Me.grbWaterQuality.Controls.Add(Me.Label7)
+		Me.grbWaterQuality.Controls.Add(Me.Label8)
+		Me.grbWaterQuality.Controls.Add(Me.Label9)
+		Me.grbWaterQuality.Controls.Add(Me.Label11)
+		Me.grbWaterQuality.Controls.Add(Me.Label14)
+		Me.grbWaterQuality.Controls.Add(Me.Label15)
+		Me.grbWaterQuality.Controls.Add(Me.Label16)
+		Me.grbWaterQuality.Controls.Add(Me.Label17)
+		Me.grbWaterQuality.Controls.Add(Me.Label18)
+		Me.grbWaterQuality.ForeColor = System.Drawing.Color.Black
+		Me.grbWaterQuality.Location = New System.Drawing.Point(0, 0)
+		Me.grbWaterQuality.Name = "grbWaterQuality"
+		Me.grbWaterQuality.Size = New System.Drawing.Size(413, 516)
+		Me.grbWaterQuality.TabIndex = 21
+		Me.grbWaterQuality.TabStop = False
+		Me.grbWaterQuality.Text = "Water quality indicator"
+		Me.grbWaterQuality.Visible = False
+		'
+		'pnlTSS
+		'
+		Me.pnlTSS.Controls.Add(Me.nudTSS14)
+		Me.pnlTSS.Controls.Add(Me.nudTSS15)
+		Me.pnlTSS.Controls.Add(Me.Label21)
+		Me.pnlTSS.Controls.Add(Me.nudTSS3)
+		Me.pnlTSS.Controls.Add(Me.nudTSS2)
+		Me.pnlTSS.Controls.Add(Me.nudTSS7)
+		Me.pnlTSS.Controls.Add(Me.nudTSS10)
+		Me.pnlTSS.Controls.Add(Me.nudTSS12)
+		Me.pnlTSS.Controls.Add(Me.nudTSS6)
+		Me.pnlTSS.Controls.Add(Me.nudTSS13)
+		Me.pnlTSS.Controls.Add(Me.nudTSS1)
+		Me.pnlTSS.Controls.Add(Me.nudTSS8)
+		Me.pnlTSS.Controls.Add(Me.nudTSS9)
+		Me.pnlTSS.Controls.Add(Me.nudTSS4)
+		Me.pnlTSS.Controls.Add(Me.nudTSS5)
+		Me.pnlTSS.Controls.Add(Me.nudTSS11)
+		Me.pnlTSS.Location = New System.Drawing.Point(306, 15)
+		Me.pnlTSS.Name = "pnlTSS"
+		Me.pnlTSS.Size = New System.Drawing.Size(90, 408)
+		Me.pnlTSS.TabIndex = 53
+		'
+		'nudTSS14
+		'
+		Me.nudTSS14.DecimalPlaces = 2
+		Me.nudTSS14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.nudTSS14.DSSElementName = "lmqi14_1"
+		Me.nudTSS14.DSSLocation = 14
+		Me.nudTSS14.DSSOffset = 0.4R
+		Me.nudTSS14.Location = New System.Drawing.Point(0, 332)
+		Me.nudTSS14.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTSS14.Name = "nudTSS14"
+		Me.nudTSS14.Size = New System.Drawing.Size(90, 20)
+		Me.nudTSS14.TabIndex = 43
+		Me.nudTSS14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTSS14.Value = New Decimal(New Integer() {3, 0, 0, 65536})
+		'
+		'nudTSS15
+		'
+		Me.nudTSS15.DecimalPlaces = 2
+		Me.nudTSS15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.nudTSS15.DSSElementName = "lmqi15_1"
+		Me.nudTSS15.DSSLocation = 15
+		Me.nudTSS15.DSSOffset = 0.4R
+		Me.nudTSS15.Location = New System.Drawing.Point(0, 355)
+		Me.nudTSS15.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTSS15.Name = "nudTSS15"
+		Me.nudTSS15.Size = New System.Drawing.Size(90, 20)
+		Me.nudTSS15.TabIndex = 44
+		Me.nudTSS15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTSS15.Value = New Decimal(New Integer() {5, 0, 0, 65536})
+		'
+		'Label21
+		'
+		Me.Label21.Location = New System.Drawing.Point(0, 10)
+		Me.Label21.Name = "Label21"
+		Me.Label21.Size = New System.Drawing.Size(90, 13)
+		Me.Label21.TabIndex = 49
+		Me.Label21.Text = "TSS"
+		Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'nudTSS3
+		'
+		Me.nudTSS3.DecimalPlaces = 2
+		Me.nudTSS3.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.nudTSS3.DSSElementName = "lmqi3_1"
+		Me.nudTSS3.DSSLocation = 3
+		Me.nudTSS3.DSSOffset = 0.4R
+		Me.nudTSS3.Location = New System.Drawing.Point(0, 79)
+		Me.nudTSS3.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTSS3.Name = "nudTSS3"
+		Me.nudTSS3.Size = New System.Drawing.Size(90, 20)
+		Me.nudTSS3.TabIndex = 32
+		Me.nudTSS3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTSS3.Value = New Decimal(New Integer() {4, 0, 0, 65536})
+		'
+		'nudTSS2
+		'
+		Me.nudTSS2.DecimalPlaces = 2
+		Me.nudTSS2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.nudTSS2.DSSElementName = "lmqi2_1"
+		Me.nudTSS2.DSSLocation = 2
+		Me.nudTSS2.DSSOffset = 0.4R
+		Me.nudTSS2.Location = New System.Drawing.Point(0, 56)
+		Me.nudTSS2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTSS2.Name = "nudTSS2"
+		Me.nudTSS2.Size = New System.Drawing.Size(90, 20)
+		Me.nudTSS2.TabIndex = 31
+		Me.nudTSS2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTSS2.Value = New Decimal(New Integer() {4, 0, 0, 65536})
+		'
+		'nudTSS7
+		'
+		Me.nudTSS7.DecimalPlaces = 2
+		Me.nudTSS7.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.nudTSS7.DSSElementName = "lmqi7_1"
+		Me.nudTSS7.DSSLocation = 7
+		Me.nudTSS7.DSSOffset = 0.4R
+		Me.nudTSS7.Location = New System.Drawing.Point(0, 171)
+		Me.nudTSS7.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTSS7.Name = "nudTSS7"
+		Me.nudTSS7.Size = New System.Drawing.Size(90, 20)
+		Me.nudTSS7.TabIndex = 36
+		Me.nudTSS7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTSS7.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudTSS10
+		'
+		Me.nudTSS10.DecimalPlaces = 2
+		Me.nudTSS10.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.nudTSS10.DSSElementName = "lmqi10_1"
+		Me.nudTSS10.DSSLocation = 10
+		Me.nudTSS10.DSSOffset = 0.4R
+		Me.nudTSS10.Location = New System.Drawing.Point(0, 240)
+		Me.nudTSS10.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTSS10.Name = "nudTSS10"
+		Me.nudTSS10.Size = New System.Drawing.Size(90, 20)
+		Me.nudTSS10.TabIndex = 39
+		Me.nudTSS10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTSS10.Value = New Decimal(New Integer() {1, 0, 0, 0})
+		'
+		'nudTSS12
+		'
+		Me.nudTSS12.DecimalPlaces = 2
+		Me.nudTSS12.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.nudTSS12.DSSElementName = "lmqi12_1"
+		Me.nudTSS12.DSSLocation = 12
+		Me.nudTSS12.DSSOffset = 0.4R
+		Me.nudTSS12.Location = New System.Drawing.Point(0, 286)
+		Me.nudTSS12.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTSS12.Name = "nudTSS12"
+		Me.nudTSS12.Size = New System.Drawing.Size(90, 20)
+		Me.nudTSS12.TabIndex = 41
+		Me.nudTSS12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTSS12.Value = New Decimal(New Integer() {3, 0, 0, 65536})
+		'
+		'nudTSS6
+		'
+		Me.nudTSS6.DecimalPlaces = 2
+		Me.nudTSS6.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.nudTSS6.DSSElementName = "lmqi6_1"
+		Me.nudTSS6.DSSLocation = 6
+		Me.nudTSS6.DSSOffset = 0.4R
+		Me.nudTSS6.Location = New System.Drawing.Point(0, 148)
+		Me.nudTSS6.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTSS6.Name = "nudTSS6"
+		Me.nudTSS6.Size = New System.Drawing.Size(90, 20)
+		Me.nudTSS6.TabIndex = 35
+		Me.nudTSS6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTSS6.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudTSS13
+		'
+		Me.nudTSS13.DecimalPlaces = 2
+		Me.nudTSS13.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.nudTSS13.DSSElementName = "lmqi13_1"
+		Me.nudTSS13.DSSLocation = 13
+		Me.nudTSS13.DSSOffset = 0.4R
+		Me.nudTSS13.Location = New System.Drawing.Point(0, 309)
+		Me.nudTSS13.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTSS13.Name = "nudTSS13"
+		Me.nudTSS13.Size = New System.Drawing.Size(90, 20)
+		Me.nudTSS13.TabIndex = 42
+		Me.nudTSS13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTSS13.Value = New Decimal(New Integer() {5, 0, 0, 65536})
+		'
+		'nudTSS1
+		'
+		Me.nudTSS1.DecimalPlaces = 2
+		Me.nudTSS1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.nudTSS1.DSSElementName = "lmqi1_1"
+		Me.nudTSS1.DSSLocation = 1
+		Me.nudTSS1.DSSOffset = 0.4R
+		Me.nudTSS1.Location = New System.Drawing.Point(0, 33)
+		Me.nudTSS1.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTSS1.Name = "nudTSS1"
+		Me.nudTSS1.Size = New System.Drawing.Size(90, 20)
+		Me.nudTSS1.TabIndex = 30
+		Me.nudTSS1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTSS1.Value = New Decimal(New Integer() {4, 0, 0, 65536})
+		'
+		'nudTSS8
+		'
+		Me.nudTSS8.DecimalPlaces = 2
+		Me.nudTSS8.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.nudTSS8.DSSElementName = "lmqi8_1"
+		Me.nudTSS8.DSSLocation = 8
+		Me.nudTSS8.DSSOffset = 0.4R
+		Me.nudTSS8.Location = New System.Drawing.Point(0, 194)
+		Me.nudTSS8.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTSS8.Name = "nudTSS8"
+		Me.nudTSS8.Size = New System.Drawing.Size(90, 20)
+		Me.nudTSS8.TabIndex = 37
+		Me.nudTSS8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTSS8.Value = New Decimal(New Integer() {6, 0, 0, 65536})
+		'
+		'nudTSS9
+		'
+		Me.nudTSS9.DecimalPlaces = 2
+		Me.nudTSS9.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.nudTSS9.DSSElementName = "lmqi9_1"
+		Me.nudTSS9.DSSLocation = 9
+		Me.nudTSS9.DSSOffset = 0.4R
+		Me.nudTSS9.Location = New System.Drawing.Point(0, 217)
+		Me.nudTSS9.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTSS9.Name = "nudTSS9"
+		Me.nudTSS9.Size = New System.Drawing.Size(90, 20)
+		Me.nudTSS9.TabIndex = 38
+		Me.nudTSS9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTSS9.Value = New Decimal(New Integer() {1, 0, 0, 0})
+		'
+		'nudTSS4
+		'
+		Me.nudTSS4.DecimalPlaces = 2
+		Me.nudTSS4.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.nudTSS4.DSSElementName = "lmqi4_1"
+		Me.nudTSS4.DSSLocation = 4
+		Me.nudTSS4.DSSOffset = 0.4R
+		Me.nudTSS4.Location = New System.Drawing.Point(0, 102)
+		Me.nudTSS4.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTSS4.Name = "nudTSS4"
+		Me.nudTSS4.Size = New System.Drawing.Size(90, 20)
+		Me.nudTSS4.TabIndex = 33
+		Me.nudTSS4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTSS4.Value = New Decimal(New Integer() {4, 0, 0, 65536})
+		'
+		'nudTSS5
+		'
+		Me.nudTSS5.DecimalPlaces = 2
+		Me.nudTSS5.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.nudTSS5.DSSElementName = "lmqi5_1"
+		Me.nudTSS5.DSSLocation = 5
+		Me.nudTSS5.DSSOffset = 0.4R
+		Me.nudTSS5.Location = New System.Drawing.Point(0, 125)
+		Me.nudTSS5.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTSS5.Name = "nudTSS5"
+		Me.nudTSS5.Size = New System.Drawing.Size(90, 20)
+		Me.nudTSS5.TabIndex = 34
+		Me.nudTSS5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTSS5.Value = New Decimal(New Integer() {8, 0, 0, 65536})
+		'
+		'nudTSS11
+		'
+		Me.nudTSS11.DecimalPlaces = 2
+		Me.nudTSS11.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.nudTSS11.DSSElementName = "lmqi11_1"
+		Me.nudTSS11.DSSLocation = 11
+		Me.nudTSS11.DSSOffset = 0.4R
+		Me.nudTSS11.Location = New System.Drawing.Point(0, 263)
+		Me.nudTSS11.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTSS11.Name = "nudTSS11"
+		Me.nudTSS11.Size = New System.Drawing.Size(90, 20)
+		Me.nudTSS11.TabIndex = 40
+		Me.nudTSS11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTSS11.Value = New Decimal(New Integer() {4, 0, 0, 65536})
+		'
+		'pnlTDS
+		'
+		Me.pnlTDS.Controls.Add(Me.nudTDS14)
+		Me.pnlTDS.Controls.Add(Me.nudTDS15)
+		Me.pnlTDS.Controls.Add(Me.Label19)
+		Me.pnlTDS.Controls.Add(Me.nudTDS3)
+		Me.pnlTDS.Controls.Add(Me.nudTDS2)
+		Me.pnlTDS.Controls.Add(Me.nudTDS7)
+		Me.pnlTDS.Controls.Add(Me.nudTDS10)
+		Me.pnlTDS.Controls.Add(Me.nudTDS6)
+		Me.pnlTDS.Controls.Add(Me.nudTDS12)
+		Me.pnlTDS.Controls.Add(Me.nudTDS1)
+		Me.pnlTDS.Controls.Add(Me.nudTDS9)
+		Me.pnlTDS.Controls.Add(Me.nudTDS13)
+		Me.pnlTDS.Controls.Add(Me.nudTDS5)
+		Me.pnlTDS.Controls.Add(Me.nudTDS11)
+		Me.pnlTDS.Controls.Add(Me.nudTDS8)
+		Me.pnlTDS.Controls.Add(Me.nudTDS4)
+		Me.pnlTDS.Location = New System.Drawing.Point(210, 15)
+		Me.pnlTDS.Name = "pnlTDS"
+		Me.pnlTDS.Size = New System.Drawing.Size(90, 408)
+		Me.pnlTDS.TabIndex = 52
+		'
+		'nudTDS14
+		'
+		Me.nudTDS14.DecimalPlaces = 2
+		Me.nudTDS14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.nudTDS14.DSSElementName = "lsqi14_1"
+		Me.nudTDS14.DSSLocation = 14
+		Me.nudTDS14.DSSOffset = 0R
+		Me.nudTDS14.Location = New System.Drawing.Point(0, 332)
+		Me.nudTDS14.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
+		Me.nudTDS14.Name = "nudTDS14"
+		Me.nudTDS14.Size = New System.Drawing.Size(90, 20)
+		Me.nudTDS14.TabIndex = 28
+		Me.nudTDS14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTDS14.Value = New Decimal(New Integer() {3, 0, 0, 65536})
+		'
+		'nudTDS15
+		'
+		Me.nudTDS15.DecimalPlaces = 2
+		Me.nudTDS15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.nudTDS15.DSSElementName = "lsqi15_1"
+		Me.nudTDS15.DSSLocation = 15
+		Me.nudTDS15.DSSOffset = 0R
+		Me.nudTDS15.Location = New System.Drawing.Point(0, 355)
+		Me.nudTDS15.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
+		Me.nudTDS15.Name = "nudTDS15"
+		Me.nudTDS15.Size = New System.Drawing.Size(90, 20)
+		Me.nudTDS15.TabIndex = 29
+		Me.nudTDS15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTDS15.Value = New Decimal(New Integer() {5, 0, 0, 65536})
+		'
+		'Label19
+		'
+		Me.Label19.Location = New System.Drawing.Point(0, 10)
+		Me.Label19.Name = "Label19"
+		Me.Label19.Size = New System.Drawing.Size(90, 13)
+		Me.Label19.TabIndex = 49
+		Me.Label19.Text = "TDS"
+		Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'nudTDS3
+		'
+		Me.nudTDS3.DecimalPlaces = 2
+		Me.nudTDS3.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.nudTDS3.DSSElementName = "lsqi3_1"
+		Me.nudTDS3.DSSLocation = 3
+		Me.nudTDS3.DSSOffset = 0R
+		Me.nudTDS3.Location = New System.Drawing.Point(0, 79)
+		Me.nudTDS3.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
+		Me.nudTDS3.Name = "nudTDS3"
+		Me.nudTDS3.Size = New System.Drawing.Size(90, 20)
+		Me.nudTDS3.TabIndex = 17
+		Me.nudTDS3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTDS3.Value = New Decimal(New Integer() {4, 0, 0, 65536})
+		'
+		'nudTDS2
+		'
+		Me.nudTDS2.DecimalPlaces = 2
+		Me.nudTDS2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.nudTDS2.DSSElementName = "lsqi2_1"
+		Me.nudTDS2.DSSLocation = 2
+		Me.nudTDS2.DSSOffset = 0R
+		Me.nudTDS2.Location = New System.Drawing.Point(0, 56)
+		Me.nudTDS2.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
+		Me.nudTDS2.Name = "nudTDS2"
+		Me.nudTDS2.Size = New System.Drawing.Size(90, 20)
+		Me.nudTDS2.TabIndex = 16
+		Me.nudTDS2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTDS2.Value = New Decimal(New Integer() {4, 0, 0, 65536})
+		'
+		'nudTDS7
+		'
+		Me.nudTDS7.DecimalPlaces = 2
+		Me.nudTDS7.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.nudTDS7.DSSElementName = "lsqi7_1"
+		Me.nudTDS7.DSSLocation = 7
+		Me.nudTDS7.DSSOffset = 0R
+		Me.nudTDS7.Location = New System.Drawing.Point(0, 171)
+		Me.nudTDS7.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
+		Me.nudTDS7.Name = "nudTDS7"
+		Me.nudTDS7.Size = New System.Drawing.Size(90, 20)
+		Me.nudTDS7.TabIndex = 21
+		Me.nudTDS7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTDS7.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudTDS10
+		'
+		Me.nudTDS10.DecimalPlaces = 2
+		Me.nudTDS10.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.nudTDS10.DSSElementName = "lsqi10_1"
+		Me.nudTDS10.DSSLocation = 10
+		Me.nudTDS10.DSSOffset = 0R
+		Me.nudTDS10.Location = New System.Drawing.Point(0, 240)
+		Me.nudTDS10.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
+		Me.nudTDS10.Name = "nudTDS10"
+		Me.nudTDS10.Size = New System.Drawing.Size(90, 20)
+		Me.nudTDS10.TabIndex = 24
+		Me.nudTDS10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTDS10.Value = New Decimal(New Integer() {1, 0, 0, 0})
+		'
+		'nudTDS6
+		'
+		Me.nudTDS6.DecimalPlaces = 2
+		Me.nudTDS6.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.nudTDS6.DSSElementName = "lsqi6_1"
+		Me.nudTDS6.DSSLocation = 6
+		Me.nudTDS6.DSSOffset = 0R
+		Me.nudTDS6.Location = New System.Drawing.Point(0, 148)
+		Me.nudTDS6.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
+		Me.nudTDS6.Name = "nudTDS6"
+		Me.nudTDS6.Size = New System.Drawing.Size(90, 20)
+		Me.nudTDS6.TabIndex = 20
+		Me.nudTDS6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTDS6.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudTDS12
+		'
+		Me.nudTDS12.DecimalPlaces = 2
+		Me.nudTDS12.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.nudTDS12.DSSElementName = "lsqi12_1"
+		Me.nudTDS12.DSSLocation = 12
+		Me.nudTDS12.DSSOffset = 0R
+		Me.nudTDS12.Location = New System.Drawing.Point(0, 286)
+		Me.nudTDS12.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
+		Me.nudTDS12.Name = "nudTDS12"
+		Me.nudTDS12.Size = New System.Drawing.Size(90, 20)
+		Me.nudTDS12.TabIndex = 26
+		Me.nudTDS12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTDS12.Value = New Decimal(New Integer() {3, 0, 0, 65536})
+		'
+		'nudTDS1
+		'
+		Me.nudTDS1.DecimalPlaces = 2
+		Me.nudTDS1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.nudTDS1.DSSElementName = "lsqi1_1"
+		Me.nudTDS1.DSSLocation = 1
+		Me.nudTDS1.DSSOffset = 0R
+		Me.nudTDS1.Location = New System.Drawing.Point(0, 33)
+		Me.nudTDS1.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
+		Me.nudTDS1.Name = "nudTDS1"
+		Me.nudTDS1.Size = New System.Drawing.Size(90, 20)
+		Me.nudTDS1.TabIndex = 15
+		Me.nudTDS1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTDS1.Value = New Decimal(New Integer() {4, 0, 0, 65536})
+		'
+		'nudTDS9
+		'
+		Me.nudTDS9.DecimalPlaces = 2
+		Me.nudTDS9.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.nudTDS9.DSSElementName = "lsqi9_1"
+		Me.nudTDS9.DSSLocation = 9
+		Me.nudTDS9.DSSOffset = 0R
+		Me.nudTDS9.Location = New System.Drawing.Point(0, 217)
+		Me.nudTDS9.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
+		Me.nudTDS9.Name = "nudTDS9"
+		Me.nudTDS9.Size = New System.Drawing.Size(90, 20)
+		Me.nudTDS9.TabIndex = 23
+		Me.nudTDS9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTDS9.Value = New Decimal(New Integer() {1, 0, 0, 0})
+		'
+		'nudTDS13
+		'
+		Me.nudTDS13.DecimalPlaces = 2
+		Me.nudTDS13.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.nudTDS13.DSSElementName = "lsqi13_1"
+		Me.nudTDS13.DSSLocation = 13
+		Me.nudTDS13.DSSOffset = 0R
+		Me.nudTDS13.Location = New System.Drawing.Point(0, 309)
+		Me.nudTDS13.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
+		Me.nudTDS13.Name = "nudTDS13"
+		Me.nudTDS13.Size = New System.Drawing.Size(90, 20)
+		Me.nudTDS13.TabIndex = 27
+		Me.nudTDS13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTDS13.Value = New Decimal(New Integer() {5, 0, 0, 65536})
+		'
+		'nudTDS5
+		'
+		Me.nudTDS5.DecimalPlaces = 2
+		Me.nudTDS5.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.nudTDS5.DSSElementName = "lsqi5_1"
+		Me.nudTDS5.DSSLocation = 5
+		Me.nudTDS5.DSSOffset = 0R
+		Me.nudTDS5.Location = New System.Drawing.Point(0, 125)
+		Me.nudTDS5.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
+		Me.nudTDS5.Name = "nudTDS5"
+		Me.nudTDS5.Size = New System.Drawing.Size(90, 20)
+		Me.nudTDS5.TabIndex = 19
+		Me.nudTDS5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTDS5.Value = New Decimal(New Integer() {8, 0, 0, 65536})
+		'
+		'nudTDS11
+		'
+		Me.nudTDS11.DecimalPlaces = 2
+		Me.nudTDS11.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.nudTDS11.DSSElementName = "lsqi11_1"
+		Me.nudTDS11.DSSLocation = 11
+		Me.nudTDS11.DSSOffset = 0R
+		Me.nudTDS11.Location = New System.Drawing.Point(0, 263)
+		Me.nudTDS11.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
+		Me.nudTDS11.Name = "nudTDS11"
+		Me.nudTDS11.Size = New System.Drawing.Size(90, 20)
+		Me.nudTDS11.TabIndex = 25
+		Me.nudTDS11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTDS11.Value = New Decimal(New Integer() {4, 0, 0, 65536})
+		'
+		'nudTDS8
+		'
+		Me.nudTDS8.DecimalPlaces = 2
+		Me.nudTDS8.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.nudTDS8.DSSElementName = "lsqi8_1"
+		Me.nudTDS8.DSSLocation = 8
+		Me.nudTDS8.DSSOffset = 0R
+		Me.nudTDS8.Location = New System.Drawing.Point(0, 194)
+		Me.nudTDS8.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
+		Me.nudTDS8.Name = "nudTDS8"
+		Me.nudTDS8.Size = New System.Drawing.Size(90, 20)
+		Me.nudTDS8.TabIndex = 22
+		Me.nudTDS8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTDS8.Value = New Decimal(New Integer() {6, 0, 0, 65536})
+		'
+		'nudTDS4
+		'
+		Me.nudTDS4.DecimalPlaces = 2
+		Me.nudTDS4.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.nudTDS4.DSSElementName = "lsqi4_1"
+		Me.nudTDS4.DSSLocation = 4
+		Me.nudTDS4.DSSOffset = 0R
+		Me.nudTDS4.Location = New System.Drawing.Point(0, 102)
+		Me.nudTDS4.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
+		Me.nudTDS4.Name = "nudTDS4"
+		Me.nudTDS4.Size = New System.Drawing.Size(90, 20)
+		Me.nudTDS4.TabIndex = 18
+		Me.nudTDS4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTDS4.Value = New Decimal(New Integer() {4, 0, 0, 65536})
+		'
+		'pnlBOD
+		'
+		Me.pnlBOD.Controls.Add(Me.nudBOD14)
+		Me.pnlBOD.Controls.Add(Me.nudBOD15)
+		Me.pnlBOD.Controls.Add(Me.Label20)
+		Me.pnlBOD.Controls.Add(Me.nudBOD3)
+		Me.pnlBOD.Controls.Add(Me.nudBOD2)
+		Me.pnlBOD.Controls.Add(Me.nudBOD7)
+		Me.pnlBOD.Controls.Add(Me.nudBOD6)
+		Me.pnlBOD.Controls.Add(Me.nudBOD1)
+		Me.pnlBOD.Controls.Add(Me.nudBOD9)
+		Me.pnlBOD.Controls.Add(Me.nudBOD12)
+		Me.pnlBOD.Controls.Add(Me.nudBOD10)
+		Me.pnlBOD.Controls.Add(Me.nudBOD11)
+		Me.pnlBOD.Controls.Add(Me.nudBOD5)
+		Me.pnlBOD.Controls.Add(Me.nudBOD13)
+		Me.pnlBOD.Controls.Add(Me.nudBOD4)
+		Me.pnlBOD.Controls.Add(Me.nudBOD8)
+		Me.pnlBOD.Location = New System.Drawing.Point(113, 15)
+		Me.pnlBOD.Name = "pnlBOD"
+		Me.pnlBOD.Size = New System.Drawing.Size(90, 408)
+		Me.pnlBOD.TabIndex = 51
+		'
+		'nudBOD14
+		'
+		Me.nudBOD14.DecimalPlaces = 2
+		Me.nudBOD14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.nudBOD14.DSSElementName = "lbqi14_1"
+		Me.nudBOD14.DSSLocation = 14
+		Me.nudBOD14.DSSOffset = -0.4R
+		Me.nudBOD14.Location = New System.Drawing.Point(0, 332)
+		Me.nudBOD14.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudBOD14.Name = "nudBOD14"
+		Me.nudBOD14.Size = New System.Drawing.Size(90, 20)
+		Me.nudBOD14.TabIndex = 13
+		Me.nudBOD14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudBOD14.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudBOD15
+		'
+		Me.nudBOD15.DecimalPlaces = 2
+		Me.nudBOD15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.nudBOD15.DSSElementName = "lbqi15_1"
+		Me.nudBOD15.DSSLocation = 15
+		Me.nudBOD15.DSSOffset = -0.4R
+		Me.nudBOD15.Location = New System.Drawing.Point(0, 355)
+		Me.nudBOD15.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudBOD15.Name = "nudBOD15"
+		Me.nudBOD15.Size = New System.Drawing.Size(90, 20)
+		Me.nudBOD15.TabIndex = 14
+		Me.nudBOD15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudBOD15.Value = New Decimal(New Integer() {1054794521, 0, 0, 589824})
+		'
+		'Label20
+		'
+		Me.Label20.Location = New System.Drawing.Point(0, 10)
+		Me.Label20.Name = "Label20"
+		Me.Label20.Size = New System.Drawing.Size(90, 13)
+		Me.Label20.TabIndex = 50
+		Me.Label20.Text = "BOD"
+		Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'nudBOD3
+		'
+		Me.nudBOD3.DecimalPlaces = 2
+		Me.nudBOD3.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.nudBOD3.DSSElementName = "lbqi3_1"
+		Me.nudBOD3.DSSLocation = 3
+		Me.nudBOD3.DSSOffset = -0.4R
+		Me.nudBOD3.Location = New System.Drawing.Point(0, 79)
+		Me.nudBOD3.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudBOD3.Name = "nudBOD3"
+		Me.nudBOD3.Size = New System.Drawing.Size(90, 20)
+		Me.nudBOD3.TabIndex = 2
+		Me.nudBOD3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudBOD3.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'nudBOD2
+		'
+		Me.nudBOD2.DecimalPlaces = 2
+		Me.nudBOD2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.nudBOD2.DSSElementName = "lbqi2_1"
+		Me.nudBOD2.DSSLocation = 2
+		Me.nudBOD2.DSSOffset = -0.4R
+		Me.nudBOD2.Location = New System.Drawing.Point(0, 56)
+		Me.nudBOD2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudBOD2.Name = "nudBOD2"
+		Me.nudBOD2.Size = New System.Drawing.Size(90, 20)
+		Me.nudBOD2.TabIndex = 1
+		Me.nudBOD2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudBOD2.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'nudBOD7
+		'
+		Me.nudBOD7.DecimalPlaces = 2
+		Me.nudBOD7.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.nudBOD7.DSSElementName = "lbqi7_1"
+		Me.nudBOD7.DSSLocation = 7
+		Me.nudBOD7.DSSOffset = -0.4R
+		Me.nudBOD7.Location = New System.Drawing.Point(0, 171)
+		Me.nudBOD7.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudBOD7.Name = "nudBOD7"
+		Me.nudBOD7.Size = New System.Drawing.Size(90, 20)
+		Me.nudBOD7.TabIndex = 6
+		Me.nudBOD7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudBOD7.Value = New Decimal(New Integer() {10, 0, 0, 0})
+		'
+		'nudBOD6
+		'
+		Me.nudBOD6.DecimalPlaces = 2
+		Me.nudBOD6.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.nudBOD6.DSSElementName = "lbqi6_1"
+		Me.nudBOD6.DSSLocation = 6
+		Me.nudBOD6.DSSOffset = -0.4R
+		Me.nudBOD6.Location = New System.Drawing.Point(0, 148)
+		Me.nudBOD6.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudBOD6.Name = "nudBOD6"
+		Me.nudBOD6.Size = New System.Drawing.Size(90, 20)
+		Me.nudBOD6.TabIndex = 5
+		Me.nudBOD6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudBOD6.Value = New Decimal(New Integer() {6, 0, 0, 0})
+		'
+		'nudBOD1
+		'
+		Me.nudBOD1.DecimalPlaces = 2
+		Me.nudBOD1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.nudBOD1.DSSElementName = "lbqi1_1"
+		Me.nudBOD1.DSSLocation = 1
+		Me.nudBOD1.DSSOffset = -0.4R
+		Me.nudBOD1.Location = New System.Drawing.Point(0, 33)
+		Me.nudBOD1.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudBOD1.Name = "nudBOD1"
+		Me.nudBOD1.Size = New System.Drawing.Size(90, 20)
+		Me.nudBOD1.TabIndex = 0
+		Me.nudBOD1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudBOD1.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'nudBOD9
+		'
+		Me.nudBOD9.DecimalPlaces = 2
+		Me.nudBOD9.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.nudBOD9.DSSElementName = "lbqi9_1"
+		Me.nudBOD9.DSSLocation = 9
+		Me.nudBOD9.DSSOffset = -0.4R
+		Me.nudBOD9.Location = New System.Drawing.Point(0, 217)
+		Me.nudBOD9.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudBOD9.Name = "nudBOD9"
+		Me.nudBOD9.Size = New System.Drawing.Size(90, 20)
+		Me.nudBOD9.TabIndex = 8
+		Me.nudBOD9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudBOD9.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudBOD12
+		'
+		Me.nudBOD12.DecimalPlaces = 2
+		Me.nudBOD12.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.nudBOD12.DSSElementName = "lbqi12_1"
+		Me.nudBOD12.DSSLocation = 12
+		Me.nudBOD12.DSSOffset = -0.4R
+		Me.nudBOD12.Location = New System.Drawing.Point(0, 286)
+		Me.nudBOD12.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudBOD12.Name = "nudBOD12"
+		Me.nudBOD12.Size = New System.Drawing.Size(90, 20)
+		Me.nudBOD12.TabIndex = 11
+		Me.nudBOD12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudBOD12.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudBOD10
+		'
+		Me.nudBOD10.DecimalPlaces = 2
+		Me.nudBOD10.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.nudBOD10.DSSElementName = "lbqi10_1"
+		Me.nudBOD10.DSSLocation = 10
+		Me.nudBOD10.DSSOffset = -0.4R
+		Me.nudBOD10.Location = New System.Drawing.Point(0, 240)
+		Me.nudBOD10.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudBOD10.Name = "nudBOD10"
+		Me.nudBOD10.Size = New System.Drawing.Size(90, 20)
+		Me.nudBOD10.TabIndex = 9
+		Me.nudBOD10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudBOD10.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudBOD11
+		'
+		Me.nudBOD11.DecimalPlaces = 2
+		Me.nudBOD11.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.nudBOD11.DSSElementName = "lbqi11_1"
+		Me.nudBOD11.DSSLocation = 11
+		Me.nudBOD11.DSSOffset = -0.4R
+		Me.nudBOD11.Location = New System.Drawing.Point(0, 263)
+		Me.nudBOD11.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudBOD11.Name = "nudBOD11"
+		Me.nudBOD11.Size = New System.Drawing.Size(90, 20)
+		Me.nudBOD11.TabIndex = 10
+		Me.nudBOD11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudBOD11.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudBOD5
+		'
+		Me.nudBOD5.DecimalPlaces = 2
+		Me.nudBOD5.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.nudBOD5.DSSElementName = "lbqi5_1"
+		Me.nudBOD5.DSSLocation = 5
+		Me.nudBOD5.DSSOffset = -0.4R
+		Me.nudBOD5.Location = New System.Drawing.Point(0, 125)
+		Me.nudBOD5.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudBOD5.Name = "nudBOD5"
+		Me.nudBOD5.Size = New System.Drawing.Size(90, 20)
+		Me.nudBOD5.TabIndex = 4
+		Me.nudBOD5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudBOD5.Value = New Decimal(New Integer() {12, 0, 0, 0})
+		'
+		'nudBOD13
+		'
+		Me.nudBOD13.DecimalPlaces = 2
+		Me.nudBOD13.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.nudBOD13.DSSElementName = "lbqi13_1"
+		Me.nudBOD13.DSSLocation = 13
+		Me.nudBOD13.DSSOffset = -0.4R
+		Me.nudBOD13.Location = New System.Drawing.Point(0, 309)
+		Me.nudBOD13.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudBOD13.Name = "nudBOD13"
+		Me.nudBOD13.Size = New System.Drawing.Size(90, 20)
+		Me.nudBOD13.TabIndex = 12
+		Me.nudBOD13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudBOD13.Value = New Decimal(New Integer() {1054794521, 0, 0, 589824})
+		'
+		'nudBOD4
+		'
+		Me.nudBOD4.DecimalPlaces = 2
+		Me.nudBOD4.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.nudBOD4.DSSElementName = "lbqi4_1"
+		Me.nudBOD4.DSSLocation = 4
+		Me.nudBOD4.DSSOffset = -0.4R
+		Me.nudBOD4.Location = New System.Drawing.Point(0, 102)
+		Me.nudBOD4.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudBOD4.Name = "nudBOD4"
+		Me.nudBOD4.Size = New System.Drawing.Size(90, 20)
+		Me.nudBOD4.TabIndex = 3
+		Me.nudBOD4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudBOD4.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'nudBOD8
+		'
+		Me.nudBOD8.DecimalPlaces = 2
+		Me.nudBOD8.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.nudBOD8.DSSElementName = "lbqi8_1"
+		Me.nudBOD8.DSSLocation = 8
+		Me.nudBOD8.DSSOffset = -0.4R
+		Me.nudBOD8.Location = New System.Drawing.Point(0, 194)
+		Me.nudBOD8.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudBOD8.Name = "nudBOD8"
+		Me.nudBOD8.Size = New System.Drawing.Size(90, 20)
+		Me.nudBOD8.TabIndex = 7
+		Me.nudBOD8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudBOD8.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'Label3
+		'
+		Me.Label3.Location = New System.Drawing.Point(17, 325)
+		Me.Label3.Name = "Label3"
+		Me.Label3.Size = New System.Drawing.Size(91, 20)
+		Me.Label3.TabIndex = 36
+		Me.Label3.Text = "Tabouk"
+		'
+		'Label4
+		'
+		Me.Label4.Location = New System.Drawing.Point(17, 187)
+		Me.Label4.Name = "Label4"
+		Me.Label4.Size = New System.Drawing.Size(91, 20)
+		Me.Label4.TabIndex = 37
+		Me.Label4.Text = "Jizan"
+		'
+		'Label5
+		'
+		Me.Label5.Location = New System.Drawing.Point(17, 302)
+		Me.Label5.Name = "Label5"
+		Me.Label5.Size = New System.Drawing.Size(91, 20)
+		Me.Label5.TabIndex = 38
+		Me.Label5.Text = "Riyadh"
+		'
+		'Label6
+		'
+		Me.Label6.Location = New System.Drawing.Point(17, 164)
+		Me.Label6.Name = "Label6"
+		Me.Label6.Size = New System.Drawing.Size(91, 20)
+		Me.Label6.TabIndex = 39
+		Me.Label6.Text = "Hail"
+		'
+		'Label7
+		'
+		Me.Label7.Location = New System.Drawing.Point(17, 279)
+		Me.Label7.Name = "Label7"
+		Me.Label7.Size = New System.Drawing.Size(91, 20)
+		Me.Label7.TabIndex = 40
+		Me.Label7.Text = "North Border"
+		'
+		'Label8
+		'
+		Me.Label8.Location = New System.Drawing.Point(17, 256)
+		Me.Label8.Name = "Label8"
+		Me.Label8.Size = New System.Drawing.Size(91, 20)
+		Me.Label8.TabIndex = 48
+		Me.Label8.Text = "Najran"
+		'
+		'Label9
+		'
+		Me.Label9.Location = New System.Drawing.Point(17, 95)
+		Me.Label9.Name = "Label9"
+		Me.Label9.Size = New System.Drawing.Size(91, 20)
+		Me.Label9.TabIndex = 41
+		Me.Label9.Text = "Al - Jouf"
+		'
+		'Label11
+		'
+		Me.Label11.Location = New System.Drawing.Point(17, 233)
+		Me.Label11.Name = "Label11"
+		Me.Label11.Size = New System.Drawing.Size(91, 20)
+		Me.Label11.TabIndex = 42
+		Me.Label11.Text = "Mecca"
+		'
+		'Label14
+		'
+		Me.Label14.Location = New System.Drawing.Point(17, 141)
+		Me.Label14.Name = "Label14"
+		Me.Label14.Size = New System.Drawing.Size(91, 20)
+		Me.Label14.TabIndex = 43
+		Me.Label14.Text = "Eastern Area"
+		'
+		'Label15
+		'
+		Me.Label15.Location = New System.Drawing.Point(17, 72)
+		Me.Label15.Name = "Label15"
+		Me.Label15.Size = New System.Drawing.Size(91, 20)
+		Me.Label15.TabIndex = 44
+		Me.Label15.Text = "Al - Gassem"
+		'
+		'Label16
+		'
+		Me.Label16.Location = New System.Drawing.Point(17, 210)
+		Me.Label16.Name = "Label16"
+		Me.Label16.Size = New System.Drawing.Size(91, 20)
+		Me.Label16.TabIndex = 45
+		Me.Label16.Text = "Madina"
+		'
+		'Label17
+		'
+		Me.Label17.Location = New System.Drawing.Point(17, 118)
+		Me.Label17.Name = "Label17"
+		Me.Label17.Size = New System.Drawing.Size(91, 20)
+		Me.Label17.TabIndex = 46
+		Me.Label17.Text = "Aseer"
+		'
+		'Label18
+		'
+		Me.Label18.Location = New System.Drawing.Point(17, 49)
+		Me.Label18.Name = "Label18"
+		Me.Label18.Size = New System.Drawing.Size(91, 20)
+		Me.Label18.TabIndex = 47
+		Me.Label18.Text = "Al - Baha"
+		'
+		'grbMisc
+		'
+		Me.grbMisc.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+			Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+		Me.grbMisc.Controls.Add(Me.DssPanel1)
+		Me.grbMisc.Controls.Add(Me.Label25)
+		Me.grbMisc.Controls.Add(Me.Label119)
+		Me.grbMisc.Controls.Add(Me.Label34)
+		Me.grbMisc.Controls.Add(Me.Label27)
+		Me.grbMisc.Controls.Add(Me.Label23)
+		Me.grbMisc.Controls.Add(Me.Label118)
+		Me.grbMisc.Controls.Add(Me.Label78)
+		Me.grbMisc.Controls.Add(Me.Label117)
+		Me.grbMisc.Controls.Add(Me.Label91)
+		Me.grbMisc.ForeColor = System.Drawing.Color.Black
+		Me.grbMisc.Location = New System.Drawing.Point(0, 0)
+		Me.grbMisc.Name = "grbMisc"
+		Me.grbMisc.Size = New System.Drawing.Size(759, 516)
+		Me.grbMisc.TabIndex = 13
+		Me.grbMisc.TabStop = False
+		Me.grbMisc.Text = "Costs, efficiencies, standards, preferences and constraints"
+		Me.grbMisc.Visible = False
+		'
+		'DssPanel1
+		'
+		Me.DssPanel1.Controls.Add(Me.Label10)
+		Me.DssPanel1.Controls.Add(Me.Label13)
+		Me.DssPanel1.Controls.Add(Me.lblBOD)
+		Me.DssPanel1.Controls.Add(Me.Label92)
+		Me.DssPanel1.Controls.Add(Me.Label28)
+		Me.DssPanel1.Controls.Add(Me.Label30)
+		Me.DssPanel1.Controls.Add(Me.Label64)
+		Me.DssPanel1.Controls.Add(Me.Label70)
+		Me.DssPanel1.Controls.Add(Me.Label116)
+		Me.DssPanel1.Controls.Add(Me.Label12)
+		Me.DssPanel1.Controls.Add(Me.Label26)
+		Me.DssPanel1.Controls.Add(Me.nudTpsx)
+		Me.DssPanel1.Controls.Add(Me.Label68)
+		Me.DssPanel1.Controls.Add(Me.nudTpmz)
+		Me.DssPanel1.Controls.Add(Me.Label24)
+		Me.DssPanel1.Controls.Add(Me.nudAgrUFRO)
+		Me.DssPanel1.Controls.Add(Me.Label29)
+		Me.DssPanel1.Controls.Add(Me.nudEnvw)
+		Me.DssPanel1.Controls.Add(Me.lblTDS)
+		Me.DssPanel1.Controls.Add(Me.nudgwsp)
+		Me.DssPanel1.Controls.Add(Me.nudTotpla)
+		Me.DssPanel1.Controls.Add(Me.nudIndUFRO)
+		Me.DssPanel1.Controls.Add(Me.nudSocw)
+		Me.DssPanel1.Controls.Add(Me.nudTpbx)
+		Me.DssPanel1.Controls.Add(Me.nudEcow)
+		Me.DssPanel1.Controls.Add(Me.nudsmqi)
+		Me.DssPanel1.Controls.Add(Me.nudLanUFRO)
+		Me.DssPanel1.Controls.Add(Me.nudsbqi)
+		Me.DssPanel1.Controls.Add(Me.nudLanUF)
+		Me.DssPanel1.Controls.Add(Me.nudssqi)
+		Me.DssPanel1.Controls.Add(Me.nudAgrUF)
+		Me.DssPanel1.Controls.Add(Me.nudIndUF)
+		Me.DssPanel1.Location = New System.Drawing.Point(178, 16)
+		Me.DssPanel1.Name = "DssPanel1"
+		Me.DssPanel1.Size = New System.Drawing.Size(575, 367)
+		Me.DssPanel1.TabIndex = 193
+		'
+		'Label10
+		'
+		Me.Label10.Location = New System.Drawing.Point(2, 9)
+		Me.Label10.Name = "Label10"
+		Me.Label10.Size = New System.Drawing.Size(90, 13)
+		Me.Label10.TabIndex = 179
+		Me.Label10.Text = "Cost UF"
+		Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'Label13
+		'
+		Me.Label13.Location = New System.Drawing.Point(487, 9)
+		Me.Label13.Name = "Label13"
+		Me.Label13.Size = New System.Drawing.Size(90, 13)
+		Me.Label13.TabIndex = 192
+		Me.Label13.Text = "N"
+		Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'lblBOD
+		'
+		Me.lblBOD.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblBOD.DSSElementName = Nothing
+		Me.lblBOD.DSSLocation = 0
+		Me.lblBOD.DSSOffset = 0R
+		Me.lblBOD.Location = New System.Drawing.Point(195, 9)
+		Me.lblBOD.Name = "lblBOD"
+		Me.lblBOD.Size = New System.Drawing.Size(90, 13)
+		Me.lblBOD.TabIndex = 179
+		Me.lblBOD.Text = "BOD"
+		Me.lblBOD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'Label92
+		'
+		Me.Label92.Location = New System.Drawing.Point(389, 26)
+		Me.Label92.Name = "Label92"
+		Me.Label92.Size = New System.Drawing.Size(90, 13)
+		Me.Label92.TabIndex = 191
+		Me.Label92.Text = "Efficiency (%)"
+		Me.Label92.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'Label28
+		'
+		Me.Label28.Location = New System.Drawing.Point(195, 138)
+		Me.Label28.Name = "Label28"
+		Me.Label28.Size = New System.Drawing.Size(90, 13)
+		Me.Label28.TabIndex = 179
+		Me.Label28.Text = "Env"
+		Me.Label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'Label30
+		'
+		Me.Label30.Location = New System.Drawing.Point(389, 138)
+		Me.Label30.Name = "Label30"
+		Me.Label30.Size = New System.Drawing.Size(90, 13)
+		Me.Label30.TabIndex = 191
+		Me.Label30.Text = "Soc"
+		Me.Label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'Label64
+		'
+		Me.Label64.Location = New System.Drawing.Point(195, 26)
+		Me.Label64.Name = "Label64"
+		Me.Label64.Size = New System.Drawing.Size(90, 13)
+		Me.Label64.TabIndex = 179
+		Me.Label64.Text = "Efficiency (%)"
+		Me.Label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'Label70
+		'
+		Me.Label70.Location = New System.Drawing.Point(389, 9)
+		Me.Label70.Name = "Label70"
+		Me.Label70.Size = New System.Drawing.Size(90, 13)
+		Me.Label70.TabIndex = 191
+		Me.Label70.Text = "TSS"
+		Me.Label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'Label116
+		'
+		Me.Label116.Location = New System.Drawing.Point(2, 260)
+		Me.Label116.Name = "Label116"
+		Me.Label116.Size = New System.Drawing.Size(90, 33)
+		Me.Label116.TabIndex = 179
+		Me.Label116.Text = "Standard" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(mg/l)"
+		Me.Label116.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'Label12
+		'
+		Me.Label12.Location = New System.Drawing.Point(2, 26)
+		Me.Label12.Name = "Label12"
+		Me.Label12.Size = New System.Drawing.Size(90, 13)
+		Me.Label12.TabIndex = 179
+		Me.Label12.Text = "(RSA/CM)"
+		Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'Label26
+		'
+		Me.Label26.Location = New System.Drawing.Point(98, 26)
+		Me.Label26.Name = "Label26"
+		Me.Label26.Size = New System.Drawing.Size(90, 13)
+		Me.Label26.TabIndex = 191
+		Me.Label26.Text = "(RSA/CM)"
+		Me.Label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'nudTpsx
+		'
+		Me.nudTpsx.DecimalPlaces = 2
+		Me.nudTpsx.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
+		Me.nudTpsx.DSSElementName = "inddiscur2_1"
+		Me.nudTpsx.DSSLocation = 0
+		Me.nudTpsx.DSSOffset = -0.2R
+		Me.nudTpsx.Location = New System.Drawing.Point(291, 43)
+		Me.nudTpsx.Name = "nudTpsx"
+		Me.nudTpsx.Size = New System.Drawing.Size(90, 20)
+		Me.nudTpsx.TabIndex = 7
+		Me.nudTpsx.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTpsx.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'Label68
+		'
+		Me.Label68.Location = New System.Drawing.Point(291, 26)
+		Me.Label68.Name = "Label68"
+		Me.Label68.Size = New System.Drawing.Size(90, 13)
+		Me.Label68.TabIndex = 191
+		Me.Label68.Text = "Efficiency (%)"
+		Me.Label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'nudTpmz
+		'
+		Me.nudTpmz.DecimalPlaces = 2
+		Me.nudTpmz.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
+		Me.nudTpmz.DSSElementName = "inddiscur2_1"
+		Me.nudTpmz.DSSLocation = 0
+		Me.nudTpmz.DSSOffset = -0.2R
+		Me.nudTpmz.Location = New System.Drawing.Point(389, 89)
+		Me.nudTpmz.Name = "nudTpmz"
+		Me.nudTpmz.Size = New System.Drawing.Size(90, 20)
+		Me.nudTpmz.TabIndex = 8
+		Me.nudTpmz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTpmz.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'Label24
+		'
+		Me.Label24.Location = New System.Drawing.Point(98, 9)
+		Me.Label24.Name = "Label24"
+		Me.Label24.Size = New System.Drawing.Size(90, 13)
+		Me.Label24.TabIndex = 191
+		Me.Label24.Text = "Cost UF RO"
+		Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'nudAgrUFRO
+		'
+		Me.nudAgrUFRO.DecimalPlaces = 2
+		Me.nudAgrUFRO.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
+		Me.nudAgrUFRO.DSSElementName = "inddiscur2_1"
+		Me.nudAgrUFRO.DSSLocation = 0
+		Me.nudAgrUFRO.DSSOffset = -0.2R
+		Me.nudAgrUFRO.Location = New System.Drawing.Point(98, 43)
+		Me.nudAgrUFRO.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudAgrUFRO.Name = "nudAgrUFRO"
+		Me.nudAgrUFRO.Size = New System.Drawing.Size(90, 20)
+		Me.nudAgrUFRO.TabIndex = 3
+		Me.nudAgrUFRO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudAgrUFRO.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'Label29
+		'
+		Me.Label29.Location = New System.Drawing.Point(291, 138)
+		Me.Label29.Name = "Label29"
+		Me.Label29.Size = New System.Drawing.Size(90, 13)
+		Me.Label29.TabIndex = 191
+		Me.Label29.Text = "Eco"
+		Me.Label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'nudEnvw
+		'
+		Me.nudEnvw.DecimalPlaces = 2
+		Me.nudEnvw.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
+		Me.nudEnvw.DSSElementName = "inddiscur6_1"
+		Me.nudEnvw.DSSLocation = 0
+		Me.nudEnvw.DSSOffset = -0.2R
+		Me.nudEnvw.Location = New System.Drawing.Point(195, 158)
+		Me.nudEnvw.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudEnvw.Name = "nudEnvw"
+		Me.nudEnvw.Size = New System.Drawing.Size(90, 20)
+		Me.nudEnvw.TabIndex = 9
+		Me.nudEnvw.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudEnvw.Value = New Decimal(New Integer() {6, 0, 0, 0})
+		'
+		'lblTDS
+		'
+		Me.lblTDS.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblTDS.DSSElementName = Nothing
+		Me.lblTDS.DSSLocation = 0
+		Me.lblTDS.DSSOffset = 0R
+		Me.lblTDS.Location = New System.Drawing.Point(291, 9)
+		Me.lblTDS.Name = "lblTDS"
+		Me.lblTDS.Size = New System.Drawing.Size(90, 13)
+		Me.lblTDS.TabIndex = 191
+		Me.lblTDS.Text = "TDS"
+		Me.lblTDS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'nudgwsp
+		'
+		Me.nudgwsp.DecimalPlaces = 2
+		Me.nudgwsp.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
+		Me.nudgwsp.DSSElementName = "inddiscur6_1"
+		Me.nudgwsp.DSSLocation = 0
+		Me.nudgwsp.DSSOffset = -0.2R
+		Me.nudgwsp.Location = New System.Drawing.Point(2, 234)
+		Me.nudgwsp.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudgwsp.Name = "nudgwsp"
+		Me.nudgwsp.Size = New System.Drawing.Size(90, 20)
+		Me.nudgwsp.TabIndex = 13
+		Me.nudgwsp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudgwsp.Value = New Decimal(New Integer() {6, 0, 0, 0})
+		'
+		'nudTotpla
+		'
+		Me.nudTotpla.DecimalPlaces = 2
+		Me.nudTotpla.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
+		Me.nudTotpla.DSSElementName = "inddiscur7_1"
+		Me.nudTotpla.DSSLocation = 0
+		Me.nudTotpla.DSSOffset = -0.2R
+		Me.nudTotpla.Location = New System.Drawing.Point(486, 191)
+		Me.nudTotpla.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTotpla.Name = "nudTotpla"
+		Me.nudTotpla.Size = New System.Drawing.Size(90, 20)
+		Me.nudTotpla.TabIndex = 12
+		Me.nudTotpla.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTotpla.Value = New Decimal(New Integer() {10, 0, 0, 0})
+		'
+		'nudIndUFRO
+		'
+		Me.nudIndUFRO.DecimalPlaces = 2
+		Me.nudIndUFRO.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
+		Me.nudIndUFRO.DSSElementName = "inddiscur2_1"
+		Me.nudIndUFRO.DSSLocation = 0
+		Me.nudIndUFRO.DSSOffset = -0.2R
+		Me.nudIndUFRO.Location = New System.Drawing.Point(98, 66)
+		Me.nudIndUFRO.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudIndUFRO.Name = "nudIndUFRO"
+		Me.nudIndUFRO.Size = New System.Drawing.Size(90, 20)
+		Me.nudIndUFRO.TabIndex = 4
+		Me.nudIndUFRO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudIndUFRO.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'nudSocw
+		'
+		Me.nudSocw.DecimalPlaces = 2
+		Me.nudSocw.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
+		Me.nudSocw.DSSElementName = "inddiscur7_1"
+		Me.nudSocw.DSSLocation = 0
+		Me.nudSocw.DSSOffset = -0.2R
+		Me.nudSocw.Location = New System.Drawing.Point(389, 158)
+		Me.nudSocw.Name = "nudSocw"
+		Me.nudSocw.Size = New System.Drawing.Size(90, 20)
+		Me.nudSocw.TabIndex = 11
+		Me.nudSocw.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudSocw.Value = New Decimal(New Integer() {10, 0, 0, 0})
+		'
+		'nudTpbx
+		'
+		Me.nudTpbx.DecimalPlaces = 2
+		Me.nudTpbx.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
+		Me.nudTpbx.DSSElementName = "inddiscur1_1"
+		Me.nudTpbx.DSSLocation = 0
+		Me.nudTpbx.DSSOffset = -0.2R
+		Me.nudTpbx.Location = New System.Drawing.Point(195, 43)
+		Me.nudTpbx.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTpbx.Name = "nudTpbx"
+		Me.nudTpbx.Size = New System.Drawing.Size(90, 20)
+		Me.nudTpbx.TabIndex = 6
+		Me.nudTpbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTpbx.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'nudEcow
+		'
+		Me.nudEcow.DecimalPlaces = 2
+		Me.nudEcow.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
+		Me.nudEcow.DSSElementName = "inddiscur5_1"
+		Me.nudEcow.DSSLocation = 0
+		Me.nudEcow.DSSOffset = -0.2R
+		Me.nudEcow.Location = New System.Drawing.Point(291, 158)
+		Me.nudEcow.Name = "nudEcow"
+		Me.nudEcow.Size = New System.Drawing.Size(90, 20)
+		Me.nudEcow.TabIndex = 10
+		Me.nudEcow.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudEcow.Value = New Decimal(New Integer() {12, 0, 0, 0})
+		'
+		'nudsmqi
+		'
+		Me.nudsmqi.DecimalPlaces = 2
+		Me.nudsmqi.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
+		Me.nudsmqi.DSSElementName = "inddiscur1_1"
+		Me.nudsmqi.DSSLocation = 0
+		Me.nudsmqi.DSSOffset = -0.2R
+		Me.nudsmqi.Location = New System.Drawing.Point(2, 343)
+		Me.nudsmqi.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudsmqi.Name = "nudsmqi"
+		Me.nudsmqi.Size = New System.Drawing.Size(90, 20)
+		Me.nudsmqi.TabIndex = 16
+		Me.nudsmqi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudsmqi.Value = New Decimal(New Integer() {20, 0, 0, 0})
+		'
+		'nudLanUFRO
+		'
+		Me.nudLanUFRO.DecimalPlaces = 2
+		Me.nudLanUFRO.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
+		Me.nudLanUFRO.DSSElementName = "inddiscur2_1"
+		Me.nudLanUFRO.DSSLocation = 0
+		Me.nudLanUFRO.DSSOffset = -0.2R
+		Me.nudLanUFRO.Location = New System.Drawing.Point(98, 89)
+		Me.nudLanUFRO.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudLanUFRO.Name = "nudLanUFRO"
+		Me.nudLanUFRO.Size = New System.Drawing.Size(90, 20)
+		Me.nudLanUFRO.TabIndex = 5
+		Me.nudLanUFRO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudLanUFRO.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'nudsbqi
+		'
+		Me.nudsbqi.DecimalPlaces = 2
+		Me.nudsbqi.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
+		Me.nudsbqi.DSSElementName = "inddiscur1_1"
+		Me.nudsbqi.DSSLocation = 0
+		Me.nudsbqi.DSSOffset = -0.2R
+		Me.nudsbqi.Location = New System.Drawing.Point(2, 297)
+		Me.nudsbqi.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudsbqi.Name = "nudsbqi"
+		Me.nudsbqi.Size = New System.Drawing.Size(90, 20)
+		Me.nudsbqi.TabIndex = 14
+		Me.nudsbqi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudsbqi.Value = New Decimal(New Integer() {20, 0, 0, 0})
+		'
+		'nudLanUF
+		'
+		Me.nudLanUF.DecimalPlaces = 2
+		Me.nudLanUF.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
+		Me.nudLanUF.DSSElementName = "inddiscur1_1"
+		Me.nudLanUF.DSSLocation = 0
+		Me.nudLanUF.DSSOffset = -0.2R
+		Me.nudLanUF.Location = New System.Drawing.Point(2, 89)
+		Me.nudLanUF.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudLanUF.Name = "nudLanUF"
+		Me.nudLanUF.Size = New System.Drawing.Size(90, 20)
+		Me.nudLanUF.TabIndex = 2
+		Me.nudLanUF.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudLanUF.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'nudssqi
+		'
+		Me.nudssqi.DecimalPlaces = 2
+		Me.nudssqi.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
+		Me.nudssqi.DSSElementName = "inddiscur1_1"
+		Me.nudssqi.DSSLocation = 0
+		Me.nudssqi.DSSOffset = -0.2R
+		Me.nudssqi.Location = New System.Drawing.Point(2, 320)
+		Me.nudssqi.Maximum = New Decimal(New Integer() {2000, 0, 0, 0})
+		Me.nudssqi.Name = "nudssqi"
+		Me.nudssqi.Size = New System.Drawing.Size(90, 20)
+		Me.nudssqi.TabIndex = 15
+		Me.nudssqi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudssqi.Value = New Decimal(New Integer() {1000, 0, 0, 0})
+		'
+		'nudAgrUF
+		'
+		Me.nudAgrUF.DecimalPlaces = 2
+		Me.nudAgrUF.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
+		Me.nudAgrUF.DSSElementName = "inddiscur1_1"
+		Me.nudAgrUF.DSSLocation = 0
+		Me.nudAgrUF.DSSOffset = -0.2R
+		Me.nudAgrUF.Location = New System.Drawing.Point(2, 43)
+		Me.nudAgrUF.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudAgrUF.Name = "nudAgrUF"
+		Me.nudAgrUF.Size = New System.Drawing.Size(90, 20)
+		Me.nudAgrUF.TabIndex = 0
+		Me.nudAgrUF.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudAgrUF.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'nudIndUF
+		'
+		Me.nudIndUF.DecimalPlaces = 2
+		Me.nudIndUF.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
+		Me.nudIndUF.DSSElementName = "inddiscur1_1"
+		Me.nudIndUF.DSSLocation = 0
+		Me.nudIndUF.DSSOffset = -0.2R
+		Me.nudIndUF.Location = New System.Drawing.Point(2, 66)
+		Me.nudIndUF.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudIndUF.Name = "nudIndUF"
+		Me.nudIndUF.Size = New System.Drawing.Size(90, 20)
+		Me.nudIndUF.TabIndex = 1
+		Me.nudIndUF.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudIndUF.Value = New Decimal(New Integer() {50, 0, 0, 0})
+		'
+		'Label25
+		'
+		Me.Label25.Location = New System.Drawing.Point(18, 174)
+		Me.Label25.Name = "Label25"
+		Me.Label25.Size = New System.Drawing.Size(154, 20)
+		Me.Label25.TabIndex = 169
+		Me.Label25.Text = "Weights attached to issues (%)"
+		'
+		'Label119
+		'
+		Me.Label119.Location = New System.Drawing.Point(18, 359)
+		Me.Label119.Name = "Label119"
+		Me.Label119.Size = New System.Drawing.Size(154, 20)
+		Me.Label119.TabIndex = 171
+		Me.Label119.Text = "Max TSS content for Lan"
+		'
+		'Label34
+		'
+		Me.Label34.Location = New System.Drawing.Point(18, 105)
+		Me.Label34.Name = "Label34"
+		Me.Label34.Size = New System.Drawing.Size(154, 20)
+		Me.Label34.TabIndex = 171
+		Me.Label34.Text = "Dedicated III treatment for Lan"
+		'
+		'Label27
+		'
+		Me.Label27.Location = New System.Drawing.Point(18, 250)
+		Me.Label27.Name = "Label27"
+		Me.Label27.Size = New System.Drawing.Size(154, 20)
+		Me.Label27.TabIndex = 173
+		Me.Label27.Text = "Groundwater shadow price"
+		'
+		'Label23
+		'
+		Me.Label23.Location = New System.Drawing.Point(18, 207)
+		Me.Label23.Name = "Label23"
+		Me.Label23.Size = New System.Drawing.Size(154, 20)
+		Me.Label23.TabIndex = 173
+		Me.Label23.Text = "Maximum number of WWTPs"
+		'
+		'Label118
+		'
+		Me.Label118.Location = New System.Drawing.Point(18, 336)
+		Me.Label118.Name = "Label118"
+		Me.Label118.Size = New System.Drawing.Size(154, 20)
+		Me.Label118.TabIndex = 174
+		Me.Label118.Text = "Max TDS content for Agr&&Lan"
+		'
+		'Label78
+		'
+		Me.Label78.Location = New System.Drawing.Point(18, 82)
+		Me.Label78.Name = "Label78"
+		Me.Label78.Size = New System.Drawing.Size(154, 20)
+		Me.Label78.TabIndex = 174
+		Me.Label78.Text = "Dedicated III treatment for Ind"
+		'
+		'Label117
+		'
+		Me.Label117.Location = New System.Drawing.Point(18, 313)
+		Me.Label117.Name = "Label117"
+		Me.Label117.Size = New System.Drawing.Size(154, 20)
+		Me.Label117.TabIndex = 177
+		Me.Label117.Text = "Max BOD content for Agr"
+		'
+		'Label91
+		'
+		Me.Label91.Location = New System.Drawing.Point(18, 59)
+		Me.Label91.Name = "Label91"
+		Me.Label91.Size = New System.Drawing.Size(154, 20)
+		Me.Label91.TabIndex = 177
+		Me.Label91.Text = "Dedicated III treatment for Agr"
 		'
 		'grbWaterCosts
 		'
@@ -5332,2084 +7410,6 @@ Partial Class frmNegotiation
 		Me.Label69.Text = "2020"
 		Me.Label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 		'
-		'grbIndustrialDistricts
-		'
-		Me.grbIndustrialDistricts.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-			Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-		Me.grbIndustrialDistricts.Controls.Add(Me.pnlInddispln)
-		Me.grbIndustrialDistricts.Controls.Add(Me.pnlInddiscur)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label38)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label39)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label40)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label41)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label42)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label43)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label71)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label72)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label73)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label74)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label75)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label76)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label77)
-		Me.grbIndustrialDistricts.ForeColor = System.Drawing.Color.Black
-		Me.grbIndustrialDistricts.Location = New System.Drawing.Point(0, 0)
-		Me.grbIndustrialDistricts.Name = "grbIndustrialDistricts"
-		Me.grbIndustrialDistricts.Size = New System.Drawing.Size(300, 516)
-		Me.grbIndustrialDistricts.TabIndex = 23
-		Me.grbIndustrialDistricts.TabStop = False
-		Me.grbIndustrialDistricts.Text = "Industrial districts"
-		Me.grbIndustrialDistricts.Visible = False
-		'
-		'pnlInddispln
-		'
-		Me.pnlInddispln.Controls.Add(Me.nudInddispln14_2)
-		Me.pnlInddispln.Controls.Add(Me.nudInddispln15_2)
-		Me.pnlInddispln.Controls.Add(Me.Label86)
-		Me.pnlInddispln.Controls.Add(Me.nudInddispln3_2)
-		Me.pnlInddispln.Controls.Add(Me.nudInddispln7_2)
-		Me.pnlInddispln.Controls.Add(Me.nudInddispln2_2)
-		Me.pnlInddispln.Controls.Add(Me.nudInddispln12_2)
-		Me.pnlInddispln.Controls.Add(Me.nudInddispln10_2)
-		Me.pnlInddispln.Controls.Add(Me.nudInddispln13_2)
-		Me.pnlInddispln.Controls.Add(Me.nudInddispln6_2)
-		Me.pnlInddispln.Controls.Add(Me.nudInddispln8_2)
-		Me.pnlInddispln.Controls.Add(Me.nudInddispln1_2)
-		Me.pnlInddispln.Controls.Add(Me.nudInddispln4_2)
-		Me.pnlInddispln.Controls.Add(Me.nudInddispln9_2)
-		Me.pnlInddispln.Controls.Add(Me.nudInddispln11_2)
-		Me.pnlInddispln.Controls.Add(Me.nudInddispln5_2)
-		Me.pnlInddispln.Location = New System.Drawing.Point(198, 12)
-		Me.pnlInddispln.Name = "pnlInddispln"
-		Me.pnlInddispln.Size = New System.Drawing.Size(90, 393)
-		Me.pnlInddispln.TabIndex = 147
-		'
-		'nudInddispln14_2
-		'
-		Me.nudInddispln14_2.DecimalPlaces = 2
-		Me.nudInddispln14_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
-		Me.nudInddispln14_2.DSSElementName = "inddispln14_1"
-		Me.nudInddispln14_2.DSSLocation = 14
-		Me.nudInddispln14_2.DSSOffset = 0.2R
-		Me.nudInddispln14_2.Location = New System.Drawing.Point(0, 332)
-		Me.nudInddispln14_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddispln14_2.Name = "nudInddispln14_2"
-		Me.nudInddispln14_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddispln14_2.TabIndex = 113
-		Me.nudInddispln14_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddispln14_2.Value = New Decimal(New Integer() {3, 0, 0, 65536})
-		'
-		'nudInddispln15_2
-		'
-		Me.nudInddispln15_2.DecimalPlaces = 2
-		Me.nudInddispln15_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
-		Me.nudInddispln15_2.DSSElementName = "inddispln15_1"
-		Me.nudInddispln15_2.DSSLocation = 15
-		Me.nudInddispln15_2.DSSOffset = 0.2R
-		Me.nudInddispln15_2.Location = New System.Drawing.Point(0, 355)
-		Me.nudInddispln15_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddispln15_2.Name = "nudInddispln15_2"
-		Me.nudInddispln15_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddispln15_2.TabIndex = 114
-		Me.nudInddispln15_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddispln15_2.Value = New Decimal(New Integer() {5, 0, 0, 65536})
-		'
-		'Label86
-		'
-		Me.Label86.Location = New System.Drawing.Point(0, 10)
-		Me.Label86.Name = "Label86"
-		Me.Label86.Size = New System.Drawing.Size(90, 13)
-		Me.Label86.TabIndex = 144
-		Me.Label86.Text = "Planned"
-		Me.Label86.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'nudInddispln3_2
-		'
-		Me.nudInddispln3_2.DecimalPlaces = 2
-		Me.nudInddispln3_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
-		Me.nudInddispln3_2.DSSElementName = "inddispln3_1"
-		Me.nudInddispln3_2.DSSLocation = 3
-		Me.nudInddispln3_2.DSSOffset = 0.2R
-		Me.nudInddispln3_2.Location = New System.Drawing.Point(0, 79)
-		Me.nudInddispln3_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddispln3_2.Name = "nudInddispln3_2"
-		Me.nudInddispln3_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddispln3_2.TabIndex = 102
-		Me.nudInddispln3_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddispln3_2.Value = New Decimal(New Integer() {4, 0, 0, 65536})
-		'
-		'nudInddispln7_2
-		'
-		Me.nudInddispln7_2.DecimalPlaces = 2
-		Me.nudInddispln7_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
-		Me.nudInddispln7_2.DSSElementName = "inddispln7_1"
-		Me.nudInddispln7_2.DSSLocation = 7
-		Me.nudInddispln7_2.DSSOffset = 0.2R
-		Me.nudInddispln7_2.Location = New System.Drawing.Point(0, 171)
-		Me.nudInddispln7_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddispln7_2.Name = "nudInddispln7_2"
-		Me.nudInddispln7_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddispln7_2.TabIndex = 106
-		Me.nudInddispln7_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddispln7_2.Value = New Decimal(New Integer() {2, 0, 0, 65536})
-		'
-		'nudInddispln2_2
-		'
-		Me.nudInddispln2_2.DecimalPlaces = 2
-		Me.nudInddispln2_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
-		Me.nudInddispln2_2.DSSElementName = "inddispln2_1"
-		Me.nudInddispln2_2.DSSLocation = 2
-		Me.nudInddispln2_2.DSSOffset = 0.2R
-		Me.nudInddispln2_2.Location = New System.Drawing.Point(0, 56)
-		Me.nudInddispln2_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddispln2_2.Name = "nudInddispln2_2"
-		Me.nudInddispln2_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddispln2_2.TabIndex = 101
-		Me.nudInddispln2_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddispln2_2.Value = New Decimal(New Integer() {4, 0, 0, 65536})
-		'
-		'nudInddispln12_2
-		'
-		Me.nudInddispln12_2.DecimalPlaces = 2
-		Me.nudInddispln12_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
-		Me.nudInddispln12_2.DSSElementName = "inddispln12_1"
-		Me.nudInddispln12_2.DSSLocation = 12
-		Me.nudInddispln12_2.DSSOffset = 0.2R
-		Me.nudInddispln12_2.Location = New System.Drawing.Point(0, 286)
-		Me.nudInddispln12_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddispln12_2.Name = "nudInddispln12_2"
-		Me.nudInddispln12_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddispln12_2.TabIndex = 111
-		Me.nudInddispln12_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddispln12_2.Value = New Decimal(New Integer() {3, 0, 0, 65536})
-		'
-		'nudInddispln10_2
-		'
-		Me.nudInddispln10_2.DecimalPlaces = 2
-		Me.nudInddispln10_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
-		Me.nudInddispln10_2.DSSElementName = "inddispln10_1"
-		Me.nudInddispln10_2.DSSLocation = 10
-		Me.nudInddispln10_2.DSSOffset = 0.2R
-		Me.nudInddispln10_2.Location = New System.Drawing.Point(0, 240)
-		Me.nudInddispln10_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddispln10_2.Name = "nudInddispln10_2"
-		Me.nudInddispln10_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddispln10_2.TabIndex = 109
-		Me.nudInddispln10_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddispln10_2.Value = New Decimal(New Integer() {1, 0, 0, 0})
-		'
-		'nudInddispln13_2
-		'
-		Me.nudInddispln13_2.DecimalPlaces = 2
-		Me.nudInddispln13_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
-		Me.nudInddispln13_2.DSSElementName = "inddispln13_1"
-		Me.nudInddispln13_2.DSSLocation = 13
-		Me.nudInddispln13_2.DSSOffset = 0.2R
-		Me.nudInddispln13_2.Location = New System.Drawing.Point(0, 309)
-		Me.nudInddispln13_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddispln13_2.Name = "nudInddispln13_2"
-		Me.nudInddispln13_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddispln13_2.TabIndex = 112
-		Me.nudInddispln13_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddispln13_2.Value = New Decimal(New Integer() {5, 0, 0, 65536})
-		'
-		'nudInddispln6_2
-		'
-		Me.nudInddispln6_2.DecimalPlaces = 2
-		Me.nudInddispln6_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
-		Me.nudInddispln6_2.DSSElementName = "inddispln6_1"
-		Me.nudInddispln6_2.DSSLocation = 6
-		Me.nudInddispln6_2.DSSOffset = 0.2R
-		Me.nudInddispln6_2.Location = New System.Drawing.Point(0, 148)
-		Me.nudInddispln6_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddispln6_2.Name = "nudInddispln6_2"
-		Me.nudInddispln6_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddispln6_2.TabIndex = 105
-		Me.nudInddispln6_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddispln6_2.Value = New Decimal(New Integer() {2, 0, 0, 65536})
-		'
-		'nudInddispln8_2
-		'
-		Me.nudInddispln8_2.DecimalPlaces = 2
-		Me.nudInddispln8_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
-		Me.nudInddispln8_2.DSSElementName = "inddispln8_1"
-		Me.nudInddispln8_2.DSSLocation = 8
-		Me.nudInddispln8_2.DSSOffset = 0.2R
-		Me.nudInddispln8_2.Location = New System.Drawing.Point(0, 194)
-		Me.nudInddispln8_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddispln8_2.Name = "nudInddispln8_2"
-		Me.nudInddispln8_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddispln8_2.TabIndex = 107
-		Me.nudInddispln8_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddispln8_2.Value = New Decimal(New Integer() {6, 0, 0, 65536})
-		'
-		'nudInddispln1_2
-		'
-		Me.nudInddispln1_2.DecimalPlaces = 2
-		Me.nudInddispln1_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
-		Me.nudInddispln1_2.DSSElementName = "inddispln1_1"
-		Me.nudInddispln1_2.DSSLocation = 1
-		Me.nudInddispln1_2.DSSOffset = 0.2R
-		Me.nudInddispln1_2.Location = New System.Drawing.Point(0, 33)
-		Me.nudInddispln1_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddispln1_2.Name = "nudInddispln1_2"
-		Me.nudInddispln1_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddispln1_2.TabIndex = 100
-		Me.nudInddispln1_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddispln1_2.Value = New Decimal(New Integer() {4, 0, 0, 65536})
-		'
-		'nudInddispln4_2
-		'
-		Me.nudInddispln4_2.DecimalPlaces = 2
-		Me.nudInddispln4_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
-		Me.nudInddispln4_2.DSSElementName = "inddispln4_1"
-		Me.nudInddispln4_2.DSSLocation = 4
-		Me.nudInddispln4_2.DSSOffset = 0.2R
-		Me.nudInddispln4_2.Location = New System.Drawing.Point(0, 102)
-		Me.nudInddispln4_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddispln4_2.Name = "nudInddispln4_2"
-		Me.nudInddispln4_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddispln4_2.TabIndex = 103
-		Me.nudInddispln4_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddispln4_2.Value = New Decimal(New Integer() {4, 0, 0, 65536})
-		'
-		'nudInddispln9_2
-		'
-		Me.nudInddispln9_2.DecimalPlaces = 2
-		Me.nudInddispln9_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
-		Me.nudInddispln9_2.DSSElementName = "inddispln9_1"
-		Me.nudInddispln9_2.DSSLocation = 9
-		Me.nudInddispln9_2.DSSOffset = 0.2R
-		Me.nudInddispln9_2.Location = New System.Drawing.Point(0, 217)
-		Me.nudInddispln9_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddispln9_2.Name = "nudInddispln9_2"
-		Me.nudInddispln9_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddispln9_2.TabIndex = 108
-		Me.nudInddispln9_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddispln9_2.Value = New Decimal(New Integer() {1, 0, 0, 0})
-		'
-		'nudInddispln11_2
-		'
-		Me.nudInddispln11_2.DecimalPlaces = 2
-		Me.nudInddispln11_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
-		Me.nudInddispln11_2.DSSElementName = "inddispln11_1"
-		Me.nudInddispln11_2.DSSLocation = 11
-		Me.nudInddispln11_2.DSSOffset = 0.2R
-		Me.nudInddispln11_2.Location = New System.Drawing.Point(0, 263)
-		Me.nudInddispln11_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddispln11_2.Name = "nudInddispln11_2"
-		Me.nudInddispln11_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddispln11_2.TabIndex = 110
-		Me.nudInddispln11_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddispln11_2.Value = New Decimal(New Integer() {4, 0, 0, 65536})
-		'
-		'nudInddispln5_2
-		'
-		Me.nudInddispln5_2.DecimalPlaces = 2
-		Me.nudInddispln5_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
-		Me.nudInddispln5_2.DSSElementName = "inddispln5_1"
-		Me.nudInddispln5_2.DSSLocation = 5
-		Me.nudInddispln5_2.DSSOffset = 0.2R
-		Me.nudInddispln5_2.Location = New System.Drawing.Point(0, 125)
-		Me.nudInddispln5_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddispln5_2.Name = "nudInddispln5_2"
-		Me.nudInddispln5_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddispln5_2.TabIndex = 104
-		Me.nudInddispln5_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddispln5_2.Value = New Decimal(New Integer() {8, 0, 0, 65536})
-		'
-		'pnlInddiscur
-		'
-		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur14_2)
-		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur15_2)
-		Me.pnlInddiscur.Controls.Add(Me.Label88)
-		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur3_2)
-		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur7_2)
-		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur2_2)
-		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur6_2)
-		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur12_2)
-		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur1_2)
-		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur9_2)
-		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur13_2)
-		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur10_2)
-		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur11_2)
-		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur8_2)
-		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur5_2)
-		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur4_2)
-		Me.pnlInddiscur.Location = New System.Drawing.Point(99, 12)
-		Me.pnlInddiscur.Name = "pnlInddiscur"
-		Me.pnlInddiscur.Size = New System.Drawing.Size(90, 393)
-		Me.pnlInddiscur.TabIndex = 146
-		'
-		'nudInddiscur14_2
-		'
-		Me.nudInddiscur14_2.DecimalPlaces = 2
-		Me.nudInddiscur14_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
-		Me.nudInddiscur14_2.DSSElementName = "inddiscur14_1"
-		Me.nudInddiscur14_2.DSSLocation = 14
-		Me.nudInddiscur14_2.DSSOffset = -0.2R
-		Me.nudInddiscur14_2.Location = New System.Drawing.Point(0, 332)
-		Me.nudInddiscur14_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddiscur14_2.Name = "nudInddiscur14_2"
-		Me.nudInddiscur14_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddiscur14_2.TabIndex = 13
-		Me.nudInddiscur14_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddiscur14_2.Value = New Decimal(New Integer() {2, 0, 0, 65536})
-		'
-		'nudInddiscur15_2
-		'
-		Me.nudInddiscur15_2.DecimalPlaces = 2
-		Me.nudInddiscur15_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
-		Me.nudInddiscur15_2.DSSElementName = "inddiscur15_1"
-		Me.nudInddiscur15_2.DSSLocation = 15
-		Me.nudInddiscur15_2.DSSOffset = -0.2R
-		Me.nudInddiscur15_2.Location = New System.Drawing.Point(0, 355)
-		Me.nudInddiscur15_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddiscur15_2.Name = "nudInddiscur15_2"
-		Me.nudInddiscur15_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddiscur15_2.TabIndex = 14
-		Me.nudInddiscur15_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddiscur15_2.Value = New Decimal(New Integer() {1054794521, 0, 0, 589824})
-		'
-		'Label88
-		'
-		Me.Label88.Location = New System.Drawing.Point(0, 10)
-		Me.Label88.Name = "Label88"
-		Me.Label88.Size = New System.Drawing.Size(90, 13)
-		Me.Label88.TabIndex = 145
-		Me.Label88.Text = "Current"
-		Me.Label88.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'nudInddiscur3_2
-		'
-		Me.nudInddiscur3_2.DecimalPlaces = 2
-		Me.nudInddiscur3_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
-		Me.nudInddiscur3_2.DSSElementName = "inddiscur3_1"
-		Me.nudInddiscur3_2.DSSLocation = 3
-		Me.nudInddiscur3_2.DSSOffset = -0.2R
-		Me.nudInddiscur3_2.Location = New System.Drawing.Point(0, 79)
-		Me.nudInddiscur3_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddiscur3_2.Name = "nudInddiscur3_2"
-		Me.nudInddiscur3_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddiscur3_2.TabIndex = 2
-		Me.nudInddiscur3_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddiscur3_2.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'nudInddiscur7_2
-		'
-		Me.nudInddiscur7_2.DecimalPlaces = 2
-		Me.nudInddiscur7_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
-		Me.nudInddiscur7_2.DSSElementName = "inddiscur7_1"
-		Me.nudInddiscur7_2.DSSLocation = 7
-		Me.nudInddiscur7_2.DSSOffset = -0.2R
-		Me.nudInddiscur7_2.Location = New System.Drawing.Point(0, 171)
-		Me.nudInddiscur7_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddiscur7_2.Name = "nudInddiscur7_2"
-		Me.nudInddiscur7_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddiscur7_2.TabIndex = 6
-		Me.nudInddiscur7_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddiscur7_2.Value = New Decimal(New Integer() {10, 0, 0, 0})
-		'
-		'nudInddiscur2_2
-		'
-		Me.nudInddiscur2_2.DecimalPlaces = 2
-		Me.nudInddiscur2_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
-		Me.nudInddiscur2_2.DSSElementName = "inddiscur2_1"
-		Me.nudInddiscur2_2.DSSLocation = 2
-		Me.nudInddiscur2_2.DSSOffset = -0.2R
-		Me.nudInddiscur2_2.Location = New System.Drawing.Point(0, 56)
-		Me.nudInddiscur2_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddiscur2_2.Name = "nudInddiscur2_2"
-		Me.nudInddiscur2_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddiscur2_2.TabIndex = 1
-		Me.nudInddiscur2_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddiscur2_2.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'nudInddiscur6_2
-		'
-		Me.nudInddiscur6_2.DecimalPlaces = 2
-		Me.nudInddiscur6_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
-		Me.nudInddiscur6_2.DSSElementName = "inddiscur6_1"
-		Me.nudInddiscur6_2.DSSLocation = 6
-		Me.nudInddiscur6_2.DSSOffset = -0.2R
-		Me.nudInddiscur6_2.Location = New System.Drawing.Point(0, 148)
-		Me.nudInddiscur6_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddiscur6_2.Name = "nudInddiscur6_2"
-		Me.nudInddiscur6_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddiscur6_2.TabIndex = 5
-		Me.nudInddiscur6_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddiscur6_2.Value = New Decimal(New Integer() {6, 0, 0, 0})
-		'
-		'nudInddiscur12_2
-		'
-		Me.nudInddiscur12_2.DecimalPlaces = 2
-		Me.nudInddiscur12_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
-		Me.nudInddiscur12_2.DSSElementName = "inddiscur12_1"
-		Me.nudInddiscur12_2.DSSLocation = 12
-		Me.nudInddiscur12_2.DSSOffset = -0.2R
-		Me.nudInddiscur12_2.Location = New System.Drawing.Point(0, 286)
-		Me.nudInddiscur12_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddiscur12_2.Name = "nudInddiscur12_2"
-		Me.nudInddiscur12_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddiscur12_2.TabIndex = 11
-		Me.nudInddiscur12_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddiscur12_2.Value = New Decimal(New Integer() {2, 0, 0, 65536})
-		'
-		'nudInddiscur1_2
-		'
-		Me.nudInddiscur1_2.DecimalPlaces = 2
-		Me.nudInddiscur1_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
-		Me.nudInddiscur1_2.DSSElementName = "inddiscur1_1"
-		Me.nudInddiscur1_2.DSSLocation = 1
-		Me.nudInddiscur1_2.DSSOffset = -0.2R
-		Me.nudInddiscur1_2.Location = New System.Drawing.Point(0, 33)
-		Me.nudInddiscur1_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddiscur1_2.Name = "nudInddiscur1_2"
-		Me.nudInddiscur1_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddiscur1_2.TabIndex = 0
-		Me.nudInddiscur1_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddiscur1_2.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'nudInddiscur9_2
-		'
-		Me.nudInddiscur9_2.DecimalPlaces = 2
-		Me.nudInddiscur9_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
-		Me.nudInddiscur9_2.DSSElementName = "inddiscur9_1"
-		Me.nudInddiscur9_2.DSSLocation = 9
-		Me.nudInddiscur9_2.DSSOffset = -0.2R
-		Me.nudInddiscur9_2.Location = New System.Drawing.Point(0, 217)
-		Me.nudInddiscur9_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddiscur9_2.Name = "nudInddiscur9_2"
-		Me.nudInddiscur9_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddiscur9_2.TabIndex = 8
-		Me.nudInddiscur9_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddiscur9_2.Value = New Decimal(New Integer() {2, 0, 0, 65536})
-		'
-		'nudInddiscur13_2
-		'
-		Me.nudInddiscur13_2.DecimalPlaces = 2
-		Me.nudInddiscur13_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
-		Me.nudInddiscur13_2.DSSElementName = "inddiscur13_1"
-		Me.nudInddiscur13_2.DSSLocation = 13
-		Me.nudInddiscur13_2.DSSOffset = -0.2R
-		Me.nudInddiscur13_2.Location = New System.Drawing.Point(0, 309)
-		Me.nudInddiscur13_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddiscur13_2.Name = "nudInddiscur13_2"
-		Me.nudInddiscur13_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddiscur13_2.TabIndex = 12
-		Me.nudInddiscur13_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddiscur13_2.Value = New Decimal(New Integer() {1054794521, 0, 0, 589824})
-		'
-		'nudInddiscur10_2
-		'
-		Me.nudInddiscur10_2.DecimalPlaces = 2
-		Me.nudInddiscur10_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
-		Me.nudInddiscur10_2.DSSElementName = "inddiscur10_1"
-		Me.nudInddiscur10_2.DSSLocation = 10
-		Me.nudInddiscur10_2.DSSOffset = -0.2R
-		Me.nudInddiscur10_2.Location = New System.Drawing.Point(0, 240)
-		Me.nudInddiscur10_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddiscur10_2.Name = "nudInddiscur10_2"
-		Me.nudInddiscur10_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddiscur10_2.TabIndex = 9
-		Me.nudInddiscur10_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddiscur10_2.Value = New Decimal(New Integer() {2, 0, 0, 65536})
-		'
-		'nudInddiscur11_2
-		'
-		Me.nudInddiscur11_2.DecimalPlaces = 2
-		Me.nudInddiscur11_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
-		Me.nudInddiscur11_2.DSSElementName = "inddiscur11_1"
-		Me.nudInddiscur11_2.DSSLocation = 11
-		Me.nudInddiscur11_2.DSSOffset = -0.2R
-		Me.nudInddiscur11_2.Location = New System.Drawing.Point(0, 263)
-		Me.nudInddiscur11_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddiscur11_2.Name = "nudInddiscur11_2"
-		Me.nudInddiscur11_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddiscur11_2.TabIndex = 10
-		Me.nudInddiscur11_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddiscur11_2.Value = New Decimal(New Integer() {2, 0, 0, 65536})
-		'
-		'nudInddiscur8_2
-		'
-		Me.nudInddiscur8_2.DecimalPlaces = 2
-		Me.nudInddiscur8_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
-		Me.nudInddiscur8_2.DSSElementName = "inddiscur8_1"
-		Me.nudInddiscur8_2.DSSLocation = 8
-		Me.nudInddiscur8_2.DSSOffset = -0.2R
-		Me.nudInddiscur8_2.Location = New System.Drawing.Point(0, 194)
-		Me.nudInddiscur8_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddiscur8_2.Name = "nudInddiscur8_2"
-		Me.nudInddiscur8_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddiscur8_2.TabIndex = 7
-		Me.nudInddiscur8_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddiscur8_2.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'nudInddiscur5_2
-		'
-		Me.nudInddiscur5_2.DecimalPlaces = 2
-		Me.nudInddiscur5_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
-		Me.nudInddiscur5_2.DSSElementName = "inddiscur5_1"
-		Me.nudInddiscur5_2.DSSLocation = 5
-		Me.nudInddiscur5_2.DSSOffset = -0.2R
-		Me.nudInddiscur5_2.Location = New System.Drawing.Point(0, 125)
-		Me.nudInddiscur5_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddiscur5_2.Name = "nudInddiscur5_2"
-		Me.nudInddiscur5_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddiscur5_2.TabIndex = 4
-		Me.nudInddiscur5_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddiscur5_2.Value = New Decimal(New Integer() {12, 0, 0, 0})
-		'
-		'nudInddiscur4_2
-		'
-		Me.nudInddiscur4_2.DecimalPlaces = 2
-		Me.nudInddiscur4_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
-		Me.nudInddiscur4_2.DSSElementName = "inddiscur4_1"
-		Me.nudInddiscur4_2.DSSLocation = 4
-		Me.nudInddiscur4_2.DSSOffset = -0.2R
-		Me.nudInddiscur4_2.Location = New System.Drawing.Point(0, 102)
-		Me.nudInddiscur4_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudInddiscur4_2.Name = "nudInddiscur4_2"
-		Me.nudInddiscur4_2.Size = New System.Drawing.Size(90, 20)
-		Me.nudInddiscur4_2.TabIndex = 3
-		Me.nudInddiscur4_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudInddiscur4_2.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'Label38
-		'
-		Me.Label38.Location = New System.Drawing.Point(15, 322)
-		Me.Label38.Name = "Label38"
-		Me.Label38.Size = New System.Drawing.Size(76, 20)
-		Me.Label38.TabIndex = 131
-		Me.Label38.Text = "Tabouk"
-		'
-		'Label39
-		'
-		Me.Label39.Location = New System.Drawing.Point(15, 184)
-		Me.Label39.Name = "Label39"
-		Me.Label39.Size = New System.Drawing.Size(76, 20)
-		Me.Label39.TabIndex = 132
-		Me.Label39.Text = "Jizan"
-		'
-		'Label40
-		'
-		Me.Label40.Location = New System.Drawing.Point(15, 299)
-		Me.Label40.Name = "Label40"
-		Me.Label40.Size = New System.Drawing.Size(76, 20)
-		Me.Label40.TabIndex = 133
-		Me.Label40.Text = "Riyadh"
-		'
-		'Label41
-		'
-		Me.Label41.Location = New System.Drawing.Point(15, 161)
-		Me.Label41.Name = "Label41"
-		Me.Label41.Size = New System.Drawing.Size(76, 20)
-		Me.Label41.TabIndex = 134
-		Me.Label41.Text = "Hail"
-		'
-		'Label42
-		'
-		Me.Label42.Location = New System.Drawing.Point(15, 276)
-		Me.Label42.Name = "Label42"
-		Me.Label42.Size = New System.Drawing.Size(76, 20)
-		Me.Label42.TabIndex = 135
-		Me.Label42.Text = "North Border"
-		'
-		'Label43
-		'
-		Me.Label43.Location = New System.Drawing.Point(15, 253)
-		Me.Label43.Name = "Label43"
-		Me.Label43.Size = New System.Drawing.Size(76, 20)
-		Me.Label43.TabIndex = 143
-		Me.Label43.Text = "Najran"
-		'
-		'Label71
-		'
-		Me.Label71.Location = New System.Drawing.Point(15, 92)
-		Me.Label71.Name = "Label71"
-		Me.Label71.Size = New System.Drawing.Size(76, 20)
-		Me.Label71.TabIndex = 136
-		Me.Label71.Text = "Al - Jouf"
-		'
-		'Label72
-		'
-		Me.Label72.Location = New System.Drawing.Point(15, 230)
-		Me.Label72.Name = "Label72"
-		Me.Label72.Size = New System.Drawing.Size(76, 20)
-		Me.Label72.TabIndex = 137
-		Me.Label72.Text = "Mecca"
-		'
-		'Label73
-		'
-		Me.Label73.Location = New System.Drawing.Point(15, 138)
-		Me.Label73.Name = "Label73"
-		Me.Label73.Size = New System.Drawing.Size(76, 20)
-		Me.Label73.TabIndex = 138
-		Me.Label73.Text = "Eastern Area"
-		'
-		'Label74
-		'
-		Me.Label74.Location = New System.Drawing.Point(15, 69)
-		Me.Label74.Name = "Label74"
-		Me.Label74.Size = New System.Drawing.Size(76, 20)
-		Me.Label74.TabIndex = 139
-		Me.Label74.Text = "Al - Gassem"
-		'
-		'Label75
-		'
-		Me.Label75.Location = New System.Drawing.Point(15, 207)
-		Me.Label75.Name = "Label75"
-		Me.Label75.Size = New System.Drawing.Size(76, 20)
-		Me.Label75.TabIndex = 140
-		Me.Label75.Text = "Madina"
-		'
-		'Label76
-		'
-		Me.Label76.Location = New System.Drawing.Point(15, 115)
-		Me.Label76.Name = "Label76"
-		Me.Label76.Size = New System.Drawing.Size(76, 20)
-		Me.Label76.TabIndex = 141
-		Me.Label76.Text = "Aseer"
-		'
-		'Label77
-		'
-		Me.Label77.Location = New System.Drawing.Point(15, 46)
-		Me.Label77.Name = "Label77"
-		Me.Label77.Size = New System.Drawing.Size(76, 20)
-		Me.Label77.TabIndex = 142
-		Me.Label77.Text = "Al - Baha"
-		'
-		'grbWaterQuality
-		'
-		Me.grbWaterQuality.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-			Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-		Me.grbWaterQuality.Controls.Add(Me.pnlTSS)
-		Me.grbWaterQuality.Controls.Add(Me.pnlTDS)
-		Me.grbWaterQuality.Controls.Add(Me.pnlBOD)
-		Me.grbWaterQuality.Controls.Add(Me.Label3)
-		Me.grbWaterQuality.Controls.Add(Me.Label4)
-		Me.grbWaterQuality.Controls.Add(Me.Label5)
-		Me.grbWaterQuality.Controls.Add(Me.Label6)
-		Me.grbWaterQuality.Controls.Add(Me.Label7)
-		Me.grbWaterQuality.Controls.Add(Me.Label8)
-		Me.grbWaterQuality.Controls.Add(Me.Label9)
-		Me.grbWaterQuality.Controls.Add(Me.Label11)
-		Me.grbWaterQuality.Controls.Add(Me.Label14)
-		Me.grbWaterQuality.Controls.Add(Me.Label15)
-		Me.grbWaterQuality.Controls.Add(Me.Label16)
-		Me.grbWaterQuality.Controls.Add(Me.Label17)
-		Me.grbWaterQuality.Controls.Add(Me.Label18)
-		Me.grbWaterQuality.ForeColor = System.Drawing.Color.Black
-		Me.grbWaterQuality.Location = New System.Drawing.Point(0, 0)
-		Me.grbWaterQuality.Name = "grbWaterQuality"
-		Me.grbWaterQuality.Size = New System.Drawing.Size(413, 516)
-		Me.grbWaterQuality.TabIndex = 21
-		Me.grbWaterQuality.TabStop = False
-		Me.grbWaterQuality.Text = "Water quality indicator"
-		Me.grbWaterQuality.Visible = False
-		'
-		'pnlTSS
-		'
-		Me.pnlTSS.Controls.Add(Me.nudTSS14)
-		Me.pnlTSS.Controls.Add(Me.nudTSS15)
-		Me.pnlTSS.Controls.Add(Me.Label21)
-		Me.pnlTSS.Controls.Add(Me.nudTSS3)
-		Me.pnlTSS.Controls.Add(Me.nudTSS2)
-		Me.pnlTSS.Controls.Add(Me.nudTSS7)
-		Me.pnlTSS.Controls.Add(Me.nudTSS10)
-		Me.pnlTSS.Controls.Add(Me.nudTSS12)
-		Me.pnlTSS.Controls.Add(Me.nudTSS6)
-		Me.pnlTSS.Controls.Add(Me.nudTSS13)
-		Me.pnlTSS.Controls.Add(Me.nudTSS1)
-		Me.pnlTSS.Controls.Add(Me.nudTSS8)
-		Me.pnlTSS.Controls.Add(Me.nudTSS9)
-		Me.pnlTSS.Controls.Add(Me.nudTSS4)
-		Me.pnlTSS.Controls.Add(Me.nudTSS5)
-		Me.pnlTSS.Controls.Add(Me.nudTSS11)
-		Me.pnlTSS.Location = New System.Drawing.Point(306, 15)
-		Me.pnlTSS.Name = "pnlTSS"
-		Me.pnlTSS.Size = New System.Drawing.Size(90, 408)
-		Me.pnlTSS.TabIndex = 53
-		'
-		'nudTSS14
-		'
-		Me.nudTSS14.DecimalPlaces = 2
-		Me.nudTSS14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.nudTSS14.DSSElementName = "lmqi14_1"
-		Me.nudTSS14.DSSLocation = 14
-		Me.nudTSS14.DSSOffset = 0.4R
-		Me.nudTSS14.Location = New System.Drawing.Point(0, 332)
-		Me.nudTSS14.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudTSS14.Name = "nudTSS14"
-		Me.nudTSS14.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS14.TabIndex = 43
-		Me.nudTSS14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTSS14.Value = New Decimal(New Integer() {3, 0, 0, 65536})
-		'
-		'nudTSS15
-		'
-		Me.nudTSS15.DecimalPlaces = 2
-		Me.nudTSS15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.nudTSS15.DSSElementName = "lmqi15_1"
-		Me.nudTSS15.DSSLocation = 15
-		Me.nudTSS15.DSSOffset = 0.4R
-		Me.nudTSS15.Location = New System.Drawing.Point(0, 355)
-		Me.nudTSS15.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudTSS15.Name = "nudTSS15"
-		Me.nudTSS15.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS15.TabIndex = 44
-		Me.nudTSS15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTSS15.Value = New Decimal(New Integer() {5, 0, 0, 65536})
-		'
-		'Label21
-		'
-		Me.Label21.Location = New System.Drawing.Point(0, 10)
-		Me.Label21.Name = "Label21"
-		Me.Label21.Size = New System.Drawing.Size(90, 13)
-		Me.Label21.TabIndex = 49
-		Me.Label21.Text = "TSS"
-		Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'nudTSS3
-		'
-		Me.nudTSS3.DecimalPlaces = 2
-		Me.nudTSS3.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.nudTSS3.DSSElementName = "lmqi3_1"
-		Me.nudTSS3.DSSLocation = 3
-		Me.nudTSS3.DSSOffset = 0.4R
-		Me.nudTSS3.Location = New System.Drawing.Point(0, 79)
-		Me.nudTSS3.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudTSS3.Name = "nudTSS3"
-		Me.nudTSS3.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS3.TabIndex = 32
-		Me.nudTSS3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTSS3.Value = New Decimal(New Integer() {4, 0, 0, 65536})
-		'
-		'nudTSS2
-		'
-		Me.nudTSS2.DecimalPlaces = 2
-		Me.nudTSS2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.nudTSS2.DSSElementName = "lmqi2_1"
-		Me.nudTSS2.DSSLocation = 2
-		Me.nudTSS2.DSSOffset = 0.4R
-		Me.nudTSS2.Location = New System.Drawing.Point(0, 56)
-		Me.nudTSS2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudTSS2.Name = "nudTSS2"
-		Me.nudTSS2.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS2.TabIndex = 31
-		Me.nudTSS2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTSS2.Value = New Decimal(New Integer() {4, 0, 0, 65536})
-		'
-		'nudTSS7
-		'
-		Me.nudTSS7.DecimalPlaces = 2
-		Me.nudTSS7.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.nudTSS7.DSSElementName = "lmqi7_1"
-		Me.nudTSS7.DSSLocation = 7
-		Me.nudTSS7.DSSOffset = 0.4R
-		Me.nudTSS7.Location = New System.Drawing.Point(0, 171)
-		Me.nudTSS7.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudTSS7.Name = "nudTSS7"
-		Me.nudTSS7.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS7.TabIndex = 36
-		Me.nudTSS7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTSS7.Value = New Decimal(New Integer() {2, 0, 0, 65536})
-		'
-		'nudTSS10
-		'
-		Me.nudTSS10.DecimalPlaces = 2
-		Me.nudTSS10.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.nudTSS10.DSSElementName = "lmqi10_1"
-		Me.nudTSS10.DSSLocation = 10
-		Me.nudTSS10.DSSOffset = 0.4R
-		Me.nudTSS10.Location = New System.Drawing.Point(0, 240)
-		Me.nudTSS10.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudTSS10.Name = "nudTSS10"
-		Me.nudTSS10.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS10.TabIndex = 39
-		Me.nudTSS10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTSS10.Value = New Decimal(New Integer() {1, 0, 0, 0})
-		'
-		'nudTSS12
-		'
-		Me.nudTSS12.DecimalPlaces = 2
-		Me.nudTSS12.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.nudTSS12.DSSElementName = "lmqi12_1"
-		Me.nudTSS12.DSSLocation = 12
-		Me.nudTSS12.DSSOffset = 0.4R
-		Me.nudTSS12.Location = New System.Drawing.Point(0, 286)
-		Me.nudTSS12.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudTSS12.Name = "nudTSS12"
-		Me.nudTSS12.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS12.TabIndex = 41
-		Me.nudTSS12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTSS12.Value = New Decimal(New Integer() {3, 0, 0, 65536})
-		'
-		'nudTSS6
-		'
-		Me.nudTSS6.DecimalPlaces = 2
-		Me.nudTSS6.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.nudTSS6.DSSElementName = "lmqi6_1"
-		Me.nudTSS6.DSSLocation = 6
-		Me.nudTSS6.DSSOffset = 0.4R
-		Me.nudTSS6.Location = New System.Drawing.Point(0, 148)
-		Me.nudTSS6.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudTSS6.Name = "nudTSS6"
-		Me.nudTSS6.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS6.TabIndex = 35
-		Me.nudTSS6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTSS6.Value = New Decimal(New Integer() {2, 0, 0, 65536})
-		'
-		'nudTSS13
-		'
-		Me.nudTSS13.DecimalPlaces = 2
-		Me.nudTSS13.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.nudTSS13.DSSElementName = "lmqi13_1"
-		Me.nudTSS13.DSSLocation = 13
-		Me.nudTSS13.DSSOffset = 0.4R
-		Me.nudTSS13.Location = New System.Drawing.Point(0, 309)
-		Me.nudTSS13.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudTSS13.Name = "nudTSS13"
-		Me.nudTSS13.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS13.TabIndex = 42
-		Me.nudTSS13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTSS13.Value = New Decimal(New Integer() {5, 0, 0, 65536})
-		'
-		'nudTSS1
-		'
-		Me.nudTSS1.DecimalPlaces = 2
-		Me.nudTSS1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.nudTSS1.DSSElementName = "lmqi1_1"
-		Me.nudTSS1.DSSLocation = 1
-		Me.nudTSS1.DSSOffset = 0.4R
-		Me.nudTSS1.Location = New System.Drawing.Point(0, 33)
-		Me.nudTSS1.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudTSS1.Name = "nudTSS1"
-		Me.nudTSS1.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS1.TabIndex = 30
-		Me.nudTSS1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTSS1.Value = New Decimal(New Integer() {4, 0, 0, 65536})
-		'
-		'nudTSS8
-		'
-		Me.nudTSS8.DecimalPlaces = 2
-		Me.nudTSS8.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.nudTSS8.DSSElementName = "lmqi8_1"
-		Me.nudTSS8.DSSLocation = 8
-		Me.nudTSS8.DSSOffset = 0.4R
-		Me.nudTSS8.Location = New System.Drawing.Point(0, 194)
-		Me.nudTSS8.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudTSS8.Name = "nudTSS8"
-		Me.nudTSS8.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS8.TabIndex = 37
-		Me.nudTSS8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTSS8.Value = New Decimal(New Integer() {6, 0, 0, 65536})
-		'
-		'nudTSS9
-		'
-		Me.nudTSS9.DecimalPlaces = 2
-		Me.nudTSS9.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.nudTSS9.DSSElementName = "lmqi9_1"
-		Me.nudTSS9.DSSLocation = 9
-		Me.nudTSS9.DSSOffset = 0.4R
-		Me.nudTSS9.Location = New System.Drawing.Point(0, 217)
-		Me.nudTSS9.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudTSS9.Name = "nudTSS9"
-		Me.nudTSS9.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS9.TabIndex = 38
-		Me.nudTSS9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTSS9.Value = New Decimal(New Integer() {1, 0, 0, 0})
-		'
-		'nudTSS4
-		'
-		Me.nudTSS4.DecimalPlaces = 2
-		Me.nudTSS4.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.nudTSS4.DSSElementName = "lmqi4_1"
-		Me.nudTSS4.DSSLocation = 4
-		Me.nudTSS4.DSSOffset = 0.4R
-		Me.nudTSS4.Location = New System.Drawing.Point(0, 102)
-		Me.nudTSS4.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudTSS4.Name = "nudTSS4"
-		Me.nudTSS4.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS4.TabIndex = 33
-		Me.nudTSS4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTSS4.Value = New Decimal(New Integer() {4, 0, 0, 65536})
-		'
-		'nudTSS5
-		'
-		Me.nudTSS5.DecimalPlaces = 2
-		Me.nudTSS5.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.nudTSS5.DSSElementName = "lmqi5_1"
-		Me.nudTSS5.DSSLocation = 5
-		Me.nudTSS5.DSSOffset = 0.4R
-		Me.nudTSS5.Location = New System.Drawing.Point(0, 125)
-		Me.nudTSS5.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudTSS5.Name = "nudTSS5"
-		Me.nudTSS5.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS5.TabIndex = 34
-		Me.nudTSS5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTSS5.Value = New Decimal(New Integer() {8, 0, 0, 65536})
-		'
-		'nudTSS11
-		'
-		Me.nudTSS11.DecimalPlaces = 2
-		Me.nudTSS11.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
-		Me.nudTSS11.DSSElementName = "lmqi11_1"
-		Me.nudTSS11.DSSLocation = 11
-		Me.nudTSS11.DSSOffset = 0.4R
-		Me.nudTSS11.Location = New System.Drawing.Point(0, 263)
-		Me.nudTSS11.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudTSS11.Name = "nudTSS11"
-		Me.nudTSS11.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS11.TabIndex = 40
-		Me.nudTSS11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTSS11.Value = New Decimal(New Integer() {4, 0, 0, 65536})
-		'
-		'pnlTDS
-		'
-		Me.pnlTDS.Controls.Add(Me.nudTDS14)
-		Me.pnlTDS.Controls.Add(Me.nudTDS15)
-		Me.pnlTDS.Controls.Add(Me.Label19)
-		Me.pnlTDS.Controls.Add(Me.nudTDS3)
-		Me.pnlTDS.Controls.Add(Me.nudTDS2)
-		Me.pnlTDS.Controls.Add(Me.nudTDS7)
-		Me.pnlTDS.Controls.Add(Me.nudTDS10)
-		Me.pnlTDS.Controls.Add(Me.nudTDS6)
-		Me.pnlTDS.Controls.Add(Me.nudTDS12)
-		Me.pnlTDS.Controls.Add(Me.nudTDS1)
-		Me.pnlTDS.Controls.Add(Me.nudTDS9)
-		Me.pnlTDS.Controls.Add(Me.nudTDS13)
-		Me.pnlTDS.Controls.Add(Me.nudTDS5)
-		Me.pnlTDS.Controls.Add(Me.nudTDS11)
-		Me.pnlTDS.Controls.Add(Me.nudTDS8)
-		Me.pnlTDS.Controls.Add(Me.nudTDS4)
-		Me.pnlTDS.Location = New System.Drawing.Point(210, 15)
-		Me.pnlTDS.Name = "pnlTDS"
-		Me.pnlTDS.Size = New System.Drawing.Size(90, 408)
-		Me.pnlTDS.TabIndex = 52
-		'
-		'nudTDS14
-		'
-		Me.nudTDS14.DecimalPlaces = 2
-		Me.nudTDS14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
-		Me.nudTDS14.DSSElementName = "lsqi14_1"
-		Me.nudTDS14.DSSLocation = 14
-		Me.nudTDS14.DSSOffset = 0R
-		Me.nudTDS14.Location = New System.Drawing.Point(0, 332)
-		Me.nudTDS14.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
-		Me.nudTDS14.Name = "nudTDS14"
-		Me.nudTDS14.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS14.TabIndex = 28
-		Me.nudTDS14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTDS14.Value = New Decimal(New Integer() {3, 0, 0, 65536})
-		'
-		'nudTDS15
-		'
-		Me.nudTDS15.DecimalPlaces = 2
-		Me.nudTDS15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
-		Me.nudTDS15.DSSElementName = "lsqi15_1"
-		Me.nudTDS15.DSSLocation = 15
-		Me.nudTDS15.DSSOffset = 0R
-		Me.nudTDS15.Location = New System.Drawing.Point(0, 355)
-		Me.nudTDS15.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
-		Me.nudTDS15.Name = "nudTDS15"
-		Me.nudTDS15.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS15.TabIndex = 29
-		Me.nudTDS15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTDS15.Value = New Decimal(New Integer() {5, 0, 0, 65536})
-		'
-		'Label19
-		'
-		Me.Label19.Location = New System.Drawing.Point(0, 10)
-		Me.Label19.Name = "Label19"
-		Me.Label19.Size = New System.Drawing.Size(90, 13)
-		Me.Label19.TabIndex = 49
-		Me.Label19.Text = "TDS"
-		Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'nudTDS3
-		'
-		Me.nudTDS3.DecimalPlaces = 2
-		Me.nudTDS3.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
-		Me.nudTDS3.DSSElementName = "lsqi3_1"
-		Me.nudTDS3.DSSLocation = 3
-		Me.nudTDS3.DSSOffset = 0R
-		Me.nudTDS3.Location = New System.Drawing.Point(0, 79)
-		Me.nudTDS3.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
-		Me.nudTDS3.Name = "nudTDS3"
-		Me.nudTDS3.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS3.TabIndex = 17
-		Me.nudTDS3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTDS3.Value = New Decimal(New Integer() {4, 0, 0, 65536})
-		'
-		'nudTDS2
-		'
-		Me.nudTDS2.DecimalPlaces = 2
-		Me.nudTDS2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
-		Me.nudTDS2.DSSElementName = "lsqi2_1"
-		Me.nudTDS2.DSSLocation = 2
-		Me.nudTDS2.DSSOffset = 0R
-		Me.nudTDS2.Location = New System.Drawing.Point(0, 56)
-		Me.nudTDS2.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
-		Me.nudTDS2.Name = "nudTDS2"
-		Me.nudTDS2.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS2.TabIndex = 16
-		Me.nudTDS2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTDS2.Value = New Decimal(New Integer() {4, 0, 0, 65536})
-		'
-		'nudTDS7
-		'
-		Me.nudTDS7.DecimalPlaces = 2
-		Me.nudTDS7.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
-		Me.nudTDS7.DSSElementName = "lsqi7_1"
-		Me.nudTDS7.DSSLocation = 7
-		Me.nudTDS7.DSSOffset = 0R
-		Me.nudTDS7.Location = New System.Drawing.Point(0, 171)
-		Me.nudTDS7.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
-		Me.nudTDS7.Name = "nudTDS7"
-		Me.nudTDS7.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS7.TabIndex = 21
-		Me.nudTDS7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTDS7.Value = New Decimal(New Integer() {2, 0, 0, 65536})
-		'
-		'nudTDS10
-		'
-		Me.nudTDS10.DecimalPlaces = 2
-		Me.nudTDS10.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
-		Me.nudTDS10.DSSElementName = "lsqi10_1"
-		Me.nudTDS10.DSSLocation = 10
-		Me.nudTDS10.DSSOffset = 0R
-		Me.nudTDS10.Location = New System.Drawing.Point(0, 240)
-		Me.nudTDS10.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
-		Me.nudTDS10.Name = "nudTDS10"
-		Me.nudTDS10.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS10.TabIndex = 24
-		Me.nudTDS10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTDS10.Value = New Decimal(New Integer() {1, 0, 0, 0})
-		'
-		'nudTDS6
-		'
-		Me.nudTDS6.DecimalPlaces = 2
-		Me.nudTDS6.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
-		Me.nudTDS6.DSSElementName = "lsqi6_1"
-		Me.nudTDS6.DSSLocation = 6
-		Me.nudTDS6.DSSOffset = 0R
-		Me.nudTDS6.Location = New System.Drawing.Point(0, 148)
-		Me.nudTDS6.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
-		Me.nudTDS6.Name = "nudTDS6"
-		Me.nudTDS6.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS6.TabIndex = 20
-		Me.nudTDS6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTDS6.Value = New Decimal(New Integer() {2, 0, 0, 65536})
-		'
-		'nudTDS12
-		'
-		Me.nudTDS12.DecimalPlaces = 2
-		Me.nudTDS12.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
-		Me.nudTDS12.DSSElementName = "lsqi12_1"
-		Me.nudTDS12.DSSLocation = 12
-		Me.nudTDS12.DSSOffset = 0R
-		Me.nudTDS12.Location = New System.Drawing.Point(0, 286)
-		Me.nudTDS12.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
-		Me.nudTDS12.Name = "nudTDS12"
-		Me.nudTDS12.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS12.TabIndex = 26
-		Me.nudTDS12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTDS12.Value = New Decimal(New Integer() {3, 0, 0, 65536})
-		'
-		'nudTDS1
-		'
-		Me.nudTDS1.DecimalPlaces = 2
-		Me.nudTDS1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
-		Me.nudTDS1.DSSElementName = "lsqi1_1"
-		Me.nudTDS1.DSSLocation = 1
-		Me.nudTDS1.DSSOffset = 0R
-		Me.nudTDS1.Location = New System.Drawing.Point(0, 33)
-		Me.nudTDS1.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
-		Me.nudTDS1.Name = "nudTDS1"
-		Me.nudTDS1.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS1.TabIndex = 15
-		Me.nudTDS1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTDS1.Value = New Decimal(New Integer() {4, 0, 0, 65536})
-		'
-		'nudTDS9
-		'
-		Me.nudTDS9.DecimalPlaces = 2
-		Me.nudTDS9.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
-		Me.nudTDS9.DSSElementName = "lsqi9_1"
-		Me.nudTDS9.DSSLocation = 9
-		Me.nudTDS9.DSSOffset = 0R
-		Me.nudTDS9.Location = New System.Drawing.Point(0, 217)
-		Me.nudTDS9.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
-		Me.nudTDS9.Name = "nudTDS9"
-		Me.nudTDS9.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS9.TabIndex = 23
-		Me.nudTDS9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTDS9.Value = New Decimal(New Integer() {1, 0, 0, 0})
-		'
-		'nudTDS13
-		'
-		Me.nudTDS13.DecimalPlaces = 2
-		Me.nudTDS13.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
-		Me.nudTDS13.DSSElementName = "lsqi13_1"
-		Me.nudTDS13.DSSLocation = 13
-		Me.nudTDS13.DSSOffset = 0R
-		Me.nudTDS13.Location = New System.Drawing.Point(0, 309)
-		Me.nudTDS13.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
-		Me.nudTDS13.Name = "nudTDS13"
-		Me.nudTDS13.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS13.TabIndex = 27
-		Me.nudTDS13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTDS13.Value = New Decimal(New Integer() {5, 0, 0, 65536})
-		'
-		'nudTDS5
-		'
-		Me.nudTDS5.DecimalPlaces = 2
-		Me.nudTDS5.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
-		Me.nudTDS5.DSSElementName = "lsqi5_1"
-		Me.nudTDS5.DSSLocation = 5
-		Me.nudTDS5.DSSOffset = 0R
-		Me.nudTDS5.Location = New System.Drawing.Point(0, 125)
-		Me.nudTDS5.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
-		Me.nudTDS5.Name = "nudTDS5"
-		Me.nudTDS5.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS5.TabIndex = 19
-		Me.nudTDS5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTDS5.Value = New Decimal(New Integer() {8, 0, 0, 65536})
-		'
-		'nudTDS11
-		'
-		Me.nudTDS11.DecimalPlaces = 2
-		Me.nudTDS11.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
-		Me.nudTDS11.DSSElementName = "lsqi11_1"
-		Me.nudTDS11.DSSLocation = 11
-		Me.nudTDS11.DSSOffset = 0R
-		Me.nudTDS11.Location = New System.Drawing.Point(0, 263)
-		Me.nudTDS11.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
-		Me.nudTDS11.Name = "nudTDS11"
-		Me.nudTDS11.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS11.TabIndex = 25
-		Me.nudTDS11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTDS11.Value = New Decimal(New Integer() {4, 0, 0, 65536})
-		'
-		'nudTDS8
-		'
-		Me.nudTDS8.DecimalPlaces = 2
-		Me.nudTDS8.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
-		Me.nudTDS8.DSSElementName = "lsqi8_1"
-		Me.nudTDS8.DSSLocation = 8
-		Me.nudTDS8.DSSOffset = 0R
-		Me.nudTDS8.Location = New System.Drawing.Point(0, 194)
-		Me.nudTDS8.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
-		Me.nudTDS8.Name = "nudTDS8"
-		Me.nudTDS8.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS8.TabIndex = 22
-		Me.nudTDS8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTDS8.Value = New Decimal(New Integer() {6, 0, 0, 65536})
-		'
-		'nudTDS4
-		'
-		Me.nudTDS4.DecimalPlaces = 2
-		Me.nudTDS4.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
-		Me.nudTDS4.DSSElementName = "lsqi4_1"
-		Me.nudTDS4.DSSLocation = 4
-		Me.nudTDS4.DSSOffset = 0R
-		Me.nudTDS4.Location = New System.Drawing.Point(0, 102)
-		Me.nudTDS4.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
-		Me.nudTDS4.Name = "nudTDS4"
-		Me.nudTDS4.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS4.TabIndex = 18
-		Me.nudTDS4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTDS4.Value = New Decimal(New Integer() {4, 0, 0, 65536})
-		'
-		'pnlBOD
-		'
-		Me.pnlBOD.Controls.Add(Me.nudBOD14)
-		Me.pnlBOD.Controls.Add(Me.nudBOD15)
-		Me.pnlBOD.Controls.Add(Me.Label20)
-		Me.pnlBOD.Controls.Add(Me.nudBOD3)
-		Me.pnlBOD.Controls.Add(Me.nudBOD2)
-		Me.pnlBOD.Controls.Add(Me.nudBOD7)
-		Me.pnlBOD.Controls.Add(Me.nudBOD6)
-		Me.pnlBOD.Controls.Add(Me.nudBOD1)
-		Me.pnlBOD.Controls.Add(Me.nudBOD9)
-		Me.pnlBOD.Controls.Add(Me.nudBOD12)
-		Me.pnlBOD.Controls.Add(Me.nudBOD10)
-		Me.pnlBOD.Controls.Add(Me.nudBOD11)
-		Me.pnlBOD.Controls.Add(Me.nudBOD5)
-		Me.pnlBOD.Controls.Add(Me.nudBOD13)
-		Me.pnlBOD.Controls.Add(Me.nudBOD4)
-		Me.pnlBOD.Controls.Add(Me.nudBOD8)
-		Me.pnlBOD.Location = New System.Drawing.Point(113, 15)
-		Me.pnlBOD.Name = "pnlBOD"
-		Me.pnlBOD.Size = New System.Drawing.Size(90, 408)
-		Me.pnlBOD.TabIndex = 51
-		'
-		'nudBOD14
-		'
-		Me.nudBOD14.DecimalPlaces = 2
-		Me.nudBOD14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
-		Me.nudBOD14.DSSElementName = "lbqi14_1"
-		Me.nudBOD14.DSSLocation = 14
-		Me.nudBOD14.DSSOffset = -0.4R
-		Me.nudBOD14.Location = New System.Drawing.Point(0, 332)
-		Me.nudBOD14.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudBOD14.Name = "nudBOD14"
-		Me.nudBOD14.Size = New System.Drawing.Size(90, 20)
-		Me.nudBOD14.TabIndex = 13
-		Me.nudBOD14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudBOD14.Value = New Decimal(New Integer() {2, 0, 0, 65536})
-		'
-		'nudBOD15
-		'
-		Me.nudBOD15.DecimalPlaces = 2
-		Me.nudBOD15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
-		Me.nudBOD15.DSSElementName = "lbqi15_1"
-		Me.nudBOD15.DSSLocation = 15
-		Me.nudBOD15.DSSOffset = -0.4R
-		Me.nudBOD15.Location = New System.Drawing.Point(0, 355)
-		Me.nudBOD15.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudBOD15.Name = "nudBOD15"
-		Me.nudBOD15.Size = New System.Drawing.Size(90, 20)
-		Me.nudBOD15.TabIndex = 14
-		Me.nudBOD15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudBOD15.Value = New Decimal(New Integer() {1054794521, 0, 0, 589824})
-		'
-		'Label20
-		'
-		Me.Label20.Location = New System.Drawing.Point(0, 10)
-		Me.Label20.Name = "Label20"
-		Me.Label20.Size = New System.Drawing.Size(90, 13)
-		Me.Label20.TabIndex = 50
-		Me.Label20.Text = "BOD"
-		Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'nudBOD3
-		'
-		Me.nudBOD3.DecimalPlaces = 2
-		Me.nudBOD3.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
-		Me.nudBOD3.DSSElementName = "lbqi3_1"
-		Me.nudBOD3.DSSLocation = 3
-		Me.nudBOD3.DSSOffset = -0.4R
-		Me.nudBOD3.Location = New System.Drawing.Point(0, 79)
-		Me.nudBOD3.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudBOD3.Name = "nudBOD3"
-		Me.nudBOD3.Size = New System.Drawing.Size(90, 20)
-		Me.nudBOD3.TabIndex = 2
-		Me.nudBOD3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudBOD3.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'nudBOD2
-		'
-		Me.nudBOD2.DecimalPlaces = 2
-		Me.nudBOD2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
-		Me.nudBOD2.DSSElementName = "lbqi2_1"
-		Me.nudBOD2.DSSLocation = 2
-		Me.nudBOD2.DSSOffset = -0.4R
-		Me.nudBOD2.Location = New System.Drawing.Point(0, 56)
-		Me.nudBOD2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudBOD2.Name = "nudBOD2"
-		Me.nudBOD2.Size = New System.Drawing.Size(90, 20)
-		Me.nudBOD2.TabIndex = 1
-		Me.nudBOD2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudBOD2.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'nudBOD7
-		'
-		Me.nudBOD7.DecimalPlaces = 2
-		Me.nudBOD7.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
-		Me.nudBOD7.DSSElementName = "lbqi7_1"
-		Me.nudBOD7.DSSLocation = 7
-		Me.nudBOD7.DSSOffset = -0.4R
-		Me.nudBOD7.Location = New System.Drawing.Point(0, 171)
-		Me.nudBOD7.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudBOD7.Name = "nudBOD7"
-		Me.nudBOD7.Size = New System.Drawing.Size(90, 20)
-		Me.nudBOD7.TabIndex = 6
-		Me.nudBOD7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudBOD7.Value = New Decimal(New Integer() {10, 0, 0, 0})
-		'
-		'nudBOD6
-		'
-		Me.nudBOD6.DecimalPlaces = 2
-		Me.nudBOD6.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
-		Me.nudBOD6.DSSElementName = "lbqi6_1"
-		Me.nudBOD6.DSSLocation = 6
-		Me.nudBOD6.DSSOffset = -0.4R
-		Me.nudBOD6.Location = New System.Drawing.Point(0, 148)
-		Me.nudBOD6.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudBOD6.Name = "nudBOD6"
-		Me.nudBOD6.Size = New System.Drawing.Size(90, 20)
-		Me.nudBOD6.TabIndex = 5
-		Me.nudBOD6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudBOD6.Value = New Decimal(New Integer() {6, 0, 0, 0})
-		'
-		'nudBOD1
-		'
-		Me.nudBOD1.DecimalPlaces = 2
-		Me.nudBOD1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
-		Me.nudBOD1.DSSElementName = "lbqi1_1"
-		Me.nudBOD1.DSSLocation = 1
-		Me.nudBOD1.DSSOffset = -0.4R
-		Me.nudBOD1.Location = New System.Drawing.Point(0, 33)
-		Me.nudBOD1.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudBOD1.Name = "nudBOD1"
-		Me.nudBOD1.Size = New System.Drawing.Size(90, 20)
-		Me.nudBOD1.TabIndex = 0
-		Me.nudBOD1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudBOD1.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'nudBOD9
-		'
-		Me.nudBOD9.DecimalPlaces = 2
-		Me.nudBOD9.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
-		Me.nudBOD9.DSSElementName = "lbqi9_1"
-		Me.nudBOD9.DSSLocation = 9
-		Me.nudBOD9.DSSOffset = -0.4R
-		Me.nudBOD9.Location = New System.Drawing.Point(0, 217)
-		Me.nudBOD9.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudBOD9.Name = "nudBOD9"
-		Me.nudBOD9.Size = New System.Drawing.Size(90, 20)
-		Me.nudBOD9.TabIndex = 8
-		Me.nudBOD9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudBOD9.Value = New Decimal(New Integer() {2, 0, 0, 65536})
-		'
-		'nudBOD12
-		'
-		Me.nudBOD12.DecimalPlaces = 2
-		Me.nudBOD12.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
-		Me.nudBOD12.DSSElementName = "lbqi12_1"
-		Me.nudBOD12.DSSLocation = 12
-		Me.nudBOD12.DSSOffset = -0.4R
-		Me.nudBOD12.Location = New System.Drawing.Point(0, 286)
-		Me.nudBOD12.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudBOD12.Name = "nudBOD12"
-		Me.nudBOD12.Size = New System.Drawing.Size(90, 20)
-		Me.nudBOD12.TabIndex = 11
-		Me.nudBOD12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudBOD12.Value = New Decimal(New Integer() {2, 0, 0, 65536})
-		'
-		'nudBOD10
-		'
-		Me.nudBOD10.DecimalPlaces = 2
-		Me.nudBOD10.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
-		Me.nudBOD10.DSSElementName = "lbqi10_1"
-		Me.nudBOD10.DSSLocation = 10
-		Me.nudBOD10.DSSOffset = -0.4R
-		Me.nudBOD10.Location = New System.Drawing.Point(0, 240)
-		Me.nudBOD10.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudBOD10.Name = "nudBOD10"
-		Me.nudBOD10.Size = New System.Drawing.Size(90, 20)
-		Me.nudBOD10.TabIndex = 9
-		Me.nudBOD10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudBOD10.Value = New Decimal(New Integer() {2, 0, 0, 65536})
-		'
-		'nudBOD11
-		'
-		Me.nudBOD11.DecimalPlaces = 2
-		Me.nudBOD11.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
-		Me.nudBOD11.DSSElementName = "lbqi11_1"
-		Me.nudBOD11.DSSLocation = 11
-		Me.nudBOD11.DSSOffset = -0.4R
-		Me.nudBOD11.Location = New System.Drawing.Point(0, 263)
-		Me.nudBOD11.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudBOD11.Name = "nudBOD11"
-		Me.nudBOD11.Size = New System.Drawing.Size(90, 20)
-		Me.nudBOD11.TabIndex = 10
-		Me.nudBOD11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudBOD11.Value = New Decimal(New Integer() {2, 0, 0, 65536})
-		'
-		'nudBOD5
-		'
-		Me.nudBOD5.DecimalPlaces = 2
-		Me.nudBOD5.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
-		Me.nudBOD5.DSSElementName = "lbqi5_1"
-		Me.nudBOD5.DSSLocation = 5
-		Me.nudBOD5.DSSOffset = -0.4R
-		Me.nudBOD5.Location = New System.Drawing.Point(0, 125)
-		Me.nudBOD5.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudBOD5.Name = "nudBOD5"
-		Me.nudBOD5.Size = New System.Drawing.Size(90, 20)
-		Me.nudBOD5.TabIndex = 4
-		Me.nudBOD5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudBOD5.Value = New Decimal(New Integer() {12, 0, 0, 0})
-		'
-		'nudBOD13
-		'
-		Me.nudBOD13.DecimalPlaces = 2
-		Me.nudBOD13.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
-		Me.nudBOD13.DSSElementName = "lbqi13_1"
-		Me.nudBOD13.DSSLocation = 13
-		Me.nudBOD13.DSSOffset = -0.4R
-		Me.nudBOD13.Location = New System.Drawing.Point(0, 309)
-		Me.nudBOD13.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudBOD13.Name = "nudBOD13"
-		Me.nudBOD13.Size = New System.Drawing.Size(90, 20)
-		Me.nudBOD13.TabIndex = 12
-		Me.nudBOD13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudBOD13.Value = New Decimal(New Integer() {1054794521, 0, 0, 589824})
-		'
-		'nudBOD4
-		'
-		Me.nudBOD4.DecimalPlaces = 2
-		Me.nudBOD4.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
-		Me.nudBOD4.DSSElementName = "lbqi4_1"
-		Me.nudBOD4.DSSLocation = 4
-		Me.nudBOD4.DSSOffset = -0.4R
-		Me.nudBOD4.Location = New System.Drawing.Point(0, 102)
-		Me.nudBOD4.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudBOD4.Name = "nudBOD4"
-		Me.nudBOD4.Size = New System.Drawing.Size(90, 20)
-		Me.nudBOD4.TabIndex = 3
-		Me.nudBOD4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudBOD4.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'nudBOD8
-		'
-		Me.nudBOD8.DecimalPlaces = 2
-		Me.nudBOD8.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
-		Me.nudBOD8.DSSElementName = "lbqi8_1"
-		Me.nudBOD8.DSSLocation = 8
-		Me.nudBOD8.DSSOffset = -0.4R
-		Me.nudBOD8.Location = New System.Drawing.Point(0, 194)
-		Me.nudBOD8.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudBOD8.Name = "nudBOD8"
-		Me.nudBOD8.Size = New System.Drawing.Size(90, 20)
-		Me.nudBOD8.TabIndex = 7
-		Me.nudBOD8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudBOD8.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'Label3
-		'
-		Me.Label3.Location = New System.Drawing.Point(17, 325)
-		Me.Label3.Name = "Label3"
-		Me.Label3.Size = New System.Drawing.Size(91, 20)
-		Me.Label3.TabIndex = 36
-		Me.Label3.Text = "Tabouk"
-		'
-		'Label4
-		'
-		Me.Label4.Location = New System.Drawing.Point(17, 187)
-		Me.Label4.Name = "Label4"
-		Me.Label4.Size = New System.Drawing.Size(91, 20)
-		Me.Label4.TabIndex = 37
-		Me.Label4.Text = "Jizan"
-		'
-		'Label5
-		'
-		Me.Label5.Location = New System.Drawing.Point(17, 302)
-		Me.Label5.Name = "Label5"
-		Me.Label5.Size = New System.Drawing.Size(91, 20)
-		Me.Label5.TabIndex = 38
-		Me.Label5.Text = "Riyadh"
-		'
-		'Label6
-		'
-		Me.Label6.Location = New System.Drawing.Point(17, 164)
-		Me.Label6.Name = "Label6"
-		Me.Label6.Size = New System.Drawing.Size(91, 20)
-		Me.Label6.TabIndex = 39
-		Me.Label6.Text = "Hail"
-		'
-		'Label7
-		'
-		Me.Label7.Location = New System.Drawing.Point(17, 279)
-		Me.Label7.Name = "Label7"
-		Me.Label7.Size = New System.Drawing.Size(91, 20)
-		Me.Label7.TabIndex = 40
-		Me.Label7.Text = "North Border"
-		'
-		'Label8
-		'
-		Me.Label8.Location = New System.Drawing.Point(17, 256)
-		Me.Label8.Name = "Label8"
-		Me.Label8.Size = New System.Drawing.Size(91, 20)
-		Me.Label8.TabIndex = 48
-		Me.Label8.Text = "Najran"
-		'
-		'Label9
-		'
-		Me.Label9.Location = New System.Drawing.Point(17, 95)
-		Me.Label9.Name = "Label9"
-		Me.Label9.Size = New System.Drawing.Size(91, 20)
-		Me.Label9.TabIndex = 41
-		Me.Label9.Text = "Al - Jouf"
-		'
-		'Label11
-		'
-		Me.Label11.Location = New System.Drawing.Point(17, 233)
-		Me.Label11.Name = "Label11"
-		Me.Label11.Size = New System.Drawing.Size(91, 20)
-		Me.Label11.TabIndex = 42
-		Me.Label11.Text = "Mecca"
-		'
-		'Label14
-		'
-		Me.Label14.Location = New System.Drawing.Point(17, 141)
-		Me.Label14.Name = "Label14"
-		Me.Label14.Size = New System.Drawing.Size(91, 20)
-		Me.Label14.TabIndex = 43
-		Me.Label14.Text = "Eastern Area"
-		'
-		'Label15
-		'
-		Me.Label15.Location = New System.Drawing.Point(17, 72)
-		Me.Label15.Name = "Label15"
-		Me.Label15.Size = New System.Drawing.Size(91, 20)
-		Me.Label15.TabIndex = 44
-		Me.Label15.Text = "Al - Gassem"
-		'
-		'Label16
-		'
-		Me.Label16.Location = New System.Drawing.Point(17, 210)
-		Me.Label16.Name = "Label16"
-		Me.Label16.Size = New System.Drawing.Size(91, 20)
-		Me.Label16.TabIndex = 45
-		Me.Label16.Text = "Madina"
-		'
-		'Label17
-		'
-		Me.Label17.Location = New System.Drawing.Point(17, 118)
-		Me.Label17.Name = "Label17"
-		Me.Label17.Size = New System.Drawing.Size(91, 20)
-		Me.Label17.TabIndex = 46
-		Me.Label17.Text = "Aseer"
-		'
-		'Label18
-		'
-		Me.Label18.Location = New System.Drawing.Point(17, 49)
-		Me.Label18.Name = "Label18"
-		Me.Label18.Size = New System.Drawing.Size(91, 20)
-		Me.Label18.TabIndex = 47
-		Me.Label18.Text = "Al - Baha"
-		'
-		'grbMisc
-		'
-		Me.grbMisc.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-			Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-		Me.grbMisc.Controls.Add(Me.DssPanel1)
-		Me.grbMisc.Controls.Add(Me.Label25)
-		Me.grbMisc.Controls.Add(Me.Label119)
-		Me.grbMisc.Controls.Add(Me.Label34)
-		Me.grbMisc.Controls.Add(Me.Label27)
-		Me.grbMisc.Controls.Add(Me.Label23)
-		Me.grbMisc.Controls.Add(Me.Label118)
-		Me.grbMisc.Controls.Add(Me.Label78)
-		Me.grbMisc.Controls.Add(Me.Label117)
-		Me.grbMisc.Controls.Add(Me.Label91)
-		Me.grbMisc.ForeColor = System.Drawing.Color.Black
-		Me.grbMisc.Location = New System.Drawing.Point(0, 0)
-		Me.grbMisc.Name = "grbMisc"
-		Me.grbMisc.Size = New System.Drawing.Size(759, 516)
-		Me.grbMisc.TabIndex = 13
-		Me.grbMisc.TabStop = False
-		Me.grbMisc.Text = "Costs, efficiencies, standards, preferences and constraints"
-		Me.grbMisc.Visible = False
-		'
-		'DssPanel1
-		'
-		Me.DssPanel1.Controls.Add(Me.Label10)
-		Me.DssPanel1.Controls.Add(Me.Label13)
-		Me.DssPanel1.Controls.Add(Me.lblBOD)
-		Me.DssPanel1.Controls.Add(Me.Label92)
-		Me.DssPanel1.Controls.Add(Me.Label28)
-		Me.DssPanel1.Controls.Add(Me.Label30)
-		Me.DssPanel1.Controls.Add(Me.Label64)
-		Me.DssPanel1.Controls.Add(Me.Label70)
-		Me.DssPanel1.Controls.Add(Me.Label116)
-		Me.DssPanel1.Controls.Add(Me.Label12)
-		Me.DssPanel1.Controls.Add(Me.Label26)
-		Me.DssPanel1.Controls.Add(Me.nudTpsx)
-		Me.DssPanel1.Controls.Add(Me.Label68)
-		Me.DssPanel1.Controls.Add(Me.nudTpmz)
-		Me.DssPanel1.Controls.Add(Me.Label24)
-		Me.DssPanel1.Controls.Add(Me.nudAgrUFRO)
-		Me.DssPanel1.Controls.Add(Me.Label29)
-		Me.DssPanel1.Controls.Add(Me.nudEnvw)
-		Me.DssPanel1.Controls.Add(Me.lblTDS)
-		Me.DssPanel1.Controls.Add(Me.nudgwsp)
-		Me.DssPanel1.Controls.Add(Me.nudTotpla)
-		Me.DssPanel1.Controls.Add(Me.nudIndUFRO)
-		Me.DssPanel1.Controls.Add(Me.nudSocw)
-		Me.DssPanel1.Controls.Add(Me.nudTpbx)
-		Me.DssPanel1.Controls.Add(Me.nudEcow)
-		Me.DssPanel1.Controls.Add(Me.nudsmqi)
-		Me.DssPanel1.Controls.Add(Me.nudLanUFRO)
-		Me.DssPanel1.Controls.Add(Me.nudsbqi)
-		Me.DssPanel1.Controls.Add(Me.nudLanUF)
-		Me.DssPanel1.Controls.Add(Me.nudssqi)
-		Me.DssPanel1.Controls.Add(Me.nudAgrUF)
-		Me.DssPanel1.Controls.Add(Me.nudIndUF)
-		Me.DssPanel1.Location = New System.Drawing.Point(178, 16)
-		Me.DssPanel1.Name = "DssPanel1"
-		Me.DssPanel1.Size = New System.Drawing.Size(575, 367)
-		Me.DssPanel1.TabIndex = 193
-		'
-		'Label10
-		'
-		Me.Label10.Location = New System.Drawing.Point(2, 9)
-		Me.Label10.Name = "Label10"
-		Me.Label10.Size = New System.Drawing.Size(90, 13)
-		Me.Label10.TabIndex = 179
-		Me.Label10.Text = "Cost UF"
-		Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'Label13
-		'
-		Me.Label13.Location = New System.Drawing.Point(487, 9)
-		Me.Label13.Name = "Label13"
-		Me.Label13.Size = New System.Drawing.Size(90, 13)
-		Me.Label13.TabIndex = 192
-		Me.Label13.Text = "N"
-		Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'lblBOD
-		'
-		Me.lblBOD.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblBOD.DSSElementName = Nothing
-		Me.lblBOD.DSSLocation = 0
-		Me.lblBOD.DSSOffset = 0R
-		Me.lblBOD.Location = New System.Drawing.Point(195, 9)
-		Me.lblBOD.Name = "lblBOD"
-		Me.lblBOD.Size = New System.Drawing.Size(90, 13)
-		Me.lblBOD.TabIndex = 179
-		Me.lblBOD.Text = "BOD"
-		Me.lblBOD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'Label92
-		'
-		Me.Label92.Location = New System.Drawing.Point(389, 26)
-		Me.Label92.Name = "Label92"
-		Me.Label92.Size = New System.Drawing.Size(90, 13)
-		Me.Label92.TabIndex = 191
-		Me.Label92.Text = "Efficiency (%)"
-		Me.Label92.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'Label28
-		'
-		Me.Label28.Location = New System.Drawing.Point(195, 138)
-		Me.Label28.Name = "Label28"
-		Me.Label28.Size = New System.Drawing.Size(90, 13)
-		Me.Label28.TabIndex = 179
-		Me.Label28.Text = "Env"
-		Me.Label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'Label30
-		'
-		Me.Label30.Location = New System.Drawing.Point(389, 138)
-		Me.Label30.Name = "Label30"
-		Me.Label30.Size = New System.Drawing.Size(90, 13)
-		Me.Label30.TabIndex = 191
-		Me.Label30.Text = "Soc"
-		Me.Label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'Label64
-		'
-		Me.Label64.Location = New System.Drawing.Point(195, 26)
-		Me.Label64.Name = "Label64"
-		Me.Label64.Size = New System.Drawing.Size(90, 13)
-		Me.Label64.TabIndex = 179
-		Me.Label64.Text = "Efficiency (%)"
-		Me.Label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'Label70
-		'
-		Me.Label70.Location = New System.Drawing.Point(389, 9)
-		Me.Label70.Name = "Label70"
-		Me.Label70.Size = New System.Drawing.Size(90, 13)
-		Me.Label70.TabIndex = 191
-		Me.Label70.Text = "TSS"
-		Me.Label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'Label116
-		'
-		Me.Label116.Location = New System.Drawing.Point(2, 260)
-		Me.Label116.Name = "Label116"
-		Me.Label116.Size = New System.Drawing.Size(90, 33)
-		Me.Label116.TabIndex = 179
-		Me.Label116.Text = "Standard" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(mg/l)"
-		Me.Label116.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'Label12
-		'
-		Me.Label12.Location = New System.Drawing.Point(2, 26)
-		Me.Label12.Name = "Label12"
-		Me.Label12.Size = New System.Drawing.Size(90, 13)
-		Me.Label12.TabIndex = 179
-		Me.Label12.Text = "(RSA/CM)"
-		Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'Label26
-		'
-		Me.Label26.Location = New System.Drawing.Point(98, 26)
-		Me.Label26.Name = "Label26"
-		Me.Label26.Size = New System.Drawing.Size(90, 13)
-		Me.Label26.TabIndex = 191
-		Me.Label26.Text = "(RSA/CM)"
-		Me.Label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'nudTpsx
-		'
-		Me.nudTpsx.DecimalPlaces = 2
-		Me.nudTpsx.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
-		Me.nudTpsx.DSSElementName = "inddiscur2_1"
-		Me.nudTpsx.DSSLocation = 0
-		Me.nudTpsx.DSSOffset = -0.2R
-		Me.nudTpsx.Location = New System.Drawing.Point(291, 43)
-		Me.nudTpsx.Name = "nudTpsx"
-		Me.nudTpsx.Size = New System.Drawing.Size(90, 20)
-		Me.nudTpsx.TabIndex = 7
-		Me.nudTpsx.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTpsx.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'Label68
-		'
-		Me.Label68.Location = New System.Drawing.Point(291, 26)
-		Me.Label68.Name = "Label68"
-		Me.Label68.Size = New System.Drawing.Size(90, 13)
-		Me.Label68.TabIndex = 191
-		Me.Label68.Text = "Efficiency (%)"
-		Me.Label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'nudTpmz
-		'
-		Me.nudTpmz.DecimalPlaces = 2
-		Me.nudTpmz.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
-		Me.nudTpmz.DSSElementName = "inddiscur2_1"
-		Me.nudTpmz.DSSLocation = 0
-		Me.nudTpmz.DSSOffset = -0.2R
-		Me.nudTpmz.Location = New System.Drawing.Point(389, 89)
-		Me.nudTpmz.Name = "nudTpmz"
-		Me.nudTpmz.Size = New System.Drawing.Size(90, 20)
-		Me.nudTpmz.TabIndex = 8
-		Me.nudTpmz.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTpmz.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'Label24
-		'
-		Me.Label24.Location = New System.Drawing.Point(98, 9)
-		Me.Label24.Name = "Label24"
-		Me.Label24.Size = New System.Drawing.Size(90, 13)
-		Me.Label24.TabIndex = 191
-		Me.Label24.Text = "Cost UF RO"
-		Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'nudAgrUFRO
-		'
-		Me.nudAgrUFRO.DecimalPlaces = 2
-		Me.nudAgrUFRO.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
-		Me.nudAgrUFRO.DSSElementName = "inddiscur2_1"
-		Me.nudAgrUFRO.DSSLocation = 0
-		Me.nudAgrUFRO.DSSOffset = -0.2R
-		Me.nudAgrUFRO.Location = New System.Drawing.Point(98, 43)
-		Me.nudAgrUFRO.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudAgrUFRO.Name = "nudAgrUFRO"
-		Me.nudAgrUFRO.Size = New System.Drawing.Size(90, 20)
-		Me.nudAgrUFRO.TabIndex = 3
-		Me.nudAgrUFRO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudAgrUFRO.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'Label29
-		'
-		Me.Label29.Location = New System.Drawing.Point(291, 138)
-		Me.Label29.Name = "Label29"
-		Me.Label29.Size = New System.Drawing.Size(90, 13)
-		Me.Label29.TabIndex = 191
-		Me.Label29.Text = "Eco"
-		Me.Label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'nudEnvw
-		'
-		Me.nudEnvw.DecimalPlaces = 2
-		Me.nudEnvw.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
-		Me.nudEnvw.DSSElementName = "inddiscur6_1"
-		Me.nudEnvw.DSSLocation = 0
-		Me.nudEnvw.DSSOffset = -0.2R
-		Me.nudEnvw.Location = New System.Drawing.Point(195, 158)
-		Me.nudEnvw.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudEnvw.Name = "nudEnvw"
-		Me.nudEnvw.Size = New System.Drawing.Size(90, 20)
-		Me.nudEnvw.TabIndex = 9
-		Me.nudEnvw.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudEnvw.Value = New Decimal(New Integer() {6, 0, 0, 0})
-		'
-		'lblTDS
-		'
-		Me.lblTDS.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
-		Me.lblTDS.DSSElementName = Nothing
-		Me.lblTDS.DSSLocation = 0
-		Me.lblTDS.DSSOffset = 0R
-		Me.lblTDS.Location = New System.Drawing.Point(291, 9)
-		Me.lblTDS.Name = "lblTDS"
-		Me.lblTDS.Size = New System.Drawing.Size(90, 13)
-		Me.lblTDS.TabIndex = 191
-		Me.lblTDS.Text = "TDS"
-		Me.lblTDS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-		'
-		'nudgwsp
-		'
-		Me.nudgwsp.DecimalPlaces = 2
-		Me.nudgwsp.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
-		Me.nudgwsp.DSSElementName = "inddiscur6_1"
-		Me.nudgwsp.DSSLocation = 0
-		Me.nudgwsp.DSSOffset = -0.2R
-		Me.nudgwsp.Location = New System.Drawing.Point(2, 234)
-		Me.nudgwsp.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudgwsp.Name = "nudgwsp"
-		Me.nudgwsp.Size = New System.Drawing.Size(90, 20)
-		Me.nudgwsp.TabIndex = 13
-		Me.nudgwsp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudgwsp.Value = New Decimal(New Integer() {6, 0, 0, 0})
-		'
-		'nudTotpla
-		'
-		Me.nudTotpla.DecimalPlaces = 2
-		Me.nudTotpla.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
-		Me.nudTotpla.DSSElementName = "inddiscur7_1"
-		Me.nudTotpla.DSSLocation = 0
-		Me.nudTotpla.DSSOffset = -0.2R
-		Me.nudTotpla.Location = New System.Drawing.Point(486, 191)
-		Me.nudTotpla.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudTotpla.Name = "nudTotpla"
-		Me.nudTotpla.Size = New System.Drawing.Size(90, 20)
-		Me.nudTotpla.TabIndex = 12
-		Me.nudTotpla.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTotpla.Value = New Decimal(New Integer() {10, 0, 0, 0})
-		'
-		'nudIndUFRO
-		'
-		Me.nudIndUFRO.DecimalPlaces = 2
-		Me.nudIndUFRO.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
-		Me.nudIndUFRO.DSSElementName = "inddiscur2_1"
-		Me.nudIndUFRO.DSSLocation = 0
-		Me.nudIndUFRO.DSSOffset = -0.2R
-		Me.nudIndUFRO.Location = New System.Drawing.Point(98, 66)
-		Me.nudIndUFRO.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudIndUFRO.Name = "nudIndUFRO"
-		Me.nudIndUFRO.Size = New System.Drawing.Size(90, 20)
-		Me.nudIndUFRO.TabIndex = 4
-		Me.nudIndUFRO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudIndUFRO.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'nudSocw
-		'
-		Me.nudSocw.DecimalPlaces = 2
-		Me.nudSocw.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
-		Me.nudSocw.DSSElementName = "inddiscur7_1"
-		Me.nudSocw.DSSLocation = 0
-		Me.nudSocw.DSSOffset = -0.2R
-		Me.nudSocw.Location = New System.Drawing.Point(389, 158)
-		Me.nudSocw.Name = "nudSocw"
-		Me.nudSocw.Size = New System.Drawing.Size(90, 20)
-		Me.nudSocw.TabIndex = 11
-		Me.nudSocw.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudSocw.Value = New Decimal(New Integer() {10, 0, 0, 0})
-		'
-		'nudTpbx
-		'
-		Me.nudTpbx.DecimalPlaces = 2
-		Me.nudTpbx.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
-		Me.nudTpbx.DSSElementName = "inddiscur1_1"
-		Me.nudTpbx.DSSLocation = 0
-		Me.nudTpbx.DSSOffset = -0.2R
-		Me.nudTpbx.Location = New System.Drawing.Point(195, 43)
-		Me.nudTpbx.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudTpbx.Name = "nudTpbx"
-		Me.nudTpbx.Size = New System.Drawing.Size(90, 20)
-		Me.nudTpbx.TabIndex = 6
-		Me.nudTpbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudTpbx.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'nudEcow
-		'
-		Me.nudEcow.DecimalPlaces = 2
-		Me.nudEcow.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
-		Me.nudEcow.DSSElementName = "inddiscur5_1"
-		Me.nudEcow.DSSLocation = 0
-		Me.nudEcow.DSSOffset = -0.2R
-		Me.nudEcow.Location = New System.Drawing.Point(291, 158)
-		Me.nudEcow.Name = "nudEcow"
-		Me.nudEcow.Size = New System.Drawing.Size(90, 20)
-		Me.nudEcow.TabIndex = 10
-		Me.nudEcow.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudEcow.Value = New Decimal(New Integer() {12, 0, 0, 0})
-		'
-		'nudsmqi
-		'
-		Me.nudsmqi.DecimalPlaces = 2
-		Me.nudsmqi.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
-		Me.nudsmqi.DSSElementName = "inddiscur1_1"
-		Me.nudsmqi.DSSLocation = 0
-		Me.nudsmqi.DSSOffset = -0.2R
-		Me.nudsmqi.Location = New System.Drawing.Point(2, 343)
-		Me.nudsmqi.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudsmqi.Name = "nudsmqi"
-		Me.nudsmqi.Size = New System.Drawing.Size(90, 20)
-		Me.nudsmqi.TabIndex = 16
-		Me.nudsmqi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudsmqi.Value = New Decimal(New Integer() {20, 0, 0, 0})
-		'
-		'nudLanUFRO
-		'
-		Me.nudLanUFRO.DecimalPlaces = 2
-		Me.nudLanUFRO.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
-		Me.nudLanUFRO.DSSElementName = "inddiscur2_1"
-		Me.nudLanUFRO.DSSLocation = 0
-		Me.nudLanUFRO.DSSOffset = -0.2R
-		Me.nudLanUFRO.Location = New System.Drawing.Point(98, 89)
-		Me.nudLanUFRO.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudLanUFRO.Name = "nudLanUFRO"
-		Me.nudLanUFRO.Size = New System.Drawing.Size(90, 20)
-		Me.nudLanUFRO.TabIndex = 5
-		Me.nudLanUFRO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudLanUFRO.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'nudsbqi
-		'
-		Me.nudsbqi.DecimalPlaces = 2
-		Me.nudsbqi.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
-		Me.nudsbqi.DSSElementName = "inddiscur1_1"
-		Me.nudsbqi.DSSLocation = 0
-		Me.nudsbqi.DSSOffset = -0.2R
-		Me.nudsbqi.Location = New System.Drawing.Point(2, 297)
-		Me.nudsbqi.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudsbqi.Name = "nudsbqi"
-		Me.nudsbqi.Size = New System.Drawing.Size(90, 20)
-		Me.nudsbqi.TabIndex = 14
-		Me.nudsbqi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudsbqi.Value = New Decimal(New Integer() {20, 0, 0, 0})
-		'
-		'nudLanUF
-		'
-		Me.nudLanUF.DecimalPlaces = 2
-		Me.nudLanUF.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
-		Me.nudLanUF.DSSElementName = "inddiscur1_1"
-		Me.nudLanUF.DSSLocation = 0
-		Me.nudLanUF.DSSOffset = -0.2R
-		Me.nudLanUF.Location = New System.Drawing.Point(2, 89)
-		Me.nudLanUF.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudLanUF.Name = "nudLanUF"
-		Me.nudLanUF.Size = New System.Drawing.Size(90, 20)
-		Me.nudLanUF.TabIndex = 2
-		Me.nudLanUF.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudLanUF.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'nudssqi
-		'
-		Me.nudssqi.DecimalPlaces = 2
-		Me.nudssqi.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
-		Me.nudssqi.DSSElementName = "inddiscur1_1"
-		Me.nudssqi.DSSLocation = 0
-		Me.nudssqi.DSSOffset = -0.2R
-		Me.nudssqi.Location = New System.Drawing.Point(2, 320)
-		Me.nudssqi.Maximum = New Decimal(New Integer() {2000, 0, 0, 0})
-		Me.nudssqi.Name = "nudssqi"
-		Me.nudssqi.Size = New System.Drawing.Size(90, 20)
-		Me.nudssqi.TabIndex = 15
-		Me.nudssqi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudssqi.Value = New Decimal(New Integer() {1000, 0, 0, 0})
-		'
-		'nudAgrUF
-		'
-		Me.nudAgrUF.DecimalPlaces = 2
-		Me.nudAgrUF.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
-		Me.nudAgrUF.DSSElementName = "inddiscur1_1"
-		Me.nudAgrUF.DSSLocation = 0
-		Me.nudAgrUF.DSSOffset = -0.2R
-		Me.nudAgrUF.Location = New System.Drawing.Point(2, 43)
-		Me.nudAgrUF.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudAgrUF.Name = "nudAgrUF"
-		Me.nudAgrUF.Size = New System.Drawing.Size(90, 20)
-		Me.nudAgrUF.TabIndex = 0
-		Me.nudAgrUF.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudAgrUF.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'nudIndUF
-		'
-		Me.nudIndUF.DecimalPlaces = 2
-		Me.nudIndUF.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(215, Byte), CType(0, Byte))
-		Me.nudIndUF.DSSElementName = "inddiscur1_1"
-		Me.nudIndUF.DSSLocation = 0
-		Me.nudIndUF.DSSOffset = -0.2R
-		Me.nudIndUF.Location = New System.Drawing.Point(2, 66)
-		Me.nudIndUF.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
-		Me.nudIndUF.Name = "nudIndUF"
-		Me.nudIndUF.Size = New System.Drawing.Size(90, 20)
-		Me.nudIndUF.TabIndex = 1
-		Me.nudIndUF.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-		Me.nudIndUF.Value = New Decimal(New Integer() {50, 0, 0, 0})
-		'
-		'Label25
-		'
-		Me.Label25.Location = New System.Drawing.Point(18, 174)
-		Me.Label25.Name = "Label25"
-		Me.Label25.Size = New System.Drawing.Size(154, 20)
-		Me.Label25.TabIndex = 169
-		Me.Label25.Text = "Weights attached to issues (%)"
-		'
-		'Label119
-		'
-		Me.Label119.Location = New System.Drawing.Point(18, 359)
-		Me.Label119.Name = "Label119"
-		Me.Label119.Size = New System.Drawing.Size(154, 20)
-		Me.Label119.TabIndex = 171
-		Me.Label119.Text = "Max TSS content for Lan"
-		'
-		'Label34
-		'
-		Me.Label34.Location = New System.Drawing.Point(18, 105)
-		Me.Label34.Name = "Label34"
-		Me.Label34.Size = New System.Drawing.Size(154, 20)
-		Me.Label34.TabIndex = 171
-		Me.Label34.Text = "Dedicated III treatment for Lan"
-		'
-		'Label27
-		'
-		Me.Label27.Location = New System.Drawing.Point(18, 250)
-		Me.Label27.Name = "Label27"
-		Me.Label27.Size = New System.Drawing.Size(154, 20)
-		Me.Label27.TabIndex = 173
-		Me.Label27.Text = "Groundwater shadow price"
-		'
-		'Label23
-		'
-		Me.Label23.Location = New System.Drawing.Point(18, 207)
-		Me.Label23.Name = "Label23"
-		Me.Label23.Size = New System.Drawing.Size(154, 20)
-		Me.Label23.TabIndex = 173
-		Me.Label23.Text = "Maximum number of WWTPs"
-		'
-		'Label118
-		'
-		Me.Label118.Location = New System.Drawing.Point(18, 336)
-		Me.Label118.Name = "Label118"
-		Me.Label118.Size = New System.Drawing.Size(154, 20)
-		Me.Label118.TabIndex = 174
-		Me.Label118.Text = "Max TDS content for Agr&&Lan"
-		'
-		'Label78
-		'
-		Me.Label78.Location = New System.Drawing.Point(18, 82)
-		Me.Label78.Name = "Label78"
-		Me.Label78.Size = New System.Drawing.Size(154, 20)
-		Me.Label78.TabIndex = 174
-		Me.Label78.Text = "Dedicated III treatment for Ind"
-		'
-		'Label117
-		'
-		Me.Label117.Location = New System.Drawing.Point(18, 313)
-		Me.Label117.Name = "Label117"
-		Me.Label117.Size = New System.Drawing.Size(154, 20)
-		Me.Label117.TabIndex = 177
-		Me.Label117.Text = "Max BOD content for Agr"
-		'
-		'Label91
-		'
-		Me.Label91.Location = New System.Drawing.Point(18, 59)
-		Me.Label91.Name = "Label91"
-		Me.Label91.Size = New System.Drawing.Size(154, 20)
-		Me.Label91.TabIndex = 177
-		Me.Label91.Text = "Dedicated III treatment for Agr"
-		'
 		'frmNegotiation
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -7424,102 +7424,13 @@ Partial Class frmNegotiation
 		Me.Text = "Spatial Decision Support System"
 		Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
 		CType(Me.dsParameters, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.DSData, System.ComponentModel.ISupportInitialize).EndInit
 		CType(Me.DSLocations, System.ComponentModel.ISupportInitialize).EndInit
 		Me.pnlMain.ResumeLayout(False)
 		Me.SplitContainer.Panel1.ResumeLayout(False)
 		Me.SplitContainer.Panel2.ResumeLayout(False)
 		CType(Me.SplitContainer, System.ComponentModel.ISupportInitialize).EndInit
 		Me.SplitContainer.ResumeLayout(False)
-		Me.grbWaterCosts.ResumeLayout(False)
-		Me.pnlGro.ResumeLayout(False)
-		CType(Me.nudGro14, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudGro15, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudGro3, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudGro7, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudGro2, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudGro12, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudGro10, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudGro13, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudGro6, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudGro8, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudGro1, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudGro4, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudGro9, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudGro11, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudGro5, System.ComponentModel.ISupportInitialize).EndInit
-		Me.pnlDes.ResumeLayout(False)
-		CType(Me.nudDes14, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudDes15, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudDes3, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudDes7, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudDes2, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudDes6, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudDes12, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudDes1, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudDes9, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudDes13, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudDes10, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudDes11, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudDes8, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudDes5, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudDes4, System.ComponentModel.ISupportInitialize).EndInit
-		Me.grbOuput.ResumeLayout(False)
-		Me.tcoOutput.ResumeLayout(False)
-		Me.tpaUses.ResumeLayout(False)
-		Me.gboOutputUses.ResumeLayout(False)
-		Me.pnlOutAgrSmall.ResumeLayout(False)
-		Me.pnlOutIndLarge.ResumeLayout(False)
-		Me.pnlOutLanSmall.ResumeLayout(False)
-		Me.pnlOutLanLarge.ResumeLayout(False)
-		Me.pnlOutAgrLarge.ResumeLayout(False)
-		Me.tpaImpacts.ResumeLayout(False)
-		Me.gboOutputImpacts.ResumeLayout(False)
-		Me.pnlOutSocSmall.ResumeLayout(False)
-		Me.pnlOutEnvLarge.ResumeLayout(False)
-		Me.pnlOutEnvSmall.ResumeLayout(False)
-		Me.pnlOutEcoLarge.ResumeLayout(False)
-		Me.pnlOutSocLarge.ResumeLayout(False)
-		Me.pnlOutEcoSmall.ResumeLayout(False)
-		Me.tpaWeights.ResumeLayout(False)
-		CType(Me.pboGraphWeights, System.ComponentModel.ISupportInitialize).EndInit
-		Me.tpaStandards.ResumeLayout(False)
-		CType(Me.pboGraphStandards, System.ComponentModel.ISupportInitialize).EndInit
-		Me.tpaEfficencies.ResumeLayout(False)
-		CType(Me.pboGraphEfficiencies, System.ComponentModel.ISupportInitialize).EndInit
-		Me.grbPopulation.ResumeLayout(False)
-		Me.pnlPop20_2.ResumeLayout(False)
-		CType(Me.nudPop20_14_2, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_15_2, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_3_2, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_7_2, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_2_2, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_12_2, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_10_2, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_13_2, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_6_2, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_8_2, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_1_2, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_4_2, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_9_2, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_11_2, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_5_2, System.ComponentModel.ISupportInitialize).EndInit
-		Me.pnlPop20_1.ResumeLayout(False)
-		CType(Me.nudPop20_14_1, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_15_1, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_3_1, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_7_1, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_2_1, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_6_1, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_12_1, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_1_1, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_9_1, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_13_1, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_10_1, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_11_1, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_8_1, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_5_1, System.ComponentModel.ISupportInitialize).EndInit
-		CType(Me.nudPop20_4_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.DSData, System.ComponentModel.ISupportInitialize).EndInit
 		Me.grbIndustrialDistricts.ResumeLayout(False)
 		Me.pnlInddispln.ResumeLayout(False)
 		CType(Me.nudInddispln14_2, System.ComponentModel.ISupportInitialize).EndInit
@@ -7621,6 +7532,95 @@ Partial Class frmNegotiation
 		CType(Me.nudssqi, System.ComponentModel.ISupportInitialize).EndInit
 		CType(Me.nudAgrUF, System.ComponentModel.ISupportInitialize).EndInit
 		CType(Me.nudIndUF, System.ComponentModel.ISupportInitialize).EndInit
+		Me.grbWaterCosts.ResumeLayout(False)
+		Me.pnlGro.ResumeLayout(False)
+		CType(Me.nudGro14, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro15, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro3, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro7, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro12, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro10, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro13, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro6, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro8, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro4, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro9, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro11, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro5, System.ComponentModel.ISupportInitialize).EndInit
+		Me.pnlDes.ResumeLayout(False)
+		CType(Me.nudDes14, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes15, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes3, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes7, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes6, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes12, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes9, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes13, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes10, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes11, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes8, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes5, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes4, System.ComponentModel.ISupportInitialize).EndInit
+		Me.grbOuput.ResumeLayout(False)
+		Me.tcoOutput.ResumeLayout(False)
+		Me.tpaUses.ResumeLayout(False)
+		Me.gboOutputUses.ResumeLayout(False)
+		Me.pnlOutAgrSmall.ResumeLayout(False)
+		Me.pnlOutIndLarge.ResumeLayout(False)
+		Me.pnlOutLanSmall.ResumeLayout(False)
+		Me.pnlOutLanLarge.ResumeLayout(False)
+		Me.pnlOutAgrLarge.ResumeLayout(False)
+		Me.tpaImpacts.ResumeLayout(False)
+		Me.gboOutputImpacts.ResumeLayout(False)
+		Me.pnlOutSocSmall.ResumeLayout(False)
+		Me.pnlOutEnvLarge.ResumeLayout(False)
+		Me.pnlOutEnvSmall.ResumeLayout(False)
+		Me.pnlOutEcoLarge.ResumeLayout(False)
+		Me.pnlOutSocLarge.ResumeLayout(False)
+		Me.pnlOutEcoSmall.ResumeLayout(False)
+		Me.tpaWeights.ResumeLayout(False)
+		CType(Me.pboGraphWeights, System.ComponentModel.ISupportInitialize).EndInit
+		Me.tpaStandards.ResumeLayout(False)
+		CType(Me.pboGraphStandards, System.ComponentModel.ISupportInitialize).EndInit
+		Me.tpaEfficencies.ResumeLayout(False)
+		CType(Me.pboGraphEfficiencies, System.ComponentModel.ISupportInitialize).EndInit
+		Me.grbPopulation.ResumeLayout(False)
+		Me.pnlPop20_2.ResumeLayout(False)
+		CType(Me.nudPop20_14_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_15_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_3_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_7_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_2_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_12_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_10_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_13_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_6_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_8_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_1_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_4_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_9_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_11_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_5_2, System.ComponentModel.ISupportInitialize).EndInit
+		Me.pnlPop20_1.ResumeLayout(False)
+		CType(Me.nudPop20_14_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_15_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_3_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_7_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_2_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_6_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_12_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_1_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_9_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_13_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_10_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_11_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_8_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_5_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_4_1, System.ComponentModel.ISupportInitialize).EndInit
 		Me.ResumeLayout(False)
 
 	End Sub

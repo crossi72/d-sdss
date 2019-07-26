@@ -588,8 +588,10 @@ Public Class frmNegotiation
 
 		If Me._groupBoxesID > 0 Then
 			Me.btnLoadData.Visible = False
+			Me.btnSettings.Visible = False
 		Else
 			Me.btnLoadData.Visible = True
+			Me.btnSettings.Visible = True
 		End If
 
 		For i = 0 To Me._groupBoxes.Length - 1
