@@ -500,187 +500,245 @@ Partial Class frmNegotiation
 		Me.ElementHost1 = New System.Windows.Forms.Integration.ElementHost()
 		Me.mapControl = New mapControl.mapControl()
 		Me.btnSettings = New System.Windows.Forms.Button()
-		CType(Me.dsParameters, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.DSData, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.DSLocations, System.ComponentModel.ISupportInitialize).BeginInit()
-		Me.pnlMain.SuspendLayout()
-		CType(Me.SplitContainer, System.ComponentModel.ISupportInitialize).BeginInit()
-		Me.SplitContainer.Panel1.SuspendLayout()
-		Me.SplitContainer.Panel2.SuspendLayout()
-		Me.SplitContainer.SuspendLayout()
-		Me.grbOuput.SuspendLayout()
-		Me.tcoOutput.SuspendLayout()
-		Me.tpaUses.SuspendLayout()
-		Me.gboOutputUses.SuspendLayout()
-		Me.pnlOutAgrSmall.SuspendLayout()
-		Me.pnlOutIndLarge.SuspendLayout()
-		Me.pnlOutLanSmall.SuspendLayout()
-		Me.pnlOutLanLarge.SuspendLayout()
-		Me.pnlOutAgrLarge.SuspendLayout()
-		Me.tpaImpacts.SuspendLayout()
-		Me.gboOutputImpacts.SuspendLayout()
-		Me.pnlOutSocSmall.SuspendLayout()
-		Me.pnlOutEnvLarge.SuspendLayout()
-		Me.pnlOutEnvSmall.SuspendLayout()
-		Me.pnlOutEcoLarge.SuspendLayout()
-		Me.pnlOutSocLarge.SuspendLayout()
-		Me.pnlOutEcoSmall.SuspendLayout()
-		Me.tpaWeights.SuspendLayout()
-		CType(Me.pboGraphWeights, System.ComponentModel.ISupportInitialize).BeginInit()
-		Me.tpaStandards.SuspendLayout()
-		CType(Me.pboGraphStandards, System.ComponentModel.ISupportInitialize).BeginInit()
-		Me.tpaEfficencies.SuspendLayout()
-		CType(Me.pboGraphEfficiencies, System.ComponentModel.ISupportInitialize).BeginInit()
-		Me.grbPopulation.SuspendLayout()
-		Me.pnlPop20_2.SuspendLayout()
-		CType(Me.nudPop20_3_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_7_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_2_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_12_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_10_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_13_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_6_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_8_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_1_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_4_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_9_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_11_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_5_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		Me.pnlPop20_1.SuspendLayout()
-		CType(Me.nudPop20_3_1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_7_1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_2_1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_6_1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_12_1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_1_1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_9_1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_13_1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_10_1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_11_1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_8_1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_5_1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudPop20_4_1, System.ComponentModel.ISupportInitialize).BeginInit()
-		Me.grbIndustrialDistricts.SuspendLayout()
-		Me.pnlInddispln.SuspendLayout()
-		CType(Me.nudInddispln3_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddispln7_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddispln2_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddispln12_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddispln10_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddispln13_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddispln6_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddispln8_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddispln1_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddispln4_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddispln9_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddispln11_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddispln5_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		Me.pnlInddiscur.SuspendLayout()
-		CType(Me.nudInddiscur3_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddiscur7_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddiscur2_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddiscur6_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddiscur12_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddiscur1_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddiscur9_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddiscur13_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddiscur10_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddiscur11_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddiscur8_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddiscur5_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudInddiscur4_2, System.ComponentModel.ISupportInitialize).BeginInit()
-		Me.grbWaterQuality.SuspendLayout()
-		Me.pnlTSS.SuspendLayout()
-		CType(Me.nudTSS3, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTSS2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTSS7, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTSS10, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTSS12, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTSS6, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTSS13, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTSS1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTSS8, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTSS9, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTSS4, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTSS5, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTSS11, System.ComponentModel.ISupportInitialize).BeginInit()
-		Me.pnlTDS.SuspendLayout()
-		CType(Me.nudTDS3, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTDS2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTDS7, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTDS10, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTDS6, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTDS12, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTDS1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTDS9, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTDS13, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTDS5, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTDS11, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTDS8, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTDS4, System.ComponentModel.ISupportInitialize).BeginInit()
-		Me.pnlBOD.SuspendLayout()
-		CType(Me.nudBOD3, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudBOD2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudBOD7, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudBOD6, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudBOD1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudBOD9, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudBOD12, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudBOD10, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudBOD11, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudBOD5, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudBOD13, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudBOD4, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudBOD8, System.ComponentModel.ISupportInitialize).BeginInit()
-		Me.grbMisc.SuspendLayout()
-		Me.DssPanel1.SuspendLayout()
-		CType(Me.nudTpsx, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTpmz, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudAgrUFRO, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudEnvw, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudgwsp, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTotpla, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudIndUFRO, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudSocw, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudTpbx, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudEcow, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudsmqi, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudLanUFRO, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudsbqi, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudLanUF, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudssqi, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudAgrUF, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudIndUF, System.ComponentModel.ISupportInitialize).BeginInit()
-		Me.grbWaterCosts.SuspendLayout()
-		Me.pnlGro.SuspendLayout()
-		CType(Me.nudGro3, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudGro7, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudGro2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudGro12, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudGro10, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudGro13, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudGro6, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudGro8, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudGro1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudGro4, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudGro9, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudGro11, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudGro5, System.ComponentModel.ISupportInitialize).BeginInit()
-		Me.pnlDes.SuspendLayout()
-		CType(Me.nudDes3, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudDes7, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudDes2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudDes6, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudDes12, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudDes1, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudDes9, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudDes13, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudDes10, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudDes11, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudDes8, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudDes5, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.nudDes4, System.ComponentModel.ISupportInitialize).BeginInit()
-		Me.SuspendLayout()
+		Me.lblAgr14_1 = New DSDSS.DSSLabel()
+		Me.lblAgr15_1 = New DSDSS.DSSLabel()
+		Me.lblLan14_1 = New DSDSS.DSSLabel()
+		Me.lblLan15_1 = New DSDSS.DSSLabel()
+		Me.lblAgr14_2 = New DSDSS.DSSLabel()
+		Me.lblAgr15_2 = New DSDSS.DSSLabel()
+		Me.lblInd15_2 = New DSDSS.DSSLabel()
+		Me.lblInd14_2 = New DSDSS.DSSLabel()
+		Me.lblLan15_2 = New DSDSS.DSSLabel()
+		Me.lblLan14_2 = New DSDSS.DSSLabel()
+		Me.lblEco14_1 = New DSDSS.DSSLabel()
+		Me.lblEco15_1 = New DSDSS.DSSLabel()
+		Me.lblSoc14_1 = New DSDSS.DSSLabel()
+		Me.lblSoc15_1 = New DSDSS.DSSLabel()
+		Me.lblEnv14_1 = New DSDSS.DSSLabel()
+		Me.lblEnv15_1 = New DSDSS.DSSLabel()
+		Me.lblEco14_2 = New DSDSS.DSSLabel()
+		Me.lblEco15_2 = New DSDSS.DSSLabel()
+		Me.lblSoc14_2 = New DSDSS.DSSLabel()
+		Me.lblSoc15_2 = New DSDSS.DSSLabel()
+		Me.lblEnv14_2 = New DSDSS.DSSLabel()
+		Me.lblEnv15_2 = New DSDSS.DSSLabel()
+		Me.nudPop20_14_1 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_15_1 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_14_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudPop20_15_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur14_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddiscur15_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln14_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudInddispln15_2 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD14 = New DSDSS.DSSNumericUpDown()
+		Me.nudBOD15 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS14 = New DSDSS.DSSNumericUpDown()
+		Me.nudTDS15 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS14 = New DSDSS.DSSNumericUpDown()
+		Me.nudTSS15 = New DSDSS.DSSNumericUpDown()
+		Me.nudDes14 = New DSDSS.DSSNumericUpDown()
+		Me.nudDes15 = New DSDSS.DSSNumericUpDown()
+		Me.nudGro14 = New DSDSS.DSSNumericUpDown()
+		Me.nudGro15 = New DSDSS.DSSNumericUpDown()
+		CType(Me.dsParameters, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.DSData, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.DSLocations, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.pnlMain.SuspendLayout
+		CType(Me.SplitContainer, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.SplitContainer.Panel1.SuspendLayout
+		Me.SplitContainer.Panel2.SuspendLayout
+		Me.SplitContainer.SuspendLayout
+		Me.grbOuput.SuspendLayout
+		Me.tcoOutput.SuspendLayout
+		Me.tpaUses.SuspendLayout
+		Me.gboOutputUses.SuspendLayout
+		Me.pnlOutAgrSmall.SuspendLayout
+		Me.pnlOutIndLarge.SuspendLayout
+		Me.pnlOutLanSmall.SuspendLayout
+		Me.pnlOutLanLarge.SuspendLayout
+		Me.pnlOutAgrLarge.SuspendLayout
+		Me.tpaImpacts.SuspendLayout
+		Me.gboOutputImpacts.SuspendLayout
+		Me.pnlOutSocSmall.SuspendLayout
+		Me.pnlOutEnvLarge.SuspendLayout
+		Me.pnlOutEnvSmall.SuspendLayout
+		Me.pnlOutEcoLarge.SuspendLayout
+		Me.pnlOutSocLarge.SuspendLayout
+		Me.pnlOutEcoSmall.SuspendLayout
+		Me.tpaWeights.SuspendLayout
+		CType(Me.pboGraphWeights, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.tpaStandards.SuspendLayout
+		CType(Me.pboGraphStandards, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.tpaEfficencies.SuspendLayout
+		CType(Me.pboGraphEfficiencies, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.grbPopulation.SuspendLayout
+		Me.pnlPop20_2.SuspendLayout
+		CType(Me.nudPop20_3_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_7_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_2_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_12_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_10_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_13_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_6_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_8_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_1_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_4_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_9_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_11_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_5_2, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.pnlPop20_1.SuspendLayout
+		CType(Me.nudPop20_3_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_7_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_2_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_6_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_12_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_1_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_9_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_13_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_10_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_11_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_8_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_5_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_4_1, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.grbIndustrialDistricts.SuspendLayout
+		Me.pnlInddispln.SuspendLayout
+		CType(Me.nudInddispln3_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddispln7_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddispln2_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddispln12_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddispln10_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddispln13_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddispln6_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddispln8_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddispln1_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddispln4_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddispln9_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddispln11_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddispln5_2, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.pnlInddiscur.SuspendLayout
+		CType(Me.nudInddiscur3_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddiscur7_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddiscur2_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddiscur6_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddiscur12_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddiscur1_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddiscur9_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddiscur13_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddiscur10_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddiscur11_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddiscur8_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddiscur5_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddiscur4_2, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.grbWaterQuality.SuspendLayout
+		Me.pnlTSS.SuspendLayout
+		CType(Me.nudTSS3, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTSS2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTSS7, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTSS10, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTSS12, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTSS6, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTSS13, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTSS1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTSS8, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTSS9, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTSS4, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTSS5, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTSS11, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.pnlTDS.SuspendLayout
+		CType(Me.nudTDS3, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTDS2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTDS7, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTDS10, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTDS6, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTDS12, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTDS1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTDS9, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTDS13, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTDS5, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTDS11, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTDS8, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTDS4, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.pnlBOD.SuspendLayout
+		CType(Me.nudBOD3, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudBOD2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudBOD7, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudBOD6, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudBOD1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudBOD9, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudBOD12, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudBOD10, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudBOD11, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudBOD5, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudBOD13, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudBOD4, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudBOD8, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.grbMisc.SuspendLayout
+		Me.DssPanel1.SuspendLayout
+		CType(Me.nudTpsx, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTpmz, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudAgrUFRO, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudEnvw, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudgwsp, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTotpla, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudIndUFRO, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudSocw, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTpbx, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudEcow, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudsmqi, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudLanUFRO, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudsbqi, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudLanUF, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudssqi, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudAgrUF, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudIndUF, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.grbWaterCosts.SuspendLayout
+		Me.pnlGro.SuspendLayout
+		CType(Me.nudGro3, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro7, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro12, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro10, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro13, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro6, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro8, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro4, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro9, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro11, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro5, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.pnlDes.SuspendLayout
+		CType(Me.nudDes3, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes7, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes6, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes12, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes9, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes13, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes10, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes11, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes8, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes5, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes4, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_14_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_15_1, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_14_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudPop20_15_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddiscur14_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddiscur15_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddispln14_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudInddispln15_2, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudBOD14, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudBOD15, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTDS14, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTDS15, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTSS14, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudTSS15, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes14, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudDes15, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro14, System.ComponentModel.ISupportInitialize).BeginInit
+		CType(Me.nudGro15, System.ComponentModel.ISupportInitialize).BeginInit
+		Me.SuspendLayout
 		'
 		'daData
 		'
@@ -798,12 +856,12 @@ Partial Class frmNegotiation
 		'
 		'SplitContainer.Panel1
 		'
+		Me.SplitContainer.Panel1.Controls.Add(Me.grbWaterCosts)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbOuput)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbPopulation)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbIndustrialDistricts)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbWaterQuality)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbMisc)
-		Me.SplitContainer.Panel1.Controls.Add(Me.grbWaterCosts)
 		'
 		'SplitContainer.Panel2
 		'
@@ -881,6 +939,7 @@ Partial Class frmNegotiation
 		Me.gboOutputUses.Controls.Add(Me.Label79)
 		Me.gboOutputUses.Controls.Add(Me.Label60)
 		Me.gboOutputUses.Controls.Add(Me.Label61)
+		Me.gboOutputUses.DSSVisible = False
 		Me.gboOutputUses.Location = New System.Drawing.Point(15, 15)
 		Me.gboOutputUses.Name = "gboOutputUses"
 		Me.gboOutputUses.Size = New System.Drawing.Size(451, 406)
@@ -890,6 +949,8 @@ Partial Class frmNegotiation
 		'
 		'pnlOutAgrSmall
 		'
+		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr15_1)
+		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr14_1)
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr1_1)
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr5_1)
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr4_1)
@@ -903,9 +964,10 @@ Partial Class frmNegotiation
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr7_1)
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr10_1)
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr13_1)
+		Me.pnlOutAgrSmall.DSSVisible = False
 		Me.pnlOutAgrSmall.Location = New System.Drawing.Point(94, 55)
 		Me.pnlOutAgrSmall.Name = "pnlOutAgrSmall"
-		Me.pnlOutAgrSmall.Size = New System.Drawing.Size(49, 317)
+		Me.pnlOutAgrSmall.Size = New System.Drawing.Size(49, 345)
 		Me.pnlOutAgrSmall.TabIndex = 108
 		'
 		'lblAgr1_1
@@ -1088,6 +1150,8 @@ Partial Class frmNegotiation
 		'
 		'pnlOutIndLarge
 		'
+		Me.pnlOutIndLarge.Controls.Add(Me.lblInd15_2)
+		Me.pnlOutIndLarge.Controls.Add(Me.lblInd14_2)
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd1_2)
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd5_2)
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd4_2)
@@ -1101,9 +1165,10 @@ Partial Class frmNegotiation
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd3_2)
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd10_2)
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd7_2)
+		Me.pnlOutIndLarge.DSSVisible = False
 		Me.pnlOutIndLarge.Location = New System.Drawing.Point(285, 55)
 		Me.pnlOutIndLarge.Name = "pnlOutIndLarge"
-		Me.pnlOutIndLarge.Size = New System.Drawing.Size(49, 317)
+		Me.pnlOutIndLarge.Size = New System.Drawing.Size(49, 345)
 		Me.pnlOutIndLarge.TabIndex = 111
 		'
 		'lblInd1_2
@@ -1295,6 +1360,8 @@ Partial Class frmNegotiation
 		'
 		'pnlOutLanSmall
 		'
+		Me.pnlOutLanSmall.Controls.Add(Me.lblLan14_1)
+		Me.pnlOutLanSmall.Controls.Add(Me.lblLan15_1)
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan1_1)
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan5_1)
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan4_1)
@@ -1308,9 +1375,10 @@ Partial Class frmNegotiation
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan7_1)
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan10_1)
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan13_1)
+		Me.pnlOutLanSmall.DSSVisible = False
 		Me.pnlOutLanSmall.Location = New System.Drawing.Point(153, 55)
 		Me.pnlOutLanSmall.Name = "pnlOutLanSmall"
-		Me.pnlOutLanSmall.Size = New System.Drawing.Size(49, 317)
+		Me.pnlOutLanSmall.Size = New System.Drawing.Size(49, 345)
 		Me.pnlOutLanSmall.TabIndex = 109
 		'
 		'lblLan1_1
@@ -1494,6 +1562,8 @@ Partial Class frmNegotiation
 		'
 		'pnlOutLanLarge
 		'
+		Me.pnlOutLanLarge.Controls.Add(Me.lblLan15_2)
+		Me.pnlOutLanLarge.Controls.Add(Me.lblLan14_2)
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan1_2)
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan5_2)
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan4_2)
@@ -1507,9 +1577,10 @@ Partial Class frmNegotiation
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan12_2)
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan7_2)
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan3_2)
+		Me.pnlOutLanLarge.DSSVisible = False
 		Me.pnlOutLanLarge.Location = New System.Drawing.Point(347, 56)
 		Me.pnlOutLanLarge.Name = "pnlOutLanLarge"
-		Me.pnlOutLanLarge.Size = New System.Drawing.Size(49, 317)
+		Me.pnlOutLanLarge.Size = New System.Drawing.Size(49, 345)
 		Me.pnlOutLanLarge.TabIndex = 111
 		'
 		'lblLan1_2
@@ -1693,6 +1764,8 @@ Partial Class frmNegotiation
 		'
 		'pnlOutAgrLarge
 		'
+		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr14_2)
+		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr15_2)
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr1_2)
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr5_2)
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr4_2)
@@ -1706,9 +1779,10 @@ Partial Class frmNegotiation
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr3_2)
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr7_2)
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr10_2)
+		Me.pnlOutAgrLarge.DSSVisible = False
 		Me.pnlOutAgrLarge.Location = New System.Drawing.Point(223, 57)
 		Me.pnlOutAgrLarge.Name = "pnlOutAgrLarge"
-		Me.pnlOutAgrLarge.Size = New System.Drawing.Size(49, 317)
+		Me.pnlOutAgrLarge.Size = New System.Drawing.Size(49, 345)
 		Me.pnlOutAgrLarge.TabIndex = 110
 		'
 		'lblAgr1_2
@@ -2057,7 +2131,6 @@ Partial Class frmNegotiation
 		Me.gboOutputImpacts.Controls.Add(Me.Label114)
 		Me.gboOutputImpacts.Controls.Add(Me.Label112)
 		Me.gboOutputImpacts.Controls.Add(Me.Label113)
-		Me.gboOutputImpacts.DSSVisible = False
 		Me.gboOutputImpacts.Location = New System.Drawing.Point(15, 11)
 		Me.gboOutputImpacts.Name = "gboOutputImpacts"
 		Me.gboOutputImpacts.Size = New System.Drawing.Size(422, 446)
@@ -2072,7 +2145,7 @@ Partial Class frmNegotiation
 		Me.lblEnvGini2.DSSElementName = "OutEco13_1"
 		Me.lblEnvGini2.DSSLocation = 0
 		Me.lblEnvGini2.DSSOffset = 0.5R
-		Me.lblEnvGini2.Location = New System.Drawing.Point(351, 399)
+		Me.lblEnvGini2.Location = New System.Drawing.Point(351, 421)
 		Me.lblEnvGini2.Name = "lblEnvGini2"
 		Me.lblEnvGini2.Size = New System.Drawing.Size(34, 20)
 		Me.lblEnvGini2.TabIndex = 206
@@ -2086,7 +2159,7 @@ Partial Class frmNegotiation
 		Me.lblEnvMean2.DSSElementName = "OutEco13_1"
 		Me.lblEnvMean2.DSSLocation = 0
 		Me.lblEnvMean2.DSSOffset = 0.5R
-		Me.lblEnvMean2.Location = New System.Drawing.Point(351, 379)
+		Me.lblEnvMean2.Location = New System.Drawing.Point(351, 401)
 		Me.lblEnvMean2.Name = "lblEnvMean2"
 		Me.lblEnvMean2.Size = New System.Drawing.Size(34, 20)
 		Me.lblEnvMean2.TabIndex = 205
@@ -2100,7 +2173,7 @@ Partial Class frmNegotiation
 		Me.lblSocGini2.DSSElementName = "OutEco13_1"
 		Me.lblSocGini2.DSSLocation = 0
 		Me.lblSocGini2.DSSOffset = 0.3R
-		Me.lblSocGini2.Location = New System.Drawing.Point(298, 399)
+		Me.lblSocGini2.Location = New System.Drawing.Point(298, 421)
 		Me.lblSocGini2.Name = "lblSocGini2"
 		Me.lblSocGini2.Size = New System.Drawing.Size(34, 20)
 		Me.lblSocGini2.TabIndex = 204
@@ -2114,7 +2187,7 @@ Partial Class frmNegotiation
 		Me.lblSocMean2.DSSElementName = "OutEco13_1"
 		Me.lblSocMean2.DSSLocation = 0
 		Me.lblSocMean2.DSSOffset = 0.3R
-		Me.lblSocMean2.Location = New System.Drawing.Point(298, 379)
+		Me.lblSocMean2.Location = New System.Drawing.Point(298, 401)
 		Me.lblSocMean2.Name = "lblSocMean2"
 		Me.lblSocMean2.Size = New System.Drawing.Size(34, 20)
 		Me.lblSocMean2.TabIndex = 203
@@ -2128,7 +2201,7 @@ Partial Class frmNegotiation
 		Me.lblEcoGini2.DSSElementName = "OutEco13_1"
 		Me.lblEcoGini2.DSSLocation = 0
 		Me.lblEcoGini2.DSSOffset = 0.2R
-		Me.lblEcoGini2.Location = New System.Drawing.Point(246, 399)
+		Me.lblEcoGini2.Location = New System.Drawing.Point(246, 421)
 		Me.lblEcoGini2.Name = "lblEcoGini2"
 		Me.lblEcoGini2.Size = New System.Drawing.Size(34, 20)
 		Me.lblEcoGini2.TabIndex = 202
@@ -2142,7 +2215,7 @@ Partial Class frmNegotiation
 		Me.lblEcoMean2.DSSElementName = "OutEco13_1"
 		Me.lblEcoMean2.DSSLocation = 0
 		Me.lblEcoMean2.DSSOffset = 0.2R
-		Me.lblEcoMean2.Location = New System.Drawing.Point(246, 379)
+		Me.lblEcoMean2.Location = New System.Drawing.Point(246, 401)
 		Me.lblEcoMean2.Name = "lblEcoMean2"
 		Me.lblEcoMean2.Size = New System.Drawing.Size(34, 20)
 		Me.lblEcoMean2.TabIndex = 201
@@ -2156,7 +2229,7 @@ Partial Class frmNegotiation
 		Me.lblEnvGini1.DSSElementName = "OutEco13_1"
 		Me.lblEnvGini1.DSSLocation = 0
 		Me.lblEnvGini1.DSSOffset = -0.2R
-		Me.lblEnvGini1.Location = New System.Drawing.Point(190, 399)
+		Me.lblEnvGini1.Location = New System.Drawing.Point(190, 421)
 		Me.lblEnvGini1.Name = "lblEnvGini1"
 		Me.lblEnvGini1.Size = New System.Drawing.Size(34, 20)
 		Me.lblEnvGini1.TabIndex = 200
@@ -2170,7 +2243,7 @@ Partial Class frmNegotiation
 		Me.lblEnvMean1.DSSElementName = "OutEco13_1"
 		Me.lblEnvMean1.DSSLocation = 0
 		Me.lblEnvMean1.DSSOffset = -0.2R
-		Me.lblEnvMean1.Location = New System.Drawing.Point(190, 379)
+		Me.lblEnvMean1.Location = New System.Drawing.Point(190, 401)
 		Me.lblEnvMean1.Name = "lblEnvMean1"
 		Me.lblEnvMean1.Size = New System.Drawing.Size(34, 20)
 		Me.lblEnvMean1.TabIndex = 199
@@ -2184,7 +2257,7 @@ Partial Class frmNegotiation
 		Me.lblSocGini1.DSSElementName = "OutEco13_1"
 		Me.lblSocGini1.DSSLocation = 0
 		Me.lblSocGini1.DSSOffset = -0.6R
-		Me.lblSocGini1.Location = New System.Drawing.Point(137, 399)
+		Me.lblSocGini1.Location = New System.Drawing.Point(137, 421)
 		Me.lblSocGini1.Name = "lblSocGini1"
 		Me.lblSocGini1.Size = New System.Drawing.Size(34, 20)
 		Me.lblSocGini1.TabIndex = 198
@@ -2198,7 +2271,7 @@ Partial Class frmNegotiation
 		Me.lblSocMean1.DSSElementName = "OutSocMean"
 		Me.lblSocMean1.DSSLocation = 0
 		Me.lblSocMean1.DSSOffset = -0.6R
-		Me.lblSocMean1.Location = New System.Drawing.Point(137, 379)
+		Me.lblSocMean1.Location = New System.Drawing.Point(137, 401)
 		Me.lblSocMean1.Name = "lblSocMean1"
 		Me.lblSocMean1.Size = New System.Drawing.Size(34, 20)
 		Me.lblSocMean1.TabIndex = 197
@@ -2212,7 +2285,7 @@ Partial Class frmNegotiation
 		Me.lblEcoGini1.DSSElementName = "OutEco13_1"
 		Me.lblEcoGini1.DSSLocation = 0
 		Me.lblEcoGini1.DSSOffset = -1.0R
-		Me.lblEcoGini1.Location = New System.Drawing.Point(82, 399)
+		Me.lblEcoGini1.Location = New System.Drawing.Point(82, 421)
 		Me.lblEcoGini1.Name = "lblEcoGini1"
 		Me.lblEcoGini1.Size = New System.Drawing.Size(34, 20)
 		Me.lblEcoGini1.TabIndex = 196
@@ -2226,7 +2299,7 @@ Partial Class frmNegotiation
 		Me.lblEcoMean1.DSSElementName = "OutEcoMean1"
 		Me.lblEcoMean1.DSSLocation = 0
 		Me.lblEcoMean1.DSSOffset = -1.0R
-		Me.lblEcoMean1.Location = New System.Drawing.Point(82, 379)
+		Me.lblEcoMean1.Location = New System.Drawing.Point(82, 401)
 		Me.lblEcoMean1.Name = "lblEcoMean1"
 		Me.lblEcoMean1.Size = New System.Drawing.Size(34, 20)
 		Me.lblEcoMean1.TabIndex = 195
@@ -2235,7 +2308,7 @@ Partial Class frmNegotiation
 		'
 		'Label101
 		'
-		Me.Label101.Location = New System.Drawing.Point(8, 399)
+		Me.Label101.Location = New System.Drawing.Point(8, 421)
 		Me.Label101.Name = "Label101"
 		Me.Label101.Size = New System.Drawing.Size(68, 20)
 		Me.Label101.TabIndex = 194
@@ -2243,7 +2316,7 @@ Partial Class frmNegotiation
 		'
 		'Label100
 		'
-		Me.Label100.Location = New System.Drawing.Point(8, 379)
+		Me.Label100.Location = New System.Drawing.Point(8, 401)
 		Me.Label100.Name = "Label100"
 		Me.Label100.Size = New System.Drawing.Size(68, 20)
 		Me.Label100.TabIndex = 193
@@ -2251,6 +2324,8 @@ Partial Class frmNegotiation
 		'
 		'pnlOutSocSmall
 		'
+		Me.pnlOutSocSmall.Controls.Add(Me.lblSoc14_1)
+		Me.pnlOutSocSmall.Controls.Add(Me.lblSoc15_1)
 		Me.pnlOutSocSmall.Controls.Add(Me.lblSoc1_1)
 		Me.pnlOutSocSmall.Controls.Add(Me.lblSoc5_1)
 		Me.pnlOutSocSmall.Controls.Add(Me.lblSoc4_1)
@@ -2264,10 +2339,9 @@ Partial Class frmNegotiation
 		Me.pnlOutSocSmall.Controls.Add(Me.lblSoc7_1)
 		Me.pnlOutSocSmall.Controls.Add(Me.lblSoc10_1)
 		Me.pnlOutSocSmall.Controls.Add(Me.lblSoc13_1)
-		Me.pnlOutSocSmall.DSSVisible = False
 		Me.pnlOutSocSmall.Location = New System.Drawing.Point(133, 59)
 		Me.pnlOutSocSmall.Name = "pnlOutSocSmall"
-		Me.pnlOutSocSmall.Size = New System.Drawing.Size(49, 317)
+		Me.pnlOutSocSmall.Size = New System.Drawing.Size(49, 339)
 		Me.pnlOutSocSmall.TabIndex = 1
 		'
 		'lblSoc1_1
@@ -2449,6 +2523,8 @@ Partial Class frmNegotiation
 		'
 		'pnlOutEnvLarge
 		'
+		Me.pnlOutEnvLarge.Controls.Add(Me.lblEnv14_2)
+		Me.pnlOutEnvLarge.Controls.Add(Me.lblEnv15_2)
 		Me.pnlOutEnvLarge.Controls.Add(Me.lblEnv1_2)
 		Me.pnlOutEnvLarge.Controls.Add(Me.lblEnv5_2)
 		Me.pnlOutEnvLarge.Controls.Add(Me.lblEnv4_2)
@@ -2462,10 +2538,9 @@ Partial Class frmNegotiation
 		Me.pnlOutEnvLarge.Controls.Add(Me.lblEnv3_2)
 		Me.pnlOutEnvLarge.Controls.Add(Me.lblEnv7_2)
 		Me.pnlOutEnvLarge.Controls.Add(Me.lblEnv10_2)
-		Me.pnlOutEnvLarge.DSSVisible = False
 		Me.pnlOutEnvLarge.Location = New System.Drawing.Point(349, 59)
 		Me.pnlOutEnvLarge.Name = "pnlOutEnvLarge"
-		Me.pnlOutEnvLarge.Size = New System.Drawing.Size(49, 317)
+		Me.pnlOutEnvLarge.Size = New System.Drawing.Size(49, 339)
 		Me.pnlOutEnvLarge.TabIndex = 1
 		'
 		'lblEnv1_2
@@ -2640,6 +2715,8 @@ Partial Class frmNegotiation
 		'
 		'pnlOutEnvSmall
 		'
+		Me.pnlOutEnvSmall.Controls.Add(Me.lblEnv14_1)
+		Me.pnlOutEnvSmall.Controls.Add(Me.lblEnv15_1)
 		Me.pnlOutEnvSmall.Controls.Add(Me.lblEnv1_1)
 		Me.pnlOutEnvSmall.Controls.Add(Me.lblEnv5_1)
 		Me.pnlOutEnvSmall.Controls.Add(Me.lblEnv4_1)
@@ -2653,10 +2730,9 @@ Partial Class frmNegotiation
 		Me.pnlOutEnvSmall.Controls.Add(Me.lblEnv3_1)
 		Me.pnlOutEnvSmall.Controls.Add(Me.lblEnv10_1)
 		Me.pnlOutEnvSmall.Controls.Add(Me.lblEnv7_1)
-		Me.pnlOutEnvSmall.DSSVisible = False
 		Me.pnlOutEnvSmall.Location = New System.Drawing.Point(187, 59)
 		Me.pnlOutEnvSmall.Name = "pnlOutEnvSmall"
-		Me.pnlOutEnvSmall.Size = New System.Drawing.Size(49, 317)
+		Me.pnlOutEnvSmall.Size = New System.Drawing.Size(49, 339)
 		Me.pnlOutEnvSmall.TabIndex = 1
 		'
 		'lblEnv1_1
@@ -2831,6 +2907,8 @@ Partial Class frmNegotiation
 		'
 		'pnlOutEcoLarge
 		'
+		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco14_2)
+		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco15_2)
 		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco1_2)
 		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco5_2)
 		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco4_2)
@@ -2844,10 +2922,9 @@ Partial Class frmNegotiation
 		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco3_2)
 		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco10_2)
 		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco7_2)
-		Me.pnlOutEcoLarge.DSSVisible = False
 		Me.pnlOutEcoLarge.Location = New System.Drawing.Point(241, 59)
 		Me.pnlOutEcoLarge.Name = "pnlOutEcoLarge"
-		Me.pnlOutEcoLarge.Size = New System.Drawing.Size(49, 317)
+		Me.pnlOutEcoLarge.Size = New System.Drawing.Size(49, 339)
 		Me.pnlOutEcoLarge.TabIndex = 1
 		'
 		'lblEco1_2
@@ -3021,6 +3098,8 @@ Partial Class frmNegotiation
 		'
 		'pnlOutSocLarge
 		'
+		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc14_2)
+		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc15_2)
 		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc1_2)
 		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc5_2)
 		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc4_2)
@@ -3034,10 +3113,9 @@ Partial Class frmNegotiation
 		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc3_2)
 		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc7_2)
 		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc10_2)
-		Me.pnlOutSocLarge.DSSVisible = False
 		Me.pnlOutSocLarge.Location = New System.Drawing.Point(295, 59)
 		Me.pnlOutSocLarge.Name = "pnlOutSocLarge"
-		Me.pnlOutSocLarge.Size = New System.Drawing.Size(49, 317)
+		Me.pnlOutSocLarge.Size = New System.Drawing.Size(49, 339)
 		Me.pnlOutSocLarge.TabIndex = 1
 		'
 		'lblSoc1_2
@@ -3211,6 +3289,8 @@ Partial Class frmNegotiation
 		'
 		'pnlOutEcoSmall
 		'
+		Me.pnlOutEcoSmall.Controls.Add(Me.lblEco14_1)
+		Me.pnlOutEcoSmall.Controls.Add(Me.lblEco15_1)
 		Me.pnlOutEcoSmall.Controls.Add(Me.lblEco1_1)
 		Me.pnlOutEcoSmall.Controls.Add(Me.lblEco5_1)
 		Me.pnlOutEcoSmall.Controls.Add(Me.lblEco4_1)
@@ -3224,10 +3304,9 @@ Partial Class frmNegotiation
 		Me.pnlOutEcoSmall.Controls.Add(Me.lblEco7_1)
 		Me.pnlOutEcoSmall.Controls.Add(Me.lblEco10_1)
 		Me.pnlOutEcoSmall.Controls.Add(Me.lblEco13_1)
-		Me.pnlOutEcoSmall.DSSVisible = False
 		Me.pnlOutEcoSmall.Location = New System.Drawing.Point(79, 59)
 		Me.pnlOutEcoSmall.Name = "pnlOutEcoSmall"
-		Me.pnlOutEcoSmall.Size = New System.Drawing.Size(49, 317)
+		Me.pnlOutEcoSmall.Size = New System.Drawing.Size(49, 339)
 		Me.pnlOutEcoSmall.TabIndex = 0
 		'
 		'lblEco1_1
@@ -3673,6 +3752,8 @@ Partial Class frmNegotiation
 		'
 		'pnlPop20_2
 		'
+		Me.pnlPop20_2.Controls.Add(Me.nudPop20_14_2)
+		Me.pnlPop20_2.Controls.Add(Me.nudPop20_15_2)
 		Me.pnlPop20_2.Controls.Add(Me.Label66)
 		Me.pnlPop20_2.Controls.Add(Me.nudPop20_3_2)
 		Me.pnlPop20_2.Controls.Add(Me.nudPop20_7_2)
@@ -3689,7 +3770,7 @@ Partial Class frmNegotiation
 		Me.pnlPop20_2.Controls.Add(Me.nudPop20_5_2)
 		Me.pnlPop20_2.Location = New System.Drawing.Point(201, 35)
 		Me.pnlPop20_2.Name = "pnlPop20_2"
-		Me.pnlPop20_2.Size = New System.Drawing.Size(90, 338)
+		Me.pnlPop20_2.Size = New System.Drawing.Size(90, 388)
 		Me.pnlPop20_2.TabIndex = 114
 		'
 		'Label66
@@ -3898,6 +3979,8 @@ Partial Class frmNegotiation
 		'
 		'pnlPop20_1
 		'
+		Me.pnlPop20_1.Controls.Add(Me.nudPop20_14_1)
+		Me.pnlPop20_1.Controls.Add(Me.nudPop20_15_1)
 		Me.pnlPop20_1.Controls.Add(Me.Label67)
 		Me.pnlPop20_1.Controls.Add(Me.nudPop20_3_1)
 		Me.pnlPop20_1.Controls.Add(Me.nudPop20_7_1)
@@ -3914,7 +3997,7 @@ Partial Class frmNegotiation
 		Me.pnlPop20_1.Controls.Add(Me.nudPop20_4_1)
 		Me.pnlPop20_1.Location = New System.Drawing.Point(96, 35)
 		Me.pnlPop20_1.Name = "pnlPop20_1"
-		Me.pnlPop20_1.Size = New System.Drawing.Size(90, 338)
+		Me.pnlPop20_1.Size = New System.Drawing.Size(90, 388)
 		Me.pnlPop20_1.TabIndex = 113
 		'
 		'Label67
@@ -4264,6 +4347,8 @@ Partial Class frmNegotiation
 		'
 		'pnlInddispln
 		'
+		Me.pnlInddispln.Controls.Add(Me.nudInddispln14_2)
+		Me.pnlInddispln.Controls.Add(Me.nudInddispln15_2)
 		Me.pnlInddispln.Controls.Add(Me.Label86)
 		Me.pnlInddispln.Controls.Add(Me.nudInddispln3_2)
 		Me.pnlInddispln.Controls.Add(Me.nudInddispln7_2)
@@ -4280,7 +4365,7 @@ Partial Class frmNegotiation
 		Me.pnlInddispln.Controls.Add(Me.nudInddispln5_2)
 		Me.pnlInddispln.Location = New System.Drawing.Point(198, 12)
 		Me.pnlInddispln.Name = "pnlInddispln"
-		Me.pnlInddispln.Size = New System.Drawing.Size(90, 333)
+		Me.pnlInddispln.Size = New System.Drawing.Size(90, 393)
 		Me.pnlInddispln.TabIndex = 147
 		'
 		'Label86
@@ -4489,6 +4574,8 @@ Partial Class frmNegotiation
 		'
 		'pnlInddiscur
 		'
+		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur14_2)
+		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur15_2)
 		Me.pnlInddiscur.Controls.Add(Me.Label88)
 		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur3_2)
 		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur7_2)
@@ -4505,7 +4592,7 @@ Partial Class frmNegotiation
 		Me.pnlInddiscur.Controls.Add(Me.nudInddiscur4_2)
 		Me.pnlInddiscur.Location = New System.Drawing.Point(99, 12)
 		Me.pnlInddiscur.Name = "pnlInddiscur"
-		Me.pnlInddiscur.Size = New System.Drawing.Size(90, 333)
+		Me.pnlInddiscur.Size = New System.Drawing.Size(90, 393)
 		Me.pnlInddiscur.TabIndex = 146
 		'
 		'Label88
@@ -4847,6 +4934,8 @@ Partial Class frmNegotiation
 		'
 		'pnlTSS
 		'
+		Me.pnlTSS.Controls.Add(Me.nudTSS14)
+		Me.pnlTSS.Controls.Add(Me.nudTSS15)
 		Me.pnlTSS.Controls.Add(Me.Label21)
 		Me.pnlTSS.Controls.Add(Me.nudTSS3)
 		Me.pnlTSS.Controls.Add(Me.nudTSS2)
@@ -4863,7 +4952,7 @@ Partial Class frmNegotiation
 		Me.pnlTSS.Controls.Add(Me.nudTSS11)
 		Me.pnlTSS.Location = New System.Drawing.Point(306, 15)
 		Me.pnlTSS.Name = "pnlTSS"
-		Me.pnlTSS.Size = New System.Drawing.Size(90, 338)
+		Me.pnlTSS.Size = New System.Drawing.Size(90, 408)
 		Me.pnlTSS.TabIndex = 53
 		'
 		'Label21
@@ -4886,7 +4975,7 @@ Partial Class frmNegotiation
 		Me.nudTSS3.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudTSS3.Name = "nudTSS3"
 		Me.nudTSS3.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS3.TabIndex = 28
+		Me.nudTSS3.TabIndex = 32
 		Me.nudTSS3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTSS3.Value = New Decimal(New Integer() {4, 0, 0, 65536})
 		'
@@ -4901,7 +4990,7 @@ Partial Class frmNegotiation
 		Me.nudTSS2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudTSS2.Name = "nudTSS2"
 		Me.nudTSS2.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS2.TabIndex = 27
+		Me.nudTSS2.TabIndex = 31
 		Me.nudTSS2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTSS2.Value = New Decimal(New Integer() {4, 0, 0, 65536})
 		'
@@ -4916,7 +5005,7 @@ Partial Class frmNegotiation
 		Me.nudTSS7.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudTSS7.Name = "nudTSS7"
 		Me.nudTSS7.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS7.TabIndex = 32
+		Me.nudTSS7.TabIndex = 36
 		Me.nudTSS7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTSS7.Value = New Decimal(New Integer() {2, 0, 0, 65536})
 		'
@@ -4931,7 +5020,7 @@ Partial Class frmNegotiation
 		Me.nudTSS10.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudTSS10.Name = "nudTSS10"
 		Me.nudTSS10.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS10.TabIndex = 35
+		Me.nudTSS10.TabIndex = 39
 		Me.nudTSS10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTSS10.Value = New Decimal(New Integer() {1, 0, 0, 0})
 		'
@@ -4946,7 +5035,7 @@ Partial Class frmNegotiation
 		Me.nudTSS12.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudTSS12.Name = "nudTSS12"
 		Me.nudTSS12.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS12.TabIndex = 37
+		Me.nudTSS12.TabIndex = 41
 		Me.nudTSS12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTSS12.Value = New Decimal(New Integer() {3, 0, 0, 65536})
 		'
@@ -4961,7 +5050,7 @@ Partial Class frmNegotiation
 		Me.nudTSS6.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudTSS6.Name = "nudTSS6"
 		Me.nudTSS6.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS6.TabIndex = 31
+		Me.nudTSS6.TabIndex = 35
 		Me.nudTSS6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTSS6.Value = New Decimal(New Integer() {2, 0, 0, 65536})
 		'
@@ -4976,7 +5065,7 @@ Partial Class frmNegotiation
 		Me.nudTSS13.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudTSS13.Name = "nudTSS13"
 		Me.nudTSS13.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS13.TabIndex = 38
+		Me.nudTSS13.TabIndex = 42
 		Me.nudTSS13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTSS13.Value = New Decimal(New Integer() {5, 0, 0, 65536})
 		'
@@ -4991,7 +5080,7 @@ Partial Class frmNegotiation
 		Me.nudTSS1.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudTSS1.Name = "nudTSS1"
 		Me.nudTSS1.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS1.TabIndex = 26
+		Me.nudTSS1.TabIndex = 30
 		Me.nudTSS1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTSS1.Value = New Decimal(New Integer() {4, 0, 0, 65536})
 		'
@@ -5006,7 +5095,7 @@ Partial Class frmNegotiation
 		Me.nudTSS8.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudTSS8.Name = "nudTSS8"
 		Me.nudTSS8.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS8.TabIndex = 33
+		Me.nudTSS8.TabIndex = 37
 		Me.nudTSS8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTSS8.Value = New Decimal(New Integer() {6, 0, 0, 65536})
 		'
@@ -5021,7 +5110,7 @@ Partial Class frmNegotiation
 		Me.nudTSS9.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudTSS9.Name = "nudTSS9"
 		Me.nudTSS9.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS9.TabIndex = 34
+		Me.nudTSS9.TabIndex = 38
 		Me.nudTSS9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTSS9.Value = New Decimal(New Integer() {1, 0, 0, 0})
 		'
@@ -5036,7 +5125,7 @@ Partial Class frmNegotiation
 		Me.nudTSS4.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudTSS4.Name = "nudTSS4"
 		Me.nudTSS4.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS4.TabIndex = 29
+		Me.nudTSS4.TabIndex = 33
 		Me.nudTSS4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTSS4.Value = New Decimal(New Integer() {4, 0, 0, 65536})
 		'
@@ -5051,7 +5140,7 @@ Partial Class frmNegotiation
 		Me.nudTSS5.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudTSS5.Name = "nudTSS5"
 		Me.nudTSS5.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS5.TabIndex = 30
+		Me.nudTSS5.TabIndex = 34
 		Me.nudTSS5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTSS5.Value = New Decimal(New Integer() {8, 0, 0, 65536})
 		'
@@ -5066,12 +5155,14 @@ Partial Class frmNegotiation
 		Me.nudTSS11.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudTSS11.Name = "nudTSS11"
 		Me.nudTSS11.Size = New System.Drawing.Size(90, 20)
-		Me.nudTSS11.TabIndex = 36
+		Me.nudTSS11.TabIndex = 40
 		Me.nudTSS11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTSS11.Value = New Decimal(New Integer() {4, 0, 0, 65536})
 		'
 		'pnlTDS
 		'
+		Me.pnlTDS.Controls.Add(Me.nudTDS14)
+		Me.pnlTDS.Controls.Add(Me.nudTDS15)
 		Me.pnlTDS.Controls.Add(Me.Label19)
 		Me.pnlTDS.Controls.Add(Me.nudTDS3)
 		Me.pnlTDS.Controls.Add(Me.nudTDS2)
@@ -5088,7 +5179,7 @@ Partial Class frmNegotiation
 		Me.pnlTDS.Controls.Add(Me.nudTDS4)
 		Me.pnlTDS.Location = New System.Drawing.Point(210, 15)
 		Me.pnlTDS.Name = "pnlTDS"
-		Me.pnlTDS.Size = New System.Drawing.Size(90, 338)
+		Me.pnlTDS.Size = New System.Drawing.Size(90, 408)
 		Me.pnlTDS.TabIndex = 52
 		'
 		'Label19
@@ -5111,7 +5202,7 @@ Partial Class frmNegotiation
 		Me.nudTDS3.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
 		Me.nudTDS3.Name = "nudTDS3"
 		Me.nudTDS3.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS3.TabIndex = 15
+		Me.nudTDS3.TabIndex = 17
 		Me.nudTDS3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTDS3.Value = New Decimal(New Integer() {4, 0, 0, 65536})
 		'
@@ -5126,7 +5217,7 @@ Partial Class frmNegotiation
 		Me.nudTDS2.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
 		Me.nudTDS2.Name = "nudTDS2"
 		Me.nudTDS2.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS2.TabIndex = 14
+		Me.nudTDS2.TabIndex = 16
 		Me.nudTDS2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTDS2.Value = New Decimal(New Integer() {4, 0, 0, 65536})
 		'
@@ -5141,7 +5232,7 @@ Partial Class frmNegotiation
 		Me.nudTDS7.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
 		Me.nudTDS7.Name = "nudTDS7"
 		Me.nudTDS7.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS7.TabIndex = 19
+		Me.nudTDS7.TabIndex = 21
 		Me.nudTDS7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTDS7.Value = New Decimal(New Integer() {2, 0, 0, 65536})
 		'
@@ -5156,7 +5247,7 @@ Partial Class frmNegotiation
 		Me.nudTDS10.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
 		Me.nudTDS10.Name = "nudTDS10"
 		Me.nudTDS10.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS10.TabIndex = 22
+		Me.nudTDS10.TabIndex = 24
 		Me.nudTDS10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTDS10.Value = New Decimal(New Integer() {1, 0, 0, 0})
 		'
@@ -5171,7 +5262,7 @@ Partial Class frmNegotiation
 		Me.nudTDS6.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
 		Me.nudTDS6.Name = "nudTDS6"
 		Me.nudTDS6.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS6.TabIndex = 18
+		Me.nudTDS6.TabIndex = 20
 		Me.nudTDS6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTDS6.Value = New Decimal(New Integer() {2, 0, 0, 65536})
 		'
@@ -5186,7 +5277,7 @@ Partial Class frmNegotiation
 		Me.nudTDS12.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
 		Me.nudTDS12.Name = "nudTDS12"
 		Me.nudTDS12.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS12.TabIndex = 24
+		Me.nudTDS12.TabIndex = 26
 		Me.nudTDS12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTDS12.Value = New Decimal(New Integer() {3, 0, 0, 65536})
 		'
@@ -5201,7 +5292,7 @@ Partial Class frmNegotiation
 		Me.nudTDS1.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
 		Me.nudTDS1.Name = "nudTDS1"
 		Me.nudTDS1.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS1.TabIndex = 13
+		Me.nudTDS1.TabIndex = 15
 		Me.nudTDS1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTDS1.Value = New Decimal(New Integer() {4, 0, 0, 65536})
 		'
@@ -5216,7 +5307,7 @@ Partial Class frmNegotiation
 		Me.nudTDS9.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
 		Me.nudTDS9.Name = "nudTDS9"
 		Me.nudTDS9.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS9.TabIndex = 21
+		Me.nudTDS9.TabIndex = 23
 		Me.nudTDS9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTDS9.Value = New Decimal(New Integer() {1, 0, 0, 0})
 		'
@@ -5231,7 +5322,7 @@ Partial Class frmNegotiation
 		Me.nudTDS13.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
 		Me.nudTDS13.Name = "nudTDS13"
 		Me.nudTDS13.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS13.TabIndex = 25
+		Me.nudTDS13.TabIndex = 27
 		Me.nudTDS13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTDS13.Value = New Decimal(New Integer() {5, 0, 0, 65536})
 		'
@@ -5246,7 +5337,7 @@ Partial Class frmNegotiation
 		Me.nudTDS5.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
 		Me.nudTDS5.Name = "nudTDS5"
 		Me.nudTDS5.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS5.TabIndex = 17
+		Me.nudTDS5.TabIndex = 19
 		Me.nudTDS5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTDS5.Value = New Decimal(New Integer() {8, 0, 0, 65536})
 		'
@@ -5261,7 +5352,7 @@ Partial Class frmNegotiation
 		Me.nudTDS11.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
 		Me.nudTDS11.Name = "nudTDS11"
 		Me.nudTDS11.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS11.TabIndex = 23
+		Me.nudTDS11.TabIndex = 25
 		Me.nudTDS11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTDS11.Value = New Decimal(New Integer() {4, 0, 0, 65536})
 		'
@@ -5276,7 +5367,7 @@ Partial Class frmNegotiation
 		Me.nudTDS8.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
 		Me.nudTDS8.Name = "nudTDS8"
 		Me.nudTDS8.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS8.TabIndex = 20
+		Me.nudTDS8.TabIndex = 22
 		Me.nudTDS8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTDS8.Value = New Decimal(New Integer() {6, 0, 0, 65536})
 		'
@@ -5291,12 +5382,14 @@ Partial Class frmNegotiation
 		Me.nudTDS4.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
 		Me.nudTDS4.Name = "nudTDS4"
 		Me.nudTDS4.Size = New System.Drawing.Size(90, 20)
-		Me.nudTDS4.TabIndex = 16
+		Me.nudTDS4.TabIndex = 18
 		Me.nudTDS4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudTDS4.Value = New Decimal(New Integer() {4, 0, 0, 65536})
 		'
 		'pnlBOD
 		'
+		Me.pnlBOD.Controls.Add(Me.nudBOD14)
+		Me.pnlBOD.Controls.Add(Me.nudBOD15)
 		Me.pnlBOD.Controls.Add(Me.Label20)
 		Me.pnlBOD.Controls.Add(Me.nudBOD3)
 		Me.pnlBOD.Controls.Add(Me.nudBOD2)
@@ -5313,7 +5406,7 @@ Partial Class frmNegotiation
 		Me.pnlBOD.Controls.Add(Me.nudBOD8)
 		Me.pnlBOD.Location = New System.Drawing.Point(113, 15)
 		Me.pnlBOD.Name = "pnlBOD"
-		Me.pnlBOD.Size = New System.Drawing.Size(90, 338)
+		Me.pnlBOD.Size = New System.Drawing.Size(90, 408)
 		Me.pnlBOD.TabIndex = 51
 		'
 		'Label20
@@ -6182,6 +6275,8 @@ Partial Class frmNegotiation
 		'
 		'pnlGro
 		'
+		Me.pnlGro.Controls.Add(Me.nudGro14)
+		Me.pnlGro.Controls.Add(Me.nudGro15)
 		Me.pnlGro.Controls.Add(Me.Label121)
 		Me.pnlGro.Controls.Add(Me.nudGro3)
 		Me.pnlGro.Controls.Add(Me.nudGro7)
@@ -6198,7 +6293,7 @@ Partial Class frmNegotiation
 		Me.pnlGro.Controls.Add(Me.nudGro5)
 		Me.pnlGro.Location = New System.Drawing.Point(238, 12)
 		Me.pnlGro.Name = "pnlGro"
-		Me.pnlGro.Size = New System.Drawing.Size(90, 332)
+		Me.pnlGro.Size = New System.Drawing.Size(90, 390)
 		Me.pnlGro.TabIndex = 114
 		'
 		'Label121
@@ -6217,7 +6312,7 @@ Partial Class frmNegotiation
 		Me.nudGro3.DSSElementName = "agrcc3_1"
 		Me.nudGro3.DSSLocation = 3
 		Me.nudGro3.DSSOffset = 0.2R
-		Me.nudGro3.Location = New System.Drawing.Point(0, 76)
+		Me.nudGro3.Location = New System.Drawing.Point(0, 73)
 		Me.nudGro3.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudGro3.Name = "nudGro3"
 		Me.nudGro3.Size = New System.Drawing.Size(90, 20)
@@ -6232,7 +6327,7 @@ Partial Class frmNegotiation
 		Me.nudGro7.DSSElementName = "agrcc7_1"
 		Me.nudGro7.DSSLocation = 7
 		Me.nudGro7.DSSOffset = 0.2R
-		Me.nudGro7.Location = New System.Drawing.Point(0, 168)
+		Me.nudGro7.Location = New System.Drawing.Point(0, 165)
 		Me.nudGro7.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudGro7.Name = "nudGro7"
 		Me.nudGro7.Size = New System.Drawing.Size(90, 20)
@@ -6247,7 +6342,7 @@ Partial Class frmNegotiation
 		Me.nudGro2.DSSElementName = "agrcc2_1"
 		Me.nudGro2.DSSLocation = 2
 		Me.nudGro2.DSSOffset = 0.2R
-		Me.nudGro2.Location = New System.Drawing.Point(0, 53)
+		Me.nudGro2.Location = New System.Drawing.Point(0, 50)
 		Me.nudGro2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudGro2.Name = "nudGro2"
 		Me.nudGro2.Size = New System.Drawing.Size(90, 20)
@@ -6262,7 +6357,7 @@ Partial Class frmNegotiation
 		Me.nudGro12.DSSElementName = "agrcc12_1"
 		Me.nudGro12.DSSLocation = 12
 		Me.nudGro12.DSSOffset = 0.2R
-		Me.nudGro12.Location = New System.Drawing.Point(0, 283)
+		Me.nudGro12.Location = New System.Drawing.Point(0, 280)
 		Me.nudGro12.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudGro12.Name = "nudGro12"
 		Me.nudGro12.Size = New System.Drawing.Size(90, 20)
@@ -6277,7 +6372,7 @@ Partial Class frmNegotiation
 		Me.nudGro10.DSSElementName = "agrcc10_1"
 		Me.nudGro10.DSSLocation = 10
 		Me.nudGro10.DSSOffset = 0.2R
-		Me.nudGro10.Location = New System.Drawing.Point(0, 237)
+		Me.nudGro10.Location = New System.Drawing.Point(0, 234)
 		Me.nudGro10.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudGro10.Name = "nudGro10"
 		Me.nudGro10.Size = New System.Drawing.Size(90, 20)
@@ -6292,7 +6387,7 @@ Partial Class frmNegotiation
 		Me.nudGro13.DSSElementName = "agrcc13_1"
 		Me.nudGro13.DSSLocation = 13
 		Me.nudGro13.DSSOffset = 0.2R
-		Me.nudGro13.Location = New System.Drawing.Point(0, 306)
+		Me.nudGro13.Location = New System.Drawing.Point(0, 303)
 		Me.nudGro13.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudGro13.Name = "nudGro13"
 		Me.nudGro13.Size = New System.Drawing.Size(90, 20)
@@ -6307,7 +6402,7 @@ Partial Class frmNegotiation
 		Me.nudGro6.DSSElementName = "agrcc6_1"
 		Me.nudGro6.DSSLocation = 6
 		Me.nudGro6.DSSOffset = 0.2R
-		Me.nudGro6.Location = New System.Drawing.Point(0, 145)
+		Me.nudGro6.Location = New System.Drawing.Point(0, 142)
 		Me.nudGro6.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudGro6.Name = "nudGro6"
 		Me.nudGro6.Size = New System.Drawing.Size(90, 20)
@@ -6322,7 +6417,7 @@ Partial Class frmNegotiation
 		Me.nudGro8.DSSElementName = "agrcc8_1"
 		Me.nudGro8.DSSLocation = 8
 		Me.nudGro8.DSSOffset = 0.2R
-		Me.nudGro8.Location = New System.Drawing.Point(0, 191)
+		Me.nudGro8.Location = New System.Drawing.Point(0, 188)
 		Me.nudGro8.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudGro8.Name = "nudGro8"
 		Me.nudGro8.Size = New System.Drawing.Size(90, 20)
@@ -6337,7 +6432,7 @@ Partial Class frmNegotiation
 		Me.nudGro1.DSSElementName = "agrcc1_1"
 		Me.nudGro1.DSSLocation = 1
 		Me.nudGro1.DSSOffset = 0.2R
-		Me.nudGro1.Location = New System.Drawing.Point(0, 30)
+		Me.nudGro1.Location = New System.Drawing.Point(0, 27)
 		Me.nudGro1.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudGro1.Name = "nudGro1"
 		Me.nudGro1.Size = New System.Drawing.Size(90, 20)
@@ -6352,7 +6447,7 @@ Partial Class frmNegotiation
 		Me.nudGro4.DSSElementName = "agrcc4_1"
 		Me.nudGro4.DSSLocation = 4
 		Me.nudGro4.DSSOffset = 0.2R
-		Me.nudGro4.Location = New System.Drawing.Point(0, 99)
+		Me.nudGro4.Location = New System.Drawing.Point(0, 96)
 		Me.nudGro4.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudGro4.Name = "nudGro4"
 		Me.nudGro4.Size = New System.Drawing.Size(90, 20)
@@ -6367,7 +6462,7 @@ Partial Class frmNegotiation
 		Me.nudGro9.DSSElementName = "agrcc9_1"
 		Me.nudGro9.DSSLocation = 9
 		Me.nudGro9.DSSOffset = 0.2R
-		Me.nudGro9.Location = New System.Drawing.Point(0, 214)
+		Me.nudGro9.Location = New System.Drawing.Point(0, 211)
 		Me.nudGro9.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudGro9.Name = "nudGro9"
 		Me.nudGro9.Size = New System.Drawing.Size(90, 20)
@@ -6382,7 +6477,7 @@ Partial Class frmNegotiation
 		Me.nudGro11.DSSElementName = "agrcc11_1"
 		Me.nudGro11.DSSLocation = 11
 		Me.nudGro11.DSSOffset = 0.2R
-		Me.nudGro11.Location = New System.Drawing.Point(0, 260)
+		Me.nudGro11.Location = New System.Drawing.Point(0, 257)
 		Me.nudGro11.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudGro11.Name = "nudGro11"
 		Me.nudGro11.Size = New System.Drawing.Size(90, 20)
@@ -6397,7 +6492,7 @@ Partial Class frmNegotiation
 		Me.nudGro5.DSSElementName = "agrcc5_1"
 		Me.nudGro5.DSSLocation = 5
 		Me.nudGro5.DSSOffset = 0.2R
-		Me.nudGro5.Location = New System.Drawing.Point(0, 122)
+		Me.nudGro5.Location = New System.Drawing.Point(0, 119)
 		Me.nudGro5.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudGro5.Name = "nudGro5"
 		Me.nudGro5.Size = New System.Drawing.Size(90, 20)
@@ -6407,6 +6502,8 @@ Partial Class frmNegotiation
 		'
 		'pnlDes
 		'
+		Me.pnlDes.Controls.Add(Me.nudDes14)
+		Me.pnlDes.Controls.Add(Me.nudDes15)
 		Me.pnlDes.Controls.Add(Me.Label120)
 		Me.pnlDes.Controls.Add(Me.nudDes3)
 		Me.pnlDes.Controls.Add(Me.nudDes7)
@@ -6423,7 +6520,7 @@ Partial Class frmNegotiation
 		Me.pnlDes.Controls.Add(Me.nudDes4)
 		Me.pnlDes.Location = New System.Drawing.Point(133, 12)
 		Me.pnlDes.Name = "pnlDes"
-		Me.pnlDes.Size = New System.Drawing.Size(90, 332)
+		Me.pnlDes.Size = New System.Drawing.Size(90, 390)
 		Me.pnlDes.TabIndex = 113
 		'
 		'Label120
@@ -6754,6 +6851,564 @@ Partial Class frmNegotiation
 		Me.btnSettings.Text = "Settings"
 		Me.btnSettings.UseVisualStyleBackColor = True
 		'
+		'lblAgr14_1
+		'
+		Me.lblAgr14_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(238, Byte), CType(130, Byte), CType(238, Byte))
+		Me.lblAgr14_1.DSSElementName = "OutAgr14_1"
+		Me.lblAgr14_1.DSSLocation = 14
+		Me.lblAgr14_1.DSSOffset = -0.8R
+		Me.lblAgr14_1.Location = New System.Drawing.Point(3, 297)
+		Me.lblAgr14_1.Name = "lblAgr14_1"
+		Me.lblAgr14_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr14_1.TabIndex = 64
+		Me.lblAgr14_1.Text = "-"
+		Me.lblAgr14_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblAgr15_1
+		'
+		Me.lblAgr15_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(238, Byte), CType(130, Byte), CType(238, Byte))
+		Me.lblAgr15_1.DSSElementName = "OutAgr15_1"
+		Me.lblAgr15_1.DSSLocation = 15
+		Me.lblAgr15_1.DSSOffset = -0.8R
+		Me.lblAgr15_1.Location = New System.Drawing.Point(3, 317)
+		Me.lblAgr15_1.Name = "lblAgr15_1"
+		Me.lblAgr15_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr15_1.TabIndex = 65
+		Me.lblAgr15_1.Text = "-"
+		Me.lblAgr15_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblLan14_1
+		'
+		Me.lblLan14_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(255, Byte))
+		Me.lblLan14_1.DSSElementName = "OutLan14_1"
+		Me.lblLan14_1.DSSLocation = 14
+		Me.lblLan14_1.DSSOffset = -0.4R
+		Me.lblLan14_1.Location = New System.Drawing.Point(3, 297)
+		Me.lblLan14_1.Name = "lblLan14_1"
+		Me.lblLan14_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan14_1.TabIndex = 64
+		Me.lblLan14_1.Text = "-"
+		Me.lblLan14_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblLan15_1
+		'
+		Me.lblLan15_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(255, Byte))
+		Me.lblLan15_1.DSSElementName = "OutLan15_1"
+		Me.lblLan15_1.DSSLocation = 15
+		Me.lblLan15_1.DSSOffset = -0.4R
+		Me.lblLan15_1.Location = New System.Drawing.Point(3, 320)
+		Me.lblLan15_1.Name = "lblLan15_1"
+		Me.lblLan15_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan15_1.TabIndex = 65
+		Me.lblLan15_1.Text = "-"
+		Me.lblLan15_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblAgr14_2
+		'
+		Me.lblAgr14_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(139, Byte), CType(69, Byte), CType(19, Byte))
+		Me.lblAgr14_2.DSSElementName = "OutAgr14_2"
+		Me.lblAgr14_2.DSSLocation = 14
+		Me.lblAgr14_2.DSSOffset = 0R
+		Me.lblAgr14_2.Location = New System.Drawing.Point(3, 295)
+		Me.lblAgr14_2.Name = "lblAgr14_2"
+		Me.lblAgr14_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr14_2.TabIndex = 105
+		Me.lblAgr14_2.Text = "-"
+		Me.lblAgr14_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblAgr15_2
+		'
+		Me.lblAgr15_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(139, Byte), CType(69, Byte), CType(19, Byte))
+		Me.lblAgr15_2.DSSElementName = "OutAgr15_2"
+		Me.lblAgr15_2.DSSLocation = 15
+		Me.lblAgr15_2.DSSOffset = 0R
+		Me.lblAgr15_2.Location = New System.Drawing.Point(3, 318)
+		Me.lblAgr15_2.Name = "lblAgr15_2"
+		Me.lblAgr15_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblAgr15_2.TabIndex = 104
+		Me.lblAgr15_2.Text = "-"
+		Me.lblAgr15_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblInd15_2
+		'
+		Me.lblInd15_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblInd15_2.DSSElementName = "OutInd15_2"
+		Me.lblInd15_2.DSSLocation = 15
+		Me.lblInd15_2.DSSOffset = 0.4R
+		Me.lblInd15_2.Location = New System.Drawing.Point(3, 317)
+		Me.lblInd15_2.Name = "lblInd15_2"
+		Me.lblInd15_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblInd15_2.TabIndex = 105
+		Me.lblInd15_2.Text = "-"
+		Me.lblInd15_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblInd14_2
+		'
+		Me.lblInd14_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblInd14_2.DSSElementName = "OutInd14_2"
+		Me.lblInd14_2.DSSLocation = 14
+		Me.lblInd14_2.DSSOffset = 0.4R
+		Me.lblInd14_2.Location = New System.Drawing.Point(3, 294)
+		Me.lblInd14_2.Name = "lblInd14_2"
+		Me.lblInd14_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblInd14_2.TabIndex = 106
+		Me.lblInd14_2.Text = "-"
+		Me.lblInd14_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblLan15_2
+		'
+		Me.lblLan15_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(85, Byte), CType(107, Byte), CType(47, Byte))
+		Me.lblLan15_2.DSSElementName = "OutLan15_2"
+		Me.lblLan15_2.DSSLocation = 15
+		Me.lblLan15_2.DSSOffset = 0.8R
+		Me.lblLan15_2.Location = New System.Drawing.Point(3, 319)
+		Me.lblLan15_2.Name = "lblLan15_2"
+		Me.lblLan15_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan15_2.TabIndex = 107
+		Me.lblLan15_2.Text = "-"
+		Me.lblLan15_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblLan14_2
+		'
+		Me.lblLan14_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(85, Byte), CType(107, Byte), CType(47, Byte))
+		Me.lblLan14_2.DSSElementName = "OutLan14_2"
+		Me.lblLan14_2.DSSLocation = 14
+		Me.lblLan14_2.DSSOffset = 0.8R
+		Me.lblLan14_2.Location = New System.Drawing.Point(3, 296)
+		Me.lblLan14_2.Name = "lblLan14_2"
+		Me.lblLan14_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblLan14_2.TabIndex = 106
+		Me.lblLan14_2.Text = "-"
+		Me.lblLan14_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEco14_1
+		'
+		Me.lblEco14_1.Cursor = System.Windows.Forms.Cursors.IBeam
+		Me.lblEco14_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEco14_1.DSSElementName = "OutEco14_1"
+		Me.lblEco14_1.DSSLocation = 14
+		Me.lblEco14_1.DSSOffset = -1.0R
+		Me.lblEco14_1.Location = New System.Drawing.Point(3, 296)
+		Me.lblEco14_1.Name = "lblEco14_1"
+		Me.lblEco14_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEco14_1.TabIndex = 148
+		Me.lblEco14_1.Text = "-"
+		Me.lblEco14_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEco15_1
+		'
+		Me.lblEco15_1.Cursor = System.Windows.Forms.Cursors.IBeam
+		Me.lblEco15_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblEco15_1.DSSElementName = "OutEco15_1"
+		Me.lblEco15_1.DSSLocation = 15
+		Me.lblEco15_1.DSSOffset = -1.0R
+		Me.lblEco15_1.Location = New System.Drawing.Point(3, 319)
+		Me.lblEco15_1.Name = "lblEco15_1"
+		Me.lblEco15_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEco15_1.TabIndex = 147
+		Me.lblEco15_1.Text = "-"
+		Me.lblEco15_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSoc14_1
+		'
+		Me.lblSoc14_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(69, Byte), CType(0, Byte))
+		Me.lblSoc14_1.DSSElementName = "OutSoc14_1"
+		Me.lblSoc14_1.DSSLocation = 14
+		Me.lblSoc14_1.DSSOffset = -0.6R
+		Me.lblSoc14_1.Location = New System.Drawing.Point(3, 296)
+		Me.lblSoc14_1.Name = "lblSoc14_1"
+		Me.lblSoc14_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblSoc14_1.TabIndex = 146
+		Me.lblSoc14_1.Text = "-"
+		Me.lblSoc14_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSoc15_1
+		'
+		Me.lblSoc15_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(69, Byte), CType(0, Byte))
+		Me.lblSoc15_1.DSSElementName = "OutSoc15_1"
+		Me.lblSoc15_1.DSSLocation = 15
+		Me.lblSoc15_1.DSSOffset = -0.6R
+		Me.lblSoc15_1.Location = New System.Drawing.Point(3, 319)
+		Me.lblSoc15_1.Name = "lblSoc15_1"
+		Me.lblSoc15_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblSoc15_1.TabIndex = 145
+		Me.lblSoc15_1.Text = "-"
+		Me.lblSoc15_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnv14_1
+		'
+		Me.lblEnv14_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.lblEnv14_1.DSSElementName = "OutEnv14_1"
+		Me.lblEnv14_1.DSSLocation = 14
+		Me.lblEnv14_1.DSSOffset = -0.2R
+		Me.lblEnv14_1.Location = New System.Drawing.Point(3, 296)
+		Me.lblEnv14_1.Name = "lblEnv14_1"
+		Me.lblEnv14_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnv14_1.TabIndex = 147
+		Me.lblEnv14_1.Text = "-"
+		Me.lblEnv14_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnv15_1
+		'
+		Me.lblEnv15_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.lblEnv15_1.DSSElementName = "OutEnv15_1"
+		Me.lblEnv15_1.DSSLocation = 15
+		Me.lblEnv15_1.DSSOffset = -0.2R
+		Me.lblEnv15_1.Location = New System.Drawing.Point(3, 319)
+		Me.lblEnv15_1.Name = "lblEnv15_1"
+		Me.lblEnv15_1.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnv15_1.TabIndex = 146
+		Me.lblEnv15_1.Text = "-"
+		Me.lblEnv15_1.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEco14_2
+		'
+		Me.lblEco14_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
+		Me.lblEco14_2.DSSElementName = "OutEco14_2"
+		Me.lblEco14_2.DSSLocation = 14
+		Me.lblEco14_2.DSSOffset = 0.2R
+		Me.lblEco14_2.Location = New System.Drawing.Point(3, 296)
+		Me.lblEco14_2.Name = "lblEco14_2"
+		Me.lblEco14_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEco14_2.TabIndex = 190
+		Me.lblEco14_2.Text = "-"
+		Me.lblEco14_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEco15_2
+		'
+		Me.lblEco15_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(255, Byte), CType(0, Byte))
+		Me.lblEco15_2.DSSElementName = "OutEco15_2"
+		Me.lblEco15_2.DSSLocation = 15
+		Me.lblEco15_2.DSSOffset = 0.2R
+		Me.lblEco15_2.Location = New System.Drawing.Point(3, 319)
+		Me.lblEco15_2.Name = "lblEco15_2"
+		Me.lblEco15_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEco15_2.TabIndex = 189
+		Me.lblEco15_2.Text = "-"
+		Me.lblEco15_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSoc14_2
+		'
+		Me.lblSoc14_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.lblSoc14_2.DSSElementName = Nothing
+		Me.lblSoc14_2.DSSLocation = 14
+		Me.lblSoc14_2.DSSOffset = 0.6R
+		Me.lblSoc14_2.Location = New System.Drawing.Point(3, 296)
+		Me.lblSoc14_2.Name = "lblSoc14_2"
+		Me.lblSoc14_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblSoc14_2.TabIndex = 188
+		Me.lblSoc14_2.Text = "-"
+		Me.lblSoc14_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblSoc15_2
+		'
+		Me.lblSoc15_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.lblSoc15_2.DSSElementName = Nothing
+		Me.lblSoc15_2.DSSLocation = 15
+		Me.lblSoc15_2.DSSOffset = 0.6R
+		Me.lblSoc15_2.Location = New System.Drawing.Point(3, 319)
+		Me.lblSoc15_2.Name = "lblSoc15_2"
+		Me.lblSoc15_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblSoc15_2.TabIndex = 187
+		Me.lblSoc15_2.Text = "-"
+		Me.lblSoc15_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnv14_2
+		'
+		Me.lblEnv14_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(238, Byte), CType(130, Byte), CType(238, Byte))
+		Me.lblEnv14_2.DSSElementName = Nothing
+		Me.lblEnv14_2.DSSLocation = 14
+		Me.lblEnv14_2.DSSOffset = 1.0R
+		Me.lblEnv14_2.Location = New System.Drawing.Point(3, 296)
+		Me.lblEnv14_2.Name = "lblEnv14_2"
+		Me.lblEnv14_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnv14_2.TabIndex = 189
+		Me.lblEnv14_2.Text = "-"
+		Me.lblEnv14_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'lblEnv15_2
+		'
+		Me.lblEnv15_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(238, Byte), CType(130, Byte), CType(238, Byte))
+		Me.lblEnv15_2.DSSElementName = Nothing
+		Me.lblEnv15_2.DSSLocation = 15
+		Me.lblEnv15_2.DSSOffset = 1.0R
+		Me.lblEnv15_2.Location = New System.Drawing.Point(3, 319)
+		Me.lblEnv15_2.Name = "lblEnv15_2"
+		Me.lblEnv15_2.Size = New System.Drawing.Size(34, 20)
+		Me.lblEnv15_2.TabIndex = 188
+		Me.lblEnv15_2.Text = "-"
+		Me.lblEnv15_2.TextAlign = System.Drawing.ContentAlignment.TopRight
+		'
+		'nudPop20_14_1
+		'
+		Me.nudPop20_14_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(114, Byte), CType(0, Byte))
+		Me.nudPop20_14_1.DSSElementName = "Pop20_14_1"
+		Me.nudPop20_14_1.DSSLocation = 14
+		Me.nudPop20_14_1.DSSOffset = -0.2R
+		Me.nudPop20_14_1.Location = New System.Drawing.Point(0, 327)
+		Me.nudPop20_14_1.Maximum = New Decimal(New Integer() {3000000, 0, 0, 0})
+		Me.nudPop20_14_1.Name = "nudPop20_14_1"
+		Me.nudPop20_14_1.Size = New System.Drawing.Size(90, 20)
+		Me.nudPop20_14_1.TabIndex = 13
+		Me.nudPop20_14_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudPop20_14_1.ThousandsSeparator = True
+		Me.nudPop20_14_1.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudPop20_15_1
+		'
+		Me.nudPop20_15_1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(114, Byte), CType(0, Byte))
+		Me.nudPop20_15_1.DSSElementName = "Pop20_15_1"
+		Me.nudPop20_15_1.DSSLocation = 15
+		Me.nudPop20_15_1.DSSOffset = -0.2R
+		Me.nudPop20_15_1.Location = New System.Drawing.Point(0, 350)
+		Me.nudPop20_15_1.Maximum = New Decimal(New Integer() {3000000, 0, 0, 0})
+		Me.nudPop20_15_1.Name = "nudPop20_15_1"
+		Me.nudPop20_15_1.Size = New System.Drawing.Size(90, 20)
+		Me.nudPop20_15_1.TabIndex = 14
+		Me.nudPop20_15_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudPop20_15_1.ThousandsSeparator = True
+		Me.nudPop20_15_1.Value = New Decimal(New Integer() {1054794521, 0, 0, 589824})
+		'
+		'nudPop20_14_2
+		'
+		Me.nudPop20_14_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(184, Byte), CType(0, Byte))
+		Me.nudPop20_14_2.DSSElementName = "Pop20_14_2"
+		Me.nudPop20_14_2.DSSLocation = 14
+		Me.nudPop20_14_2.DSSOffset = 0.2R
+		Me.nudPop20_14_2.Location = New System.Drawing.Point(0, 327)
+		Me.nudPop20_14_2.Maximum = New Decimal(New Integer() {3000000, 0, 0, 0})
+		Me.nudPop20_14_2.Name = "nudPop20_14_2"
+		Me.nudPop20_14_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudPop20_14_2.TabIndex = 113
+		Me.nudPop20_14_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudPop20_14_2.ThousandsSeparator = True
+		Me.nudPop20_14_2.Value = New Decimal(New Integer() {3, 0, 0, 65536})
+		'
+		'nudPop20_15_2
+		'
+		Me.nudPop20_15_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(184, Byte), CType(0, Byte))
+		Me.nudPop20_15_2.DSSElementName = "Pop20_14_2"
+		Me.nudPop20_15_2.DSSLocation = 15
+		Me.nudPop20_15_2.DSSOffset = 0.2R
+		Me.nudPop20_15_2.Location = New System.Drawing.Point(0, 350)
+		Me.nudPop20_15_2.Maximum = New Decimal(New Integer() {3000000, 0, 0, 0})
+		Me.nudPop20_15_2.Name = "nudPop20_15_2"
+		Me.nudPop20_15_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudPop20_15_2.TabIndex = 114
+		Me.nudPop20_15_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudPop20_15_2.ThousandsSeparator = True
+		Me.nudPop20_15_2.Value = New Decimal(New Integer() {5, 0, 0, 65536})
+		'
+		'nudInddiscur14_2
+		'
+		Me.nudInddiscur14_2.DecimalPlaces = 2
+		Me.nudInddiscur14_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
+		Me.nudInddiscur14_2.DSSElementName = "inddiscur14_1"
+		Me.nudInddiscur14_2.DSSLocation = 14
+		Me.nudInddiscur14_2.DSSOffset = -0.2R
+		Me.nudInddiscur14_2.Location = New System.Drawing.Point(0, 332)
+		Me.nudInddiscur14_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddiscur14_2.Name = "nudInddiscur14_2"
+		Me.nudInddiscur14_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddiscur14_2.TabIndex = 13
+		Me.nudInddiscur14_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddiscur14_2.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudInddiscur15_2
+		'
+		Me.nudInddiscur15_2.DecimalPlaces = 2
+		Me.nudInddiscur15_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(164, Byte), CType(164, Byte), CType(164, Byte))
+		Me.nudInddiscur15_2.DSSElementName = "inddiscur15_1"
+		Me.nudInddiscur15_2.DSSLocation = 15
+		Me.nudInddiscur15_2.DSSOffset = -0.2R
+		Me.nudInddiscur15_2.Location = New System.Drawing.Point(0, 355)
+		Me.nudInddiscur15_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddiscur15_2.Name = "nudInddiscur15_2"
+		Me.nudInddiscur15_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddiscur15_2.TabIndex = 14
+		Me.nudInddiscur15_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddiscur15_2.Value = New Decimal(New Integer() {1054794521, 0, 0, 589824})
+		'
+		'nudInddispln14_2
+		'
+		Me.nudInddispln14_2.DecimalPlaces = 2
+		Me.nudInddispln14_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
+		Me.nudInddispln14_2.DSSElementName = "inddispln14_1"
+		Me.nudInddispln14_2.DSSLocation = 14
+		Me.nudInddispln14_2.DSSOffset = 0.2R
+		Me.nudInddispln14_2.Location = New System.Drawing.Point(0, 332)
+		Me.nudInddispln14_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddispln14_2.Name = "nudInddispln14_2"
+		Me.nudInddispln14_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddispln14_2.TabIndex = 113
+		Me.nudInddispln14_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddispln14_2.Value = New Decimal(New Integer() {3, 0, 0, 65536})
+		'
+		'nudInddispln15_2
+		'
+		Me.nudInddispln15_2.DecimalPlaces = 2
+		Me.nudInddispln15_2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(93, Byte), CType(93, Byte), CType(93, Byte))
+		Me.nudInddispln15_2.DSSElementName = "inddispln15_1"
+		Me.nudInddispln15_2.DSSLocation = 15
+		Me.nudInddispln15_2.DSSOffset = 0.2R
+		Me.nudInddispln15_2.Location = New System.Drawing.Point(0, 355)
+		Me.nudInddispln15_2.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudInddispln15_2.Name = "nudInddispln15_2"
+		Me.nudInddispln15_2.Size = New System.Drawing.Size(90, 20)
+		Me.nudInddispln15_2.TabIndex = 114
+		Me.nudInddispln15_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudInddispln15_2.Value = New Decimal(New Integer() {5, 0, 0, 65536})
+		'
+		'nudBOD14
+		'
+		Me.nudBOD14.DecimalPlaces = 2
+		Me.nudBOD14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.nudBOD14.DSSElementName = "lbqi14_1"
+		Me.nudBOD14.DSSLocation = 14
+		Me.nudBOD14.DSSOffset = -0.4R
+		Me.nudBOD14.Location = New System.Drawing.Point(0, 332)
+		Me.nudBOD14.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudBOD14.Name = "nudBOD14"
+		Me.nudBOD14.Size = New System.Drawing.Size(90, 20)
+		Me.nudBOD14.TabIndex = 13
+		Me.nudBOD14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudBOD14.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudBOD15
+		'
+		Me.nudBOD15.DecimalPlaces = 2
+		Me.nudBOD15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(0, Byte), CType(0, Byte), CType(255, Byte))
+		Me.nudBOD15.DSSElementName = "lbqi15_1"
+		Me.nudBOD15.DSSLocation = 15
+		Me.nudBOD15.DSSOffset = -0.4R
+		Me.nudBOD15.Location = New System.Drawing.Point(0, 355)
+		Me.nudBOD15.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudBOD15.Name = "nudBOD15"
+		Me.nudBOD15.Size = New System.Drawing.Size(90, 20)
+		Me.nudBOD15.TabIndex = 14
+		Me.nudBOD15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudBOD15.Value = New Decimal(New Integer() {1054794521, 0, 0, 589824})
+		'
+		'nudTDS14
+		'
+		Me.nudTDS14.DecimalPlaces = 2
+		Me.nudTDS14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.nudTDS14.DSSElementName = "lsqi14_1"
+		Me.nudTDS14.DSSLocation = 14
+		Me.nudTDS14.DSSOffset = 0R
+		Me.nudTDS14.Location = New System.Drawing.Point(0, 332)
+		Me.nudTDS14.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
+		Me.nudTDS14.Name = "nudTDS14"
+		Me.nudTDS14.Size = New System.Drawing.Size(90, 20)
+		Me.nudTDS14.TabIndex = 28
+		Me.nudTDS14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTDS14.Value = New Decimal(New Integer() {3, 0, 0, 65536})
+		'
+		'nudTDS15
+		'
+		Me.nudTDS15.DecimalPlaces = 2
+		Me.nudTDS15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(255, Byte), CType(0, Byte))
+		Me.nudTDS15.DSSElementName = "lsqi15_1"
+		Me.nudTDS15.DSSLocation = 15
+		Me.nudTDS15.DSSOffset = 0R
+		Me.nudTDS15.Location = New System.Drawing.Point(0, 355)
+		Me.nudTDS15.Maximum = New Decimal(New Integer() {2500, 0, 0, 0})
+		Me.nudTDS15.Name = "nudTDS15"
+		Me.nudTDS15.Size = New System.Drawing.Size(90, 20)
+		Me.nudTDS15.TabIndex = 29
+		Me.nudTDS15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTDS15.Value = New Decimal(New Integer() {5, 0, 0, 65536})
+		'
+		'nudTSS14
+		'
+		Me.nudTSS14.DecimalPlaces = 2
+		Me.nudTSS14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.nudTSS14.DSSElementName = "lmqi14_1"
+		Me.nudTSS14.DSSLocation = 14
+		Me.nudTSS14.DSSOffset = 0.4R
+		Me.nudTSS14.Location = New System.Drawing.Point(0, 332)
+		Me.nudTSS14.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTSS14.Name = "nudTSS14"
+		Me.nudTSS14.Size = New System.Drawing.Size(90, 20)
+		Me.nudTSS14.TabIndex = 43
+		Me.nudTSS14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTSS14.Value = New Decimal(New Integer() {3, 0, 0, 65536})
+		'
+		'nudTSS15
+		'
+		Me.nudTSS15.DecimalPlaces = 2
+		Me.nudTSS15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(0, Byte), CType(0, Byte))
+		Me.nudTSS15.DSSElementName = "lmqi15_1"
+		Me.nudTSS15.DSSLocation = 15
+		Me.nudTSS15.DSSOffset = 0.4R
+		Me.nudTSS15.Location = New System.Drawing.Point(0, 355)
+		Me.nudTSS15.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudTSS15.Name = "nudTSS15"
+		Me.nudTSS15.Size = New System.Drawing.Size(90, 20)
+		Me.nudTSS15.TabIndex = 44
+		Me.nudTSS15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudTSS15.Value = New Decimal(New Integer() {5, 0, 0, 65536})
+		'
+		'nudDes14
+		'
+		Me.nudDes14.DecimalPlaces = 2
+		Me.nudDes14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(197, Byte), CType(124, Byte), CType(0, Byte))
+		Me.nudDes14.DSSElementName = "indCC14_1"
+		Me.nudDes14.DSSLocation = 14
+		Me.nudDes14.DSSOffset = -0.2R
+		Me.nudDes14.Location = New System.Drawing.Point(0, 327)
+		Me.nudDes14.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudDes14.Name = "nudDes14"
+		Me.nudDes14.Size = New System.Drawing.Size(90, 20)
+		Me.nudDes14.TabIndex = 14
+		Me.nudDes14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudDes14.Value = New Decimal(New Integer() {2, 0, 0, 65536})
+		'
+		'nudDes15
+		'
+		Me.nudDes15.DecimalPlaces = 2
+		Me.nudDes15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(197, Byte), CType(124, Byte), CType(0, Byte))
+		Me.nudDes15.DSSElementName = "indCC15_1"
+		Me.nudDes15.DSSLocation = 15
+		Me.nudDes15.DSSOffset = -0.2R
+		Me.nudDes15.Location = New System.Drawing.Point(0, 350)
+		Me.nudDes15.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudDes15.Name = "nudDes15"
+		Me.nudDes15.Size = New System.Drawing.Size(90, 20)
+		Me.nudDes15.TabIndex = 15
+		Me.nudDes15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudDes15.Value = New Decimal(New Integer() {1054794521, 0, 0, 589824})
+		'
+		'nudGro14
+		'
+		Me.nudGro14.DecimalPlaces = 2
+		Me.nudGro14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(160, Byte), CType(0, Byte))
+		Me.nudGro14.DSSElementName = "agrcc14_1"
+		Me.nudGro14.DSSLocation = 14
+		Me.nudGro14.DSSOffset = 0.2R
+		Me.nudGro14.Location = New System.Drawing.Point(0, 327)
+		Me.nudGro14.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudGro14.Name = "nudGro14"
+		Me.nudGro14.Size = New System.Drawing.Size(90, 20)
+		Me.nudGro14.TabIndex = 113
+		Me.nudGro14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudGro14.Value = New Decimal(New Integer() {3, 0, 0, 65536})
+		'
+		'nudGro15
+		'
+		Me.nudGro15.DecimalPlaces = 2
+		Me.nudGro15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(255, Byte), CType(255, Byte), CType(160, Byte), CType(0, Byte))
+		Me.nudGro15.DSSElementName = "agrcc15_1"
+		Me.nudGro15.DSSLocation = 15
+		Me.nudGro15.DSSOffset = 0.2R
+		Me.nudGro15.Location = New System.Drawing.Point(0, 350)
+		Me.nudGro15.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
+		Me.nudGro15.Name = "nudGro15"
+		Me.nudGro15.Size = New System.Drawing.Size(90, 20)
+		Me.nudGro15.TabIndex = 114
+		Me.nudGro15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudGro15.Value = New Decimal(New Integer() {5, 0, 0, 65536})
+		'
 		'frmNegotiation
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -6767,13 +7422,13 @@ Partial Class frmNegotiation
 		Me.Name = "frmNegotiation"
 		Me.Text = "Spatial Decision Support System"
 		Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-		CType(Me.dsParameters, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.DSData, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.DSLocations, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.dsParameters, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.DSData, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.DSLocations, System.ComponentModel.ISupportInitialize).EndInit
 		Me.pnlMain.ResumeLayout(False)
 		Me.SplitContainer.Panel1.ResumeLayout(False)
 		Me.SplitContainer.Panel2.ResumeLayout(False)
-		CType(Me.SplitContainer, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.SplitContainer, System.ComponentModel.ISupportInitialize).EndInit
 		Me.SplitContainer.ResumeLayout(False)
 		Me.grbOuput.ResumeLayout(False)
 		Me.tcoOutput.ResumeLayout(False)
@@ -6793,160 +7448,178 @@ Partial Class frmNegotiation
 		Me.pnlOutSocLarge.ResumeLayout(False)
 		Me.pnlOutEcoSmall.ResumeLayout(False)
 		Me.tpaWeights.ResumeLayout(False)
-		CType(Me.pboGraphWeights, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.pboGraphWeights, System.ComponentModel.ISupportInitialize).EndInit
 		Me.tpaStandards.ResumeLayout(False)
-		CType(Me.pboGraphStandards, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.pboGraphStandards, System.ComponentModel.ISupportInitialize).EndInit
 		Me.tpaEfficencies.ResumeLayout(False)
-		CType(Me.pboGraphEfficiencies, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.pboGraphEfficiencies, System.ComponentModel.ISupportInitialize).EndInit
 		Me.grbPopulation.ResumeLayout(False)
 		Me.pnlPop20_2.ResumeLayout(False)
-		CType(Me.nudPop20_3_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_7_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_2_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_12_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_10_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_13_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_6_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_8_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_1_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_4_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_9_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_11_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_5_2, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudPop20_3_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_7_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_2_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_12_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_10_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_13_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_6_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_8_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_1_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_4_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_9_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_11_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_5_2, System.ComponentModel.ISupportInitialize).EndInit
 		Me.pnlPop20_1.ResumeLayout(False)
-		CType(Me.nudPop20_3_1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_7_1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_2_1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_6_1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_12_1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_1_1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_9_1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_13_1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_10_1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_11_1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_8_1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_5_1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudPop20_4_1, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudPop20_3_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_7_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_2_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_6_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_12_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_1_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_9_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_13_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_10_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_11_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_8_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_5_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_4_1, System.ComponentModel.ISupportInitialize).EndInit
 		Me.grbIndustrialDistricts.ResumeLayout(False)
 		Me.pnlInddispln.ResumeLayout(False)
-		CType(Me.nudInddispln3_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddispln7_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddispln2_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddispln12_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddispln10_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddispln13_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddispln6_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddispln8_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddispln1_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddispln4_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddispln9_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddispln11_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddispln5_2, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudInddispln3_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddispln7_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddispln2_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddispln12_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddispln10_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddispln13_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddispln6_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddispln8_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddispln1_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddispln4_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddispln9_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddispln11_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddispln5_2, System.ComponentModel.ISupportInitialize).EndInit
 		Me.pnlInddiscur.ResumeLayout(False)
-		CType(Me.nudInddiscur3_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddiscur7_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddiscur2_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddiscur6_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddiscur12_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddiscur1_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddiscur9_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddiscur13_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddiscur10_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddiscur11_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddiscur8_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddiscur5_2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudInddiscur4_2, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudInddiscur3_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddiscur7_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddiscur2_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddiscur6_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddiscur12_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddiscur1_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddiscur9_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddiscur13_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddiscur10_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddiscur11_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddiscur8_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddiscur5_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddiscur4_2, System.ComponentModel.ISupportInitialize).EndInit
 		Me.grbWaterQuality.ResumeLayout(False)
 		Me.pnlTSS.ResumeLayout(False)
-		CType(Me.nudTSS3, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTSS2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTSS7, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTSS10, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTSS12, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTSS6, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTSS13, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTSS1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTSS8, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTSS9, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTSS4, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTSS5, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTSS11, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudTSS3, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTSS2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTSS7, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTSS10, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTSS12, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTSS6, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTSS13, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTSS1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTSS8, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTSS9, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTSS4, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTSS5, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTSS11, System.ComponentModel.ISupportInitialize).EndInit
 		Me.pnlTDS.ResumeLayout(False)
-		CType(Me.nudTDS3, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTDS2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTDS7, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTDS10, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTDS6, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTDS12, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTDS1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTDS9, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTDS13, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTDS5, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTDS11, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTDS8, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTDS4, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudTDS3, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTDS2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTDS7, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTDS10, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTDS6, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTDS12, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTDS1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTDS9, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTDS13, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTDS5, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTDS11, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTDS8, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTDS4, System.ComponentModel.ISupportInitialize).EndInit
 		Me.pnlBOD.ResumeLayout(False)
-		CType(Me.nudBOD3, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudBOD2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudBOD7, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudBOD6, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudBOD1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudBOD9, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudBOD12, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudBOD10, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudBOD11, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudBOD5, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudBOD13, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudBOD4, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudBOD8, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudBOD3, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudBOD2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudBOD7, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudBOD6, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudBOD1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudBOD9, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudBOD12, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudBOD10, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudBOD11, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudBOD5, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudBOD13, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudBOD4, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudBOD8, System.ComponentModel.ISupportInitialize).EndInit
 		Me.grbMisc.ResumeLayout(False)
 		Me.DssPanel1.ResumeLayout(False)
-		CType(Me.nudTpsx, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTpmz, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudAgrUFRO, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudEnvw, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudgwsp, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTotpla, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudIndUFRO, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudSocw, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudTpbx, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudEcow, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudsmqi, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudLanUFRO, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudsbqi, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudLanUF, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudssqi, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudAgrUF, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudIndUF, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudTpsx, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTpmz, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudAgrUFRO, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudEnvw, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudgwsp, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTotpla, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudIndUFRO, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudSocw, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTpbx, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudEcow, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudsmqi, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudLanUFRO, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudsbqi, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudLanUF, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudssqi, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudAgrUF, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudIndUF, System.ComponentModel.ISupportInitialize).EndInit
 		Me.grbWaterCosts.ResumeLayout(False)
 		Me.pnlGro.ResumeLayout(False)
-		CType(Me.nudGro3, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudGro7, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudGro2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudGro12, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudGro10, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudGro13, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudGro6, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudGro8, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudGro1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudGro4, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudGro9, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudGro11, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudGro5, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudGro3, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro7, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro12, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro10, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro13, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro6, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro8, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro4, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro9, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro11, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro5, System.ComponentModel.ISupportInitialize).EndInit
 		Me.pnlDes.ResumeLayout(False)
-		CType(Me.nudDes3, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudDes7, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudDes2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudDes6, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudDes12, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudDes1, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudDes9, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudDes13, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudDes10, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudDes11, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudDes8, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudDes5, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.nudDes4, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudDes3, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes7, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes6, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes12, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes9, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes13, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes10, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes11, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes8, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes5, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes4, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_14_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_15_1, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_14_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudPop20_15_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddiscur14_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddiscur15_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddispln14_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudInddispln15_2, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudBOD14, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudBOD15, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTDS14, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTDS15, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTSS14, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudTSS15, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes14, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudDes15, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro14, System.ComponentModel.ISupportInitialize).EndInit
+		CType(Me.nudGro15, System.ComponentModel.ISupportInitialize).EndInit
 		Me.ResumeLayout(False)
 
 	End Sub
@@ -7512,4 +8185,44 @@ Partial Class frmNegotiation
 	Friend WithEvents Label101 As Label
 	Friend WithEvents Label100 As Label
 	Friend WithEvents btnSettings As Button
+	Friend WithEvents lblAgr15_1 As DSSLabel
+	Friend WithEvents lblAgr14_1 As DSSLabel
+	Friend WithEvents lblInd15_2 As DSSLabel
+	Friend WithEvents lblInd14_2 As DSSLabel
+	Friend WithEvents lblLan14_1 As DSSLabel
+	Friend WithEvents lblLan15_1 As DSSLabel
+	Friend WithEvents lblLan15_2 As DSSLabel
+	Friend WithEvents lblLan14_2 As DSSLabel
+	Friend WithEvents lblAgr14_2 As DSSLabel
+	Friend WithEvents lblAgr15_2 As DSSLabel
+	Friend WithEvents nudBOD14 As DSSNumericUpDown
+	Friend WithEvents nudBOD15 As DSSNumericUpDown
+	Friend WithEvents lblSoc14_1 As DSSLabel
+	Friend WithEvents lblSoc15_1 As DSSLabel
+	Friend WithEvents lblEnv14_2 As DSSLabel
+	Friend WithEvents lblEnv15_2 As DSSLabel
+	Friend WithEvents lblEnv14_1 As DSSLabel
+	Friend WithEvents lblEnv15_1 As DSSLabel
+	Friend WithEvents lblEco14_2 As DSSLabel
+	Friend WithEvents lblEco15_2 As DSSLabel
+	Friend WithEvents lblSoc14_2 As DSSLabel
+	Friend WithEvents lblSoc15_2 As DSSLabel
+	Friend WithEvents lblEco14_1 As DSSLabel
+	Friend WithEvents lblEco15_1 As DSSLabel
+	Friend WithEvents nudPop20_14_2 As DSSNumericUpDown
+	Friend WithEvents nudPop20_15_2 As DSSNumericUpDown
+	Friend WithEvents nudPop20_14_1 As DSSNumericUpDown
+	Friend WithEvents nudPop20_15_1 As DSSNumericUpDown
+	Friend WithEvents nudInddispln14_2 As DSSNumericUpDown
+	Friend WithEvents nudInddispln15_2 As DSSNumericUpDown
+	Friend WithEvents nudInddiscur14_2 As DSSNumericUpDown
+	Friend WithEvents nudInddiscur15_2 As DSSNumericUpDown
+	Friend WithEvents nudTSS14 As DSSNumericUpDown
+	Friend WithEvents nudTSS15 As DSSNumericUpDown
+	Friend WithEvents nudTDS14 As DSSNumericUpDown
+	Friend WithEvents nudTDS15 As DSSNumericUpDown
+	Friend WithEvents nudGro14 As DSSNumericUpDown
+	Friend WithEvents nudGro15 As DSSNumericUpDown
+	Friend WithEvents nudDes14 As DSSNumericUpDown
+	Friend WithEvents nudDes15 As DSSNumericUpDown
 End Class
