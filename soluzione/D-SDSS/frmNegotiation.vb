@@ -919,6 +919,8 @@ Public Class frmNegotiation
 
 		Me.AddEventHandler(Me)
 
+		Me.SetLocations
+
 		If kernelPath = "" OrElse Not System.IO.File.Exists(kernelPath) Then
 			'kernel path not present or wrong path is present in db
 			MessageBox.Show("Wolfram Mathematica executable kernel path is missing or wrong" & ControlChars.CrLf & "please set correct path", "CRITICAL ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -945,6 +947,44 @@ Public Class frmNegotiation
 
 		Return result
 	End Function
+
+	''' <summary>
+	''' Read locations data from DB and set GUI controls accordingly
+	''' </summary>
+	Private Sub SetLocations()
+		'load location names for Water Costs window
+		Me.LoadLocationLabel("lblWC")
+		'load location names for Total Population window
+		Me.LoadLocationLabel("lblTP")
+		'load location names for Industrial District window
+		Me.LoadLocationLabel("lblID")
+		'load location names for Water Quality window
+		Me.LoadLocationLabel("lblWQ")
+		'load location names for Uses window
+		Me.LoadLocationLabel("lblUS")
+		'load location names for Impact window
+		Me.LoadLocationLabel("lblIM")
+	End Sub
+
+	Private Sub LoadLocationLabel(prefix As String)
+		Dim i As Integer
+		Dim location As DataRow
+		Dim tmpLabelName As String
+		Dim tmpLocations As DataTable
+
+		tmpLocations = Me.DSLocations.Tables("locations")
+
+		For i = 0 To tmpLocations.Rows.Count - 1
+			location = tmpLocations.Rows(i)
+
+			tmpLabelName = prefix & "Location" & i + 1
+
+			If Me._lblCollection.Contains(tmpLabelName) Then
+				Me._lblCollection(tmpLabelName).Text = location.Item("locName").ToString
+				Me._lblCollection(tmpLabelName).DSSElementName = location.Item("locName").ToString
+			End If
+		Next
+	End Sub
 
 	Private Sub AddEventHandler(ctl As Control)
 		Dim children As Control

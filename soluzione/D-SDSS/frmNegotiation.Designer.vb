@@ -40,6 +40,8 @@ Partial Class frmNegotiation
 		Me.pnlMain = New System.Windows.Forms.Panel()
 		Me.SplitContainer = New System.Windows.Forms.SplitContainer()
 		Me.grbWaterCosts = New DSDSS.DSSGroupBox()
+		Me.lblWCLocation1 = New DSDSS.DSSLabel()
+		Me.lblWCLocation13 = New DSDSS.DSSLabel()
 		Me.pnlGro = New DSDSS.DSSPanel()
 		Me.nudGro14 = New DSDSS.DSSNumericUpDown()
 		Me.nudGro15 = New DSDSS.DSSNumericUpDown()
@@ -74,19 +76,6 @@ Partial Class frmNegotiation
 		Me.nudDes8 = New DSDSS.DSSNumericUpDown()
 		Me.nudDes5 = New DSDSS.DSSNumericUpDown()
 		Me.nudDes4 = New DSDSS.DSSNumericUpDown()
-		Me.Label63 = New System.Windows.Forms.Label()
-		Me.Label55 = New System.Windows.Forms.Label()
-		Me.Label62 = New System.Windows.Forms.Label()
-		Me.Label54 = New System.Windows.Forms.Label()
-		Me.Label130 = New System.Windows.Forms.Label()
-		Me.Label128 = New System.Windows.Forms.Label()
-		Me.Label51 = New System.Windows.Forms.Label()
-		Me.Label57 = New System.Windows.Forms.Label()
-		Me.Label53 = New System.Windows.Forms.Label()
-		Me.Label50 = New System.Windows.Forms.Label()
-		Me.Label56 = New System.Windows.Forms.Label()
-		Me.Label52 = New System.Windows.Forms.Label()
-		Me.Label47 = New System.Windows.Forms.Label()
 		Me.grbOuput = New DSDSS.DSSGroupBox()
 		Me.tcoOutput = New System.Windows.Forms.TabControl()
 		Me.tpaUses = New System.Windows.Forms.TabPage()
@@ -177,20 +166,7 @@ Partial Class frmNegotiation
 		Me.lblAgr7_2 = New DSDSS.DSSLabel()
 		Me.lblAgr10_2 = New DSDSS.DSSLabel()
 		Me.Label135 = New System.Windows.Forms.Label()
-		Me.Label85 = New System.Windows.Forms.Label()
 		Me.Label133 = New System.Windows.Forms.Label()
-		Me.Label84 = New System.Windows.Forms.Label()
-		Me.Label83 = New System.Windows.Forms.Label()
-		Me.Label31 = New System.Windows.Forms.Label()
-		Me.Label82 = New System.Windows.Forms.Label()
-		Me.Label33 = New System.Windows.Forms.Label()
-		Me.Label81 = New System.Windows.Forms.Label()
-		Me.Label35 = New System.Windows.Forms.Label()
-		Me.Label80 = New System.Windows.Forms.Label()
-		Me.Label36 = New System.Windows.Forms.Label()
-		Me.Label79 = New System.Windows.Forms.Label()
-		Me.Label60 = New System.Windows.Forms.Label()
-		Me.Label61 = New System.Windows.Forms.Label()
 		Me.tpaImpacts = New System.Windows.Forms.TabPage()
 		Me.gboOutputImpacts = New DSDSS.DSSGroupBox()
 		Me.lblEnvGini2 = New DSDSS.DSSLabel()
@@ -305,26 +281,13 @@ Partial Class frmNegotiation
 		Me.lblEco10_1 = New DSDSS.DSSLabel()
 		Me.lblEco13_1 = New DSDSS.DSSLabel()
 		Me.Label180 = New System.Windows.Forms.Label()
-		Me.Label103 = New System.Windows.Forms.Label()
 		Me.Label98 = New System.Windows.Forms.Label()
-		Me.Label104 = New System.Windows.Forms.Label()
 		Me.Label179 = New System.Windows.Forms.Label()
-		Me.Label105 = New System.Windows.Forms.Label()
 		Me.Label99 = New System.Windows.Forms.Label()
-		Me.Label106 = New System.Windows.Forms.Label()
 		Me.Label95 = New System.Windows.Forms.Label()
-		Me.Label107 = New System.Windows.Forms.Label()
 		Me.Label178 = New System.Windows.Forms.Label()
-		Me.Label108 = New System.Windows.Forms.Label()
 		Me.Label97 = New System.Windows.Forms.Label()
-		Me.Label109 = New System.Windows.Forms.Label()
 		Me.Label96 = New System.Windows.Forms.Label()
-		Me.Label110 = New System.Windows.Forms.Label()
-		Me.Label115 = New System.Windows.Forms.Label()
-		Me.Label111 = New System.Windows.Forms.Label()
-		Me.Label114 = New System.Windows.Forms.Label()
-		Me.Label112 = New System.Windows.Forms.Label()
-		Me.Label113 = New System.Windows.Forms.Label()
 		Me.tpaWeights = New System.Windows.Forms.TabPage()
 		Me.pboGraphWeights = New System.Windows.Forms.PictureBox()
 		Me.tpaStandards = New System.Windows.Forms.TabPage()
@@ -366,19 +329,6 @@ Partial Class frmNegotiation
 		Me.nudPop20_8_1 = New DSDSS.DSSNumericUpDown()
 		Me.nudPop20_5_1 = New DSDSS.DSSNumericUpDown()
 		Me.nudPop20_4_1 = New DSDSS.DSSNumericUpDown()
-		Me.Label1 = New System.Windows.Forms.Label()
-		Me.Label2 = New System.Windows.Forms.Label()
-		Me.Label22 = New System.Windows.Forms.Label()
-		Me.Label32 = New System.Windows.Forms.Label()
-		Me.Label37 = New System.Windows.Forms.Label()
-		Me.Label44 = New System.Windows.Forms.Label()
-		Me.Label45 = New System.Windows.Forms.Label()
-		Me.Label46 = New System.Windows.Forms.Label()
-		Me.Label48 = New System.Windows.Forms.Label()
-		Me.Label49 = New System.Windows.Forms.Label()
-		Me.Label58 = New System.Windows.Forms.Label()
-		Me.Label59 = New System.Windows.Forms.Label()
-		Me.Label65 = New System.Windows.Forms.Label()
 		Me.Label69 = New System.Windows.Forms.Label()
 		Me.grbIndustrialDistricts = New DSDSS.DSSGroupBox()
 		Me.pnlInddispln = New DSDSS.DSSPanel()
@@ -415,19 +365,6 @@ Partial Class frmNegotiation
 		Me.nudInddiscur8_2 = New DSDSS.DSSNumericUpDown()
 		Me.nudInddiscur5_2 = New DSDSS.DSSNumericUpDown()
 		Me.nudInddiscur4_2 = New DSDSS.DSSNumericUpDown()
-		Me.Label38 = New System.Windows.Forms.Label()
-		Me.Label39 = New System.Windows.Forms.Label()
-		Me.Label40 = New System.Windows.Forms.Label()
-		Me.Label41 = New System.Windows.Forms.Label()
-		Me.Label42 = New System.Windows.Forms.Label()
-		Me.Label43 = New System.Windows.Forms.Label()
-		Me.Label71 = New System.Windows.Forms.Label()
-		Me.Label72 = New System.Windows.Forms.Label()
-		Me.Label73 = New System.Windows.Forms.Label()
-		Me.Label74 = New System.Windows.Forms.Label()
-		Me.Label75 = New System.Windows.Forms.Label()
-		Me.Label76 = New System.Windows.Forms.Label()
-		Me.Label77 = New System.Windows.Forms.Label()
 		Me.grbWaterQuality = New DSDSS.DSSGroupBox()
 		Me.pnlTSS = New DSDSS.DSSPanel()
 		Me.nudTSS14 = New DSDSS.DSSNumericUpDown()
@@ -480,19 +417,6 @@ Partial Class frmNegotiation
 		Me.nudBOD13 = New DSDSS.DSSNumericUpDown()
 		Me.nudBOD4 = New DSDSS.DSSNumericUpDown()
 		Me.nudBOD8 = New DSDSS.DSSNumericUpDown()
-		Me.Label3 = New System.Windows.Forms.Label()
-		Me.Label4 = New System.Windows.Forms.Label()
-		Me.Label5 = New System.Windows.Forms.Label()
-		Me.Label6 = New System.Windows.Forms.Label()
-		Me.Label7 = New System.Windows.Forms.Label()
-		Me.Label8 = New System.Windows.Forms.Label()
-		Me.Label9 = New System.Windows.Forms.Label()
-		Me.Label11 = New System.Windows.Forms.Label()
-		Me.Label14 = New System.Windows.Forms.Label()
-		Me.Label15 = New System.Windows.Forms.Label()
-		Me.Label16 = New System.Windows.Forms.Label()
-		Me.Label17 = New System.Windows.Forms.Label()
-		Me.Label18 = New System.Windows.Forms.Label()
 		Me.grbMisc = New DSDSS.DSSGroupBox()
 		Me.DssPanel1 = New DSDSS.DSSPanel()
 		Me.Label10 = New System.Windows.Forms.Label()
@@ -540,6 +464,94 @@ Partial Class frmNegotiation
 		Me.mapControl = New mapControl.mapControl()
 		Me.btnSettings = New System.Windows.Forms.Button()
 		Me.DSData = New DSDSS.DSData()
+		Me.lblWCLocation2 = New DSDSS.DSSLabel()
+		Me.lblWCLocation4 = New DSDSS.DSSLabel()
+		Me.lblWCLocation3 = New DSDSS.DSSLabel()
+		Me.lblWCLocation8 = New DSDSS.DSSLabel()
+		Me.lblWCLocation7 = New DSDSS.DSSLabel()
+		Me.lblWCLocation6 = New DSDSS.DSSLabel()
+		Me.lblWCLocation5 = New DSDSS.DSSLabel()
+		Me.lblWCLocation12 = New DSDSS.DSSLabel()
+		Me.lblWCLocation11 = New DSDSS.DSSLabel()
+		Me.lblWCLocation10 = New DSDSS.DSSLabel()
+		Me.lblWCLocation9 = New DSDSS.DSSLabel()
+		Me.lblWCLocation15 = New DSDSS.DSSLabel()
+		Me.lblWCLocation14 = New DSDSS.DSSLabel()
+		Me.lblTPLocation15 = New DSDSS.DSSLabel()
+		Me.lblTPLocation14 = New DSDSS.DSSLabel()
+		Me.lblTPLocation12 = New DSDSS.DSSLabel()
+		Me.lblTPLocation11 = New DSDSS.DSSLabel()
+		Me.lblTPLocation10 = New DSDSS.DSSLabel()
+		Me.lblTPLocation9 = New DSDSS.DSSLabel()
+		Me.lblTPLocation8 = New DSDSS.DSSLabel()
+		Me.lblTPLocation7 = New DSDSS.DSSLabel()
+		Me.lblTPLocation6 = New DSDSS.DSSLabel()
+		Me.lblTPLocation5 = New DSDSS.DSSLabel()
+		Me.lblTPLocation4 = New DSDSS.DSSLabel()
+		Me.lblTPLocation3 = New DSDSS.DSSLabel()
+		Me.lblTPLocation2 = New DSDSS.DSSLabel()
+		Me.lblTPLocation1 = New DSDSS.DSSLabel()
+		Me.lblTPLocation13 = New DSDSS.DSSLabel()
+		Me.lblIDLocation15 = New DSDSS.DSSLabel()
+		Me.lblIDLocation14 = New DSDSS.DSSLabel()
+		Me.lblIDLocation12 = New DSDSS.DSSLabel()
+		Me.lblIDLocation11 = New DSDSS.DSSLabel()
+		Me.lblIDLocation1 = New DSDSS.DSSLabel()
+		Me.lblIDLocation10 = New DSDSS.DSSLabel()
+		Me.lblIDLocation13 = New DSDSS.DSSLabel()
+		Me.lblIDLocation9 = New DSDSS.DSSLabel()
+		Me.lblIDLocation2 = New DSDSS.DSSLabel()
+		Me.lblIDLocation8 = New DSDSS.DSSLabel()
+		Me.lblIDLocation3 = New DSDSS.DSSLabel()
+		Me.lblIDLocation7 = New DSDSS.DSSLabel()
+		Me.lblIDLocation4 = New DSDSS.DSSLabel()
+		Me.lblIDLocation6 = New DSDSS.DSSLabel()
+		Me.lblIDLocation5 = New DSDSS.DSSLabel()
+		Me.lblWQLocation15 = New DSDSS.DSSLabel()
+		Me.lblWQLocation14 = New DSDSS.DSSLabel()
+		Me.lblWQLocation12 = New DSDSS.DSSLabel()
+		Me.lblWQLocation1 = New DSDSS.DSSLabel()
+		Me.lblWQLocation11 = New DSDSS.DSSLabel()
+		Me.lblWQLocation5 = New DSDSS.DSSLabel()
+		Me.lblWQLocation6 = New DSDSS.DSSLabel()
+		Me.lblWQLocation10 = New DSDSS.DSSLabel()
+		Me.lblWQLocation4 = New DSDSS.DSSLabel()
+		Me.lblWQLocation13 = New DSDSS.DSSLabel()
+		Me.lblWQLocation7 = New DSDSS.DSSLabel()
+		Me.lblWQLocation9 = New DSDSS.DSSLabel()
+		Me.lblWQLocation3 = New DSDSS.DSSLabel()
+		Me.lblWQLocation2 = New DSDSS.DSSLabel()
+		Me.lblWQLocation8 = New DSDSS.DSSLabel()
+		Me.lblUSLocation15 = New DSDSS.DSSLabel()
+		Me.lblUSLocation14 = New DSDSS.DSSLabel()
+		Me.lblUSLocation12 = New DSDSS.DSSLabel()
+		Me.lblUSLocation1 = New DSDSS.DSSLabel()
+		Me.lblUSLocation11 = New DSDSS.DSSLabel()
+		Me.lblUSLocation5 = New DSDSS.DSSLabel()
+		Me.lblUSLocation6 = New DSDSS.DSSLabel()
+		Me.lblUSLocation10 = New DSDSS.DSSLabel()
+		Me.lblUSLocation4 = New DSDSS.DSSLabel()
+		Me.lblUSLocation13 = New DSDSS.DSSLabel()
+		Me.lblUSLocation7 = New DSDSS.DSSLabel()
+		Me.lblUSLocation9 = New DSDSS.DSSLabel()
+		Me.lblUSLocation3 = New DSDSS.DSSLabel()
+		Me.lblUSLocation2 = New DSDSS.DSSLabel()
+		Me.lblUSLocation8 = New DSDSS.DSSLabel()
+		Me.lblIMLocation15 = New DSDSS.DSSLabel()
+		Me.lblIMLocation14 = New DSDSS.DSSLabel()
+		Me.lblIMLocation12 = New DSDSS.DSSLabel()
+		Me.lblIMLocation1 = New DSDSS.DSSLabel()
+		Me.lblIMLocation11 = New DSDSS.DSSLabel()
+		Me.lblIMLocation5 = New DSDSS.DSSLabel()
+		Me.lblIMLocation6 = New DSDSS.DSSLabel()
+		Me.lblIMLocation10 = New DSDSS.DSSLabel()
+		Me.lblIMLocation4 = New DSDSS.DSSLabel()
+		Me.lblIMLocation13 = New DSDSS.DSSLabel()
+		Me.lblIMLocation7 = New DSDSS.DSSLabel()
+		Me.lblIMLocation9 = New DSDSS.DSSLabel()
+		Me.lblIMLocation3 = New DSDSS.DSSLabel()
+		Me.lblIMLocation2 = New DSDSS.DSSLabel()
+		Me.lblIMLocation8 = New DSDSS.DSSLabel()
 		CType(Me.dsParameters, System.ComponentModel.ISupportInitialize).BeginInit
 		CType(Me.DSLocations, System.ComponentModel.ISupportInitialize).BeginInit
 		Me.pnlMain.SuspendLayout
@@ -851,12 +863,12 @@ Partial Class frmNegotiation
 		'
 		'SplitContainer.Panel1
 		'
-		Me.SplitContainer.Panel1.Controls.Add(Me.grbWaterCosts)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbOuput)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbPopulation)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbIndustrialDistricts)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbWaterQuality)
 		Me.SplitContainer.Panel1.Controls.Add(Me.grbMisc)
+		Me.SplitContainer.Panel1.Controls.Add(Me.grbWaterCosts)
 		'
 		'SplitContainer.Panel2
 		'
@@ -871,21 +883,23 @@ Partial Class frmNegotiation
 		'
 		Me.grbWaterCosts.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
 			Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+		Me.grbWaterCosts.Controls.Add(Me.lblWCLocation15)
+		Me.grbWaterCosts.Controls.Add(Me.lblWCLocation14)
+		Me.grbWaterCosts.Controls.Add(Me.lblWCLocation12)
+		Me.grbWaterCosts.Controls.Add(Me.lblWCLocation11)
+		Me.grbWaterCosts.Controls.Add(Me.lblWCLocation10)
+		Me.grbWaterCosts.Controls.Add(Me.lblWCLocation9)
+		Me.grbWaterCosts.Controls.Add(Me.lblWCLocation8)
+		Me.grbWaterCosts.Controls.Add(Me.lblWCLocation7)
+		Me.grbWaterCosts.Controls.Add(Me.lblWCLocation6)
+		Me.grbWaterCosts.Controls.Add(Me.lblWCLocation5)
+		Me.grbWaterCosts.Controls.Add(Me.lblWCLocation4)
+		Me.grbWaterCosts.Controls.Add(Me.lblWCLocation3)
+		Me.grbWaterCosts.Controls.Add(Me.lblWCLocation2)
+		Me.grbWaterCosts.Controls.Add(Me.lblWCLocation1)
+		Me.grbWaterCosts.Controls.Add(Me.lblWCLocation13)
 		Me.grbWaterCosts.Controls.Add(Me.pnlGro)
 		Me.grbWaterCosts.Controls.Add(Me.pnlDes)
-		Me.grbWaterCosts.Controls.Add(Me.Label63)
-		Me.grbWaterCosts.Controls.Add(Me.Label55)
-		Me.grbWaterCosts.Controls.Add(Me.Label62)
-		Me.grbWaterCosts.Controls.Add(Me.Label54)
-		Me.grbWaterCosts.Controls.Add(Me.Label130)
-		Me.grbWaterCosts.Controls.Add(Me.Label128)
-		Me.grbWaterCosts.Controls.Add(Me.Label51)
-		Me.grbWaterCosts.Controls.Add(Me.Label57)
-		Me.grbWaterCosts.Controls.Add(Me.Label53)
-		Me.grbWaterCosts.Controls.Add(Me.Label50)
-		Me.grbWaterCosts.Controls.Add(Me.Label56)
-		Me.grbWaterCosts.Controls.Add(Me.Label52)
-		Me.grbWaterCosts.Controls.Add(Me.Label47)
 		Me.grbWaterCosts.ForeColor = System.Drawing.Color.Black
 		Me.grbWaterCosts.Location = New System.Drawing.Point(0, 0)
 		Me.grbWaterCosts.Name = "grbWaterCosts"
@@ -894,6 +908,32 @@ Partial Class frmNegotiation
 		Me.grbWaterCosts.TabStop = False
 		Me.grbWaterCosts.Text = "Water costs"
 		Me.grbWaterCosts.Visible = False
+		'
+		'lblWCLocation1
+		'
+		Me.lblWCLocation1.AutoSize = True
+		Me.lblWCLocation1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWCLocation1.DSSElementName = "locName"
+		Me.lblWCLocation1.DSSLocation = 0
+		Me.lblWCLocation1.DSSOffset = 0R
+		Me.lblWCLocation1.Location = New System.Drawing.Point(26, 42)
+		Me.lblWCLocation1.Name = "lblWCLocation1"
+		Me.lblWCLocation1.Size = New System.Drawing.Size(50, 13)
+		Me.lblWCLocation1.TabIndex = 116
+		Me.lblWCLocation1.Text = "location1"
+		'
+		'lblWCLocation13
+		'
+		Me.lblWCLocation13.AutoSize = True
+		Me.lblWCLocation13.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWCLocation13.DSSElementName = "locNAme"
+		Me.lblWCLocation13.DSSLocation = 0
+		Me.lblWCLocation13.DSSOffset = 0R
+		Me.lblWCLocation13.Location = New System.Drawing.Point(26, 318)
+		Me.lblWCLocation13.Name = "lblWCLocation13"
+		Me.lblWCLocation13.Size = New System.Drawing.Size(56, 13)
+		Me.lblWCLocation13.TabIndex = 115
+		Me.lblWCLocation13.Text = "location13"
 		'
 		'pnlGro
 		'
@@ -1409,110 +1449,6 @@ Partial Class frmNegotiation
 		Me.nudDes4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudDes4.Value = New Decimal(New Integer() {50, 0, 0, 0})
 		'
-		'Label63
-		'
-		Me.Label63.Location = New System.Drawing.Point(26, 315)
-		Me.Label63.Name = "Label63"
-		Me.Label63.Size = New System.Drawing.Size(91, 20)
-		Me.Label63.TabIndex = 4
-		Me.Label63.Text = "Tabouk"
-		'
-		'Label55
-		'
-		Me.Label55.Location = New System.Drawing.Point(26, 177)
-		Me.Label55.Name = "Label55"
-		Me.Label55.Size = New System.Drawing.Size(91, 20)
-		Me.Label55.TabIndex = 4
-		Me.Label55.Text = "Jizan"
-		'
-		'Label62
-		'
-		Me.Label62.Location = New System.Drawing.Point(26, 292)
-		Me.Label62.Name = "Label62"
-		Me.Label62.Size = New System.Drawing.Size(91, 20)
-		Me.Label62.TabIndex = 4
-		Me.Label62.Text = "Riyadh"
-		'
-		'Label54
-		'
-		Me.Label54.Location = New System.Drawing.Point(26, 154)
-		Me.Label54.Name = "Label54"
-		Me.Label54.Size = New System.Drawing.Size(91, 20)
-		Me.Label54.TabIndex = 4
-		Me.Label54.Text = "Hail"
-		'
-		'Label130
-		'
-		Me.Label130.Location = New System.Drawing.Point(26, 269)
-		Me.Label130.Name = "Label130"
-		Me.Label130.Size = New System.Drawing.Size(91, 20)
-		Me.Label130.TabIndex = 4
-		Me.Label130.Text = "North Border"
-		'
-		'Label128
-		'
-		Me.Label128.Location = New System.Drawing.Point(26, 246)
-		Me.Label128.Name = "Label128"
-		Me.Label128.Size = New System.Drawing.Size(91, 20)
-		Me.Label128.TabIndex = 4
-		Me.Label128.Text = "Najran"
-		'
-		'Label51
-		'
-		Me.Label51.Location = New System.Drawing.Point(26, 85)
-		Me.Label51.Name = "Label51"
-		Me.Label51.Size = New System.Drawing.Size(91, 20)
-		Me.Label51.TabIndex = 4
-		Me.Label51.Text = "Al - Jouf"
-		'
-		'Label57
-		'
-		Me.Label57.Location = New System.Drawing.Point(26, 223)
-		Me.Label57.Name = "Label57"
-		Me.Label57.Size = New System.Drawing.Size(91, 20)
-		Me.Label57.TabIndex = 4
-		Me.Label57.Text = "Mecca"
-		'
-		'Label53
-		'
-		Me.Label53.Location = New System.Drawing.Point(26, 131)
-		Me.Label53.Name = "Label53"
-		Me.Label53.Size = New System.Drawing.Size(91, 20)
-		Me.Label53.TabIndex = 4
-		Me.Label53.Text = "Eastern Area"
-		'
-		'Label50
-		'
-		Me.Label50.Location = New System.Drawing.Point(26, 62)
-		Me.Label50.Name = "Label50"
-		Me.Label50.Size = New System.Drawing.Size(91, 20)
-		Me.Label50.TabIndex = 4
-		Me.Label50.Text = "Al - Gassem"
-		'
-		'Label56
-		'
-		Me.Label56.Location = New System.Drawing.Point(26, 200)
-		Me.Label56.Name = "Label56"
-		Me.Label56.Size = New System.Drawing.Size(91, 20)
-		Me.Label56.TabIndex = 4
-		Me.Label56.Text = "Madina"
-		'
-		'Label52
-		'
-		Me.Label52.Location = New System.Drawing.Point(26, 108)
-		Me.Label52.Name = "Label52"
-		Me.Label52.Size = New System.Drawing.Size(91, 20)
-		Me.Label52.TabIndex = 4
-		Me.Label52.Text = "Aseer"
-		'
-		'Label47
-		'
-		Me.Label47.Location = New System.Drawing.Point(26, 39)
-		Me.Label47.Name = "Label47"
-		Me.Label47.Size = New System.Drawing.Size(91, 20)
-		Me.Label47.TabIndex = 4
-		Me.Label47.Text = "Al - Baha"
-		'
 		'grbOuput
 		'
 		Me.grbOuput.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -1555,6 +1491,21 @@ Partial Class frmNegotiation
 		'
 		'gboOutputUses
 		'
+		Me.gboOutputUses.Controls.Add(Me.lblUSLocation15)
+		Me.gboOutputUses.Controls.Add(Me.lblUSLocation14)
+		Me.gboOutputUses.Controls.Add(Me.lblUSLocation12)
+		Me.gboOutputUses.Controls.Add(Me.lblUSLocation1)
+		Me.gboOutputUses.Controls.Add(Me.lblUSLocation11)
+		Me.gboOutputUses.Controls.Add(Me.lblUSLocation5)
+		Me.gboOutputUses.Controls.Add(Me.lblUSLocation6)
+		Me.gboOutputUses.Controls.Add(Me.lblUSLocation10)
+		Me.gboOutputUses.Controls.Add(Me.lblUSLocation4)
+		Me.gboOutputUses.Controls.Add(Me.lblUSLocation13)
+		Me.gboOutputUses.Controls.Add(Me.lblUSLocation7)
+		Me.gboOutputUses.Controls.Add(Me.lblUSLocation9)
+		Me.gboOutputUses.Controls.Add(Me.lblUSLocation3)
+		Me.gboOutputUses.Controls.Add(Me.lblUSLocation2)
+		Me.gboOutputUses.Controls.Add(Me.lblUSLocation8)
 		Me.gboOutputUses.Controls.Add(Me.pnlOutAgrSmall)
 		Me.gboOutputUses.Controls.Add(Me.Label94)
 		Me.gboOutputUses.Controls.Add(Me.pnlOutIndLarge)
@@ -1566,20 +1517,8 @@ Partial Class frmNegotiation
 		Me.gboOutputUses.Controls.Add(Me.Label90)
 		Me.gboOutputUses.Controls.Add(Me.pnlOutAgrLarge)
 		Me.gboOutputUses.Controls.Add(Me.Label135)
-		Me.gboOutputUses.Controls.Add(Me.Label85)
 		Me.gboOutputUses.Controls.Add(Me.Label133)
-		Me.gboOutputUses.Controls.Add(Me.Label84)
-		Me.gboOutputUses.Controls.Add(Me.Label83)
-		Me.gboOutputUses.Controls.Add(Me.Label31)
-		Me.gboOutputUses.Controls.Add(Me.Label82)
-		Me.gboOutputUses.Controls.Add(Me.Label33)
-		Me.gboOutputUses.Controls.Add(Me.Label81)
-		Me.gboOutputUses.Controls.Add(Me.Label35)
-		Me.gboOutputUses.Controls.Add(Me.Label80)
-		Me.gboOutputUses.Controls.Add(Me.Label36)
-		Me.gboOutputUses.Controls.Add(Me.Label79)
-		Me.gboOutputUses.Controls.Add(Me.Label60)
-		Me.gboOutputUses.Controls.Add(Me.Label61)
+		Me.gboOutputUses.DSSVisible = False
 		Me.gboOutputUses.Location = New System.Drawing.Point(15, 15)
 		Me.gboOutputUses.Name = "gboOutputUses"
 		Me.gboOutputUses.Size = New System.Drawing.Size(451, 406)
@@ -1604,6 +1543,7 @@ Partial Class frmNegotiation
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr7_1)
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr10_1)
 		Me.pnlOutAgrSmall.Controls.Add(Me.lblAgr13_1)
+		Me.pnlOutAgrSmall.DSSVisible = False
 		Me.pnlOutAgrSmall.Location = New System.Drawing.Point(94, 55)
 		Me.pnlOutAgrSmall.Name = "pnlOutAgrSmall"
 		Me.pnlOutAgrSmall.Size = New System.Drawing.Size(49, 345)
@@ -1830,6 +1770,7 @@ Partial Class frmNegotiation
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd3_2)
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd10_2)
 		Me.pnlOutIndLarge.Controls.Add(Me.lblInd7_2)
+		Me.pnlOutIndLarge.DSSVisible = False
 		Me.pnlOutIndLarge.Location = New System.Drawing.Point(285, 55)
 		Me.pnlOutIndLarge.Name = "pnlOutIndLarge"
 		Me.pnlOutIndLarge.Size = New System.Drawing.Size(49, 345)
@@ -2065,6 +2006,7 @@ Partial Class frmNegotiation
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan7_1)
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan10_1)
 		Me.pnlOutLanSmall.Controls.Add(Me.lblLan13_1)
+		Me.pnlOutLanSmall.DSSVisible = False
 		Me.pnlOutLanSmall.Location = New System.Drawing.Point(153, 55)
 		Me.pnlOutLanSmall.Name = "pnlOutLanSmall"
 		Me.pnlOutLanSmall.Size = New System.Drawing.Size(49, 345)
@@ -2292,6 +2234,7 @@ Partial Class frmNegotiation
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan12_2)
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan7_2)
 		Me.pnlOutLanLarge.Controls.Add(Me.lblLan3_2)
+		Me.pnlOutLanLarge.DSSVisible = False
 		Me.pnlOutLanLarge.Location = New System.Drawing.Point(347, 56)
 		Me.pnlOutLanLarge.Name = "pnlOutLanLarge"
 		Me.pnlOutLanLarge.Size = New System.Drawing.Size(49, 345)
@@ -2519,6 +2462,7 @@ Partial Class frmNegotiation
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr3_2)
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr7_2)
 		Me.pnlOutAgrLarge.Controls.Add(Me.lblAgr10_2)
+		Me.pnlOutAgrLarge.DSSVisible = False
 		Me.pnlOutAgrLarge.Location = New System.Drawing.Point(223, 57)
 		Me.pnlOutAgrLarge.Name = "pnlOutAgrLarge"
 		Me.pnlOutAgrLarge.Size = New System.Drawing.Size(49, 345)
@@ -2728,14 +2672,6 @@ Partial Class frmNegotiation
 		Me.Label135.Text = "lan"
 		Me.Label135.TextAlign = System.Drawing.ContentAlignment.TopCenter
 		'
-		'Label85
-		'
-		Me.Label85.Location = New System.Drawing.Point(13, 59)
-		Me.Label85.Name = "Label85"
-		Me.Label85.Size = New System.Drawing.Size(75, 20)
-		Me.Label85.TabIndex = 60
-		Me.Label85.Text = "Al - Baha"
-		'
 		'Label133
 		'
 		Me.Label133.Location = New System.Drawing.Point(97, 31)
@@ -2744,102 +2680,6 @@ Partial Class frmNegotiation
 		Me.Label133.TabIndex = 62
 		Me.Label133.Text = "agr"
 		Me.Label133.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'Label84
-		'
-		Me.Label84.Location = New System.Drawing.Point(13, 128)
-		Me.Label84.Name = "Label84"
-		Me.Label84.Size = New System.Drawing.Size(75, 20)
-		Me.Label84.TabIndex = 59
-		Me.Label84.Text = "Aseer"
-		'
-		'Label83
-		'
-		Me.Label83.Location = New System.Drawing.Point(13, 220)
-		Me.Label83.Name = "Label83"
-		Me.Label83.Size = New System.Drawing.Size(75, 20)
-		Me.Label83.TabIndex = 58
-		Me.Label83.Text = "Madina"
-		'
-		'Label31
-		'
-		Me.Label31.Location = New System.Drawing.Point(13, 335)
-		Me.Label31.Name = "Label31"
-		Me.Label31.Size = New System.Drawing.Size(75, 20)
-		Me.Label31.TabIndex = 49
-		Me.Label31.Text = "Tabouk"
-		'
-		'Label82
-		'
-		Me.Label82.Location = New System.Drawing.Point(13, 82)
-		Me.Label82.Name = "Label82"
-		Me.Label82.Size = New System.Drawing.Size(75, 20)
-		Me.Label82.TabIndex = 57
-		Me.Label82.Text = "Al - Gassem"
-		'
-		'Label33
-		'
-		Me.Label33.Location = New System.Drawing.Point(13, 197)
-		Me.Label33.Name = "Label33"
-		Me.Label33.Size = New System.Drawing.Size(75, 20)
-		Me.Label33.TabIndex = 50
-		Me.Label33.Text = "Jizan"
-		'
-		'Label81
-		'
-		Me.Label81.Location = New System.Drawing.Point(13, 151)
-		Me.Label81.Name = "Label81"
-		Me.Label81.Size = New System.Drawing.Size(75, 20)
-		Me.Label81.TabIndex = 56
-		Me.Label81.Text = "Eastern Area"
-		'
-		'Label35
-		'
-		Me.Label35.Location = New System.Drawing.Point(13, 312)
-		Me.Label35.Name = "Label35"
-		Me.Label35.Size = New System.Drawing.Size(75, 20)
-		Me.Label35.TabIndex = 51
-		Me.Label35.Text = "Riyadh"
-		'
-		'Label80
-		'
-		Me.Label80.Location = New System.Drawing.Point(13, 243)
-		Me.Label80.Name = "Label80"
-		Me.Label80.Size = New System.Drawing.Size(75, 20)
-		Me.Label80.TabIndex = 55
-		Me.Label80.Text = "Mecca"
-		'
-		'Label36
-		'
-		Me.Label36.Location = New System.Drawing.Point(13, 174)
-		Me.Label36.Name = "Label36"
-		Me.Label36.Size = New System.Drawing.Size(75, 20)
-		Me.Label36.TabIndex = 52
-		Me.Label36.Text = "Hail"
-		'
-		'Label79
-		'
-		Me.Label79.Location = New System.Drawing.Point(13, 105)
-		Me.Label79.Name = "Label79"
-		Me.Label79.Size = New System.Drawing.Size(75, 20)
-		Me.Label79.TabIndex = 54
-		Me.Label79.Text = "Al - Jouf"
-		'
-		'Label60
-		'
-		Me.Label60.Location = New System.Drawing.Point(13, 289)
-		Me.Label60.Name = "Label60"
-		Me.Label60.Size = New System.Drawing.Size(75, 20)
-		Me.Label60.TabIndex = 53
-		Me.Label60.Text = "North Border"
-		'
-		'Label61
-		'
-		Me.Label61.Location = New System.Drawing.Point(13, 266)
-		Me.Label61.Name = "Label61"
-		Me.Label61.Size = New System.Drawing.Size(75, 20)
-		Me.Label61.TabIndex = 61
-		Me.Label61.Text = "Najran"
 		'
 		'tpaImpacts
 		'
@@ -2854,6 +2694,21 @@ Partial Class frmNegotiation
 		'
 		'gboOutputImpacts
 		'
+		Me.gboOutputImpacts.Controls.Add(Me.lblIMLocation15)
+		Me.gboOutputImpacts.Controls.Add(Me.lblIMLocation14)
+		Me.gboOutputImpacts.Controls.Add(Me.lblIMLocation12)
+		Me.gboOutputImpacts.Controls.Add(Me.lblIMLocation1)
+		Me.gboOutputImpacts.Controls.Add(Me.lblIMLocation11)
+		Me.gboOutputImpacts.Controls.Add(Me.lblIMLocation5)
+		Me.gboOutputImpacts.Controls.Add(Me.lblIMLocation6)
+		Me.gboOutputImpacts.Controls.Add(Me.lblIMLocation10)
+		Me.gboOutputImpacts.Controls.Add(Me.lblIMLocation4)
+		Me.gboOutputImpacts.Controls.Add(Me.lblIMLocation13)
+		Me.gboOutputImpacts.Controls.Add(Me.lblIMLocation7)
+		Me.gboOutputImpacts.Controls.Add(Me.lblIMLocation9)
+		Me.gboOutputImpacts.Controls.Add(Me.lblIMLocation3)
+		Me.gboOutputImpacts.Controls.Add(Me.lblIMLocation2)
+		Me.gboOutputImpacts.Controls.Add(Me.lblIMLocation8)
 		Me.gboOutputImpacts.Controls.Add(Me.lblEnvGini2)
 		Me.gboOutputImpacts.Controls.Add(Me.lblEnvMean2)
 		Me.gboOutputImpacts.Controls.Add(Me.lblSocGini2)
@@ -2876,27 +2731,13 @@ Partial Class frmNegotiation
 		Me.gboOutputImpacts.Controls.Add(Me.pnlOutSocLarge)
 		Me.gboOutputImpacts.Controls.Add(Me.pnlOutEcoSmall)
 		Me.gboOutputImpacts.Controls.Add(Me.Label180)
-		Me.gboOutputImpacts.Controls.Add(Me.Label103)
 		Me.gboOutputImpacts.Controls.Add(Me.Label98)
-		Me.gboOutputImpacts.Controls.Add(Me.Label104)
 		Me.gboOutputImpacts.Controls.Add(Me.Label179)
-		Me.gboOutputImpacts.Controls.Add(Me.Label105)
 		Me.gboOutputImpacts.Controls.Add(Me.Label99)
-		Me.gboOutputImpacts.Controls.Add(Me.Label106)
 		Me.gboOutputImpacts.Controls.Add(Me.Label95)
-		Me.gboOutputImpacts.Controls.Add(Me.Label107)
 		Me.gboOutputImpacts.Controls.Add(Me.Label178)
-		Me.gboOutputImpacts.Controls.Add(Me.Label108)
 		Me.gboOutputImpacts.Controls.Add(Me.Label97)
-		Me.gboOutputImpacts.Controls.Add(Me.Label109)
 		Me.gboOutputImpacts.Controls.Add(Me.Label96)
-		Me.gboOutputImpacts.Controls.Add(Me.Label110)
-		Me.gboOutputImpacts.Controls.Add(Me.Label115)
-		Me.gboOutputImpacts.Controls.Add(Me.Label111)
-		Me.gboOutputImpacts.Controls.Add(Me.Label114)
-		Me.gboOutputImpacts.Controls.Add(Me.Label112)
-		Me.gboOutputImpacts.Controls.Add(Me.Label113)
-		Me.gboOutputImpacts.DSSVisible = False
 		Me.gboOutputImpacts.Location = New System.Drawing.Point(15, 11)
 		Me.gboOutputImpacts.Name = "gboOutputImpacts"
 		Me.gboOutputImpacts.Size = New System.Drawing.Size(422, 446)
@@ -3105,7 +2946,6 @@ Partial Class frmNegotiation
 		Me.pnlOutSocSmall.Controls.Add(Me.lblSoc7_1)
 		Me.pnlOutSocSmall.Controls.Add(Me.lblSoc10_1)
 		Me.pnlOutSocSmall.Controls.Add(Me.lblSoc13_1)
-		Me.pnlOutSocSmall.DSSVisible = False
 		Me.pnlOutSocSmall.Location = New System.Drawing.Point(133, 59)
 		Me.pnlOutSocSmall.Name = "pnlOutSocSmall"
 		Me.pnlOutSocSmall.Size = New System.Drawing.Size(49, 339)
@@ -3308,7 +3148,6 @@ Partial Class frmNegotiation
 		'
 		'DssPanel7
 		'
-		Me.DssPanel7.DSSVisible = False
 		Me.DssPanel7.Location = New System.Drawing.Point(-135, 184)
 		Me.DssPanel7.Name = "DssPanel7"
 		Me.DssPanel7.Size = New System.Drawing.Size(49, 317)
@@ -3331,7 +3170,6 @@ Partial Class frmNegotiation
 		Me.pnlOutEnvLarge.Controls.Add(Me.lblEnv3_2)
 		Me.pnlOutEnvLarge.Controls.Add(Me.lblEnv7_2)
 		Me.pnlOutEnvLarge.Controls.Add(Me.lblEnv10_2)
-		Me.pnlOutEnvLarge.DSSVisible = False
 		Me.pnlOutEnvLarge.Location = New System.Drawing.Point(349, 59)
 		Me.pnlOutEnvLarge.Name = "pnlOutEnvLarge"
 		Me.pnlOutEnvLarge.Size = New System.Drawing.Size(49, 339)
@@ -3550,7 +3388,6 @@ Partial Class frmNegotiation
 		Me.pnlOutEnvSmall.Controls.Add(Me.lblEnv3_1)
 		Me.pnlOutEnvSmall.Controls.Add(Me.lblEnv10_1)
 		Me.pnlOutEnvSmall.Controls.Add(Me.lblEnv7_1)
-		Me.pnlOutEnvSmall.DSSVisible = False
 		Me.pnlOutEnvSmall.Location = New System.Drawing.Point(187, 59)
 		Me.pnlOutEnvSmall.Name = "pnlOutEnvSmall"
 		Me.pnlOutEnvSmall.Size = New System.Drawing.Size(49, 339)
@@ -3769,7 +3606,6 @@ Partial Class frmNegotiation
 		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco3_2)
 		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco10_2)
 		Me.pnlOutEcoLarge.Controls.Add(Me.lblEco7_2)
-		Me.pnlOutEcoLarge.DSSVisible = False
 		Me.pnlOutEcoLarge.Location = New System.Drawing.Point(241, 59)
 		Me.pnlOutEcoLarge.Name = "pnlOutEcoLarge"
 		Me.pnlOutEcoLarge.Size = New System.Drawing.Size(49, 339)
@@ -3987,7 +3823,6 @@ Partial Class frmNegotiation
 		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc3_2)
 		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc7_2)
 		Me.pnlOutSocLarge.Controls.Add(Me.lblSoc10_2)
-		Me.pnlOutSocLarge.DSSVisible = False
 		Me.pnlOutSocLarge.Location = New System.Drawing.Point(295, 59)
 		Me.pnlOutSocLarge.Name = "pnlOutSocLarge"
 		Me.pnlOutSocLarge.Size = New System.Drawing.Size(49, 339)
@@ -4205,7 +4040,6 @@ Partial Class frmNegotiation
 		Me.pnlOutEcoSmall.Controls.Add(Me.lblEco7_1)
 		Me.pnlOutEcoSmall.Controls.Add(Me.lblEco10_1)
 		Me.pnlOutEcoSmall.Controls.Add(Me.lblEco13_1)
-		Me.pnlOutEcoSmall.DSSVisible = False
 		Me.pnlOutEcoSmall.Location = New System.Drawing.Point(79, 59)
 		Me.pnlOutEcoSmall.Name = "pnlOutEcoSmall"
 		Me.pnlOutEcoSmall.Size = New System.Drawing.Size(49, 339)
@@ -4430,14 +4264,6 @@ Partial Class frmNegotiation
 		Me.Label180.Text = "eco"
 		Me.Label180.TextAlign = System.Drawing.ContentAlignment.TopCenter
 		'
-		'Label103
-		'
-		Me.Label103.Location = New System.Drawing.Point(8, 339)
-		Me.Label103.Name = "Label103"
-		Me.Label103.Size = New System.Drawing.Size(68, 20)
-		Me.Label103.TabIndex = 49
-		Me.Label103.Text = "Tabouk"
-		'
 		'Label98
 		'
 		Me.Label98.Location = New System.Drawing.Point(263, 14)
@@ -4446,14 +4272,6 @@ Partial Class frmNegotiation
 		Me.Label98.TabIndex = 190
 		Me.Label98.Text = "Medium"
 		Me.Label98.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'Label104
-		'
-		Me.Label104.Location = New System.Drawing.Point(8, 201)
-		Me.Label104.Name = "Label104"
-		Me.Label104.Size = New System.Drawing.Size(68, 20)
-		Me.Label104.TabIndex = 50
-		Me.Label104.Text = "Jizan"
 		'
 		'Label179
 		'
@@ -4464,14 +4282,6 @@ Partial Class frmNegotiation
 		Me.Label179.Text = "soc"
 		Me.Label179.TextAlign = System.Drawing.ContentAlignment.TopCenter
 		'
-		'Label105
-		'
-		Me.Label105.Location = New System.Drawing.Point(8, 316)
-		Me.Label105.Name = "Label105"
-		Me.Label105.Size = New System.Drawing.Size(68, 20)
-		Me.Label105.TabIndex = 51
-		Me.Label105.Text = "Riyadh"
-		'
 		'Label99
 		'
 		Me.Label99.Location = New System.Drawing.Point(110, 14)
@@ -4480,14 +4290,6 @@ Partial Class frmNegotiation
 		Me.Label99.TabIndex = 189
 		Me.Label99.Text = "Small"
 		Me.Label99.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'Label106
-		'
-		Me.Label106.Location = New System.Drawing.Point(8, 178)
-		Me.Label106.Name = "Label106"
-		Me.Label106.Size = New System.Drawing.Size(68, 20)
-		Me.Label106.TabIndex = 52
-		Me.Label106.Text = "Hail"
 		'
 		'Label95
 		'
@@ -4498,14 +4300,6 @@ Partial Class frmNegotiation
 		Me.Label95.Text = "env"
 		Me.Label95.TextAlign = System.Drawing.ContentAlignment.TopCenter
 		'
-		'Label107
-		'
-		Me.Label107.Location = New System.Drawing.Point(8, 293)
-		Me.Label107.Name = "Label107"
-		Me.Label107.Size = New System.Drawing.Size(68, 20)
-		Me.Label107.TabIndex = 53
-		Me.Label107.Text = "North Border"
-		'
 		'Label178
 		'
 		Me.Label178.Location = New System.Drawing.Point(190, 34)
@@ -4514,14 +4308,6 @@ Partial Class frmNegotiation
 		Me.Label178.TabIndex = 105
 		Me.Label178.Text = "env"
 		Me.Label178.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'Label108
-		'
-		Me.Label108.Location = New System.Drawing.Point(8, 270)
-		Me.Label108.Name = "Label108"
-		Me.Label108.Size = New System.Drawing.Size(68, 20)
-		Me.Label108.TabIndex = 61
-		Me.Label108.Text = "Najran"
 		'
 		'Label97
 		'
@@ -4532,14 +4318,6 @@ Partial Class frmNegotiation
 		Me.Label97.Text = "eco"
 		Me.Label97.TextAlign = System.Drawing.ContentAlignment.TopCenter
 		'
-		'Label109
-		'
-		Me.Label109.Location = New System.Drawing.Point(8, 109)
-		Me.Label109.Name = "Label109"
-		Me.Label109.Size = New System.Drawing.Size(68, 20)
-		Me.Label109.TabIndex = 54
-		Me.Label109.Text = "Al - Jouf"
-		'
 		'Label96
 		'
 		Me.Label96.Location = New System.Drawing.Point(294, 34)
@@ -4548,54 +4326,6 @@ Partial Class frmNegotiation
 		Me.Label96.TabIndex = 148
 		Me.Label96.Text = "soc"
 		Me.Label96.TextAlign = System.Drawing.ContentAlignment.TopCenter
-		'
-		'Label110
-		'
-		Me.Label110.Location = New System.Drawing.Point(8, 247)
-		Me.Label110.Name = "Label110"
-		Me.Label110.Size = New System.Drawing.Size(68, 20)
-		Me.Label110.TabIndex = 55
-		Me.Label110.Text = "Mecca"
-		'
-		'Label115
-		'
-		Me.Label115.Location = New System.Drawing.Point(8, 63)
-		Me.Label115.Name = "Label115"
-		Me.Label115.Size = New System.Drawing.Size(68, 20)
-		Me.Label115.TabIndex = 60
-		Me.Label115.Text = "Al - Baha"
-		'
-		'Label111
-		'
-		Me.Label111.Location = New System.Drawing.Point(8, 155)
-		Me.Label111.Name = "Label111"
-		Me.Label111.Size = New System.Drawing.Size(68, 20)
-		Me.Label111.TabIndex = 56
-		Me.Label111.Text = "Eastern Area"
-		'
-		'Label114
-		'
-		Me.Label114.Location = New System.Drawing.Point(8, 132)
-		Me.Label114.Name = "Label114"
-		Me.Label114.Size = New System.Drawing.Size(68, 20)
-		Me.Label114.TabIndex = 59
-		Me.Label114.Text = "Aseer"
-		'
-		'Label112
-		'
-		Me.Label112.Location = New System.Drawing.Point(8, 86)
-		Me.Label112.Name = "Label112"
-		Me.Label112.Size = New System.Drawing.Size(68, 20)
-		Me.Label112.TabIndex = 57
-		Me.Label112.Text = "Al - Gassem"
-		'
-		'Label113
-		'
-		Me.Label113.Location = New System.Drawing.Point(8, 224)
-		Me.Label113.Name = "Label113"
-		Me.Label113.Size = New System.Drawing.Size(68, 20)
-		Me.Label113.TabIndex = 58
-		Me.Label113.Text = "Madina"
 		'
 		'tpaWeights
 		'
@@ -4655,22 +4385,24 @@ Partial Class frmNegotiation
 		'
 		Me.grbPopulation.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
 			Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+		Me.grbPopulation.Controls.Add(Me.lblTPLocation15)
 		Me.grbPopulation.Controls.Add(Me.pnlPop20_2)
+		Me.grbPopulation.Controls.Add(Me.lblTPLocation14)
 		Me.grbPopulation.Controls.Add(Me.pnlPop20_1)
-		Me.grbPopulation.Controls.Add(Me.Label1)
-		Me.grbPopulation.Controls.Add(Me.Label2)
-		Me.grbPopulation.Controls.Add(Me.Label22)
-		Me.grbPopulation.Controls.Add(Me.Label32)
-		Me.grbPopulation.Controls.Add(Me.Label37)
-		Me.grbPopulation.Controls.Add(Me.Label44)
-		Me.grbPopulation.Controls.Add(Me.Label45)
-		Me.grbPopulation.Controls.Add(Me.Label46)
-		Me.grbPopulation.Controls.Add(Me.Label48)
-		Me.grbPopulation.Controls.Add(Me.Label49)
-		Me.grbPopulation.Controls.Add(Me.Label58)
-		Me.grbPopulation.Controls.Add(Me.Label59)
-		Me.grbPopulation.Controls.Add(Me.Label65)
+		Me.grbPopulation.Controls.Add(Me.lblTPLocation12)
 		Me.grbPopulation.Controls.Add(Me.Label69)
+		Me.grbPopulation.Controls.Add(Me.lblTPLocation11)
+		Me.grbPopulation.Controls.Add(Me.lblTPLocation1)
+		Me.grbPopulation.Controls.Add(Me.lblTPLocation10)
+		Me.grbPopulation.Controls.Add(Me.lblTPLocation13)
+		Me.grbPopulation.Controls.Add(Me.lblTPLocation9)
+		Me.grbPopulation.Controls.Add(Me.lblTPLocation2)
+		Me.grbPopulation.Controls.Add(Me.lblTPLocation8)
+		Me.grbPopulation.Controls.Add(Me.lblTPLocation3)
+		Me.grbPopulation.Controls.Add(Me.lblTPLocation7)
+		Me.grbPopulation.Controls.Add(Me.lblTPLocation4)
+		Me.grbPopulation.Controls.Add(Me.lblTPLocation6)
+		Me.grbPopulation.Controls.Add(Me.lblTPLocation5)
 		Me.grbPopulation.ForeColor = System.Drawing.Color.Black
 		Me.grbPopulation.Location = New System.Drawing.Point(0, 0)
 		Me.grbPopulation.Name = "grbPopulation"
@@ -5194,110 +4926,6 @@ Partial Class frmNegotiation
 		Me.nudPop20_4_1.ThousandsSeparator = True
 		Me.nudPop20_4_1.Value = New Decimal(New Integer() {50, 0, 0, 0})
 		'
-		'Label1
-		'
-		Me.Label1.Location = New System.Drawing.Point(15, 340)
-		Me.Label1.Name = "Label1"
-		Me.Label1.Size = New System.Drawing.Size(76, 20)
-		Me.Label1.TabIndex = 80
-		Me.Label1.Text = "Tabouk"
-		'
-		'Label2
-		'
-		Me.Label2.Location = New System.Drawing.Point(15, 202)
-		Me.Label2.Name = "Label2"
-		Me.Label2.Size = New System.Drawing.Size(76, 20)
-		Me.Label2.TabIndex = 81
-		Me.Label2.Text = "Jizan"
-		'
-		'Label22
-		'
-		Me.Label22.Location = New System.Drawing.Point(15, 317)
-		Me.Label22.Name = "Label22"
-		Me.Label22.Size = New System.Drawing.Size(76, 20)
-		Me.Label22.TabIndex = 82
-		Me.Label22.Text = "Riyadh"
-		'
-		'Label32
-		'
-		Me.Label32.Location = New System.Drawing.Point(15, 179)
-		Me.Label32.Name = "Label32"
-		Me.Label32.Size = New System.Drawing.Size(76, 20)
-		Me.Label32.TabIndex = 83
-		Me.Label32.Text = "Hail"
-		'
-		'Label37
-		'
-		Me.Label37.Location = New System.Drawing.Point(15, 294)
-		Me.Label37.Name = "Label37"
-		Me.Label37.Size = New System.Drawing.Size(76, 20)
-		Me.Label37.TabIndex = 84
-		Me.Label37.Text = "North Border"
-		'
-		'Label44
-		'
-		Me.Label44.Location = New System.Drawing.Point(15, 271)
-		Me.Label44.Name = "Label44"
-		Me.Label44.Size = New System.Drawing.Size(76, 20)
-		Me.Label44.TabIndex = 92
-		Me.Label44.Text = "Najran"
-		'
-		'Label45
-		'
-		Me.Label45.Location = New System.Drawing.Point(15, 110)
-		Me.Label45.Name = "Label45"
-		Me.Label45.Size = New System.Drawing.Size(76, 20)
-		Me.Label45.TabIndex = 85
-		Me.Label45.Text = "Al - Jouf"
-		'
-		'Label46
-		'
-		Me.Label46.Location = New System.Drawing.Point(15, 248)
-		Me.Label46.Name = "Label46"
-		Me.Label46.Size = New System.Drawing.Size(76, 20)
-		Me.Label46.TabIndex = 86
-		Me.Label46.Text = "Mecca"
-		'
-		'Label48
-		'
-		Me.Label48.Location = New System.Drawing.Point(15, 156)
-		Me.Label48.Name = "Label48"
-		Me.Label48.Size = New System.Drawing.Size(76, 20)
-		Me.Label48.TabIndex = 87
-		Me.Label48.Text = "Eastern Area"
-		'
-		'Label49
-		'
-		Me.Label49.Location = New System.Drawing.Point(15, 87)
-		Me.Label49.Name = "Label49"
-		Me.Label49.Size = New System.Drawing.Size(76, 20)
-		Me.Label49.TabIndex = 88
-		Me.Label49.Text = "Al - Gassem"
-		'
-		'Label58
-		'
-		Me.Label58.Location = New System.Drawing.Point(15, 225)
-		Me.Label58.Name = "Label58"
-		Me.Label58.Size = New System.Drawing.Size(76, 20)
-		Me.Label58.TabIndex = 89
-		Me.Label58.Text = "Madina"
-		'
-		'Label59
-		'
-		Me.Label59.Location = New System.Drawing.Point(15, 133)
-		Me.Label59.Name = "Label59"
-		Me.Label59.Size = New System.Drawing.Size(76, 20)
-		Me.Label59.TabIndex = 90
-		Me.Label59.Text = "Aseer"
-		'
-		'Label65
-		'
-		Me.Label65.Location = New System.Drawing.Point(15, 64)
-		Me.Label65.Name = "Label65"
-		Me.Label65.Size = New System.Drawing.Size(76, 20)
-		Me.Label65.TabIndex = 91
-		Me.Label65.Text = "Al - Baha"
-		'
 		'Label69
 		'
 		Me.Label69.Location = New System.Drawing.Point(148, 23)
@@ -5311,21 +4939,23 @@ Partial Class frmNegotiation
 		'
 		Me.grbIndustrialDistricts.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
 			Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+		Me.grbIndustrialDistricts.Controls.Add(Me.lblIDLocation15)
 		Me.grbIndustrialDistricts.Controls.Add(Me.pnlInddispln)
+		Me.grbIndustrialDistricts.Controls.Add(Me.lblIDLocation14)
 		Me.grbIndustrialDistricts.Controls.Add(Me.pnlInddiscur)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label38)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label39)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label40)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label41)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label42)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label43)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label71)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label72)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label73)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label74)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label75)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label76)
-		Me.grbIndustrialDistricts.Controls.Add(Me.Label77)
+		Me.grbIndustrialDistricts.Controls.Add(Me.lblIDLocation12)
+		Me.grbIndustrialDistricts.Controls.Add(Me.lblIDLocation1)
+		Me.grbIndustrialDistricts.Controls.Add(Me.lblIDLocation11)
+		Me.grbIndustrialDistricts.Controls.Add(Me.lblIDLocation5)
+		Me.grbIndustrialDistricts.Controls.Add(Me.lblIDLocation6)
+		Me.grbIndustrialDistricts.Controls.Add(Me.lblIDLocation10)
+		Me.grbIndustrialDistricts.Controls.Add(Me.lblIDLocation4)
+		Me.grbIndustrialDistricts.Controls.Add(Me.lblIDLocation13)
+		Me.grbIndustrialDistricts.Controls.Add(Me.lblIDLocation7)
+		Me.grbIndustrialDistricts.Controls.Add(Me.lblIDLocation9)
+		Me.grbIndustrialDistricts.Controls.Add(Me.lblIDLocation3)
+		Me.grbIndustrialDistricts.Controls.Add(Me.lblIDLocation2)
+		Me.grbIndustrialDistricts.Controls.Add(Me.lblIDLocation8)
 		Me.grbIndustrialDistricts.ForeColor = System.Drawing.Color.Black
 		Me.grbIndustrialDistricts.Location = New System.Drawing.Point(0, 0)
 		Me.grbIndustrialDistricts.Name = "grbIndustrialDistricts"
@@ -5849,130 +5479,28 @@ Partial Class frmNegotiation
 		Me.nudInddiscur4_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudInddiscur4_2.Value = New Decimal(New Integer() {50, 0, 0, 0})
 		'
-		'Label38
-		'
-		Me.Label38.Location = New System.Drawing.Point(15, 322)
-		Me.Label38.Name = "Label38"
-		Me.Label38.Size = New System.Drawing.Size(76, 20)
-		Me.Label38.TabIndex = 131
-		Me.Label38.Text = "Tabouk"
-		'
-		'Label39
-		'
-		Me.Label39.Location = New System.Drawing.Point(15, 184)
-		Me.Label39.Name = "Label39"
-		Me.Label39.Size = New System.Drawing.Size(76, 20)
-		Me.Label39.TabIndex = 132
-		Me.Label39.Text = "Jizan"
-		'
-		'Label40
-		'
-		Me.Label40.Location = New System.Drawing.Point(15, 299)
-		Me.Label40.Name = "Label40"
-		Me.Label40.Size = New System.Drawing.Size(76, 20)
-		Me.Label40.TabIndex = 133
-		Me.Label40.Text = "Riyadh"
-		'
-		'Label41
-		'
-		Me.Label41.Location = New System.Drawing.Point(15, 161)
-		Me.Label41.Name = "Label41"
-		Me.Label41.Size = New System.Drawing.Size(76, 20)
-		Me.Label41.TabIndex = 134
-		Me.Label41.Text = "Hail"
-		'
-		'Label42
-		'
-		Me.Label42.Location = New System.Drawing.Point(15, 276)
-		Me.Label42.Name = "Label42"
-		Me.Label42.Size = New System.Drawing.Size(76, 20)
-		Me.Label42.TabIndex = 135
-		Me.Label42.Text = "North Border"
-		'
-		'Label43
-		'
-		Me.Label43.Location = New System.Drawing.Point(15, 253)
-		Me.Label43.Name = "Label43"
-		Me.Label43.Size = New System.Drawing.Size(76, 20)
-		Me.Label43.TabIndex = 143
-		Me.Label43.Text = "Najran"
-		'
-		'Label71
-		'
-		Me.Label71.Location = New System.Drawing.Point(15, 92)
-		Me.Label71.Name = "Label71"
-		Me.Label71.Size = New System.Drawing.Size(76, 20)
-		Me.Label71.TabIndex = 136
-		Me.Label71.Text = "Al - Jouf"
-		'
-		'Label72
-		'
-		Me.Label72.Location = New System.Drawing.Point(15, 230)
-		Me.Label72.Name = "Label72"
-		Me.Label72.Size = New System.Drawing.Size(76, 20)
-		Me.Label72.TabIndex = 137
-		Me.Label72.Text = "Mecca"
-		'
-		'Label73
-		'
-		Me.Label73.Location = New System.Drawing.Point(15, 138)
-		Me.Label73.Name = "Label73"
-		Me.Label73.Size = New System.Drawing.Size(76, 20)
-		Me.Label73.TabIndex = 138
-		Me.Label73.Text = "Eastern Area"
-		'
-		'Label74
-		'
-		Me.Label74.Location = New System.Drawing.Point(15, 69)
-		Me.Label74.Name = "Label74"
-		Me.Label74.Size = New System.Drawing.Size(76, 20)
-		Me.Label74.TabIndex = 139
-		Me.Label74.Text = "Al - Gassem"
-		'
-		'Label75
-		'
-		Me.Label75.Location = New System.Drawing.Point(15, 207)
-		Me.Label75.Name = "Label75"
-		Me.Label75.Size = New System.Drawing.Size(76, 20)
-		Me.Label75.TabIndex = 140
-		Me.Label75.Text = "Madina"
-		'
-		'Label76
-		'
-		Me.Label76.Location = New System.Drawing.Point(15, 115)
-		Me.Label76.Name = "Label76"
-		Me.Label76.Size = New System.Drawing.Size(76, 20)
-		Me.Label76.TabIndex = 141
-		Me.Label76.Text = "Aseer"
-		'
-		'Label77
-		'
-		Me.Label77.Location = New System.Drawing.Point(15, 46)
-		Me.Label77.Name = "Label77"
-		Me.Label77.Size = New System.Drawing.Size(76, 20)
-		Me.Label77.TabIndex = 142
-		Me.Label77.Text = "Al - Baha"
-		'
 		'grbWaterQuality
 		'
 		Me.grbWaterQuality.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
 			Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+		Me.grbWaterQuality.Controls.Add(Me.lblWQLocation15)
+		Me.grbWaterQuality.Controls.Add(Me.lblWQLocation14)
+		Me.grbWaterQuality.Controls.Add(Me.lblWQLocation12)
+		Me.grbWaterQuality.Controls.Add(Me.lblWQLocation1)
+		Me.grbWaterQuality.Controls.Add(Me.lblWQLocation11)
+		Me.grbWaterQuality.Controls.Add(Me.lblWQLocation5)
+		Me.grbWaterQuality.Controls.Add(Me.lblWQLocation6)
+		Me.grbWaterQuality.Controls.Add(Me.lblWQLocation10)
+		Me.grbWaterQuality.Controls.Add(Me.lblWQLocation4)
+		Me.grbWaterQuality.Controls.Add(Me.lblWQLocation13)
+		Me.grbWaterQuality.Controls.Add(Me.lblWQLocation7)
+		Me.grbWaterQuality.Controls.Add(Me.lblWQLocation9)
+		Me.grbWaterQuality.Controls.Add(Me.lblWQLocation3)
+		Me.grbWaterQuality.Controls.Add(Me.lblWQLocation2)
+		Me.grbWaterQuality.Controls.Add(Me.lblWQLocation8)
 		Me.grbWaterQuality.Controls.Add(Me.pnlTSS)
 		Me.grbWaterQuality.Controls.Add(Me.pnlTDS)
 		Me.grbWaterQuality.Controls.Add(Me.pnlBOD)
-		Me.grbWaterQuality.Controls.Add(Me.Label3)
-		Me.grbWaterQuality.Controls.Add(Me.Label4)
-		Me.grbWaterQuality.Controls.Add(Me.Label5)
-		Me.grbWaterQuality.Controls.Add(Me.Label6)
-		Me.grbWaterQuality.Controls.Add(Me.Label7)
-		Me.grbWaterQuality.Controls.Add(Me.Label8)
-		Me.grbWaterQuality.Controls.Add(Me.Label9)
-		Me.grbWaterQuality.Controls.Add(Me.Label11)
-		Me.grbWaterQuality.Controls.Add(Me.Label14)
-		Me.grbWaterQuality.Controls.Add(Me.Label15)
-		Me.grbWaterQuality.Controls.Add(Me.Label16)
-		Me.grbWaterQuality.Controls.Add(Me.Label17)
-		Me.grbWaterQuality.Controls.Add(Me.Label18)
 		Me.grbWaterQuality.ForeColor = System.Drawing.Color.Black
 		Me.grbWaterQuality.Location = New System.Drawing.Point(0, 0)
 		Me.grbWaterQuality.Name = "grbWaterQuality"
@@ -6753,110 +6281,6 @@ Partial Class frmNegotiation
 		Me.nudBOD8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		Me.nudBOD8.Value = New Decimal(New Integer() {50, 0, 0, 0})
 		'
-		'Label3
-		'
-		Me.Label3.Location = New System.Drawing.Point(17, 325)
-		Me.Label3.Name = "Label3"
-		Me.Label3.Size = New System.Drawing.Size(91, 20)
-		Me.Label3.TabIndex = 36
-		Me.Label3.Text = "Tabouk"
-		'
-		'Label4
-		'
-		Me.Label4.Location = New System.Drawing.Point(17, 187)
-		Me.Label4.Name = "Label4"
-		Me.Label4.Size = New System.Drawing.Size(91, 20)
-		Me.Label4.TabIndex = 37
-		Me.Label4.Text = "Jizan"
-		'
-		'Label5
-		'
-		Me.Label5.Location = New System.Drawing.Point(17, 302)
-		Me.Label5.Name = "Label5"
-		Me.Label5.Size = New System.Drawing.Size(91, 20)
-		Me.Label5.TabIndex = 38
-		Me.Label5.Text = "Riyadh"
-		'
-		'Label6
-		'
-		Me.Label6.Location = New System.Drawing.Point(17, 164)
-		Me.Label6.Name = "Label6"
-		Me.Label6.Size = New System.Drawing.Size(91, 20)
-		Me.Label6.TabIndex = 39
-		Me.Label6.Text = "Hail"
-		'
-		'Label7
-		'
-		Me.Label7.Location = New System.Drawing.Point(17, 279)
-		Me.Label7.Name = "Label7"
-		Me.Label7.Size = New System.Drawing.Size(91, 20)
-		Me.Label7.TabIndex = 40
-		Me.Label7.Text = "North Border"
-		'
-		'Label8
-		'
-		Me.Label8.Location = New System.Drawing.Point(17, 256)
-		Me.Label8.Name = "Label8"
-		Me.Label8.Size = New System.Drawing.Size(91, 20)
-		Me.Label8.TabIndex = 48
-		Me.Label8.Text = "Najran"
-		'
-		'Label9
-		'
-		Me.Label9.Location = New System.Drawing.Point(17, 95)
-		Me.Label9.Name = "Label9"
-		Me.Label9.Size = New System.Drawing.Size(91, 20)
-		Me.Label9.TabIndex = 41
-		Me.Label9.Text = "Al - Jouf"
-		'
-		'Label11
-		'
-		Me.Label11.Location = New System.Drawing.Point(17, 233)
-		Me.Label11.Name = "Label11"
-		Me.Label11.Size = New System.Drawing.Size(91, 20)
-		Me.Label11.TabIndex = 42
-		Me.Label11.Text = "Mecca"
-		'
-		'Label14
-		'
-		Me.Label14.Location = New System.Drawing.Point(17, 141)
-		Me.Label14.Name = "Label14"
-		Me.Label14.Size = New System.Drawing.Size(91, 20)
-		Me.Label14.TabIndex = 43
-		Me.Label14.Text = "Eastern Area"
-		'
-		'Label15
-		'
-		Me.Label15.Location = New System.Drawing.Point(17, 72)
-		Me.Label15.Name = "Label15"
-		Me.Label15.Size = New System.Drawing.Size(91, 20)
-		Me.Label15.TabIndex = 44
-		Me.Label15.Text = "Al - Gassem"
-		'
-		'Label16
-		'
-		Me.Label16.Location = New System.Drawing.Point(17, 210)
-		Me.Label16.Name = "Label16"
-		Me.Label16.Size = New System.Drawing.Size(91, 20)
-		Me.Label16.TabIndex = 45
-		Me.Label16.Text = "Madina"
-		'
-		'Label17
-		'
-		Me.Label17.Location = New System.Drawing.Point(17, 118)
-		Me.Label17.Name = "Label17"
-		Me.Label17.Size = New System.Drawing.Size(91, 20)
-		Me.Label17.TabIndex = 46
-		Me.Label17.Text = "Aseer"
-		'
-		'Label18
-		'
-		Me.Label18.Location = New System.Drawing.Point(17, 49)
-		Me.Label18.Name = "Label18"
-		Me.Label18.Size = New System.Drawing.Size(91, 20)
-		Me.Label18.TabIndex = 47
-		Me.Label18.Text = "Al - Baha"
-		'
 		'grbMisc
 		'
 		Me.grbMisc.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -7410,6 +6834,1153 @@ Partial Class frmNegotiation
 		Me.DSData.DataSetName = "DSData"
 		Me.DSData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
 		'
+		'lblWCLocation2
+		'
+		Me.lblWCLocation2.AutoSize = True
+		Me.lblWCLocation2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWCLocation2.DSSElementName = "locName"
+		Me.lblWCLocation2.DSSLocation = 0
+		Me.lblWCLocation2.DSSOffset = 0R
+		Me.lblWCLocation2.Location = New System.Drawing.Point(26, 65)
+		Me.lblWCLocation2.Name = "lblWCLocation2"
+		Me.lblWCLocation2.Size = New System.Drawing.Size(50, 13)
+		Me.lblWCLocation2.TabIndex = 117
+		Me.lblWCLocation2.Text = "location2"
+		'
+		'lblWCLocation4
+		'
+		Me.lblWCLocation4.AutoSize = True
+		Me.lblWCLocation4.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWCLocation4.DSSElementName = "locName"
+		Me.lblWCLocation4.DSSLocation = 0
+		Me.lblWCLocation4.DSSOffset = 0R
+		Me.lblWCLocation4.Location = New System.Drawing.Point(26, 111)
+		Me.lblWCLocation4.Name = "lblWCLocation4"
+		Me.lblWCLocation4.Size = New System.Drawing.Size(50, 13)
+		Me.lblWCLocation4.TabIndex = 119
+		Me.lblWCLocation4.Text = "location4"
+		'
+		'lblWCLocation3
+		'
+		Me.lblWCLocation3.AutoSize = True
+		Me.lblWCLocation3.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWCLocation3.DSSElementName = "locName"
+		Me.lblWCLocation3.DSSLocation = 0
+		Me.lblWCLocation3.DSSOffset = 0R
+		Me.lblWCLocation3.Location = New System.Drawing.Point(26, 88)
+		Me.lblWCLocation3.Name = "lblWCLocation3"
+		Me.lblWCLocation3.Size = New System.Drawing.Size(50, 13)
+		Me.lblWCLocation3.TabIndex = 118
+		Me.lblWCLocation3.Text = "location3"
+		'
+		'lblWCLocation8
+		'
+		Me.lblWCLocation8.AutoSize = True
+		Me.lblWCLocation8.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWCLocation8.DSSElementName = "locName"
+		Me.lblWCLocation8.DSSLocation = 0
+		Me.lblWCLocation8.DSSOffset = 0R
+		Me.lblWCLocation8.Location = New System.Drawing.Point(26, 203)
+		Me.lblWCLocation8.Name = "lblWCLocation8"
+		Me.lblWCLocation8.Size = New System.Drawing.Size(50, 13)
+		Me.lblWCLocation8.TabIndex = 123
+		Me.lblWCLocation8.Text = "location8"
+		'
+		'lblWCLocation7
+		'
+		Me.lblWCLocation7.AutoSize = True
+		Me.lblWCLocation7.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWCLocation7.DSSElementName = "locName"
+		Me.lblWCLocation7.DSSLocation = 0
+		Me.lblWCLocation7.DSSOffset = 0R
+		Me.lblWCLocation7.Location = New System.Drawing.Point(26, 180)
+		Me.lblWCLocation7.Name = "lblWCLocation7"
+		Me.lblWCLocation7.Size = New System.Drawing.Size(50, 13)
+		Me.lblWCLocation7.TabIndex = 122
+		Me.lblWCLocation7.Text = "location7"
+		'
+		'lblWCLocation6
+		'
+		Me.lblWCLocation6.AutoSize = True
+		Me.lblWCLocation6.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWCLocation6.DSSElementName = "locName"
+		Me.lblWCLocation6.DSSLocation = 0
+		Me.lblWCLocation6.DSSOffset = 0R
+		Me.lblWCLocation6.Location = New System.Drawing.Point(26, 157)
+		Me.lblWCLocation6.Name = "lblWCLocation6"
+		Me.lblWCLocation6.Size = New System.Drawing.Size(50, 13)
+		Me.lblWCLocation6.TabIndex = 121
+		Me.lblWCLocation6.Text = "location6"
+		'
+		'lblWCLocation5
+		'
+		Me.lblWCLocation5.AutoSize = True
+		Me.lblWCLocation5.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWCLocation5.DSSElementName = "locName"
+		Me.lblWCLocation5.DSSLocation = 0
+		Me.lblWCLocation5.DSSOffset = 0R
+		Me.lblWCLocation5.Location = New System.Drawing.Point(26, 134)
+		Me.lblWCLocation5.Name = "lblWCLocation5"
+		Me.lblWCLocation5.Size = New System.Drawing.Size(50, 13)
+		Me.lblWCLocation5.TabIndex = 120
+		Me.lblWCLocation5.Text = "location5"
+		'
+		'lblWCLocation12
+		'
+		Me.lblWCLocation12.AutoSize = True
+		Me.lblWCLocation12.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWCLocation12.DSSElementName = "locName"
+		Me.lblWCLocation12.DSSLocation = 0
+		Me.lblWCLocation12.DSSOffset = 0R
+		Me.lblWCLocation12.Location = New System.Drawing.Point(26, 295)
+		Me.lblWCLocation12.Name = "lblWCLocation12"
+		Me.lblWCLocation12.Size = New System.Drawing.Size(56, 13)
+		Me.lblWCLocation12.TabIndex = 127
+		Me.lblWCLocation12.Text = "location12"
+		'
+		'lblWCLocation11
+		'
+		Me.lblWCLocation11.AutoSize = True
+		Me.lblWCLocation11.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWCLocation11.DSSElementName = "locName"
+		Me.lblWCLocation11.DSSLocation = 0
+		Me.lblWCLocation11.DSSOffset = 0R
+		Me.lblWCLocation11.Location = New System.Drawing.Point(26, 272)
+		Me.lblWCLocation11.Name = "lblWCLocation11"
+		Me.lblWCLocation11.Size = New System.Drawing.Size(56, 13)
+		Me.lblWCLocation11.TabIndex = 126
+		Me.lblWCLocation11.Text = "location11"
+		'
+		'lblWCLocation10
+		'
+		Me.lblWCLocation10.AutoSize = True
+		Me.lblWCLocation10.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWCLocation10.DSSElementName = "locName"
+		Me.lblWCLocation10.DSSLocation = 0
+		Me.lblWCLocation10.DSSOffset = 0R
+		Me.lblWCLocation10.Location = New System.Drawing.Point(26, 249)
+		Me.lblWCLocation10.Name = "lblWCLocation10"
+		Me.lblWCLocation10.Size = New System.Drawing.Size(56, 13)
+		Me.lblWCLocation10.TabIndex = 125
+		Me.lblWCLocation10.Text = "location10"
+		'
+		'lblWCLocation9
+		'
+		Me.lblWCLocation9.AutoSize = True
+		Me.lblWCLocation9.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWCLocation9.DSSElementName = "locName"
+		Me.lblWCLocation9.DSSLocation = 0
+		Me.lblWCLocation9.DSSOffset = 0R
+		Me.lblWCLocation9.Location = New System.Drawing.Point(26, 226)
+		Me.lblWCLocation9.Name = "lblWCLocation9"
+		Me.lblWCLocation9.Size = New System.Drawing.Size(50, 13)
+		Me.lblWCLocation9.TabIndex = 124
+		Me.lblWCLocation9.Text = "location9"
+		'
+		'lblWCLocation15
+		'
+		Me.lblWCLocation15.AutoSize = True
+		Me.lblWCLocation15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWCLocation15.DSSElementName = "locName"
+		Me.lblWCLocation15.DSSLocation = 0
+		Me.lblWCLocation15.DSSOffset = 0R
+		Me.lblWCLocation15.Location = New System.Drawing.Point(26, 364)
+		Me.lblWCLocation15.Name = "lblWCLocation15"
+		Me.lblWCLocation15.Size = New System.Drawing.Size(56, 13)
+		Me.lblWCLocation15.TabIndex = 130
+		Me.lblWCLocation15.Text = "location15"
+		'
+		'lblWCLocation14
+		'
+		Me.lblWCLocation14.AutoSize = True
+		Me.lblWCLocation14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWCLocation14.DSSElementName = "locName"
+		Me.lblWCLocation14.DSSLocation = 0
+		Me.lblWCLocation14.DSSOffset = 0R
+		Me.lblWCLocation14.Location = New System.Drawing.Point(26, 341)
+		Me.lblWCLocation14.Name = "lblWCLocation14"
+		Me.lblWCLocation14.Size = New System.Drawing.Size(56, 13)
+		Me.lblWCLocation14.TabIndex = 129
+		Me.lblWCLocation14.Text = "location14"
+		'
+		'lblTPLocation15
+		'
+		Me.lblTPLocation15.AutoSize = True
+		Me.lblTPLocation15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblTPLocation15.DSSElementName = "locName"
+		Me.lblTPLocation15.DSSLocation = 0
+		Me.lblTPLocation15.DSSOffset = 0R
+		Me.lblTPLocation15.Location = New System.Drawing.Point(12, 388)
+		Me.lblTPLocation15.Name = "lblTPLocation15"
+		Me.lblTPLocation15.Size = New System.Drawing.Size(56, 13)
+		Me.lblTPLocation15.TabIndex = 145
+		Me.lblTPLocation15.Text = "location15"
+		'
+		'lblTPLocation14
+		'
+		Me.lblTPLocation14.AutoSize = True
+		Me.lblTPLocation14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblTPLocation14.DSSElementName = "locName"
+		Me.lblTPLocation14.DSSLocation = 0
+		Me.lblTPLocation14.DSSOffset = 0R
+		Me.lblTPLocation14.Location = New System.Drawing.Point(12, 365)
+		Me.lblTPLocation14.Name = "lblTPLocation14"
+		Me.lblTPLocation14.Size = New System.Drawing.Size(56, 13)
+		Me.lblTPLocation14.TabIndex = 144
+		Me.lblTPLocation14.Text = "location14"
+		'
+		'lblTPLocation12
+		'
+		Me.lblTPLocation12.AutoSize = True
+		Me.lblTPLocation12.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblTPLocation12.DSSElementName = "locName"
+		Me.lblTPLocation12.DSSLocation = 0
+		Me.lblTPLocation12.DSSOffset = 0R
+		Me.lblTPLocation12.Location = New System.Drawing.Point(12, 319)
+		Me.lblTPLocation12.Name = "lblTPLocation12"
+		Me.lblTPLocation12.Size = New System.Drawing.Size(56, 13)
+		Me.lblTPLocation12.TabIndex = 143
+		Me.lblTPLocation12.Text = "location12"
+		'
+		'lblTPLocation11
+		'
+		Me.lblTPLocation11.AutoSize = True
+		Me.lblTPLocation11.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblTPLocation11.DSSElementName = "locName"
+		Me.lblTPLocation11.DSSLocation = 0
+		Me.lblTPLocation11.DSSOffset = 0R
+		Me.lblTPLocation11.Location = New System.Drawing.Point(12, 296)
+		Me.lblTPLocation11.Name = "lblTPLocation11"
+		Me.lblTPLocation11.Size = New System.Drawing.Size(56, 13)
+		Me.lblTPLocation11.TabIndex = 142
+		Me.lblTPLocation11.Text = "location11"
+		'
+		'lblTPLocation10
+		'
+		Me.lblTPLocation10.AutoSize = True
+		Me.lblTPLocation10.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblTPLocation10.DSSElementName = "locName"
+		Me.lblTPLocation10.DSSLocation = 0
+		Me.lblTPLocation10.DSSOffset = 0R
+		Me.lblTPLocation10.Location = New System.Drawing.Point(12, 273)
+		Me.lblTPLocation10.Name = "lblTPLocation10"
+		Me.lblTPLocation10.Size = New System.Drawing.Size(56, 13)
+		Me.lblTPLocation10.TabIndex = 141
+		Me.lblTPLocation10.Text = "location10"
+		'
+		'lblTPLocation9
+		'
+		Me.lblTPLocation9.AutoSize = True
+		Me.lblTPLocation9.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblTPLocation9.DSSElementName = "locName"
+		Me.lblTPLocation9.DSSLocation = 0
+		Me.lblTPLocation9.DSSOffset = 0R
+		Me.lblTPLocation9.Location = New System.Drawing.Point(12, 250)
+		Me.lblTPLocation9.Name = "lblTPLocation9"
+		Me.lblTPLocation9.Size = New System.Drawing.Size(50, 13)
+		Me.lblTPLocation9.TabIndex = 140
+		Me.lblTPLocation9.Text = "location9"
+		'
+		'lblTPLocation8
+		'
+		Me.lblTPLocation8.AutoSize = True
+		Me.lblTPLocation8.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblTPLocation8.DSSElementName = "locName"
+		Me.lblTPLocation8.DSSLocation = 0
+		Me.lblTPLocation8.DSSOffset = 0R
+		Me.lblTPLocation8.Location = New System.Drawing.Point(12, 227)
+		Me.lblTPLocation8.Name = "lblTPLocation8"
+		Me.lblTPLocation8.Size = New System.Drawing.Size(50, 13)
+		Me.lblTPLocation8.TabIndex = 139
+		Me.lblTPLocation8.Text = "location8"
+		'
+		'lblTPLocation7
+		'
+		Me.lblTPLocation7.AutoSize = True
+		Me.lblTPLocation7.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblTPLocation7.DSSElementName = "locName"
+		Me.lblTPLocation7.DSSLocation = 0
+		Me.lblTPLocation7.DSSOffset = 0R
+		Me.lblTPLocation7.Location = New System.Drawing.Point(12, 204)
+		Me.lblTPLocation7.Name = "lblTPLocation7"
+		Me.lblTPLocation7.Size = New System.Drawing.Size(50, 13)
+		Me.lblTPLocation7.TabIndex = 138
+		Me.lblTPLocation7.Text = "location7"
+		'
+		'lblTPLocation6
+		'
+		Me.lblTPLocation6.AutoSize = True
+		Me.lblTPLocation6.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblTPLocation6.DSSElementName = "locName"
+		Me.lblTPLocation6.DSSLocation = 0
+		Me.lblTPLocation6.DSSOffset = 0R
+		Me.lblTPLocation6.Location = New System.Drawing.Point(12, 181)
+		Me.lblTPLocation6.Name = "lblTPLocation6"
+		Me.lblTPLocation6.Size = New System.Drawing.Size(50, 13)
+		Me.lblTPLocation6.TabIndex = 137
+		Me.lblTPLocation6.Text = "location6"
+		'
+		'lblTPLocation5
+		'
+		Me.lblTPLocation5.AutoSize = True
+		Me.lblTPLocation5.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblTPLocation5.DSSElementName = "locName"
+		Me.lblTPLocation5.DSSLocation = 0
+		Me.lblTPLocation5.DSSOffset = 0R
+		Me.lblTPLocation5.Location = New System.Drawing.Point(12, 158)
+		Me.lblTPLocation5.Name = "lblTPLocation5"
+		Me.lblTPLocation5.Size = New System.Drawing.Size(50, 13)
+		Me.lblTPLocation5.TabIndex = 136
+		Me.lblTPLocation5.Text = "location5"
+		'
+		'lblTPLocation4
+		'
+		Me.lblTPLocation4.AutoSize = True
+		Me.lblTPLocation4.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblTPLocation4.DSSElementName = "locName"
+		Me.lblTPLocation4.DSSLocation = 0
+		Me.lblTPLocation4.DSSOffset = 0R
+		Me.lblTPLocation4.Location = New System.Drawing.Point(12, 135)
+		Me.lblTPLocation4.Name = "lblTPLocation4"
+		Me.lblTPLocation4.Size = New System.Drawing.Size(50, 13)
+		Me.lblTPLocation4.TabIndex = 135
+		Me.lblTPLocation4.Text = "location4"
+		'
+		'lblTPLocation3
+		'
+		Me.lblTPLocation3.AutoSize = True
+		Me.lblTPLocation3.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblTPLocation3.DSSElementName = "locName"
+		Me.lblTPLocation3.DSSLocation = 0
+		Me.lblTPLocation3.DSSOffset = 0R
+		Me.lblTPLocation3.Location = New System.Drawing.Point(12, 112)
+		Me.lblTPLocation3.Name = "lblTPLocation3"
+		Me.lblTPLocation3.Size = New System.Drawing.Size(50, 13)
+		Me.lblTPLocation3.TabIndex = 134
+		Me.lblTPLocation3.Text = "location3"
+		'
+		'lblTPLocation2
+		'
+		Me.lblTPLocation2.AutoSize = True
+		Me.lblTPLocation2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblTPLocation2.DSSElementName = "locName"
+		Me.lblTPLocation2.DSSLocation = 0
+		Me.lblTPLocation2.DSSOffset = 0R
+		Me.lblTPLocation2.Location = New System.Drawing.Point(12, 89)
+		Me.lblTPLocation2.Name = "lblTPLocation2"
+		Me.lblTPLocation2.Size = New System.Drawing.Size(50, 13)
+		Me.lblTPLocation2.TabIndex = 133
+		Me.lblTPLocation2.Text = "location2"
+		'
+		'lblTPLocation1
+		'
+		Me.lblTPLocation1.AutoSize = True
+		Me.lblTPLocation1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblTPLocation1.DSSElementName = "locName"
+		Me.lblTPLocation1.DSSLocation = 0
+		Me.lblTPLocation1.DSSOffset = 0R
+		Me.lblTPLocation1.Location = New System.Drawing.Point(12, 66)
+		Me.lblTPLocation1.Name = "lblTPLocation1"
+		Me.lblTPLocation1.Size = New System.Drawing.Size(50, 13)
+		Me.lblTPLocation1.TabIndex = 132
+		Me.lblTPLocation1.Text = "location1"
+		'
+		'lblTPLocation13
+		'
+		Me.lblTPLocation13.AutoSize = True
+		Me.lblTPLocation13.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblTPLocation13.DSSElementName = "locNAme"
+		Me.lblTPLocation13.DSSLocation = 0
+		Me.lblTPLocation13.DSSOffset = 0R
+		Me.lblTPLocation13.Location = New System.Drawing.Point(12, 342)
+		Me.lblTPLocation13.Name = "lblTPLocation13"
+		Me.lblTPLocation13.Size = New System.Drawing.Size(56, 13)
+		Me.lblTPLocation13.TabIndex = 131
+		Me.lblTPLocation13.Text = "location13"
+		'
+		'lblIDLocation15
+		'
+		Me.lblIDLocation15.AutoSize = True
+		Me.lblIDLocation15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIDLocation15.DSSElementName = "locName"
+		Me.lblIDLocation15.DSSLocation = 0
+		Me.lblIDLocation15.DSSOffset = 0R
+		Me.lblIDLocation15.Location = New System.Drawing.Point(12, 372)
+		Me.lblIDLocation15.Name = "lblIDLocation15"
+		Me.lblIDLocation15.Size = New System.Drawing.Size(56, 13)
+		Me.lblIDLocation15.TabIndex = 160
+		Me.lblIDLocation15.Text = "location15"
+		'
+		'lblIDLocation14
+		'
+		Me.lblIDLocation14.AutoSize = True
+		Me.lblIDLocation14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIDLocation14.DSSElementName = "locName"
+		Me.lblIDLocation14.DSSLocation = 0
+		Me.lblIDLocation14.DSSOffset = 0R
+		Me.lblIDLocation14.Location = New System.Drawing.Point(12, 349)
+		Me.lblIDLocation14.Name = "lblIDLocation14"
+		Me.lblIDLocation14.Size = New System.Drawing.Size(56, 13)
+		Me.lblIDLocation14.TabIndex = 159
+		Me.lblIDLocation14.Text = "location14"
+		'
+		'lblIDLocation12
+		'
+		Me.lblIDLocation12.AutoSize = True
+		Me.lblIDLocation12.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIDLocation12.DSSElementName = "locName"
+		Me.lblIDLocation12.DSSLocation = 0
+		Me.lblIDLocation12.DSSOffset = 0R
+		Me.lblIDLocation12.Location = New System.Drawing.Point(12, 303)
+		Me.lblIDLocation12.Name = "lblIDLocation12"
+		Me.lblIDLocation12.Size = New System.Drawing.Size(56, 13)
+		Me.lblIDLocation12.TabIndex = 158
+		Me.lblIDLocation12.Text = "location12"
+		'
+		'lblIDLocation11
+		'
+		Me.lblIDLocation11.AutoSize = True
+		Me.lblIDLocation11.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIDLocation11.DSSElementName = "locName"
+		Me.lblIDLocation11.DSSLocation = 0
+		Me.lblIDLocation11.DSSOffset = 0R
+		Me.lblIDLocation11.Location = New System.Drawing.Point(12, 280)
+		Me.lblIDLocation11.Name = "lblIDLocation11"
+		Me.lblIDLocation11.Size = New System.Drawing.Size(56, 13)
+		Me.lblIDLocation11.TabIndex = 157
+		Me.lblIDLocation11.Text = "location11"
+		'
+		'lblIDLocation1
+		'
+		Me.lblIDLocation1.AutoSize = True
+		Me.lblIDLocation1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIDLocation1.DSSElementName = "locName"
+		Me.lblIDLocation1.DSSLocation = 0
+		Me.lblIDLocation1.DSSOffset = 0R
+		Me.lblIDLocation1.Location = New System.Drawing.Point(12, 50)
+		Me.lblIDLocation1.Name = "lblIDLocation1"
+		Me.lblIDLocation1.Size = New System.Drawing.Size(50, 13)
+		Me.lblIDLocation1.TabIndex = 147
+		Me.lblIDLocation1.Text = "location1"
+		'
+		'lblIDLocation10
+		'
+		Me.lblIDLocation10.AutoSize = True
+		Me.lblIDLocation10.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIDLocation10.DSSElementName = "locName"
+		Me.lblIDLocation10.DSSLocation = 0
+		Me.lblIDLocation10.DSSOffset = 0R
+		Me.lblIDLocation10.Location = New System.Drawing.Point(12, 257)
+		Me.lblIDLocation10.Name = "lblIDLocation10"
+		Me.lblIDLocation10.Size = New System.Drawing.Size(56, 13)
+		Me.lblIDLocation10.TabIndex = 156
+		Me.lblIDLocation10.Text = "location10"
+		'
+		'lblIDLocation13
+		'
+		Me.lblIDLocation13.AutoSize = True
+		Me.lblIDLocation13.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIDLocation13.DSSElementName = "locNAme"
+		Me.lblIDLocation13.DSSLocation = 0
+		Me.lblIDLocation13.DSSOffset = 0R
+		Me.lblIDLocation13.Location = New System.Drawing.Point(12, 326)
+		Me.lblIDLocation13.Name = "lblIDLocation13"
+		Me.lblIDLocation13.Size = New System.Drawing.Size(56, 13)
+		Me.lblIDLocation13.TabIndex = 146
+		Me.lblIDLocation13.Text = "location13"
+		'
+		'lblIDLocation9
+		'
+		Me.lblIDLocation9.AutoSize = True
+		Me.lblIDLocation9.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIDLocation9.DSSElementName = "locName"
+		Me.lblIDLocation9.DSSLocation = 0
+		Me.lblIDLocation9.DSSOffset = 0R
+		Me.lblIDLocation9.Location = New System.Drawing.Point(12, 234)
+		Me.lblIDLocation9.Name = "lblIDLocation9"
+		Me.lblIDLocation9.Size = New System.Drawing.Size(50, 13)
+		Me.lblIDLocation9.TabIndex = 155
+		Me.lblIDLocation9.Text = "location9"
+		'
+		'lblIDLocation2
+		'
+		Me.lblIDLocation2.AutoSize = True
+		Me.lblIDLocation2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIDLocation2.DSSElementName = "locName"
+		Me.lblIDLocation2.DSSLocation = 0
+		Me.lblIDLocation2.DSSOffset = 0R
+		Me.lblIDLocation2.Location = New System.Drawing.Point(12, 73)
+		Me.lblIDLocation2.Name = "lblIDLocation2"
+		Me.lblIDLocation2.Size = New System.Drawing.Size(50, 13)
+		Me.lblIDLocation2.TabIndex = 148
+		Me.lblIDLocation2.Text = "location2"
+		'
+		'lblIDLocation8
+		'
+		Me.lblIDLocation8.AutoSize = True
+		Me.lblIDLocation8.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIDLocation8.DSSElementName = "locName"
+		Me.lblIDLocation8.DSSLocation = 0
+		Me.lblIDLocation8.DSSOffset = 0R
+		Me.lblIDLocation8.Location = New System.Drawing.Point(12, 211)
+		Me.lblIDLocation8.Name = "lblIDLocation8"
+		Me.lblIDLocation8.Size = New System.Drawing.Size(50, 13)
+		Me.lblIDLocation8.TabIndex = 154
+		Me.lblIDLocation8.Text = "location8"
+		'
+		'lblIDLocation3
+		'
+		Me.lblIDLocation3.AutoSize = True
+		Me.lblIDLocation3.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIDLocation3.DSSElementName = "locName"
+		Me.lblIDLocation3.DSSLocation = 0
+		Me.lblIDLocation3.DSSOffset = 0R
+		Me.lblIDLocation3.Location = New System.Drawing.Point(12, 96)
+		Me.lblIDLocation3.Name = "lblIDLocation3"
+		Me.lblIDLocation3.Size = New System.Drawing.Size(50, 13)
+		Me.lblIDLocation3.TabIndex = 149
+		Me.lblIDLocation3.Text = "location3"
+		'
+		'lblIDLocation7
+		'
+		Me.lblIDLocation7.AutoSize = True
+		Me.lblIDLocation7.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIDLocation7.DSSElementName = "locName"
+		Me.lblIDLocation7.DSSLocation = 0
+		Me.lblIDLocation7.DSSOffset = 0R
+		Me.lblIDLocation7.Location = New System.Drawing.Point(12, 188)
+		Me.lblIDLocation7.Name = "lblIDLocation7"
+		Me.lblIDLocation7.Size = New System.Drawing.Size(50, 13)
+		Me.lblIDLocation7.TabIndex = 153
+		Me.lblIDLocation7.Text = "location7"
+		'
+		'lblIDLocation4
+		'
+		Me.lblIDLocation4.AutoSize = True
+		Me.lblIDLocation4.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIDLocation4.DSSElementName = "locName"
+		Me.lblIDLocation4.DSSLocation = 0
+		Me.lblIDLocation4.DSSOffset = 0R
+		Me.lblIDLocation4.Location = New System.Drawing.Point(12, 119)
+		Me.lblIDLocation4.Name = "lblIDLocation4"
+		Me.lblIDLocation4.Size = New System.Drawing.Size(50, 13)
+		Me.lblIDLocation4.TabIndex = 150
+		Me.lblIDLocation4.Text = "location4"
+		'
+		'lblIDLocation6
+		'
+		Me.lblIDLocation6.AutoSize = True
+		Me.lblIDLocation6.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIDLocation6.DSSElementName = "locName"
+		Me.lblIDLocation6.DSSLocation = 0
+		Me.lblIDLocation6.DSSOffset = 0R
+		Me.lblIDLocation6.Location = New System.Drawing.Point(12, 165)
+		Me.lblIDLocation6.Name = "lblIDLocation6"
+		Me.lblIDLocation6.Size = New System.Drawing.Size(50, 13)
+		Me.lblIDLocation6.TabIndex = 152
+		Me.lblIDLocation6.Text = "location6"
+		'
+		'lblIDLocation5
+		'
+		Me.lblIDLocation5.AutoSize = True
+		Me.lblIDLocation5.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIDLocation5.DSSElementName = "locName"
+		Me.lblIDLocation5.DSSLocation = 0
+		Me.lblIDLocation5.DSSOffset = 0R
+		Me.lblIDLocation5.Location = New System.Drawing.Point(12, 142)
+		Me.lblIDLocation5.Name = "lblIDLocation5"
+		Me.lblIDLocation5.Size = New System.Drawing.Size(50, 13)
+		Me.lblIDLocation5.TabIndex = 151
+		Me.lblIDLocation5.Text = "location5"
+		'
+		'lblWQLocation15
+		'
+		Me.lblWQLocation15.AutoSize = True
+		Me.lblWQLocation15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWQLocation15.DSSElementName = "locName"
+		Me.lblWQLocation15.DSSLocation = 0
+		Me.lblWQLocation15.DSSOffset = 0R
+		Me.lblWQLocation15.Location = New System.Drawing.Point(18, 372)
+		Me.lblWQLocation15.Name = "lblWQLocation15"
+		Me.lblWQLocation15.Size = New System.Drawing.Size(56, 13)
+		Me.lblWQLocation15.TabIndex = 175
+		Me.lblWQLocation15.Text = "location15"
+		'
+		'lblWQLocation14
+		'
+		Me.lblWQLocation14.AutoSize = True
+		Me.lblWQLocation14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWQLocation14.DSSElementName = "locName"
+		Me.lblWQLocation14.DSSLocation = 0
+		Me.lblWQLocation14.DSSOffset = 0R
+		Me.lblWQLocation14.Location = New System.Drawing.Point(18, 349)
+		Me.lblWQLocation14.Name = "lblWQLocation14"
+		Me.lblWQLocation14.Size = New System.Drawing.Size(56, 13)
+		Me.lblWQLocation14.TabIndex = 174
+		Me.lblWQLocation14.Text = "location14"
+		'
+		'lblWQLocation12
+		'
+		Me.lblWQLocation12.AutoSize = True
+		Me.lblWQLocation12.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWQLocation12.DSSElementName = "locName"
+		Me.lblWQLocation12.DSSLocation = 0
+		Me.lblWQLocation12.DSSOffset = 0R
+		Me.lblWQLocation12.Location = New System.Drawing.Point(18, 303)
+		Me.lblWQLocation12.Name = "lblWQLocation12"
+		Me.lblWQLocation12.Size = New System.Drawing.Size(56, 13)
+		Me.lblWQLocation12.TabIndex = 173
+		Me.lblWQLocation12.Text = "location12"
+		'
+		'lblWQLocation1
+		'
+		Me.lblWQLocation1.AutoSize = True
+		Me.lblWQLocation1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWQLocation1.DSSElementName = "locName"
+		Me.lblWQLocation1.DSSLocation = 0
+		Me.lblWQLocation1.DSSOffset = 0R
+		Me.lblWQLocation1.Location = New System.Drawing.Point(18, 50)
+		Me.lblWQLocation1.Name = "lblWQLocation1"
+		Me.lblWQLocation1.Size = New System.Drawing.Size(50, 13)
+		Me.lblWQLocation1.TabIndex = 162
+		Me.lblWQLocation1.Text = "location1"
+		'
+		'lblWQLocation11
+		'
+		Me.lblWQLocation11.AutoSize = True
+		Me.lblWQLocation11.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWQLocation11.DSSElementName = "locName"
+		Me.lblWQLocation11.DSSLocation = 0
+		Me.lblWQLocation11.DSSOffset = 0R
+		Me.lblWQLocation11.Location = New System.Drawing.Point(18, 280)
+		Me.lblWQLocation11.Name = "lblWQLocation11"
+		Me.lblWQLocation11.Size = New System.Drawing.Size(56, 13)
+		Me.lblWQLocation11.TabIndex = 172
+		Me.lblWQLocation11.Text = "location11"
+		'
+		'lblWQLocation5
+		'
+		Me.lblWQLocation5.AccessibleDescription = ""
+		Me.lblWQLocation5.AutoSize = True
+		Me.lblWQLocation5.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWQLocation5.DSSElementName = "locName"
+		Me.lblWQLocation5.DSSLocation = 0
+		Me.lblWQLocation5.DSSOffset = 0R
+		Me.lblWQLocation5.Location = New System.Drawing.Point(18, 142)
+		Me.lblWQLocation5.Name = "lblWQLocation5"
+		Me.lblWQLocation5.Size = New System.Drawing.Size(50, 13)
+		Me.lblWQLocation5.TabIndex = 166
+		Me.lblWQLocation5.Text = "location5"
+		'
+		'lblWQLocation6
+		'
+		Me.lblWQLocation6.AutoSize = True
+		Me.lblWQLocation6.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWQLocation6.DSSElementName = "locName"
+		Me.lblWQLocation6.DSSLocation = 0
+		Me.lblWQLocation6.DSSOffset = 0R
+		Me.lblWQLocation6.Location = New System.Drawing.Point(18, 165)
+		Me.lblWQLocation6.Name = "lblWQLocation6"
+		Me.lblWQLocation6.Size = New System.Drawing.Size(50, 13)
+		Me.lblWQLocation6.TabIndex = 167
+		Me.lblWQLocation6.Text = "location6"
+		'
+		'lblWQLocation10
+		'
+		Me.lblWQLocation10.AutoSize = True
+		Me.lblWQLocation10.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWQLocation10.DSSElementName = "locName"
+		Me.lblWQLocation10.DSSLocation = 0
+		Me.lblWQLocation10.DSSOffset = 0R
+		Me.lblWQLocation10.Location = New System.Drawing.Point(18, 257)
+		Me.lblWQLocation10.Name = "lblWQLocation10"
+		Me.lblWQLocation10.Size = New System.Drawing.Size(56, 13)
+		Me.lblWQLocation10.TabIndex = 171
+		Me.lblWQLocation10.Text = "location10"
+		'
+		'lblWQLocation4
+		'
+		Me.lblWQLocation4.AutoSize = True
+		Me.lblWQLocation4.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWQLocation4.DSSElementName = "locName"
+		Me.lblWQLocation4.DSSLocation = 0
+		Me.lblWQLocation4.DSSOffset = 0R
+		Me.lblWQLocation4.Location = New System.Drawing.Point(18, 119)
+		Me.lblWQLocation4.Name = "lblWQLocation4"
+		Me.lblWQLocation4.Size = New System.Drawing.Size(50, 13)
+		Me.lblWQLocation4.TabIndex = 165
+		Me.lblWQLocation4.Text = "location4"
+		'
+		'lblWQLocation13
+		'
+		Me.lblWQLocation13.AutoSize = True
+		Me.lblWQLocation13.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWQLocation13.DSSElementName = "locNAme"
+		Me.lblWQLocation13.DSSLocation = 0
+		Me.lblWQLocation13.DSSOffset = 0R
+		Me.lblWQLocation13.Location = New System.Drawing.Point(18, 326)
+		Me.lblWQLocation13.Name = "lblWQLocation13"
+		Me.lblWQLocation13.Size = New System.Drawing.Size(56, 13)
+		Me.lblWQLocation13.TabIndex = 161
+		Me.lblWQLocation13.Text = "location13"
+		'
+		'lblWQLocation7
+		'
+		Me.lblWQLocation7.AutoSize = True
+		Me.lblWQLocation7.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWQLocation7.DSSElementName = "locName"
+		Me.lblWQLocation7.DSSLocation = 0
+		Me.lblWQLocation7.DSSOffset = 0R
+		Me.lblWQLocation7.Location = New System.Drawing.Point(18, 188)
+		Me.lblWQLocation7.Name = "lblWQLocation7"
+		Me.lblWQLocation7.Size = New System.Drawing.Size(50, 13)
+		Me.lblWQLocation7.TabIndex = 168
+		Me.lblWQLocation7.Text = "location7"
+		'
+		'lblWQLocation9
+		'
+		Me.lblWQLocation9.AutoSize = True
+		Me.lblWQLocation9.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWQLocation9.DSSElementName = "locName"
+		Me.lblWQLocation9.DSSLocation = 0
+		Me.lblWQLocation9.DSSOffset = 0R
+		Me.lblWQLocation9.Location = New System.Drawing.Point(18, 234)
+		Me.lblWQLocation9.Name = "lblWQLocation9"
+		Me.lblWQLocation9.Size = New System.Drawing.Size(50, 13)
+		Me.lblWQLocation9.TabIndex = 170
+		Me.lblWQLocation9.Text = "location9"
+		'
+		'lblWQLocation3
+		'
+		Me.lblWQLocation3.AutoSize = True
+		Me.lblWQLocation3.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWQLocation3.DSSElementName = "locName"
+		Me.lblWQLocation3.DSSLocation = 0
+		Me.lblWQLocation3.DSSOffset = 0R
+		Me.lblWQLocation3.Location = New System.Drawing.Point(18, 96)
+		Me.lblWQLocation3.Name = "lblWQLocation3"
+		Me.lblWQLocation3.Size = New System.Drawing.Size(50, 13)
+		Me.lblWQLocation3.TabIndex = 164
+		Me.lblWQLocation3.Text = "location3"
+		'
+		'lblWQLocation2
+		'
+		Me.lblWQLocation2.AutoSize = True
+		Me.lblWQLocation2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWQLocation2.DSSElementName = "locName"
+		Me.lblWQLocation2.DSSLocation = 0
+		Me.lblWQLocation2.DSSOffset = 0R
+		Me.lblWQLocation2.Location = New System.Drawing.Point(18, 73)
+		Me.lblWQLocation2.Name = "lblWQLocation2"
+		Me.lblWQLocation2.Size = New System.Drawing.Size(50, 13)
+		Me.lblWQLocation2.TabIndex = 163
+		Me.lblWQLocation2.Text = "location2"
+		'
+		'lblWQLocation8
+		'
+		Me.lblWQLocation8.AutoSize = True
+		Me.lblWQLocation8.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblWQLocation8.DSSElementName = "locName"
+		Me.lblWQLocation8.DSSLocation = 0
+		Me.lblWQLocation8.DSSOffset = 0R
+		Me.lblWQLocation8.Location = New System.Drawing.Point(18, 211)
+		Me.lblWQLocation8.Name = "lblWQLocation8"
+		Me.lblWQLocation8.Size = New System.Drawing.Size(50, 13)
+		Me.lblWQLocation8.TabIndex = 169
+		Me.lblWQLocation8.Text = "location8"
+		'
+		'lblUSLocation15
+		'
+		Me.lblUSLocation15.AutoSize = True
+		Me.lblUSLocation15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblUSLocation15.DSSElementName = "locName"
+		Me.lblUSLocation15.DSSLocation = 0
+		Me.lblUSLocation15.DSSOffset = 0R
+		Me.lblUSLocation15.Location = New System.Drawing.Point(18, 379)
+		Me.lblUSLocation15.Name = "lblUSLocation15"
+		Me.lblUSLocation15.Size = New System.Drawing.Size(56, 13)
+		Me.lblUSLocation15.TabIndex = 190
+		Me.lblUSLocation15.Text = "location15"
+		'
+		'lblUSLocation14
+		'
+		Me.lblUSLocation14.AutoSize = True
+		Me.lblUSLocation14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblUSLocation14.DSSElementName = "locName"
+		Me.lblUSLocation14.DSSLocation = 0
+		Me.lblUSLocation14.DSSOffset = 0R
+		Me.lblUSLocation14.Location = New System.Drawing.Point(18, 356)
+		Me.lblUSLocation14.Name = "lblUSLocation14"
+		Me.lblUSLocation14.Size = New System.Drawing.Size(56, 13)
+		Me.lblUSLocation14.TabIndex = 189
+		Me.lblUSLocation14.Text = "location14"
+		'
+		'lblUSLocation12
+		'
+		Me.lblUSLocation12.AutoSize = True
+		Me.lblUSLocation12.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblUSLocation12.DSSElementName = "locName"
+		Me.lblUSLocation12.DSSLocation = 0
+		Me.lblUSLocation12.DSSOffset = 0R
+		Me.lblUSLocation12.Location = New System.Drawing.Point(18, 310)
+		Me.lblUSLocation12.Name = "lblUSLocation12"
+		Me.lblUSLocation12.Size = New System.Drawing.Size(56, 13)
+		Me.lblUSLocation12.TabIndex = 188
+		Me.lblUSLocation12.Text = "location12"
+		'
+		'lblUSLocation1
+		'
+		Me.lblUSLocation1.AutoSize = True
+		Me.lblUSLocation1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblUSLocation1.DSSElementName = "locName"
+		Me.lblUSLocation1.DSSLocation = 0
+		Me.lblUSLocation1.DSSOffset = 0R
+		Me.lblUSLocation1.Location = New System.Drawing.Point(18, 57)
+		Me.lblUSLocation1.Name = "lblUSLocation1"
+		Me.lblUSLocation1.Size = New System.Drawing.Size(50, 13)
+		Me.lblUSLocation1.TabIndex = 177
+		Me.lblUSLocation1.Text = "location1"
+		'
+		'lblUSLocation11
+		'
+		Me.lblUSLocation11.AutoSize = True
+		Me.lblUSLocation11.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblUSLocation11.DSSElementName = "locName"
+		Me.lblUSLocation11.DSSLocation = 0
+		Me.lblUSLocation11.DSSOffset = 0R
+		Me.lblUSLocation11.Location = New System.Drawing.Point(18, 287)
+		Me.lblUSLocation11.Name = "lblUSLocation11"
+		Me.lblUSLocation11.Size = New System.Drawing.Size(56, 13)
+		Me.lblUSLocation11.TabIndex = 187
+		Me.lblUSLocation11.Text = "location11"
+		'
+		'lblUSLocation5
+		'
+		Me.lblUSLocation5.AccessibleDescription = ""
+		Me.lblUSLocation5.AutoSize = True
+		Me.lblUSLocation5.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblUSLocation5.DSSElementName = "locName"
+		Me.lblUSLocation5.DSSLocation = 0
+		Me.lblUSLocation5.DSSOffset = 0R
+		Me.lblUSLocation5.Location = New System.Drawing.Point(18, 149)
+		Me.lblUSLocation5.Name = "lblUSLocation5"
+		Me.lblUSLocation5.Size = New System.Drawing.Size(50, 13)
+		Me.lblUSLocation5.TabIndex = 181
+		Me.lblUSLocation5.Text = "location5"
+		'
+		'lblUSLocation6
+		'
+		Me.lblUSLocation6.AutoSize = True
+		Me.lblUSLocation6.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblUSLocation6.DSSElementName = "locName"
+		Me.lblUSLocation6.DSSLocation = 0
+		Me.lblUSLocation6.DSSOffset = 0R
+		Me.lblUSLocation6.Location = New System.Drawing.Point(18, 172)
+		Me.lblUSLocation6.Name = "lblUSLocation6"
+		Me.lblUSLocation6.Size = New System.Drawing.Size(50, 13)
+		Me.lblUSLocation6.TabIndex = 182
+		Me.lblUSLocation6.Text = "location6"
+		'
+		'lblUSLocation10
+		'
+		Me.lblUSLocation10.AutoSize = True
+		Me.lblUSLocation10.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblUSLocation10.DSSElementName = "locName"
+		Me.lblUSLocation10.DSSLocation = 0
+		Me.lblUSLocation10.DSSOffset = 0R
+		Me.lblUSLocation10.Location = New System.Drawing.Point(18, 264)
+		Me.lblUSLocation10.Name = "lblUSLocation10"
+		Me.lblUSLocation10.Size = New System.Drawing.Size(56, 13)
+		Me.lblUSLocation10.TabIndex = 186
+		Me.lblUSLocation10.Text = "location10"
+		'
+		'lblUSLocation4
+		'
+		Me.lblUSLocation4.AutoSize = True
+		Me.lblUSLocation4.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblUSLocation4.DSSElementName = "locName"
+		Me.lblUSLocation4.DSSLocation = 0
+		Me.lblUSLocation4.DSSOffset = 0R
+		Me.lblUSLocation4.Location = New System.Drawing.Point(18, 126)
+		Me.lblUSLocation4.Name = "lblUSLocation4"
+		Me.lblUSLocation4.Size = New System.Drawing.Size(50, 13)
+		Me.lblUSLocation4.TabIndex = 180
+		Me.lblUSLocation4.Text = "location4"
+		'
+		'lblUSLocation13
+		'
+		Me.lblUSLocation13.AutoSize = True
+		Me.lblUSLocation13.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblUSLocation13.DSSElementName = "locNAme"
+		Me.lblUSLocation13.DSSLocation = 0
+		Me.lblUSLocation13.DSSOffset = 0R
+		Me.lblUSLocation13.Location = New System.Drawing.Point(18, 333)
+		Me.lblUSLocation13.Name = "lblUSLocation13"
+		Me.lblUSLocation13.Size = New System.Drawing.Size(56, 13)
+		Me.lblUSLocation13.TabIndex = 176
+		Me.lblUSLocation13.Text = "location13"
+		'
+		'lblUSLocation7
+		'
+		Me.lblUSLocation7.AutoSize = True
+		Me.lblUSLocation7.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblUSLocation7.DSSElementName = "locName"
+		Me.lblUSLocation7.DSSLocation = 0
+		Me.lblUSLocation7.DSSOffset = 0R
+		Me.lblUSLocation7.Location = New System.Drawing.Point(18, 195)
+		Me.lblUSLocation7.Name = "lblUSLocation7"
+		Me.lblUSLocation7.Size = New System.Drawing.Size(50, 13)
+		Me.lblUSLocation7.TabIndex = 183
+		Me.lblUSLocation7.Text = "location7"
+		'
+		'lblUSLocation9
+		'
+		Me.lblUSLocation9.AutoSize = True
+		Me.lblUSLocation9.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblUSLocation9.DSSElementName = "locName"
+		Me.lblUSLocation9.DSSLocation = 0
+		Me.lblUSLocation9.DSSOffset = 0R
+		Me.lblUSLocation9.Location = New System.Drawing.Point(18, 241)
+		Me.lblUSLocation9.Name = "lblUSLocation9"
+		Me.lblUSLocation9.Size = New System.Drawing.Size(50, 13)
+		Me.lblUSLocation9.TabIndex = 185
+		Me.lblUSLocation9.Text = "location9"
+		'
+		'lblUSLocation3
+		'
+		Me.lblUSLocation3.AutoSize = True
+		Me.lblUSLocation3.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblUSLocation3.DSSElementName = "locName"
+		Me.lblUSLocation3.DSSLocation = 0
+		Me.lblUSLocation3.DSSOffset = 0R
+		Me.lblUSLocation3.Location = New System.Drawing.Point(18, 103)
+		Me.lblUSLocation3.Name = "lblUSLocation3"
+		Me.lblUSLocation3.Size = New System.Drawing.Size(50, 13)
+		Me.lblUSLocation3.TabIndex = 179
+		Me.lblUSLocation3.Text = "location3"
+		'
+		'lblUSLocation2
+		'
+		Me.lblUSLocation2.AutoSize = True
+		Me.lblUSLocation2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblUSLocation2.DSSElementName = "locName"
+		Me.lblUSLocation2.DSSLocation = 0
+		Me.lblUSLocation2.DSSOffset = 0R
+		Me.lblUSLocation2.Location = New System.Drawing.Point(18, 80)
+		Me.lblUSLocation2.Name = "lblUSLocation2"
+		Me.lblUSLocation2.Size = New System.Drawing.Size(50, 13)
+		Me.lblUSLocation2.TabIndex = 178
+		Me.lblUSLocation2.Text = "location2"
+		'
+		'lblUSLocation8
+		'
+		Me.lblUSLocation8.AutoSize = True
+		Me.lblUSLocation8.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblUSLocation8.DSSElementName = "locName"
+		Me.lblUSLocation8.DSSLocation = 0
+		Me.lblUSLocation8.DSSOffset = 0R
+		Me.lblUSLocation8.Location = New System.Drawing.Point(18, 218)
+		Me.lblUSLocation8.Name = "lblUSLocation8"
+		Me.lblUSLocation8.Size = New System.Drawing.Size(50, 13)
+		Me.lblUSLocation8.TabIndex = 184
+		Me.lblUSLocation8.Text = "location8"
+		'
+		'lblIMLocation15
+		'
+		Me.lblIMLocation15.AutoSize = True
+		Me.lblIMLocation15.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIMLocation15.DSSElementName = "locName"
+		Me.lblIMLocation15.DSSLocation = 0
+		Me.lblIMLocation15.DSSOffset = 0R
+		Me.lblIMLocation15.Location = New System.Drawing.Point(10, 384)
+		Me.lblIMLocation15.Name = "lblIMLocation15"
+		Me.lblIMLocation15.Size = New System.Drawing.Size(56, 13)
+		Me.lblIMLocation15.TabIndex = 221
+		Me.lblIMLocation15.Text = "location15"
+		'
+		'lblIMLocation14
+		'
+		Me.lblIMLocation14.AutoSize = True
+		Me.lblIMLocation14.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIMLocation14.DSSElementName = "locName"
+		Me.lblIMLocation14.DSSLocation = 0
+		Me.lblIMLocation14.DSSOffset = 0R
+		Me.lblIMLocation14.Location = New System.Drawing.Point(10, 361)
+		Me.lblIMLocation14.Name = "lblIMLocation14"
+		Me.lblIMLocation14.Size = New System.Drawing.Size(56, 13)
+		Me.lblIMLocation14.TabIndex = 220
+		Me.lblIMLocation14.Text = "location14"
+		'
+		'lblIMLocation12
+		'
+		Me.lblIMLocation12.AutoSize = True
+		Me.lblIMLocation12.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIMLocation12.DSSElementName = "locName"
+		Me.lblIMLocation12.DSSLocation = 0
+		Me.lblIMLocation12.DSSOffset = 0R
+		Me.lblIMLocation12.Location = New System.Drawing.Point(10, 315)
+		Me.lblIMLocation12.Name = "lblIMLocation12"
+		Me.lblIMLocation12.Size = New System.Drawing.Size(56, 13)
+		Me.lblIMLocation12.TabIndex = 219
+		Me.lblIMLocation12.Text = "location12"
+		'
+		'lblIMLocation1
+		'
+		Me.lblIMLocation1.AutoSize = True
+		Me.lblIMLocation1.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIMLocation1.DSSElementName = "locName"
+		Me.lblIMLocation1.DSSLocation = 0
+		Me.lblIMLocation1.DSSOffset = 0R
+		Me.lblIMLocation1.Location = New System.Drawing.Point(10, 62)
+		Me.lblIMLocation1.Name = "lblIMLocation1"
+		Me.lblIMLocation1.Size = New System.Drawing.Size(50, 13)
+		Me.lblIMLocation1.TabIndex = 208
+		Me.lblIMLocation1.Text = "location1"
+		'
+		'lblIMLocation11
+		'
+		Me.lblIMLocation11.AutoSize = True
+		Me.lblIMLocation11.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIMLocation11.DSSElementName = "locName"
+		Me.lblIMLocation11.DSSLocation = 0
+		Me.lblIMLocation11.DSSOffset = 0R
+		Me.lblIMLocation11.Location = New System.Drawing.Point(10, 292)
+		Me.lblIMLocation11.Name = "lblIMLocation11"
+		Me.lblIMLocation11.Size = New System.Drawing.Size(56, 13)
+		Me.lblIMLocation11.TabIndex = 218
+		Me.lblIMLocation11.Text = "location11"
+		'
+		'lblIMLocation5
+		'
+		Me.lblIMLocation5.AccessibleDescription = ""
+		Me.lblIMLocation5.AutoSize = True
+		Me.lblIMLocation5.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIMLocation5.DSSElementName = "locName"
+		Me.lblIMLocation5.DSSLocation = 0
+		Me.lblIMLocation5.DSSOffset = 0R
+		Me.lblIMLocation5.Location = New System.Drawing.Point(10, 154)
+		Me.lblIMLocation5.Name = "lblIMLocation5"
+		Me.lblIMLocation5.Size = New System.Drawing.Size(50, 13)
+		Me.lblIMLocation5.TabIndex = 212
+		Me.lblIMLocation5.Text = "location5"
+		'
+		'lblIMLocation6
+		'
+		Me.lblIMLocation6.AutoSize = True
+		Me.lblIMLocation6.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIMLocation6.DSSElementName = "locName"
+		Me.lblIMLocation6.DSSLocation = 0
+		Me.lblIMLocation6.DSSOffset = 0R
+		Me.lblIMLocation6.Location = New System.Drawing.Point(10, 177)
+		Me.lblIMLocation6.Name = "lblIMLocation6"
+		Me.lblIMLocation6.Size = New System.Drawing.Size(50, 13)
+		Me.lblIMLocation6.TabIndex = 213
+		Me.lblIMLocation6.Text = "location6"
+		'
+		'lblIMLocation10
+		'
+		Me.lblIMLocation10.AutoSize = True
+		Me.lblIMLocation10.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIMLocation10.DSSElementName = "locName"
+		Me.lblIMLocation10.DSSLocation = 0
+		Me.lblIMLocation10.DSSOffset = 0R
+		Me.lblIMLocation10.Location = New System.Drawing.Point(10, 269)
+		Me.lblIMLocation10.Name = "lblIMLocation10"
+		Me.lblIMLocation10.Size = New System.Drawing.Size(56, 13)
+		Me.lblIMLocation10.TabIndex = 217
+		Me.lblIMLocation10.Text = "location10"
+		'
+		'lblIMLocation4
+		'
+		Me.lblIMLocation4.AutoSize = True
+		Me.lblIMLocation4.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIMLocation4.DSSElementName = "locName"
+		Me.lblIMLocation4.DSSLocation = 0
+		Me.lblIMLocation4.DSSOffset = 0R
+		Me.lblIMLocation4.Location = New System.Drawing.Point(10, 131)
+		Me.lblIMLocation4.Name = "lblIMLocation4"
+		Me.lblIMLocation4.Size = New System.Drawing.Size(50, 13)
+		Me.lblIMLocation4.TabIndex = 211
+		Me.lblIMLocation4.Text = "location4"
+		'
+		'lblIMLocation13
+		'
+		Me.lblIMLocation13.AutoSize = True
+		Me.lblIMLocation13.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIMLocation13.DSSElementName = "locNAme"
+		Me.lblIMLocation13.DSSLocation = 0
+		Me.lblIMLocation13.DSSOffset = 0R
+		Me.lblIMLocation13.Location = New System.Drawing.Point(10, 338)
+		Me.lblIMLocation13.Name = "lblIMLocation13"
+		Me.lblIMLocation13.Size = New System.Drawing.Size(56, 13)
+		Me.lblIMLocation13.TabIndex = 207
+		Me.lblIMLocation13.Text = "location13"
+		'
+		'lblIMLocation7
+		'
+		Me.lblIMLocation7.AutoSize = True
+		Me.lblIMLocation7.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIMLocation7.DSSElementName = "locName"
+		Me.lblIMLocation7.DSSLocation = 0
+		Me.lblIMLocation7.DSSOffset = 0R
+		Me.lblIMLocation7.Location = New System.Drawing.Point(10, 200)
+		Me.lblIMLocation7.Name = "lblIMLocation7"
+		Me.lblIMLocation7.Size = New System.Drawing.Size(50, 13)
+		Me.lblIMLocation7.TabIndex = 214
+		Me.lblIMLocation7.Text = "location7"
+		'
+		'lblIMLocation9
+		'
+		Me.lblIMLocation9.AutoSize = True
+		Me.lblIMLocation9.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIMLocation9.DSSElementName = "locName"
+		Me.lblIMLocation9.DSSLocation = 0
+		Me.lblIMLocation9.DSSOffset = 0R
+		Me.lblIMLocation9.Location = New System.Drawing.Point(10, 246)
+		Me.lblIMLocation9.Name = "lblIMLocation9"
+		Me.lblIMLocation9.Size = New System.Drawing.Size(50, 13)
+		Me.lblIMLocation9.TabIndex = 216
+		Me.lblIMLocation9.Text = "location9"
+		'
+		'lblIMLocation3
+		'
+		Me.lblIMLocation3.AutoSize = True
+		Me.lblIMLocation3.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIMLocation3.DSSElementName = "locName"
+		Me.lblIMLocation3.DSSLocation = 0
+		Me.lblIMLocation3.DSSOffset = 0R
+		Me.lblIMLocation3.Location = New System.Drawing.Point(10, 108)
+		Me.lblIMLocation3.Name = "lblIMLocation3"
+		Me.lblIMLocation3.Size = New System.Drawing.Size(50, 13)
+		Me.lblIMLocation3.TabIndex = 210
+		Me.lblIMLocation3.Text = "location3"
+		'
+		'lblIMLocation2
+		'
+		Me.lblIMLocation2.AutoSize = True
+		Me.lblIMLocation2.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIMLocation2.DSSElementName = "locName"
+		Me.lblIMLocation2.DSSLocation = 0
+		Me.lblIMLocation2.DSSOffset = 0R
+		Me.lblIMLocation2.Location = New System.Drawing.Point(10, 85)
+		Me.lblIMLocation2.Name = "lblIMLocation2"
+		Me.lblIMLocation2.Size = New System.Drawing.Size(50, 13)
+		Me.lblIMLocation2.TabIndex = 209
+		Me.lblIMLocation2.Text = "location2"
+		'
+		'lblIMLocation8
+		'
+		Me.lblIMLocation8.AutoSize = True
+		Me.lblIMLocation8.DSSElementColor = System.Windows.Media.Color.FromArgb(CType(0, Byte), CType(0, Byte), CType(0, Byte), CType(0, Byte))
+		Me.lblIMLocation8.DSSElementName = "locName"
+		Me.lblIMLocation8.DSSLocation = 0
+		Me.lblIMLocation8.DSSOffset = 0R
+		Me.lblIMLocation8.Location = New System.Drawing.Point(10, 223)
+		Me.lblIMLocation8.Name = "lblIMLocation8"
+		Me.lblIMLocation8.Size = New System.Drawing.Size(50, 13)
+		Me.lblIMLocation8.TabIndex = 215
+		Me.lblIMLocation8.Text = "location8"
+		'
 		'frmNegotiation
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -7431,6 +8002,7 @@ Partial Class frmNegotiation
 		CType(Me.SplitContainer, System.ComponentModel.ISupportInitialize).EndInit
 		Me.SplitContainer.ResumeLayout(False)
 		Me.grbWaterCosts.ResumeLayout(False)
+		Me.grbWaterCosts.PerformLayout
 		Me.pnlGro.ResumeLayout(False)
 		CType(Me.nudGro14, System.ComponentModel.ISupportInitialize).EndInit
 		CType(Me.nudGro15, System.ComponentModel.ISupportInitialize).EndInit
@@ -7467,6 +8039,7 @@ Partial Class frmNegotiation
 		Me.tcoOutput.ResumeLayout(False)
 		Me.tpaUses.ResumeLayout(False)
 		Me.gboOutputUses.ResumeLayout(False)
+		Me.gboOutputUses.PerformLayout
 		Me.pnlOutAgrSmall.ResumeLayout(False)
 		Me.pnlOutIndLarge.ResumeLayout(False)
 		Me.pnlOutLanSmall.ResumeLayout(False)
@@ -7474,6 +8047,7 @@ Partial Class frmNegotiation
 		Me.pnlOutAgrLarge.ResumeLayout(False)
 		Me.tpaImpacts.ResumeLayout(False)
 		Me.gboOutputImpacts.ResumeLayout(False)
+		Me.gboOutputImpacts.PerformLayout
 		Me.pnlOutSocSmall.ResumeLayout(False)
 		Me.pnlOutEnvLarge.ResumeLayout(False)
 		Me.pnlOutEnvSmall.ResumeLayout(False)
@@ -7487,6 +8061,7 @@ Partial Class frmNegotiation
 		Me.tpaEfficencies.ResumeLayout(False)
 		CType(Me.pboGraphEfficiencies, System.ComponentModel.ISupportInitialize).EndInit
 		Me.grbPopulation.ResumeLayout(False)
+		Me.grbPopulation.PerformLayout
 		Me.pnlPop20_2.ResumeLayout(False)
 		CType(Me.nudPop20_14_2, System.ComponentModel.ISupportInitialize).EndInit
 		CType(Me.nudPop20_15_2, System.ComponentModel.ISupportInitialize).EndInit
@@ -7520,6 +8095,7 @@ Partial Class frmNegotiation
 		CType(Me.nudPop20_5_1, System.ComponentModel.ISupportInitialize).EndInit
 		CType(Me.nudPop20_4_1, System.ComponentModel.ISupportInitialize).EndInit
 		Me.grbIndustrialDistricts.ResumeLayout(False)
+		Me.grbIndustrialDistricts.PerformLayout
 		Me.pnlInddispln.ResumeLayout(False)
 		CType(Me.nudInddispln14_2, System.ComponentModel.ISupportInitialize).EndInit
 		CType(Me.nudInddispln15_2, System.ComponentModel.ISupportInitialize).EndInit
@@ -7553,6 +8129,7 @@ Partial Class frmNegotiation
 		CType(Me.nudInddiscur5_2, System.ComponentModel.ISupportInitialize).EndInit
 		CType(Me.nudInddiscur4_2, System.ComponentModel.ISupportInitialize).EndInit
 		Me.grbWaterQuality.ResumeLayout(False)
+		Me.grbWaterQuality.PerformLayout
 		Me.pnlTSS.ResumeLayout(False)
 		CType(Me.nudTSS14, System.ComponentModel.ISupportInitialize).EndInit
 		CType(Me.nudTSS15, System.ComponentModel.ISupportInitialize).EndInit
@@ -7722,17 +8299,6 @@ Partial Class frmNegotiation
 	Friend WithEvents DataEstrazioneDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
 	Friend WithEvents dsParameters As DSParameters
 	Friend WithEvents TAParameters As DSDSS.DSParametersTableAdapters.parametersTableAdapter
-	Friend WithEvents Label51 As System.Windows.Forms.Label
-	Friend WithEvents Label50 As System.Windows.Forms.Label
-	Friend WithEvents Label47 As System.Windows.Forms.Label
-	Friend WithEvents Label54 As System.Windows.Forms.Label
-	Friend WithEvents Label53 As System.Windows.Forms.Label
-	Friend WithEvents Label52 As System.Windows.Forms.Label
-	Friend WithEvents Label63 As System.Windows.Forms.Label
-	Friend WithEvents Label55 As System.Windows.Forms.Label
-	Friend WithEvents Label62 As System.Windows.Forms.Label
-	Friend WithEvents Label57 As System.Windows.Forms.Label
-	Friend WithEvents Label56 As System.Windows.Forms.Label
 	Friend WithEvents nudDes7 As DSSNumericUpDown
 	Friend WithEvents nudGro13 As DSSNumericUpDown
 	Friend WithEvents nudDes8 As DSSNumericUpDown
@@ -7760,8 +8326,6 @@ Partial Class frmNegotiation
 	Friend WithEvents Label120 As System.Windows.Forms.Label
 	Friend WithEvents nudDes11 As DSSNumericUpDown
 	Friend WithEvents nudDes10 As DSSNumericUpDown
-	Friend WithEvents Label130 As System.Windows.Forms.Label
-	Friend WithEvents Label128 As System.Windows.Forms.Label
 	Friend WithEvents btnLoadData As System.Windows.Forms.Button
 	Friend WithEvents SqlInsertCommand As System.Data.SqlClient.SqlCommand
 	Friend WithEvents SqlConnection As System.Data.SqlClient.SqlConnection
@@ -7812,20 +8376,7 @@ Partial Class frmNegotiation
 	Friend WithEvents nudTDS3 As DSDSS.DSSNumericUpDown
 	Friend WithEvents nudBOD2 As DSDSS.DSSNumericUpDown
 	Friend WithEvents nudBOD3 As DSDSS.DSSNumericUpDown
-	Friend WithEvents Label3 As System.Windows.Forms.Label
-	Friend WithEvents Label4 As System.Windows.Forms.Label
-	Friend WithEvents Label5 As System.Windows.Forms.Label
-	Friend WithEvents Label6 As System.Windows.Forms.Label
-	Friend WithEvents Label7 As System.Windows.Forms.Label
-	Friend WithEvents Label8 As System.Windows.Forms.Label
-	Friend WithEvents Label9 As System.Windows.Forms.Label
-	Friend WithEvents Label11 As System.Windows.Forms.Label
-	Friend WithEvents Label14 As System.Windows.Forms.Label
-	Friend WithEvents Label15 As System.Windows.Forms.Label
-	Friend WithEvents Label16 As System.Windows.Forms.Label
-	Friend WithEvents Label17 As System.Windows.Forms.Label
 	Friend WithEvents Label21 As System.Windows.Forms.Label
-	Friend WithEvents Label18 As System.Windows.Forms.Label
 	Friend WithEvents Label19 As System.Windows.Forms.Label
 	Friend WithEvents Label20 As System.Windows.Forms.Label
 	Friend WithEvents nudPop20_7_2 As DSDSS.DSSNumericUpDown
@@ -7854,19 +8405,6 @@ Partial Class frmNegotiation
 	Friend WithEvents nudPop20_3_2 As DSDSS.DSSNumericUpDown
 	Friend WithEvents nudPop20_2_1 As DSDSS.DSSNumericUpDown
 	Friend WithEvents nudPop20_3_1 As DSDSS.DSSNumericUpDown
-	Friend WithEvents Label1 As System.Windows.Forms.Label
-	Friend WithEvents Label2 As System.Windows.Forms.Label
-	Friend WithEvents Label22 As System.Windows.Forms.Label
-	Friend WithEvents Label32 As System.Windows.Forms.Label
-	Friend WithEvents Label37 As System.Windows.Forms.Label
-	Friend WithEvents Label44 As System.Windows.Forms.Label
-	Friend WithEvents Label45 As System.Windows.Forms.Label
-	Friend WithEvents Label46 As System.Windows.Forms.Label
-	Friend WithEvents Label48 As System.Windows.Forms.Label
-	Friend WithEvents Label49 As System.Windows.Forms.Label
-	Friend WithEvents Label58 As System.Windows.Forms.Label
-	Friend WithEvents Label59 As System.Windows.Forms.Label
-	Friend WithEvents Label65 As System.Windows.Forms.Label
 	Friend WithEvents Label66 As System.Windows.Forms.Label
 	Friend WithEvents Label69 As System.Windows.Forms.Label
 	Friend WithEvents Label67 As System.Windows.Forms.Label
@@ -7896,19 +8434,6 @@ Partial Class frmNegotiation
 	Friend WithEvents nudInddispln3_2 As DSDSS.DSSNumericUpDown
 	Friend WithEvents nudInddiscur2_2 As DSDSS.DSSNumericUpDown
 	Friend WithEvents nudInddiscur3_2 As DSDSS.DSSNumericUpDown
-	Friend WithEvents Label38 As System.Windows.Forms.Label
-	Friend WithEvents Label39 As System.Windows.Forms.Label
-	Friend WithEvents Label40 As System.Windows.Forms.Label
-	Friend WithEvents Label41 As System.Windows.Forms.Label
-	Friend WithEvents Label42 As System.Windows.Forms.Label
-	Friend WithEvents Label43 As System.Windows.Forms.Label
-	Friend WithEvents Label71 As System.Windows.Forms.Label
-	Friend WithEvents Label72 As System.Windows.Forms.Label
-	Friend WithEvents Label73 As System.Windows.Forms.Label
-	Friend WithEvents Label74 As System.Windows.Forms.Label
-	Friend WithEvents Label75 As System.Windows.Forms.Label
-	Friend WithEvents Label76 As System.Windows.Forms.Label
-	Friend WithEvents Label77 As System.Windows.Forms.Label
 	Friend WithEvents Label86 As System.Windows.Forms.Label
 	Friend WithEvents Label88 As System.Windows.Forms.Label
 	Friend WithEvents lblTDS As DSSLabel
@@ -7965,32 +8490,6 @@ Partial Class frmNegotiation
 	Friend WithEvents tpaEfficencies As System.Windows.Forms.TabPage
 	Friend WithEvents Label135 As System.Windows.Forms.Label
 	Friend WithEvents Label133 As System.Windows.Forms.Label
-	Friend WithEvents Label31 As System.Windows.Forms.Label
-	Friend WithEvents Label33 As System.Windows.Forms.Label
-	Friend WithEvents Label35 As System.Windows.Forms.Label
-	Friend WithEvents Label36 As System.Windows.Forms.Label
-	Friend WithEvents Label60 As System.Windows.Forms.Label
-	Friend WithEvents Label61 As System.Windows.Forms.Label
-	Friend WithEvents Label79 As System.Windows.Forms.Label
-	Friend WithEvents Label80 As System.Windows.Forms.Label
-	Friend WithEvents Label81 As System.Windows.Forms.Label
-	Friend WithEvents Label82 As System.Windows.Forms.Label
-	Friend WithEvents Label83 As System.Windows.Forms.Label
-	Friend WithEvents Label84 As System.Windows.Forms.Label
-	Friend WithEvents Label85 As System.Windows.Forms.Label
-	Friend WithEvents Label103 As System.Windows.Forms.Label
-	Friend WithEvents Label104 As System.Windows.Forms.Label
-	Friend WithEvents Label105 As System.Windows.Forms.Label
-	Friend WithEvents Label106 As System.Windows.Forms.Label
-	Friend WithEvents Label107 As System.Windows.Forms.Label
-	Friend WithEvents Label108 As System.Windows.Forms.Label
-	Friend WithEvents Label109 As System.Windows.Forms.Label
-	Friend WithEvents Label110 As System.Windows.Forms.Label
-	Friend WithEvents Label111 As System.Windows.Forms.Label
-	Friend WithEvents Label112 As System.Windows.Forms.Label
-	Friend WithEvents Label113 As System.Windows.Forms.Label
-	Friend WithEvents Label114 As System.Windows.Forms.Label
-	Friend WithEvents Label115 As System.Windows.Forms.Label
 	Friend WithEvents lblLan13_1 As DSSLabel
 	Friend WithEvents lblAgr13_1 As DSSLabel
 	Friend WithEvents lblLan10_1 As DSSLabel
@@ -8226,4 +8725,94 @@ Partial Class frmNegotiation
 	Friend WithEvents nudGro15 As DSSNumericUpDown
 	Friend WithEvents nudDes14 As DSSNumericUpDown
 	Friend WithEvents nudDes15 As DSSNumericUpDown
+	Friend WithEvents lblWCLocation13 As DSSLabel
+	Friend WithEvents lblWCLocation1 As DSSLabel
+	Friend WithEvents lblWCLocation15 As DSSLabel
+	Friend WithEvents lblWCLocation14 As DSSLabel
+	Friend WithEvents lblWCLocation12 As DSSLabel
+	Friend WithEvents lblWCLocation11 As DSSLabel
+	Friend WithEvents lblWCLocation10 As DSSLabel
+	Friend WithEvents lblWCLocation9 As DSSLabel
+	Friend WithEvents lblWCLocation8 As DSSLabel
+	Friend WithEvents lblWCLocation7 As DSSLabel
+	Friend WithEvents lblWCLocation6 As DSSLabel
+	Friend WithEvents lblWCLocation5 As DSSLabel
+	Friend WithEvents lblWCLocation4 As DSSLabel
+	Friend WithEvents lblWCLocation3 As DSSLabel
+	Friend WithEvents lblWCLocation2 As DSSLabel
+	Friend WithEvents lblTPLocation15 As DSSLabel
+	Friend WithEvents lblTPLocation14 As DSSLabel
+	Friend WithEvents lblTPLocation12 As DSSLabel
+	Friend WithEvents lblTPLocation11 As DSSLabel
+	Friend WithEvents lblTPLocation1 As DSSLabel
+	Friend WithEvents lblTPLocation10 As DSSLabel
+	Friend WithEvents lblTPLocation13 As DSSLabel
+	Friend WithEvents lblTPLocation9 As DSSLabel
+	Friend WithEvents lblTPLocation2 As DSSLabel
+	Friend WithEvents lblTPLocation8 As DSSLabel
+	Friend WithEvents lblTPLocation3 As DSSLabel
+	Friend WithEvents lblTPLocation7 As DSSLabel
+	Friend WithEvents lblTPLocation4 As DSSLabel
+	Friend WithEvents lblTPLocation6 As DSSLabel
+	Friend WithEvents lblTPLocation5 As DSSLabel
+	Friend WithEvents lblIDLocation15 As DSSLabel
+	Friend WithEvents lblIDLocation14 As DSSLabel
+	Friend WithEvents lblIDLocation12 As DSSLabel
+	Friend WithEvents lblIDLocation1 As DSSLabel
+	Friend WithEvents lblIDLocation11 As DSSLabel
+	Friend WithEvents lblIDLocation5 As DSSLabel
+	Friend WithEvents lblIDLocation6 As DSSLabel
+	Friend WithEvents lblIDLocation10 As DSSLabel
+	Friend WithEvents lblIDLocation4 As DSSLabel
+	Friend WithEvents lblIDLocation13 As DSSLabel
+	Friend WithEvents lblIDLocation7 As DSSLabel
+	Friend WithEvents lblIDLocation9 As DSSLabel
+	Friend WithEvents lblIDLocation3 As DSSLabel
+	Friend WithEvents lblIDLocation2 As DSSLabel
+	Friend WithEvents lblIDLocation8 As DSSLabel
+	Friend WithEvents lblWQLocation15 As DSSLabel
+	Friend WithEvents lblWQLocation14 As DSSLabel
+	Friend WithEvents lblWQLocation12 As DSSLabel
+	Friend WithEvents lblWQLocation1 As DSSLabel
+	Friend WithEvents lblWQLocation11 As DSSLabel
+	Friend WithEvents lblWQLocation5 As DSSLabel
+	Friend WithEvents lblWQLocation6 As DSSLabel
+	Friend WithEvents lblWQLocation10 As DSSLabel
+	Friend WithEvents lblWQLocation4 As DSSLabel
+	Friend WithEvents lblWQLocation13 As DSSLabel
+	Friend WithEvents lblWQLocation7 As DSSLabel
+	Friend WithEvents lblWQLocation9 As DSSLabel
+	Friend WithEvents lblWQLocation3 As DSSLabel
+	Friend WithEvents lblWQLocation2 As DSSLabel
+	Friend WithEvents lblWQLocation8 As DSSLabel
+	Friend WithEvents lblUSLocation15 As DSSLabel
+	Friend WithEvents lblUSLocation14 As DSSLabel
+	Friend WithEvents lblUSLocation12 As DSSLabel
+	Friend WithEvents lblUSLocation1 As DSSLabel
+	Friend WithEvents lblUSLocation11 As DSSLabel
+	Friend WithEvents lblUSLocation5 As DSSLabel
+	Friend WithEvents lblUSLocation6 As DSSLabel
+	Friend WithEvents lblUSLocation10 As DSSLabel
+	Friend WithEvents lblUSLocation4 As DSSLabel
+	Friend WithEvents lblUSLocation13 As DSSLabel
+	Friend WithEvents lblUSLocation7 As DSSLabel
+	Friend WithEvents lblUSLocation9 As DSSLabel
+	Friend WithEvents lblUSLocation3 As DSSLabel
+	Friend WithEvents lblUSLocation2 As DSSLabel
+	Friend WithEvents lblUSLocation8 As DSSLabel
+	Friend WithEvents lblIMLocation15 As DSSLabel
+	Friend WithEvents lblIMLocation14 As DSSLabel
+	Friend WithEvents lblIMLocation12 As DSSLabel
+	Friend WithEvents lblIMLocation1 As DSSLabel
+	Friend WithEvents lblIMLocation11 As DSSLabel
+	Friend WithEvents lblIMLocation5 As DSSLabel
+	Friend WithEvents lblIMLocation6 As DSSLabel
+	Friend WithEvents lblIMLocation10 As DSSLabel
+	Friend WithEvents lblIMLocation4 As DSSLabel
+	Friend WithEvents lblIMLocation13 As DSSLabel
+	Friend WithEvents lblIMLocation7 As DSSLabel
+	Friend WithEvents lblIMLocation9 As DSSLabel
+	Friend WithEvents lblIMLocation3 As DSSLabel
+	Friend WithEvents lblIMLocation2 As DSSLabel
+	Friend WithEvents lblIMLocation8 As DSSLabel
 End Class
