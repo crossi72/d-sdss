@@ -181,8 +181,8 @@ SELECT datID, indcc1_1, indcc2_1, indcc3_1, indcc4_1, indcc5_1, indcc6_1, indcc7
                          inddispln1_2, inddispln2_2, inddispln3_2, inddispln4_2, inddispln5_2, inddispln6_2, inddispln7_2, inddispln8_2, inddispln9_2, inddispln10_2, inddispln11_2, 
                          inddispln12_2, inddispln13_2, inddispln14_2, inddispln15_2, tpbx, tpsx, tpmz, envw, ecow, socw, totpla, bod1, bod2, bod3, bod4, bod5, bod6, bod7, bod8, bod9, 
                          bod10, bod11, bod12, bod13, bod14, bod15, tds1, tds2, tds3, tds4, tds5, tds6, tds7, tds8, tds9, tds10, tds11, tds12, tds13, tds14, tds15, tss1, tss2, tss3, tss4, tss5, 
-                         tss6, tss7, tss8, tss9, tss10, tss11, tss12, tss13, tss14, tss15, agruf, agrufro, induf, indufro, lanuf, lanufro, gwsp, sbqi, ssqi, smqi, DataCreazione, UtenteCreazione, 
-                         DataAggiornamento, UtenteAggiornamento, Annullato, DataEstrazione
+                         tss6, tss7, tss8, tss9, tss10, tss11, tss12, tss13, tss14, tss15, agruf, agrufro, induf, indufro, lanuf, lanufro, gwsp, sbqi, ssqi, smqi, salt, agrw, indw, lanw, 
+                         DataCreazione, UtenteCreazione, DataAggiornamento, UtenteAggiornamento, Annullato, DataEstrazione
 FROM            data
 ORDER BY datID DESC</value>
   </data>

@@ -33,13 +33,15 @@ Public Class frmNegotiation
 	'industrial districts
 	Private _inddis(14, 1), _inddiscur(14, 1), _inddispln(14, 1) As Integer
 	'misc
-	Private _gwsp, _agruf, _agrufro, _induf, _indufro, _lanuf, _lanufro, _tpbx, _tpsx, _tpmz, _envw, _ecow, _socw, _totpla, _sbqi, _ssqi, _smqi As Double
+	Private _gwsp, _agruf, _agrufro, _induf, _indufro, _lanuf, _lanufro, _tpbx, _tpsx, _tpmz, _envw, _ecow, _socw, _totpla, _sbqi, _ssqi, _smqi, _agrw, _indw, _lanw As Double
 	'output
 	Private _outind(14), _outagr(14, 1), _outlan(14, 1), _outeco(14, 1), _outsoc(14, 1), _outenv(14, 1) As Double
 
 	Private _outecomean1, _outecomean2, _outecogini1, _outecogini2, _outsocmean1, _outsocmean2, _outsocgini1, _outsocgini2, _outenvmean1, _outenvmean2, _outenvgini1, _outenvgini2 As Double
 
 	Private _usedLocations, _usedDimensions As Integer
+
+	Private _salt As Boolean
 
 #End Region
 
@@ -485,6 +487,10 @@ Public Class frmNegotiation
 			Me._sbqi = 0
 			Me._ssqi = 0
 			Me._smqi = 0
+			Me._agrw = 0
+			Me._indw = 0
+			Me._lanw = 0
+			Me._salt = True
 
 			Me.WriteValuesToGUI(WriteToGUIType.input)
 
@@ -677,6 +683,10 @@ Public Class frmNegotiation
 			Me._sbqi = Utility.NullToDouble(tmpDataRowView.Item("sbqi"))
 			Me._ssqi = Utility.NullToDouble(tmpDataRowView.Item("ssqi"))
 			Me._smqi = Utility.NullToDouble(tmpDataRowView.Item("smqi"))
+			Me._agrw = Utility.NullToDouble(tmpDataRowView.Item("agrw"))
+			Me._indw = Utility.NullToDouble(tmpDataRowView.Item("indw"))
+			Me._lanw = Utility.NullToDouble(tmpDataRowView.Item("lanw"))
+			Me._salt = Utility.NullToBoolean(tmpDataRowView.Item("salt"))
 		Else
 			'no data in DB
 			Me.Reset(True)
@@ -735,6 +745,10 @@ Public Class frmNegotiation
 				newRow("sbqi") = Me._sbqi
 				newRow("ssqi") = Me._ssqi
 				newRow("smqi") = Me._smqi
+				newRow("agrw") = Me._agrw
+				newRow("indw") = Me._indw
+				newRow("lanw") = Me._lanw
+				newRow("salt") = Me._salt
 
 				newRow("DataCreazione") = Now
 				newRow("UtenteCreazione") = 1
@@ -762,38 +776,42 @@ Public Class frmNegotiation
 		Select Case type
 			Case WriteToGUIType.input
 				For i = 0 To Me._usedLocations - 1
-					Me._nudCollection("nudInddiscur" & i + 1 & "_2").Value = CType(Me._inddiscur(i, 1), Decimal)
-					Me._nudCollection("nudInddispln" & i + 1 & "_2").Value = CType(Me._inddispln(i, 1), Decimal)
-					Me._nudCollection("nudBOD" & i + 1).Value = CType(Me._bod(i), Decimal)
-					Me._nudCollection("nudTDS" & i + 1).Value = CType(Me._tds(i), Decimal)
-					Me._nudCollection("nudTSS" & i + 1).Value = CType(Me._tss(i), Decimal)
-					Me._nudCollection("nudDes" & i + 1).Value = CType(Me._des(i), Decimal)
-					Me._nudCollection("nudGro" & i + 1).Value = CType(Me._gro(i), Decimal)
+					Me._nudCollection("nudInddiscur" & i + 1 & "_2").Value = CDec(Me._inddiscur(i, 1))
+					Me._nudCollection("nudInddispln" & i + 1 & "_2").Value = CDec(Me._inddispln(i, 1))
+					Me._nudCollection("nudBOD" & i + 1).Value = CDec(Me._bod(i))
+					Me._nudCollection("nudTDS" & i + 1).Value = CDec(Me._tds(i))
+					Me._nudCollection("nudTSS" & i + 1).Value = CDec(Me._tss(i))
+					Me._nudCollection("nudDes" & i + 1).Value = CDec(Me._des(i))
+					Me._nudCollection("nudGro" & i + 1).Value = CDec(Me._gro(i))
 				Next
 
 				For i = 0 To Me._usedLocations - 1
 					For j = 0 To Me._usedDimensions - 1
-						Me._nudCollection("nudPop20_" & i + 1 & "_" & j + 1).Value = CType(Me._pop20(i, j), Decimal)
+						Me._nudCollection("nudPop20_" & i + 1 & "_" & j + 1).Value = CDec(Me._pop20(i, j))
 					Next
 				Next
 
-				Me.nudgwsp.Value = CType(Me._gwsp, Decimal)
-				Me.nudAgrUF.Value = CType(Me._agruf, Decimal)
-				Me.nudAgrUFRO.Value = CType(Me._agrufro, Decimal)
-				Me.nudIndUF.Value = CType(Me._induf, Decimal)
-				Me.nudIndUFRO.Value = CType(Me._indufro, Decimal)
-				Me.nudLanUF.Value = CType(Me._lanuf, Decimal)
-				Me.nudLanUFRO.Value = CType(Me._lanufro, Decimal)
-				Me.nudTpbx.Value = CType(Me._tpbx, Decimal)
-				Me.nudTpsx.Value = CType(Me._tpsx, Decimal)
-				Me.nudTpmz.Value = CType(Me._tpmz, Decimal)
-				Me.nudEnvw.Value = CType(Me._envw, Decimal)
-				Me.nudEcow.Value = CType(Me._ecow, Decimal)
-				Me.nudSocw.Value = CType(Me._socw, Decimal)
-				Me.nudTotpla.Value = CType(Me._totpla, Decimal)
-				Me.nudsbqi.Value = CType(Me._sbqi, Decimal)
-				Me.nudssqi.Value = CType(Me._ssqi, Decimal)
-				Me.nudsmqi.Value = CType(Me._smqi, Decimal)
+				Me.nudgwsp.Value = CDec(Me._gwsp)
+				Me.nudAgrUF.Value = CDec(Me._agruf)
+				Me.nudAgrUFRO.Value = CDec(Me._agrufro)
+				Me.nudIndUF.Value = CDec(Me._induf)
+				Me.nudIndUFRO.Value = CDec(Me._indufro)
+				Me.nudLanUF.Value = CDec(Me._lanuf)
+				Me.nudLanUFRO.Value = CDec(Me._lanufro)
+				Me.nudTpbx.Value = CDec(Me._tpbx)
+				Me.nudTpsx.Value = CDec(Me._tpsx)
+				Me.nudTpmz.Value = CDec(Me._tpmz)
+				Me.nudEnvw.Value = CDec(Me._envw)
+				Me.nudEcow.Value = CDec(Me._ecow)
+				Me.nudSocw.Value = CDec(Me._socw)
+				Me.nudTotpla.Value = CDec(Me._totpla)
+				Me.nudsbqi.Value = CDec(Me._sbqi)
+				Me.nudssqi.Value = CDec(Me._ssqi)
+				Me.nudsmqi.Value = CDec(Me._smqi)
+				Me.nudAgrw.Value = CDec(Me._agrw)
+				Me.nudIndw.Value = CDec(Me._indw)
+				Me.nudLanw.Value = CDec(Me._lanw)
+				Me.chkSalt.Checked = Me._salt
 			Case WriteToGUIType.output
 				'Agriculture
 				For i = 0 To Me._usedLocations - 1
@@ -862,8 +880,8 @@ Public Class frmNegotiation
 			Me._gro(i) = Me._nudCollection("nudGro" & i + 1).Value
 			Me._inddiscur(i, 0) = Me._inddiscur(i, 0)
 			Me._inddispln(i, 0) = Me._inddispln(i, 0)
-			Me._inddiscur(i, 1) = CType(Me._nudCollection("nudInddiscur" & i + 1 & "_2").Value, Integer)
-			Me._inddispln(i, 1) = CType(Me._nudCollection("nudInddispln" & i + 1 & "_2").Value, Integer)
+			Me._inddiscur(i, 1) = CInt(Me._nudCollection("nudInddiscur" & i + 1 & "_2").Value)
+			Me._inddispln(i, 1) = CInt(Me._nudCollection("nudInddispln" & i + 1 & "_2").Value)
 			Me._bod(i) = Me._nudCollection("nudBod" & i + 1).Value
 			Me._tds(i) = Me._nudCollection("nudTds" & i + 1).Value
 			Me._tss(i) = Me._nudCollection("nudTss" & i + 1).Value
@@ -871,7 +889,7 @@ Public Class frmNegotiation
 
 		For i = 0 To Me._usedLocations - 1
 			For j = 0 To Me._usedDimensions - 1
-				Me._pop20(i, j) = CType(Me._nudCollection("nudPop20_" & i + 1 & "_" & j + 1).Value, Integer)
+				Me._pop20(i, j) = CInt(Me._nudCollection("nudPop20_" & i + 1 & "_" & j + 1).Value)
 				Me._indcc(i, j) = Me._des(i)
 				Me._lancc(i, j) = Me._gro(i)
 				Me._agrcc(i, j) = Me._gro(i)
@@ -898,6 +916,10 @@ Public Class frmNegotiation
 		Me._sbqi = Me.nudsbqi.Value
 		Me._ssqi = Me.nudssqi.Value
 		Me._smqi = Me.nudsmqi.Value
+		Me._agrw = Me.nudAgrw.Value
+		Me._indw = Me.nudIndw.Value
+		Me._lanw = Me.nudLanw.Value
+		Me._salt = Me.chkSalt.Checked
 	End Sub
 
 	''' <summary>

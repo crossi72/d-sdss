@@ -37,6 +37,24 @@
 	End Function
 
 	''' <summary>
+	''' convert an Object to a Boolean, if Object is nothing returns False
+	''' </summary>
+	''' <param name="var">Object to convert</param>
+	''' <returns></returns>
+	''' <remarks></remarks>
+	Public Function NullToBoolean(ByVal var As Object) As Boolean
+		Dim ret As Boolean
+
+		If var Is Nothing OrElse IsDBNull(var) Then
+			ret = False
+		Else
+			ret = CType(var, Boolean)
+		End If
+
+		Return ret
+	End Function
+
+	''' <summary>
 	''' convert a double to corresponding string
 	''' </summary>
 	''' <param name="value"></param>
@@ -72,6 +90,7 @@
 			Try
 				cmd = New SqlClient.SqlCommand(sqlString, sqlConnection)
 				ret = cmd.ExecuteNonQuery()
+				cmd.Dispose()
 			Catch ex2 As Exception
 				ret = -1
 			End Try
