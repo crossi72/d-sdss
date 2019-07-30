@@ -69,7 +69,7 @@ Public Class frmNegotiation
 			Me.ShowBox()
 
 			'Adapt GUI to used location
-			Me.AdaptGUIToUsedLocations()
+			Me.SetLocations()
 		Else
 			End
 		End If
@@ -88,7 +88,9 @@ Public Class frmNegotiation
 		frmParameters.ShowDialog()
 
 		'Adapt GUI to used location
-		Me.AdaptGUIToUsedLocations()
+		Me.SetLocations()
+
+		frmParameters.Dispose()
 	End Sub
 
 	Private Sub RefreshMap(sender As Object, e As EventArgs)
@@ -99,8 +101,6 @@ Public Class frmNegotiation
 			Dim tmpPanel As DSSPanel
 			Dim avgValue As Double
 
-			tmpNumericUpDown = Nothing
-			tmpPanel = Nothing
 			tmpGroupBox = Nothing
 
 			Select Case sender.GetType
@@ -908,7 +908,6 @@ Public Class frmNegotiation
 		Dim kernelPath As String
 		Dim result As Boolean
 
-		result = False
 		kernelPath = ""
 
 		Try
@@ -956,25 +955,12 @@ Public Class frmNegotiation
 	''' Read locations data from DB and set GUI controls accordingly
 	''' </summary>
 	Private Sub SetLocations()
-		'load location names for Water Costs window
-		Me.SetLocations("lblWC")
-		'load location names for Total Population window
-		Me.SetLocations("lblTP")
-		'load location names for Industrial District window
-		Me.SetLocations("lblID")
-		'load location names for Water Quality window
-		Me.SetLocations("lblWQ")
-		'load location names for Uses window
-		Me.SetLocations("lblUS")
-		'load location names for Impact window
-		Me.SetLocations("lblIM")
+		Me.SetLocations(Me)
+		Me.AdaptGUIToUsedDimensions()
 	End Sub
 
-	Private Sub AdaptGUIToUsedLocations()
+	Private Sub AdaptGUIToUsedDimensions()
 		Dim usedDimensions As Integer
-
-		'Hide unused controls
-		Me.AdaptGUIToUsedLocations(Me)
 
 		'if there is only one dimension, hide the unnecessary controls
 		usedDimensions = CInt(Me.dsParameters.Tables("parameters").Rows(0).Item("parDimensions"))
@@ -990,20 +976,44 @@ Public Class frmNegotiation
 	''' Hide unused controls
 	''' </summary>
 	''' <param name="container"></param>
-	Private Sub AdaptGUIToUsedLocations(container As Control)
+	Private Sub SetLocations(container As Control)
 		Dim usedLocations As Integer
+		Dim tmpLocations As DataTable
+		Dim tmpLabel As DSSLabel
+		Dim tmpNumericUpDown As DSSNumericUpDown
 
 		For Each control As Control In container.Controls
-			'iterate through controls to find NumericUpDown
+			'iterate through controls to find DSSNumericUpDown and DSSLabel
 			If control.HasChildren AndAlso control.GetType.Name <> "DSSNumericUpDown" Then
-				Me.AdaptGUIToUsedLocations(control)
+				Me.SetLocations(control)
 			Else
-				If control.GetType.Name = "DSSNumericUpDown" Then
-					'if control is related to an unused location, hide the control
-					usedLocations = CInt(Me.dsParameters.Tables("parameters").Rows(0).Item("parLocations"))
+				'if control is a DSScontrol, set the location parameters
+				tmpLocations = Me.DSLocations.Tables("locations")
+				usedLocations = CInt(Me.dsParameters.Tables("parameters").Rows(0).Item("parLocations"))
 
-					If DirectCast(control, DSSNumericUpDown).DSSLocation > usedLocations Then
-						control.Visible = False
+				If control.GetType.Name = "DSSLabel" Then
+					tmpLabel = DirectCast(control, DSSLabel)
+
+					tmpLocations.DefaultView.RowFilter = "locID = " & tmpLabel.DSSLocation.ToString
+
+					If tmpLocations.DefaultView.Count > 0 Then
+						Me.SetLocation(tmpLabel, tmpLocations.DefaultView(0))
+					End If
+
+					If tmpLabel.DSSLocation > usedLocations Then
+						tmpLabel.Visible = False
+					End If
+				ElseIf control.GetType.Name = "DSSNumericUpDown" Then
+					tmpNumericUpDown = DirectCast(control, DSSNumericUpDown)
+
+					tmpLocations.DefaultView.RowFilter = "locID = " & tmpNumericUpDown.DSSLocation.ToString
+
+					If tmpLocations.DefaultView.Count > 0 Then
+						Me.SetLocation(tmpNumericUpDown, tmpLocations.DefaultView(0))
+					End If
+
+					If tmpNumericUpDown.DSSLocation > usedLocations Then
+						tmpNumericUpDown.Visible = False
 					End If
 				End If
 			End If
@@ -1011,36 +1021,22 @@ Public Class frmNegotiation
 	End Sub
 
 	''' <summary>
-	''' Set location data on GUI controls
+	''' Set location data for a DSSLabel control
 	''' </summary>
-	''' <param name="prefix"></param>
-	Private Sub SetLocations(prefix As String)
-		Dim i, usedLocations As Integer
-		Dim location As DataRow
-		Dim tmpLabelName As String
-		Dim tmpLocations As DataTable
+	''' <param name="control">control to set</param>
+	''' <param name="location">location data</param>
+	Private Sub SetLocation(control As DSSLabel, location As DataRowView)
+		control.Text = location.Item("locName").ToString
+		control.DSSElementName = location.Item("locName").ToString
+	End Sub
 
-		tmpLocations = Me.DSLocations.Tables("locations")
+	''' <summary>
+	''' Set location data for a DSSLabel control
+	''' </summary>
+	''' <param name="control">control to set</param>
+	''' <param name="location">location data</param>
 
-		For i = 0 To tmpLocations.Rows.Count - 1
-			location = tmpLocations.Rows(i)
-
-			tmpLabelName = prefix & "Location" & i + 1
-
-			If Me._lblCollection.Contains(tmpLabelName) Then
-				Me._lblCollection(tmpLabelName).Text = location.Item("locName").ToString
-				Me._lblCollection(tmpLabelName).DSSElementName = location.Item("locName").ToString
-				Me._lblCollection(tmpLabelName).DSSLocation = CInt(location.Item("locID"))
-
-				'if control is related to an unused location, hide the control
-
-				usedLocations = CInt(Me.dsParameters.Tables("parameters").Rows(0).Item("parLocations"))
-
-				If Me._lblCollection(tmpLabelName).DSSLocation > usedLocations Then
-					Me._lblCollection(tmpLabelName).Visible = False
-				End If
-			End If
-		Next
+	Private Sub SetLocation(control As DSSNumericUpDown, location As DataRowView)
 	End Sub
 
 	Private Sub AddEventHandler(ctl As Control)
@@ -1119,6 +1115,8 @@ Public Class frmNegotiation
 		If frmScenario.ShowDialog() = Windows.Forms.DialogResult.OK Then
 			Me.ReadValuesFromDB(frmScenario.ScenarioID)
 		End If
+
+		frmScenario.Dispose()
 	End Sub
 
 	Private Sub tpauses_visiblechanged(sender As Object, e As EventArgs) Handles tpaUses.VisibleChanged
