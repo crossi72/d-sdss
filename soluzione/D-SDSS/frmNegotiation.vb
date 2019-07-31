@@ -168,6 +168,7 @@ Public Class frmNegotiation
 	''' <remarks></remarks>
 	Private Sub Calculate()
 		Dim i, j As Integer
+		Dim tmpString As New System.Text.StringBuilder
 
 		Me.ReadValuesFromGUI()
 
@@ -207,9 +208,9 @@ Public Class frmNegotiation
 		Me._MathWrapper.WaitAndDiscardAnswer("lanUFRO=" & NumberAsString(Me._lanufro))
 		Me._MathWrapper.WaitAndDiscardAnswer("ssqi=" & NumberAsString(Me._ssqi))
 		Me._MathWrapper.WaitAndDiscardAnswer("totpla=" & NumberAsString(Me._totpla))
-		Me._MathWrapper.WaitAndDiscardAnswer("agrw=0.33")
-		Me._MathWrapper.WaitAndDiscardAnswer("indw=0.33")
-		Me._MathWrapper.WaitAndDiscardAnswer("lanw=0.33")
+		Me._MathWrapper.WaitAndDiscardAnswer("agrw=" & NumberAsString(Me._agrw / 100))
+		Me._MathWrapper.WaitAndDiscardAnswer("indw=" & NumberAsString(Me._indw / 100))
+		Me._MathWrapper.WaitAndDiscardAnswer("lanw=" & NumberAsString(Me._lanw / 100))
 
 		'(*potential costs*)
 		For i = 0 To Me._usedLocations - 1
@@ -257,16 +258,144 @@ Public Class frmNegotiation
 		Me._MathWrapper.WaitAndDiscardAnswer("tpbx=" & NumberAsString(Me._tpbx / 100))
 		Me._MathWrapper.WaitAndDiscardAnswer("tpmz=" & NumberAsString(Me._tpmz / 100))
 
-		Me._MathWrapper.WaitAndDiscardAnswer("totobj20r = totobj20 /. {x[1][1] -> x11, x[1][2] -> x12, x[2][1] -> x21, x[2][2] -> x22, x[3][1] -> x31, x[3][2] -> x32, x[4][1] -> x41, x[4][2] -> x42, x[5][1] -> x51, x[5][2] -> x52, x[6][1] -> x61, x[6][2] -> x62, x[7][1] -> x71, x[7][2] -> x72, x[8][1] -> x81, x[8][2] -> x82, x[9][1] -> x91, x[9][2] -> x92, x[10][1] -> x101, x[10][2] -> x102, x[11][1] -> x111, x[11][2] -> x112, x[12][1] -> x121, x[12][2] -> x122, x[13][1] -> x131, x[13][2] -> x132, y[1][1] -> y11, y[1][2] -> y12, y[2][1] -> y21, y[2][2] -> y22, y[3][1] -> y31, y[3][2] -> y32, y[4][1] -> y41, y[4][2] -> y42, y[5][1] -> y51, y[5][2] -> y52, y[6][1] -> y61, y[6][2] -> y62, y[7][1] -> y71, y[7][2] -> y72, y[8][1] -> y81, y[8][2] -> y82, y[9][1] -> y91, y[9][2] -> y92, y[10][1] -> y101, y[10][2] -> y102, y[11][1] -> y111, y[11][2] -> y112, y[12][1] -> y121, y[12][2] -> y122, y[13][1] -> y131, y[13][2] -> y132, z[1][1] -> z11, z[1][2] -> z12, z[2][1] -> z21, z[2][2] -> z22, z[3][1] -> z31, z[3][2] -> z32, z[4][1] -> z41, z[4][2] -> z42, z[5][1] -> z51, z[5][2] -> z52, z[6][1] -> z61, z[6][2] -> z62, z[7][1] -> z71, z[7][2] -> z72, z[8][1] -> z81, z[8][2] -> z82, z[9][1] -> z91, z[9][2] -> z92, z[10][1] -> z101, z[10][2] -> z102, z[11][1] -> z111, z[11][2] -> z112, z[12][1] -> z121, z[12][2] -> z122, z[13][1] -> z131, z[13][2] -> z132}")
+		'create the expression to pass to Wolfram Mathematica
+		tmpString.Length = 0
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedDimensions - 1
+				tmpString.Append("x[" & i + 1 & "][" & j + 1 & "] -> x" & i + 1 & j + 1 & ", ")
+			Next
+		Next
+		tmpString.Length -= ", ".Length
 
-		Me._MathWrapper.WaitAndDiscardAnswer("m = NMinimize[{totobj20r*100, (x11 + x12 + x21 + x22 + x31 + x32 + x41 + x42 + x51 + x52 + x61 + x62 + x71 + x72 + x81 + x82 + x91 + x92 + x101 + x102 + x111 + x112 + x121 + x122 + x131 + x132 + y22 + y32 + y42 + y52 + y62 + y72 + y82 + y92 + y102 + y112 + y122 + y132 + z11 + z12 + z21 + z22 + z31 + z32 + z41 + z42 + z51 + z52 + z61 + z62 + z71 + z72 + z81 + z82 + z91 + z92 + z101 + z102 + z111 + z112 + z121 + z122 + z131 + z132) <= totpla, x11 <= 1, x12 <= 1, x21 <= 1, x22 <= 1, x31 <= 1, x32 <= 1, x41 <= 1, x42 <= 1, x51 <= 1, x52 <= 1, x61 <= 1, x62 <= 1, x71 <= 1, x72 <= 1, x81 <= 1, x82 <= 1, x91 <= 1, x92 <= 1, x101 <= 1, x102 <= 1, x111 <= 1, x112 <= 1, x121 <= 1, x122 <= 1, x131 <= 1, x132 <= 1, y12 <= 1, y22 <= 1, y32 <= 1, y42 <= 1, y52 <= 1, y62 <= 1, y72 <= 1, y82 <= 1, y92 <= 1, y102 <= 1, y112 <= 1, y122 <= 1, y132 <= 1, z11 <= 1, z12 <= 1, z21 <= 1, z22 <= 1, z31 <= 1, z32 <= 1, z41 <= 1, z42 <= 1, z51 <= 1, z52 <= 1, z61 <= 1, z62 <= 1, z71 <= 1, z72 <= 1, z81 <= 1, z82 <= 1, z91 <= 1, z92 <= 1, z101 <= 1, z102 <= 1, z111 <= 1, z112 <= 1, z121 <= 1, z122 <= 1, z131 <= 1, z132 <= 1, x11 >= 0, x12 >= 0, x21 >= 0, x22 >= 0, x31 >= 0, x32 >= 0, x41 >= 0, x42 >= 0, x51 >= 0, x52 >= 0, x61 >= 0, x62 >= 0, x71 >= 0, x72 >= 0, x81 >= 0, x82 >= 0, x91 >= 0, x92 >= 0, x101 >= 0, x102 >= 0, x111 >= 0, x112 >= 0, x121 >= 0, x122 >= 0, x131 >= 0, x132 >= 0, y12 >= 0, y22 >= 0, y32 >= 0, y42 >= 0, y52 >= 0, y62 >= 0, y72 >= 0, y82 >= 0, y92 >= 0, y102 >= 0, y112 >= 0, y122 >= 0, y132 >= 0, z11 >= 0, z12 >= 0, z21 >= 0, z22 >= 0, z31 >= 0, z32 >= 0, z41 >= 0, z42 >= 0, z51 >= 0, z52 >= 0, z61 >= 0, z62 >= 0, z71 >= 0, z72 >= 0, z81 >= 0, z82 >= 0, z91 >= 0, z92 >= 0, z101 >= 0, z102 >= 0, z111 >= 0, z112 >= 0, z121 >= 0, z122 >= 0, z131 >= 0, z132 >= 0, Element[{x11, x12, x21, x22, x31, x32, x41, x42, x51, x52, x61, x62, x71, x72, x81, x82, x91, x92, x101, x102, x111, x112, x121, x122, x131, x132, y12, y22, y32, y42, y52, y62, y72, y82, y92, y102, y112, y122, y132, z11, z12, z21, z22, z31, z32, z41, z42, z51, z52, z61, z62, z71, z72, z81, z82, z91, z92, z101, z102, z111, z112, z121, z122, z131, z132}, Integers]}, {x11, x12, x21, x22, x31, x32, x41, x42, x51, x52, x61, x62, x71, x72, x81, x82, x91, x92, x101, x102, x111, x112, x121, x122, x131, x132, y12, y22, y32, y42, y52, y62, y72, y82, y92, y102, y112, y122, y132, z11, z12, z21, z22, z31, z32, z41, z42, z51, z52, z61, z62, z71, z72, z81, z82, z91, z92, z101, z102, z111, z112, z121, z122, z131, z132}]")
+		Me._MathWrapper.WaitAndDiscardAnswer("totobj20r = totobj20 /. {" & tmpString.ToString & "}")
+
+		'create the expression to pass to Wolfram Mathematica
+		tmpString.Length = 0
+		'pattern: xij + xi+1j+1 + ...
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedDimensions - 1
+				tmpString.Append("x" & i + 1 & j + 1 & " + ")
+			Next
+		Next
+		'pattern: yi2 + yi+12 + ...
+		For i = 0 To Me._usedLocations - 1
+			tmpString.Append("y" & i + 1 & "2 + ")
+		Next
+		'pattern: zij + zi+1j+1 + ...
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedDimensions - 1
+				tmpString.Append("z" & i + 1 & j + 1 & " + ")
+			Next
+		Next
+
+		tmpString.Length -= " + ".Length
+
+		tmpString.Append(") <= totpla, ")
+
+		'pattern: xij <= 1
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedDimensions - 1
+				tmpString.Append("x" & i + 1 & j + 1 & " <= 1, ")
+			Next
+		Next
+		'pattern: yi2 <= 1
+		For i = 0 To Me._usedLocations - 1
+			tmpString.Append("y" & i + 1 & "2 <= 1, ")
+		Next
+		'pattern: zij <= 1
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedDimensions - 1
+				tmpString.Append("z" & i + 1 & j + 1 & " <= 1, ")
+			Next
+		Next
+
+		'pattern: xij >= 0
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedDimensions - 1
+				tmpString.Append("x" & i + 1 & j + 1 & " >= 0, ")
+			Next
+		Next
+		'pattern: yi2 >= 0
+		For i = 0 To Me._usedLocations - 1
+			tmpString.Append("y" & i + 1 & "2 >= 0, ")
+		Next
+		'pattern: zij >= 0
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedDimensions - 1
+				tmpString.Append("z" & i + 1 & j + 1 & " >= 0, ")
+			Next
+		Next
+
+		tmpString.Append("Element[{")
+
+		'pattern: xij,
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedDimensions - 1
+				tmpString.Append("x" & i + 1 & j + 1 & ", ")
+			Next
+		Next
+		'pattern: yi2,
+		For i = 0 To Me._usedLocations - 1
+			tmpString.Append("y" & i + 1 & "2, ")
+		Next
+		'pattern: zij,
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedDimensions - 1
+				tmpString.Append("z" & i + 1 & j + 1 & ", ")
+			Next
+		Next
+
+		tmpString.Length -= ", ".Length
+		tmpString.Append("}, Integers]}, {")
+
+		'pattern: xij,
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedDimensions - 1
+				tmpString.Append("x" & i + 1 & j + 1 & ", ")
+			Next
+		Next
+		'pattern: yi2,
+		For i = 0 To Me._usedLocations - 1
+			tmpString.Append("y" & i + 1 & "2, ")
+		Next
+		'pattern: zij,
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedDimensions - 1
+				tmpString.Append("z" & i + 1 & j + 1 & ", ")
+			Next
+		Next
+
+		tmpString.Length -= ", ".Length
+
+		Me._MathWrapper.WaitAndDiscardAnswer("m = NMinimize[{totobj20r*100, (" & tmpString.ToString & "}]")
 
 		Me._MathWrapper.WaitAndDiscardAnswer("mobj = m[[1]]")
 		Me._MathWrapper.WaitAndDiscardAnswer("marg = m[[2]]")
 
-		Me._MathWrapper.WaitAndDiscardAnswer("totobj20rWEL = totobj20r*100 /. {x11 -> 0, x12 -> 0, x21 -> 0, x22 -> 0, x31 -> 0, x32 -> 0, x41 -> 1, x42 -> 1, x51 -> 0, x52 -> 1, x61 -> 0, x62 -> 1, x71 -> 1, x72 -> 0, x81 -> 0, x82 -> 1, x91 -> 0, x92 -> 1, x101 -> 0, x102 -> 0, x111 -> 0, x112 -> 0, x121 -> 1, x122 -> 0, x131 -> 0, x132 -> 0, y12 -> 0, y22 -> 0, y32 -> 0, y42 -> 1, y52 -> 1, y62 -> 0, y72 -> 0, y82 -> 0, y92 -> 0, y102 -> 0, y112 -> 0, y122 -> 1, y132 -> 1, z11 -> 0, z12 -> 0, z21 -> 0, z22 -> 0, z31 -> 0, z32 -> 0, z41 -> 1, z42 -> 1, z51 -> 0, z52 -> 1, z61 -> 0, z62 -> 1, z71 -> 1, z72 -> 0, z81 -> 0, z82 -> 1, z91 -> 0, z92 -> 1, z101 -> 0, z102 -> 0, z111 -> 0, z112 -> 0, z121 -> 1, z122 -> 0, z131 -> 0, z132 -> 0, sbqi -> 20, smqi -> 20, tpbx -> 0.35, tpmz -> 0.30}")
-		Me._MathWrapper.WaitAndDiscardAnswer("totobj20rSUS = totobj20r*100 /. {x11 -> 0, x12 -> 0, x21 -> 0, x22 -> 0, x31 -> 0, x32 -> 0, x41 -> 1, x42 -> 1, x51 -> 0, x52 -> 1, x61 -> 0, x62 -> 1, x71 -> 1, x72 -> 0, x81 -> 0, x82 -> 1, x91 -> 0, x92 -> 1, x101 -> 0, x102 -> 0, x111 -> 0, x112 -> 0, x121 -> 1, x122 -> 0, x131 -> 0, x132 -> 0, y12 -> 0, y22 -> 0, y32 -> 0, y42 -> 1, y52 -> 1, y62 -> 0, y72 -> 0, y82 -> 0, y92 -> 0, y102 -> 0, y112 -> 0, y122 -> 1, y132 -> 1, z11 -> 0, z12 -> 0, z21 -> 0, z22 -> 0, z31 -> 0, z32 -> 0, z41 -> 1, z42 -> 1, z51 -> 0, z52 -> 1, z61 -> 0, z62 -> 1, z71 -> 1, z72 -> 0, z81 -> 0, z82 -> 1, z91 -> 0, z92 -> 1, z101 -> 0, z102 -> 0, z111 -> 0, z112 -> 0, z121 -> 1, z122 -> 0, z131 -> 0, z132 -> 0, socw -> 0.33, envw -> 0.33, tpbx -> 0.35, tpmz -> 0.30}")
-		Me._MathWrapper.WaitAndDiscardAnswer("totobj20rEFF = totobj20r*100 /. {x11 -> 0, x12 -> 0, x21 -> 0, x22 -> 0, x31 -> 0, x32 -> 0, x41 -> 1, x42 -> 1, x51 -> 0, x52 -> 1, x61 -> 0, x62 -> 1, x71 -> 1, x72 -> 0, x81 -> 0, x82 -> 1, x91 -> 0, x92 -> 1, x101 -> 0, x102 -> 0, x111 -> 0, x112 -> 0, x121 -> 1, x122 -> 0, x131 -> 0, x132 -> 0, y12 -> 0, y22 -> 0, y32 -> 0, y42 -> 1, y52 -> 1, y62 -> 0, y72 -> 0, y82 -> 0, y92 -> 0, y102 -> 0, y112 -> 0, y122 -> 1, y132 -> 1, z11 -> 0, z12 -> 0, z21 -> 0, z22 -> 0, z31 -> 0, z32 -> 0, z41 -> 1, z42 -> 1, z51 -> 0, z52 -> 1, z61 -> 0, z62 -> 1, z71 -> 1, z72 -> 0, z81 -> 0, z82 -> 1, z91 -> 0, z92 -> 1, z101 -> 0, z102 -> 0, z111 -> 0, z112 -> 0, z121 -> 1, z122 -> 0, z131 -> 0, z132 -> 0, sbqi -> 20, smqi -> 20, socw -> 0.33, envw -> 0.33}")
+		'create the expression to pass to Wolfram Mathematica
+		tmpString.Length = 0
+		'pattern: xij -> 0
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedDimensions - 1
+				tmpString.Append("x" & i + 1 & j + 1 & " -> 0, ")
+			Next
+		Next
+		'pattern: yi2 >= 0
+		For i = 0 To Me._usedLocations - 1
+			tmpString.Append("y" & i + 1 & "2 -> 0, ")
+		Next
+		'pattern: zij >= 0
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedDimensions - 1
+				tmpString.Append("z" & i + 1 & j + 1 & " -> 0, ")
+			Next
+		Next
+
+		tmpString.Length -= ", ".Length
+
+		Me._MathWrapper.WaitAndDiscardAnswer("totobj20rWEL = totobj20r*100 /. {" & tmpString.ToString & ", sbqi -> 20, smqi -> 20, tpbx -> 0.35, tpmz -> 0.30}")
+		Me._MathWrapper.WaitAndDiscardAnswer("totobj20rSUS = totobj20r*100 /. {" & tmpString.ToString & ", socw -> 0.33, envw -> 0.33, tpbx -> 0.35, tpmz -> 0.30}")
+		Me._MathWrapper.WaitAndDiscardAnswer("totobj20rEFF = totobj20r*100 /. {" & tmpString.ToString & ", sbqi -> 20, smqi -> 20, socw -> 0.33, envw -> 0.33}")
 
 		Me._MathWrapper.WaitAndDiscardAnswer("ecolis1={List[agrw*((agrcc[1][1]+gwsp)/agrpc[1][1])(1-((agrcc[1][1]+gwsp-agrpc[1][1])/(agrcc[1][1]+gwsp))*x11)+indw*inddis[1][1]((indcc[1][1])/indpc[1][1])(1-((indcc[1][1]-indpc[1][1])/(indcc[1][1]))*y11)+lanw*((lancc[1][1]+gwsp)/lanpc[1][1])(1-((lancc[1][1]+gwsp-lanpc[1][1])/(lancc[1][1]+gwsp))*z11),agrw*((agrcc[2][1]+gwsp)/agrpc[2][1])(1-((agrcc[2][1]+gwsp-agrpc[2][1])/(agrcc[2][1]+gwsp))*x21)+indw*inddis[2][1]((indcc[2][1])/indpc[2][1])(1-((indcc[2][1]-indpc[2][1])/(indcc[2][1]))*y21)+lanw*((lancc[2][1]+gwsp)/lanpc[2][1])(1-((lancc[2][1]+gwsp-lanpc[2][1])/(lancc[2][1]+gwsp))*z21),agrw*((agrcc[3][1]+gwsp)/agrpc[3][1])(1-((agrcc[3][1]+gwsp-agrpc[3][1])/(agrcc[3][1]+gwsp))*x31)+indw*inddis[3][1]((indcc[3][1])/indpc[3][1])(1-((indcc[3][1]-indpc[3][1])/(indcc[3][1]))*y31)+lanw*((lancc[3][1]+gwsp)/lanpc[3][1])(1-((lancc[3][1]+gwsp-lanpc[3][1])/(lancc[3][1]+gwsp))*z31),agrw*((agrcc[4][1]+gwsp)/agrpc[4][1])(1-((agrcc[4][1]+gwsp-agrpc[4][1])/(agrcc[4][1]+gwsp))*x41)+indw*inddis[4][1]((indcc[4][1])/indpc[4][1])(1-((indcc[4][1]-indpc[4][1])/(indcc[4][1]))*y41)+lanw*((lancc[4][1]+gwsp)/lanpc[4][1])(1-((lancc[4][1]+gwsp-lanpc[4][1])/(lancc[4][1]+gwsp))*z41),agrw*((agrcc[5][1]+gwsp)/agrpc[5][1])(1-((agrcc[5][1]+gwsp-agrpc[5][1])/(agrcc[5][1]+gwsp))*x51)+indw*inddis[5][1]((indcc[5][1])/indpc[5][1])(1-((indcc[5][1]-indpc[5][1])/(indcc[5][1]))*y51)+lanw*((lancc[5][1]+gwsp)/lanpc[5][1])(1-((lancc[5][1]+gwsp-lanpc[5][1])/(lancc[5][1]+gwsp))*z51),agrw*((agrcc[6][1]+gwsp)/agrpc[6][1])(1-((agrcc[6][1]+gwsp-agrpc[6][1])/(agrcc[6][1]+gwsp))*x61)+indw*inddis[6][1]((indcc[6][1])/indpc[6][1])(1-((indcc[6][1]-indpc[6][1])/(indcc[6][1]))*y61)+lanw*((lancc[6][1]+gwsp)/lanpc[6][1])(1-((lancc[6][1]+gwsp-lanpc[6][1])/(lancc[6][1]+gwsp))*z61),agrw*((agrcc[7][1]+gwsp)/agrpc[7][1])(1-((agrcc[7][1]+gwsp-agrpc[7][1])/(agrcc[7][1]+gwsp))*x71)+indw*inddis[7][1]((indcc[7][1])/indpc[7][1])(1-((indcc[7][1]-indpc[7][1])/(indcc[7][1]))*y71)+lanw*((lancc[7][1]+gwsp)/lanpc[7][1])(1-((lancc[7][1]+gwsp-lanpc[7][1])/(lancc[7][1]+gwsp))*z71),agrw*((agrcc[8][1]+gwsp)/agrpc[8][1])(1-((agrcc[8][1]+gwsp-agrpc[8][1])/(agrcc[8][1]+gwsp))*x81)+indw*inddis[8][1]((indcc[8][1])/indpc[8][1])(1-((indcc[8][1]-indpc[8][1])/(indcc[8][1]))*y81)+lanw*((lancc[8][1]+gwsp)/lanpc[8][1])(1-((lancc[8][1]+gwsp-lanpc[8][1])/(lancc[8][1]+gwsp))*z81),agrw*((agrcc[9][1]+gwsp)/agrpc[9][1])(1-((agrcc[9][1]+gwsp-agrpc[9][1])/(agrcc[9][1]+gwsp))*x91)+indw*inddis[9][1]((indcc[9][1])/indpc[9][1])(1-((indcc[9][1]-indpc[9][1])/(indcc[9][1]))*y91)+lanw*((lancc[9][1]+gwsp)/lanpc[9][1])(1-((lancc[9][1]+gwsp-lanpc[9][1])/(lancc[9][1]+gwsp))*z91),agrw*((agrcc[10][1]+gwsp)/agrpc[10][1])(1-((agrcc[10][1]+gwsp-agrpc[10][1])/(agrcc[10][1]+gwsp))*x101)+indw*inddis[10][1]((indcc[10][1])/indpc[10][1])(1-((indcc[10][1]-indpc[10][1])/(indcc[10][1]))*y101)+lanw*((lancc[10][1]+gwsp)/lanpc[10][1])(1-((lancc[10][1]+gwsp-lanpc[10][1])/(lancc[10][1]+gwsp))*z101),agrw*((agrcc[11][1]+gwsp)/agrpc[11][1])(1-((agrcc[11][1]+gwsp-agrpc[11][1])/(agrcc[11][1]+gwsp))*x111)+indw*inddis[11][1]((indcc[11][1])/indpc[11][1])(1-((indcc[11][1]-indpc[11][1])/(indcc[11][1]))*y111)+lanw*((lancc[11][1]+gwsp)/lanpc[11][1])(1-((lancc[11][1]+gwsp-lanpc[11][1])/(lancc[11][1]+gwsp))*z111),agrw*((agrcc[12][1]+gwsp)/agrpc[12][1])(1-((agrcc[12][1]+gwsp-agrpc[12][1])/(agrcc[12][1]+gwsp))*x121)+indw*inddis[12][1]((indcc[12][1])/indpc[12][1])(1-((indcc[12][1]-indpc[12][1])/(indcc[12][1]))*y121)+lanw*((lancc[12][1]+gwsp)/lanpc[12][1])(1-((lancc[12][1]+gwsp-lanpc[12][1])/(lancc[12][1]+gwsp))*z121),agrw*((agrcc[13][1]+gwsp)/agrpc[13][1])(1-((agrcc[13][1]+gwsp-agrpc[13][1])/(agrcc[13][1]+gwsp))*x131)+indw*inddis[13][1]((indcc[13][1])/indpc[13][1])(1-((indcc[13][1]-indpc[13][1])/(indcc[13][1]))*y131)+lanw*((lancc[13][1]+gwsp)/lanpc[13][1])(1-((lancc[13][1]+gwsp-lanpc[13][1])/(lancc[13][1]+gwsp))*z131)]/. marg}")
 

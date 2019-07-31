@@ -118,10 +118,13 @@ Partial Class frmParameters
 		'nudparLocations
 		'
 		Me.nudparLocations.Location = New System.Drawing.Point(12, 190)
+		Me.nudparLocations.Maximum = New Decimal(New Integer() {15, 0, 0, 0})
+		Me.nudparLocations.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
 		Me.nudparLocations.Name = "nudparLocations"
 		Me.nudparLocations.Size = New System.Drawing.Size(50, 20)
 		Me.nudparLocations.TabIndex = 3
 		Me.nudparLocations.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudparLocations.Value = New Decimal(New Integer() {1, 0, 0, 0})
 		'
 		'lblparLocations
 		'
@@ -144,10 +147,13 @@ Partial Class frmParameters
 		'nudparDimensions
 		'
 		Me.nudparDimensions.Location = New System.Drawing.Point(81, 190)
+		Me.nudparDimensions.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+		Me.nudparDimensions.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
 		Me.nudparDimensions.Name = "nudparDimensions"
 		Me.nudparDimensions.Size = New System.Drawing.Size(50, 20)
 		Me.nudparDimensions.TabIndex = 4
 		Me.nudparDimensions.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.nudparDimensions.Value = New Decimal(New Integer() {1, 0, 0, 0})
 		'
 		'DSParameters
 		'
