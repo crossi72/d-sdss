@@ -740,6 +740,29 @@ Public Class frmNegotiation
 		Me._MathWrapper.WaitAndDiscardAnswer("totobj20rEFF =.")
 
 		'adapt matrix syntax to minimize solution
+
+		'create the expression to pass to Wolfram Mathematica
+		tmpString.Length = 0
+		'pattern: x[i][j] -> xij,
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedDimensions - 1
+				tmpString.Append("x[" & i + 1 & "][" & j + 1 & "] -> x" & i + 1 & j + 1 & ", ")
+			Next
+		Next
+		'pattern: y[i][j] -> yij,
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedDimensions - 1
+				tmpString.Append("y[" & i + 1 & "][" & j + 1 & "] -> y" & i + 1 & j + 1 & ", ")
+			Next
+		Next
+		'pattern: z[i][j] -> zij,
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedDimensions - 1
+				tmpString.Append("z[" & i + 1 & "][" & j + 1 & "] -> z" & i + 1 & j + 1 & ", ")
+			Next
+		Next
+		tmpString.Length -= ", ".Length
+
 		Me._MathWrapper.WaitAndDiscardAnswer("totobj20 = totobj20 /. {x[1][1] -> x11, x[1][2] -> x12, x[2][1] -> x21, x[2][2] -> x22, x[3][1] -> x31, x[3][2] -> x32, x[4][1] -> x41, x[4][2] -> x42, x[5][1] -> x51, x[5][2] -> x52, x[6][1] -> x61, x[6][2] -> x62, x[7][1] -> x71, x[7][2] -> x72, x[8][1] -> x81, x[8][2] -> x82, x[9][1] -> x91, x[9][2] -> x92, x[10][1] -> x101, x[10][2] -> x102, x[11][1] -> x111, x[11][2] -> x112, x[12][1] -> x121, x[12][2] -> x122, x[13][1] -> x131, x[13][2] -> x132, y[1][1] -> y11, y[1][2] -> y12, y[2][1] -> y21, y[2][2] -> y22, y[3][1] -> y31, y[3][2] -> y32, y[4][1] -> y41, y[4][2] -> y42, y[5][1] -> y51, y[5][2] -> y52, y[6][1] -> y61, y[6][2] -> y62, y[7][1] -> y71, y[7][2] -> y72, y[8][1] -> y81, y[8][2] -> y82, y[9][1] -> y91, y[9][2] -> y92, y[10][1] -> y101, y[10][2] -> y102, y[11][1] -> y111, y[11][2] -> y112, y[12][1] -> y121, y[12][2] -> y122, y[13][1] -> y131, y[13][2] -> y132, z[1][1] -> z11, z[1][2] -> z12, z[2][1] -> z21, z[2][2] -> z22, z[3][1] -> z31, z[3][2] -> z32, z[4][1] -> z41, z[4][2] -> z42, z[5][1] -> z51, z[5][2] -> z52, z[6][1] -> z61, z[6][2] -> z62, z[7][1] -> z71, z[7][2] -> z72, z[8][1] -> z81, z[8][2] -> z82, z[9][1] -> z91, z[9][2] -> z92, z[10][1] -> z101, z[10][2] -> z102, z[11][1] -> z111, z[11][2] -> z112, z[12][1] -> z121, z[12][2] -> z122, z[13][1] -> z131, z[13][2] -> z132}")
 
 		Me._MathWrapper.WaitAndDiscardAnswer("totobj20rWEL = totobj20*100 /. marg")
