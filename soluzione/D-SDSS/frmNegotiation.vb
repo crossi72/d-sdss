@@ -533,31 +533,114 @@ Public Class frmNegotiation
 			Me._MathWrapper.WaitAndDiscardAnswer("soc" & i + 1 & "1=soclis1[[1," & i + 1 & "]]")
 		Next
 
-		Me._MathWrapper.WaitAndDiscardAnswer("socmea1=(soc11+soc21+soc31+soc41+soc51+soc61+soc71+soc81+soc91+soc101+soc111+soc121+soc131)/13")
+		'create the expression to pass to Wolfram Mathematica
+		tmpString.Length = 0
+		'pattern: soci1+
+		For i = 0 To Me._usedLocations - 1
+			tmpString.Append("soc" & i + 1 & "1+")
+		Next
+
+		tmpString.Length -= "+".Length
+
+		Me._MathWrapper.WaitAndDiscardAnswer("socmea1=(" & tmpString.ToString & ")/" & Me._usedLocations)
+
+		'create the expression to pass to Wolfram Mathematica
+		tmpString.Length = 0
+		'pattern: Abs[soc11-soc11]+
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedLocations - 1
+				tmpString.Append("Abs[soc" & i + 1 & "1-soc" & j + 1 & "1]+")
+			Next
+		Next
+
+		tmpString.Length -= "+".Length
 
 		'TODO: 1/2*1/13^2 devono essere gestiti con _usedLocation e _usedDimensions?
-		Me._MathWrapper.WaitAndDiscardAnswer("socgin1=N[(1/2*1/13^2*(1/socmea1))(Abs[soc11-soc11]+Abs[soc11-soc21]+Abs[soc11-soc31]+Abs[soc11-soc41]+Abs[soc11-soc51]+Abs[soc11-soc61]+Abs[soc11-soc71]+Abs[soc11-soc81]+Abs[soc11-soc91]+Abs[soc11-soc101]+Abs[soc11-soc111]+Abs[soc11-soc121]+Abs[soc11-soc131]+Abs[soc21-soc11]+Abs[soc21-soc21]+Abs[soc21-soc31]+Abs[soc21-soc41]+Abs[soc21-soc51]+Abs[soc21-soc61]+Abs[soc21-soc71]+Abs[soc21-soc81]+Abs[soc21-soc91]+Abs[soc21-soc101]+Abs[soc21-soc111]+Abs[soc21-soc121]+Abs[soc21-soc131]+Abs[soc31-soc11]+Abs[soc31-soc21]+Abs[soc31-soc31]+Abs[soc31-soc41]+Abs[soc31-soc51]+Abs[soc31-soc61]+Abs[soc31-soc71]+Abs[soc31-soc81]+Abs[soc31-soc91]+Abs[soc31-soc101]+Abs[soc31-soc111]+Abs[soc31-soc121]+Abs[soc31-soc131]+Abs[soc41-soc11]+Abs[soc41-soc21]+Abs[soc41-soc31]+Abs[soc41-soc41]+Abs[soc41-soc51]+Abs[soc41-soc61]+Abs[soc41-soc71]+Abs[soc41-soc81]+Abs[soc41-soc91]+Abs[soc41-soc101]+Abs[soc41-soc111]+Abs[soc41-soc121]+Abs[soc41-soc131]+Abs[soc51-soc11]+Abs[soc51-soc21]+Abs[soc51-soc31]+Abs[soc51-soc41]+Abs[soc51-soc51]+Abs[soc51-soc61]+Abs[soc51-soc71]+Abs[soc51-soc81]+Abs[soc51-soc91]+Abs[soc51-soc101]+Abs[soc51-soc111]+Abs[soc51-soc121]+Abs[soc51-soc131]+Abs[soc61-soc11]+Abs[soc61-soc21]+Abs[soc61-soc31]+Abs[soc61-soc41]+Abs[soc61-soc51]+Abs[soc61-soc61]+Abs[soc61-soc71]+Abs[soc61-soc81]+Abs[soc61-soc91]+Abs[soc61-soc101]+Abs[soc61-soc111]+Abs[soc61-soc121]+Abs[soc61-soc131]+Abs[soc71-soc11]+Abs[soc71-soc21]+Abs[soc71-soc31]+Abs[soc71-soc41]+Abs[soc71-soc51]+Abs[soc71-soc61]+Abs[soc71-soc71]+Abs[soc71-soc81]+Abs[soc71-soc91]+Abs[soc71-soc101]+Abs[soc71-soc111]+Abs[soc71-soc121]+Abs[soc71-soc131]+Abs[soc81-soc11]+Abs[soc81-soc21]+Abs[soc81-soc31]+Abs[soc81-soc41]+Abs[soc81-soc51]+Abs[soc81-soc61]+Abs[soc81-soc71]+Abs[soc81-soc81]+Abs[soc81-soc91]+Abs[soc81-soc101]+Abs[soc81-soc111]+Abs[soc81-soc121]+Abs[soc81-soc131]+Abs[soc91-soc11]+Abs[soc91-soc21]+Abs[soc91-soc31]+Abs[soc91-soc41]+Abs[soc91-soc51]+Abs[soc91-soc61]+Abs[soc91-soc71]+Abs[soc91-soc81]+Abs[soc91-soc91]+Abs[soc91-soc101]+Abs[soc91-soc111]+Abs[soc91-soc121]+Abs[soc91-soc131]+Abs[soc101-soc11]+Abs[soc101-soc21]+Abs[soc101-soc31]+Abs[soc101-soc41]+Abs[soc101-soc51]+Abs[soc101-soc61]+Abs[soc101-soc71]+Abs[soc101-soc81]+Abs[soc101-soc91]+Abs[soc101-soc101]+Abs[soc101-soc111]+Abs[soc101-soc121]+Abs[soc101-soc131]+Abs[soc111-soc11]+Abs[soc111-soc21]+Abs[soc111-soc31]+Abs[soc111-soc41]+Abs[soc111-soc51]+Abs[soc111-soc61]+Abs[soc111-soc71]+Abs[soc111-soc81]+Abs[soc111-soc91]+Abs[soc111-soc101]+Abs[soc111-soc111]+Abs[soc111-soc121]+Abs[soc111-soc131]+Abs[soc121-soc11]+Abs[soc121-soc21]+Abs[soc121-soc31]+Abs[soc121-soc41]+Abs[soc121-soc51]+Abs[soc121-soc61]+Abs[soc121-soc71]+Abs[soc121-soc81]+Abs[soc121-soc91]+Abs[soc121-soc101]+Abs[soc121-soc111]+Abs[soc121-soc121]+Abs[soc121-soc131]+Abs[soc131-soc11]+Abs[soc131-soc21]+Abs[soc131-soc31]+Abs[soc131-soc41]+Abs[soc131-soc51]+Abs[soc131-soc61]+Abs[soc131-soc71]+Abs[soc131-soc81]+Abs[soc131-soc91]+Abs[soc131-soc101]+Abs[soc131-soc111]+Abs[soc131-soc121]+Abs[soc131-soc131])]")
+		Me._MathWrapper.WaitAndDiscardAnswer("socgin1=N[(1/2*1/13^2*(1/socmea1))(" & tmpString.ToString & ")]")
 
 		For i = 0 To Me._usedLocations - 1
 			Me._MathWrapper.WaitAndDiscardAnswer("soc" & i + 1 & "2=soclis2[[1," & i + 1 & "]]")
 		Next
 
-		Me._MathWrapper.WaitAndDiscardAnswer("socmea2=(soc12+soc22+soc32+soc42+soc52+soc62+soc72+soc82+soc92+soc102+soc112+soc122+soc132)/13")
-		Me._MathWrapper.WaitAndDiscardAnswer("socgin2=N[(1/2*1/13^2*(1/socmea2))(Abs[soc12-soc12]+Abs[soc12-soc22]+Abs[soc12-soc32]+Abs[soc12-soc42]+Abs[soc12-soc52]+Abs[soc12-soc62]+Abs[soc12-soc72]+Abs[soc12-soc82]+Abs[soc12-soc92]+Abs[soc12-soc102]+Abs[soc12-soc112]+Abs[soc12-soc122]+Abs[soc12-soc132]+Abs[soc22-soc12]+Abs[soc22-soc22]+Abs[soc22-soc32]+Abs[soc22-soc42]+Abs[soc22-soc52]+Abs[soc22-soc62]+Abs[soc22-soc72]+Abs[soc22-soc82]+Abs[soc22-soc92]+Abs[soc22-soc102]+Abs[soc22-soc112]+Abs[soc22-soc122]+Abs[soc22-soc132]+Abs[soc32-soc12]+Abs[soc32-soc22]+Abs[soc32-soc32]+Abs[soc32-soc42]+Abs[soc32-soc52]+Abs[soc32-soc62]+Abs[soc32-soc72]+Abs[soc32-soc82]+Abs[soc32-soc92]+Abs[soc32-soc102]+Abs[soc32-soc112]+Abs[soc32-soc122]+Abs[soc32-soc132]+Abs[soc42-soc12]+Abs[soc42-soc22]+Abs[soc42-soc32]+Abs[soc42-soc42]+Abs[soc42-soc52]+Abs[soc42-soc62]+Abs[soc42-soc72]+Abs[soc42-soc82]+Abs[soc42-soc92]+Abs[soc42-soc102]+Abs[soc42-soc112]+Abs[soc42-soc122]+Abs[soc42-soc132]+Abs[soc52-soc12]+Abs[soc52-soc22]+Abs[soc52-soc32]+Abs[soc52-soc42]+Abs[soc52-soc52]+Abs[soc52-soc62]+Abs[soc52-soc72]+Abs[soc52-soc82]+Abs[soc52-soc92]+Abs[soc52-soc102]+Abs[soc52-soc112]+Abs[soc52-soc122]+Abs[soc52-soc132]+Abs[soc62-soc12]+Abs[soc62-soc22]+Abs[soc62-soc32]+Abs[soc62-soc42]+Abs[soc62-soc52]+Abs[soc62-soc62]+Abs[soc62-soc72]+Abs[soc62-soc82]+Abs[soc62-soc92]+Abs[soc62-soc102]+Abs[soc62-soc112]+Abs[soc62-soc122]+Abs[soc62-soc132]+Abs[soc72-soc12]+Abs[soc72-soc22]+Abs[soc72-soc32]+Abs[soc72-soc42]+Abs[soc72-soc52]+Abs[soc72-soc62]+Abs[soc72-soc72]+Abs[soc72-soc82]+Abs[soc72-soc92]+Abs[soc72-soc102]+Abs[soc72-soc112]+Abs[soc72-soc122]+Abs[soc72-soc132]+Abs[soc82-soc12]+Abs[soc82-soc22]+Abs[soc82-soc32]+Abs[soc82-soc42]+Abs[soc82-soc52]+Abs[soc82-soc62]+Abs[soc82-soc72]+Abs[soc82-soc82]+Abs[soc82-soc92]+Abs[soc82-soc102]+Abs[soc82-soc112]+Abs[soc82-soc122]+Abs[soc82-soc132]+Abs[soc92-soc12]+Abs[soc92-soc22]+Abs[soc92-soc32]+Abs[soc92-soc42]+Abs[soc92-soc52]+Abs[soc92-soc62]+Abs[soc92-soc72]+Abs[soc92-soc82]+Abs[soc92-soc92]+Abs[soc92-soc102]+Abs[soc92-soc112]+Abs[soc92-soc122]+Abs[soc92-soc132]+Abs[soc102-soc12]+Abs[soc102-soc22]+Abs[soc102-soc32]+Abs[soc102-soc42]+Abs[soc102-soc52]+Abs[soc102-soc62]+Abs[soc102-soc72]+Abs[soc102-soc82]+Abs[soc102-soc92]+Abs[soc102-soc102]+Abs[soc102-soc112]+Abs[soc102-soc122]+Abs[soc102-soc132]+Abs[soc112-soc12]+Abs[soc112-soc22]+Abs[soc112-soc32]+Abs[soc112-soc42]+Abs[soc112-soc52]+Abs[soc112-soc62]+Abs[soc112-soc72]+Abs[soc112-soc82]+Abs[soc112-soc92]+Abs[soc112-soc102]+Abs[soc112-soc112]+Abs[soc112-soc122]+Abs[soc112-soc132]+Abs[soc122-soc12]+Abs[soc122-soc22]+Abs[soc122-soc32]+Abs[soc122-soc42]+Abs[soc122-soc52]+Abs[soc122-soc62]+Abs[soc122-soc72]+Abs[soc122-soc82]+Abs[soc122-soc92]+Abs[soc122-soc102]+Abs[soc122-soc112]+Abs[soc122-soc122]+Abs[soc122-soc132]+Abs[soc132-soc12]+Abs[soc132-soc22]+Abs[soc132-soc32]+Abs[soc132-soc42]+Abs[soc132-soc52]+Abs[soc132-soc62]+Abs[soc132-soc72]+Abs[soc132-soc82]+Abs[soc132-soc92]+Abs[soc132-soc102]+Abs[soc132-soc112]+Abs[soc132-soc122]+Abs[soc132-soc132])]")
+		'create the expression to pass to Wolfram Mathematica
+		tmpString.Length = 0
+		'pattern: soci2+
+		For i = 0 To Me._usedLocations - 1
+			tmpString.Append("soc" & i + 1 & "2+")
+		Next
+
+		tmpString.Length -= "+".Length
+
+		Me._MathWrapper.WaitAndDiscardAnswer("socmea2=(" & tmpString.ToString & ")/" & Me._usedLocations)
+
+		'create the expression to pass to Wolfram Mathematica
+		tmpString.Length = 0
+		'pattern: Abs[soci2-soci2]+
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedLocations - 1
+				tmpString.Append("Abs[soc" & i + 1 & "2-soc" & j + 1 & "2]+")
+			Next
+		Next
+
+		tmpString.Length -= "+".Length
+
+		Me._MathWrapper.WaitAndDiscardAnswer("socgin2=N[(1/2*1/13^2*(1/socmea2))(" & tmpString.ToString & ")]")
 
 		For i = 0 To Me._usedLocations - 1
 			Me._MathWrapper.WaitAndDiscardAnswer("env" & i + 1 & "1=envlis1[[1," & i + 1 & "]]")
 		Next
 
-		Me._MathWrapper.WaitAndDiscardAnswer("envmea1=(env11+env21+env31+env41+env51+env61+env71+env81+env91+env101+env111+env121+env131)/13")
-		Me._MathWrapper.WaitAndDiscardAnswer("envgin1=N[(1/2*1/13^2*(1/envmea1))(Abs[env11-env11]+Abs[env11-env21]+Abs[env11-env31]+Abs[env11-env41]+Abs[env11-env51]+Abs[env11-env61]+Abs[env11-env71]+Abs[env11-env81]+Abs[env11-env91]+Abs[env11-env101]+Abs[env11-env111]+Abs[env11-env121]+Abs[env11-env131]+Abs[env21-env11]+Abs[env21-env21]+Abs[env21-env31]+Abs[env21-env41]+Abs[env21-env51]+Abs[env21-env61]+Abs[env21-env71]+Abs[env21-env81]+Abs[env21-env91]+Abs[env21-env101]+Abs[env21-env111]+Abs[env21-env121]+Abs[env21-env131]+Abs[env31-env11]+Abs[env31-env21]+Abs[env31-env31]+Abs[env31-env41]+Abs[env31-env51]+Abs[env31-env61]+Abs[env31-env71]+Abs[env31-env81]+Abs[env31-env91]+Abs[env31-env101]+Abs[env31-env111]+Abs[env31-env121]+Abs[env31-env131]+Abs[env41-env11]+Abs[env41-env21]+Abs[env41-env31]+Abs[env41-env41]+Abs[env41-env51]+Abs[env41-env61]+Abs[env41-env71]+Abs[env41-env81]+Abs[env41-env91]+Abs[env41-env101]+Abs[env41-env111]+Abs[env41-env121]+Abs[env41-env131]+Abs[env51-env11]+Abs[env51-env21]+Abs[env51-env31]+Abs[env51-env41]+Abs[env51-env51]+Abs[env51-env61]+Abs[env51-env71]+Abs[env51-env81]+Abs[env51-env91]+Abs[env51-env101]+Abs[env51-env111]+Abs[env51-env121]+Abs[env51-env131]+Abs[env61-env11]+Abs[env61-env21]+Abs[env61-env31]+Abs[env61-env41]+Abs[env61-env51]+Abs[env61-env61]+Abs[env61-env71]+Abs[env61-env81]+Abs[env61-env91]+Abs[env61-env101]+Abs[env61-env111]+Abs[env61-env121]+Abs[env61-env131]+Abs[env71-env11]+Abs[env71-env21]+Abs[env71-env31]+Abs[env71-env41]+Abs[env71-env51]+Abs[env71-env61]+Abs[env71-env71]+Abs[env71-env81]+Abs[env71-env91]+Abs[env71-env101]+Abs[env71-env111]+Abs[env71-env121]+Abs[env71-env131]+Abs[env81-env11]+Abs[env81-env21]+Abs[env81-env31]+Abs[env81-env41]+Abs[env81-env51]+Abs[env81-env61]+Abs[env81-env71]+Abs[env81-env81]+Abs[env81-env91]+Abs[env81-env101]+Abs[env81-env111]+Abs[env81-env121]+Abs[env81-env131]+Abs[env91-env11]+Abs[env91-env21]+Abs[env91-env31]+Abs[env91-env41]+Abs[env91-env51]+Abs[env91-env61]+Abs[env91-env71]+Abs[env91-env81]+Abs[env91-env91]+Abs[env91-env101]+Abs[env91-env111]+Abs[env91-env121]+Abs[env91-env131]+Abs[env101-env11]+Abs[env101-env21]+Abs[env101-env31]+Abs[env101-env41]+Abs[env101-env51]+Abs[env101-env61]+Abs[env101-env71]+Abs[env101-env81]+Abs[env101-env91]+Abs[env101-env101]+Abs[env101-env111]+Abs[env101-env121]+Abs[env101-env131]+Abs[env111-env11]+Abs[env111-env21]+Abs[env111-env31]+Abs[env111-env41]+Abs[env111-env51]+Abs[env111-env61]+Abs[env111-env71]+Abs[env111-env81]+Abs[env111-env91]+Abs[env111-env101]+Abs[env111-env111]+Abs[env111-env121]+Abs[env111-env131]+Abs[env121-env11]+Abs[env121-env21]+Abs[env121-env31]+Abs[env121-env41]+Abs[env121-env51]+Abs[env121-env61]+Abs[env121-env71]+Abs[env121-env81]+Abs[env121-env91]+Abs[env121-env101]+Abs[env121-env111]+Abs[env121-env121]+Abs[env121-env131]+Abs[env131-env11]+Abs[env131-env21]+Abs[env131-env31]+Abs[env131-env41]+Abs[env131-env51]+Abs[env131-env61]+Abs[env131-env71]+Abs[env131-env81]+Abs[env131-env91]+Abs[env131-env101]+Abs[env131-env111]+Abs[env131-env121]+Abs[env131-env131])]")
+		'create the expression to pass to Wolfram Mathematica
+		tmpString.Length = 0
+		'pattern: envi1+
+		For i = 0 To Me._usedLocations - 1
+			tmpString.Append("env" & i + 1 & "1+")
+		Next
+
+		tmpString.Length -= "+".Length
+
+		Me._MathWrapper.WaitAndDiscardAnswer("envmea1=(" & tmpString.ToString & ")/" & Me._usedLocations)
+
+		'create the expression to pass to Wolfram Mathematica
+		tmpString.Length = 0
+		'pattern: Abs[envi1-envi1]+
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedLocations - 1
+				tmpString.Append("Abs[env" & i + 1 & "1-env" & j + 1 & "1]+")
+			Next
+		Next
+
+		tmpString.Length -= "+".Length
+
+		Me._MathWrapper.WaitAndDiscardAnswer("envgin1=N[(1/2*1/13^2*(1/envmea1))(" & tmpString.ToString & ")]")
 
 		For i = 0 To Me._usedLocations - 1
 			Me._MathWrapper.WaitAndDiscardAnswer("env" & i + 1 & "2=envlis2[[1," & i + 1 & "]]")
 		Next
 
-		Me._MathWrapper.WaitAndDiscardAnswer("envmea2=(env12+env22+env32+env42+env52+env62+env72+env82+env92+env102+env112+env122+env132)/13")
-		Me._MathWrapper.WaitAndDiscardAnswer("envgin2=N[(1/2*1/13^2*(1/envmea2))(Abs[env12-env12]+Abs[env12-env22]+Abs[env12-env32]+Abs[env12-env42]+Abs[env12-env52]+Abs[env12-env62]+Abs[env12-env72]+Abs[env12-env82]+Abs[env12-env92]+Abs[env12-env102]+Abs[env12-env112]+Abs[env12-env122]+Abs[env12-env132]+Abs[env22-env12]+Abs[env22-env22]+Abs[env22-env32]+Abs[env22-env42]+Abs[env22-env52]+Abs[env22-env62]+Abs[env22-env72]+Abs[env22-env82]+Abs[env22-env92]+Abs[env22-env102]+Abs[env22-env112]+Abs[env22-env122]+Abs[env22-env132]+Abs[env32-env12]+Abs[env32-env22]+Abs[env32-env32]+Abs[env32-env42]+Abs[env32-env52]+Abs[env32-env62]+Abs[env32-env72]+Abs[env32-env82]+Abs[env32-env92]+Abs[env32-env102]+Abs[env32-env112]+Abs[env32-env122]+Abs[env32-env132]+Abs[env42-env12]+Abs[env42-env22]+Abs[env42-env32]+Abs[env42-env42]+Abs[env42-env52]+Abs[env42-env62]+Abs[env42-env72]+Abs[env42-env82]+Abs[env42-env92]+Abs[env42-env102]+Abs[env42-env112]+Abs[env42-env122]+Abs[env42-env132]+Abs[env52-env12]+Abs[env52-env22]+Abs[env52-env32]+Abs[env52-env42]+Abs[env52-env52]+Abs[env52-env62]+Abs[env52-env72]+Abs[env52-env82]+Abs[env52-env92]+Abs[env52-env102]+Abs[env52-env112]+Abs[env52-env122]+Abs[env52-env132]+Abs[env62-env12]+Abs[env62-env22]+Abs[env62-env32]+Abs[env62-env42]+Abs[env62-env52]+Abs[env62-env62]+Abs[env62-env72]+Abs[env62-env82]+Abs[env62-env92]+Abs[env62-env102]+Abs[env62-env112]+Abs[env62-env122]+Abs[env62-env132]+Abs[env72-env12]+Abs[env72-env22]+Abs[env72-env32]+Abs[env72-env42]+Abs[env72-env52]+Abs[env72-env62]+Abs[env72-env72]+Abs[env72-env82]+Abs[env72-env92]+Abs[env72-env102]+Abs[env72-env112]+Abs[env72-env122]+Abs[env72-env132]+Abs[env82-env12]+Abs[env82-env22]+Abs[env82-env32]+Abs[env82-env42]+Abs[env82-env52]+Abs[env82-env62]+Abs[env82-env72]+Abs[env82-env82]+Abs[env82-env92]+Abs[env82-env102]+Abs[env82-env112]+Abs[env82-env122]+Abs[env82-env132]+Abs[env92-env12]+Abs[env92-env22]+Abs[env92-env32]+Abs[env92-env42]+Abs[env92-env52]+Abs[env92-env62]+Abs[env92-env72]+Abs[env92-env82]+Abs[env92-env92]+Abs[env92-env102]+Abs[env92-env112]+Abs[env92-env122]+Abs[env92-env132]+Abs[env102-env12]+Abs[env102-env22]+Abs[env102-env32]+Abs[env102-env42]+Abs[env102-env52]+Abs[env102-env62]+Abs[env102-env72]+Abs[env102-env82]+Abs[env102-env92]+Abs[env102-env102]+Abs[env102-env112]+Abs[env102-env122]+Abs[env102-env132]+Abs[env112-env12]+Abs[env112-env22]+Abs[env112-env32]+Abs[env112-env42]+Abs[env112-env52]+Abs[env112-env62]+Abs[env112-env72]+Abs[env112-env82]+Abs[env112-env92]+Abs[env112-env102]+Abs[env112-env112]+Abs[env112-env122]+Abs[env112-env132]+Abs[env122-env12]+Abs[env122-env22]+Abs[env122-env32]+Abs[env122-env42]+Abs[env122-env52]+Abs[env122-env62]+Abs[env122-env72]+Abs[env122-env82]+Abs[env122-env92]+Abs[env122-env102]+Abs[env122-env112]+Abs[env122-env122]+Abs[env122-env132]+Abs[env132-env12]+Abs[env132-env22]+Abs[env132-env32]+Abs[env132-env42]+Abs[env132-env52]+Abs[env132-env62]+Abs[env132-env72]+Abs[env132-env82]+Abs[env132-env92]+Abs[env132-env102]+Abs[env132-env112]+Abs[env132-env122]+Abs[env132-env132])]")
+		'create the expression to pass to Wolfram Mathematica
+		tmpString.Length = 0
+		'pattern: envi2+
+		For i = 0 To Me._usedLocations - 1
+			tmpString.Append("env" & i + 1 & "2+")
+		Next
+
+		tmpString.Length -= "+".Length
+
+		Me._MathWrapper.WaitAndDiscardAnswer("envmea2=(" & tmpString.ToString & ")/" & Me._usedLocations)
+
+		'create the expression to pass to Wolfram Mathematica
+		tmpString.Length = 0
+		'pattern: Abs[envi2-envi2]+
+		For i = 0 To Me._usedLocations - 1
+			For j = 0 To Me._usedLocations - 1
+				tmpString.Append("Abs[env" & i + 1 & "2-env" & j + 1 & "2]+")
+			Next
+		Next
+
+		tmpString.Length -= "+".Length
+
+		Me._MathWrapper.WaitAndDiscardAnswer("envgin2=N[(1/2*1/13^2*(1/envmea2))(" & tmpString.ToString & ")]")
 
 		Me._MathWrapper.WaitAndDiscardAnswer("mobj = m[[{1}]]")
 		Me._MathWrapper.WaitAndDiscardAnswer("marg = m[[{2}]]")
