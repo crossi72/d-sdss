@@ -1018,7 +1018,6 @@ Partial Class frmNegotiation
 		Me.nudAgrw.DSSLocation = 0
 		Me.nudAgrw.DSSOffset = -0.2R
 		Me.nudAgrw.Location = New System.Drawing.Point(291, 150)
-		Me.nudAgrw.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudAgrw.Name = "nudAgrw"
 		Me.nudAgrw.Size = New System.Drawing.Size(90, 20)
 		Me.nudAgrw.TabIndex = 194
@@ -1244,7 +1243,6 @@ Partial Class frmNegotiation
 		Me.nudEnvw.DSSLocation = 0
 		Me.nudEnvw.DSSOffset = -0.2R
 		Me.nudEnvw.Location = New System.Drawing.Point(2, 150)
-		Me.nudEnvw.Maximum = New Decimal(New Integer() {50, 0, 0, 0})
 		Me.nudEnvw.Name = "nudEnvw"
 		Me.nudEnvw.Size = New System.Drawing.Size(90, 20)
 		Me.nudEnvw.TabIndex = 9
