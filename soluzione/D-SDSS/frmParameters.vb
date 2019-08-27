@@ -11,15 +11,7 @@ Public Class frmParameters
 	End Sub
 
 	Private Sub frmParameters_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-		Me.TAParameters.Fill(Me.DSParameters.parameters)
-
-		Try
-			Me.txtParKernelPath.Text = CStr(Me.DSParameters.Tables(0).Rows(0).Item("parKernelPath"))
-			Me.nudparLocations.Value = CInt(Me.DSParameters.Tables(0).Rows(0).Item("parLocations"))
-			Me.nudparDimensions.Value = CInt(Me.DSParameters.Tables(0).Rows(0).Item("parDimensions"))
-		Catch ex As Exception
-
-		End Try
+		Me.LoadData()
 	End Sub
 
 	Private Sub LinkLabel1_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
@@ -28,15 +20,7 @@ Public Class frmParameters
 	End Sub
 
 	Private Sub btnConfirm_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnConfirm.Click
-		Dim sqlQuery As String
-
-		'set new value in db
-		sqlQuery = "UPDATE parameters" & ControlChars.CrLf
-		sqlQuery &= "SET parKernelPath = '" & Me.OpenFileDialog1.FileName & "'" & ControlChars.CrLf
-		sqlQuery &= ", parLocations = " & Me.nudparLocations.Value & ControlChars.CrLf
-		sqlQuery &= ", parDimensions = " & Me.nudparDimensions.Value
-
-		Utility.ExecuteSQL(sqlQuery, Me.TAParameters.Connection)
+		Me.SaveData()
 
 		Me.Close()
 	End Sub
@@ -54,6 +38,78 @@ Public Class frmParameters
 #End Region
 
 #Region " Private methods "
+
+	Private Sub LoadData()
+		Dim i As Integer
+		Dim tpa As TabPage
+
+		Me.TAParameters.Fill(Me.DSParameters.parameters)
+
+		Try
+			Me.txtParKernelPath.Text = CStr(Me.DSParameters.Tables(0).Rows(0).Item("parKernelPath"))
+			Me.nudparLocations.Value = CInt(Me.DSParameters.Tables(0).Rows(0).Item("parLocations"))
+			Me.nudparDimensions.Value = CInt(Me.DSParameters.Tables(0).Rows(0).Item("parDimensions"))
+		Catch ex As Exception
+
+		End Try
+
+		Me.TALocations.Fill(Me.DSLocations.locations)
+
+		Try
+			'get controls container
+			tpa = DirectCast(Me.Controls.Item("TabControl1"), TabControl).TabPages(1)
+
+			For i = 1 To 15
+				DirectCast(tpa.Controls.Item("txtLocation" & i), TextBox).Text = CStr(Me.DSLocations.Tables(0).Rows(i - 1).Item("locName"))
+			Next
+		Catch ex As Exception
+
+		End Try
+	End Sub
+
+	''' <summary>
+	''' Save data to database
+	''' </summary>
+	Private Sub SaveData()
+		Dim i As Integer
+		Dim tpa As TabPage
+		Dim sqlQuery As New Text.StringBuilder
+
+		'set new value for parameters in db
+		sqlQuery.Length = 0
+
+		sqlQuery.AppendLine("UPDATE parameters")
+		sqlQuery.AppendLine("SET parKernelPath = '" & Me.txtParKernelPath.Text & "'")
+		sqlQuery.AppendLine(", parLocations = " & Me.nudparLocations.Value)
+		sqlQuery.Append(", parDimensions = " & Me.nudparDimensions.Value)
+
+		Utility.ExecuteSQL(sqlQuery.ToString, Me.TAParameters.Connection)
+
+		'set new value for locations in db
+
+		Try
+			'get controls container
+			tpa = DirectCast(Me.Controls.Item("TabControl1"), TabControl).TabPages(1)
+
+			'set visibility for each control
+			For i = 1 To 15
+				If Me.nudparLocations.Value < i Then
+					'don't save data for unused locations
+				Else
+					sqlQuery.Length = 0
+
+					sqlQuery.AppendLine("UPDATE locations")
+					sqlQuery.AppendLine("SET locName = '" & tpa.Controls.Item("txtLocation" & i).Text & "'")
+					sqlQuery.Append("WHERE locID = " & i)
+
+					Utility.ExecuteSQL(sqlQuery.ToString, Me.TAParameters.Connection)
+				End If
+			Next
+		Catch ex As Exception
+
+		End Try
+
+	End Sub
 
 	''' <summary>
 	''' Hide or show location controls according to Locations value

@@ -1,9 +1,9 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmParameters
 	Inherits System.Windows.Forms.Form
 
 	'Form esegue l'override del metodo Dispose per pulire l'elenco dei componenti.
-	<System.Diagnostics.DebuggerNonUserCode()> _
+	<System.Diagnostics.DebuggerNonUserCode()>
 	Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 		Try
 			If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmParameters
 	'NOTA: la procedura che segue è richiesta da Progettazione Windows Form
 	'Può essere modificata in Progettazione Windows Form.  
 	'Non modificarla nell'editor del codice.
-	<System.Diagnostics.DebuggerStepThrough()> _
+	<System.Diagnostics.DebuggerStepThrough()>
 	Private Sub InitializeComponent()
 		Me.components = New System.ComponentModel.Container()
 		Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
@@ -71,6 +71,8 @@ Partial Class frmParameters
 		Me.txtLocation14 = New System.Windows.Forms.TextBox()
 		Me.lbllocation11 = New System.Windows.Forms.Label()
 		Me.txtLocation11 = New System.Windows.Forms.TextBox()
+		Me.TALocations = New DSDSS.DSLocationsTableAdapters.locationsTableAdapter()
+		Me.DSLocations = New DSDSS.DSLocations()
 		CType(Me.ParametersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.nudparLocations, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.nudparDimensions, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,6 +80,7 @@ Partial Class frmParameters
 		Me.TabControl1.SuspendLayout()
 		Me.tpaGeneric.SuspendLayout()
 		Me.tpaLocationNames.SuspendLayout()
+		CType(Me.DSLocations, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
 		'
 		'OpenFileDialog1
@@ -505,6 +508,15 @@ Partial Class frmParameters
 		Me.txtLocation11.Size = New System.Drawing.Size(146, 20)
 		Me.txtLocation11.TabIndex = 10
 		'
+		'TALocations
+		'
+		Me.TALocations.ClearBeforeFill = True
+		'
+		'DSLocations
+		'
+		Me.DSLocations.DataSetName = "DSLocations"
+		Me.DSLocations.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+		'
 		'frmParameters
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -524,6 +536,7 @@ Partial Class frmParameters
 		Me.tpaGeneric.PerformLayout()
 		Me.tpaLocationNames.ResumeLayout(False)
 		Me.tpaLocationNames.PerformLayout()
+		CType(Me.DSLocations, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.ResumeLayout(False)
 
 	End Sub
@@ -575,4 +588,6 @@ Partial Class frmParameters
 	Friend WithEvents txtLocation4 As TextBox
 	Friend WithEvents lbllocation1 As Label
 	Friend WithEvents txtLocation1 As TextBox
+	Friend WithEvents TALocations As DSLocationsTableAdapters.locationsTableAdapter
+	Friend WithEvents DSLocations As DSLocations
 End Class
