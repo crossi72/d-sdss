@@ -23,7 +23,7 @@ Partial Class frmParameters
 	<System.Diagnostics.DebuggerStepThrough()>
 	Private Sub InitializeComponent()
 		Me.components = New System.ComponentModel.Container()
-		Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+		Me.OpenFileDialog = New System.Windows.Forms.OpenFileDialog()
 		Me.txtParKernelPath = New System.Windows.Forms.TextBox()
 		Me.lblParKernelPath = New System.Windows.Forms.Label()
 		Me.btnSetPath = New System.Windows.Forms.Button()
@@ -41,26 +41,39 @@ Partial Class frmParameters
 		Me.TabControl1 = New System.Windows.Forms.TabControl()
 		Me.tpaGeneric = New System.Windows.Forms.TabPage()
 		Me.tpaLocationNames = New System.Windows.Forms.TabPage()
-		Me.txtLocation1 = New System.Windows.Forms.TextBox()
-		Me.lbllocation1 = New System.Windows.Forms.Label()
-		Me.lbllocation4 = New System.Windows.Forms.Label()
-		Me.txtLocation4 = New System.Windows.Forms.TextBox()
-		Me.lbllocation3 = New System.Windows.Forms.Label()
-		Me.txtLocation3 = New System.Windows.Forms.TextBox()
-		Me.lbllocation2 = New System.Windows.Forms.Label()
-		Me.txtLocation2 = New System.Windows.Forms.TextBox()
-		Me.lbllocation5 = New System.Windows.Forms.Label()
-		Me.txtLocation5 = New System.Windows.Forms.TextBox()
-		Me.lbllocation10 = New System.Windows.Forms.Label()
-		Me.txtLocation10 = New System.Windows.Forms.TextBox()
-		Me.lbllocation7 = New System.Windows.Forms.Label()
-		Me.txtLocation7 = New System.Windows.Forms.TextBox()
-		Me.lbllocation8 = New System.Windows.Forms.Label()
-		Me.txtLocation8 = New System.Windows.Forms.TextBox()
-		Me.lbllocation9 = New System.Windows.Forms.Label()
-		Me.txtLocation9 = New System.Windows.Forms.TextBox()
-		Me.lbllocation6 = New System.Windows.Forms.Label()
-		Me.txtLocation6 = New System.Windows.Forms.TextBox()
+		Me.nudLongitude14 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLongitude15 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLongitude12 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLongitude13 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLongitude11 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLongitude9 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLongitude10 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLongitude7 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLongitude8 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLongitude6 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLongitude4 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLongitude5 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLongitude2 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLongitude3 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLongitude1 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLatitude14 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLatitude15 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLatitude12 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLatitude13 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLatitude11 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLatitude9 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLatitude10 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLatitude7 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLatitude8 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLatitude6 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLatitude4 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLatitude5 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLatitude2 = New System.Windows.Forms.NumericUpDown()
+		Me.nudLatitude3 = New System.Windows.Forms.NumericUpDown()
+		Me.Label4 = New System.Windows.Forms.Label()
+		Me.Label3 = New System.Windows.Forms.Label()
+		Me.Label1 = New System.Windows.Forms.Label()
+		Me.nudLatitude1 = New System.Windows.Forms.NumericUpDown()
 		Me.lbllocation15 = New System.Windows.Forms.Label()
 		Me.txtLocation15 = New System.Windows.Forms.TextBox()
 		Me.lbllocation12 = New System.Windows.Forms.Label()
@@ -71,6 +84,26 @@ Partial Class frmParameters
 		Me.txtLocation14 = New System.Windows.Forms.TextBox()
 		Me.lbllocation11 = New System.Windows.Forms.Label()
 		Me.txtLocation11 = New System.Windows.Forms.TextBox()
+		Me.lbllocation10 = New System.Windows.Forms.Label()
+		Me.txtLocation10 = New System.Windows.Forms.TextBox()
+		Me.lbllocation7 = New System.Windows.Forms.Label()
+		Me.txtLocation7 = New System.Windows.Forms.TextBox()
+		Me.lbllocation8 = New System.Windows.Forms.Label()
+		Me.txtLocation8 = New System.Windows.Forms.TextBox()
+		Me.lbllocation9 = New System.Windows.Forms.Label()
+		Me.txtLocation9 = New System.Windows.Forms.TextBox()
+		Me.lbllocation6 = New System.Windows.Forms.Label()
+		Me.txtLocation6 = New System.Windows.Forms.TextBox()
+		Me.lbllocation5 = New System.Windows.Forms.Label()
+		Me.txtLocation5 = New System.Windows.Forms.TextBox()
+		Me.lbllocation2 = New System.Windows.Forms.Label()
+		Me.txtLocation2 = New System.Windows.Forms.TextBox()
+		Me.lbllocation3 = New System.Windows.Forms.Label()
+		Me.txtLocation3 = New System.Windows.Forms.TextBox()
+		Me.lbllocation4 = New System.Windows.Forms.Label()
+		Me.txtLocation4 = New System.Windows.Forms.TextBox()
+		Me.lbllocation1 = New System.Windows.Forms.Label()
+		Me.txtLocation1 = New System.Windows.Forms.TextBox()
 		Me.TALocations = New DSDSS.DSLocationsTableAdapters.locationsTableAdapter()
 		Me.DSLocations = New DSDSS.DSLocations()
 		CType(Me.ParametersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,13 +113,43 @@ Partial Class frmParameters
 		Me.TabControl1.SuspendLayout()
 		Me.tpaGeneric.SuspendLayout()
 		Me.tpaLocationNames.SuspendLayout()
+		CType(Me.nudLongitude14, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLongitude15, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLongitude12, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLongitude13, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLongitude11, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLongitude9, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLongitude10, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLongitude7, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLongitude8, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLongitude6, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLongitude4, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLongitude5, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLongitude2, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLongitude3, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLongitude1, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLatitude14, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLatitude15, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLatitude12, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLatitude13, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLatitude11, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLatitude9, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLatitude10, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLatitude7, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLatitude8, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLatitude6, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLatitude4, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLatitude5, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLatitude2, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLatitude3, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudLatitude1, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.DSLocations, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
 		'
-		'OpenFileDialog1
+		'OpenFileDialog
 		'
-		Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-		Me.OpenFileDialog1.Filter = "Executable files (*.exe)|*.exe|All files|*.*"
+		Me.OpenFileDialog.FileName = "OpenFileDialog1"
+		Me.OpenFileDialog.Filter = "Executable files (*.exe)|*.exe|All files|*.*"
 		'
 		'txtParKernelPath
 		'
@@ -138,7 +201,8 @@ Partial Class frmParameters
 		'
 		'btnConfirm
 		'
-		Me.btnConfirm.Location = New System.Drawing.Point(259, 389)
+		Me.btnConfirm.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+		Me.btnConfirm.Location = New System.Drawing.Point(258, 478)
 		Me.btnConfirm.Name = "btnConfirm"
 		Me.btnConfirm.Size = New System.Drawing.Size(75, 23)
 		Me.btnConfirm.TabIndex = 6
@@ -147,7 +211,8 @@ Partial Class frmParameters
 		'
 		'btnCancel
 		'
-		Me.btnCancel.Location = New System.Drawing.Point(178, 389)
+		Me.btnCancel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+		Me.btnCancel.Location = New System.Drawing.Point(177, 478)
 		Me.btnCancel.Name = "btnCancel"
 		Me.btnCancel.Size = New System.Drawing.Size(75, 23)
 		Me.btnCancel.TabIndex = 5
@@ -201,12 +266,15 @@ Partial Class frmParameters
 		'
 		'TabControl1
 		'
+		Me.TabControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+			Or System.Windows.Forms.AnchorStyles.Left) _
+			Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
 		Me.TabControl1.Controls.Add(Me.tpaGeneric)
 		Me.TabControl1.Controls.Add(Me.tpaLocationNames)
 		Me.TabControl1.Location = New System.Drawing.Point(0, 0)
 		Me.TabControl1.Name = "TabControl1"
 		Me.TabControl1.SelectedIndex = 0
-		Me.TabControl1.Size = New System.Drawing.Size(566, 362)
+		Me.TabControl1.Size = New System.Drawing.Size(566, 458)
 		Me.TabControl1.TabIndex = 7
 		'
 		'tpaGeneric
@@ -223,13 +291,47 @@ Partial Class frmParameters
 		Me.tpaGeneric.Location = New System.Drawing.Point(4, 22)
 		Me.tpaGeneric.Name = "tpaGeneric"
 		Me.tpaGeneric.Padding = New System.Windows.Forms.Padding(3)
-		Me.tpaGeneric.Size = New System.Drawing.Size(558, 336)
+		Me.tpaGeneric.Size = New System.Drawing.Size(558, 432)
 		Me.tpaGeneric.TabIndex = 0
 		Me.tpaGeneric.Text = "Basic parameters"
 		Me.tpaGeneric.UseVisualStyleBackColor = True
 		'
 		'tpaLocationNames
 		'
+		Me.tpaLocationNames.AutoScroll = True
+		Me.tpaLocationNames.Controls.Add(Me.nudLongitude14)
+		Me.tpaLocationNames.Controls.Add(Me.nudLongitude15)
+		Me.tpaLocationNames.Controls.Add(Me.nudLongitude12)
+		Me.tpaLocationNames.Controls.Add(Me.nudLongitude13)
+		Me.tpaLocationNames.Controls.Add(Me.nudLongitude11)
+		Me.tpaLocationNames.Controls.Add(Me.nudLongitude9)
+		Me.tpaLocationNames.Controls.Add(Me.nudLongitude10)
+		Me.tpaLocationNames.Controls.Add(Me.nudLongitude7)
+		Me.tpaLocationNames.Controls.Add(Me.nudLongitude8)
+		Me.tpaLocationNames.Controls.Add(Me.nudLongitude6)
+		Me.tpaLocationNames.Controls.Add(Me.nudLongitude4)
+		Me.tpaLocationNames.Controls.Add(Me.nudLongitude5)
+		Me.tpaLocationNames.Controls.Add(Me.nudLongitude2)
+		Me.tpaLocationNames.Controls.Add(Me.nudLongitude3)
+		Me.tpaLocationNames.Controls.Add(Me.nudLongitude1)
+		Me.tpaLocationNames.Controls.Add(Me.nudLatitude14)
+		Me.tpaLocationNames.Controls.Add(Me.nudLatitude15)
+		Me.tpaLocationNames.Controls.Add(Me.nudLatitude12)
+		Me.tpaLocationNames.Controls.Add(Me.nudLatitude13)
+		Me.tpaLocationNames.Controls.Add(Me.nudLatitude11)
+		Me.tpaLocationNames.Controls.Add(Me.nudLatitude9)
+		Me.tpaLocationNames.Controls.Add(Me.nudLatitude10)
+		Me.tpaLocationNames.Controls.Add(Me.nudLatitude7)
+		Me.tpaLocationNames.Controls.Add(Me.nudLatitude8)
+		Me.tpaLocationNames.Controls.Add(Me.nudLatitude6)
+		Me.tpaLocationNames.Controls.Add(Me.nudLatitude4)
+		Me.tpaLocationNames.Controls.Add(Me.nudLatitude5)
+		Me.tpaLocationNames.Controls.Add(Me.nudLatitude2)
+		Me.tpaLocationNames.Controls.Add(Me.nudLatitude3)
+		Me.tpaLocationNames.Controls.Add(Me.Label4)
+		Me.tpaLocationNames.Controls.Add(Me.Label3)
+		Me.tpaLocationNames.Controls.Add(Me.Label1)
+		Me.tpaLocationNames.Controls.Add(Me.nudLatitude1)
 		Me.tpaLocationNames.Controls.Add(Me.lbllocation15)
 		Me.tpaLocationNames.Controls.Add(Me.txtLocation15)
 		Me.tpaLocationNames.Controls.Add(Me.lbllocation12)
@@ -263,90 +365,387 @@ Partial Class frmParameters
 		Me.tpaLocationNames.Location = New System.Drawing.Point(4, 22)
 		Me.tpaLocationNames.Name = "tpaLocationNames"
 		Me.tpaLocationNames.Padding = New System.Windows.Forms.Padding(3)
-		Me.tpaLocationNames.Size = New System.Drawing.Size(558, 336)
+		Me.tpaLocationNames.Size = New System.Drawing.Size(558, 432)
 		Me.tpaLocationNames.TabIndex = 1
 		Me.tpaLocationNames.Text = "Location names"
 		Me.tpaLocationNames.UseVisualStyleBackColor = True
 		'
-		'txtLocation1
+		'nudLongitude14
 		'
-		Me.txtLocation1.Location = New System.Drawing.Point(103, 29)
-		Me.txtLocation1.Name = "txtLocation1"
-		Me.txtLocation1.Size = New System.Drawing.Size(146, 20)
-		Me.txtLocation1.TabIndex = 0
+		Me.nudLongitude14.DecimalPlaces = 5
+		Me.nudLongitude14.Location = New System.Drawing.Point(396, 367)
+		Me.nudLongitude14.Name = "nudLongitude14"
+		Me.nudLongitude14.Size = New System.Drawing.Size(120, 20)
+		Me.nudLongitude14.TabIndex = 213
+		Me.nudLongitude14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		'
-		'lbllocation1
+		'nudLongitude15
 		'
-		Me.lbllocation1.AutoSize = True
-		Me.lbllocation1.Location = New System.Drawing.Point(12, 29)
-		Me.lbllocation1.Name = "lbllocation1"
-		Me.lbllocation1.Size = New System.Drawing.Size(57, 13)
-		Me.lbllocation1.TabIndex = 1
-		Me.lbllocation1.Text = "Location 1"
+		Me.nudLongitude15.DecimalPlaces = 5
+		Me.nudLongitude15.Location = New System.Drawing.Point(396, 393)
+		Me.nudLongitude15.Name = "nudLongitude15"
+		Me.nudLongitude15.Size = New System.Drawing.Size(120, 20)
+		Me.nudLongitude15.TabIndex = 214
+		Me.nudLongitude15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		'
-		'lbllocation4
+		'nudLongitude12
 		'
-		Me.lbllocation4.AutoSize = True
-		Me.lbllocation4.Location = New System.Drawing.Point(12, 107)
-		Me.lbllocation4.Name = "lbllocation4"
-		Me.lbllocation4.Size = New System.Drawing.Size(57, 13)
-		Me.lbllocation4.TabIndex = 3
-		Me.lbllocation4.Text = "Location 4"
+		Me.nudLongitude12.DecimalPlaces = 5
+		Me.nudLongitude12.Location = New System.Drawing.Point(396, 315)
+		Me.nudLongitude12.Name = "nudLongitude12"
+		Me.nudLongitude12.Size = New System.Drawing.Size(120, 20)
+		Me.nudLongitude12.TabIndex = 211
+		Me.nudLongitude12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		'
-		'txtLocation4
+		'nudLongitude13
 		'
-		Me.txtLocation4.Location = New System.Drawing.Point(103, 107)
-		Me.txtLocation4.Name = "txtLocation4"
-		Me.txtLocation4.Size = New System.Drawing.Size(146, 20)
-		Me.txtLocation4.TabIndex = 3
+		Me.nudLongitude13.DecimalPlaces = 5
+		Me.nudLongitude13.Location = New System.Drawing.Point(396, 341)
+		Me.nudLongitude13.Name = "nudLongitude13"
+		Me.nudLongitude13.Size = New System.Drawing.Size(120, 20)
+		Me.nudLongitude13.TabIndex = 212
+		Me.nudLongitude13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		'
-		'lbllocation3
+		'nudLongitude11
 		'
-		Me.lbllocation3.AutoSize = True
-		Me.lbllocation3.Location = New System.Drawing.Point(12, 81)
-		Me.lbllocation3.Name = "lbllocation3"
-		Me.lbllocation3.Size = New System.Drawing.Size(57, 13)
-		Me.lbllocation3.TabIndex = 5
-		Me.lbllocation3.Text = "Location 3"
+		Me.nudLongitude11.DecimalPlaces = 5
+		Me.nudLongitude11.Location = New System.Drawing.Point(396, 289)
+		Me.nudLongitude11.Name = "nudLongitude11"
+		Me.nudLongitude11.Size = New System.Drawing.Size(120, 20)
+		Me.nudLongitude11.TabIndex = 210
+		Me.nudLongitude11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		'
-		'txtLocation3
+		'nudLongitude9
 		'
-		Me.txtLocation3.Location = New System.Drawing.Point(103, 81)
-		Me.txtLocation3.Name = "txtLocation3"
-		Me.txtLocation3.Size = New System.Drawing.Size(146, 20)
-		Me.txtLocation3.TabIndex = 2
+		Me.nudLongitude9.DecimalPlaces = 5
+		Me.nudLongitude9.Location = New System.Drawing.Point(396, 237)
+		Me.nudLongitude9.Name = "nudLongitude9"
+		Me.nudLongitude9.Size = New System.Drawing.Size(120, 20)
+		Me.nudLongitude9.TabIndex = 208
+		Me.nudLongitude9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		'
-		'lbllocation2
+		'nudLongitude10
 		'
-		Me.lbllocation2.AutoSize = True
-		Me.lbllocation2.Location = New System.Drawing.Point(12, 55)
-		Me.lbllocation2.Name = "lbllocation2"
-		Me.lbllocation2.Size = New System.Drawing.Size(57, 13)
-		Me.lbllocation2.TabIndex = 7
-		Me.lbllocation2.Text = "Location 2"
+		Me.nudLongitude10.DecimalPlaces = 5
+		Me.nudLongitude10.Location = New System.Drawing.Point(396, 263)
+		Me.nudLongitude10.Name = "nudLongitude10"
+		Me.nudLongitude10.Size = New System.Drawing.Size(120, 20)
+		Me.nudLongitude10.TabIndex = 209
+		Me.nudLongitude10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		'
-		'txtLocation2
+		'nudLongitude7
 		'
-		Me.txtLocation2.Location = New System.Drawing.Point(103, 55)
-		Me.txtLocation2.Name = "txtLocation2"
-		Me.txtLocation2.Size = New System.Drawing.Size(146, 20)
-		Me.txtLocation2.TabIndex = 1
+		Me.nudLongitude7.DecimalPlaces = 5
+		Me.nudLongitude7.Location = New System.Drawing.Point(396, 185)
+		Me.nudLongitude7.Name = "nudLongitude7"
+		Me.nudLongitude7.Size = New System.Drawing.Size(120, 20)
+		Me.nudLongitude7.TabIndex = 206
+		Me.nudLongitude7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		'
-		'lbllocation5
+		'nudLongitude8
 		'
-		Me.lbllocation5.AutoSize = True
-		Me.lbllocation5.Location = New System.Drawing.Point(12, 133)
-		Me.lbllocation5.Name = "lbllocation5"
-		Me.lbllocation5.Size = New System.Drawing.Size(57, 13)
-		Me.lbllocation5.TabIndex = 9
-		Me.lbllocation5.Text = "Location 5"
+		Me.nudLongitude8.DecimalPlaces = 5
+		Me.nudLongitude8.Location = New System.Drawing.Point(396, 211)
+		Me.nudLongitude8.Name = "nudLongitude8"
+		Me.nudLongitude8.Size = New System.Drawing.Size(120, 20)
+		Me.nudLongitude8.TabIndex = 207
+		Me.nudLongitude8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		'
-		'txtLocation5
+		'nudLongitude6
 		'
-		Me.txtLocation5.Location = New System.Drawing.Point(103, 133)
-		Me.txtLocation5.Name = "txtLocation5"
-		Me.txtLocation5.Size = New System.Drawing.Size(146, 20)
-		Me.txtLocation5.TabIndex = 4
+		Me.nudLongitude6.DecimalPlaces = 5
+		Me.nudLongitude6.Location = New System.Drawing.Point(396, 159)
+		Me.nudLongitude6.Name = "nudLongitude6"
+		Me.nudLongitude6.Size = New System.Drawing.Size(120, 20)
+		Me.nudLongitude6.TabIndex = 205
+		Me.nudLongitude6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLongitude4
+		'
+		Me.nudLongitude4.DecimalPlaces = 5
+		Me.nudLongitude4.Location = New System.Drawing.Point(396, 107)
+		Me.nudLongitude4.Name = "nudLongitude4"
+		Me.nudLongitude4.Size = New System.Drawing.Size(120, 20)
+		Me.nudLongitude4.TabIndex = 203
+		Me.nudLongitude4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLongitude5
+		'
+		Me.nudLongitude5.DecimalPlaces = 5
+		Me.nudLongitude5.Location = New System.Drawing.Point(396, 133)
+		Me.nudLongitude5.Name = "nudLongitude5"
+		Me.nudLongitude5.Size = New System.Drawing.Size(120, 20)
+		Me.nudLongitude5.TabIndex = 204
+		Me.nudLongitude5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLongitude2
+		'
+		Me.nudLongitude2.DecimalPlaces = 5
+		Me.nudLongitude2.Location = New System.Drawing.Point(396, 55)
+		Me.nudLongitude2.Name = "nudLongitude2"
+		Me.nudLongitude2.Size = New System.Drawing.Size(120, 20)
+		Me.nudLongitude2.TabIndex = 201
+		Me.nudLongitude2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLongitude3
+		'
+		Me.nudLongitude3.DecimalPlaces = 5
+		Me.nudLongitude3.Location = New System.Drawing.Point(396, 81)
+		Me.nudLongitude3.Name = "nudLongitude3"
+		Me.nudLongitude3.Size = New System.Drawing.Size(120, 20)
+		Me.nudLongitude3.TabIndex = 202
+		Me.nudLongitude3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLongitude1
+		'
+		Me.nudLongitude1.DecimalPlaces = 5
+		Me.nudLongitude1.Location = New System.Drawing.Point(396, 29)
+		Me.nudLongitude1.Name = "nudLongitude1"
+		Me.nudLongitude1.Size = New System.Drawing.Size(120, 20)
+		Me.nudLongitude1.TabIndex = 200
+		Me.nudLongitude1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLatitude14
+		'
+		Me.nudLatitude14.DecimalPlaces = 5
+		Me.nudLatitude14.Location = New System.Drawing.Point(264, 367)
+		Me.nudLatitude14.Name = "nudLatitude14"
+		Me.nudLatitude14.Size = New System.Drawing.Size(120, 20)
+		Me.nudLatitude14.TabIndex = 113
+		Me.nudLatitude14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLatitude15
+		'
+		Me.nudLatitude15.DecimalPlaces = 5
+		Me.nudLatitude15.Location = New System.Drawing.Point(264, 393)
+		Me.nudLatitude15.Name = "nudLatitude15"
+		Me.nudLatitude15.Size = New System.Drawing.Size(120, 20)
+		Me.nudLatitude15.TabIndex = 114
+		Me.nudLatitude15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLatitude12
+		'
+		Me.nudLatitude12.DecimalPlaces = 5
+		Me.nudLatitude12.Location = New System.Drawing.Point(264, 315)
+		Me.nudLatitude12.Name = "nudLatitude12"
+		Me.nudLatitude12.Size = New System.Drawing.Size(120, 20)
+		Me.nudLatitude12.TabIndex = 111
+		Me.nudLatitude12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLatitude13
+		'
+		Me.nudLatitude13.DecimalPlaces = 5
+		Me.nudLatitude13.Location = New System.Drawing.Point(264, 341)
+		Me.nudLatitude13.Name = "nudLatitude13"
+		Me.nudLatitude13.Size = New System.Drawing.Size(120, 20)
+		Me.nudLatitude13.TabIndex = 112
+		Me.nudLatitude13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLatitude11
+		'
+		Me.nudLatitude11.DecimalPlaces = 5
+		Me.nudLatitude11.Location = New System.Drawing.Point(264, 289)
+		Me.nudLatitude11.Name = "nudLatitude11"
+		Me.nudLatitude11.Size = New System.Drawing.Size(120, 20)
+		Me.nudLatitude11.TabIndex = 110
+		Me.nudLatitude11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLatitude9
+		'
+		Me.nudLatitude9.DecimalPlaces = 5
+		Me.nudLatitude9.Location = New System.Drawing.Point(264, 237)
+		Me.nudLatitude9.Name = "nudLatitude9"
+		Me.nudLatitude9.Size = New System.Drawing.Size(120, 20)
+		Me.nudLatitude9.TabIndex = 108
+		Me.nudLatitude9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLatitude10
+		'
+		Me.nudLatitude10.DecimalPlaces = 5
+		Me.nudLatitude10.Location = New System.Drawing.Point(264, 263)
+		Me.nudLatitude10.Name = "nudLatitude10"
+		Me.nudLatitude10.Size = New System.Drawing.Size(120, 20)
+		Me.nudLatitude10.TabIndex = 109
+		Me.nudLatitude10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLatitude7
+		'
+		Me.nudLatitude7.DecimalPlaces = 5
+		Me.nudLatitude7.Location = New System.Drawing.Point(264, 185)
+		Me.nudLatitude7.Name = "nudLatitude7"
+		Me.nudLatitude7.Size = New System.Drawing.Size(120, 20)
+		Me.nudLatitude7.TabIndex = 106
+		Me.nudLatitude7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLatitude8
+		'
+		Me.nudLatitude8.DecimalPlaces = 5
+		Me.nudLatitude8.Location = New System.Drawing.Point(264, 211)
+		Me.nudLatitude8.Name = "nudLatitude8"
+		Me.nudLatitude8.Size = New System.Drawing.Size(120, 20)
+		Me.nudLatitude8.TabIndex = 107
+		Me.nudLatitude8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLatitude6
+		'
+		Me.nudLatitude6.DecimalPlaces = 5
+		Me.nudLatitude6.Location = New System.Drawing.Point(264, 159)
+		Me.nudLatitude6.Name = "nudLatitude6"
+		Me.nudLatitude6.Size = New System.Drawing.Size(120, 20)
+		Me.nudLatitude6.TabIndex = 105
+		Me.nudLatitude6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLatitude4
+		'
+		Me.nudLatitude4.DecimalPlaces = 5
+		Me.nudLatitude4.Location = New System.Drawing.Point(264, 107)
+		Me.nudLatitude4.Name = "nudLatitude4"
+		Me.nudLatitude4.Size = New System.Drawing.Size(120, 20)
+		Me.nudLatitude4.TabIndex = 103
+		Me.nudLatitude4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLatitude5
+		'
+		Me.nudLatitude5.DecimalPlaces = 5
+		Me.nudLatitude5.Location = New System.Drawing.Point(264, 133)
+		Me.nudLatitude5.Name = "nudLatitude5"
+		Me.nudLatitude5.Size = New System.Drawing.Size(120, 20)
+		Me.nudLatitude5.TabIndex = 104
+		Me.nudLatitude5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLatitude2
+		'
+		Me.nudLatitude2.DecimalPlaces = 5
+		Me.nudLatitude2.Location = New System.Drawing.Point(264, 55)
+		Me.nudLatitude2.Name = "nudLatitude2"
+		Me.nudLatitude2.Size = New System.Drawing.Size(120, 20)
+		Me.nudLatitude2.TabIndex = 101
+		Me.nudLatitude2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'nudLatitude3
+		'
+		Me.nudLatitude3.DecimalPlaces = 5
+		Me.nudLatitude3.Location = New System.Drawing.Point(264, 81)
+		Me.nudLatitude3.Name = "nudLatitude3"
+		Me.nudLatitude3.Size = New System.Drawing.Size(120, 20)
+		Me.nudLatitude3.TabIndex = 102
+		Me.nudLatitude3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'Label4
+		'
+		Me.Label4.Location = New System.Drawing.Point(396, 9)
+		Me.Label4.Name = "Label4"
+		Me.Label4.Size = New System.Drawing.Size(120, 13)
+		Me.Label4.TabIndex = 32
+		Me.Label4.Text = "Longitude"
+		Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'Label3
+		'
+		Me.Label3.Location = New System.Drawing.Point(264, 9)
+		Me.Label3.Name = "Label3"
+		Me.Label3.Size = New System.Drawing.Size(120, 13)
+		Me.Label3.TabIndex = 32
+		Me.Label3.Text = "Latitude"
+		Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'Label1
+		'
+		Me.Label1.Location = New System.Drawing.Point(103, 9)
+		Me.Label1.Name = "Label1"
+		Me.Label1.Size = New System.Drawing.Size(146, 13)
+		Me.Label1.TabIndex = 31
+		Me.Label1.Text = "Name"
+		Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'nudLatitude1
+		'
+		Me.nudLatitude1.DecimalPlaces = 5
+		Me.nudLatitude1.Location = New System.Drawing.Point(264, 29)
+		Me.nudLatitude1.Name = "nudLatitude1"
+		Me.nudLatitude1.Size = New System.Drawing.Size(120, 20)
+		Me.nudLatitude1.TabIndex = 100
+		Me.nudLatitude1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'lbllocation15
+		'
+		Me.lbllocation15.AutoSize = True
+		Me.lbllocation15.Location = New System.Drawing.Point(12, 393)
+		Me.lbllocation15.Name = "lbllocation15"
+		Me.lbllocation15.Size = New System.Drawing.Size(63, 13)
+		Me.lbllocation15.TabIndex = 29
+		Me.lbllocation15.Text = "Location 15"
+		'
+		'txtLocation15
+		'
+		Me.txtLocation15.Location = New System.Drawing.Point(103, 393)
+		Me.txtLocation15.Name = "txtLocation15"
+		Me.txtLocation15.Size = New System.Drawing.Size(146, 20)
+		Me.txtLocation15.TabIndex = 14
+		'
+		'lbllocation12
+		'
+		Me.lbllocation12.AutoSize = True
+		Me.lbllocation12.Location = New System.Drawing.Point(12, 315)
+		Me.lbllocation12.Name = "lbllocation12"
+		Me.lbllocation12.Size = New System.Drawing.Size(63, 13)
+		Me.lbllocation12.TabIndex = 27
+		Me.lbllocation12.Text = "Location 12"
+		'
+		'txtLocation12
+		'
+		Me.txtLocation12.Location = New System.Drawing.Point(103, 315)
+		Me.txtLocation12.Name = "txtLocation12"
+		Me.txtLocation12.Size = New System.Drawing.Size(146, 20)
+		Me.txtLocation12.TabIndex = 11
+		'
+		'lbllocation13
+		'
+		Me.lbllocation13.AutoSize = True
+		Me.lbllocation13.Location = New System.Drawing.Point(12, 341)
+		Me.lbllocation13.Name = "lbllocation13"
+		Me.lbllocation13.Size = New System.Drawing.Size(63, 13)
+		Me.lbllocation13.TabIndex = 25
+		Me.lbllocation13.Text = "Location 13"
+		'
+		'txtLocation13
+		'
+		Me.txtLocation13.Location = New System.Drawing.Point(103, 341)
+		Me.txtLocation13.Name = "txtLocation13"
+		Me.txtLocation13.Size = New System.Drawing.Size(146, 20)
+		Me.txtLocation13.TabIndex = 12
+		'
+		'lbllocation14
+		'
+		Me.lbllocation14.AutoSize = True
+		Me.lbllocation14.Location = New System.Drawing.Point(12, 367)
+		Me.lbllocation14.Name = "lbllocation14"
+		Me.lbllocation14.Size = New System.Drawing.Size(63, 13)
+		Me.lbllocation14.TabIndex = 23
+		Me.lbllocation14.Text = "Location 14"
+		'
+		'txtLocation14
+		'
+		Me.txtLocation14.Location = New System.Drawing.Point(103, 367)
+		Me.txtLocation14.Name = "txtLocation14"
+		Me.txtLocation14.Size = New System.Drawing.Size(146, 20)
+		Me.txtLocation14.TabIndex = 13
+		'
+		'lbllocation11
+		'
+		Me.lbllocation11.AutoSize = True
+		Me.lbllocation11.Location = New System.Drawing.Point(12, 289)
+		Me.lbllocation11.Name = "lbllocation11"
+		Me.lbllocation11.Size = New System.Drawing.Size(63, 13)
+		Me.lbllocation11.TabIndex = 21
+		Me.lbllocation11.Text = "Location 11"
+		'
+		'txtLocation11
+		'
+		Me.txtLocation11.Location = New System.Drawing.Point(103, 289)
+		Me.txtLocation11.Name = "txtLocation11"
+		Me.txtLocation11.Size = New System.Drawing.Size(146, 20)
+		Me.txtLocation11.TabIndex = 10
 		'
 		'lbllocation10
 		'
@@ -428,85 +827,85 @@ Partial Class frmParameters
 		Me.txtLocation6.Size = New System.Drawing.Size(146, 20)
 		Me.txtLocation6.TabIndex = 5
 		'
-		'lbllocation15
+		'lbllocation5
 		'
-		Me.lbllocation15.AutoSize = True
-		Me.lbllocation15.Location = New System.Drawing.Point(277, 133)
-		Me.lbllocation15.Name = "lbllocation15"
-		Me.lbllocation15.Size = New System.Drawing.Size(63, 13)
-		Me.lbllocation15.TabIndex = 29
-		Me.lbllocation15.Text = "Location 15"
+		Me.lbllocation5.AutoSize = True
+		Me.lbllocation5.Location = New System.Drawing.Point(12, 133)
+		Me.lbllocation5.Name = "lbllocation5"
+		Me.lbllocation5.Size = New System.Drawing.Size(57, 13)
+		Me.lbllocation5.TabIndex = 9
+		Me.lbllocation5.Text = "Location 5"
 		'
-		'txtLocation15
+		'txtLocation5
 		'
-		Me.txtLocation15.Location = New System.Drawing.Point(368, 133)
-		Me.txtLocation15.Name = "txtLocation15"
-		Me.txtLocation15.Size = New System.Drawing.Size(146, 20)
-		Me.txtLocation15.TabIndex = 14
+		Me.txtLocation5.Location = New System.Drawing.Point(103, 133)
+		Me.txtLocation5.Name = "txtLocation5"
+		Me.txtLocation5.Size = New System.Drawing.Size(146, 20)
+		Me.txtLocation5.TabIndex = 4
 		'
-		'lbllocation12
+		'lbllocation2
 		'
-		Me.lbllocation12.AutoSize = True
-		Me.lbllocation12.Location = New System.Drawing.Point(277, 55)
-		Me.lbllocation12.Name = "lbllocation12"
-		Me.lbllocation12.Size = New System.Drawing.Size(63, 13)
-		Me.lbllocation12.TabIndex = 27
-		Me.lbllocation12.Text = "Location 12"
+		Me.lbllocation2.AutoSize = True
+		Me.lbllocation2.Location = New System.Drawing.Point(12, 55)
+		Me.lbllocation2.Name = "lbllocation2"
+		Me.lbllocation2.Size = New System.Drawing.Size(57, 13)
+		Me.lbllocation2.TabIndex = 7
+		Me.lbllocation2.Text = "Location 2"
 		'
-		'txtLocation12
+		'txtLocation2
 		'
-		Me.txtLocation12.Location = New System.Drawing.Point(368, 55)
-		Me.txtLocation12.Name = "txtLocation12"
-		Me.txtLocation12.Size = New System.Drawing.Size(146, 20)
-		Me.txtLocation12.TabIndex = 11
+		Me.txtLocation2.Location = New System.Drawing.Point(103, 55)
+		Me.txtLocation2.Name = "txtLocation2"
+		Me.txtLocation2.Size = New System.Drawing.Size(146, 20)
+		Me.txtLocation2.TabIndex = 1
 		'
-		'lbllocation13
+		'lbllocation3
 		'
-		Me.lbllocation13.AutoSize = True
-		Me.lbllocation13.Location = New System.Drawing.Point(277, 81)
-		Me.lbllocation13.Name = "lbllocation13"
-		Me.lbllocation13.Size = New System.Drawing.Size(63, 13)
-		Me.lbllocation13.TabIndex = 25
-		Me.lbllocation13.Text = "Location 13"
+		Me.lbllocation3.AutoSize = True
+		Me.lbllocation3.Location = New System.Drawing.Point(12, 81)
+		Me.lbllocation3.Name = "lbllocation3"
+		Me.lbllocation3.Size = New System.Drawing.Size(57, 13)
+		Me.lbllocation3.TabIndex = 5
+		Me.lbllocation3.Text = "Location 3"
 		'
-		'txtLocation13
+		'txtLocation3
 		'
-		Me.txtLocation13.Location = New System.Drawing.Point(368, 81)
-		Me.txtLocation13.Name = "txtLocation13"
-		Me.txtLocation13.Size = New System.Drawing.Size(146, 20)
-		Me.txtLocation13.TabIndex = 12
+		Me.txtLocation3.Location = New System.Drawing.Point(103, 81)
+		Me.txtLocation3.Name = "txtLocation3"
+		Me.txtLocation3.Size = New System.Drawing.Size(146, 20)
+		Me.txtLocation3.TabIndex = 2
 		'
-		'lbllocation14
+		'lbllocation4
 		'
-		Me.lbllocation14.AutoSize = True
-		Me.lbllocation14.Location = New System.Drawing.Point(277, 107)
-		Me.lbllocation14.Name = "lbllocation14"
-		Me.lbllocation14.Size = New System.Drawing.Size(63, 13)
-		Me.lbllocation14.TabIndex = 23
-		Me.lbllocation14.Text = "Location 14"
+		Me.lbllocation4.AutoSize = True
+		Me.lbllocation4.Location = New System.Drawing.Point(12, 107)
+		Me.lbllocation4.Name = "lbllocation4"
+		Me.lbllocation4.Size = New System.Drawing.Size(57, 13)
+		Me.lbllocation4.TabIndex = 3
+		Me.lbllocation4.Text = "Location 4"
 		'
-		'txtLocation14
+		'txtLocation4
 		'
-		Me.txtLocation14.Location = New System.Drawing.Point(368, 107)
-		Me.txtLocation14.Name = "txtLocation14"
-		Me.txtLocation14.Size = New System.Drawing.Size(146, 20)
-		Me.txtLocation14.TabIndex = 13
+		Me.txtLocation4.Location = New System.Drawing.Point(103, 107)
+		Me.txtLocation4.Name = "txtLocation4"
+		Me.txtLocation4.Size = New System.Drawing.Size(146, 20)
+		Me.txtLocation4.TabIndex = 3
 		'
-		'lbllocation11
+		'lbllocation1
 		'
-		Me.lbllocation11.AutoSize = True
-		Me.lbllocation11.Location = New System.Drawing.Point(277, 29)
-		Me.lbllocation11.Name = "lbllocation11"
-		Me.lbllocation11.Size = New System.Drawing.Size(63, 13)
-		Me.lbllocation11.TabIndex = 21
-		Me.lbllocation11.Text = "Location 11"
+		Me.lbllocation1.AutoSize = True
+		Me.lbllocation1.Location = New System.Drawing.Point(12, 29)
+		Me.lbllocation1.Name = "lbllocation1"
+		Me.lbllocation1.Size = New System.Drawing.Size(57, 13)
+		Me.lbllocation1.TabIndex = 1
+		Me.lbllocation1.Text = "Location 1"
 		'
-		'txtLocation11
+		'txtLocation1
 		'
-		Me.txtLocation11.Location = New System.Drawing.Point(368, 29)
-		Me.txtLocation11.Name = "txtLocation11"
-		Me.txtLocation11.Size = New System.Drawing.Size(146, 20)
-		Me.txtLocation11.TabIndex = 10
+		Me.txtLocation1.Location = New System.Drawing.Point(103, 29)
+		Me.txtLocation1.Name = "txtLocation1"
+		Me.txtLocation1.Size = New System.Drawing.Size(146, 20)
+		Me.txtLocation1.TabIndex = 0
 		'
 		'TALocations
 		'
@@ -521,7 +920,7 @@ Partial Class frmParameters
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-		Me.ClientSize = New System.Drawing.Size(566, 451)
+		Me.ClientSize = New System.Drawing.Size(566, 519)
 		Me.Controls.Add(Me.TabControl1)
 		Me.Controls.Add(Me.btnConfirm)
 		Me.Controls.Add(Me.btnCancel)
@@ -536,11 +935,41 @@ Partial Class frmParameters
 		Me.tpaGeneric.PerformLayout()
 		Me.tpaLocationNames.ResumeLayout(False)
 		Me.tpaLocationNames.PerformLayout()
+		CType(Me.nudLongitude14, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLongitude15, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLongitude12, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLongitude13, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLongitude11, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLongitude9, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLongitude10, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLongitude7, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLongitude8, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLongitude6, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLongitude4, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLongitude5, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLongitude2, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLongitude3, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLongitude1, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLatitude14, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLatitude15, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLatitude12, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLatitude13, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLatitude11, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLatitude9, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLatitude10, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLatitude7, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLatitude8, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLatitude6, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLatitude4, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLatitude5, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLatitude2, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLatitude3, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudLatitude1, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.DSLocations, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.ResumeLayout(False)
 
 	End Sub
-	Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
+	Friend WithEvents OpenFileDialog As System.Windows.Forms.OpenFileDialog
 	Friend WithEvents txtParKernelPath As System.Windows.Forms.TextBox
 	Friend WithEvents lblParKernelPath As System.Windows.Forms.Label
 	Friend WithEvents btnSetPath As System.Windows.Forms.Button
@@ -590,4 +1019,37 @@ Partial Class frmParameters
 	Friend WithEvents txtLocation1 As TextBox
 	Friend WithEvents TALocations As DSLocationsTableAdapters.locationsTableAdapter
 	Friend WithEvents DSLocations As DSLocations
+	Friend WithEvents nudLongitude14 As NumericUpDown
+	Friend WithEvents nudLongitude15 As NumericUpDown
+	Friend WithEvents nudLongitude12 As NumericUpDown
+	Friend WithEvents nudLongitude13 As NumericUpDown
+	Friend WithEvents nudLongitude11 As NumericUpDown
+	Friend WithEvents nudLongitude9 As NumericUpDown
+	Friend WithEvents nudLongitude10 As NumericUpDown
+	Friend WithEvents nudLongitude7 As NumericUpDown
+	Friend WithEvents nudLongitude8 As NumericUpDown
+	Friend WithEvents nudLongitude6 As NumericUpDown
+	Friend WithEvents nudLongitude4 As NumericUpDown
+	Friend WithEvents nudLongitude5 As NumericUpDown
+	Friend WithEvents nudLongitude2 As NumericUpDown
+	Friend WithEvents nudLongitude3 As NumericUpDown
+	Friend WithEvents nudLongitude1 As NumericUpDown
+	Friend WithEvents nudLatitude14 As NumericUpDown
+	Friend WithEvents nudLatitude15 As NumericUpDown
+	Friend WithEvents nudLatitude12 As NumericUpDown
+	Friend WithEvents nudLatitude13 As NumericUpDown
+	Friend WithEvents nudLatitude11 As NumericUpDown
+	Friend WithEvents nudLatitude9 As NumericUpDown
+	Friend WithEvents nudLatitude10 As NumericUpDown
+	Friend WithEvents nudLatitude7 As NumericUpDown
+	Friend WithEvents nudLatitude8 As NumericUpDown
+	Friend WithEvents nudLatitude6 As NumericUpDown
+	Friend WithEvents nudLatitude4 As NumericUpDown
+	Friend WithEvents nudLatitude5 As NumericUpDown
+	Friend WithEvents nudLatitude2 As NumericUpDown
+	Friend WithEvents nudLatitude3 As NumericUpDown
+	Friend WithEvents Label4 As Label
+	Friend WithEvents Label3 As Label
+	Friend WithEvents Label1 As Label
+	Friend WithEvents nudLatitude1 As NumericUpDown
 End Class

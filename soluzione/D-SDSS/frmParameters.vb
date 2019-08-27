@@ -3,10 +3,10 @@ Public Class frmParameters
 #Region " Event management "
 
 	Private Sub btnSetPath_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSetPath.Click
-		Me.OpenFileDialog1.ShowDialog()
+		Me.OpenFileDialog.ShowDialog()
 
-		If Me.OpenFileDialog1.FileName <> "" Then
-			Me.txtParKernelPath.Text = Me.OpenFileDialog1.FileName
+		If Me.OpenFileDialog.FileName <> "" Then
+			Me.txtParKernelPath.Text = Me.OpenFileDialog.FileName
 		End If
 	End Sub
 
@@ -61,6 +61,8 @@ Public Class frmParameters
 
 			For i = 1 To 15
 				DirectCast(tpa.Controls.Item("txtLocation" & i), TextBox).Text = CStr(Me.DSLocations.Tables(0).Rows(i - 1).Item("locName"))
+				DirectCast(tpa.Controls.Item("nudLatitude" & i), NumericUpDown).Value = CDec(Me.DSLocations.Tables(0).Rows(i - 1).Item("locLatitude"))
+				DirectCast(tpa.Controls.Item("nudLongitude" & i), NumericUpDown).Value = CDec(Me.DSLocations.Tables(0).Rows(i - 1).Item("locLongitude"))
 			Next
 		Catch ex As Exception
 
@@ -100,6 +102,8 @@ Public Class frmParameters
 
 					sqlQuery.AppendLine("UPDATE locations")
 					sqlQuery.AppendLine("SET locName = '" & tpa.Controls.Item("txtLocation" & i).Text & "'")
+					sqlQuery.AppendLine(", locLatitude = '" & tpa.Controls.Item("nudLatitude" & i).Text & "'")
+					sqlQuery.AppendLine(", locLongitude = '" & tpa.Controls.Item("nudLongitude" & i).Text & "'")
 					sqlQuery.Append("WHERE locID = " & i)
 
 					Utility.ExecuteSQL(sqlQuery.ToString, Me.TAParameters.Connection)
@@ -108,7 +112,6 @@ Public Class frmParameters
 		Catch ex As Exception
 
 		End Try
-
 	End Sub
 
 	''' <summary>
@@ -127,9 +130,13 @@ Public Class frmParameters
 				If Me.nudparLocations.Value < i Then
 					tpa.Controls.Item("txtLocation" & i).Visible = False
 					tpa.Controls.Item("lblLocation" & i).Visible = False
+					tpa.Controls.Item("nudLatitude" & i).Visible = False
+					tpa.Controls.Item("nudLongitude" & i).Visible = False
 				Else
 					tpa.Controls.Item("txtLocation" & i).Visible = True
 					tpa.Controls.Item("lblLocation" & i).Visible = True
+					tpa.Controls.Item("nudLatitude" & i).Visible = True
+					tpa.Controls.Item("nudLongitude" & i).Visible = True
 				End If
 			Next
 		Catch ex As Exception
