@@ -984,7 +984,7 @@ Public Class frmNegotiation
 	Private Sub ReadValuesFromDB(ID As Integer)
 		Dim i, j As Integer
 		'read data from DB
-		Me.daData.Fill(Me.DSData)
+		Me.TAData.Fill(Me.DSData.data)
 
 		Dim tmpDataRowView As DataRowView
 
@@ -1112,7 +1112,7 @@ Public Class frmNegotiation
 
 				Me.DSData.Tables("data").Rows.Add(newRow)
 
-				Me.daData.Update(Me.DSData, "data")
+				Me.TAData.Update(Me.DSData)
 			Catch ex As Exception
 
 			End Try
@@ -1286,11 +1286,11 @@ Public Class frmNegotiation
 		kernelPath = ""
 
 		Try
-			Me.TAParameters.Fill(Me.dsParameters.parameters)
+			Me.TAParameters.Fill(Me.DSParameters.parameters)
 			'read parameters
-			kernelPath = Me.dsParameters.parameters.Rows(0).Item("parKernelPath").ToString
-			Me._usedLocations = CInt(Me.dsParameters.parameters.Rows(0).Item("parLocations"))
-			Me._usedDimensions = CInt(Me.dsParameters.parameters.Rows(0).Item("parDimensions"))
+			kernelPath = Me.DSParameters.parameters.Rows(0).Item("parKernelPath").ToString
+			Me._usedLocations = CInt(Me.DSParameters.parameters.Rows(0).Item("parLocations"))
+			Me._usedDimensions = CInt(Me.DSParameters.parameters.Rows(0).Item("parDimensions"))
 		Catch ex As Exception
 			MessageBox.Show("Error reading parameters form database", "CRITICAL ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error)
 		End Try
@@ -1331,7 +1331,7 @@ Public Class frmNegotiation
 	''' </summary>
 	Private Sub SetLocations()
 		'refresh table data
-		Me.TAParameters.Fill(Me.dsParameters.parameters)
+		Me.TAParameters.Fill(Me.DSParameters.parameters)
 		Me.DALocations.Fill(Me.DSLocations)
 
 		Me.SetLocations(Me)
@@ -1342,8 +1342,8 @@ Public Class frmNegotiation
 	Private Sub SetMapCenter()
 		Dim latitude, longitude As Double
 
-		latitude = CInt(Me.dsParameters.Tables("parameters").Rows(0).Item("parMapLatitude"))
-		longitude = CInt(Me.dsParameters.Tables("parameters").Rows(0).Item("parMapLongitude"))
+		latitude = CInt(Me.DSParameters.Tables("parameters").Rows(0).Item("parMapLatitude"))
+		longitude = CInt(Me.DSParameters.Tables("parameters").Rows(0).Item("parMapLongitude"))
 
 		Me.mapControl.SetMapCenter(latitude, longitude)
 	End Sub
@@ -1352,7 +1352,7 @@ Public Class frmNegotiation
 		Dim usedDimensions As Integer
 
 		'if there is only one dimension, hide the unnecessary controls
-		usedDimensions = CInt(Me.dsParameters.Tables("parameters").Rows(0).Item("parDimensions"))
+		usedDimensions = CInt(Me.DSParameters.Tables("parameters").Rows(0).Item("parDimensions"))
 
 		If usedDimensions = 1 Then
 			Me.pnlPop20_2.Visible = False
@@ -1378,7 +1378,7 @@ Public Class frmNegotiation
 			Else
 				'if control is a DSScontrol, set the location parameters
 				tmpLocations = Me.DSLocations.Tables("locations")
-				usedLocations = CInt(Me.dsParameters.Tables("parameters").Rows(0).Item("parLocations"))
+				usedLocations = CInt(Me.DSParameters.Tables("parameters").Rows(0).Item("parLocations"))
 
 				If control.GetType.Name = "DSSLabel" Then
 					tmpLabel = DirectCast(control, DSSLabel)
