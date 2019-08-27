@@ -1,5 +1,7 @@
 Public Class frmParameters
 
+#Region " Event management "
+
 	Private Sub btnSetPath_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSetPath.Click
 		Me.OpenFileDialog1.ShowDialog()
 
@@ -42,4 +44,43 @@ Public Class frmParameters
 	Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
 		Me.Close()
 	End Sub
+
+	Private Sub NudparLocations_ValueChanged(sender As Object, e As EventArgs) Handles nudparLocations.ValueChanged
+		If Me.IsHandleCreated Then
+			Me.SetLocationsVisibility()
+		End If
+	End Sub
+
+#End Region
+
+#Region " Private methods "
+
+	''' <summary>
+	''' Hide or show location controls according to Locations value
+	''' </summary>
+	Private Sub SetLocationsVisibility()
+		Dim i As Integer
+		Dim tpa As TabPage
+
+		Try
+			'get controls container
+			tpa = DirectCast(Me.Controls.Item("TabControl1"), TabControl).TabPages(1)
+
+			'set visibility for each control
+			For i = 1 To 15
+				If Me.nudparLocations.Value < i Then
+					tpa.Controls.Item("txtLocation" & i).Visible = False
+					tpa.Controls.Item("lblLocation" & i).Visible = False
+				Else
+					tpa.Controls.Item("txtLocation" & i).Visible = True
+					tpa.Controls.Item("lblLocation" & i).Visible = True
+				End If
+			Next
+		Catch ex As Exception
+
+		End Try
+	End Sub
+
+#End Region
+
 End Class

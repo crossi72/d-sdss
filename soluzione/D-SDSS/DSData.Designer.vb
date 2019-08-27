@@ -1009,6 +1009,14 @@ Partial Public Class DSData
         
         Private columnsmqi As Global.System.Data.DataColumn
         
+        Private columnsalt As Global.System.Data.DataColumn
+        
+        Private columnagrw As Global.System.Data.DataColumn
+        
+        Private columnindw As Global.System.Data.DataColumn
+        
+        Private columnlanw As Global.System.Data.DataColumn
+        
         Private columnDataCreazione As Global.System.Data.DataColumn
         
         Private columnUtenteCreazione As Global.System.Data.DataColumn
@@ -3962,6 +3970,38 @@ Partial Public Class DSData
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property saltColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnsalt
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property agrwColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnagrw
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property indwColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnindw
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property lanwColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnlanw
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public ReadOnly Property DataCreazioneColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnDataCreazione
@@ -4408,6 +4448,10 @@ Partial Public Class DSData
                     ByVal sbqi As Double,  _
                     ByVal ssqi As Double,  _
                     ByVal smqi As Double,  _
+                    ByVal salt As Boolean,  _
+                    ByVal agrw As Double,  _
+                    ByVal indw As Double,  _
+                    ByVal lanw As Double,  _
                     ByVal DataCreazione As Date,  _
                     ByVal UtenteCreazione As Integer,  _
                     ByVal DataAggiornamento As Date,  _
@@ -4415,7 +4459,7 @@ Partial Public Class DSData
                     ByVal Annullato As Boolean,  _
                     ByVal DataEstrazione As Date) As dataRow
             Dim rowdataRow As dataRow = CType(Me.NewRow,dataRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, indcc1_1, indcc2_1, indcc3_1, indcc4_1, indcc5_1, indcc6_1, indcc7_1, indcc8_1, indcc9_1, indcc10_1, indcc11_1, indcc12_1, indcc13_1, indcc14_1, indcc15_1, indcc1_2, indcc2_2, indcc3_2, indcc4_2, indcc5_2, indcc6_2, indcc7_2, indcc8_2, indcc9_2, indcc10_2, indcc11_2, indcc12_2, indcc13_2, indcc14_2, indcc15_2, agrcc1_1, agrcc2_1, agrcc3_1, agrcc4_1, agrcc5_1, agrcc6_1, agrcc7_1, agrcc8_1, agrcc9_1, agrcc10_1, agrcc11_1, agrcc12_1, agrcc13_1, agrcc14_1, agrcc15_1, agrcc1_2, agrcc2_2, agrcc3_2, agrcc4_2, agrcc5_2, agrcc6_2, agrcc7_2, agrcc8_2, agrcc9_2, agrcc10_2, agrcc11_2, agrcc12_2, agrcc13_2, agrcc14_2, agrcc15_2, lancc1_1, lancc2_1, lancc3_1, lancc4_1, lancc5_1, lancc6_1, lancc7_1, lancc8_1, lancc9_1, lancc10_1, lancc11_1, lancc12_1, lancc13_1, lancc14_1, lancc15_1, lancc1_2, lancc2_2, lancc3_2, lancc4_2, lancc5_2, lancc6_2, lancc7_2, lancc8_2, lancc9_2, lancc10_2, lancc11_2, lancc12_2, lancc13_2, lancc14_2, lancc15_2, lbqi1_1, lbqi2_1, lbqi3_1, lbqi4_1, lbqi5_1, lbqi6_1, lbqi7_1, lbqi8_1, lbqi9_1, lbqi10_1, lbqi11_1, lbqi12_1, lbqi13_1, lbqi14_1, lbqi15_1, lbqi1_2, lbqi2_2, lbqi3_2, lbqi4_2, lbqi5_2, lbqi6_2, lbqi7_2, lbqi8_2, lbqi9_2, lbqi10_2, lbqi11_2, lbqi12_2, lbqi13_2, lbqi14_2, lbqi15_2, lsqi1_1, lsqi2_1, lsqi3_1, lsqi4_1, lsqi5_1, lsqi6_1, lsqi7_1, lsqi8_1, lsqi9_1, lsqi10_1, lsqi11_1, lsqi12_1, lsqi13_1, lsqi14_1, lsqi15_1, lsqi1_2, lsqi2_2, lsqi3_2, lsqi4_2, lsqi5_2, lsqi6_2, lsqi7_2, lsqi8_2, lsqi9_2, lsqi10_2, lsqi11_2, lsqi12_2, lsqi13_2, lsqi14_2, lsqi15_2, lmqi1_1, lmqi2_1, lmqi3_1, lmqi4_1, lmqi5_1, lmqi6_1, lmqi7_1, lmqi8_1, lmqi9_1, lmqi10_1, lmqi11_1, lmqi12_1, lmqi13_1, lmqi14_1, lmqi15_1, lmqi1_2, lmqi2_2, lmqi3_2, lmqi4_2, lmqi5_2, lmqi6_2, lmqi7_2, lmqi8_2, lmqi9_2, lmqi10_2, lmqi11_2, lmqi12_2, lmqi13_2, lmqi14_2, lmqi15_2, pop20_1_1, pop20_2_1, pop20_3_1, pop20_4_1, pop20_5_1, pop20_6_1, pop20_7_1, pop20_8_1, pop20_9_1, pop20_10_1, pop20_11_1, pop20_12_1, pop20_13_1, pop20_14_1, pop20_15_1, pop20_1_2, pop20_2_2, pop20_3_2, pop20_4_2, pop20_5_2, pop20_6_2, pop20_7_2, pop20_8_2, pop20_9_2, pop20_10_2, pop20_11_2, pop20_12_2, pop20_13_2, pop20_14_2, pop20_15_2, inddis1_1, inddis2_1, inddis3_1, inddis4_1, inddis5_1, inddis6_1, inddis7_1, inddis8_1, inddis9_1, inddis10_1, inddis11_1, inddis12_1, inddis13_1, inddis14_1, inddis15_1, inddis1_2, inddis2_2, inddis3_2, inddis4_2, inddis5_2, inddis6_2, inddis7_2, inddis8_2, inddis9_2, inddis10_2, inddis11_2, inddis12_2, inddis13_2, inddis14_2, inddis15_2, inddiscur1_1, inddiscur2_1, inddiscur3_1, inddiscur4_1, inddiscur5_1, inddiscur6_1, inddiscur7_1, inddiscur8_1, inddiscur9_1, inddiscur10_1, inddiscur11_1, inddiscur12_1, inddiscur13_1, inddiscur14_1, inddiscur15_1, inddiscur1_2, inddiscur2_2, inddiscur3_2, inddiscur4_2, inddiscur5_2, inddiscur6_2, inddiscur7_2, inddiscur8_2, inddiscur9_2, inddiscur10_2, inddiscur11_2, inddiscur12_2, inddiscur13_2, inddiscur14_2, inddiscur15_2, inddispln1_1, inddispln2_1, inddispln3_1, inddispln4_1, inddispln5_1, inddispln6_1, inddispln7_1, inddispln8_1, inddispln9_1, inddispln10_1, inddispln11_1, inddispln12_1, inddispln13_1, inddispln14_1, inddispln15_1, inddispln1_2, inddispln2_2, inddispln3_2, inddispln4_2, inddispln5_2, inddispln6_2, inddispln7_2, inddispln8_2, inddispln9_2, inddispln10_2, inddispln11_2, inddispln12_2, inddispln13_2, inddispln14_2, inddispln15_2, tpbx, tpsx, tpmz, envw, ecow, socw, totpla, bod1, bod2, bod3, bod4, bod5, bod6, bod7, bod8, bod9, bod10, bod11, bod12, bod13, bod14, bod15, tds1, tds2, tds3, tds4, tds5, tds6, tds7, tds8, tds9, tds10, tds11, tds12, tds13, tds14, tds15, tss1, tss2, tss3, tss4, tss5, tss6, tss7, tss8, tss9, tss10, tss11, tss12, tss13, tss14, tss15, agruf, agrufro, induf, indufro, lanuf, lanufro, gwsp, sbqi, ssqi, smqi, DataCreazione, UtenteCreazione, DataAggiornamento, UtenteAggiornamento, Annullato, DataEstrazione}
+            Dim columnValuesArray() As Object = New Object() {Nothing, indcc1_1, indcc2_1, indcc3_1, indcc4_1, indcc5_1, indcc6_1, indcc7_1, indcc8_1, indcc9_1, indcc10_1, indcc11_1, indcc12_1, indcc13_1, indcc14_1, indcc15_1, indcc1_2, indcc2_2, indcc3_2, indcc4_2, indcc5_2, indcc6_2, indcc7_2, indcc8_2, indcc9_2, indcc10_2, indcc11_2, indcc12_2, indcc13_2, indcc14_2, indcc15_2, agrcc1_1, agrcc2_1, agrcc3_1, agrcc4_1, agrcc5_1, agrcc6_1, agrcc7_1, agrcc8_1, agrcc9_1, agrcc10_1, agrcc11_1, agrcc12_1, agrcc13_1, agrcc14_1, agrcc15_1, agrcc1_2, agrcc2_2, agrcc3_2, agrcc4_2, agrcc5_2, agrcc6_2, agrcc7_2, agrcc8_2, agrcc9_2, agrcc10_2, agrcc11_2, agrcc12_2, agrcc13_2, agrcc14_2, agrcc15_2, lancc1_1, lancc2_1, lancc3_1, lancc4_1, lancc5_1, lancc6_1, lancc7_1, lancc8_1, lancc9_1, lancc10_1, lancc11_1, lancc12_1, lancc13_1, lancc14_1, lancc15_1, lancc1_2, lancc2_2, lancc3_2, lancc4_2, lancc5_2, lancc6_2, lancc7_2, lancc8_2, lancc9_2, lancc10_2, lancc11_2, lancc12_2, lancc13_2, lancc14_2, lancc15_2, lbqi1_1, lbqi2_1, lbqi3_1, lbqi4_1, lbqi5_1, lbqi6_1, lbqi7_1, lbqi8_1, lbqi9_1, lbqi10_1, lbqi11_1, lbqi12_1, lbqi13_1, lbqi14_1, lbqi15_1, lbqi1_2, lbqi2_2, lbqi3_2, lbqi4_2, lbqi5_2, lbqi6_2, lbqi7_2, lbqi8_2, lbqi9_2, lbqi10_2, lbqi11_2, lbqi12_2, lbqi13_2, lbqi14_2, lbqi15_2, lsqi1_1, lsqi2_1, lsqi3_1, lsqi4_1, lsqi5_1, lsqi6_1, lsqi7_1, lsqi8_1, lsqi9_1, lsqi10_1, lsqi11_1, lsqi12_1, lsqi13_1, lsqi14_1, lsqi15_1, lsqi1_2, lsqi2_2, lsqi3_2, lsqi4_2, lsqi5_2, lsqi6_2, lsqi7_2, lsqi8_2, lsqi9_2, lsqi10_2, lsqi11_2, lsqi12_2, lsqi13_2, lsqi14_2, lsqi15_2, lmqi1_1, lmqi2_1, lmqi3_1, lmqi4_1, lmqi5_1, lmqi6_1, lmqi7_1, lmqi8_1, lmqi9_1, lmqi10_1, lmqi11_1, lmqi12_1, lmqi13_1, lmqi14_1, lmqi15_1, lmqi1_2, lmqi2_2, lmqi3_2, lmqi4_2, lmqi5_2, lmqi6_2, lmqi7_2, lmqi8_2, lmqi9_2, lmqi10_2, lmqi11_2, lmqi12_2, lmqi13_2, lmqi14_2, lmqi15_2, pop20_1_1, pop20_2_1, pop20_3_1, pop20_4_1, pop20_5_1, pop20_6_1, pop20_7_1, pop20_8_1, pop20_9_1, pop20_10_1, pop20_11_1, pop20_12_1, pop20_13_1, pop20_14_1, pop20_15_1, pop20_1_2, pop20_2_2, pop20_3_2, pop20_4_2, pop20_5_2, pop20_6_2, pop20_7_2, pop20_8_2, pop20_9_2, pop20_10_2, pop20_11_2, pop20_12_2, pop20_13_2, pop20_14_2, pop20_15_2, inddis1_1, inddis2_1, inddis3_1, inddis4_1, inddis5_1, inddis6_1, inddis7_1, inddis8_1, inddis9_1, inddis10_1, inddis11_1, inddis12_1, inddis13_1, inddis14_1, inddis15_1, inddis1_2, inddis2_2, inddis3_2, inddis4_2, inddis5_2, inddis6_2, inddis7_2, inddis8_2, inddis9_2, inddis10_2, inddis11_2, inddis12_2, inddis13_2, inddis14_2, inddis15_2, inddiscur1_1, inddiscur2_1, inddiscur3_1, inddiscur4_1, inddiscur5_1, inddiscur6_1, inddiscur7_1, inddiscur8_1, inddiscur9_1, inddiscur10_1, inddiscur11_1, inddiscur12_1, inddiscur13_1, inddiscur14_1, inddiscur15_1, inddiscur1_2, inddiscur2_2, inddiscur3_2, inddiscur4_2, inddiscur5_2, inddiscur6_2, inddiscur7_2, inddiscur8_2, inddiscur9_2, inddiscur10_2, inddiscur11_2, inddiscur12_2, inddiscur13_2, inddiscur14_2, inddiscur15_2, inddispln1_1, inddispln2_1, inddispln3_1, inddispln4_1, inddispln5_1, inddispln6_1, inddispln7_1, inddispln8_1, inddispln9_1, inddispln10_1, inddispln11_1, inddispln12_1, inddispln13_1, inddispln14_1, inddispln15_1, inddispln1_2, inddispln2_2, inddispln3_2, inddispln4_2, inddispln5_2, inddispln6_2, inddispln7_2, inddispln8_2, inddispln9_2, inddispln10_2, inddispln11_2, inddispln12_2, inddispln13_2, inddispln14_2, inddispln15_2, tpbx, tpsx, tpmz, envw, ecow, socw, totpla, bod1, bod2, bod3, bod4, bod5, bod6, bod7, bod8, bod9, bod10, bod11, bod12, bod13, bod14, bod15, tds1, tds2, tds3, tds4, tds5, tds6, tds7, tds8, tds9, tds10, tds11, tds12, tds13, tds14, tds15, tss1, tss2, tss3, tss4, tss5, tss6, tss7, tss8, tss9, tss10, tss11, tss12, tss13, tss14, tss15, agruf, agrufro, induf, indufro, lanuf, lanufro, gwsp, sbqi, ssqi, smqi, salt, agrw, indw, lanw, DataCreazione, UtenteCreazione, DataAggiornamento, UtenteAggiornamento, Annullato, DataEstrazione}
             rowdataRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowdataRow)
             Return rowdataRow
@@ -4807,6 +4851,10 @@ Partial Public Class DSData
             Me.columnsbqi = MyBase.Columns("sbqi")
             Me.columnssqi = MyBase.Columns("ssqi")
             Me.columnsmqi = MyBase.Columns("smqi")
+            Me.columnsalt = MyBase.Columns("salt")
+            Me.columnagrw = MyBase.Columns("agrw")
+            Me.columnindw = MyBase.Columns("indw")
+            Me.columnlanw = MyBase.Columns("lanw")
             Me.columnDataCreazione = MyBase.Columns("DataCreazione")
             Me.columnUtenteCreazione = MyBase.Columns("UtenteCreazione")
             Me.columnDataAggiornamento = MyBase.Columns("DataAggiornamento")
@@ -5544,6 +5592,14 @@ Partial Public Class DSData
             MyBase.Columns.Add(Me.columnssqi)
             Me.columnsmqi = New Global.System.Data.DataColumn("smqi", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnsmqi)
+            Me.columnsalt = New Global.System.Data.DataColumn("salt", GetType(Boolean), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnsalt)
+            Me.columnagrw = New Global.System.Data.DataColumn("agrw", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnagrw)
+            Me.columnindw = New Global.System.Data.DataColumn("indw", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnindw)
+            Me.columnlanw = New Global.System.Data.DataColumn("lanw", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnlanw)
             Me.columnDataCreazione = New Global.System.Data.DataColumn("DataCreazione", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnDataCreazione)
             Me.columnUtenteCreazione = New Global.System.Data.DataColumn("UtenteCreazione", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
@@ -11150,6 +11206,66 @@ Partial Public Class DSData
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property salt() As Boolean
+            Get
+                Try 
+                    Return CType(Me(Me.tabledata.saltColumn),Boolean)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("Il valore della colonna 'salt' nella tabella 'data' è DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabledata.saltColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property agrw() As Double
+            Get
+                Try 
+                    Return CType(Me(Me.tabledata.agrwColumn),Double)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("Il valore della colonna 'agrw' nella tabella 'data' è DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabledata.agrwColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property indw() As Double
+            Get
+                Try 
+                    Return CType(Me(Me.tabledata.indwColumn),Double)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("Il valore della colonna 'indw' nella tabella 'data' è DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabledata.indwColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property lanw() As Double
+            Get
+                Try 
+                    Return CType(Me(Me.tabledata.lanwColumn),Double)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("Il valore della colonna 'lanw' nella tabella 'data' è DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabledata.lanwColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Property DataCreazione() As Date
             Get
                 Try 
@@ -15584,6 +15700,54 @@ Partial Public Class DSData
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IssaltNull() As Boolean
+            Return Me.IsNull(Me.tabledata.saltColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetsaltNull()
+            Me(Me.tabledata.saltColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsagrwNull() As Boolean
+            Return Me.IsNull(Me.tabledata.agrwColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetagrwNull()
+            Me(Me.tabledata.agrwColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsindwNull() As Boolean
+            Return Me.IsNull(Me.tabledata.indwColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetindwNull()
+            Me(Me.tabledata.indwColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IslanwNull() As Boolean
+            Return Me.IsNull(Me.tabledata.lanwColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetlanwNull()
+            Me(Me.tabledata.lanwColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Function IsDataCreazioneNull() As Boolean
             Return Me.IsNull(Me.tabledata.DataCreazioneColumn)
         End Function
@@ -16160,6 +16324,10 @@ Namespace DSDataTableAdapters
             tableMapping.ColumnMappings.Add("UtenteAggiornamento", "UtenteAggiornamento")
             tableMapping.ColumnMappings.Add("Annullato", "Annullato")
             tableMapping.ColumnMappings.Add("DataEstrazione", "DataEstrazione")
+            tableMapping.ColumnMappings.Add("salt", "salt")
+            tableMapping.ColumnMappings.Add("agrw", "agrw")
+            tableMapping.ColumnMappings.Add("indw", "indw")
+            tableMapping.ColumnMappings.Add("lanw", "lanw")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
@@ -16572,15 +16740,19 @@ Namespace DSDataTableAdapters
                 " ([gwsp] = @Original_gwsp)) AND ((@IsNull_sbqi = 1 AND [sbqi] IS NULL) OR ([sbqi"& _ 
                 "] = @Original_sbqi)) AND ((@IsNull_ssqi = 1 AND [ssqi] IS NULL) OR ([ssqi] = @Or"& _ 
                 "iginal_ssqi)) AND ((@IsNull_smqi = 1 AND [smqi] IS NULL) OR ([smqi] = @Original_"& _ 
-                "smqi)) AND ((@IsNull_DataCreazione = 1 AND [DataCreazione] IS NULL) OR ([DataCre"& _ 
-                "azione] = @Original_DataCreazione)) AND ((@IsNull_UtenteCreazione = 1 AND [Utent"& _ 
-                "eCreazione] IS NULL) OR ([UtenteCreazione] = @Original_UtenteCreazione)) AND ((@"& _ 
-                "IsNull_DataAggiornamento = 1 AND [DataAggiornamento] IS NULL) OR ([DataAggiornam"& _ 
-                "ento] = @Original_DataAggiornamento)) AND ((@IsNull_UtenteAggiornamento = 1 AND "& _ 
-                "[UtenteAggiornamento] IS NULL) OR ([UtenteAggiornamento] = @Original_UtenteAggio"& _ 
-                "rnamento)) AND ((@IsNull_Annullato = 1 AND [Annullato] IS NULL) OR ([Annullato] "& _ 
-                "= @Original_Annullato)) AND ((@IsNull_DataEstrazione = 1 AND [DataEstrazione] IS"& _ 
-                " NULL) OR ([DataEstrazione] = @Original_DataEstrazione)))"
+                "smqi)) AND ((@IsNull_salt = 1 AND [salt] IS NULL) OR ([salt] = @Original_salt)) "& _ 
+                "AND ((@IsNull_agrw = 1 AND [agrw] IS NULL) OR ([agrw] = @Original_agrw)) AND ((@"& _ 
+                "IsNull_indw = 1 AND [indw] IS NULL) OR ([indw] = @Original_indw)) AND ((@IsNull_"& _ 
+                "lanw = 1 AND [lanw] IS NULL) OR ([lanw] = @Original_lanw)) AND ((@IsNull_DataCre"& _ 
+                "azione = 1 AND [DataCreazione] IS NULL) OR ([DataCreazione] = @Original_DataCrea"& _ 
+                "zione)) AND ((@IsNull_UtenteCreazione = 1 AND [UtenteCreazione] IS NULL) OR ([Ut"& _ 
+                "enteCreazione] = @Original_UtenteCreazione)) AND ((@IsNull_DataAggiornamento = 1"& _ 
+                " AND [DataAggiornamento] IS NULL) OR ([DataAggiornamento] = @Original_DataAggior"& _ 
+                "namento)) AND ((@IsNull_UtenteAggiornamento = 1 AND [UtenteAggiornamento] IS NUL"& _ 
+                "L) OR ([UtenteAggiornamento] = @Original_UtenteAggiornamento)) AND ((@IsNull_Ann"& _ 
+                "ullato = 1 AND [Annullato] IS NULL) OR ([Annullato] = @Original_Annullato)) AND "& _ 
+                "((@IsNull_DataEstrazione = 1 AND [DataEstrazione] IS NULL) OR ([DataEstrazione] "& _ 
+                "= @Original_DataEstrazione)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_datID", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "datID", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_indcc1_1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "indcc1_1", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
@@ -17307,6 +17479,14 @@ Namespace DSDataTableAdapters
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_ssqi", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "ssqi", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_smqi", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "smqi", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_smqi", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "smqi", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_salt", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "salt", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_salt", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "salt", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_agrw", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "agrw", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_agrw", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "agrw", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_indw", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "indw", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_indw", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "indw", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_lanw", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "lanw", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_lanw", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "lanw", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_DataCreazione", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "DataCreazione", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_DataCreazione", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "DataCreazione", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_UtenteCreazione", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UtenteCreazione", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
@@ -17376,110 +17556,111 @@ Namespace DSDataTableAdapters
                 "s4], [tds5], [tds6], [tds7], [tds8], [tds9], [tds10], [tds11], [tds12], [tds13],"& _ 
                 " [tds14], [tds15], [tss1], [tss2], [tss3], [tss4], [tss5], [tss6], [tss7], [tss8"& _ 
                 "], [tss9], [tss10], [tss11], [tss12], [tss13], [tss14], [tss15], [agruf], [agruf"& _ 
-                "ro], [induf], [indufro], [lanuf], [lanufro], [gwsp], [sbqi], [ssqi], [smqi], [Da"& _ 
-                "taCreazione], [UtenteCreazione], [DataAggiornamento], [UtenteAggiornamento], [An"& _ 
-                "nullato], [DataEstrazione]) VALUES (@indcc1_1, @indcc2_1, @indcc3_1, @indcc4_1, "& _ 
-                "@indcc5_1, @indcc6_1, @indcc7_1, @indcc8_1, @indcc9_1, @indcc10_1, @indcc11_1, @"& _ 
-                "indcc12_1, @indcc13_1, @indcc14_1, @indcc15_1, @indcc1_2, @indcc2_2, @indcc3_2, "& _ 
-                "@indcc4_2, @indcc5_2, @indcc6_2, @indcc7_2, @indcc8_2, @indcc9_2, @indcc10_2, @i"& _ 
-                "ndcc11_2, @indcc12_2, @indcc13_2, @indcc14_2, @indcc15_2, @agrcc1_1, @agrcc2_1, "& _ 
-                "@agrcc3_1, @agrcc4_1, @agrcc5_1, @agrcc6_1, @agrcc7_1, @agrcc8_1, @agrcc9_1, @ag"& _ 
-                "rcc10_1, @agrcc11_1, @agrcc12_1, @agrcc13_1, @agrcc14_1, @agrcc15_1, @agrcc1_2, "& _ 
-                "@agrcc2_2, @agrcc3_2, @agrcc4_2, @agrcc5_2, @agrcc6_2, @agrcc7_2, @agrcc8_2, @ag"& _ 
-                "rcc9_2, @agrcc10_2, @agrcc11_2, @agrcc12_2, @agrcc13_2, @agrcc14_2, @agrcc15_2, "& _ 
-                "@lancc1_1, @lancc2_1, @lancc3_1, @lancc4_1, @lancc5_1, @lancc6_1, @lancc7_1, @la"& _ 
-                "ncc8_1, @lancc9_1, @lancc10_1, @lancc11_1, @lancc12_1, @lancc13_1, @lancc14_1, @"& _ 
-                "lancc15_1, @lancc1_2, @lancc2_2, @lancc3_2, @lancc4_2, @lancc5_2, @lancc6_2, @la"& _ 
-                "ncc7_2, @lancc8_2, @lancc9_2, @lancc10_2, @lancc11_2, @lancc12_2, @lancc13_2, @l"& _ 
-                "ancc14_2, @lancc15_2, @lbqi1_1, @lbqi2_1, @lbqi3_1, @lbqi4_1, @lbqi5_1, @lbqi6_1"& _ 
-                ", @lbqi7_1, @lbqi8_1, @lbqi9_1, @lbqi10_1, @lbqi11_1, @lbqi12_1, @lbqi13_1, @lbq"& _ 
-                "i14_1, @lbqi15_1, @lbqi1_2, @lbqi2_2, @lbqi3_2, @lbqi4_2, @lbqi5_2, @lbqi6_2, @l"& _ 
-                "bqi7_2, @lbqi8_2, @lbqi9_2, @lbqi10_2, @lbqi11_2, @lbqi12_2, @lbqi13_2, @lbqi14_"& _ 
-                "2, @lbqi15_2, @lsqi1_1, @lsqi2_1, @lsqi3_1, @lsqi4_1, @lsqi5_1, @lsqi6_1, @lsqi7"& _ 
-                "_1, @lsqi8_1, @lsqi9_1, @lsqi10_1, @lsqi11_1, @lsqi12_1, @lsqi13_1, @lsqi14_1, @"& _ 
-                "lsqi15_1, @lsqi1_2, @lsqi2_2, @lsqi3_2, @lsqi4_2, @lsqi5_2, @lsqi6_2, @lsqi7_2, "& _ 
-                "@lsqi8_2, @lsqi9_2, @lsqi10_2, @lsqi11_2, @lsqi12_2, @lsqi13_2, @lsqi14_2, @lsqi"& _ 
-                "15_2, @lmqi1_1, @lmqi2_1, @lmqi3_1, @lmqi4_1, @lmqi5_1, @lmqi6_1, @lmqi7_1, @lmq"& _ 
-                "i8_1, @lmqi9_1, @lmqi10_1, @lmqi11_1, @lmqi12_1, @lmqi13_1, @lmqi14_1, @lmqi15_1"& _ 
-                ", @lmqi1_2, @lmqi2_2, @lmqi3_2, @lmqi4_2, @lmqi5_2, @lmqi6_2, @lmqi7_2, @lmqi8_2"& _ 
-                ", @lmqi9_2, @lmqi10_2, @lmqi11_2, @lmqi12_2, @lmqi13_2, @lmqi14_2, @lmqi15_2, @p"& _ 
-                "op20_1_1, @pop20_2_1, @pop20_3_1, @pop20_4_1, @pop20_5_1, @pop20_6_1, @pop20_7_1"& _ 
-                ", @pop20_8_1, @pop20_9_1, @pop20_10_1, @pop20_11_1, @pop20_12_1, @pop20_13_1, @p"& _ 
-                "op20_14_1, @pop20_15_1, @pop20_1_2, @pop20_2_2, @pop20_3_2, @pop20_4_2, @pop20_5"& _ 
-                "_2, @pop20_6_2, @pop20_7_2, @pop20_8_2, @pop20_9_2, @pop20_10_2, @pop20_11_2, @p"& _ 
-                "op20_12_2, @pop20_13_2, @pop20_14_2, @pop20_15_2, @inddis1_1, @inddis2_1, @inddi"& _ 
-                "s3_1, @inddis4_1, @inddis5_1, @inddis6_1, @inddis7_1, @inddis8_1, @inddis9_1, @i"& _ 
-                "nddis10_1, @inddis11_1, @inddis12_1, @inddis13_1, @inddis14_1, @inddis15_1, @ind"& _ 
-                "dis1_2, @inddis2_2, @inddis3_2, @inddis4_2, @inddis5_2, @inddis6_2, @inddis7_2, "& _ 
-                "@inddis8_2, @inddis9_2, @inddis10_2, @inddis11_2, @inddis12_2, @inddis13_2, @ind"& _ 
-                "dis14_2, @inddis15_2, @inddiscur1_1, @inddiscur2_1, @inddiscur3_1, @inddiscur4_1"& _ 
-                ", @inddiscur5_1, @inddiscur6_1, @inddiscur7_1, @inddiscur8_1, @inddiscur9_1, @in"& _ 
-                "ddiscur10_1, @inddiscur11_1, @inddiscur12_1, @inddiscur13_1, @inddiscur14_1, @in"& _ 
-                "ddiscur15_1, @inddiscur1_2, @inddiscur2_2, @inddiscur3_2, @inddiscur4_2, @inddis"& _ 
-                "cur5_2, @inddiscur6_2, @inddiscur7_2, @inddiscur8_2, @inddiscur9_2, @inddiscur10"& _ 
-                "_2, @inddiscur11_2, @inddiscur12_2, @inddiscur13_2, @inddiscur14_2, @inddiscur15"& _ 
-                "_2, @inddispln1_1, @inddispln2_1, @inddispln3_1, @inddispln4_1, @inddispln5_1, @"& _ 
-                "inddispln6_1, @inddispln7_1, @inddispln8_1, @inddispln9_1, @inddispln10_1, @indd"& _ 
-                "ispln11_1, @inddispln12_1, @inddispln13_1, @inddispln14_1, @inddispln15_1, @indd"& _ 
-                "ispln1_2, @inddispln2_2, @inddispln3_2, @inddispln4_2, @inddispln5_2, @inddispln"& _ 
-                "6_2, @inddispln7_2, @inddispln8_2, @inddispln9_2, @inddispln10_2, @inddispln11_2"& _ 
-                ", @inddispln12_2, @inddispln13_2, @inddispln14_2, @inddispln15_2, @tpbx, @tpsx, "& _ 
-                "@tpmz, @envw, @ecow, @socw, @totpla, @bod1, @bod2, @bod3, @bod4, @bod5, @bod6, @"& _ 
-                "bod7, @bod8, @bod9, @bod10, @bod11, @bod12, @bod13, @bod14, @bod15, @tds1, @tds2"& _ 
-                ", @tds3, @tds4, @tds5, @tds6, @tds7, @tds8, @tds9, @tds10, @tds11, @tds12, @tds1"& _ 
-                "3, @tds14, @tds15, @tss1, @tss2, @tss3, @tss4, @tss5, @tss6, @tss7, @tss8, @tss9"& _ 
-                ", @tss10, @tss11, @tss12, @tss13, @tss14, @tss15, @agruf, @agrufro, @induf, @ind"& _ 
-                "ufro, @lanuf, @lanufro, @gwsp, @sbqi, @ssqi, @smqi, @DataCreazione, @UtenteCreaz"& _ 
-                "ione, @DataAggiornamento, @UtenteAggiornamento, @Annullato, @DataEstrazione);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"S"& _ 
-                "ELECT datID, indcc1_1, indcc2_1, indcc3_1, indcc4_1, indcc5_1, indcc6_1, indcc7_"& _ 
-                "1, indcc8_1, indcc9_1, indcc10_1, indcc11_1, indcc12_1, indcc13_1, indcc14_1, in"& _ 
-                "dcc15_1, indcc1_2, indcc2_2, indcc3_2, indcc4_2, indcc5_2, indcc6_2, indcc7_2, i"& _ 
-                "ndcc8_2, indcc9_2, indcc10_2, indcc11_2, indcc12_2, indcc13_2, indcc14_2, indcc1"& _ 
-                "5_2, agrcc1_1, agrcc2_1, agrcc3_1, agrcc4_1, agrcc5_1, agrcc6_1, agrcc7_1, agrcc"& _ 
-                "8_1, agrcc9_1, agrcc10_1, agrcc11_1, agrcc12_1, agrcc13_1, agrcc14_1, agrcc15_1,"& _ 
-                " agrcc1_2, agrcc2_2, agrcc3_2, agrcc4_2, agrcc5_2, agrcc6_2, agrcc7_2, agrcc8_2,"& _ 
-                " agrcc9_2, agrcc10_2, agrcc11_2, agrcc12_2, agrcc13_2, agrcc14_2, agrcc15_2, lan"& _ 
-                "cc1_1, lancc2_1, lancc3_1, lancc4_1, lancc5_1, lancc6_1, lancc7_1, lancc8_1, lan"& _ 
-                "cc9_1, lancc10_1, lancc11_1, lancc12_1, lancc13_1, lancc14_1, lancc15_1, lancc1_"& _ 
-                "2, lancc2_2, lancc3_2, lancc4_2, lancc5_2, lancc6_2, lancc7_2, lancc8_2, lancc9_"& _ 
-                "2, lancc10_2, lancc11_2, lancc12_2, lancc13_2, lancc14_2, lancc15_2, lbqi1_1, lb"& _ 
-                "qi2_1, lbqi3_1, lbqi4_1, lbqi5_1, lbqi6_1, lbqi7_1, lbqi8_1, lbqi9_1, lbqi10_1, "& _ 
-                "lbqi11_1, lbqi12_1, lbqi13_1, lbqi14_1, lbqi15_1, lbqi1_2, lbqi2_2, lbqi3_2, lbq"& _ 
-                "i4_2, lbqi5_2, lbqi6_2, lbqi7_2, lbqi8_2, lbqi9_2, lbqi10_2, lbqi11_2, lbqi12_2,"& _ 
-                " lbqi13_2, lbqi14_2, lbqi15_2, lsqi1_1, lsqi2_1, lsqi3_1, lsqi4_1, lsqi5_1, lsqi"& _ 
-                "6_1, lsqi7_1, lsqi8_1, lsqi9_1, lsqi10_1, lsqi11_1, lsqi12_1, lsqi13_1, lsqi14_1"& _ 
-                ", lsqi15_1, lsqi1_2, lsqi2_2, lsqi3_2, lsqi4_2, lsqi5_2, lsqi6_2, lsqi7_2, lsqi8"& _ 
-                "_2, lsqi9_2, lsqi10_2, lsqi11_2, lsqi12_2, lsqi13_2, lsqi14_2, lsqi15_2, lmqi1_1"& _ 
-                ", lmqi2_1, lmqi3_1, lmqi4_1, lmqi5_1, lmqi6_1, lmqi7_1, lmqi8_1, lmqi9_1, lmqi10"& _ 
-                "_1, lmqi11_1, lmqi12_1, lmqi13_1, lmqi14_1, lmqi15_1, lmqi1_2, lmqi2_2, lmqi3_2,"& _ 
-                " lmqi4_2, lmqi5_2, lmqi6_2, lmqi7_2, lmqi8_2, lmqi9_2, lmqi10_2, lmqi11_2, lmqi1"& _ 
-                "2_2, lmqi13_2, lmqi14_2, lmqi15_2, pop20_1_1, pop20_2_1, pop20_3_1, pop20_4_1, p"& _ 
-                "op20_5_1, pop20_6_1, pop20_7_1, pop20_8_1, pop20_9_1, pop20_10_1, pop20_11_1, po"& _ 
-                "p20_12_1, pop20_13_1, pop20_14_1, pop20_15_1, pop20_1_2, pop20_2_2, pop20_3_2, p"& _ 
-                "op20_4_2, pop20_5_2, pop20_6_2, pop20_7_2, pop20_8_2, pop20_9_2, pop20_10_2, pop"& _ 
-                "20_11_2, pop20_12_2, pop20_13_2, pop20_14_2, pop20_15_2, inddis1_1, inddis2_1, i"& _ 
-                "nddis3_1, inddis4_1, inddis5_1, inddis6_1, inddis7_1, inddis8_1, inddis9_1, indd"& _ 
-                "is10_1, inddis11_1, inddis12_1, inddis13_1, inddis14_1, inddis15_1, inddis1_2, i"& _ 
-                "nddis2_2, inddis3_2, inddis4_2, inddis5_2, inddis6_2, inddis7_2, inddis8_2, indd"& _ 
-                "is9_2, inddis10_2, inddis11_2, inddis12_2, inddis13_2, inddis14_2, inddis15_2, i"& _ 
-                "nddiscur1_1, inddiscur2_1, inddiscur3_1, inddiscur4_1, inddiscur5_1, inddiscur6_"& _ 
-                "1, inddiscur7_1, inddiscur8_1, inddiscur9_1, inddiscur10_1, inddiscur11_1, inddi"& _ 
-                "scur12_1, inddiscur13_1, inddiscur14_1, inddiscur15_1, inddiscur1_2, inddiscur2_"& _ 
-                "2, inddiscur3_2, inddiscur4_2, inddiscur5_2, inddiscur6_2, inddiscur7_2, inddisc"& _ 
-                "ur8_2, inddiscur9_2, inddiscur10_2, inddiscur11_2, inddiscur12_2, inddiscur13_2,"& _ 
-                " inddiscur14_2, inddiscur15_2, inddispln1_1, inddispln2_1, inddispln3_1, inddisp"& _ 
-                "ln4_1, inddispln5_1, inddispln6_1, inddispln7_1, inddispln8_1, inddispln9_1, ind"& _ 
-                "displn10_1, inddispln11_1, inddispln12_1, inddispln13_1, inddispln14_1, inddispl"& _ 
-                "n15_1, inddispln1_2, inddispln2_2, inddispln3_2, inddispln4_2, inddispln5_2, ind"& _ 
-                "displn6_2, inddispln7_2, inddispln8_2, inddispln9_2, inddispln10_2, inddispln11_"& _ 
-                "2, inddispln12_2, inddispln13_2, inddispln14_2, inddispln15_2, tpbx, tpsx, tpmz,"& _ 
-                " envw, ecow, socw, totpla, bod1, bod2, bod3, bod4, bod5, bod6, bod7, bod8, bod9,"& _ 
-                " bod10, bod11, bod12, bod13, bod14, bod15, tds1, tds2, tds3, tds4, tds5, tds6, t"& _ 
-                "ds7, tds8, tds9, tds10, tds11, tds12, tds13, tds14, tds15, tss1, tss2, tss3, tss"& _ 
-                "4, tss5, tss6, tss7, tss8, tss9, tss10, tss11, tss12, tss13, tss14, tss15, agruf"& _ 
-                ", agrufro, induf, indufro, lanuf, lanufro, gwsp, sbqi, ssqi, smqi, DataCreazione"& _ 
-                ", UtenteCreazione, DataAggiornamento, UtenteAggiornamento, Annullato, DataEstraz"& _ 
-                "ione FROM data WHERE (datID = SCOPE_IDENTITY())"
+                "ro], [induf], [indufro], [lanuf], [lanufro], [gwsp], [sbqi], [ssqi], [smqi], [sa"& _ 
+                "lt], [agrw], [indw], [lanw], [DataCreazione], [UtenteCreazione], [DataAggiorname"& _ 
+                "nto], [UtenteAggiornamento], [Annullato], [DataEstrazione]) VALUES (@indcc1_1, @"& _ 
+                "indcc2_1, @indcc3_1, @indcc4_1, @indcc5_1, @indcc6_1, @indcc7_1, @indcc8_1, @ind"& _ 
+                "cc9_1, @indcc10_1, @indcc11_1, @indcc12_1, @indcc13_1, @indcc14_1, @indcc15_1, @"& _ 
+                "indcc1_2, @indcc2_2, @indcc3_2, @indcc4_2, @indcc5_2, @indcc6_2, @indcc7_2, @ind"& _ 
+                "cc8_2, @indcc9_2, @indcc10_2, @indcc11_2, @indcc12_2, @indcc13_2, @indcc14_2, @i"& _ 
+                "ndcc15_2, @agrcc1_1, @agrcc2_1, @agrcc3_1, @agrcc4_1, @agrcc5_1, @agrcc6_1, @agr"& _ 
+                "cc7_1, @agrcc8_1, @agrcc9_1, @agrcc10_1, @agrcc11_1, @agrcc12_1, @agrcc13_1, @ag"& _ 
+                "rcc14_1, @agrcc15_1, @agrcc1_2, @agrcc2_2, @agrcc3_2, @agrcc4_2, @agrcc5_2, @agr"& _ 
+                "cc6_2, @agrcc7_2, @agrcc8_2, @agrcc9_2, @agrcc10_2, @agrcc11_2, @agrcc12_2, @agr"& _ 
+                "cc13_2, @agrcc14_2, @agrcc15_2, @lancc1_1, @lancc2_1, @lancc3_1, @lancc4_1, @lan"& _ 
+                "cc5_1, @lancc6_1, @lancc7_1, @lancc8_1, @lancc9_1, @lancc10_1, @lancc11_1, @lanc"& _ 
+                "c12_1, @lancc13_1, @lancc14_1, @lancc15_1, @lancc1_2, @lancc2_2, @lancc3_2, @lan"& _ 
+                "cc4_2, @lancc5_2, @lancc6_2, @lancc7_2, @lancc8_2, @lancc9_2, @lancc10_2, @lancc"& _ 
+                "11_2, @lancc12_2, @lancc13_2, @lancc14_2, @lancc15_2, @lbqi1_1, @lbqi2_1, @lbqi3"& _ 
+                "_1, @lbqi4_1, @lbqi5_1, @lbqi6_1, @lbqi7_1, @lbqi8_1, @lbqi9_1, @lbqi10_1, @lbqi"& _ 
+                "11_1, @lbqi12_1, @lbqi13_1, @lbqi14_1, @lbqi15_1, @lbqi1_2, @lbqi2_2, @lbqi3_2, "& _ 
+                "@lbqi4_2, @lbqi5_2, @lbqi6_2, @lbqi7_2, @lbqi8_2, @lbqi9_2, @lbqi10_2, @lbqi11_2"& _ 
+                ", @lbqi12_2, @lbqi13_2, @lbqi14_2, @lbqi15_2, @lsqi1_1, @lsqi2_1, @lsqi3_1, @lsq"& _ 
+                "i4_1, @lsqi5_1, @lsqi6_1, @lsqi7_1, @lsqi8_1, @lsqi9_1, @lsqi10_1, @lsqi11_1, @l"& _ 
+                "sqi12_1, @lsqi13_1, @lsqi14_1, @lsqi15_1, @lsqi1_2, @lsqi2_2, @lsqi3_2, @lsqi4_2"& _ 
+                ", @lsqi5_2, @lsqi6_2, @lsqi7_2, @lsqi8_2, @lsqi9_2, @lsqi10_2, @lsqi11_2, @lsqi1"& _ 
+                "2_2, @lsqi13_2, @lsqi14_2, @lsqi15_2, @lmqi1_1, @lmqi2_1, @lmqi3_1, @lmqi4_1, @l"& _ 
+                "mqi5_1, @lmqi6_1, @lmqi7_1, @lmqi8_1, @lmqi9_1, @lmqi10_1, @lmqi11_1, @lmqi12_1,"& _ 
+                " @lmqi13_1, @lmqi14_1, @lmqi15_1, @lmqi1_2, @lmqi2_2, @lmqi3_2, @lmqi4_2, @lmqi5"& _ 
+                "_2, @lmqi6_2, @lmqi7_2, @lmqi8_2, @lmqi9_2, @lmqi10_2, @lmqi11_2, @lmqi12_2, @lm"& _ 
+                "qi13_2, @lmqi14_2, @lmqi15_2, @pop20_1_1, @pop20_2_1, @pop20_3_1, @pop20_4_1, @p"& _ 
+                "op20_5_1, @pop20_6_1, @pop20_7_1, @pop20_8_1, @pop20_9_1, @pop20_10_1, @pop20_11"& _ 
+                "_1, @pop20_12_1, @pop20_13_1, @pop20_14_1, @pop20_15_1, @pop20_1_2, @pop20_2_2, "& _ 
+                "@pop20_3_2, @pop20_4_2, @pop20_5_2, @pop20_6_2, @pop20_7_2, @pop20_8_2, @pop20_9"& _ 
+                "_2, @pop20_10_2, @pop20_11_2, @pop20_12_2, @pop20_13_2, @pop20_14_2, @pop20_15_2"& _ 
+                ", @inddis1_1, @inddis2_1, @inddis3_1, @inddis4_1, @inddis5_1, @inddis6_1, @inddi"& _ 
+                "s7_1, @inddis8_1, @inddis9_1, @inddis10_1, @inddis11_1, @inddis12_1, @inddis13_1"& _ 
+                ", @inddis14_1, @inddis15_1, @inddis1_2, @inddis2_2, @inddis3_2, @inddis4_2, @ind"& _ 
+                "dis5_2, @inddis6_2, @inddis7_2, @inddis8_2, @inddis9_2, @inddis10_2, @inddis11_2"& _ 
+                ", @inddis12_2, @inddis13_2, @inddis14_2, @inddis15_2, @inddiscur1_1, @inddiscur2"& _ 
+                "_1, @inddiscur3_1, @inddiscur4_1, @inddiscur5_1, @inddiscur6_1, @inddiscur7_1, @"& _ 
+                "inddiscur8_1, @inddiscur9_1, @inddiscur10_1, @inddiscur11_1, @inddiscur12_1, @in"& _ 
+                "ddiscur13_1, @inddiscur14_1, @inddiscur15_1, @inddiscur1_2, @inddiscur2_2, @indd"& _ 
+                "iscur3_2, @inddiscur4_2, @inddiscur5_2, @inddiscur6_2, @inddiscur7_2, @inddiscur"& _ 
+                "8_2, @inddiscur9_2, @inddiscur10_2, @inddiscur11_2, @inddiscur12_2, @inddiscur13"& _ 
+                "_2, @inddiscur14_2, @inddiscur15_2, @inddispln1_1, @inddispln2_1, @inddispln3_1,"& _ 
+                " @inddispln4_1, @inddispln5_1, @inddispln6_1, @inddispln7_1, @inddispln8_1, @ind"& _ 
+                "displn9_1, @inddispln10_1, @inddispln11_1, @inddispln12_1, @inddispln13_1, @indd"& _ 
+                "ispln14_1, @inddispln15_1, @inddispln1_2, @inddispln2_2, @inddispln3_2, @inddisp"& _ 
+                "ln4_2, @inddispln5_2, @inddispln6_2, @inddispln7_2, @inddispln8_2, @inddispln9_2"& _ 
+                ", @inddispln10_2, @inddispln11_2, @inddispln12_2, @inddispln13_2, @inddispln14_2"& _ 
+                ", @inddispln15_2, @tpbx, @tpsx, @tpmz, @envw, @ecow, @socw, @totpla, @bod1, @bod"& _ 
+                "2, @bod3, @bod4, @bod5, @bod6, @bod7, @bod8, @bod9, @bod10, @bod11, @bod12, @bod"& _ 
+                "13, @bod14, @bod15, @tds1, @tds2, @tds3, @tds4, @tds5, @tds6, @tds7, @tds8, @tds"& _ 
+                "9, @tds10, @tds11, @tds12, @tds13, @tds14, @tds15, @tss1, @tss2, @tss3, @tss4, @"& _ 
+                "tss5, @tss6, @tss7, @tss8, @tss9, @tss10, @tss11, @tss12, @tss13, @tss14, @tss15"& _ 
+                ", @agruf, @agrufro, @induf, @indufro, @lanuf, @lanufro, @gwsp, @sbqi, @ssqi, @sm"& _ 
+                "qi, @salt, @agrw, @indw, @lanw, @DataCreazione, @UtenteCreazione, @DataAggiornam"& _ 
+                "ento, @UtenteAggiornamento, @Annullato, @DataEstrazione);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT datID, indcc1_"& _ 
+                "1, indcc2_1, indcc3_1, indcc4_1, indcc5_1, indcc6_1, indcc7_1, indcc8_1, indcc9_"& _ 
+                "1, indcc10_1, indcc11_1, indcc12_1, indcc13_1, indcc14_1, indcc15_1, indcc1_2, i"& _ 
+                "ndcc2_2, indcc3_2, indcc4_2, indcc5_2, indcc6_2, indcc7_2, indcc8_2, indcc9_2, i"& _ 
+                "ndcc10_2, indcc11_2, indcc12_2, indcc13_2, indcc14_2, indcc15_2, agrcc1_1, agrcc"& _ 
+                "2_1, agrcc3_1, agrcc4_1, agrcc5_1, agrcc6_1, agrcc7_1, agrcc8_1, agrcc9_1, agrcc"& _ 
+                "10_1, agrcc11_1, agrcc12_1, agrcc13_1, agrcc14_1, agrcc15_1, agrcc1_2, agrcc2_2,"& _ 
+                " agrcc3_2, agrcc4_2, agrcc5_2, agrcc6_2, agrcc7_2, agrcc8_2, agrcc9_2, agrcc10_2"& _ 
+                ", agrcc11_2, agrcc12_2, agrcc13_2, agrcc14_2, agrcc15_2, lancc1_1, lancc2_1, lan"& _ 
+                "cc3_1, lancc4_1, lancc5_1, lancc6_1, lancc7_1, lancc8_1, lancc9_1, lancc10_1, la"& _ 
+                "ncc11_1, lancc12_1, lancc13_1, lancc14_1, lancc15_1, lancc1_2, lancc2_2, lancc3_"& _ 
+                "2, lancc4_2, lancc5_2, lancc6_2, lancc7_2, lancc8_2, lancc9_2, lancc10_2, lancc1"& _ 
+                "1_2, lancc12_2, lancc13_2, lancc14_2, lancc15_2, lbqi1_1, lbqi2_1, lbqi3_1, lbqi"& _ 
+                "4_1, lbqi5_1, lbqi6_1, lbqi7_1, lbqi8_1, lbqi9_1, lbqi10_1, lbqi11_1, lbqi12_1, "& _ 
+                "lbqi13_1, lbqi14_1, lbqi15_1, lbqi1_2, lbqi2_2, lbqi3_2, lbqi4_2, lbqi5_2, lbqi6"& _ 
+                "_2, lbqi7_2, lbqi8_2, lbqi9_2, lbqi10_2, lbqi11_2, lbqi12_2, lbqi13_2, lbqi14_2,"& _ 
+                " lbqi15_2, lsqi1_1, lsqi2_1, lsqi3_1, lsqi4_1, lsqi5_1, lsqi6_1, lsqi7_1, lsqi8_"& _ 
+                "1, lsqi9_1, lsqi10_1, lsqi11_1, lsqi12_1, lsqi13_1, lsqi14_1, lsqi15_1, lsqi1_2,"& _ 
+                " lsqi2_2, lsqi3_2, lsqi4_2, lsqi5_2, lsqi6_2, lsqi7_2, lsqi8_2, lsqi9_2, lsqi10_"& _ 
+                "2, lsqi11_2, lsqi12_2, lsqi13_2, lsqi14_2, lsqi15_2, lmqi1_1, lmqi2_1, lmqi3_1, "& _ 
+                "lmqi4_1, lmqi5_1, lmqi6_1, lmqi7_1, lmqi8_1, lmqi9_1, lmqi10_1, lmqi11_1, lmqi12"& _ 
+                "_1, lmqi13_1, lmqi14_1, lmqi15_1, lmqi1_2, lmqi2_2, lmqi3_2, lmqi4_2, lmqi5_2, l"& _ 
+                "mqi6_2, lmqi7_2, lmqi8_2, lmqi9_2, lmqi10_2, lmqi11_2, lmqi12_2, lmqi13_2, lmqi1"& _ 
+                "4_2, lmqi15_2, pop20_1_1, pop20_2_1, pop20_3_1, pop20_4_1, pop20_5_1, pop20_6_1,"& _ 
+                " pop20_7_1, pop20_8_1, pop20_9_1, pop20_10_1, pop20_11_1, pop20_12_1, pop20_13_1"& _ 
+                ", pop20_14_1, pop20_15_1, pop20_1_2, pop20_2_2, pop20_3_2, pop20_4_2, pop20_5_2,"& _ 
+                " pop20_6_2, pop20_7_2, pop20_8_2, pop20_9_2, pop20_10_2, pop20_11_2, pop20_12_2,"& _ 
+                " pop20_13_2, pop20_14_2, pop20_15_2, inddis1_1, inddis2_1, inddis3_1, inddis4_1,"& _ 
+                " inddis5_1, inddis6_1, inddis7_1, inddis8_1, inddis9_1, inddis10_1, inddis11_1, "& _ 
+                "inddis12_1, inddis13_1, inddis14_1, inddis15_1, inddis1_2, inddis2_2, inddis3_2,"& _ 
+                " inddis4_2, inddis5_2, inddis6_2, inddis7_2, inddis8_2, inddis9_2, inddis10_2, i"& _ 
+                "nddis11_2, inddis12_2, inddis13_2, inddis14_2, inddis15_2, inddiscur1_1, inddisc"& _ 
+                "ur2_1, inddiscur3_1, inddiscur4_1, inddiscur5_1, inddiscur6_1, inddiscur7_1, ind"& _ 
+                "discur8_1, inddiscur9_1, inddiscur10_1, inddiscur11_1, inddiscur12_1, inddiscur1"& _ 
+                "3_1, inddiscur14_1, inddiscur15_1, inddiscur1_2, inddiscur2_2, inddiscur3_2, ind"& _ 
+                "discur4_2, inddiscur5_2, inddiscur6_2, inddiscur7_2, inddiscur8_2, inddiscur9_2,"& _ 
+                " inddiscur10_2, inddiscur11_2, inddiscur12_2, inddiscur13_2, inddiscur14_2, indd"& _ 
+                "iscur15_2, inddispln1_1, inddispln2_1, inddispln3_1, inddispln4_1, inddispln5_1,"& _ 
+                " inddispln6_1, inddispln7_1, inddispln8_1, inddispln9_1, inddispln10_1, inddispl"& _ 
+                "n11_1, inddispln12_1, inddispln13_1, inddispln14_1, inddispln15_1, inddispln1_2,"& _ 
+                " inddispln2_2, inddispln3_2, inddispln4_2, inddispln5_2, inddispln6_2, inddispln"& _ 
+                "7_2, inddispln8_2, inddispln9_2, inddispln10_2, inddispln11_2, inddispln12_2, in"& _ 
+                "ddispln13_2, inddispln14_2, inddispln15_2, tpbx, tpsx, tpmz, envw, ecow, socw, t"& _ 
+                "otpla, bod1, bod2, bod3, bod4, bod5, bod6, bod7, bod8, bod9, bod10, bod11, bod12"& _ 
+                ", bod13, bod14, bod15, tds1, tds2, tds3, tds4, tds5, tds6, tds7, tds8, tds9, tds"& _ 
+                "10, tds11, tds12, tds13, tds14, tds15, tss1, tss2, tss3, tss4, tss5, tss6, tss7,"& _ 
+                " tss8, tss9, tss10, tss11, tss12, tss13, tss14, tss15, agruf, agrufro, induf, in"& _ 
+                "dufro, lanuf, lanufro, gwsp, sbqi, ssqi, smqi, salt, agrw, indw, lanw, DataCreaz"& _ 
+                "ione, UtenteCreazione, DataAggiornamento, UtenteAggiornamento, Annullato, DataEs"& _ 
+                "trazione FROM data WHERE (datID = SCOPE_IDENTITY())"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@indcc1_1", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "indcc1_1", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@indcc2_1", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "indcc2_1", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -17843,6 +18024,10 @@ Namespace DSDataTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@sbqi", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "sbqi", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ssqi", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "ssqi", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@smqi", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "smqi", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@salt", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "salt", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@agrw", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "agrw", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@indw", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "indw", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@lanw", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "lanw", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@DataCreazione", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "DataCreazione", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UtenteCreazione", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UtenteCreazione", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@DataAggiornamento", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "DataAggiornamento", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -17962,476 +18147,481 @@ Namespace DSDataTableAdapters
                 " [tss10] = @tss10, [tss11] = @tss11, [tss12] = @tss12, [tss13] = @tss13, [tss14]"& _ 
                 " = @tss14, [tss15] = @tss15, [agruf] = @agruf, [agrufro] = @agrufro, [induf] = @"& _ 
                 "induf, [indufro] = @indufro, [lanuf] = @lanuf, [lanufro] = @lanufro, [gwsp] = @g"& _ 
-                "wsp, [sbqi] = @sbqi, [ssqi] = @ssqi, [smqi] = @smqi, [DataCreazione] = @DataCrea"& _ 
-                "zione, [UtenteCreazione] = @UtenteCreazione, [DataAggiornamento] = @DataAggiorna"& _ 
-                "mento, [UtenteAggiornamento] = @UtenteAggiornamento, [Annullato] = @Annullato, ["& _ 
-                "DataEstrazione] = @DataEstrazione WHERE (([datID] = @Original_datID) AND ((@IsNu"& _ 
-                "ll_indcc1_1 = 1 AND [indcc1_1] IS NULL) OR ([indcc1_1] = @Original_indcc1_1)) AN"& _ 
-                "D ((@IsNull_indcc2_1 = 1 AND [indcc2_1] IS NULL) OR ([indcc2_1] = @Original_indc"& _ 
-                "c2_1)) AND ((@IsNull_indcc3_1 = 1 AND [indcc3_1] IS NULL) OR ([indcc3_1] = @Orig"& _ 
-                "inal_indcc3_1)) AND ((@IsNull_indcc4_1 = 1 AND [indcc4_1] IS NULL) OR ([indcc4_1"& _ 
-                "] = @Original_indcc4_1)) AND ((@IsNull_indcc5_1 = 1 AND [indcc5_1] IS NULL) OR ("& _ 
-                "[indcc5_1] = @Original_indcc5_1)) AND ((@IsNull_indcc6_1 = 1 AND [indcc6_1] IS N"& _ 
-                "ULL) OR ([indcc6_1] = @Original_indcc6_1)) AND ((@IsNull_indcc7_1 = 1 AND [indcc"& _ 
-                "7_1] IS NULL) OR ([indcc7_1] = @Original_indcc7_1)) AND ((@IsNull_indcc8_1 = 1 A"& _ 
-                "ND [indcc8_1] IS NULL) OR ([indcc8_1] = @Original_indcc8_1)) AND ((@IsNull_indcc"& _ 
-                "9_1 = 1 AND [indcc9_1] IS NULL) OR ([indcc9_1] = @Original_indcc9_1)) AND ((@IsN"& _ 
-                "ull_indcc10_1 = 1 AND [indcc10_1] IS NULL) OR ([indcc10_1] = @Original_indcc10_1"& _ 
-                ")) AND ((@IsNull_indcc11_1 = 1 AND [indcc11_1] IS NULL) OR ([indcc11_1] = @Origi"& _ 
-                "nal_indcc11_1)) AND ((@IsNull_indcc12_1 = 1 AND [indcc12_1] IS NULL) OR ([indcc1"& _ 
-                "2_1] = @Original_indcc12_1)) AND ((@IsNull_indcc13_1 = 1 AND [indcc13_1] IS NULL"& _ 
-                ") OR ([indcc13_1] = @Original_indcc13_1)) AND ((@IsNull_indcc14_1 = 1 AND [indcc"& _ 
-                "14_1] IS NULL) OR ([indcc14_1] = @Original_indcc14_1)) AND ((@IsNull_indcc15_1 ="& _ 
-                " 1 AND [indcc15_1] IS NULL) OR ([indcc15_1] = @Original_indcc15_1)) AND ((@IsNul"& _ 
-                "l_indcc1_2 = 1 AND [indcc1_2] IS NULL) OR ([indcc1_2] = @Original_indcc1_2)) AND"& _ 
-                " ((@IsNull_indcc2_2 = 1 AND [indcc2_2] IS NULL) OR ([indcc2_2] = @Original_indcc"& _ 
-                "2_2)) AND ((@IsNull_indcc3_2 = 1 AND [indcc3_2] IS NULL) OR ([indcc3_2] = @Origi"& _ 
-                "nal_indcc3_2)) AND ((@IsNull_indcc4_2 = 1 AND [indcc4_2] IS NULL) OR ([indcc4_2]"& _ 
-                " = @Original_indcc4_2)) AND ((@IsNull_indcc5_2 = 1 AND [indcc5_2] IS NULL) OR (["& _ 
-                "indcc5_2] = @Original_indcc5_2)) AND ((@IsNull_indcc6_2 = 1 AND [indcc6_2] IS NU"& _ 
-                "LL) OR ([indcc6_2] = @Original_indcc6_2)) AND ((@IsNull_indcc7_2 = 1 AND [indcc7"& _ 
-                "_2] IS NULL) OR ([indcc7_2] = @Original_indcc7_2)) AND ((@IsNull_indcc8_2 = 1 AN"& _ 
-                "D [indcc8_2] IS NULL) OR ([indcc8_2] = @Original_indcc8_2)) AND ((@IsNull_indcc9"& _ 
-                "_2 = 1 AND [indcc9_2] IS NULL) OR ([indcc9_2] = @Original_indcc9_2)) AND ((@IsNu"& _ 
-                "ll_indcc10_2 = 1 AND [indcc10_2] IS NULL) OR ([indcc10_2] = @Original_indcc10_2)"& _ 
-                ") AND ((@IsNull_indcc11_2 = 1 AND [indcc11_2] IS NULL) OR ([indcc11_2] = @Origin"& _ 
-                "al_indcc11_2)) AND ((@IsNull_indcc12_2 = 1 AND [indcc12_2] IS NULL) OR ([indcc12"& _ 
-                "_2] = @Original_indcc12_2)) AND ((@IsNull_indcc13_2 = 1 AND [indcc13_2] IS NULL)"& _ 
-                " OR ([indcc13_2] = @Original_indcc13_2)) AND ((@IsNull_indcc14_2 = 1 AND [indcc1"& _ 
-                "4_2] IS NULL) OR ([indcc14_2] = @Original_indcc14_2)) AND ((@IsNull_indcc15_2 = "& _ 
-                "1 AND [indcc15_2] IS NULL) OR ([indcc15_2] = @Original_indcc15_2)) AND ((@IsNull"& _ 
-                "_agrcc1_1 = 1 AND [agrcc1_1] IS NULL) OR ([agrcc1_1] = @Original_agrcc1_1)) AND "& _ 
-                "((@IsNull_agrcc2_1 = 1 AND [agrcc2_1] IS NULL) OR ([agrcc2_1] = @Original_agrcc2"& _ 
-                "_1)) AND ((@IsNull_agrcc3_1 = 1 AND [agrcc3_1] IS NULL) OR ([agrcc3_1] = @Origin"& _ 
-                "al_agrcc3_1)) AND ((@IsNull_agrcc4_1 = 1 AND [agrcc4_1] IS NULL) OR ([agrcc4_1] "& _ 
-                "= @Original_agrcc4_1)) AND ((@IsNull_agrcc5_1 = 1 AND [agrcc5_1] IS NULL) OR ([a"& _ 
-                "grcc5_1] = @Original_agrcc5_1)) AND ((@IsNull_agrcc6_1 = 1 AND [agrcc6_1] IS NUL"& _ 
-                "L) OR ([agrcc6_1] = @Original_agrcc6_1)) AND ((@IsNull_agrcc7_1 = 1 AND [agrcc7_"& _ 
-                "1] IS NULL) OR ([agrcc7_1] = @Original_agrcc7_1)) AND ((@IsNull_agrcc8_1 = 1 AND"& _ 
-                " [agrcc8_1] IS NULL) OR ([agrcc8_1] = @Original_agrcc8_1)) AND ((@IsNull_agrcc9_"& _ 
-                "1 = 1 AND [agrcc9_1] IS NULL) OR ([agrcc9_1] = @Original_agrcc9_1)) AND ((@IsNul"& _ 
-                "l_agrcc10_1 = 1 AND [agrcc10_1] IS NULL) OR ([agrcc10_1] = @Original_agrcc10_1))"& _ 
-                " AND ((@IsNull_agrcc11_1 = 1 AND [agrcc11_1] IS NULL) OR ([agrcc11_1] = @Origina"& _ 
-                "l_agrcc11_1)) AND ((@IsNull_agrcc12_1 = 1 AND [agrcc12_1] IS NULL) OR ([agrcc12_"& _ 
-                "1] = @Original_agrcc12_1)) AND ((@IsNull_agrcc13_1 = 1 AND [agrcc13_1] IS NULL) "& _ 
-                "OR ([agrcc13_1] = @Original_agrcc13_1)) AND ((@IsNull_agrcc14_1 = 1 AND [agrcc14"& _ 
-                "_1] IS NULL) OR ([agrcc14_1] = @Original_agrcc14_1)) AND ((@IsNull_agrcc15_1 = 1"& _ 
-                " AND [agrcc15_1] IS NULL) OR ([agrcc15_1] = @Original_agrcc15_1)) AND ((@IsNull_"& _ 
-                "agrcc1_2 = 1 AND [agrcc1_2] IS NULL) OR ([agrcc1_2] = @Original_agrcc1_2)) AND ("& _ 
-                "(@IsNull_agrcc2_2 = 1 AND [agrcc2_2] IS NULL) OR ([agrcc2_2] = @Original_agrcc2_"& _ 
-                "2)) AND ((@IsNull_agrcc3_2 = 1 AND [agrcc3_2] IS NULL) OR ([agrcc3_2] = @Origina"& _ 
-                "l_agrcc3_2)) AND ((@IsNull_agrcc4_2 = 1 AND [agrcc4_2] IS NULL) OR ([agrcc4_2] ="& _ 
-                " @Original_agrcc4_2)) AND ((@IsNull_agrcc5_2 = 1 AND [agrcc5_2] IS NULL) OR ([ag"& _ 
-                "rcc5_2] = @Original_agrcc5_2)) AND ((@IsNull_agrcc6_2 = 1 AND [agrcc6_2] IS NULL"& _ 
-                ") OR ([agrcc6_2] = @Original_agrcc6_2)) AND ((@IsNull_agrcc7_2 = 1 AND [agrcc7_2"& _ 
-                "] IS NULL) OR ([agrcc7_2] = @Original_agrcc7_2)) AND ((@IsNull_agrcc8_2 = 1 AND "& _ 
-                "[agrcc8_2] IS NULL) OR ([agrcc8_2] = @Original_agrcc8_2)) AND ((@IsNull_agrcc9_2"& _ 
-                " = 1 AND [agrcc9_2] IS NULL) OR ([agrcc9_2] = @Original_agrcc9_2)) AND ((@IsNull"& _ 
-                "_agrcc10_2 = 1 AND [agrcc10_2] IS NULL) OR ([agrcc10_2] = @Original_agrcc10_2)) "& _ 
-                "AND ((@IsNull_agrcc11_2 = 1 AND [agrcc11_2] IS NULL) OR ([agrcc11_2] = @Original"& _ 
-                "_agrcc11_2)) AND ((@IsNull_agrcc12_2 = 1 AND [agrcc12_2] IS NULL) OR ([agrcc12_2"& _ 
-                "] = @Original_agrcc12_2)) AND ((@IsNull_agrcc13_2 = 1 AND [agrcc13_2] IS NULL) O"& _ 
-                "R ([agrcc13_2] = @Original_agrcc13_2)) AND ((@IsNull_agrcc14_2 = 1 AND [agrcc14_"& _ 
-                "2] IS NULL) OR ([agrcc14_2] = @Original_agrcc14_2)) AND ((@IsNull_agrcc15_2 = 1 "& _ 
-                "AND [agrcc15_2] IS NULL) OR ([agrcc15_2] = @Original_agrcc15_2)) AND ((@IsNull_l"& _ 
-                "ancc1_1 = 1 AND [lancc1_1] IS NULL) OR ([lancc1_1] = @Original_lancc1_1)) AND (("& _ 
-                "@IsNull_lancc2_1 = 1 AND [lancc2_1] IS NULL) OR ([lancc2_1] = @Original_lancc2_1"& _ 
-                ")) AND ((@IsNull_lancc3_1 = 1 AND [lancc3_1] IS NULL) OR ([lancc3_1] = @Original"& _ 
-                "_lancc3_1)) AND ((@IsNull_lancc4_1 = 1 AND [lancc4_1] IS NULL) OR ([lancc4_1] = "& _ 
-                "@Original_lancc4_1)) AND ((@IsNull_lancc5_1 = 1 AND [lancc5_1] IS NULL) OR ([lan"& _ 
-                "cc5_1] = @Original_lancc5_1)) AND ((@IsNull_lancc6_1 = 1 AND [lancc6_1] IS NULL)"& _ 
-                " OR ([lancc6_1] = @Original_lancc6_1)) AND ((@IsNull_lancc7_1 = 1 AND [lancc7_1]"& _ 
-                " IS NULL) OR ([lancc7_1] = @Original_lancc7_1)) AND ((@IsNull_lancc8_1 = 1 AND ["& _ 
-                "lancc8_1] IS NULL) OR ([lancc8_1] = @Original_lancc8_1)) AND ((@IsNull_lancc9_1 "& _ 
-                "= 1 AND [lancc9_1] IS NULL) OR ([lancc9_1] = @Original_lancc9_1)) AND ((@IsNull_"& _ 
-                "lancc10_1 = 1 AND [lancc10_1] IS NULL) OR ([lancc10_1] = @Original_lancc10_1)) A"& _ 
-                "ND ((@IsNull_lancc11_1 = 1 AND [lancc11_1] IS NULL) OR ([lancc11_1] = @Original_"& _ 
-                "lancc11_1)) AND ((@IsNull_lancc12_1 = 1 AND [lancc12_1] IS NULL) OR ([lancc12_1]"& _ 
-                " = @Original_lancc12_1)) AND ((@IsNull_lancc13_1 = 1 AND [lancc13_1] IS NULL) OR"& _ 
-                " ([lancc13_1] = @Original_lancc13_1)) AND ((@IsNull_lancc14_1 = 1 AND [lancc14_1"& _ 
-                "] IS NULL) OR ([lancc14_1] = @Original_lancc14_1)) AND ((@IsNull_lancc15_1 = 1 A"& _ 
-                "ND [lancc15_1] IS NULL) OR ([lancc15_1] = @Original_lancc15_1)) AND ((@IsNull_la"& _ 
-                "ncc1_2 = 1 AND [lancc1_2] IS NULL) OR ([lancc1_2] = @Original_lancc1_2)) AND ((@"& _ 
-                "IsNull_lancc2_2 = 1 AND [lancc2_2] IS NULL) OR ([lancc2_2] = @Original_lancc2_2)"& _ 
-                ") AND ((@IsNull_lancc3_2 = 1 AND [lancc3_2] IS NULL) OR ([lancc3_2] = @Original_"& _ 
-                "lancc3_2)) AND ((@IsNull_lancc4_2 = 1 AND [lancc4_2] IS NULL) OR ([lancc4_2] = @"& _ 
-                "Original_lancc4_2)) AND ((@IsNull_lancc5_2 = 1 AND [lancc5_2] IS NULL) OR ([lanc"& _ 
-                "c5_2] = @Original_lancc5_2)) AND ((@IsNull_lancc6_2 = 1 AND [lancc6_2] IS NULL) "& _ 
-                "OR ([lancc6_2] = @Original_lancc6_2)) AND ((@IsNull_lancc7_2 = 1 AND [lancc7_2] "& _ 
-                "IS NULL) OR ([lancc7_2] = @Original_lancc7_2)) AND ((@IsNull_lancc8_2 = 1 AND [l"& _ 
-                "ancc8_2] IS NULL) OR ([lancc8_2] = @Original_lancc8_2)) AND ((@IsNull_lancc9_2 ="& _ 
-                " 1 AND [lancc9_2] IS NULL) OR ([lancc9_2] = @Original_lancc9_2)) AND ((@IsNull_l"& _ 
-                "ancc10_2 = 1 AND [lancc10_2] IS NULL) OR ([lancc10_2] = @Original_lancc10_2)) AN"& _ 
-                "D ((@IsNull_lancc11_2 = 1 AND [lancc11_2] IS NULL) OR ([lancc11_2] = @Original_l"& _ 
-                "ancc11_2)) AND ((@IsNull_lancc12_2 = 1 AND [lancc12_2] IS NULL) OR ([lancc12_2] "& _ 
-                "= @Original_lancc12_2)) AND ((@IsNull_lancc13_2 = 1 AND [lancc13_2] IS NULL) OR "& _ 
-                "([lancc13_2] = @Original_lancc13_2)) AND ((@IsNull_lancc14_2 = 1 AND [lancc14_2]"& _ 
-                " IS NULL) OR ([lancc14_2] = @Original_lancc14_2)) AND ((@IsNull_lancc15_2 = 1 AN"& _ 
-                "D [lancc15_2] IS NULL) OR ([lancc15_2] = @Original_lancc15_2)) AND ((@IsNull_lbq"& _ 
-                "i1_1 = 1 AND [lbqi1_1] IS NULL) OR ([lbqi1_1] = @Original_lbqi1_1)) AND ((@IsNul"& _ 
-                "l_lbqi2_1 = 1 AND [lbqi2_1] IS NULL) OR ([lbqi2_1] = @Original_lbqi2_1)) AND ((@"& _ 
-                "IsNull_lbqi3_1 = 1 AND [lbqi3_1] IS NULL) OR ([lbqi3_1] = @Original_lbqi3_1)) AN"& _ 
-                "D ((@IsNull_lbqi4_1 = 1 AND [lbqi4_1] IS NULL) OR ([lbqi4_1] = @Original_lbqi4_1"& _ 
-                ")) AND ((@IsNull_lbqi5_1 = 1 AND [lbqi5_1] IS NULL) OR ([lbqi5_1] = @Original_lb"& _ 
-                "qi5_1)) AND ((@IsNull_lbqi6_1 = 1 AND [lbqi6_1] IS NULL) OR ([lbqi6_1] = @Origin"& _ 
-                "al_lbqi6_1)) AND ((@IsNull_lbqi7_1 = 1 AND [lbqi7_1] IS NULL) OR ([lbqi7_1] = @O"& _ 
-                "riginal_lbqi7_1)) AND ((@IsNull_lbqi8_1 = 1 AND [lbqi8_1] IS NULL) OR ([lbqi8_1]"& _ 
-                " = @Original_lbqi8_1)) AND ((@IsNull_lbqi9_1 = 1 AND [lbqi9_1] IS NULL) OR ([lbq"& _ 
-                "i9_1] = @Original_lbqi9_1)) AND ((@IsNull_lbqi10_1 = 1 AND [lbqi10_1] IS NULL) O"& _ 
-                "R ([lbqi10_1] = @Original_lbqi10_1)) AND ((@IsNull_lbqi11_1 = 1 AND [lbqi11_1] I"& _ 
-                "S NULL) OR ([lbqi11_1] = @Original_lbqi11_1)) AND ((@IsNull_lbqi12_1 = 1 AND [lb"& _ 
-                "qi12_1] IS NULL) OR ([lbqi12_1] = @Original_lbqi12_1)) AND ((@IsNull_lbqi13_1 = "& _ 
-                "1 AND [lbqi13_1] IS NULL) OR ([lbqi13_1] = @Original_lbqi13_1)) AND ((@IsNull_lb"& _ 
-                "qi14_1 = 1 AND [lbqi14_1] IS NULL) OR ([lbqi14_1] = @Original_lbqi14_1)) AND ((@"& _ 
-                "IsNull_lbqi15_1 = 1 AND [lbqi15_1] IS NULL) OR ([lbqi15_1] = @Original_lbqi15_1)"& _ 
-                ") AND ((@IsNull_lbqi1_2 = 1 AND [lbqi1_2] IS NULL) OR ([lbqi1_2] = @Original_lbq"& _ 
-                "i1_2)) AND ((@IsNull_lbqi2_2 = 1 AND [lbqi2_2] IS NULL) OR ([lbqi2_2] = @Origina"& _ 
-                "l_lbqi2_2)) AND ((@IsNull_lbqi3_2 = 1 AND [lbqi3_2] IS NULL) OR ([lbqi3_2] = @Or"& _ 
-                "iginal_lbqi3_2)) AND ((@IsNull_lbqi4_2 = 1 AND [lbqi4_2] IS NULL) OR ([lbqi4_2] "& _ 
-                "= @Original_lbqi4_2)) AND ((@IsNull_lbqi5_2 = 1 AND [lbqi5_2] IS NULL) OR ([lbqi"& _ 
-                "5_2] = @Original_lbqi5_2)) AND ((@IsNull_lbqi6_2 = 1 AND [lbqi6_2] IS NULL) OR ("& _ 
-                "[lbqi6_2] = @Original_lbqi6_2)) AND ((@IsNull_lbqi7_2 = 1 AND [lbqi7_2] IS NULL)"& _ 
-                " OR ([lbqi7_2] = @Original_lbqi7_2)) AND ((@IsNull_lbqi8_2 = 1 AND [lbqi8_2] IS "& _ 
-                "NULL) OR ([lbqi8_2] = @Original_lbqi8_2)) AND ((@IsNull_lbqi9_2 = 1 AND [lbqi9_2"& _ 
-                "] IS NULL) OR ([lbqi9_2] = @Original_lbqi9_2)) AND ((@IsNull_lbqi10_2 = 1 AND [l"& _ 
-                "bqi10_2] IS NULL) OR ([lbqi10_2] = @Original_lbqi10_2)) AND ((@IsNull_lbqi11_2 ="& _ 
-                " 1 AND [lbqi11_2] IS NULL) OR ([lbqi11_2] = @Original_lbqi11_2)) AND ((@IsNull_l"& _ 
-                "bqi12_2 = 1 AND [lbqi12_2] IS NULL) OR ([lbqi12_2] = @Original_lbqi12_2)) AND (("& _ 
-                "@IsNull_lbqi13_2 = 1 AND [lbqi13_2] IS NULL) OR ([lbqi13_2] = @Original_lbqi13_2"& _ 
-                ")) AND ((@IsNull_lbqi14_2 = 1 AND [lbqi14_2] IS NULL) OR ([lbqi14_2] = @Original"& _ 
-                "_lbqi14_2)) AND ((@IsNull_lbqi15_2 = 1 AND [lbqi15_2] IS NULL) OR ([lbqi15_2] = "& _ 
-                "@Original_lbqi15_2)) AND ((@IsNull_lsqi1_1 = 1 AND [lsqi1_1] IS NULL) OR ([lsqi1"& _ 
-                "_1] = @Original_lsqi1_1)) AND ((@IsNull_lsqi2_1 = 1 AND [lsqi2_1] IS NULL) OR (["& _ 
-                "lsqi2_1] = @Original_lsqi2_1)) AND ((@IsNull_lsqi3_1 = 1 AND [lsqi3_1] IS NULL) "& _ 
-                "OR ([lsqi3_1] = @Original_lsqi3_1)) AND ((@IsNull_lsqi4_1 = 1 AND [lsqi4_1] IS N"& _ 
-                "ULL) OR ([lsqi4_1] = @Original_lsqi4_1)) AND ((@IsNull_lsqi5_1 = 1 AND [lsqi5_1]"& _ 
-                " IS NULL) OR ([lsqi5_1] = @Original_lsqi5_1)) AND ((@IsNull_lsqi6_1 = 1 AND [lsq"& _ 
-                "i6_1] IS NULL) OR ([lsqi6_1] = @Original_lsqi6_1)) AND ((@IsNull_lsqi7_1 = 1 AND"& _ 
-                " [lsqi7_1] IS NULL) OR ([lsqi7_1] = @Original_lsqi7_1)) AND ((@IsNull_lsqi8_1 = "& _ 
-                "1 AND [lsqi8_1] IS NULL) OR ([lsqi8_1] = @Original_lsqi8_1)) AND ((@IsNull_lsqi9"& _ 
-                "_1 = 1 AND [lsqi9_1] IS NULL) OR ([lsqi9_1] = @Original_lsqi9_1)) AND ((@IsNull_"& _ 
-                "lsqi10_1 = 1 AND [lsqi10_1] IS NULL) OR ([lsqi10_1] = @Original_lsqi10_1)) AND ("& _ 
-                "(@IsNull_lsqi11_1 = 1 AND [lsqi11_1] IS NULL) OR ([lsqi11_1] = @Original_lsqi11_"& _ 
-                "1)) AND ((@IsNull_lsqi12_1 = 1 AND [lsqi12_1] IS NULL) OR ([lsqi12_1] = @Origina"& _ 
-                "l_lsqi12_1)) AND ((@IsNull_lsqi13_1 = 1 AND [lsqi13_1] IS NULL) OR ([lsqi13_1] ="& _ 
-                " @Original_lsqi13_1)) AND ((@IsNull_lsqi14_1 = 1 AND [lsqi14_1] IS NULL) OR ([ls"& _ 
-                "qi14_1] = @Original_lsqi14_1)) AND ((@IsNull_lsqi15_1 = 1 AND [lsqi15_1] IS NULL"& _ 
-                ") OR ([lsqi15_1] = @Original_lsqi15_1)) AND ((@IsNull_lsqi1_2 = 1 AND [lsqi1_2] "& _ 
-                "IS NULL) OR ([lsqi1_2] = @Original_lsqi1_2)) AND ((@IsNull_lsqi2_2 = 1 AND [lsqi"& _ 
-                "2_2] IS NULL) OR ([lsqi2_2] = @Original_lsqi2_2)) AND ((@IsNull_lsqi3_2 = 1 AND "& _ 
-                "[lsqi3_2] IS NULL) OR ([lsqi3_2] = @Original_lsqi3_2)) AND ((@IsNull_lsqi4_2 = 1"& _ 
-                " AND [lsqi4_2] IS NULL) OR ([lsqi4_2] = @Original_lsqi4_2)) AND ((@IsNull_lsqi5_"& _ 
-                "2 = 1 AND [lsqi5_2] IS NULL) OR ([lsqi5_2] = @Original_lsqi5_2)) AND ((@IsNull_l"& _ 
-                "sqi6_2 = 1 AND [lsqi6_2] IS NULL) OR ([lsqi6_2] = @Original_lsqi6_2)) AND ((@IsN"& _ 
-                "ull_lsqi7_2 = 1 AND [lsqi7_2] IS NULL) OR ([lsqi7_2] = @Original_lsqi7_2)) AND ("& _ 
-                "(@IsNull_lsqi8_2 = 1 AND [lsqi8_2] IS NULL) OR ([lsqi8_2] = @Original_lsqi8_2)) "& _ 
-                "AND ((@IsNull_lsqi9_2 = 1 AND [lsqi9_2] IS NULL) OR ([lsqi9_2] = @Original_lsqi9"& _ 
-                "_2)) AND ((@IsNull_lsqi10_2 = 1 AND [lsqi10_2] IS NULL) OR ([lsqi10_2] = @Origin"& _ 
-                "al_lsqi10_2)) AND ((@IsNull_lsqi11_2 = 1 AND [lsqi11_2] IS NULL) OR ([lsqi11_2] "& _ 
-                "= @Original_lsqi11_2)) AND ((@IsNull_lsqi12_2 = 1 AND [lsqi12_2] IS NULL) OR ([l"& _ 
-                "sqi12_2] = @Original_lsqi12_2)) AND ((@IsNull_lsqi13_2 = 1 AND [lsqi13_2] IS NUL"& _ 
-                "L) OR ([lsqi13_2] = @Original_lsqi13_2)) AND ((@IsNull_lsqi14_2 = 1 AND [lsqi14_"& _ 
-                "2] IS NULL) OR ([lsqi14_2] = @Original_lsqi14_2)) AND ((@IsNull_lsqi15_2 = 1 AND"& _ 
-                " [lsqi15_2] IS NULL) OR ([lsqi15_2] = @Original_lsqi15_2)) AND ((@IsNull_lmqi1_1"& _ 
-                " = 1 AND [lmqi1_1] IS NULL) OR ([lmqi1_1] = @Original_lmqi1_1)) AND ((@IsNull_lm"& _ 
-                "qi2_1 = 1 AND [lmqi2_1] IS NULL) OR ([lmqi2_1] = @Original_lmqi2_1)) AND ((@IsNu"& _ 
-                "ll_lmqi3_1 = 1 AND [lmqi3_1] IS NULL) OR ([lmqi3_1] = @Original_lmqi3_1)) AND (("& _ 
-                "@IsNull_lmqi4_1 = 1 AND [lmqi4_1] IS NULL) OR ([lmqi4_1] = @Original_lmqi4_1)) A"& _ 
-                "ND ((@IsNull_lmqi5_1 = 1 AND [lmqi5_1] IS NULL) OR ([lmqi5_1] = @Original_lmqi5_"& _ 
-                "1)) AND ((@IsNull_lmqi6_1 = 1 AND [lmqi6_1] IS NULL) OR ([lmqi6_1] = @Original_l"& _ 
-                "mqi6_1)) AND ((@IsNull_lmqi7_1 = 1 AND [lmqi7_1] IS NULL) OR ([lmqi7_1] = @Origi"& _ 
-                "nal_lmqi7_1)) AND ((@IsNull_lmqi8_1 = 1 AND [lmqi8_1] IS NULL) OR ([lmqi8_1] = @"& _ 
-                "Original_lmqi8_1)) AND ((@IsNull_lmqi9_1 = 1 AND [lmqi9_1] IS NULL) OR ([lmqi9_1"& _ 
-                "] = @Original_lmqi9_1)) AND ((@IsNull_lmqi10_1 = 1 AND [lmqi10_1] IS NULL) OR (["& _ 
-                "lmqi10_1] = @Original_lmqi10_1)) AND ((@IsNull_lmqi11_1 = 1 AND [lmqi11_1] IS NU"& _ 
-                "LL) OR ([lmqi11_1] = @Original_lmqi11_1)) AND ((@IsNull_lmqi12_1 = 1 AND [lmqi12"& _ 
-                "_1] IS NULL) OR ([lmqi12_1] = @Original_lmqi12_1)) AND ((@IsNull_lmqi13_1 = 1 AN"& _ 
-                "D [lmqi13_1] IS NULL) OR ([lmqi13_1] = @Original_lmqi13_1)) AND ((@IsNull_lmqi14"& _ 
-                "_1 = 1 AND [lmqi14_1] IS NULL) OR ([lmqi14_1] = @Original_lmqi14_1)) AND ((@IsNu"& _ 
-                "ll_lmqi15_1 = 1 AND [lmqi15_1] IS NULL) OR ([lmqi15_1] = @Original_lmqi15_1)) AN"& _ 
-                "D ((@IsNull_lmqi1_2 = 1 AND [lmqi1_2] IS NULL) OR ([lmqi1_2] = @Original_lmqi1_2"& _ 
-                ")) AND ((@IsNull_lmqi2_2 = 1 AND [lmqi2_2] IS NULL) OR ([lmqi2_2] = @Original_lm"& _ 
-                "qi2_2)) AND ((@IsNull_lmqi3_2 = 1 AND [lmqi3_2] IS NULL) OR ([lmqi3_2] = @Origin"& _ 
-                "al_lmqi3_2)) AND ((@IsNull_lmqi4_2 = 1 AND [lmqi4_2] IS NULL) OR ([lmqi4_2] = @O"& _ 
-                "riginal_lmqi4_2)) AND ((@IsNull_lmqi5_2 = 1 AND [lmqi5_2] IS NULL) OR ([lmqi5_2]"& _ 
-                " = @Original_lmqi5_2)) AND ((@IsNull_lmqi6_2 = 1 AND [lmqi6_2] IS NULL) OR ([lmq"& _ 
-                "i6_2] = @Original_lmqi6_2)) AND ((@IsNull_lmqi7_2 = 1 AND [lmqi7_2] IS NULL) OR "& _ 
-                "([lmqi7_2] = @Original_lmqi7_2)) AND ((@IsNull_lmqi8_2 = 1 AND [lmqi8_2] IS NULL"& _ 
-                ") OR ([lmqi8_2] = @Original_lmqi8_2)) AND ((@IsNull_lmqi9_2 = 1 AND [lmqi9_2] IS"& _ 
-                " NULL) OR ([lmqi9_2] = @Original_lmqi9_2)) AND ((@IsNull_lmqi10_2 = 1 AND [lmqi1"& _ 
-                "0_2] IS NULL) OR ([lmqi10_2] = @Original_lmqi10_2)) AND ((@IsNull_lmqi11_2 = 1 A"& _ 
-                "ND [lmqi11_2] IS NULL) OR ([lmqi11_2] = @Original_lmqi11_2)) AND ((@IsNull_lmqi1"& _ 
-                "2_2 = 1 AND [lmqi12_2] IS NULL) OR ([lmqi12_2] = @Original_lmqi12_2)) AND ((@IsN"& _ 
-                "ull_lmqi13_2 = 1 AND [lmqi13_2] IS NULL) OR ([lmqi13_2] = @Original_lmqi13_2)) A"& _ 
-                "ND ((@IsNull_lmqi14_2 = 1 AND [lmqi14_2] IS NULL) OR ([lmqi14_2] = @Original_lmq"& _ 
-                "i14_2)) AND ((@IsNull_lmqi15_2 = 1 AND [lmqi15_2] IS NULL) OR ([lmqi15_2] = @Ori"& _ 
-                "ginal_lmqi15_2)) AND ((@IsNull_pop20_1_1 = 1 AND [pop20_1_1] IS NULL) OR ([pop20"& _ 
-                "_1_1] = @Original_pop20_1_1)) AND ((@IsNull_pop20_2_1 = 1 AND [pop20_2_1] IS NUL"& _ 
-                "L) OR ([pop20_2_1] = @Original_pop20_2_1)) AND ((@IsNull_pop20_3_1 = 1 AND [pop2"& _ 
-                "0_3_1] IS NULL) OR ([pop20_3_1] = @Original_pop20_3_1)) AND ((@IsNull_pop20_4_1 "& _ 
-                "= 1 AND [pop20_4_1] IS NULL) OR ([pop20_4_1] = @Original_pop20_4_1)) AND ((@IsNu"& _ 
-                "ll_pop20_5_1 = 1 AND [pop20_5_1] IS NULL) OR ([pop20_5_1] = @Original_pop20_5_1)"& _ 
-                ") AND ((@IsNull_pop20_6_1 = 1 AND [pop20_6_1] IS NULL) OR ([pop20_6_1] = @Origin"& _ 
-                "al_pop20_6_1)) AND ((@IsNull_pop20_7_1 = 1 AND [pop20_7_1] IS NULL) OR ([pop20_7"& _ 
-                "_1] = @Original_pop20_7_1)) AND ((@IsNull_pop20_8_1 = 1 AND [pop20_8_1] IS NULL)"& _ 
-                " OR ([pop20_8_1] = @Original_pop20_8_1)) AND ((@IsNull_pop20_9_1 = 1 AND [pop20_"& _ 
-                "9_1] IS NULL) OR ([pop20_9_1] = @Original_pop20_9_1)) AND ((@IsNull_pop20_10_1 ="& _ 
-                " 1 AND [pop20_10_1] IS NULL) OR ([pop20_10_1] = @Original_pop20_10_1)) AND ((@Is"& _ 
-                "Null_pop20_11_1 = 1 AND [pop20_11_1] IS NULL) OR ([pop20_11_1] = @Original_pop20"& _ 
-                "_11_1)) AND ((@IsNull_pop20_12_1 = 1 AND [pop20_12_1] IS NULL) OR ([pop20_12_1] "& _ 
-                "= @Original_pop20_12_1)) AND ((@IsNull_pop20_13_1 = 1 AND [pop20_13_1] IS NULL) "& _ 
-                "OR ([pop20_13_1] = @Original_pop20_13_1)) AND ((@IsNull_pop20_14_1 = 1 AND [pop2"& _ 
-                "0_14_1] IS NULL) OR ([pop20_14_1] = @Original_pop20_14_1)) AND ((@IsNull_pop20_1"& _ 
-                "5_1 = 1 AND [pop20_15_1] IS NULL) OR ([pop20_15_1] = @Original_pop20_15_1)) AND "& _ 
-                "((@IsNull_pop20_1_2 = 1 AND [pop20_1_2] IS NULL) OR ([pop20_1_2] = @Original_pop"& _ 
-                "20_1_2)) AND ((@IsNull_pop20_2_2 = 1 AND [pop20_2_2] IS NULL) OR ([pop20_2_2] = "& _ 
-                "@Original_pop20_2_2)) AND ((@IsNull_pop20_3_2 = 1 AND [pop20_3_2] IS NULL) OR (["& _ 
-                "pop20_3_2] = @Original_pop20_3_2)) AND ((@IsNull_pop20_4_2 = 1 AND [pop20_4_2] I"& _ 
-                "S NULL) OR ([pop20_4_2] = @Original_pop20_4_2)) AND ((@IsNull_pop20_5_2 = 1 AND "& _ 
-                "[pop20_5_2] IS NULL) OR ([pop20_5_2] = @Original_pop20_5_2)) AND ((@IsNull_pop20"& _ 
-                "_6_2 = 1 AND [pop20_6_2] IS NULL) OR ([pop20_6_2] = @Original_pop20_6_2)) AND (("& _ 
-                "@IsNull_pop20_7_2 = 1 AND [pop20_7_2] IS NULL) OR ([pop20_7_2] = @Original_pop20"& _ 
-                "_7_2)) AND ((@IsNull_pop20_8_2 = 1 AND [pop20_8_2] IS NULL) OR ([pop20_8_2] = @O"& _ 
-                "riginal_pop20_8_2)) AND ((@IsNull_pop20_9_2 = 1 AND [pop20_9_2] IS NULL) OR ([po"& _ 
-                "p20_9_2] = @Original_pop20_9_2)) AND ((@IsNull_pop20_10_2 = 1 AND [pop20_10_2] I"& _ 
-                "S NULL) OR ([pop20_10_2] = @Original_pop20_10_2)) AND ((@IsNull_pop20_11_2 = 1 A"& _ 
-                "ND [pop20_11_2] IS NULL) OR ([pop20_11_2] = @Original_pop20_11_2)) AND ((@IsNull"& _ 
-                "_pop20_12_2 = 1 AND [pop20_12_2] IS NULL) OR ([pop20_12_2] = @Original_pop20_12_"& _ 
-                "2)) AND ((@IsNull_pop20_13_2 = 1 AND [pop20_13_2] IS NULL) OR ([pop20_13_2] = @O"& _ 
-                "riginal_pop20_13_2)) AND ((@IsNull_pop20_14_2 = 1 AND [pop20_14_2] IS NULL) OR ("& _ 
-                "[pop20_14_2] = @Original_pop20_14_2)) AND ((@IsNull_pop20_15_2 = 1 AND [pop20_15"& _ 
-                "_2] IS NULL) OR ([pop20_15_2] = @Original_pop20_15_2)) AND ((@IsNull_inddis1_1 ="& _ 
-                " 1 AND [inddis1_1] IS NULL) OR ([inddis1_1] = @Original_inddis1_1)) AND ((@IsNul"& _ 
-                "l_inddis2_1 = 1 AND [inddis2_1] IS NULL) OR ([inddis2_1] = @Original_inddis2_1))"& _ 
-                " AND ((@IsNull_inddis3_1 = 1 AND [inddis3_1] IS NULL) OR ([inddis3_1] = @Origina"& _ 
-                "l_inddis3_1)) AND ((@IsNull_inddis4_1 = 1 AND [inddis4_1] IS NULL) OR ([inddis4_"& _ 
-                "1] = @Original_inddis4_1)) AND ((@IsNull_inddis5_1 = 1 AND [inddis5_1] IS NULL) "& _ 
-                "OR ([inddis5_1] = @Original_inddis5_1)) AND ((@IsNull_inddis6_1 = 1 AND [inddis6"& _ 
-                "_1] IS NULL) OR ([inddis6_1] = @Original_inddis6_1)) AND ((@IsNull_inddis7_1 = 1"& _ 
-                " AND [inddis7_1] IS NULL) OR ([inddis7_1] = @Original_inddis7_1)) AND ((@IsNull_"& _ 
-                "inddis8_1 = 1 AND [inddis8_1] IS NULL) OR ([inddis8_1] = @Original_inddis8_1)) A"& _ 
-                "ND ((@IsNull_inddis9_1 = 1 AND [inddis9_1] IS NULL) OR ([inddis9_1] = @Original_"& _ 
-                "inddis9_1)) AND ((@IsNull_inddis10_1 = 1 AND [inddis10_1] IS NULL) OR ([inddis10"& _ 
-                "_1] = @Original_inddis10_1)) AND ((@IsNull_inddis11_1 = 1 AND [inddis11_1] IS NU"& _ 
-                "LL) OR ([inddis11_1] = @Original_inddis11_1)) AND ((@IsNull_inddis12_1 = 1 AND ["& _ 
-                "inddis12_1] IS NULL) OR ([inddis12_1] = @Original_inddis12_1)) AND ((@IsNull_ind"& _ 
-                "dis13_1 = 1 AND [inddis13_1] IS NULL) OR ([inddis13_1] = @Original_inddis13_1)) "& _ 
-                "AND ((@IsNull_inddis14_1 = 1 AND [inddis14_1] IS NULL) OR ([inddis14_1] = @Origi"& _ 
-                "nal_inddis14_1)) AND ((@IsNull_inddis15_1 = 1 AND [inddis15_1] IS NULL) OR ([ind"& _ 
-                "dis15_1] = @Original_inddis15_1)) AND ((@IsNull_inddis1_2 = 1 AND [inddis1_2] IS"& _ 
-                " NULL) OR ([inddis1_2] = @Original_inddis1_2)) AND ((@IsNull_inddis2_2 = 1 AND ["& _ 
-                "inddis2_2] IS NULL) OR ([inddis2_2] = @Original_inddis2_2)) AND ((@IsNull_inddis"& _ 
-                "3_2 = 1 AND [inddis3_2] IS NULL) OR ([inddis3_2] = @Original_inddis3_2)) AND ((@"& _ 
-                "IsNull_inddis4_2 = 1 AND [inddis4_2] IS NULL) OR ([inddis4_2] = @Original_inddis"& _ 
-                "4_2)) AND ((@IsNull_inddis5_2 = 1 AND [inddis5_2] IS NULL) OR ([inddis5_2] = @Or"& _ 
-                "iginal_inddis5_2)) AND ((@IsNull_inddis6_2 = 1 AND [inddis6_2] IS NULL) OR ([ind"& _ 
-                "dis6_2] = @Original_inddis6_2)) AND ((@IsNull_inddis7_2 = 1 AND [inddis7_2] IS N"& _ 
-                "ULL) OR ([inddis7_2] = @Original_inddis7_2)) AND ((@IsNull_inddis8_2 = 1 AND [in"& _ 
-                "ddis8_2] IS NULL) OR ([inddis8_2] = @Original_inddis8_2)) AND ((@IsNull_inddis9_"& _ 
-                "2 = 1 AND [inddis9_2] IS NULL) OR ([inddis9_2] = @Original_inddis9_2)) AND ((@Is"& _ 
-                "Null_inddis10_2 = 1 AND [inddis10_2] IS NULL) OR ([inddis10_2] = @Original_inddi"& _ 
-                "s10_2)) AND ((@IsNull_inddis11_2 = 1 AND [inddis11_2] IS NULL) OR ([inddis11_2] "& _ 
-                "= @Original_inddis11_2)) AND ((@IsNull_inddis12_2 = 1 AND [inddis12_2] IS NULL) "& _ 
-                "OR ([inddis12_2] = @Original_inddis12_2)) AND ((@IsNull_inddis13_2 = 1 AND [indd"& _ 
-                "is13_2] IS NULL) OR ([inddis13_2] = @Original_inddis13_2)) AND ((@IsNull_inddis1"& _ 
-                "4_2 = 1 AND [inddis14_2] IS NULL) OR ([inddis14_2] = @Original_inddis14_2)) AND "& _ 
-                "((@IsNull_inddis15_2 = 1 AND [inddis15_2] IS NULL) OR ([inddis15_2] = @Original_"& _ 
-                "inddis15_2)) AND ((@IsNull_inddiscur1_1 = 1 AND [inddiscur1_1] IS NULL) OR ([ind"& _ 
-                "discur1_1] = @Original_inddiscur1_1)) AND ((@IsNull_inddiscur2_1 = 1 AND [inddis"& _ 
-                "cur2_1] IS NULL) OR ([inddiscur2_1] = @Original_inddiscur2_1)) AND ((@IsNull_ind"& _ 
-                "discur3_1 = 1 AND [inddiscur3_1] IS NULL) OR ([inddiscur3_1] = @Original_inddisc"& _ 
-                "ur3_1)) AND ((@IsNull_inddiscur4_1 = 1 AND [inddiscur4_1] IS NULL) OR ([inddiscu"& _ 
-                "r4_1] = @Original_inddiscur4_1)) AND ((@IsNull_inddiscur5_1 = 1 AND [inddiscur5_"& _ 
-                "1] IS NULL) OR ([inddiscur5_1] = @Original_inddiscur5_1)) AND ((@IsNull_inddiscu"& _ 
-                "r6_1 = 1 AND [inddiscur6_1] IS NULL) OR ([inddiscur6_1] = @Original_inddiscur6_1"& _ 
-                ")) AND ((@IsNull_inddiscur7_1 = 1 AND [inddiscur7_1] IS NULL) OR ([inddiscur7_1]"& _ 
-                " = @Original_inddiscur7_1)) AND ((@IsNull_inddiscur8_1 = 1 AND [inddiscur8_1] IS"& _ 
-                " NULL) OR ([inddiscur8_1] = @Original_inddiscur8_1)) AND ((@IsNull_inddiscur9_1 "& _ 
-                "= 1 AND [inddiscur9_1] IS NULL) OR ([inddiscur9_1] = @Original_inddiscur9_1)) AN"& _ 
-                "D ((@IsNull_inddiscur10_1 = 1 AND [inddiscur10_1] IS NULL) OR ([inddiscur10_1] ="& _ 
-                " @Original_inddiscur10_1)) AND ((@IsNull_inddiscur11_1 = 1 AND [inddiscur11_1] I"& _ 
-                "S NULL) OR ([inddiscur11_1] = @Original_inddiscur11_1)) AND ((@IsNull_inddiscur1"& _ 
-                "2_1 = 1 AND [inddiscur12_1] IS NULL) OR ([inddiscur12_1] = @Original_inddiscur12"& _ 
-                "_1)) AND ((@IsNull_inddiscur13_1 = 1 AND [inddiscur13_1] IS NULL) OR ([inddiscur"& _ 
-                "13_1] = @Original_inddiscur13_1)) AND ((@IsNull_inddiscur14_1 = 1 AND [inddiscur"& _ 
-                "14_1] IS NULL) OR ([inddiscur14_1] = @Original_inddiscur14_1)) AND ((@IsNull_ind"& _ 
-                "discur15_1 = 1 AND [inddiscur15_1] IS NULL) OR ([inddiscur15_1] = @Original_indd"& _ 
-                "iscur15_1)) AND ((@IsNull_inddiscur1_2 = 1 AND [inddiscur1_2] IS NULL) OR ([indd"& _ 
-                "iscur1_2] = @Original_inddiscur1_2)) AND ((@IsNull_inddiscur2_2 = 1 AND [inddisc"& _ 
-                "ur2_2] IS NULL) OR ([inddiscur2_2] = @Original_inddiscur2_2)) AND ((@IsNull_indd"& _ 
-                "iscur3_2 = 1 AND [inddiscur3_2] IS NULL) OR ([inddiscur3_2] = @Original_inddiscu"& _ 
-                "r3_2)) AND ((@IsNull_inddiscur4_2 = 1 AND [inddiscur4_2] IS NULL) OR ([inddiscur"& _ 
-                "4_2] = @Original_inddiscur4_2)) AND ((@IsNull_inddiscur5_2 = 1 AND [inddiscur5_2"& _ 
-                "] IS NULL) OR ([inddiscur5_2] = @Original_inddiscur5_2)) AND ((@IsNull_inddiscur"& _ 
-                "6_2 = 1 AND [inddiscur6_2] IS NULL) OR ([inddiscur6_2] = @Original_inddiscur6_2)"& _ 
-                ") AND ((@IsNull_inddiscur7_2 = 1 AND [inddiscur7_2] IS NULL) OR ([inddiscur7_2] "& _ 
-                "= @Original_inddiscur7_2)) AND ((@IsNull_inddiscur8_2 = 1 AND [inddiscur8_2] IS "& _ 
-                "NULL) OR ([inddiscur8_2] = @Original_inddiscur8_2)) AND ((@IsNull_inddiscur9_2 ="& _ 
-                " 1 AND [inddiscur9_2] IS NULL) OR ([inddiscur9_2] = @Original_inddiscur9_2)) AND"& _ 
-                " ((@IsNull_inddiscur10_2 = 1 AND [inddiscur10_2] IS NULL) OR ([inddiscur10_2] = "& _ 
-                "@Original_inddiscur10_2)) AND ((@IsNull_inddiscur11_2 = 1 AND [inddiscur11_2] IS"& _ 
-                " NULL) OR ([inddiscur11_2] = @Original_inddiscur11_2)) AND ((@IsNull_inddiscur12"& _ 
-                "_2 = 1 AND [inddiscur12_2] IS NULL) OR ([inddiscur12_2] = @Original_inddiscur12_"& _ 
-                "2)) AND ((@IsNull_inddiscur13_2 = 1 AND [inddiscur13_2] IS NULL) OR ([inddiscur1"& _ 
-                "3_2] = @Original_inddiscur13_2)) AND ((@IsNull_inddiscur14_2 = 1 AND [inddiscur1"& _ 
-                "4_2] IS NULL) OR ([inddiscur14_2] = @Original_inddiscur14_2)) AND ((@IsNull_indd"& _ 
-                "iscur15_2 = 1 AND [inddiscur15_2] IS NULL) OR ([inddiscur15_2] = @Original_inddi"& _ 
-                "scur15_2)) AND ((@IsNull_inddispln1_1 = 1 AND [inddispln1_1] IS NULL) OR ([inddi"& _ 
-                "spln1_1] = @Original_inddispln1_1)) AND ((@IsNull_inddispln2_1 = 1 AND [inddispl"& _ 
-                "n2_1] IS NULL) OR ([inddispln2_1] = @Original_inddispln2_1)) AND ((@IsNull_inddi"& _ 
-                "spln3_1 = 1 AND [inddispln3_1] IS NULL) OR ([inddispln3_1] = @Original_inddispln"& _ 
-                "3_1)) AND ((@IsNull_inddispln4_1 = 1 AND [inddispln4_1] IS NULL) OR ([inddispln4"& _ 
-                "_1] = @Original_inddispln4_1)) AND ((@IsNull_inddispln5_1 = 1 AND [inddispln5_1]"& _ 
-                " IS NULL) OR ([inddispln5_1] = @Original_inddispln5_1)) AND ((@IsNull_inddispln6"& _ 
-                "_1 = 1 AND [inddispln6_1] IS NULL) OR ([inddispln6_1] = @Original_inddispln6_1))"& _ 
-                " AND ((@IsNull_inddispln7_1 = 1 AND [inddispln7_1] IS NULL) OR ([inddispln7_1] ="& _ 
-                " @Original_inddispln7_1)) AND ((@IsNull_inddispln8_1 = 1 AND [inddispln8_1] IS N"& _ 
-                "ULL) OR ([inddispln8_1] = @Original_inddispln8_1)) AND ((@IsNull_inddispln9_1 = "& _ 
-                "1 AND [inddispln9_1] IS NULL) OR ([inddispln9_1] = @Original_inddispln9_1)) AND "& _ 
-                "((@IsNull_inddispln10_1 = 1 AND [inddispln10_1] IS NULL) OR ([inddispln10_1] = @"& _ 
-                "Original_inddispln10_1)) AND ((@IsNull_inddispln11_1 = 1 AND [inddispln11_1] IS "& _ 
-                "NULL) OR ([inddispln11_1] = @Original_inddispln11_1)) AND ((@IsNull_inddispln12_"& _ 
-                "1 = 1 AND [inddispln12_1] IS NULL) OR ([inddispln12_1] = @Original_inddispln12_1"& _ 
-                ")) AND ((@IsNull_inddispln13_1 = 1 AND [inddispln13_1] IS NULL) OR ([inddispln13"& _ 
-                "_1] = @Original_inddispln13_1)) AND ((@IsNull_inddispln14_1 = 1 AND [inddispln14"& _ 
-                "_1] IS NULL) OR ([inddispln14_1] = @Original_inddispln14_1)) AND ((@IsNull_inddi"& _ 
-                "spln15_1 = 1 AND [inddispln15_1] IS NULL) OR ([inddispln15_1] = @Original_inddis"& _ 
-                "pln15_1)) AND ((@IsNull_inddispln1_2 = 1 AND [inddispln1_2] IS NULL) OR ([inddis"& _ 
-                "pln1_2] = @Original_inddispln1_2)) AND ((@IsNull_inddispln2_2 = 1 AND [inddispln"& _ 
-                "2_2] IS NULL) OR ([inddispln2_2] = @Original_inddispln2_2)) AND ((@IsNull_inddis"& _ 
-                "pln3_2 = 1 AND [inddispln3_2] IS NULL) OR ([inddispln3_2] = @Original_inddispln3"& _ 
-                "_2)) AND ((@IsNull_inddispln4_2 = 1 AND [inddispln4_2] IS NULL) OR ([inddispln4_"& _ 
-                "2] = @Original_inddispln4_2)) AND ((@IsNull_inddispln5_2 = 1 AND [inddispln5_2] "& _ 
-                "IS NULL) OR ([inddispln5_2] = @Original_inddispln5_2)) AND ((@IsNull_inddispln6_"& _ 
-                "2 = 1 AND [inddispln6_2] IS NULL) OR ([inddispln6_2] = @Original_inddispln6_2)) "& _ 
-                "AND ((@IsNull_inddispln7_2 = 1 AND [inddispln7_2] IS NULL) OR ([inddispln7_2] = "& _ 
-                "@Original_inddispln7_2)) AND ((@IsNull_inddispln8_2 = 1 AND [inddispln8_2] IS NU"& _ 
-                "LL) OR ([inddispln8_2] = @Original_inddispln8_2)) AND ((@IsNull_inddispln9_2 = 1"& _ 
-                " AND [inddispln9_2] IS NULL) OR ([inddispln9_2] = @Original_inddispln9_2)) AND ("& _ 
-                "(@IsNull_inddispln10_2 = 1 AND [inddispln10_2] IS NULL) OR ([inddispln10_2] = @O"& _ 
-                "riginal_inddispln10_2)) AND ((@IsNull_inddispln11_2 = 1 AND [inddispln11_2] IS N"& _ 
-                "ULL) OR ([inddispln11_2] = @Original_inddispln11_2)) AND ((@IsNull_inddispln12_2"& _ 
-                " = 1 AND [inddispln12_2] IS NULL) OR ([inddispln12_2] = @Original_inddispln12_2)"& _ 
-                ") AND ((@IsNull_inddispln13_2 = 1 AND [inddispln13_2] IS NULL) OR ([inddispln13_"& _ 
-                "2] = @Original_inddispln13_2)) AND ((@IsNull_inddispln14_2 = 1 AND [inddispln14_"& _ 
-                "2] IS NULL) OR ([inddispln14_2] = @Original_inddispln14_2)) AND ((@IsNull_inddis"& _ 
-                "pln15_2 = 1 AND [inddispln15_2] IS NULL) OR ([inddispln15_2] = @Original_inddisp"& _ 
-                "ln15_2)) AND ((@IsNull_tpbx = 1 AND [tpbx] IS NULL) OR ([tpbx] = @Original_tpbx)"& _ 
-                ") AND ((@IsNull_tpsx = 1 AND [tpsx] IS NULL) OR ([tpsx] = @Original_tpsx)) AND ("& _ 
-                "(@IsNull_tpmz = 1 AND [tpmz] IS NULL) OR ([tpmz] = @Original_tpmz)) AND ((@IsNul"& _ 
-                "l_envw = 1 AND [envw] IS NULL) OR ([envw] = @Original_envw)) AND ((@IsNull_ecow "& _ 
-                "= 1 AND [ecow] IS NULL) OR ([ecow] = @Original_ecow)) AND ((@IsNull_socw = 1 AND"& _ 
-                " [socw] IS NULL) OR ([socw] = @Original_socw)) AND ((@IsNull_totpla = 1 AND [tot"& _ 
-                "pla] IS NULL) OR ([totpla] = @Original_totpla)) AND ((@IsNull_bod1 = 1 AND [bod1"& _ 
-                "] IS NULL) OR ([bod1] = @Original_bod1)) AND ((@IsNull_bod2 = 1 AND [bod2] IS NU"& _ 
-                "LL) OR ([bod2] = @Original_bod2)) AND ((@IsNull_bod3 = 1 AND [bod3] IS NULL) OR "& _ 
-                "([bod3] = @Original_bod3)) AND ((@IsNull_bod4 = 1 AND [bod4] IS NULL) OR ([bod4]"& _ 
-                " = @Original_bod4)) AND ((@IsNull_bod5 = 1 AND [bod5] IS NULL) OR ([bod5] = @Ori"& _ 
-                "ginal_bod5)) AND ((@IsNull_bod6 = 1 AND [bod6] IS NULL) OR ([bod6] = @Original_b"& _ 
-                "od6)) AND ((@IsNull_bod7 = 1 AND [bod7] IS NULL) OR ([bod7] = @Original_bod7)) A"& _ 
-                "ND ((@IsNull_bod8 = 1 AND [bod8] IS NULL) OR ([bod8] = @Original_bod8)) AND ((@I"& _ 
-                "sNull_bod9 = 1 AND [bod9] IS NULL) OR ([bod9] = @Original_bod9)) AND ((@IsNull_b"& _ 
-                "od10 = 1 AND [bod10] IS NULL) OR ([bod10] = @Original_bod10)) AND ((@IsNull_bod1"& _ 
-                "1 = 1 AND [bod11] IS NULL) OR ([bod11] = @Original_bod11)) AND ((@IsNull_bod12 ="& _ 
-                " 1 AND [bod12] IS NULL) OR ([bod12] = @Original_bod12)) AND ((@IsNull_bod13 = 1 "& _ 
-                "AND [bod13] IS NULL) OR ([bod13] = @Original_bod13)) AND ((@IsNull_bod14 = 1 AND"& _ 
-                " [bod14] IS NULL) OR ([bod14] = @Original_bod14)) AND ((@IsNull_bod15 = 1 AND [b"& _ 
-                "od15] IS NULL) OR ([bod15] = @Original_bod15)) AND ((@IsNull_tds1 = 1 AND [tds1]"& _ 
-                " IS NULL) OR ([tds1] = @Original_tds1)) AND ((@IsNull_tds2 = 1 AND [tds2] IS NUL"& _ 
-                "L) OR ([tds2] = @Original_tds2)) AND ((@IsNull_tds3 = 1 AND [tds3] IS NULL) OR ("& _ 
-                "[tds3] = @Original_tds3)) AND ((@IsNull_tds4 = 1 AND [tds4] IS NULL) OR ([tds4] "& _ 
-                "= @Original_tds4)) AND ((@IsNull_tds5 = 1 AND [tds5] IS NULL) OR ([tds5] = @Orig"& _ 
-                "inal_tds5)) AND ((@IsNull_tds6 = 1 AND [tds6] IS NULL) OR ([tds6] = @Original_td"& _ 
-                "s6)) AND ((@IsNull_tds7 = 1 AND [tds7] IS NULL) OR ([tds7] = @Original_tds7)) AN"& _ 
-                "D ((@IsNull_tds8 = 1 AND [tds8] IS NULL) OR ([tds8] = @Original_tds8)) AND ((@Is"& _ 
-                "Null_tds9 = 1 AND [tds9] IS NULL) OR ([tds9] = @Original_tds9)) AND ((@IsNull_td"& _ 
-                "s10 = 1 AND [tds10] IS NULL) OR ([tds10] = @Original_tds10)) AND ((@IsNull_tds11"& _ 
-                " = 1 AND [tds11] IS NULL) OR ([tds11] = @Original_tds11)) AND ((@IsNull_tds12 = "& _ 
-                "1 AND [tds12] IS NULL) OR ([tds12] = @Original_tds12)) AND ((@IsNull_tds13 = 1 A"& _ 
-                "ND [tds13] IS NULL) OR ([tds13] = @Original_tds13)) AND ((@IsNull_tds14 = 1 AND "& _ 
-                "[tds14] IS NULL) OR ([tds14] = @Original_tds14)) AND ((@IsNull_tds15 = 1 AND [td"& _ 
-                "s15] IS NULL) OR ([tds15] = @Original_tds15)) AND ((@IsNull_tss1 = 1 AND [tss1] "& _ 
-                "IS NULL) OR ([tss1] = @Original_tss1)) AND ((@IsNull_tss2 = 1 AND [tss2] IS NULL"& _ 
-                ") OR ([tss2] = @Original_tss2)) AND ((@IsNull_tss3 = 1 AND [tss3] IS NULL) OR (["& _ 
-                "tss3] = @Original_tss3)) AND ((@IsNull_tss4 = 1 AND [tss4] IS NULL) OR ([tss4] ="& _ 
-                " @Original_tss4)) AND ((@IsNull_tss5 = 1 AND [tss5] IS NULL) OR ([tss5] = @Origi"& _ 
-                "nal_tss5)) AND ((@IsNull_tss6 = 1 AND [tss6] IS NULL) OR ([tss6] = @Original_tss"& _ 
-                "6)) AND ((@IsNull_tss7 = 1 AND [tss7] IS NULL) OR ([tss7] = @Original_tss7)) AND"& _ 
-                " ((@IsNull_tss8 = 1 AND [tss8] IS NULL) OR ([tss8] = @Original_tss8)) AND ((@IsN"& _ 
-                "ull_tss9 = 1 AND [tss9] IS NULL) OR ([tss9] = @Original_tss9)) AND ((@IsNull_tss"& _ 
-                "10 = 1 AND [tss10] IS NULL) OR ([tss10] = @Original_tss10)) AND ((@IsNull_tss11 "& _ 
-                "= 1 AND [tss11] IS NULL) OR ([tss11] = @Original_tss11)) AND ((@IsNull_tss12 = 1"& _ 
-                " AND [tss12] IS NULL) OR ([tss12] = @Original_tss12)) AND ((@IsNull_tss13 = 1 AN"& _ 
-                "D [tss13] IS NULL) OR ([tss13] = @Original_tss13)) AND ((@IsNull_tss14 = 1 AND ["& _ 
-                "tss14] IS NULL) OR ([tss14] = @Original_tss14)) AND ((@IsNull_tss15 = 1 AND [tss"& _ 
-                "15] IS NULL) OR ([tss15] = @Original_tss15)) AND ((@IsNull_agruf = 1 AND [agruf]"& _ 
-                " IS NULL) OR ([agruf] = @Original_agruf)) AND ((@IsNull_agrufro = 1 AND [agrufro"& _ 
-                "] IS NULL) OR ([agrufro] = @Original_agrufro)) AND ((@IsNull_induf = 1 AND [indu"& _ 
-                "f] IS NULL) OR ([induf] = @Original_induf)) AND ((@IsNull_indufro = 1 AND [induf"& _ 
-                "ro] IS NULL) OR ([indufro] = @Original_indufro)) AND ((@IsNull_lanuf = 1 AND [la"& _ 
-                "nuf] IS NULL) OR ([lanuf] = @Original_lanuf)) AND ((@IsNull_lanufro = 1 AND [lan"& _ 
-                "ufro] IS NULL) OR ([lanufro] = @Original_lanufro)) AND ((@IsNull_gwsp = 1 AND [g"& _ 
-                "wsp] IS NULL) OR ([gwsp] = @Original_gwsp)) AND ((@IsNull_sbqi = 1 AND [sbqi] IS"& _ 
-                " NULL) OR ([sbqi] = @Original_sbqi)) AND ((@IsNull_ssqi = 1 AND [ssqi] IS NULL) "& _ 
-                "OR ([ssqi] = @Original_ssqi)) AND ((@IsNull_smqi = 1 AND [smqi] IS NULL) OR ([sm"& _ 
-                "qi] = @Original_smqi)) AND ((@IsNull_DataCreazione = 1 AND [DataCreazione] IS NU"& _ 
-                "LL) OR ([DataCreazione] = @Original_DataCreazione)) AND ((@IsNull_UtenteCreazion"& _ 
-                "e = 1 AND [UtenteCreazione] IS NULL) OR ([UtenteCreazione] = @Original_UtenteCre"& _ 
-                "azione)) AND ((@IsNull_DataAggiornamento = 1 AND [DataAggiornamento] IS NULL) OR"& _ 
-                " ([DataAggiornamento] = @Original_DataAggiornamento)) AND ((@IsNull_UtenteAggior"& _ 
-                "namento = 1 AND [UtenteAggiornamento] IS NULL) OR ([UtenteAggiornamento] = @Orig"& _ 
-                "inal_UtenteAggiornamento)) AND ((@IsNull_Annullato = 1 AND [Annullato] IS NULL) "& _ 
-                "OR ([Annullato] = @Original_Annullato)) AND ((@IsNull_DataEstrazione = 1 AND [Da"& _ 
-                "taEstrazione] IS NULL) OR ([DataEstrazione] = @Original_DataEstrazione)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELE"& _ 
-                "CT datID, indcc1_1, indcc2_1, indcc3_1, indcc4_1, indcc5_1, indcc6_1, indcc7_1, "& _ 
-                "indcc8_1, indcc9_1, indcc10_1, indcc11_1, indcc12_1, indcc13_1, indcc14_1, indcc"& _ 
-                "15_1, indcc1_2, indcc2_2, indcc3_2, indcc4_2, indcc5_2, indcc6_2, indcc7_2, indc"& _ 
-                "c8_2, indcc9_2, indcc10_2, indcc11_2, indcc12_2, indcc13_2, indcc14_2, indcc15_2"& _ 
-                ", agrcc1_1, agrcc2_1, agrcc3_1, agrcc4_1, agrcc5_1, agrcc6_1, agrcc7_1, agrcc8_1"& _ 
-                ", agrcc9_1, agrcc10_1, agrcc11_1, agrcc12_1, agrcc13_1, agrcc14_1, agrcc15_1, ag"& _ 
-                "rcc1_2, agrcc2_2, agrcc3_2, agrcc4_2, agrcc5_2, agrcc6_2, agrcc7_2, agrcc8_2, ag"& _ 
-                "rcc9_2, agrcc10_2, agrcc11_2, agrcc12_2, agrcc13_2, agrcc14_2, agrcc15_2, lancc1"& _ 
-                "_1, lancc2_1, lancc3_1, lancc4_1, lancc5_1, lancc6_1, lancc7_1, lancc8_1, lancc9"& _ 
-                "_1, lancc10_1, lancc11_1, lancc12_1, lancc13_1, lancc14_1, lancc15_1, lancc1_2, "& _ 
-                "lancc2_2, lancc3_2, lancc4_2, lancc5_2, lancc6_2, lancc7_2, lancc8_2, lancc9_2, "& _ 
-                "lancc10_2, lancc11_2, lancc12_2, lancc13_2, lancc14_2, lancc15_2, lbqi1_1, lbqi2"& _ 
-                "_1, lbqi3_1, lbqi4_1, lbqi5_1, lbqi6_1, lbqi7_1, lbqi8_1, lbqi9_1, lbqi10_1, lbq"& _ 
-                "i11_1, lbqi12_1, lbqi13_1, lbqi14_1, lbqi15_1, lbqi1_2, lbqi2_2, lbqi3_2, lbqi4_"& _ 
-                "2, lbqi5_2, lbqi6_2, lbqi7_2, lbqi8_2, lbqi9_2, lbqi10_2, lbqi11_2, lbqi12_2, lb"& _ 
-                "qi13_2, lbqi14_2, lbqi15_2, lsqi1_1, lsqi2_1, lsqi3_1, lsqi4_1, lsqi5_1, lsqi6_1"& _ 
-                ", lsqi7_1, lsqi8_1, lsqi9_1, lsqi10_1, lsqi11_1, lsqi12_1, lsqi13_1, lsqi14_1, l"& _ 
-                "sqi15_1, lsqi1_2, lsqi2_2, lsqi3_2, lsqi4_2, lsqi5_2, lsqi6_2, lsqi7_2, lsqi8_2,"& _ 
-                " lsqi9_2, lsqi10_2, lsqi11_2, lsqi12_2, lsqi13_2, lsqi14_2, lsqi15_2, lmqi1_1, l"& _ 
-                "mqi2_1, lmqi3_1, lmqi4_1, lmqi5_1, lmqi6_1, lmqi7_1, lmqi8_1, lmqi9_1, lmqi10_1,"& _ 
-                " lmqi11_1, lmqi12_1, lmqi13_1, lmqi14_1, lmqi15_1, lmqi1_2, lmqi2_2, lmqi3_2, lm"& _ 
-                "qi4_2, lmqi5_2, lmqi6_2, lmqi7_2, lmqi8_2, lmqi9_2, lmqi10_2, lmqi11_2, lmqi12_2"& _ 
-                ", lmqi13_2, lmqi14_2, lmqi15_2, pop20_1_1, pop20_2_1, pop20_3_1, pop20_4_1, pop2"& _ 
-                "0_5_1, pop20_6_1, pop20_7_1, pop20_8_1, pop20_9_1, pop20_10_1, pop20_11_1, pop20"& _ 
-                "_12_1, pop20_13_1, pop20_14_1, pop20_15_1, pop20_1_2, pop20_2_2, pop20_3_2, pop2"& _ 
-                "0_4_2, pop20_5_2, pop20_6_2, pop20_7_2, pop20_8_2, pop20_9_2, pop20_10_2, pop20_"& _ 
-                "11_2, pop20_12_2, pop20_13_2, pop20_14_2, pop20_15_2, inddis1_1, inddis2_1, indd"& _ 
-                "is3_1, inddis4_1, inddis5_1, inddis6_1, inddis7_1, inddis8_1, inddis9_1, inddis1"& _ 
-                "0_1, inddis11_1, inddis12_1, inddis13_1, inddis14_1, inddis15_1, inddis1_2, indd"& _ 
-                "is2_2, inddis3_2, inddis4_2, inddis5_2, inddis6_2, inddis7_2, inddis8_2, inddis9"& _ 
-                "_2, inddis10_2, inddis11_2, inddis12_2, inddis13_2, inddis14_2, inddis15_2, indd"& _ 
-                "iscur1_1, inddiscur2_1, inddiscur3_1, inddiscur4_1, inddiscur5_1, inddiscur6_1, "& _ 
-                "inddiscur7_1, inddiscur8_1, inddiscur9_1, inddiscur10_1, inddiscur11_1, inddiscu"& _ 
-                "r12_1, inddiscur13_1, inddiscur14_1, inddiscur15_1, inddiscur1_2, inddiscur2_2, "& _ 
-                "inddiscur3_2, inddiscur4_2, inddiscur5_2, inddiscur6_2, inddiscur7_2, inddiscur8"& _ 
-                "_2, inddiscur9_2, inddiscur10_2, inddiscur11_2, inddiscur12_2, inddiscur13_2, in"& _ 
-                "ddiscur14_2, inddiscur15_2, inddispln1_1, inddispln2_1, inddispln3_1, inddispln4"& _ 
-                "_1, inddispln5_1, inddispln6_1, inddispln7_1, inddispln8_1, inddispln9_1, inddis"& _ 
-                "pln10_1, inddispln11_1, inddispln12_1, inddispln13_1, inddispln14_1, inddispln15"& _ 
-                "_1, inddispln1_2, inddispln2_2, inddispln3_2, inddispln4_2, inddispln5_2, inddis"& _ 
-                "pln6_2, inddispln7_2, inddispln8_2, inddispln9_2, inddispln10_2, inddispln11_2, "& _ 
-                "inddispln12_2, inddispln13_2, inddispln14_2, inddispln15_2, tpbx, tpsx, tpmz, en"& _ 
-                "vw, ecow, socw, totpla, bod1, bod2, bod3, bod4, bod5, bod6, bod7, bod8, bod9, bo"& _ 
-                "d10, bod11, bod12, bod13, bod14, bod15, tds1, tds2, tds3, tds4, tds5, tds6, tds7"& _ 
-                ", tds8, tds9, tds10, tds11, tds12, tds13, tds14, tds15, tss1, tss2, tss3, tss4, "& _ 
-                "tss5, tss6, tss7, tss8, tss9, tss10, tss11, tss12, tss13, tss14, tss15, agruf, a"& _ 
-                "grufro, induf, indufro, lanuf, lanufro, gwsp, sbqi, ssqi, smqi, DataCreazione, U"& _ 
-                "tenteCreazione, DataAggiornamento, UtenteAggiornamento, Annullato, DataEstrazion"& _ 
-                "e FROM data WHERE (datID = @datID)"
+                "wsp, [sbqi] = @sbqi, [ssqi] = @ssqi, [smqi] = @smqi, [salt] = @salt, [agrw] = @a"& _ 
+                "grw, [indw] = @indw, [lanw] = @lanw, [DataCreazione] = @DataCreazione, [UtenteCr"& _ 
+                "eazione] = @UtenteCreazione, [DataAggiornamento] = @DataAggiornamento, [UtenteAg"& _ 
+                "giornamento] = @UtenteAggiornamento, [Annullato] = @Annullato, [DataEstrazione] "& _ 
+                "= @DataEstrazione WHERE (([datID] = @Original_datID) AND ((@IsNull_indcc1_1 = 1 "& _ 
+                "AND [indcc1_1] IS NULL) OR ([indcc1_1] = @Original_indcc1_1)) AND ((@IsNull_indc"& _ 
+                "c2_1 = 1 AND [indcc2_1] IS NULL) OR ([indcc2_1] = @Original_indcc2_1)) AND ((@Is"& _ 
+                "Null_indcc3_1 = 1 AND [indcc3_1] IS NULL) OR ([indcc3_1] = @Original_indcc3_1)) "& _ 
+                "AND ((@IsNull_indcc4_1 = 1 AND [indcc4_1] IS NULL) OR ([indcc4_1] = @Original_in"& _ 
+                "dcc4_1)) AND ((@IsNull_indcc5_1 = 1 AND [indcc5_1] IS NULL) OR ([indcc5_1] = @Or"& _ 
+                "iginal_indcc5_1)) AND ((@IsNull_indcc6_1 = 1 AND [indcc6_1] IS NULL) OR ([indcc6"& _ 
+                "_1] = @Original_indcc6_1)) AND ((@IsNull_indcc7_1 = 1 AND [indcc7_1] IS NULL) OR"& _ 
+                " ([indcc7_1] = @Original_indcc7_1)) AND ((@IsNull_indcc8_1 = 1 AND [indcc8_1] IS"& _ 
+                " NULL) OR ([indcc8_1] = @Original_indcc8_1)) AND ((@IsNull_indcc9_1 = 1 AND [ind"& _ 
+                "cc9_1] IS NULL) OR ([indcc9_1] = @Original_indcc9_1)) AND ((@IsNull_indcc10_1 = "& _ 
+                "1 AND [indcc10_1] IS NULL) OR ([indcc10_1] = @Original_indcc10_1)) AND ((@IsNull"& _ 
+                "_indcc11_1 = 1 AND [indcc11_1] IS NULL) OR ([indcc11_1] = @Original_indcc11_1)) "& _ 
+                "AND ((@IsNull_indcc12_1 = 1 AND [indcc12_1] IS NULL) OR ([indcc12_1] = @Original"& _ 
+                "_indcc12_1)) AND ((@IsNull_indcc13_1 = 1 AND [indcc13_1] IS NULL) OR ([indcc13_1"& _ 
+                "] = @Original_indcc13_1)) AND ((@IsNull_indcc14_1 = 1 AND [indcc14_1] IS NULL) O"& _ 
+                "R ([indcc14_1] = @Original_indcc14_1)) AND ((@IsNull_indcc15_1 = 1 AND [indcc15_"& _ 
+                "1] IS NULL) OR ([indcc15_1] = @Original_indcc15_1)) AND ((@IsNull_indcc1_2 = 1 A"& _ 
+                "ND [indcc1_2] IS NULL) OR ([indcc1_2] = @Original_indcc1_2)) AND ((@IsNull_indcc"& _ 
+                "2_2 = 1 AND [indcc2_2] IS NULL) OR ([indcc2_2] = @Original_indcc2_2)) AND ((@IsN"& _ 
+                "ull_indcc3_2 = 1 AND [indcc3_2] IS NULL) OR ([indcc3_2] = @Original_indcc3_2)) A"& _ 
+                "ND ((@IsNull_indcc4_2 = 1 AND [indcc4_2] IS NULL) OR ([indcc4_2] = @Original_ind"& _ 
+                "cc4_2)) AND ((@IsNull_indcc5_2 = 1 AND [indcc5_2] IS NULL) OR ([indcc5_2] = @Ori"& _ 
+                "ginal_indcc5_2)) AND ((@IsNull_indcc6_2 = 1 AND [indcc6_2] IS NULL) OR ([indcc6_"& _ 
+                "2] = @Original_indcc6_2)) AND ((@IsNull_indcc7_2 = 1 AND [indcc7_2] IS NULL) OR "& _ 
+                "([indcc7_2] = @Original_indcc7_2)) AND ((@IsNull_indcc8_2 = 1 AND [indcc8_2] IS "& _ 
+                "NULL) OR ([indcc8_2] = @Original_indcc8_2)) AND ((@IsNull_indcc9_2 = 1 AND [indc"& _ 
+                "c9_2] IS NULL) OR ([indcc9_2] = @Original_indcc9_2)) AND ((@IsNull_indcc10_2 = 1"& _ 
+                " AND [indcc10_2] IS NULL) OR ([indcc10_2] = @Original_indcc10_2)) AND ((@IsNull_"& _ 
+                "indcc11_2 = 1 AND [indcc11_2] IS NULL) OR ([indcc11_2] = @Original_indcc11_2)) A"& _ 
+                "ND ((@IsNull_indcc12_2 = 1 AND [indcc12_2] IS NULL) OR ([indcc12_2] = @Original_"& _ 
+                "indcc12_2)) AND ((@IsNull_indcc13_2 = 1 AND [indcc13_2] IS NULL) OR ([indcc13_2]"& _ 
+                " = @Original_indcc13_2)) AND ((@IsNull_indcc14_2 = 1 AND [indcc14_2] IS NULL) OR"& _ 
+                " ([indcc14_2] = @Original_indcc14_2)) AND ((@IsNull_indcc15_2 = 1 AND [indcc15_2"& _ 
+                "] IS NULL) OR ([indcc15_2] = @Original_indcc15_2)) AND ((@IsNull_agrcc1_1 = 1 AN"& _ 
+                "D [agrcc1_1] IS NULL) OR ([agrcc1_1] = @Original_agrcc1_1)) AND ((@IsNull_agrcc2"& _ 
+                "_1 = 1 AND [agrcc2_1] IS NULL) OR ([agrcc2_1] = @Original_agrcc2_1)) AND ((@IsNu"& _ 
+                "ll_agrcc3_1 = 1 AND [agrcc3_1] IS NULL) OR ([agrcc3_1] = @Original_agrcc3_1)) AN"& _ 
+                "D ((@IsNull_agrcc4_1 = 1 AND [agrcc4_1] IS NULL) OR ([agrcc4_1] = @Original_agrc"& _ 
+                "c4_1)) AND ((@IsNull_agrcc5_1 = 1 AND [agrcc5_1] IS NULL) OR ([agrcc5_1] = @Orig"& _ 
+                "inal_agrcc5_1)) AND ((@IsNull_agrcc6_1 = 1 AND [agrcc6_1] IS NULL) OR ([agrcc6_1"& _ 
+                "] = @Original_agrcc6_1)) AND ((@IsNull_agrcc7_1 = 1 AND [agrcc7_1] IS NULL) OR ("& _ 
+                "[agrcc7_1] = @Original_agrcc7_1)) AND ((@IsNull_agrcc8_1 = 1 AND [agrcc8_1] IS N"& _ 
+                "ULL) OR ([agrcc8_1] = @Original_agrcc8_1)) AND ((@IsNull_agrcc9_1 = 1 AND [agrcc"& _ 
+                "9_1] IS NULL) OR ([agrcc9_1] = @Original_agrcc9_1)) AND ((@IsNull_agrcc10_1 = 1 "& _ 
+                "AND [agrcc10_1] IS NULL) OR ([agrcc10_1] = @Original_agrcc10_1)) AND ((@IsNull_a"& _ 
+                "grcc11_1 = 1 AND [agrcc11_1] IS NULL) OR ([agrcc11_1] = @Original_agrcc11_1)) AN"& _ 
+                "D ((@IsNull_agrcc12_1 = 1 AND [agrcc12_1] IS NULL) OR ([agrcc12_1] = @Original_a"& _ 
+                "grcc12_1)) AND ((@IsNull_agrcc13_1 = 1 AND [agrcc13_1] IS NULL) OR ([agrcc13_1] "& _ 
+                "= @Original_agrcc13_1)) AND ((@IsNull_agrcc14_1 = 1 AND [agrcc14_1] IS NULL) OR "& _ 
+                "([agrcc14_1] = @Original_agrcc14_1)) AND ((@IsNull_agrcc15_1 = 1 AND [agrcc15_1]"& _ 
+                " IS NULL) OR ([agrcc15_1] = @Original_agrcc15_1)) AND ((@IsNull_agrcc1_2 = 1 AND"& _ 
+                " [agrcc1_2] IS NULL) OR ([agrcc1_2] = @Original_agrcc1_2)) AND ((@IsNull_agrcc2_"& _ 
+                "2 = 1 AND [agrcc2_2] IS NULL) OR ([agrcc2_2] = @Original_agrcc2_2)) AND ((@IsNul"& _ 
+                "l_agrcc3_2 = 1 AND [agrcc3_2] IS NULL) OR ([agrcc3_2] = @Original_agrcc3_2)) AND"& _ 
+                " ((@IsNull_agrcc4_2 = 1 AND [agrcc4_2] IS NULL) OR ([agrcc4_2] = @Original_agrcc"& _ 
+                "4_2)) AND ((@IsNull_agrcc5_2 = 1 AND [agrcc5_2] IS NULL) OR ([agrcc5_2] = @Origi"& _ 
+                "nal_agrcc5_2)) AND ((@IsNull_agrcc6_2 = 1 AND [agrcc6_2] IS NULL) OR ([agrcc6_2]"& _ 
+                " = @Original_agrcc6_2)) AND ((@IsNull_agrcc7_2 = 1 AND [agrcc7_2] IS NULL) OR (["& _ 
+                "agrcc7_2] = @Original_agrcc7_2)) AND ((@IsNull_agrcc8_2 = 1 AND [agrcc8_2] IS NU"& _ 
+                "LL) OR ([agrcc8_2] = @Original_agrcc8_2)) AND ((@IsNull_agrcc9_2 = 1 AND [agrcc9"& _ 
+                "_2] IS NULL) OR ([agrcc9_2] = @Original_agrcc9_2)) AND ((@IsNull_agrcc10_2 = 1 A"& _ 
+                "ND [agrcc10_2] IS NULL) OR ([agrcc10_2] = @Original_agrcc10_2)) AND ((@IsNull_ag"& _ 
+                "rcc11_2 = 1 AND [agrcc11_2] IS NULL) OR ([agrcc11_2] = @Original_agrcc11_2)) AND"& _ 
+                " ((@IsNull_agrcc12_2 = 1 AND [agrcc12_2] IS NULL) OR ([agrcc12_2] = @Original_ag"& _ 
+                "rcc12_2)) AND ((@IsNull_agrcc13_2 = 1 AND [agrcc13_2] IS NULL) OR ([agrcc13_2] ="& _ 
+                " @Original_agrcc13_2)) AND ((@IsNull_agrcc14_2 = 1 AND [agrcc14_2] IS NULL) OR ("& _ 
+                "[agrcc14_2] = @Original_agrcc14_2)) AND ((@IsNull_agrcc15_2 = 1 AND [agrcc15_2] "& _ 
+                "IS NULL) OR ([agrcc15_2] = @Original_agrcc15_2)) AND ((@IsNull_lancc1_1 = 1 AND "& _ 
+                "[lancc1_1] IS NULL) OR ([lancc1_1] = @Original_lancc1_1)) AND ((@IsNull_lancc2_1"& _ 
+                " = 1 AND [lancc2_1] IS NULL) OR ([lancc2_1] = @Original_lancc2_1)) AND ((@IsNull"& _ 
+                "_lancc3_1 = 1 AND [lancc3_1] IS NULL) OR ([lancc3_1] = @Original_lancc3_1)) AND "& _ 
+                "((@IsNull_lancc4_1 = 1 AND [lancc4_1] IS NULL) OR ([lancc4_1] = @Original_lancc4"& _ 
+                "_1)) AND ((@IsNull_lancc5_1 = 1 AND [lancc5_1] IS NULL) OR ([lancc5_1] = @Origin"& _ 
+                "al_lancc5_1)) AND ((@IsNull_lancc6_1 = 1 AND [lancc6_1] IS NULL) OR ([lancc6_1] "& _ 
+                "= @Original_lancc6_1)) AND ((@IsNull_lancc7_1 = 1 AND [lancc7_1] IS NULL) OR ([l"& _ 
+                "ancc7_1] = @Original_lancc7_1)) AND ((@IsNull_lancc8_1 = 1 AND [lancc8_1] IS NUL"& _ 
+                "L) OR ([lancc8_1] = @Original_lancc8_1)) AND ((@IsNull_lancc9_1 = 1 AND [lancc9_"& _ 
+                "1] IS NULL) OR ([lancc9_1] = @Original_lancc9_1)) AND ((@IsNull_lancc10_1 = 1 AN"& _ 
+                "D [lancc10_1] IS NULL) OR ([lancc10_1] = @Original_lancc10_1)) AND ((@IsNull_lan"& _ 
+                "cc11_1 = 1 AND [lancc11_1] IS NULL) OR ([lancc11_1] = @Original_lancc11_1)) AND "& _ 
+                "((@IsNull_lancc12_1 = 1 AND [lancc12_1] IS NULL) OR ([lancc12_1] = @Original_lan"& _ 
+                "cc12_1)) AND ((@IsNull_lancc13_1 = 1 AND [lancc13_1] IS NULL) OR ([lancc13_1] = "& _ 
+                "@Original_lancc13_1)) AND ((@IsNull_lancc14_1 = 1 AND [lancc14_1] IS NULL) OR (["& _ 
+                "lancc14_1] = @Original_lancc14_1)) AND ((@IsNull_lancc15_1 = 1 AND [lancc15_1] I"& _ 
+                "S NULL) OR ([lancc15_1] = @Original_lancc15_1)) AND ((@IsNull_lancc1_2 = 1 AND ["& _ 
+                "lancc1_2] IS NULL) OR ([lancc1_2] = @Original_lancc1_2)) AND ((@IsNull_lancc2_2 "& _ 
+                "= 1 AND [lancc2_2] IS NULL) OR ([lancc2_2] = @Original_lancc2_2)) AND ((@IsNull_"& _ 
+                "lancc3_2 = 1 AND [lancc3_2] IS NULL) OR ([lancc3_2] = @Original_lancc3_2)) AND ("& _ 
+                "(@IsNull_lancc4_2 = 1 AND [lancc4_2] IS NULL) OR ([lancc4_2] = @Original_lancc4_"& _ 
+                "2)) AND ((@IsNull_lancc5_2 = 1 AND [lancc5_2] IS NULL) OR ([lancc5_2] = @Origina"& _ 
+                "l_lancc5_2)) AND ((@IsNull_lancc6_2 = 1 AND [lancc6_2] IS NULL) OR ([lancc6_2] ="& _ 
+                " @Original_lancc6_2)) AND ((@IsNull_lancc7_2 = 1 AND [lancc7_2] IS NULL) OR ([la"& _ 
+                "ncc7_2] = @Original_lancc7_2)) AND ((@IsNull_lancc8_2 = 1 AND [lancc8_2] IS NULL"& _ 
+                ") OR ([lancc8_2] = @Original_lancc8_2)) AND ((@IsNull_lancc9_2 = 1 AND [lancc9_2"& _ 
+                "] IS NULL) OR ([lancc9_2] = @Original_lancc9_2)) AND ((@IsNull_lancc10_2 = 1 AND"& _ 
+                " [lancc10_2] IS NULL) OR ([lancc10_2] = @Original_lancc10_2)) AND ((@IsNull_lanc"& _ 
+                "c11_2 = 1 AND [lancc11_2] IS NULL) OR ([lancc11_2] = @Original_lancc11_2)) AND ("& _ 
+                "(@IsNull_lancc12_2 = 1 AND [lancc12_2] IS NULL) OR ([lancc12_2] = @Original_lanc"& _ 
+                "c12_2)) AND ((@IsNull_lancc13_2 = 1 AND [lancc13_2] IS NULL) OR ([lancc13_2] = @"& _ 
+                "Original_lancc13_2)) AND ((@IsNull_lancc14_2 = 1 AND [lancc14_2] IS NULL) OR ([l"& _ 
+                "ancc14_2] = @Original_lancc14_2)) AND ((@IsNull_lancc15_2 = 1 AND [lancc15_2] IS"& _ 
+                " NULL) OR ([lancc15_2] = @Original_lancc15_2)) AND ((@IsNull_lbqi1_1 = 1 AND [lb"& _ 
+                "qi1_1] IS NULL) OR ([lbqi1_1] = @Original_lbqi1_1)) AND ((@IsNull_lbqi2_1 = 1 AN"& _ 
+                "D [lbqi2_1] IS NULL) OR ([lbqi2_1] = @Original_lbqi2_1)) AND ((@IsNull_lbqi3_1 ="& _ 
+                " 1 AND [lbqi3_1] IS NULL) OR ([lbqi3_1] = @Original_lbqi3_1)) AND ((@IsNull_lbqi"& _ 
+                "4_1 = 1 AND [lbqi4_1] IS NULL) OR ([lbqi4_1] = @Original_lbqi4_1)) AND ((@IsNull"& _ 
+                "_lbqi5_1 = 1 AND [lbqi5_1] IS NULL) OR ([lbqi5_1] = @Original_lbqi5_1)) AND ((@I"& _ 
+                "sNull_lbqi6_1 = 1 AND [lbqi6_1] IS NULL) OR ([lbqi6_1] = @Original_lbqi6_1)) AND"& _ 
+                " ((@IsNull_lbqi7_1 = 1 AND [lbqi7_1] IS NULL) OR ([lbqi7_1] = @Original_lbqi7_1)"& _ 
+                ") AND ((@IsNull_lbqi8_1 = 1 AND [lbqi8_1] IS NULL) OR ([lbqi8_1] = @Original_lbq"& _ 
+                "i8_1)) AND ((@IsNull_lbqi9_1 = 1 AND [lbqi9_1] IS NULL) OR ([lbqi9_1] = @Origina"& _ 
+                "l_lbqi9_1)) AND ((@IsNull_lbqi10_1 = 1 AND [lbqi10_1] IS NULL) OR ([lbqi10_1] = "& _ 
+                "@Original_lbqi10_1)) AND ((@IsNull_lbqi11_1 = 1 AND [lbqi11_1] IS NULL) OR ([lbq"& _ 
+                "i11_1] = @Original_lbqi11_1)) AND ((@IsNull_lbqi12_1 = 1 AND [lbqi12_1] IS NULL)"& _ 
+                " OR ([lbqi12_1] = @Original_lbqi12_1)) AND ((@IsNull_lbqi13_1 = 1 AND [lbqi13_1]"& _ 
+                " IS NULL) OR ([lbqi13_1] = @Original_lbqi13_1)) AND ((@IsNull_lbqi14_1 = 1 AND ["& _ 
+                "lbqi14_1] IS NULL) OR ([lbqi14_1] = @Original_lbqi14_1)) AND ((@IsNull_lbqi15_1 "& _ 
+                "= 1 AND [lbqi15_1] IS NULL) OR ([lbqi15_1] = @Original_lbqi15_1)) AND ((@IsNull_"& _ 
+                "lbqi1_2 = 1 AND [lbqi1_2] IS NULL) OR ([lbqi1_2] = @Original_lbqi1_2)) AND ((@Is"& _ 
+                "Null_lbqi2_2 = 1 AND [lbqi2_2] IS NULL) OR ([lbqi2_2] = @Original_lbqi2_2)) AND "& _ 
+                "((@IsNull_lbqi3_2 = 1 AND [lbqi3_2] IS NULL) OR ([lbqi3_2] = @Original_lbqi3_2))"& _ 
+                " AND ((@IsNull_lbqi4_2 = 1 AND [lbqi4_2] IS NULL) OR ([lbqi4_2] = @Original_lbqi"& _ 
+                "4_2)) AND ((@IsNull_lbqi5_2 = 1 AND [lbqi5_2] IS NULL) OR ([lbqi5_2] = @Original"& _ 
+                "_lbqi5_2)) AND ((@IsNull_lbqi6_2 = 1 AND [lbqi6_2] IS NULL) OR ([lbqi6_2] = @Ori"& _ 
+                "ginal_lbqi6_2)) AND ((@IsNull_lbqi7_2 = 1 AND [lbqi7_2] IS NULL) OR ([lbqi7_2] ="& _ 
+                " @Original_lbqi7_2)) AND ((@IsNull_lbqi8_2 = 1 AND [lbqi8_2] IS NULL) OR ([lbqi8"& _ 
+                "_2] = @Original_lbqi8_2)) AND ((@IsNull_lbqi9_2 = 1 AND [lbqi9_2] IS NULL) OR (["& _ 
+                "lbqi9_2] = @Original_lbqi9_2)) AND ((@IsNull_lbqi10_2 = 1 AND [lbqi10_2] IS NULL"& _ 
+                ") OR ([lbqi10_2] = @Original_lbqi10_2)) AND ((@IsNull_lbqi11_2 = 1 AND [lbqi11_2"& _ 
+                "] IS NULL) OR ([lbqi11_2] = @Original_lbqi11_2)) AND ((@IsNull_lbqi12_2 = 1 AND "& _ 
+                "[lbqi12_2] IS NULL) OR ([lbqi12_2] = @Original_lbqi12_2)) AND ((@IsNull_lbqi13_2"& _ 
+                " = 1 AND [lbqi13_2] IS NULL) OR ([lbqi13_2] = @Original_lbqi13_2)) AND ((@IsNull"& _ 
+                "_lbqi14_2 = 1 AND [lbqi14_2] IS NULL) OR ([lbqi14_2] = @Original_lbqi14_2)) AND "& _ 
+                "((@IsNull_lbqi15_2 = 1 AND [lbqi15_2] IS NULL) OR ([lbqi15_2] = @Original_lbqi15"& _ 
+                "_2)) AND ((@IsNull_lsqi1_1 = 1 AND [lsqi1_1] IS NULL) OR ([lsqi1_1] = @Original_"& _ 
+                "lsqi1_1)) AND ((@IsNull_lsqi2_1 = 1 AND [lsqi2_1] IS NULL) OR ([lsqi2_1] = @Orig"& _ 
+                "inal_lsqi2_1)) AND ((@IsNull_lsqi3_1 = 1 AND [lsqi3_1] IS NULL) OR ([lsqi3_1] = "& _ 
+                "@Original_lsqi3_1)) AND ((@IsNull_lsqi4_1 = 1 AND [lsqi4_1] IS NULL) OR ([lsqi4_"& _ 
+                "1] = @Original_lsqi4_1)) AND ((@IsNull_lsqi5_1 = 1 AND [lsqi5_1] IS NULL) OR ([l"& _ 
+                "sqi5_1] = @Original_lsqi5_1)) AND ((@IsNull_lsqi6_1 = 1 AND [lsqi6_1] IS NULL) O"& _ 
+                "R ([lsqi6_1] = @Original_lsqi6_1)) AND ((@IsNull_lsqi7_1 = 1 AND [lsqi7_1] IS NU"& _ 
+                "LL) OR ([lsqi7_1] = @Original_lsqi7_1)) AND ((@IsNull_lsqi8_1 = 1 AND [lsqi8_1] "& _ 
+                "IS NULL) OR ([lsqi8_1] = @Original_lsqi8_1)) AND ((@IsNull_lsqi9_1 = 1 AND [lsqi"& _ 
+                "9_1] IS NULL) OR ([lsqi9_1] = @Original_lsqi9_1)) AND ((@IsNull_lsqi10_1 = 1 AND"& _ 
+                " [lsqi10_1] IS NULL) OR ([lsqi10_1] = @Original_lsqi10_1)) AND ((@IsNull_lsqi11_"& _ 
+                "1 = 1 AND [lsqi11_1] IS NULL) OR ([lsqi11_1] = @Original_lsqi11_1)) AND ((@IsNul"& _ 
+                "l_lsqi12_1 = 1 AND [lsqi12_1] IS NULL) OR ([lsqi12_1] = @Original_lsqi12_1)) AND"& _ 
+                " ((@IsNull_lsqi13_1 = 1 AND [lsqi13_1] IS NULL) OR ([lsqi13_1] = @Original_lsqi1"& _ 
+                "3_1)) AND ((@IsNull_lsqi14_1 = 1 AND [lsqi14_1] IS NULL) OR ([lsqi14_1] = @Origi"& _ 
+                "nal_lsqi14_1)) AND ((@IsNull_lsqi15_1 = 1 AND [lsqi15_1] IS NULL) OR ([lsqi15_1]"& _ 
+                " = @Original_lsqi15_1)) AND ((@IsNull_lsqi1_2 = 1 AND [lsqi1_2] IS NULL) OR ([ls"& _ 
+                "qi1_2] = @Original_lsqi1_2)) AND ((@IsNull_lsqi2_2 = 1 AND [lsqi2_2] IS NULL) OR"& _ 
+                " ([lsqi2_2] = @Original_lsqi2_2)) AND ((@IsNull_lsqi3_2 = 1 AND [lsqi3_2] IS NUL"& _ 
+                "L) OR ([lsqi3_2] = @Original_lsqi3_2)) AND ((@IsNull_lsqi4_2 = 1 AND [lsqi4_2] I"& _ 
+                "S NULL) OR ([lsqi4_2] = @Original_lsqi4_2)) AND ((@IsNull_lsqi5_2 = 1 AND [lsqi5"& _ 
+                "_2] IS NULL) OR ([lsqi5_2] = @Original_lsqi5_2)) AND ((@IsNull_lsqi6_2 = 1 AND ["& _ 
+                "lsqi6_2] IS NULL) OR ([lsqi6_2] = @Original_lsqi6_2)) AND ((@IsNull_lsqi7_2 = 1 "& _ 
+                "AND [lsqi7_2] IS NULL) OR ([lsqi7_2] = @Original_lsqi7_2)) AND ((@IsNull_lsqi8_2"& _ 
+                " = 1 AND [lsqi8_2] IS NULL) OR ([lsqi8_2] = @Original_lsqi8_2)) AND ((@IsNull_ls"& _ 
+                "qi9_2 = 1 AND [lsqi9_2] IS NULL) OR ([lsqi9_2] = @Original_lsqi9_2)) AND ((@IsNu"& _ 
+                "ll_lsqi10_2 = 1 AND [lsqi10_2] IS NULL) OR ([lsqi10_2] = @Original_lsqi10_2)) AN"& _ 
+                "D ((@IsNull_lsqi11_2 = 1 AND [lsqi11_2] IS NULL) OR ([lsqi11_2] = @Original_lsqi"& _ 
+                "11_2)) AND ((@IsNull_lsqi12_2 = 1 AND [lsqi12_2] IS NULL) OR ([lsqi12_2] = @Orig"& _ 
+                "inal_lsqi12_2)) AND ((@IsNull_lsqi13_2 = 1 AND [lsqi13_2] IS NULL) OR ([lsqi13_2"& _ 
+                "] = @Original_lsqi13_2)) AND ((@IsNull_lsqi14_2 = 1 AND [lsqi14_2] IS NULL) OR ("& _ 
+                "[lsqi14_2] = @Original_lsqi14_2)) AND ((@IsNull_lsqi15_2 = 1 AND [lsqi15_2] IS N"& _ 
+                "ULL) OR ([lsqi15_2] = @Original_lsqi15_2)) AND ((@IsNull_lmqi1_1 = 1 AND [lmqi1_"& _ 
+                "1] IS NULL) OR ([lmqi1_1] = @Original_lmqi1_1)) AND ((@IsNull_lmqi2_1 = 1 AND [l"& _ 
+                "mqi2_1] IS NULL) OR ([lmqi2_1] = @Original_lmqi2_1)) AND ((@IsNull_lmqi3_1 = 1 A"& _ 
+                "ND [lmqi3_1] IS NULL) OR ([lmqi3_1] = @Original_lmqi3_1)) AND ((@IsNull_lmqi4_1 "& _ 
+                "= 1 AND [lmqi4_1] IS NULL) OR ([lmqi4_1] = @Original_lmqi4_1)) AND ((@IsNull_lmq"& _ 
+                "i5_1 = 1 AND [lmqi5_1] IS NULL) OR ([lmqi5_1] = @Original_lmqi5_1)) AND ((@IsNul"& _ 
+                "l_lmqi6_1 = 1 AND [lmqi6_1] IS NULL) OR ([lmqi6_1] = @Original_lmqi6_1)) AND ((@"& _ 
+                "IsNull_lmqi7_1 = 1 AND [lmqi7_1] IS NULL) OR ([lmqi7_1] = @Original_lmqi7_1)) AN"& _ 
+                "D ((@IsNull_lmqi8_1 = 1 AND [lmqi8_1] IS NULL) OR ([lmqi8_1] = @Original_lmqi8_1"& _ 
+                ")) AND ((@IsNull_lmqi9_1 = 1 AND [lmqi9_1] IS NULL) OR ([lmqi9_1] = @Original_lm"& _ 
+                "qi9_1)) AND ((@IsNull_lmqi10_1 = 1 AND [lmqi10_1] IS NULL) OR ([lmqi10_1] = @Ori"& _ 
+                "ginal_lmqi10_1)) AND ((@IsNull_lmqi11_1 = 1 AND [lmqi11_1] IS NULL) OR ([lmqi11_"& _ 
+                "1] = @Original_lmqi11_1)) AND ((@IsNull_lmqi12_1 = 1 AND [lmqi12_1] IS NULL) OR "& _ 
+                "([lmqi12_1] = @Original_lmqi12_1)) AND ((@IsNull_lmqi13_1 = 1 AND [lmqi13_1] IS "& _ 
+                "NULL) OR ([lmqi13_1] = @Original_lmqi13_1)) AND ((@IsNull_lmqi14_1 = 1 AND [lmqi"& _ 
+                "14_1] IS NULL) OR ([lmqi14_1] = @Original_lmqi14_1)) AND ((@IsNull_lmqi15_1 = 1 "& _ 
+                "AND [lmqi15_1] IS NULL) OR ([lmqi15_1] = @Original_lmqi15_1)) AND ((@IsNull_lmqi"& _ 
+                "1_2 = 1 AND [lmqi1_2] IS NULL) OR ([lmqi1_2] = @Original_lmqi1_2)) AND ((@IsNull"& _ 
+                "_lmqi2_2 = 1 AND [lmqi2_2] IS NULL) OR ([lmqi2_2] = @Original_lmqi2_2)) AND ((@I"& _ 
+                "sNull_lmqi3_2 = 1 AND [lmqi3_2] IS NULL) OR ([lmqi3_2] = @Original_lmqi3_2)) AND"& _ 
+                " ((@IsNull_lmqi4_2 = 1 AND [lmqi4_2] IS NULL) OR ([lmqi4_2] = @Original_lmqi4_2)"& _ 
+                ") AND ((@IsNull_lmqi5_2 = 1 AND [lmqi5_2] IS NULL) OR ([lmqi5_2] = @Original_lmq"& _ 
+                "i5_2)) AND ((@IsNull_lmqi6_2 = 1 AND [lmqi6_2] IS NULL) OR ([lmqi6_2] = @Origina"& _ 
+                "l_lmqi6_2)) AND ((@IsNull_lmqi7_2 = 1 AND [lmqi7_2] IS NULL) OR ([lmqi7_2] = @Or"& _ 
+                "iginal_lmqi7_2)) AND ((@IsNull_lmqi8_2 = 1 AND [lmqi8_2] IS NULL) OR ([lmqi8_2] "& _ 
+                "= @Original_lmqi8_2)) AND ((@IsNull_lmqi9_2 = 1 AND [lmqi9_2] IS NULL) OR ([lmqi"& _ 
+                "9_2] = @Original_lmqi9_2)) AND ((@IsNull_lmqi10_2 = 1 AND [lmqi10_2] IS NULL) OR"& _ 
+                " ([lmqi10_2] = @Original_lmqi10_2)) AND ((@IsNull_lmqi11_2 = 1 AND [lmqi11_2] IS"& _ 
+                " NULL) OR ([lmqi11_2] = @Original_lmqi11_2)) AND ((@IsNull_lmqi12_2 = 1 AND [lmq"& _ 
+                "i12_2] IS NULL) OR ([lmqi12_2] = @Original_lmqi12_2)) AND ((@IsNull_lmqi13_2 = 1"& _ 
+                " AND [lmqi13_2] IS NULL) OR ([lmqi13_2] = @Original_lmqi13_2)) AND ((@IsNull_lmq"& _ 
+                "i14_2 = 1 AND [lmqi14_2] IS NULL) OR ([lmqi14_2] = @Original_lmqi14_2)) AND ((@I"& _ 
+                "sNull_lmqi15_2 = 1 AND [lmqi15_2] IS NULL) OR ([lmqi15_2] = @Original_lmqi15_2))"& _ 
+                " AND ((@IsNull_pop20_1_1 = 1 AND [pop20_1_1] IS NULL) OR ([pop20_1_1] = @Origina"& _ 
+                "l_pop20_1_1)) AND ((@IsNull_pop20_2_1 = 1 AND [pop20_2_1] IS NULL) OR ([pop20_2_"& _ 
+                "1] = @Original_pop20_2_1)) AND ((@IsNull_pop20_3_1 = 1 AND [pop20_3_1] IS NULL) "& _ 
+                "OR ([pop20_3_1] = @Original_pop20_3_1)) AND ((@IsNull_pop20_4_1 = 1 AND [pop20_4"& _ 
+                "_1] IS NULL) OR ([pop20_4_1] = @Original_pop20_4_1)) AND ((@IsNull_pop20_5_1 = 1"& _ 
+                " AND [pop20_5_1] IS NULL) OR ([pop20_5_1] = @Original_pop20_5_1)) AND ((@IsNull_"& _ 
+                "pop20_6_1 = 1 AND [pop20_6_1] IS NULL) OR ([pop20_6_1] = @Original_pop20_6_1)) A"& _ 
+                "ND ((@IsNull_pop20_7_1 = 1 AND [pop20_7_1] IS NULL) OR ([pop20_7_1] = @Original_"& _ 
+                "pop20_7_1)) AND ((@IsNull_pop20_8_1 = 1 AND [pop20_8_1] IS NULL) OR ([pop20_8_1]"& _ 
+                " = @Original_pop20_8_1)) AND ((@IsNull_pop20_9_1 = 1 AND [pop20_9_1] IS NULL) OR"& _ 
+                " ([pop20_9_1] = @Original_pop20_9_1)) AND ((@IsNull_pop20_10_1 = 1 AND [pop20_10"& _ 
+                "_1] IS NULL) OR ([pop20_10_1] = @Original_pop20_10_1)) AND ((@IsNull_pop20_11_1 "& _ 
+                "= 1 AND [pop20_11_1] IS NULL) OR ([pop20_11_1] = @Original_pop20_11_1)) AND ((@I"& _ 
+                "sNull_pop20_12_1 = 1 AND [pop20_12_1] IS NULL) OR ([pop20_12_1] = @Original_pop2"& _ 
+                "0_12_1)) AND ((@IsNull_pop20_13_1 = 1 AND [pop20_13_1] IS NULL) OR ([pop20_13_1]"& _ 
+                " = @Original_pop20_13_1)) AND ((@IsNull_pop20_14_1 = 1 AND [pop20_14_1] IS NULL)"& _ 
+                " OR ([pop20_14_1] = @Original_pop20_14_1)) AND ((@IsNull_pop20_15_1 = 1 AND [pop"& _ 
+                "20_15_1] IS NULL) OR ([pop20_15_1] = @Original_pop20_15_1)) AND ((@IsNull_pop20_"& _ 
+                "1_2 = 1 AND [pop20_1_2] IS NULL) OR ([pop20_1_2] = @Original_pop20_1_2)) AND ((@"& _ 
+                "IsNull_pop20_2_2 = 1 AND [pop20_2_2] IS NULL) OR ([pop20_2_2] = @Original_pop20_"& _ 
+                "2_2)) AND ((@IsNull_pop20_3_2 = 1 AND [pop20_3_2] IS NULL) OR ([pop20_3_2] = @Or"& _ 
+                "iginal_pop20_3_2)) AND ((@IsNull_pop20_4_2 = 1 AND [pop20_4_2] IS NULL) OR ([pop"& _ 
+                "20_4_2] = @Original_pop20_4_2)) AND ((@IsNull_pop20_5_2 = 1 AND [pop20_5_2] IS N"& _ 
+                "ULL) OR ([pop20_5_2] = @Original_pop20_5_2)) AND ((@IsNull_pop20_6_2 = 1 AND [po"& _ 
+                "p20_6_2] IS NULL) OR ([pop20_6_2] = @Original_pop20_6_2)) AND ((@IsNull_pop20_7_"& _ 
+                "2 = 1 AND [pop20_7_2] IS NULL) OR ([pop20_7_2] = @Original_pop20_7_2)) AND ((@Is"& _ 
+                "Null_pop20_8_2 = 1 AND [pop20_8_2] IS NULL) OR ([pop20_8_2] = @Original_pop20_8_"& _ 
+                "2)) AND ((@IsNull_pop20_9_2 = 1 AND [pop20_9_2] IS NULL) OR ([pop20_9_2] = @Orig"& _ 
+                "inal_pop20_9_2)) AND ((@IsNull_pop20_10_2 = 1 AND [pop20_10_2] IS NULL) OR ([pop"& _ 
+                "20_10_2] = @Original_pop20_10_2)) AND ((@IsNull_pop20_11_2 = 1 AND [pop20_11_2] "& _ 
+                "IS NULL) OR ([pop20_11_2] = @Original_pop20_11_2)) AND ((@IsNull_pop20_12_2 = 1 "& _ 
+                "AND [pop20_12_2] IS NULL) OR ([pop20_12_2] = @Original_pop20_12_2)) AND ((@IsNul"& _ 
+                "l_pop20_13_2 = 1 AND [pop20_13_2] IS NULL) OR ([pop20_13_2] = @Original_pop20_13"& _ 
+                "_2)) AND ((@IsNull_pop20_14_2 = 1 AND [pop20_14_2] IS NULL) OR ([pop20_14_2] = @"& _ 
+                "Original_pop20_14_2)) AND ((@IsNull_pop20_15_2 = 1 AND [pop20_15_2] IS NULL) OR "& _ 
+                "([pop20_15_2] = @Original_pop20_15_2)) AND ((@IsNull_inddis1_1 = 1 AND [inddis1_"& _ 
+                "1] IS NULL) OR ([inddis1_1] = @Original_inddis1_1)) AND ((@IsNull_inddis2_1 = 1 "& _ 
+                "AND [inddis2_1] IS NULL) OR ([inddis2_1] = @Original_inddis2_1)) AND ((@IsNull_i"& _ 
+                "nddis3_1 = 1 AND [inddis3_1] IS NULL) OR ([inddis3_1] = @Original_inddis3_1)) AN"& _ 
+                "D ((@IsNull_inddis4_1 = 1 AND [inddis4_1] IS NULL) OR ([inddis4_1] = @Original_i"& _ 
+                "nddis4_1)) AND ((@IsNull_inddis5_1 = 1 AND [inddis5_1] IS NULL) OR ([inddis5_1] "& _ 
+                "= @Original_inddis5_1)) AND ((@IsNull_inddis6_1 = 1 AND [inddis6_1] IS NULL) OR "& _ 
+                "([inddis6_1] = @Original_inddis6_1)) AND ((@IsNull_inddis7_1 = 1 AND [inddis7_1]"& _ 
+                " IS NULL) OR ([inddis7_1] = @Original_inddis7_1)) AND ((@IsNull_inddis8_1 = 1 AN"& _ 
+                "D [inddis8_1] IS NULL) OR ([inddis8_1] = @Original_inddis8_1)) AND ((@IsNull_ind"& _ 
+                "dis9_1 = 1 AND [inddis9_1] IS NULL) OR ([inddis9_1] = @Original_inddis9_1)) AND "& _ 
+                "((@IsNull_inddis10_1 = 1 AND [inddis10_1] IS NULL) OR ([inddis10_1] = @Original_"& _ 
+                "inddis10_1)) AND ((@IsNull_inddis11_1 = 1 AND [inddis11_1] IS NULL) OR ([inddis1"& _ 
+                "1_1] = @Original_inddis11_1)) AND ((@IsNull_inddis12_1 = 1 AND [inddis12_1] IS N"& _ 
+                "ULL) OR ([inddis12_1] = @Original_inddis12_1)) AND ((@IsNull_inddis13_1 = 1 AND "& _ 
+                "[inddis13_1] IS NULL) OR ([inddis13_1] = @Original_inddis13_1)) AND ((@IsNull_in"& _ 
+                "ddis14_1 = 1 AND [inddis14_1] IS NULL) OR ([inddis14_1] = @Original_inddis14_1))"& _ 
+                " AND ((@IsNull_inddis15_1 = 1 AND [inddis15_1] IS NULL) OR ([inddis15_1] = @Orig"& _ 
+                "inal_inddis15_1)) AND ((@IsNull_inddis1_2 = 1 AND [inddis1_2] IS NULL) OR ([indd"& _ 
+                "is1_2] = @Original_inddis1_2)) AND ((@IsNull_inddis2_2 = 1 AND [inddis2_2] IS NU"& _ 
+                "LL) OR ([inddis2_2] = @Original_inddis2_2)) AND ((@IsNull_inddis3_2 = 1 AND [ind"& _ 
+                "dis3_2] IS NULL) OR ([inddis3_2] = @Original_inddis3_2)) AND ((@IsNull_inddis4_2"& _ 
+                " = 1 AND [inddis4_2] IS NULL) OR ([inddis4_2] = @Original_inddis4_2)) AND ((@IsN"& _ 
+                "ull_inddis5_2 = 1 AND [inddis5_2] IS NULL) OR ([inddis5_2] = @Original_inddis5_2"& _ 
+                ")) AND ((@IsNull_inddis6_2 = 1 AND [inddis6_2] IS NULL) OR ([inddis6_2] = @Origi"& _ 
+                "nal_inddis6_2)) AND ((@IsNull_inddis7_2 = 1 AND [inddis7_2] IS NULL) OR ([inddis"& _ 
+                "7_2] = @Original_inddis7_2)) AND ((@IsNull_inddis8_2 = 1 AND [inddis8_2] IS NULL"& _ 
+                ") OR ([inddis8_2] = @Original_inddis8_2)) AND ((@IsNull_inddis9_2 = 1 AND [inddi"& _ 
+                "s9_2] IS NULL) OR ([inddis9_2] = @Original_inddis9_2)) AND ((@IsNull_inddis10_2 "& _ 
+                "= 1 AND [inddis10_2] IS NULL) OR ([inddis10_2] = @Original_inddis10_2)) AND ((@I"& _ 
+                "sNull_inddis11_2 = 1 AND [inddis11_2] IS NULL) OR ([inddis11_2] = @Original_indd"& _ 
+                "is11_2)) AND ((@IsNull_inddis12_2 = 1 AND [inddis12_2] IS NULL) OR ([inddis12_2]"& _ 
+                " = @Original_inddis12_2)) AND ((@IsNull_inddis13_2 = 1 AND [inddis13_2] IS NULL)"& _ 
+                " OR ([inddis13_2] = @Original_inddis13_2)) AND ((@IsNull_inddis14_2 = 1 AND [ind"& _ 
+                "dis14_2] IS NULL) OR ([inddis14_2] = @Original_inddis14_2)) AND ((@IsNull_inddis"& _ 
+                "15_2 = 1 AND [inddis15_2] IS NULL) OR ([inddis15_2] = @Original_inddis15_2)) AND"& _ 
+                " ((@IsNull_inddiscur1_1 = 1 AND [inddiscur1_1] IS NULL) OR ([inddiscur1_1] = @Or"& _ 
+                "iginal_inddiscur1_1)) AND ((@IsNull_inddiscur2_1 = 1 AND [inddiscur2_1] IS NULL)"& _ 
+                " OR ([inddiscur2_1] = @Original_inddiscur2_1)) AND ((@IsNull_inddiscur3_1 = 1 AN"& _ 
+                "D [inddiscur3_1] IS NULL) OR ([inddiscur3_1] = @Original_inddiscur3_1)) AND ((@I"& _ 
+                "sNull_inddiscur4_1 = 1 AND [inddiscur4_1] IS NULL) OR ([inddiscur4_1] = @Origina"& _ 
+                "l_inddiscur4_1)) AND ((@IsNull_inddiscur5_1 = 1 AND [inddiscur5_1] IS NULL) OR ("& _ 
+                "[inddiscur5_1] = @Original_inddiscur5_1)) AND ((@IsNull_inddiscur6_1 = 1 AND [in"& _ 
+                "ddiscur6_1] IS NULL) OR ([inddiscur6_1] = @Original_inddiscur6_1)) AND ((@IsNull"& _ 
+                "_inddiscur7_1 = 1 AND [inddiscur7_1] IS NULL) OR ([inddiscur7_1] = @Original_ind"& _ 
+                "discur7_1)) AND ((@IsNull_inddiscur8_1 = 1 AND [inddiscur8_1] IS NULL) OR ([indd"& _ 
+                "iscur8_1] = @Original_inddiscur8_1)) AND ((@IsNull_inddiscur9_1 = 1 AND [inddisc"& _ 
+                "ur9_1] IS NULL) OR ([inddiscur9_1] = @Original_inddiscur9_1)) AND ((@IsNull_indd"& _ 
+                "iscur10_1 = 1 AND [inddiscur10_1] IS NULL) OR ([inddiscur10_1] = @Original_inddi"& _ 
+                "scur10_1)) AND ((@IsNull_inddiscur11_1 = 1 AND [inddiscur11_1] IS NULL) OR ([ind"& _ 
+                "discur11_1] = @Original_inddiscur11_1)) AND ((@IsNull_inddiscur12_1 = 1 AND [ind"& _ 
+                "discur12_1] IS NULL) OR ([inddiscur12_1] = @Original_inddiscur12_1)) AND ((@IsNu"& _ 
+                "ll_inddiscur13_1 = 1 AND [inddiscur13_1] IS NULL) OR ([inddiscur13_1] = @Origina"& _ 
+                "l_inddiscur13_1)) AND ((@IsNull_inddiscur14_1 = 1 AND [inddiscur14_1] IS NULL) O"& _ 
+                "R ([inddiscur14_1] = @Original_inddiscur14_1)) AND ((@IsNull_inddiscur15_1 = 1 A"& _ 
+                "ND [inddiscur15_1] IS NULL) OR ([inddiscur15_1] = @Original_inddiscur15_1)) AND "& _ 
+                "((@IsNull_inddiscur1_2 = 1 AND [inddiscur1_2] IS NULL) OR ([inddiscur1_2] = @Ori"& _ 
+                "ginal_inddiscur1_2)) AND ((@IsNull_inddiscur2_2 = 1 AND [inddiscur2_2] IS NULL) "& _ 
+                "OR ([inddiscur2_2] = @Original_inddiscur2_2)) AND ((@IsNull_inddiscur3_2 = 1 AND"& _ 
+                " [inddiscur3_2] IS NULL) OR ([inddiscur3_2] = @Original_inddiscur3_2)) AND ((@Is"& _ 
+                "Null_inddiscur4_2 = 1 AND [inddiscur4_2] IS NULL) OR ([inddiscur4_2] = @Original"& _ 
+                "_inddiscur4_2)) AND ((@IsNull_inddiscur5_2 = 1 AND [inddiscur5_2] IS NULL) OR (["& _ 
+                "inddiscur5_2] = @Original_inddiscur5_2)) AND ((@IsNull_inddiscur6_2 = 1 AND [ind"& _ 
+                "discur6_2] IS NULL) OR ([inddiscur6_2] = @Original_inddiscur6_2)) AND ((@IsNull_"& _ 
+                "inddiscur7_2 = 1 AND [inddiscur7_2] IS NULL) OR ([inddiscur7_2] = @Original_indd"& _ 
+                "iscur7_2)) AND ((@IsNull_inddiscur8_2 = 1 AND [inddiscur8_2] IS NULL) OR ([inddi"& _ 
+                "scur8_2] = @Original_inddiscur8_2)) AND ((@IsNull_inddiscur9_2 = 1 AND [inddiscu"& _ 
+                "r9_2] IS NULL) OR ([inddiscur9_2] = @Original_inddiscur9_2)) AND ((@IsNull_inddi"& _ 
+                "scur10_2 = 1 AND [inddiscur10_2] IS NULL) OR ([inddiscur10_2] = @Original_inddis"& _ 
+                "cur10_2)) AND ((@IsNull_inddiscur11_2 = 1 AND [inddiscur11_2] IS NULL) OR ([indd"& _ 
+                "iscur11_2] = @Original_inddiscur11_2)) AND ((@IsNull_inddiscur12_2 = 1 AND [indd"& _ 
+                "iscur12_2] IS NULL) OR ([inddiscur12_2] = @Original_inddiscur12_2)) AND ((@IsNul"& _ 
+                "l_inddiscur13_2 = 1 AND [inddiscur13_2] IS NULL) OR ([inddiscur13_2] = @Original"& _ 
+                "_inddiscur13_2)) AND ((@IsNull_inddiscur14_2 = 1 AND [inddiscur14_2] IS NULL) OR"& _ 
+                " ([inddiscur14_2] = @Original_inddiscur14_2)) AND ((@IsNull_inddiscur15_2 = 1 AN"& _ 
+                "D [inddiscur15_2] IS NULL) OR ([inddiscur15_2] = @Original_inddiscur15_2)) AND ("& _ 
+                "(@IsNull_inddispln1_1 = 1 AND [inddispln1_1] IS NULL) OR ([inddispln1_1] = @Orig"& _ 
+                "inal_inddispln1_1)) AND ((@IsNull_inddispln2_1 = 1 AND [inddispln2_1] IS NULL) O"& _ 
+                "R ([inddispln2_1] = @Original_inddispln2_1)) AND ((@IsNull_inddispln3_1 = 1 AND "& _ 
+                "[inddispln3_1] IS NULL) OR ([inddispln3_1] = @Original_inddispln3_1)) AND ((@IsN"& _ 
+                "ull_inddispln4_1 = 1 AND [inddispln4_1] IS NULL) OR ([inddispln4_1] = @Original_"& _ 
+                "inddispln4_1)) AND ((@IsNull_inddispln5_1 = 1 AND [inddispln5_1] IS NULL) OR ([i"& _ 
+                "nddispln5_1] = @Original_inddispln5_1)) AND ((@IsNull_inddispln6_1 = 1 AND [indd"& _ 
+                "ispln6_1] IS NULL) OR ([inddispln6_1] = @Original_inddispln6_1)) AND ((@IsNull_i"& _ 
+                "nddispln7_1 = 1 AND [inddispln7_1] IS NULL) OR ([inddispln7_1] = @Original_inddi"& _ 
+                "spln7_1)) AND ((@IsNull_inddispln8_1 = 1 AND [inddispln8_1] IS NULL) OR ([inddis"& _ 
+                "pln8_1] = @Original_inddispln8_1)) AND ((@IsNull_inddispln9_1 = 1 AND [inddispln"& _ 
+                "9_1] IS NULL) OR ([inddispln9_1] = @Original_inddispln9_1)) AND ((@IsNull_inddis"& _ 
+                "pln10_1 = 1 AND [inddispln10_1] IS NULL) OR ([inddispln10_1] = @Original_inddisp"& _ 
+                "ln10_1)) AND ((@IsNull_inddispln11_1 = 1 AND [inddispln11_1] IS NULL) OR ([inddi"& _ 
+                "spln11_1] = @Original_inddispln11_1)) AND ((@IsNull_inddispln12_1 = 1 AND [inddi"& _ 
+                "spln12_1] IS NULL) OR ([inddispln12_1] = @Original_inddispln12_1)) AND ((@IsNull"& _ 
+                "_inddispln13_1 = 1 AND [inddispln13_1] IS NULL) OR ([inddispln13_1] = @Original_"& _ 
+                "inddispln13_1)) AND ((@IsNull_inddispln14_1 = 1 AND [inddispln14_1] IS NULL) OR "& _ 
+                "([inddispln14_1] = @Original_inddispln14_1)) AND ((@IsNull_inddispln15_1 = 1 AND"& _ 
+                " [inddispln15_1] IS NULL) OR ([inddispln15_1] = @Original_inddispln15_1)) AND (("& _ 
+                "@IsNull_inddispln1_2 = 1 AND [inddispln1_2] IS NULL) OR ([inddispln1_2] = @Origi"& _ 
+                "nal_inddispln1_2)) AND ((@IsNull_inddispln2_2 = 1 AND [inddispln2_2] IS NULL) OR"& _ 
+                " ([inddispln2_2] = @Original_inddispln2_2)) AND ((@IsNull_inddispln3_2 = 1 AND ["& _ 
+                "inddispln3_2] IS NULL) OR ([inddispln3_2] = @Original_inddispln3_2)) AND ((@IsNu"& _ 
+                "ll_inddispln4_2 = 1 AND [inddispln4_2] IS NULL) OR ([inddispln4_2] = @Original_i"& _ 
+                "nddispln4_2)) AND ((@IsNull_inddispln5_2 = 1 AND [inddispln5_2] IS NULL) OR ([in"& _ 
+                "ddispln5_2] = @Original_inddispln5_2)) AND ((@IsNull_inddispln6_2 = 1 AND [inddi"& _ 
+                "spln6_2] IS NULL) OR ([inddispln6_2] = @Original_inddispln6_2)) AND ((@IsNull_in"& _ 
+                "ddispln7_2 = 1 AND [inddispln7_2] IS NULL) OR ([inddispln7_2] = @Original_inddis"& _ 
+                "pln7_2)) AND ((@IsNull_inddispln8_2 = 1 AND [inddispln8_2] IS NULL) OR ([inddisp"& _ 
+                "ln8_2] = @Original_inddispln8_2)) AND ((@IsNull_inddispln9_2 = 1 AND [inddispln9"& _ 
+                "_2] IS NULL) OR ([inddispln9_2] = @Original_inddispln9_2)) AND ((@IsNull_inddisp"& _ 
+                "ln10_2 = 1 AND [inddispln10_2] IS NULL) OR ([inddispln10_2] = @Original_inddispl"& _ 
+                "n10_2)) AND ((@IsNull_inddispln11_2 = 1 AND [inddispln11_2] IS NULL) OR ([inddis"& _ 
+                "pln11_2] = @Original_inddispln11_2)) AND ((@IsNull_inddispln12_2 = 1 AND [inddis"& _ 
+                "pln12_2] IS NULL) OR ([inddispln12_2] = @Original_inddispln12_2)) AND ((@IsNull_"& _ 
+                "inddispln13_2 = 1 AND [inddispln13_2] IS NULL) OR ([inddispln13_2] = @Original_i"& _ 
+                "nddispln13_2)) AND ((@IsNull_inddispln14_2 = 1 AND [inddispln14_2] IS NULL) OR ("& _ 
+                "[inddispln14_2] = @Original_inddispln14_2)) AND ((@IsNull_inddispln15_2 = 1 AND "& _ 
+                "[inddispln15_2] IS NULL) OR ([inddispln15_2] = @Original_inddispln15_2)) AND ((@"& _ 
+                "IsNull_tpbx = 1 AND [tpbx] IS NULL) OR ([tpbx] = @Original_tpbx)) AND ((@IsNull_"& _ 
+                "tpsx = 1 AND [tpsx] IS NULL) OR ([tpsx] = @Original_tpsx)) AND ((@IsNull_tpmz = "& _ 
+                "1 AND [tpmz] IS NULL) OR ([tpmz] = @Original_tpmz)) AND ((@IsNull_envw = 1 AND ["& _ 
+                "envw] IS NULL) OR ([envw] = @Original_envw)) AND ((@IsNull_ecow = 1 AND [ecow] I"& _ 
+                "S NULL) OR ([ecow] = @Original_ecow)) AND ((@IsNull_socw = 1 AND [socw] IS NULL)"& _ 
+                " OR ([socw] = @Original_socw)) AND ((@IsNull_totpla = 1 AND [totpla] IS NULL) OR"& _ 
+                " ([totpla] = @Original_totpla)) AND ((@IsNull_bod1 = 1 AND [bod1] IS NULL) OR (["& _ 
+                "bod1] = @Original_bod1)) AND ((@IsNull_bod2 = 1 AND [bod2] IS NULL) OR ([bod2] ="& _ 
+                " @Original_bod2)) AND ((@IsNull_bod3 = 1 AND [bod3] IS NULL) OR ([bod3] = @Origi"& _ 
+                "nal_bod3)) AND ((@IsNull_bod4 = 1 AND [bod4] IS NULL) OR ([bod4] = @Original_bod"& _ 
+                "4)) AND ((@IsNull_bod5 = 1 AND [bod5] IS NULL) OR ([bod5] = @Original_bod5)) AND"& _ 
+                " ((@IsNull_bod6 = 1 AND [bod6] IS NULL) OR ([bod6] = @Original_bod6)) AND ((@IsN"& _ 
+                "ull_bod7 = 1 AND [bod7] IS NULL) OR ([bod7] = @Original_bod7)) AND ((@IsNull_bod"& _ 
+                "8 = 1 AND [bod8] IS NULL) OR ([bod8] = @Original_bod8)) AND ((@IsNull_bod9 = 1 A"& _ 
+                "ND [bod9] IS NULL) OR ([bod9] = @Original_bod9)) AND ((@IsNull_bod10 = 1 AND [bo"& _ 
+                "d10] IS NULL) OR ([bod10] = @Original_bod10)) AND ((@IsNull_bod11 = 1 AND [bod11"& _ 
+                "] IS NULL) OR ([bod11] = @Original_bod11)) AND ((@IsNull_bod12 = 1 AND [bod12] I"& _ 
+                "S NULL) OR ([bod12] = @Original_bod12)) AND ((@IsNull_bod13 = 1 AND [bod13] IS N"& _ 
+                "ULL) OR ([bod13] = @Original_bod13)) AND ((@IsNull_bod14 = 1 AND [bod14] IS NULL"& _ 
+                ") OR ([bod14] = @Original_bod14)) AND ((@IsNull_bod15 = 1 AND [bod15] IS NULL) O"& _ 
+                "R ([bod15] = @Original_bod15)) AND ((@IsNull_tds1 = 1 AND [tds1] IS NULL) OR ([t"& _ 
+                "ds1] = @Original_tds1)) AND ((@IsNull_tds2 = 1 AND [tds2] IS NULL) OR ([tds2] = "& _ 
+                "@Original_tds2)) AND ((@IsNull_tds3 = 1 AND [tds3] IS NULL) OR ([tds3] = @Origin"& _ 
+                "al_tds3)) AND ((@IsNull_tds4 = 1 AND [tds4] IS NULL) OR ([tds4] = @Original_tds4"& _ 
+                ")) AND ((@IsNull_tds5 = 1 AND [tds5] IS NULL) OR ([tds5] = @Original_tds5)) AND "& _ 
+                "((@IsNull_tds6 = 1 AND [tds6] IS NULL) OR ([tds6] = @Original_tds6)) AND ((@IsNu"& _ 
+                "ll_tds7 = 1 AND [tds7] IS NULL) OR ([tds7] = @Original_tds7)) AND ((@IsNull_tds8"& _ 
+                " = 1 AND [tds8] IS NULL) OR ([tds8] = @Original_tds8)) AND ((@IsNull_tds9 = 1 AN"& _ 
+                "D [tds9] IS NULL) OR ([tds9] = @Original_tds9)) AND ((@IsNull_tds10 = 1 AND [tds"& _ 
+                "10] IS NULL) OR ([tds10] = @Original_tds10)) AND ((@IsNull_tds11 = 1 AND [tds11]"& _ 
+                " IS NULL) OR ([tds11] = @Original_tds11)) AND ((@IsNull_tds12 = 1 AND [tds12] IS"& _ 
+                " NULL) OR ([tds12] = @Original_tds12)) AND ((@IsNull_tds13 = 1 AND [tds13] IS NU"& _ 
+                "LL) OR ([tds13] = @Original_tds13)) AND ((@IsNull_tds14 = 1 AND [tds14] IS NULL)"& _ 
+                " OR ([tds14] = @Original_tds14)) AND ((@IsNull_tds15 = 1 AND [tds15] IS NULL) OR"& _ 
+                " ([tds15] = @Original_tds15)) AND ((@IsNull_tss1 = 1 AND [tss1] IS NULL) OR ([ts"& _ 
+                "s1] = @Original_tss1)) AND ((@IsNull_tss2 = 1 AND [tss2] IS NULL) OR ([tss2] = @"& _ 
+                "Original_tss2)) AND ((@IsNull_tss3 = 1 AND [tss3] IS NULL) OR ([tss3] = @Origina"& _ 
+                "l_tss3)) AND ((@IsNull_tss4 = 1 AND [tss4] IS NULL) OR ([tss4] = @Original_tss4)"& _ 
+                ") AND ((@IsNull_tss5 = 1 AND [tss5] IS NULL) OR ([tss5] = @Original_tss5)) AND ("& _ 
+                "(@IsNull_tss6 = 1 AND [tss6] IS NULL) OR ([tss6] = @Original_tss6)) AND ((@IsNul"& _ 
+                "l_tss7 = 1 AND [tss7] IS NULL) OR ([tss7] = @Original_tss7)) AND ((@IsNull_tss8 "& _ 
+                "= 1 AND [tss8] IS NULL) OR ([tss8] = @Original_tss8)) AND ((@IsNull_tss9 = 1 AND"& _ 
+                " [tss9] IS NULL) OR ([tss9] = @Original_tss9)) AND ((@IsNull_tss10 = 1 AND [tss1"& _ 
+                "0] IS NULL) OR ([tss10] = @Original_tss10)) AND ((@IsNull_tss11 = 1 AND [tss11] "& _ 
+                "IS NULL) OR ([tss11] = @Original_tss11)) AND ((@IsNull_tss12 = 1 AND [tss12] IS "& _ 
+                "NULL) OR ([tss12] = @Original_tss12)) AND ((@IsNull_tss13 = 1 AND [tss13] IS NUL"& _ 
+                "L) OR ([tss13] = @Original_tss13)) AND ((@IsNull_tss14 = 1 AND [tss14] IS NULL) "& _ 
+                "OR ([tss14] = @Original_tss14)) AND ((@IsNull_tss15 = 1 AND [tss15] IS NULL) OR "& _ 
+                "([tss15] = @Original_tss15)) AND ((@IsNull_agruf = 1 AND [agruf] IS NULL) OR ([a"& _ 
+                "gruf] = @Original_agruf)) AND ((@IsNull_agrufro = 1 AND [agrufro] IS NULL) OR (["& _ 
+                "agrufro] = @Original_agrufro)) AND ((@IsNull_induf = 1 AND [induf] IS NULL) OR ("& _ 
+                "[induf] = @Original_induf)) AND ((@IsNull_indufro = 1 AND [indufro] IS NULL) OR "& _ 
+                "([indufro] = @Original_indufro)) AND ((@IsNull_lanuf = 1 AND [lanuf] IS NULL) OR"& _ 
+                " ([lanuf] = @Original_lanuf)) AND ((@IsNull_lanufro = 1 AND [lanufro] IS NULL) O"& _ 
+                "R ([lanufro] = @Original_lanufro)) AND ((@IsNull_gwsp = 1 AND [gwsp] IS NULL) OR"& _ 
+                " ([gwsp] = @Original_gwsp)) AND ((@IsNull_sbqi = 1 AND [sbqi] IS NULL) OR ([sbqi"& _ 
+                "] = @Original_sbqi)) AND ((@IsNull_ssqi = 1 AND [ssqi] IS NULL) OR ([ssqi] = @Or"& _ 
+                "iginal_ssqi)) AND ((@IsNull_smqi = 1 AND [smqi] IS NULL) OR ([smqi] = @Original_"& _ 
+                "smqi)) AND ((@IsNull_salt = 1 AND [salt] IS NULL) OR ([salt] = @Original_salt)) "& _ 
+                "AND ((@IsNull_agrw = 1 AND [agrw] IS NULL) OR ([agrw] = @Original_agrw)) AND ((@"& _ 
+                "IsNull_indw = 1 AND [indw] IS NULL) OR ([indw] = @Original_indw)) AND ((@IsNull_"& _ 
+                "lanw = 1 AND [lanw] IS NULL) OR ([lanw] = @Original_lanw)) AND ((@IsNull_DataCre"& _ 
+                "azione = 1 AND [DataCreazione] IS NULL) OR ([DataCreazione] = @Original_DataCrea"& _ 
+                "zione)) AND ((@IsNull_UtenteCreazione = 1 AND [UtenteCreazione] IS NULL) OR ([Ut"& _ 
+                "enteCreazione] = @Original_UtenteCreazione)) AND ((@IsNull_DataAggiornamento = 1"& _ 
+                " AND [DataAggiornamento] IS NULL) OR ([DataAggiornamento] = @Original_DataAggior"& _ 
+                "namento)) AND ((@IsNull_UtenteAggiornamento = 1 AND [UtenteAggiornamento] IS NUL"& _ 
+                "L) OR ([UtenteAggiornamento] = @Original_UtenteAggiornamento)) AND ((@IsNull_Ann"& _ 
+                "ullato = 1 AND [Annullato] IS NULL) OR ([Annullato] = @Original_Annullato)) AND "& _ 
+                "((@IsNull_DataEstrazione = 1 AND [DataEstrazione] IS NULL) OR ([DataEstrazione] "& _ 
+                "= @Original_DataEstrazione)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT datID, indcc1_1, indcc2_1, indcc3_1, indc"& _ 
+                "c4_1, indcc5_1, indcc6_1, indcc7_1, indcc8_1, indcc9_1, indcc10_1, indcc11_1, in"& _ 
+                "dcc12_1, indcc13_1, indcc14_1, indcc15_1, indcc1_2, indcc2_2, indcc3_2, indcc4_2"& _ 
+                ", indcc5_2, indcc6_2, indcc7_2, indcc8_2, indcc9_2, indcc10_2, indcc11_2, indcc1"& _ 
+                "2_2, indcc13_2, indcc14_2, indcc15_2, agrcc1_1, agrcc2_1, agrcc3_1, agrcc4_1, ag"& _ 
+                "rcc5_1, agrcc6_1, agrcc7_1, agrcc8_1, agrcc9_1, agrcc10_1, agrcc11_1, agrcc12_1,"& _ 
+                " agrcc13_1, agrcc14_1, agrcc15_1, agrcc1_2, agrcc2_2, agrcc3_2, agrcc4_2, agrcc5"& _ 
+                "_2, agrcc6_2, agrcc7_2, agrcc8_2, agrcc9_2, agrcc10_2, agrcc11_2, agrcc12_2, agr"& _ 
+                "cc13_2, agrcc14_2, agrcc15_2, lancc1_1, lancc2_1, lancc3_1, lancc4_1, lancc5_1, "& _ 
+                "lancc6_1, lancc7_1, lancc8_1, lancc9_1, lancc10_1, lancc11_1, lancc12_1, lancc13"& _ 
+                "_1, lancc14_1, lancc15_1, lancc1_2, lancc2_2, lancc3_2, lancc4_2, lancc5_2, lanc"& _ 
+                "c6_2, lancc7_2, lancc8_2, lancc9_2, lancc10_2, lancc11_2, lancc12_2, lancc13_2, "& _ 
+                "lancc14_2, lancc15_2, lbqi1_1, lbqi2_1, lbqi3_1, lbqi4_1, lbqi5_1, lbqi6_1, lbqi"& _ 
+                "7_1, lbqi8_1, lbqi9_1, lbqi10_1, lbqi11_1, lbqi12_1, lbqi13_1, lbqi14_1, lbqi15_"& _ 
+                "1, lbqi1_2, lbqi2_2, lbqi3_2, lbqi4_2, lbqi5_2, lbqi6_2, lbqi7_2, lbqi8_2, lbqi9"& _ 
+                "_2, lbqi10_2, lbqi11_2, lbqi12_2, lbqi13_2, lbqi14_2, lbqi15_2, lsqi1_1, lsqi2_1"& _ 
+                ", lsqi3_1, lsqi4_1, lsqi5_1, lsqi6_1, lsqi7_1, lsqi8_1, lsqi9_1, lsqi10_1, lsqi1"& _ 
+                "1_1, lsqi12_1, lsqi13_1, lsqi14_1, lsqi15_1, lsqi1_2, lsqi2_2, lsqi3_2, lsqi4_2,"& _ 
+                " lsqi5_2, lsqi6_2, lsqi7_2, lsqi8_2, lsqi9_2, lsqi10_2, lsqi11_2, lsqi12_2, lsqi"& _ 
+                "13_2, lsqi14_2, lsqi15_2, lmqi1_1, lmqi2_1, lmqi3_1, lmqi4_1, lmqi5_1, lmqi6_1, "& _ 
+                "lmqi7_1, lmqi8_1, lmqi9_1, lmqi10_1, lmqi11_1, lmqi12_1, lmqi13_1, lmqi14_1, lmq"& _ 
+                "i15_1, lmqi1_2, lmqi2_2, lmqi3_2, lmqi4_2, lmqi5_2, lmqi6_2, lmqi7_2, lmqi8_2, l"& _ 
+                "mqi9_2, lmqi10_2, lmqi11_2, lmqi12_2, lmqi13_2, lmqi14_2, lmqi15_2, pop20_1_1, p"& _ 
+                "op20_2_1, pop20_3_1, pop20_4_1, pop20_5_1, pop20_6_1, pop20_7_1, pop20_8_1, pop2"& _ 
+                "0_9_1, pop20_10_1, pop20_11_1, pop20_12_1, pop20_13_1, pop20_14_1, pop20_15_1, p"& _ 
+                "op20_1_2, pop20_2_2, pop20_3_2, pop20_4_2, pop20_5_2, pop20_6_2, pop20_7_2, pop2"& _ 
+                "0_8_2, pop20_9_2, pop20_10_2, pop20_11_2, pop20_12_2, pop20_13_2, pop20_14_2, po"& _ 
+                "p20_15_2, inddis1_1, inddis2_1, inddis3_1, inddis4_1, inddis5_1, inddis6_1, indd"& _ 
+                "is7_1, inddis8_1, inddis9_1, inddis10_1, inddis11_1, inddis12_1, inddis13_1, ind"& _ 
+                "dis14_1, inddis15_1, inddis1_2, inddis2_2, inddis3_2, inddis4_2, inddis5_2, indd"& _ 
+                "is6_2, inddis7_2, inddis8_2, inddis9_2, inddis10_2, inddis11_2, inddis12_2, indd"& _ 
+                "is13_2, inddis14_2, inddis15_2, inddiscur1_1, inddiscur2_1, inddiscur3_1, inddis"& _ 
+                "cur4_1, inddiscur5_1, inddiscur6_1, inddiscur7_1, inddiscur8_1, inddiscur9_1, in"& _ 
+                "ddiscur10_1, inddiscur11_1, inddiscur12_1, inddiscur13_1, inddiscur14_1, inddisc"& _ 
+                "ur15_1, inddiscur1_2, inddiscur2_2, inddiscur3_2, inddiscur4_2, inddiscur5_2, in"& _ 
+                "ddiscur6_2, inddiscur7_2, inddiscur8_2, inddiscur9_2, inddiscur10_2, inddiscur11"& _ 
+                "_2, inddiscur12_2, inddiscur13_2, inddiscur14_2, inddiscur15_2, inddispln1_1, in"& _ 
+                "ddispln2_1, inddispln3_1, inddispln4_1, inddispln5_1, inddispln6_1, inddispln7_1"& _ 
+                ", inddispln8_1, inddispln9_1, inddispln10_1, inddispln11_1, inddispln12_1, inddi"& _ 
+                "spln13_1, inddispln14_1, inddispln15_1, inddispln1_2, inddispln2_2, inddispln3_2"& _ 
+                ", inddispln4_2, inddispln5_2, inddispln6_2, inddispln7_2, inddispln8_2, inddispl"& _ 
+                "n9_2, inddispln10_2, inddispln11_2, inddispln12_2, inddispln13_2, inddispln14_2,"& _ 
+                " inddispln15_2, tpbx, tpsx, tpmz, envw, ecow, socw, totpla, bod1, bod2, bod3, bo"& _ 
+                "d4, bod5, bod6, bod7, bod8, bod9, bod10, bod11, bod12, bod13, bod14, bod15, tds1"& _ 
+                ", tds2, tds3, tds4, tds5, tds6, tds7, tds8, tds9, tds10, tds11, tds12, tds13, td"& _ 
+                "s14, tds15, tss1, tss2, tss3, tss4, tss5, tss6, tss7, tss8, tss9, tss10, tss11, "& _ 
+                "tss12, tss13, tss14, tss15, agruf, agrufro, induf, indufro, lanuf, lanufro, gwsp"& _ 
+                ", sbqi, ssqi, smqi, salt, agrw, indw, lanw, DataCreazione, UtenteCreazione, Data"& _ 
+                "Aggiornamento, UtenteAggiornamento, Annullato, DataEstrazione FROM data WHERE (d"& _ 
+                "atID = @datID)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@indcc1_1", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "indcc1_1", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@indcc2_1", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "indcc2_1", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -18795,6 +18985,10 @@ Namespace DSDataTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@sbqi", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "sbqi", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ssqi", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "ssqi", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@smqi", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "smqi", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@salt", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "salt", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@agrw", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "agrw", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@indw", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "indw", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@lanw", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "lanw", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@DataCreazione", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "DataCreazione", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UtenteCreazione", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UtenteCreazione", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@DataAggiornamento", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "DataAggiornamento", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -19526,6 +19720,14 @@ Namespace DSDataTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_ssqi", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "ssqi", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_smqi", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "smqi", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_smqi", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "smqi", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_salt", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "salt", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_salt", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "salt", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_agrw", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "agrw", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_agrw", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "agrw", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_indw", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "indw", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_indw", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "indw", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_lanw", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "lanw", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_lanw", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "lanw", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_DataCreazione", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "DataCreazione", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_DataCreazione", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "DataCreazione", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_UtenteCreazione", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UtenteCreazione", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
@@ -19554,7 +19756,62 @@ Namespace DSDataTableAdapters
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "select *"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"from data"
+            Me._commandCollection(0).CommandText = "SELECT        datID, indcc1_1, indcc2_1, indcc3_1, indcc4_1, indcc5_1, indcc6_1, "& _ 
+                "indcc7_1, indcc8_1, indcc9_1, indcc10_1, indcc11_1, indcc12_1, indcc13_1, indcc1"& _ 
+                "4_1, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         indcc15_1, indcc1_2, indcc2_2, indcc3_2, indcc4_"& _ 
+                "2, indcc5_2, indcc6_2, indcc7_2, indcc8_2, indcc9_2, indcc10_2, indcc11_2, indcc"& _ 
+                "12_2, indcc13_2, indcc14_2, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         indcc15_2, agrcc1_1, agrc"& _ 
+                "c2_1, agrcc3_1, agrcc4_1, agrcc5_1, agrcc6_1, agrcc7_1, agrcc8_1, agrcc9_1, agrc"& _ 
+                "c10_1, agrcc11_1, agrcc12_1, agrcc13_1, agrcc14_1, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         ag"& _ 
+                "rcc15_1, agrcc1_2, agrcc2_2, agrcc3_2, agrcc4_2, agrcc5_2, agrcc6_2, agrcc7_2, a"& _ 
+                "grcc8_2, agrcc9_2, agrcc10_2, agrcc11_2, agrcc12_2, agrcc13_2, agrcc14_2, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"    "& _ 
+                "                     agrcc15_2, lancc1_1, lancc2_1, lancc3_1, lancc4_1, lancc5_1"& _ 
+                ", lancc6_1, lancc7_1, lancc8_1, lancc9_1, lancc10_1, lancc11_1, lancc12_1, lancc"& _ 
+                "13_1, lancc14_1, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         lancc15_1, lancc1_2, lancc2_2, lancc"& _ 
+                "3_2, lancc4_2, lancc5_2, lancc6_2, lancc7_2, lancc8_2, lancc9_2, lancc10_2, lanc"& _ 
+                "c11_2, lancc12_2, lancc13_2, lancc14_2, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         lancc15_2, lb"& _ 
+                "qi1_1, lbqi2_1, lbqi3_1, lbqi4_1, lbqi5_1, lbqi6_1, lbqi7_1, lbqi8_1, lbqi9_1, l"& _ 
+                "bqi10_1, lbqi11_1, lbqi12_1, lbqi13_1, lbqi14_1, lbqi15_1, lbqi1_2, lbqi2_2, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&" "& _ 
+                "                        lbqi3_2, lbqi4_2, lbqi5_2, lbqi6_2, lbqi7_2, lbqi8_2, lb"& _ 
+                "qi9_2, lbqi10_2, lbqi11_2, lbqi12_2, lbqi13_2, lbqi14_2, lbqi15_2, lsqi1_1, lsqi"& _ 
+                "2_1, lsqi3_1, lsqi4_1, lsqi5_1, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         lsqi6_1, lsqi7_1, lsq"& _ 
+                "i8_1, lsqi9_1, lsqi10_1, lsqi11_1, lsqi12_1, lsqi13_1, lsqi14_1, lsqi15_1, lsqi1"& _ 
+                "_2, lsqi2_2, lsqi3_2, lsqi4_2, lsqi5_2, lsqi6_2, lsqi7_2, lsqi8_2, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"           "& _ 
+                "              lsqi9_2, lsqi10_2, lsqi11_2, lsqi12_2, lsqi13_2, lsqi14_2, lsqi15_"& _ 
+                "2, lmqi1_1, lmqi2_1, lmqi3_1, lmqi4_1, lmqi5_1, lmqi6_1, lmqi7_1, lmqi8_1, lmqi9"& _ 
+                "_1, lmqi10_1, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         lmqi11_1, lmqi12_1, lmqi13_1, lmqi14_1,"& _ 
+                " lmqi15_1, lmqi1_2, lmqi2_2, lmqi3_2, lmqi4_2, lmqi5_2, lmqi6_2, lmqi7_2, lmqi8_"& _ 
+                "2, lmqi9_2, lmqi10_2, lmqi11_2, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         lmqi12_2, lmqi13_2, l"& _ 
+                "mqi14_2, lmqi15_2, pop20_1_1, pop20_2_1, pop20_3_1, pop20_4_1, pop20_5_1, pop20_"& _ 
+                "6_1, pop20_7_1, pop20_8_1, pop20_9_1, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         pop20_10_1, pop"& _ 
+                "20_11_1, pop20_12_1, pop20_13_1, pop20_14_1, pop20_15_1, pop20_1_2, pop20_2_2, p"& _ 
+                "op20_3_2, pop20_4_2, pop20_5_2, pop20_6_2, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         pop20_7_2,"& _ 
+                " pop20_8_2, pop20_9_2, pop20_10_2, pop20_11_2, pop20_12_2, pop20_13_2, pop20_14_"& _ 
+                "2, pop20_15_2, inddis1_1, inddis2_1, inddis3_1, inddis4_1, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                   "& _ 
+                "      inddis5_1, inddis6_1, inddis7_1, inddis8_1, inddis9_1, inddis10_1, inddis1"& _ 
+                "1_1, inddis12_1, inddis13_1, inddis14_1, inddis15_1, inddis1_2, inddis2_2, inddi"& _ 
+                "s3_2, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         inddis4_2, inddis5_2, inddis6_2, inddis7_2, ind"& _ 
+                "dis8_2, inddis9_2, inddis10_2, inddis11_2, inddis12_2, inddis13_2, inddis14_2, i"& _ 
+                "nddis15_2, inddiscur1_1, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         inddiscur2_1, inddiscur3_1, "& _ 
+                "inddiscur4_1, inddiscur5_1, inddiscur6_1, inddiscur7_1, inddiscur8_1, inddiscur9"& _ 
+                "_1, inddiscur10_1, inddiscur11_1, inddiscur12_1, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         indd"& _ 
+                "iscur13_1, inddiscur14_1, inddiscur15_1, inddiscur1_2, inddiscur2_2, inddiscur3_"& _ 
+                "2, inddiscur4_2, inddiscur5_2, inddiscur6_2, inddiscur7_2, inddiscur8_2, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"     "& _ 
+                "                    inddiscur9_2, inddiscur10_2, inddiscur11_2, inddiscur12_2, i"& _ 
+                "nddiscur13_2, inddiscur14_2, inddiscur15_2, inddispln1_1, inddispln2_1, inddispl"& _ 
+                "n3_1, inddispln4_1, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         inddispln5_1, inddispln6_1, inddi"& _ 
+                "spln7_1, inddispln8_1, inddispln9_1, inddispln10_1, inddispln11_1, inddispln12_1"& _ 
+                ", inddispln13_1, inddispln14_1, inddispln15_1, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         inddis"& _ 
+                "pln1_2, inddispln2_2, inddispln3_2, inddispln4_2, inddispln5_2, inddispln6_2, in"& _ 
+                "ddispln7_2, inddispln8_2, inddispln9_2, inddispln10_2, inddispln11_2, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"        "& _ 
+                "                 inddispln12_2, inddispln13_2, inddispln14_2, inddispln15_2, tpb"& _ 
+                "x, tpsx, tpmz, envw, ecow, socw, totpla, bod1, bod2, bod3, bod4, bod5, bod6, bod"& _ 
+                "7, bod8, bod9, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         bod10, bod11, bod12, bod13, bod14, bod"& _ 
+                "15, tds1, tds2, tds3, tds4, tds5, tds6, tds7, tds8, tds9, tds10, tds11, tds12, t"& _ 
+                "ds13, tds14, tds15, tss1, tss2, tss3, tss4, tss5, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         tss"& _ 
+                "6, tss7, tss8, tss9, tss10, tss11, tss12, tss13, tss14, tss15, agruf, agrufro, i"& _ 
+                "nduf, indufro, lanuf, lanufro, gwsp, sbqi, ssqi, smqi, salt, agrw, indw, lanw, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         DataCreazione, UtenteCreazione, DataAggiornamento, Ute"& _ 
+                "nteAggiornamento, Annullato, DataEstrazione"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            data"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -19978,6 +20235,10 @@ Namespace DSDataTableAdapters
                     ByVal Original_sbqi As Global.System.Nullable(Of Double),  _
                     ByVal Original_ssqi As Global.System.Nullable(Of Double),  _
                     ByVal Original_smqi As Global.System.Nullable(Of Double),  _
+                    ByVal Original_salt As Global.System.Nullable(Of Boolean),  _
+                    ByVal Original_agrw As Global.System.Nullable(Of Double),  _
+                    ByVal Original_indw As Global.System.Nullable(Of Double),  _
+                    ByVal Original_lanw As Global.System.Nullable(Of Double),  _
                     ByVal Original_DataCreazione As Global.System.Nullable(Of Date),  _
                     ByVal Original_UtenteCreazione As Global.System.Nullable(Of Integer),  _
                     ByVal Original_DataAggiornamento As Global.System.Nullable(Of Date),  _
@@ -22519,47 +22780,75 @@ Namespace DSDataTableAdapters
                 Me.Adapter.DeleteCommand.Parameters(723).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(724).Value = Global.System.DBNull.Value
             End If
-            If (Original_DataCreazione.HasValue = true) Then
+            If (Original_salt.HasValue = true) Then
                 Me.Adapter.DeleteCommand.Parameters(725).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(726).Value = CType(Original_DataCreazione.Value,Date)
+                Me.Adapter.DeleteCommand.Parameters(726).Value = CType(Original_salt.Value,Boolean)
             Else
                 Me.Adapter.DeleteCommand.Parameters(725).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(726).Value = Global.System.DBNull.Value
             End If
-            If (Original_UtenteCreazione.HasValue = true) Then
+            If (Original_agrw.HasValue = true) Then
                 Me.Adapter.DeleteCommand.Parameters(727).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(728).Value = CType(Original_UtenteCreazione.Value,Integer)
+                Me.Adapter.DeleteCommand.Parameters(728).Value = CType(Original_agrw.Value,Double)
             Else
                 Me.Adapter.DeleteCommand.Parameters(727).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(728).Value = Global.System.DBNull.Value
             End If
-            If (Original_DataAggiornamento.HasValue = true) Then
+            If (Original_indw.HasValue = true) Then
                 Me.Adapter.DeleteCommand.Parameters(729).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(730).Value = CType(Original_DataAggiornamento.Value,Date)
+                Me.Adapter.DeleteCommand.Parameters(730).Value = CType(Original_indw.Value,Double)
             Else
                 Me.Adapter.DeleteCommand.Parameters(729).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(730).Value = Global.System.DBNull.Value
             End If
-            If (Original_UtenteAggiornamento.HasValue = true) Then
+            If (Original_lanw.HasValue = true) Then
                 Me.Adapter.DeleteCommand.Parameters(731).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(732).Value = CType(Original_UtenteAggiornamento.Value,Integer)
+                Me.Adapter.DeleteCommand.Parameters(732).Value = CType(Original_lanw.Value,Double)
             Else
                 Me.Adapter.DeleteCommand.Parameters(731).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(732).Value = Global.System.DBNull.Value
             End If
-            If (Original_Annullato.HasValue = true) Then
+            If (Original_DataCreazione.HasValue = true) Then
                 Me.Adapter.DeleteCommand.Parameters(733).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(734).Value = CType(Original_Annullato.Value,Boolean)
+                Me.Adapter.DeleteCommand.Parameters(734).Value = CType(Original_DataCreazione.Value,Date)
             Else
                 Me.Adapter.DeleteCommand.Parameters(733).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(734).Value = Global.System.DBNull.Value
             End If
-            If (Original_DataEstrazione.HasValue = true) Then
+            If (Original_UtenteCreazione.HasValue = true) Then
                 Me.Adapter.DeleteCommand.Parameters(735).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(736).Value = CType(Original_DataEstrazione.Value,Date)
+                Me.Adapter.DeleteCommand.Parameters(736).Value = CType(Original_UtenteCreazione.Value,Integer)
             Else
                 Me.Adapter.DeleteCommand.Parameters(735).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(736).Value = Global.System.DBNull.Value
+            End If
+            If (Original_DataAggiornamento.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(737).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(738).Value = CType(Original_DataAggiornamento.Value,Date)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(737).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(738).Value = Global.System.DBNull.Value
+            End If
+            If (Original_UtenteAggiornamento.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(739).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(740).Value = CType(Original_UtenteAggiornamento.Value,Integer)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(739).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(740).Value = Global.System.DBNull.Value
+            End If
+            If (Original_Annullato.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(741).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(742).Value = CType(Original_Annullato.Value,Boolean)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(741).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(742).Value = Global.System.DBNull.Value
+            End If
+            If (Original_DataEstrazione.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(743).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(744).Value = CType(Original_DataEstrazione.Value,Date)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(743).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(744).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -22943,6 +23232,10 @@ Namespace DSDataTableAdapters
                     ByVal sbqi As Global.System.Nullable(Of Double),  _
                     ByVal ssqi As Global.System.Nullable(Of Double),  _
                     ByVal smqi As Global.System.Nullable(Of Double),  _
+                    ByVal salt As Global.System.Nullable(Of Boolean),  _
+                    ByVal agrw As Global.System.Nullable(Of Double),  _
+                    ByVal indw As Global.System.Nullable(Of Double),  _
+                    ByVal lanw As Global.System.Nullable(Of Double),  _
                     ByVal DataCreazione As Global.System.Nullable(Of Date),  _
                     ByVal UtenteCreazione As Global.System.Nullable(Of Integer),  _
                     ByVal DataAggiornamento As Global.System.Nullable(Of Date),  _
@@ -24759,35 +25052,55 @@ Namespace DSDataTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(361).Value = Global.System.DBNull.Value
             End If
-            If (DataCreazione.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(362).Value = CType(DataCreazione.Value,Date)
+            If (salt.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(362).Value = CType(salt.Value,Boolean)
             Else
                 Me.Adapter.InsertCommand.Parameters(362).Value = Global.System.DBNull.Value
             End If
-            If (UtenteCreazione.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(363).Value = CType(UtenteCreazione.Value,Integer)
+            If (agrw.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(363).Value = CType(agrw.Value,Double)
             Else
                 Me.Adapter.InsertCommand.Parameters(363).Value = Global.System.DBNull.Value
             End If
-            If (DataAggiornamento.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(364).Value = CType(DataAggiornamento.Value,Date)
+            If (indw.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(364).Value = CType(indw.Value,Double)
             Else
                 Me.Adapter.InsertCommand.Parameters(364).Value = Global.System.DBNull.Value
             End If
-            If (UtenteAggiornamento.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(365).Value = CType(UtenteAggiornamento.Value,Integer)
+            If (lanw.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(365).Value = CType(lanw.Value,Double)
             Else
                 Me.Adapter.InsertCommand.Parameters(365).Value = Global.System.DBNull.Value
             End If
-            If (Annullato.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(366).Value = CType(Annullato.Value,Boolean)
+            If (DataCreazione.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(366).Value = CType(DataCreazione.Value,Date)
             Else
                 Me.Adapter.InsertCommand.Parameters(366).Value = Global.System.DBNull.Value
             End If
-            If (DataEstrazione.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(367).Value = CType(DataEstrazione.Value,Date)
+            If (UtenteCreazione.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(367).Value = CType(UtenteCreazione.Value,Integer)
             Else
                 Me.Adapter.InsertCommand.Parameters(367).Value = Global.System.DBNull.Value
+            End If
+            If (DataAggiornamento.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(368).Value = CType(DataAggiornamento.Value,Date)
+            Else
+                Me.Adapter.InsertCommand.Parameters(368).Value = Global.System.DBNull.Value
+            End If
+            If (UtenteAggiornamento.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(369).Value = CType(UtenteAggiornamento.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(369).Value = Global.System.DBNull.Value
+            End If
+            If (Annullato.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(370).Value = CType(Annullato.Value,Boolean)
+            Else
+                Me.Adapter.InsertCommand.Parameters(370).Value = Global.System.DBNull.Value
+            End If
+            If (DataEstrazione.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(371).Value = CType(DataEstrazione.Value,Date)
+            Else
+                Me.Adapter.InsertCommand.Parameters(371).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -25171,6 +25484,10 @@ Namespace DSDataTableAdapters
                     ByVal sbqi As Global.System.Nullable(Of Double),  _
                     ByVal ssqi As Global.System.Nullable(Of Double),  _
                     ByVal smqi As Global.System.Nullable(Of Double),  _
+                    ByVal salt As Global.System.Nullable(Of Boolean),  _
+                    ByVal agrw As Global.System.Nullable(Of Double),  _
+                    ByVal indw As Global.System.Nullable(Of Double),  _
+                    ByVal lanw As Global.System.Nullable(Of Double),  _
                     ByVal DataCreazione As Global.System.Nullable(Of Date),  _
                     ByVal UtenteCreazione As Global.System.Nullable(Of Integer),  _
                     ByVal DataAggiornamento As Global.System.Nullable(Of Date),  _
@@ -25540,6 +25857,10 @@ Namespace DSDataTableAdapters
                     ByVal Original_sbqi As Global.System.Nullable(Of Double),  _
                     ByVal Original_ssqi As Global.System.Nullable(Of Double),  _
                     ByVal Original_smqi As Global.System.Nullable(Of Double),  _
+                    ByVal Original_salt As Global.System.Nullable(Of Boolean),  _
+                    ByVal Original_agrw As Global.System.Nullable(Of Double),  _
+                    ByVal Original_indw As Global.System.Nullable(Of Double),  _
+                    ByVal Original_lanw As Global.System.Nullable(Of Double),  _
                     ByVal Original_DataCreazione As Global.System.Nullable(Of Date),  _
                     ByVal Original_UtenteCreazione As Global.System.Nullable(Of Integer),  _
                     ByVal Original_DataAggiornamento As Global.System.Nullable(Of Date),  _
@@ -27357,2614 +27678,2662 @@ Namespace DSDataTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(361).Value = Global.System.DBNull.Value
             End If
-            If (DataCreazione.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(362).Value = CType(DataCreazione.Value,Date)
+            If (salt.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(362).Value = CType(salt.Value,Boolean)
             Else
                 Me.Adapter.UpdateCommand.Parameters(362).Value = Global.System.DBNull.Value
             End If
-            If (UtenteCreazione.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(363).Value = CType(UtenteCreazione.Value,Integer)
+            If (agrw.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(363).Value = CType(agrw.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(363).Value = Global.System.DBNull.Value
             End If
-            If (DataAggiornamento.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(364).Value = CType(DataAggiornamento.Value,Date)
+            If (indw.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(364).Value = CType(indw.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(364).Value = Global.System.DBNull.Value
             End If
-            If (UtenteAggiornamento.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(365).Value = CType(UtenteAggiornamento.Value,Integer)
+            If (lanw.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(365).Value = CType(lanw.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(365).Value = Global.System.DBNull.Value
             End If
-            If (Annullato.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(366).Value = CType(Annullato.Value,Boolean)
+            If (DataCreazione.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(366).Value = CType(DataCreazione.Value,Date)
             Else
                 Me.Adapter.UpdateCommand.Parameters(366).Value = Global.System.DBNull.Value
             End If
-            If (DataEstrazione.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(367).Value = CType(DataEstrazione.Value,Date)
+            If (UtenteCreazione.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(367).Value = CType(UtenteCreazione.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(367).Value = Global.System.DBNull.Value
             End If
-            Me.Adapter.UpdateCommand.Parameters(368).Value = CType(Original_datID,Integer)
-            If (Original_indcc1_1.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(369).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(370).Value = CType(Original_indcc1_1.Value,Double)
+            If (DataAggiornamento.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(368).Value = CType(DataAggiornamento.Value,Date)
             Else
-                Me.Adapter.UpdateCommand.Parameters(369).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(368).Value = Global.System.DBNull.Value
+            End If
+            If (UtenteAggiornamento.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(369).Value = CType(UtenteAggiornamento.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(369).Value = Global.System.DBNull.Value
+            End If
+            If (Annullato.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(370).Value = CType(Annullato.Value,Boolean)
+            Else
                 Me.Adapter.UpdateCommand.Parameters(370).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc2_1.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(371).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(372).Value = CType(Original_indcc2_1.Value,Double)
+            If (DataEstrazione.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(371).Value = CType(DataEstrazione.Value,Date)
             Else
-                Me.Adapter.UpdateCommand.Parameters(371).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(372).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(371).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc3_1.HasValue = true) Then
+            Me.Adapter.UpdateCommand.Parameters(372).Value = CType(Original_datID,Integer)
+            If (Original_indcc1_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(373).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(374).Value = CType(Original_indcc3_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(374).Value = CType(Original_indcc1_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(373).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(374).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc4_1.HasValue = true) Then
+            If (Original_indcc2_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(375).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(376).Value = CType(Original_indcc4_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(376).Value = CType(Original_indcc2_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(375).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(376).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc5_1.HasValue = true) Then
+            If (Original_indcc3_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(377).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(378).Value = CType(Original_indcc5_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(378).Value = CType(Original_indcc3_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(377).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(378).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc6_1.HasValue = true) Then
+            If (Original_indcc4_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(379).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(380).Value = CType(Original_indcc6_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(380).Value = CType(Original_indcc4_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(379).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(380).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc7_1.HasValue = true) Then
+            If (Original_indcc5_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(381).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(382).Value = CType(Original_indcc7_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(382).Value = CType(Original_indcc5_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(381).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(382).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc8_1.HasValue = true) Then
+            If (Original_indcc6_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(383).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(384).Value = CType(Original_indcc8_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(384).Value = CType(Original_indcc6_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(383).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(384).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc9_1.HasValue = true) Then
+            If (Original_indcc7_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(385).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(386).Value = CType(Original_indcc9_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(386).Value = CType(Original_indcc7_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(385).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(386).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc10_1.HasValue = true) Then
+            If (Original_indcc8_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(387).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(388).Value = CType(Original_indcc10_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(388).Value = CType(Original_indcc8_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(387).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(388).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc11_1.HasValue = true) Then
+            If (Original_indcc9_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(389).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(390).Value = CType(Original_indcc11_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(390).Value = CType(Original_indcc9_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(389).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(390).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc12_1.HasValue = true) Then
+            If (Original_indcc10_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(391).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(392).Value = CType(Original_indcc12_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(392).Value = CType(Original_indcc10_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(391).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(392).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc13_1.HasValue = true) Then
+            If (Original_indcc11_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(393).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(394).Value = CType(Original_indcc13_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(394).Value = CType(Original_indcc11_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(393).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(394).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc14_1.HasValue = true) Then
+            If (Original_indcc12_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(395).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(396).Value = CType(Original_indcc14_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(396).Value = CType(Original_indcc12_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(395).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(396).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc15_1.HasValue = true) Then
+            If (Original_indcc13_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(397).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(398).Value = CType(Original_indcc15_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(398).Value = CType(Original_indcc13_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(397).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(398).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc1_2.HasValue = true) Then
+            If (Original_indcc14_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(399).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(400).Value = CType(Original_indcc1_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(400).Value = CType(Original_indcc14_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(399).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(400).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc2_2.HasValue = true) Then
+            If (Original_indcc15_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(401).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(402).Value = CType(Original_indcc2_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(402).Value = CType(Original_indcc15_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(401).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(402).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc3_2.HasValue = true) Then
+            If (Original_indcc1_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(403).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(404).Value = CType(Original_indcc3_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(404).Value = CType(Original_indcc1_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(403).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(404).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc4_2.HasValue = true) Then
+            If (Original_indcc2_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(405).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(406).Value = CType(Original_indcc4_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(406).Value = CType(Original_indcc2_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(405).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(406).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc5_2.HasValue = true) Then
+            If (Original_indcc3_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(407).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(408).Value = CType(Original_indcc5_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(408).Value = CType(Original_indcc3_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(407).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(408).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc6_2.HasValue = true) Then
+            If (Original_indcc4_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(409).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(410).Value = CType(Original_indcc6_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(410).Value = CType(Original_indcc4_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(409).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(410).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc7_2.HasValue = true) Then
+            If (Original_indcc5_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(411).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(412).Value = CType(Original_indcc7_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(412).Value = CType(Original_indcc5_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(411).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(412).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc8_2.HasValue = true) Then
+            If (Original_indcc6_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(413).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(414).Value = CType(Original_indcc8_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(414).Value = CType(Original_indcc6_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(413).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(414).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc9_2.HasValue = true) Then
+            If (Original_indcc7_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(415).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(416).Value = CType(Original_indcc9_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(416).Value = CType(Original_indcc7_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(415).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(416).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc10_2.HasValue = true) Then
+            If (Original_indcc8_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(417).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(418).Value = CType(Original_indcc10_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(418).Value = CType(Original_indcc8_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(417).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(418).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc11_2.HasValue = true) Then
+            If (Original_indcc9_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(419).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(420).Value = CType(Original_indcc11_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(420).Value = CType(Original_indcc9_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(419).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(420).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc12_2.HasValue = true) Then
+            If (Original_indcc10_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(421).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(422).Value = CType(Original_indcc12_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(422).Value = CType(Original_indcc10_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(421).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(422).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc13_2.HasValue = true) Then
+            If (Original_indcc11_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(423).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(424).Value = CType(Original_indcc13_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(424).Value = CType(Original_indcc11_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(423).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(424).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc14_2.HasValue = true) Then
+            If (Original_indcc12_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(425).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(426).Value = CType(Original_indcc14_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(426).Value = CType(Original_indcc12_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(425).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(426).Value = Global.System.DBNull.Value
             End If
-            If (Original_indcc15_2.HasValue = true) Then
+            If (Original_indcc13_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(427).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(428).Value = CType(Original_indcc15_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(428).Value = CType(Original_indcc13_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(427).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(428).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc1_1.HasValue = true) Then
+            If (Original_indcc14_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(429).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(430).Value = CType(Original_agrcc1_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(430).Value = CType(Original_indcc14_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(429).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(430).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc2_1.HasValue = true) Then
+            If (Original_indcc15_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(431).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(432).Value = CType(Original_agrcc2_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(432).Value = CType(Original_indcc15_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(431).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(432).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc3_1.HasValue = true) Then
+            If (Original_agrcc1_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(433).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(434).Value = CType(Original_agrcc3_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(434).Value = CType(Original_agrcc1_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(433).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(434).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc4_1.HasValue = true) Then
+            If (Original_agrcc2_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(435).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(436).Value = CType(Original_agrcc4_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(436).Value = CType(Original_agrcc2_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(435).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(436).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc5_1.HasValue = true) Then
+            If (Original_agrcc3_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(437).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(438).Value = CType(Original_agrcc5_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(438).Value = CType(Original_agrcc3_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(437).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(438).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc6_1.HasValue = true) Then
+            If (Original_agrcc4_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(439).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(440).Value = CType(Original_agrcc6_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(440).Value = CType(Original_agrcc4_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(439).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(440).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc7_1.HasValue = true) Then
+            If (Original_agrcc5_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(441).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(442).Value = CType(Original_agrcc7_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(442).Value = CType(Original_agrcc5_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(441).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(442).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc8_1.HasValue = true) Then
+            If (Original_agrcc6_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(443).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(444).Value = CType(Original_agrcc8_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(444).Value = CType(Original_agrcc6_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(443).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(444).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc9_1.HasValue = true) Then
+            If (Original_agrcc7_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(445).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(446).Value = CType(Original_agrcc9_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(446).Value = CType(Original_agrcc7_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(445).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(446).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc10_1.HasValue = true) Then
+            If (Original_agrcc8_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(447).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(448).Value = CType(Original_agrcc10_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(448).Value = CType(Original_agrcc8_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(447).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(448).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc11_1.HasValue = true) Then
+            If (Original_agrcc9_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(449).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(450).Value = CType(Original_agrcc11_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(450).Value = CType(Original_agrcc9_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(449).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(450).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc12_1.HasValue = true) Then
+            If (Original_agrcc10_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(451).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(452).Value = CType(Original_agrcc12_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(452).Value = CType(Original_agrcc10_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(451).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(452).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc13_1.HasValue = true) Then
+            If (Original_agrcc11_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(453).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(454).Value = CType(Original_agrcc13_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(454).Value = CType(Original_agrcc11_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(453).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(454).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc14_1.HasValue = true) Then
+            If (Original_agrcc12_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(455).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(456).Value = CType(Original_agrcc14_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(456).Value = CType(Original_agrcc12_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(455).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(456).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc15_1.HasValue = true) Then
+            If (Original_agrcc13_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(457).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(458).Value = CType(Original_agrcc15_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(458).Value = CType(Original_agrcc13_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(457).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(458).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc1_2.HasValue = true) Then
+            If (Original_agrcc14_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(459).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(460).Value = CType(Original_agrcc1_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(460).Value = CType(Original_agrcc14_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(459).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(460).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc2_2.HasValue = true) Then
+            If (Original_agrcc15_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(461).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(462).Value = CType(Original_agrcc2_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(462).Value = CType(Original_agrcc15_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(461).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(462).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc3_2.HasValue = true) Then
+            If (Original_agrcc1_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(463).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(464).Value = CType(Original_agrcc3_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(464).Value = CType(Original_agrcc1_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(463).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(464).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc4_2.HasValue = true) Then
+            If (Original_agrcc2_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(465).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(466).Value = CType(Original_agrcc4_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(466).Value = CType(Original_agrcc2_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(465).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(466).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc5_2.HasValue = true) Then
+            If (Original_agrcc3_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(467).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(468).Value = CType(Original_agrcc5_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(468).Value = CType(Original_agrcc3_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(467).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(468).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc6_2.HasValue = true) Then
+            If (Original_agrcc4_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(469).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(470).Value = CType(Original_agrcc6_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(470).Value = CType(Original_agrcc4_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(469).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(470).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc7_2.HasValue = true) Then
+            If (Original_agrcc5_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(471).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(472).Value = CType(Original_agrcc7_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(472).Value = CType(Original_agrcc5_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(471).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(472).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc8_2.HasValue = true) Then
+            If (Original_agrcc6_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(473).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(474).Value = CType(Original_agrcc8_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(474).Value = CType(Original_agrcc6_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(473).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(474).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc9_2.HasValue = true) Then
+            If (Original_agrcc7_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(475).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(476).Value = CType(Original_agrcc9_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(476).Value = CType(Original_agrcc7_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(475).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(476).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc10_2.HasValue = true) Then
+            If (Original_agrcc8_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(477).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(478).Value = CType(Original_agrcc10_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(478).Value = CType(Original_agrcc8_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(477).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(478).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc11_2.HasValue = true) Then
+            If (Original_agrcc9_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(479).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(480).Value = CType(Original_agrcc11_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(480).Value = CType(Original_agrcc9_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(479).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(480).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc12_2.HasValue = true) Then
+            If (Original_agrcc10_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(481).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(482).Value = CType(Original_agrcc12_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(482).Value = CType(Original_agrcc10_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(481).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(482).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc13_2.HasValue = true) Then
+            If (Original_agrcc11_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(483).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(484).Value = CType(Original_agrcc13_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(484).Value = CType(Original_agrcc11_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(483).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(484).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc14_2.HasValue = true) Then
+            If (Original_agrcc12_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(485).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(486).Value = CType(Original_agrcc14_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(486).Value = CType(Original_agrcc12_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(485).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(486).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrcc15_2.HasValue = true) Then
+            If (Original_agrcc13_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(487).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(488).Value = CType(Original_agrcc15_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(488).Value = CType(Original_agrcc13_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(487).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(488).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc1_1.HasValue = true) Then
+            If (Original_agrcc14_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(489).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(490).Value = CType(Original_lancc1_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(490).Value = CType(Original_agrcc14_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(489).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(490).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc2_1.HasValue = true) Then
+            If (Original_agrcc15_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(491).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(492).Value = CType(Original_lancc2_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(492).Value = CType(Original_agrcc15_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(491).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(492).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc3_1.HasValue = true) Then
+            If (Original_lancc1_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(493).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(494).Value = CType(Original_lancc3_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(494).Value = CType(Original_lancc1_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(493).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(494).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc4_1.HasValue = true) Then
+            If (Original_lancc2_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(495).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(496).Value = CType(Original_lancc4_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(496).Value = CType(Original_lancc2_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(495).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(496).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc5_1.HasValue = true) Then
+            If (Original_lancc3_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(497).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(498).Value = CType(Original_lancc5_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(498).Value = CType(Original_lancc3_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(497).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(498).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc6_1.HasValue = true) Then
+            If (Original_lancc4_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(499).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(500).Value = CType(Original_lancc6_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(500).Value = CType(Original_lancc4_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(499).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(500).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc7_1.HasValue = true) Then
+            If (Original_lancc5_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(501).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(502).Value = CType(Original_lancc7_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(502).Value = CType(Original_lancc5_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(501).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(502).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc8_1.HasValue = true) Then
+            If (Original_lancc6_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(503).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(504).Value = CType(Original_lancc8_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(504).Value = CType(Original_lancc6_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(503).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(504).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc9_1.HasValue = true) Then
+            If (Original_lancc7_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(505).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(506).Value = CType(Original_lancc9_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(506).Value = CType(Original_lancc7_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(505).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(506).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc10_1.HasValue = true) Then
+            If (Original_lancc8_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(507).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(508).Value = CType(Original_lancc10_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(508).Value = CType(Original_lancc8_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(507).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(508).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc11_1.HasValue = true) Then
+            If (Original_lancc9_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(509).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(510).Value = CType(Original_lancc11_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(510).Value = CType(Original_lancc9_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(509).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(510).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc12_1.HasValue = true) Then
+            If (Original_lancc10_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(511).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(512).Value = CType(Original_lancc12_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(512).Value = CType(Original_lancc10_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(511).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(512).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc13_1.HasValue = true) Then
+            If (Original_lancc11_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(513).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(514).Value = CType(Original_lancc13_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(514).Value = CType(Original_lancc11_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(513).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(514).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc14_1.HasValue = true) Then
+            If (Original_lancc12_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(515).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(516).Value = CType(Original_lancc14_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(516).Value = CType(Original_lancc12_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(515).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(516).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc15_1.HasValue = true) Then
+            If (Original_lancc13_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(517).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(518).Value = CType(Original_lancc15_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(518).Value = CType(Original_lancc13_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(517).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(518).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc1_2.HasValue = true) Then
+            If (Original_lancc14_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(519).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(520).Value = CType(Original_lancc1_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(520).Value = CType(Original_lancc14_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(519).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(520).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc2_2.HasValue = true) Then
+            If (Original_lancc15_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(521).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(522).Value = CType(Original_lancc2_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(522).Value = CType(Original_lancc15_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(521).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(522).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc3_2.HasValue = true) Then
+            If (Original_lancc1_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(523).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(524).Value = CType(Original_lancc3_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(524).Value = CType(Original_lancc1_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(523).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(524).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc4_2.HasValue = true) Then
+            If (Original_lancc2_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(525).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(526).Value = CType(Original_lancc4_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(526).Value = CType(Original_lancc2_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(525).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(526).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc5_2.HasValue = true) Then
+            If (Original_lancc3_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(527).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(528).Value = CType(Original_lancc5_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(528).Value = CType(Original_lancc3_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(527).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(528).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc6_2.HasValue = true) Then
+            If (Original_lancc4_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(529).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(530).Value = CType(Original_lancc6_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(530).Value = CType(Original_lancc4_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(529).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(530).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc7_2.HasValue = true) Then
+            If (Original_lancc5_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(531).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(532).Value = CType(Original_lancc7_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(532).Value = CType(Original_lancc5_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(531).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(532).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc8_2.HasValue = true) Then
+            If (Original_lancc6_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(533).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(534).Value = CType(Original_lancc8_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(534).Value = CType(Original_lancc6_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(533).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(534).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc9_2.HasValue = true) Then
+            If (Original_lancc7_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(535).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(536).Value = CType(Original_lancc9_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(536).Value = CType(Original_lancc7_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(535).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(536).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc10_2.HasValue = true) Then
+            If (Original_lancc8_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(537).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(538).Value = CType(Original_lancc10_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(538).Value = CType(Original_lancc8_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(537).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(538).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc11_2.HasValue = true) Then
+            If (Original_lancc9_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(539).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(540).Value = CType(Original_lancc11_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(540).Value = CType(Original_lancc9_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(539).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(540).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc12_2.HasValue = true) Then
+            If (Original_lancc10_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(541).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(542).Value = CType(Original_lancc12_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(542).Value = CType(Original_lancc10_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(541).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(542).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc13_2.HasValue = true) Then
+            If (Original_lancc11_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(543).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(544).Value = CType(Original_lancc13_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(544).Value = CType(Original_lancc11_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(543).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(544).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc14_2.HasValue = true) Then
+            If (Original_lancc12_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(545).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(546).Value = CType(Original_lancc14_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(546).Value = CType(Original_lancc12_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(545).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(546).Value = Global.System.DBNull.Value
             End If
-            If (Original_lancc15_2.HasValue = true) Then
+            If (Original_lancc13_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(547).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(548).Value = CType(Original_lancc15_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(548).Value = CType(Original_lancc13_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(547).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(548).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi1_1.HasValue = true) Then
+            If (Original_lancc14_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(549).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(550).Value = CType(Original_lbqi1_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(550).Value = CType(Original_lancc14_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(549).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(550).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi2_1.HasValue = true) Then
+            If (Original_lancc15_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(551).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(552).Value = CType(Original_lbqi2_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(552).Value = CType(Original_lancc15_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(551).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(552).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi3_1.HasValue = true) Then
+            If (Original_lbqi1_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(553).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(554).Value = CType(Original_lbqi3_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(554).Value = CType(Original_lbqi1_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(553).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(554).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi4_1.HasValue = true) Then
+            If (Original_lbqi2_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(555).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(556).Value = CType(Original_lbqi4_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(556).Value = CType(Original_lbqi2_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(555).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(556).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi5_1.HasValue = true) Then
+            If (Original_lbqi3_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(557).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(558).Value = CType(Original_lbqi5_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(558).Value = CType(Original_lbqi3_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(557).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(558).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi6_1.HasValue = true) Then
+            If (Original_lbqi4_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(559).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(560).Value = CType(Original_lbqi6_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(560).Value = CType(Original_lbqi4_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(559).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(560).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi7_1.HasValue = true) Then
+            If (Original_lbqi5_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(561).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(562).Value = CType(Original_lbqi7_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(562).Value = CType(Original_lbqi5_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(561).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(562).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi8_1.HasValue = true) Then
+            If (Original_lbqi6_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(563).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(564).Value = CType(Original_lbqi8_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(564).Value = CType(Original_lbqi6_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(563).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(564).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi9_1.HasValue = true) Then
+            If (Original_lbqi7_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(565).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(566).Value = CType(Original_lbqi9_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(566).Value = CType(Original_lbqi7_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(565).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(566).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi10_1.HasValue = true) Then
+            If (Original_lbqi8_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(567).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(568).Value = CType(Original_lbqi10_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(568).Value = CType(Original_lbqi8_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(567).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(568).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi11_1.HasValue = true) Then
+            If (Original_lbqi9_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(569).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(570).Value = CType(Original_lbqi11_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(570).Value = CType(Original_lbqi9_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(569).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(570).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi12_1.HasValue = true) Then
+            If (Original_lbqi10_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(571).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(572).Value = CType(Original_lbqi12_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(572).Value = CType(Original_lbqi10_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(571).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(572).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi13_1.HasValue = true) Then
+            If (Original_lbqi11_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(573).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(574).Value = CType(Original_lbqi13_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(574).Value = CType(Original_lbqi11_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(573).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(574).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi14_1.HasValue = true) Then
+            If (Original_lbqi12_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(575).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(576).Value = CType(Original_lbqi14_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(576).Value = CType(Original_lbqi12_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(575).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(576).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi15_1.HasValue = true) Then
+            If (Original_lbqi13_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(577).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(578).Value = CType(Original_lbqi15_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(578).Value = CType(Original_lbqi13_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(577).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(578).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi1_2.HasValue = true) Then
+            If (Original_lbqi14_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(579).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(580).Value = CType(Original_lbqi1_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(580).Value = CType(Original_lbqi14_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(579).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(580).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi2_2.HasValue = true) Then
+            If (Original_lbqi15_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(581).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(582).Value = CType(Original_lbqi2_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(582).Value = CType(Original_lbqi15_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(581).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(582).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi3_2.HasValue = true) Then
+            If (Original_lbqi1_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(583).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(584).Value = CType(Original_lbqi3_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(584).Value = CType(Original_lbqi1_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(583).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(584).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi4_2.HasValue = true) Then
+            If (Original_lbqi2_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(585).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(586).Value = CType(Original_lbqi4_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(586).Value = CType(Original_lbqi2_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(585).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(586).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi5_2.HasValue = true) Then
+            If (Original_lbqi3_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(587).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(588).Value = CType(Original_lbqi5_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(588).Value = CType(Original_lbqi3_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(587).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(588).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi6_2.HasValue = true) Then
+            If (Original_lbqi4_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(589).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(590).Value = CType(Original_lbqi6_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(590).Value = CType(Original_lbqi4_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(589).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(590).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi7_2.HasValue = true) Then
+            If (Original_lbqi5_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(591).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(592).Value = CType(Original_lbqi7_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(592).Value = CType(Original_lbqi5_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(591).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(592).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi8_2.HasValue = true) Then
+            If (Original_lbqi6_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(593).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(594).Value = CType(Original_lbqi8_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(594).Value = CType(Original_lbqi6_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(593).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(594).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi9_2.HasValue = true) Then
+            If (Original_lbqi7_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(595).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(596).Value = CType(Original_lbqi9_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(596).Value = CType(Original_lbqi7_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(595).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(596).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi10_2.HasValue = true) Then
+            If (Original_lbqi8_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(597).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(598).Value = CType(Original_lbqi10_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(598).Value = CType(Original_lbqi8_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(597).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(598).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi11_2.HasValue = true) Then
+            If (Original_lbqi9_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(599).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(600).Value = CType(Original_lbqi11_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(600).Value = CType(Original_lbqi9_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(599).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(600).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi12_2.HasValue = true) Then
+            If (Original_lbqi10_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(601).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(602).Value = CType(Original_lbqi12_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(602).Value = CType(Original_lbqi10_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(601).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(602).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi13_2.HasValue = true) Then
+            If (Original_lbqi11_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(603).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(604).Value = CType(Original_lbqi13_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(604).Value = CType(Original_lbqi11_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(603).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(604).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi14_2.HasValue = true) Then
+            If (Original_lbqi12_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(605).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(606).Value = CType(Original_lbqi14_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(606).Value = CType(Original_lbqi12_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(605).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(606).Value = Global.System.DBNull.Value
             End If
-            If (Original_lbqi15_2.HasValue = true) Then
+            If (Original_lbqi13_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(607).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(608).Value = CType(Original_lbqi15_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(608).Value = CType(Original_lbqi13_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(607).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(608).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi1_1.HasValue = true) Then
+            If (Original_lbqi14_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(609).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(610).Value = CType(Original_lsqi1_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(610).Value = CType(Original_lbqi14_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(609).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(610).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi2_1.HasValue = true) Then
+            If (Original_lbqi15_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(611).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(612).Value = CType(Original_lsqi2_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(612).Value = CType(Original_lbqi15_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(611).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(612).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi3_1.HasValue = true) Then
+            If (Original_lsqi1_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(613).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(614).Value = CType(Original_lsqi3_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(614).Value = CType(Original_lsqi1_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(613).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(614).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi4_1.HasValue = true) Then
+            If (Original_lsqi2_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(615).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(616).Value = CType(Original_lsqi4_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(616).Value = CType(Original_lsqi2_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(615).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(616).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi5_1.HasValue = true) Then
+            If (Original_lsqi3_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(617).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(618).Value = CType(Original_lsqi5_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(618).Value = CType(Original_lsqi3_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(617).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(618).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi6_1.HasValue = true) Then
+            If (Original_lsqi4_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(619).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(620).Value = CType(Original_lsqi6_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(620).Value = CType(Original_lsqi4_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(619).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(620).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi7_1.HasValue = true) Then
+            If (Original_lsqi5_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(621).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(622).Value = CType(Original_lsqi7_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(622).Value = CType(Original_lsqi5_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(621).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(622).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi8_1.HasValue = true) Then
+            If (Original_lsqi6_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(623).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(624).Value = CType(Original_lsqi8_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(624).Value = CType(Original_lsqi6_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(623).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(624).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi9_1.HasValue = true) Then
+            If (Original_lsqi7_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(625).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(626).Value = CType(Original_lsqi9_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(626).Value = CType(Original_lsqi7_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(625).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(626).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi10_1.HasValue = true) Then
+            If (Original_lsqi8_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(627).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(628).Value = CType(Original_lsqi10_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(628).Value = CType(Original_lsqi8_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(627).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(628).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi11_1.HasValue = true) Then
+            If (Original_lsqi9_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(629).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(630).Value = CType(Original_lsqi11_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(630).Value = CType(Original_lsqi9_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(629).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(630).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi12_1.HasValue = true) Then
+            If (Original_lsqi10_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(631).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(632).Value = CType(Original_lsqi12_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(632).Value = CType(Original_lsqi10_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(631).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(632).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi13_1.HasValue = true) Then
+            If (Original_lsqi11_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(633).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(634).Value = CType(Original_lsqi13_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(634).Value = CType(Original_lsqi11_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(633).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(634).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi14_1.HasValue = true) Then
+            If (Original_lsqi12_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(635).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(636).Value = CType(Original_lsqi14_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(636).Value = CType(Original_lsqi12_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(635).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(636).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi15_1.HasValue = true) Then
+            If (Original_lsqi13_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(637).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(638).Value = CType(Original_lsqi15_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(638).Value = CType(Original_lsqi13_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(637).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(638).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi1_2.HasValue = true) Then
+            If (Original_lsqi14_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(639).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(640).Value = CType(Original_lsqi1_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(640).Value = CType(Original_lsqi14_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(639).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(640).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi2_2.HasValue = true) Then
+            If (Original_lsqi15_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(641).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(642).Value = CType(Original_lsqi2_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(642).Value = CType(Original_lsqi15_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(641).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(642).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi3_2.HasValue = true) Then
+            If (Original_lsqi1_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(643).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(644).Value = CType(Original_lsqi3_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(644).Value = CType(Original_lsqi1_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(643).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(644).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi4_2.HasValue = true) Then
+            If (Original_lsqi2_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(645).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(646).Value = CType(Original_lsqi4_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(646).Value = CType(Original_lsqi2_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(645).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(646).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi5_2.HasValue = true) Then
+            If (Original_lsqi3_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(647).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(648).Value = CType(Original_lsqi5_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(648).Value = CType(Original_lsqi3_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(647).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(648).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi6_2.HasValue = true) Then
+            If (Original_lsqi4_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(649).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(650).Value = CType(Original_lsqi6_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(650).Value = CType(Original_lsqi4_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(649).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(650).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi7_2.HasValue = true) Then
+            If (Original_lsqi5_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(651).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(652).Value = CType(Original_lsqi7_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(652).Value = CType(Original_lsqi5_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(651).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(652).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi8_2.HasValue = true) Then
+            If (Original_lsqi6_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(653).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(654).Value = CType(Original_lsqi8_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(654).Value = CType(Original_lsqi6_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(653).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(654).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi9_2.HasValue = true) Then
+            If (Original_lsqi7_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(655).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(656).Value = CType(Original_lsqi9_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(656).Value = CType(Original_lsqi7_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(655).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(656).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi10_2.HasValue = true) Then
+            If (Original_lsqi8_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(657).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(658).Value = CType(Original_lsqi10_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(658).Value = CType(Original_lsqi8_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(657).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(658).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi11_2.HasValue = true) Then
+            If (Original_lsqi9_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(659).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(660).Value = CType(Original_lsqi11_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(660).Value = CType(Original_lsqi9_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(659).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(660).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi12_2.HasValue = true) Then
+            If (Original_lsqi10_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(661).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(662).Value = CType(Original_lsqi12_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(662).Value = CType(Original_lsqi10_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(661).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(662).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi13_2.HasValue = true) Then
+            If (Original_lsqi11_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(663).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(664).Value = CType(Original_lsqi13_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(664).Value = CType(Original_lsqi11_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(663).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(664).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi14_2.HasValue = true) Then
+            If (Original_lsqi12_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(665).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(666).Value = CType(Original_lsqi14_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(666).Value = CType(Original_lsqi12_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(665).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(666).Value = Global.System.DBNull.Value
             End If
-            If (Original_lsqi15_2.HasValue = true) Then
+            If (Original_lsqi13_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(667).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(668).Value = CType(Original_lsqi15_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(668).Value = CType(Original_lsqi13_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(667).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(668).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi1_1.HasValue = true) Then
+            If (Original_lsqi14_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(669).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(670).Value = CType(Original_lmqi1_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(670).Value = CType(Original_lsqi14_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(669).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(670).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi2_1.HasValue = true) Then
+            If (Original_lsqi15_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(671).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(672).Value = CType(Original_lmqi2_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(672).Value = CType(Original_lsqi15_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(671).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(672).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi3_1.HasValue = true) Then
+            If (Original_lmqi1_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(673).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(674).Value = CType(Original_lmqi3_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(674).Value = CType(Original_lmqi1_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(673).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(674).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi4_1.HasValue = true) Then
+            If (Original_lmqi2_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(675).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(676).Value = CType(Original_lmqi4_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(676).Value = CType(Original_lmqi2_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(675).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(676).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi5_1.HasValue = true) Then
+            If (Original_lmqi3_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(677).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(678).Value = CType(Original_lmqi5_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(678).Value = CType(Original_lmqi3_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(677).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(678).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi6_1.HasValue = true) Then
+            If (Original_lmqi4_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(679).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(680).Value = CType(Original_lmqi6_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(680).Value = CType(Original_lmqi4_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(679).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(680).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi7_1.HasValue = true) Then
+            If (Original_lmqi5_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(681).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(682).Value = CType(Original_lmqi7_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(682).Value = CType(Original_lmqi5_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(681).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(682).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi8_1.HasValue = true) Then
+            If (Original_lmqi6_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(683).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(684).Value = CType(Original_lmqi8_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(684).Value = CType(Original_lmqi6_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(683).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(684).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi9_1.HasValue = true) Then
+            If (Original_lmqi7_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(685).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(686).Value = CType(Original_lmqi9_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(686).Value = CType(Original_lmqi7_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(685).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(686).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi10_1.HasValue = true) Then
+            If (Original_lmqi8_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(687).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(688).Value = CType(Original_lmqi10_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(688).Value = CType(Original_lmqi8_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(687).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(688).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi11_1.HasValue = true) Then
+            If (Original_lmqi9_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(689).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(690).Value = CType(Original_lmqi11_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(690).Value = CType(Original_lmqi9_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(689).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(690).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi12_1.HasValue = true) Then
+            If (Original_lmqi10_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(691).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(692).Value = CType(Original_lmqi12_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(692).Value = CType(Original_lmqi10_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(691).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(692).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi13_1.HasValue = true) Then
+            If (Original_lmqi11_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(693).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(694).Value = CType(Original_lmqi13_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(694).Value = CType(Original_lmqi11_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(693).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(694).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi14_1.HasValue = true) Then
+            If (Original_lmqi12_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(695).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(696).Value = CType(Original_lmqi14_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(696).Value = CType(Original_lmqi12_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(695).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(696).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi15_1.HasValue = true) Then
+            If (Original_lmqi13_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(697).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(698).Value = CType(Original_lmqi15_1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(698).Value = CType(Original_lmqi13_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(697).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(698).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi1_2.HasValue = true) Then
+            If (Original_lmqi14_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(699).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(700).Value = CType(Original_lmqi1_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(700).Value = CType(Original_lmqi14_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(699).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(700).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi2_2.HasValue = true) Then
+            If (Original_lmqi15_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(701).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(702).Value = CType(Original_lmqi2_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(702).Value = CType(Original_lmqi15_1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(701).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(702).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi3_2.HasValue = true) Then
+            If (Original_lmqi1_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(703).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(704).Value = CType(Original_lmqi3_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(704).Value = CType(Original_lmqi1_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(703).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(704).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi4_2.HasValue = true) Then
+            If (Original_lmqi2_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(705).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(706).Value = CType(Original_lmqi4_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(706).Value = CType(Original_lmqi2_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(705).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(706).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi5_2.HasValue = true) Then
+            If (Original_lmqi3_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(707).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(708).Value = CType(Original_lmqi5_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(708).Value = CType(Original_lmqi3_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(707).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(708).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi6_2.HasValue = true) Then
+            If (Original_lmqi4_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(709).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(710).Value = CType(Original_lmqi6_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(710).Value = CType(Original_lmqi4_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(709).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(710).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi7_2.HasValue = true) Then
+            If (Original_lmqi5_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(711).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(712).Value = CType(Original_lmqi7_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(712).Value = CType(Original_lmqi5_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(711).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(712).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi8_2.HasValue = true) Then
+            If (Original_lmqi6_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(713).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(714).Value = CType(Original_lmqi8_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(714).Value = CType(Original_lmqi6_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(713).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(714).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi9_2.HasValue = true) Then
+            If (Original_lmqi7_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(715).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(716).Value = CType(Original_lmqi9_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(716).Value = CType(Original_lmqi7_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(715).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(716).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi10_2.HasValue = true) Then
+            If (Original_lmqi8_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(717).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(718).Value = CType(Original_lmqi10_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(718).Value = CType(Original_lmqi8_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(717).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(718).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi11_2.HasValue = true) Then
+            If (Original_lmqi9_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(719).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(720).Value = CType(Original_lmqi11_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(720).Value = CType(Original_lmqi9_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(719).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(720).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi12_2.HasValue = true) Then
+            If (Original_lmqi10_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(721).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(722).Value = CType(Original_lmqi12_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(722).Value = CType(Original_lmqi10_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(721).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(722).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi13_2.HasValue = true) Then
+            If (Original_lmqi11_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(723).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(724).Value = CType(Original_lmqi13_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(724).Value = CType(Original_lmqi11_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(723).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(724).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi14_2.HasValue = true) Then
+            If (Original_lmqi12_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(725).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(726).Value = CType(Original_lmqi14_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(726).Value = CType(Original_lmqi12_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(725).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(726).Value = Global.System.DBNull.Value
             End If
-            If (Original_lmqi15_2.HasValue = true) Then
+            If (Original_lmqi13_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(727).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(728).Value = CType(Original_lmqi15_2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(728).Value = CType(Original_lmqi13_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(727).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(728).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_1_1.HasValue = true) Then
+            If (Original_lmqi14_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(729).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(730).Value = CType(Original_pop20_1_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(730).Value = CType(Original_lmqi14_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(729).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(730).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_2_1.HasValue = true) Then
+            If (Original_lmqi15_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(731).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(732).Value = CType(Original_pop20_2_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(732).Value = CType(Original_lmqi15_2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(731).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(732).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_3_1.HasValue = true) Then
+            If (Original_pop20_1_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(733).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(734).Value = CType(Original_pop20_3_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(734).Value = CType(Original_pop20_1_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(733).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(734).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_4_1.HasValue = true) Then
+            If (Original_pop20_2_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(735).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(736).Value = CType(Original_pop20_4_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(736).Value = CType(Original_pop20_2_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(735).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(736).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_5_1.HasValue = true) Then
+            If (Original_pop20_3_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(737).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(738).Value = CType(Original_pop20_5_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(738).Value = CType(Original_pop20_3_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(737).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(738).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_6_1.HasValue = true) Then
+            If (Original_pop20_4_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(739).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(740).Value = CType(Original_pop20_6_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(740).Value = CType(Original_pop20_4_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(739).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(740).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_7_1.HasValue = true) Then
+            If (Original_pop20_5_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(741).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(742).Value = CType(Original_pop20_7_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(742).Value = CType(Original_pop20_5_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(741).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(742).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_8_1.HasValue = true) Then
+            If (Original_pop20_6_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(743).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(744).Value = CType(Original_pop20_8_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(744).Value = CType(Original_pop20_6_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(743).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(744).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_9_1.HasValue = true) Then
+            If (Original_pop20_7_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(745).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(746).Value = CType(Original_pop20_9_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(746).Value = CType(Original_pop20_7_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(745).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(746).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_10_1.HasValue = true) Then
+            If (Original_pop20_8_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(747).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(748).Value = CType(Original_pop20_10_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(748).Value = CType(Original_pop20_8_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(747).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(748).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_11_1.HasValue = true) Then
+            If (Original_pop20_9_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(749).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(750).Value = CType(Original_pop20_11_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(750).Value = CType(Original_pop20_9_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(749).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(750).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_12_1.HasValue = true) Then
+            If (Original_pop20_10_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(751).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(752).Value = CType(Original_pop20_12_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(752).Value = CType(Original_pop20_10_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(751).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(752).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_13_1.HasValue = true) Then
+            If (Original_pop20_11_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(753).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(754).Value = CType(Original_pop20_13_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(754).Value = CType(Original_pop20_11_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(753).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(754).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_14_1.HasValue = true) Then
+            If (Original_pop20_12_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(755).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(756).Value = CType(Original_pop20_14_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(756).Value = CType(Original_pop20_12_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(755).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(756).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_15_1.HasValue = true) Then
+            If (Original_pop20_13_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(757).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(758).Value = CType(Original_pop20_15_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(758).Value = CType(Original_pop20_13_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(757).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(758).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_1_2.HasValue = true) Then
+            If (Original_pop20_14_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(759).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(760).Value = CType(Original_pop20_1_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(760).Value = CType(Original_pop20_14_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(759).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(760).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_2_2.HasValue = true) Then
+            If (Original_pop20_15_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(761).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(762).Value = CType(Original_pop20_2_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(762).Value = CType(Original_pop20_15_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(761).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(762).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_3_2.HasValue = true) Then
+            If (Original_pop20_1_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(763).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(764).Value = CType(Original_pop20_3_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(764).Value = CType(Original_pop20_1_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(763).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(764).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_4_2.HasValue = true) Then
+            If (Original_pop20_2_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(765).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(766).Value = CType(Original_pop20_4_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(766).Value = CType(Original_pop20_2_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(765).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(766).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_5_2.HasValue = true) Then
+            If (Original_pop20_3_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(767).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(768).Value = CType(Original_pop20_5_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(768).Value = CType(Original_pop20_3_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(767).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(768).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_6_2.HasValue = true) Then
+            If (Original_pop20_4_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(769).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(770).Value = CType(Original_pop20_6_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(770).Value = CType(Original_pop20_4_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(769).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(770).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_7_2.HasValue = true) Then
+            If (Original_pop20_5_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(771).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(772).Value = CType(Original_pop20_7_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(772).Value = CType(Original_pop20_5_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(771).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(772).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_8_2.HasValue = true) Then
+            If (Original_pop20_6_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(773).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(774).Value = CType(Original_pop20_8_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(774).Value = CType(Original_pop20_6_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(773).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(774).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_9_2.HasValue = true) Then
+            If (Original_pop20_7_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(775).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(776).Value = CType(Original_pop20_9_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(776).Value = CType(Original_pop20_7_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(775).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(776).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_10_2.HasValue = true) Then
+            If (Original_pop20_8_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(777).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(778).Value = CType(Original_pop20_10_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(778).Value = CType(Original_pop20_8_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(777).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(778).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_11_2.HasValue = true) Then
+            If (Original_pop20_9_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(779).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(780).Value = CType(Original_pop20_11_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(780).Value = CType(Original_pop20_9_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(779).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(780).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_12_2.HasValue = true) Then
+            If (Original_pop20_10_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(781).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(782).Value = CType(Original_pop20_12_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(782).Value = CType(Original_pop20_10_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(781).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(782).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_13_2.HasValue = true) Then
+            If (Original_pop20_11_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(783).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(784).Value = CType(Original_pop20_13_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(784).Value = CType(Original_pop20_11_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(783).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(784).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_14_2.HasValue = true) Then
+            If (Original_pop20_12_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(785).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(786).Value = CType(Original_pop20_14_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(786).Value = CType(Original_pop20_12_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(785).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(786).Value = Global.System.DBNull.Value
             End If
-            If (Original_pop20_15_2.HasValue = true) Then
+            If (Original_pop20_13_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(787).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(788).Value = CType(Original_pop20_15_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(788).Value = CType(Original_pop20_13_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(787).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(788).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis1_1.HasValue = true) Then
+            If (Original_pop20_14_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(789).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(790).Value = CType(Original_inddis1_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(790).Value = CType(Original_pop20_14_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(789).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(790).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis2_1.HasValue = true) Then
+            If (Original_pop20_15_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(791).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(792).Value = CType(Original_inddis2_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(792).Value = CType(Original_pop20_15_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(791).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(792).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis3_1.HasValue = true) Then
+            If (Original_inddis1_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(793).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(794).Value = CType(Original_inddis3_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(794).Value = CType(Original_inddis1_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(793).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(794).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis4_1.HasValue = true) Then
+            If (Original_inddis2_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(795).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(796).Value = CType(Original_inddis4_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(796).Value = CType(Original_inddis2_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(795).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(796).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis5_1.HasValue = true) Then
+            If (Original_inddis3_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(797).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(798).Value = CType(Original_inddis5_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(798).Value = CType(Original_inddis3_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(797).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(798).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis6_1.HasValue = true) Then
+            If (Original_inddis4_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(799).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(800).Value = CType(Original_inddis6_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(800).Value = CType(Original_inddis4_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(799).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(800).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis7_1.HasValue = true) Then
+            If (Original_inddis5_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(801).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(802).Value = CType(Original_inddis7_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(802).Value = CType(Original_inddis5_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(801).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(802).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis8_1.HasValue = true) Then
+            If (Original_inddis6_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(803).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(804).Value = CType(Original_inddis8_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(804).Value = CType(Original_inddis6_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(803).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(804).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis9_1.HasValue = true) Then
+            If (Original_inddis7_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(805).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(806).Value = CType(Original_inddis9_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(806).Value = CType(Original_inddis7_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(805).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(806).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis10_1.HasValue = true) Then
+            If (Original_inddis8_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(807).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(808).Value = CType(Original_inddis10_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(808).Value = CType(Original_inddis8_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(807).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(808).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis11_1.HasValue = true) Then
+            If (Original_inddis9_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(809).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(810).Value = CType(Original_inddis11_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(810).Value = CType(Original_inddis9_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(809).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(810).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis12_1.HasValue = true) Then
+            If (Original_inddis10_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(811).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(812).Value = CType(Original_inddis12_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(812).Value = CType(Original_inddis10_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(811).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(812).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis13_1.HasValue = true) Then
+            If (Original_inddis11_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(813).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(814).Value = CType(Original_inddis13_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(814).Value = CType(Original_inddis11_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(813).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(814).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis14_1.HasValue = true) Then
+            If (Original_inddis12_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(815).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(816).Value = CType(Original_inddis14_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(816).Value = CType(Original_inddis12_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(815).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(816).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis15_1.HasValue = true) Then
+            If (Original_inddis13_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(817).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(818).Value = CType(Original_inddis15_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(818).Value = CType(Original_inddis13_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(817).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(818).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis1_2.HasValue = true) Then
+            If (Original_inddis14_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(819).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(820).Value = CType(Original_inddis1_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(820).Value = CType(Original_inddis14_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(819).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(820).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis2_2.HasValue = true) Then
+            If (Original_inddis15_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(821).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(822).Value = CType(Original_inddis2_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(822).Value = CType(Original_inddis15_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(821).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(822).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis3_2.HasValue = true) Then
+            If (Original_inddis1_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(823).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(824).Value = CType(Original_inddis3_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(824).Value = CType(Original_inddis1_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(823).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(824).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis4_2.HasValue = true) Then
+            If (Original_inddis2_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(825).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(826).Value = CType(Original_inddis4_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(826).Value = CType(Original_inddis2_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(825).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(826).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis5_2.HasValue = true) Then
+            If (Original_inddis3_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(827).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(828).Value = CType(Original_inddis5_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(828).Value = CType(Original_inddis3_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(827).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(828).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis6_2.HasValue = true) Then
+            If (Original_inddis4_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(829).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(830).Value = CType(Original_inddis6_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(830).Value = CType(Original_inddis4_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(829).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(830).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis7_2.HasValue = true) Then
+            If (Original_inddis5_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(831).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(832).Value = CType(Original_inddis7_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(832).Value = CType(Original_inddis5_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(831).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(832).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis8_2.HasValue = true) Then
+            If (Original_inddis6_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(833).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(834).Value = CType(Original_inddis8_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(834).Value = CType(Original_inddis6_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(833).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(834).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis9_2.HasValue = true) Then
+            If (Original_inddis7_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(835).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(836).Value = CType(Original_inddis9_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(836).Value = CType(Original_inddis7_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(835).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(836).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis10_2.HasValue = true) Then
+            If (Original_inddis8_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(837).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(838).Value = CType(Original_inddis10_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(838).Value = CType(Original_inddis8_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(837).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(838).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis11_2.HasValue = true) Then
+            If (Original_inddis9_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(839).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(840).Value = CType(Original_inddis11_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(840).Value = CType(Original_inddis9_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(839).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(840).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis12_2.HasValue = true) Then
+            If (Original_inddis10_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(841).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(842).Value = CType(Original_inddis12_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(842).Value = CType(Original_inddis10_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(841).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(842).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis13_2.HasValue = true) Then
+            If (Original_inddis11_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(843).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(844).Value = CType(Original_inddis13_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(844).Value = CType(Original_inddis11_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(843).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(844).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis14_2.HasValue = true) Then
+            If (Original_inddis12_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(845).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(846).Value = CType(Original_inddis14_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(846).Value = CType(Original_inddis12_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(845).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(846).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddis15_2.HasValue = true) Then
+            If (Original_inddis13_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(847).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(848).Value = CType(Original_inddis15_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(848).Value = CType(Original_inddis13_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(847).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(848).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur1_1.HasValue = true) Then
+            If (Original_inddis14_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(849).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(850).Value = CType(Original_inddiscur1_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(850).Value = CType(Original_inddis14_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(849).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(850).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur2_1.HasValue = true) Then
+            If (Original_inddis15_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(851).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(852).Value = CType(Original_inddiscur2_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(852).Value = CType(Original_inddis15_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(851).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(852).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur3_1.HasValue = true) Then
+            If (Original_inddiscur1_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(853).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(854).Value = CType(Original_inddiscur3_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(854).Value = CType(Original_inddiscur1_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(853).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(854).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur4_1.HasValue = true) Then
+            If (Original_inddiscur2_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(855).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(856).Value = CType(Original_inddiscur4_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(856).Value = CType(Original_inddiscur2_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(855).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(856).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur5_1.HasValue = true) Then
+            If (Original_inddiscur3_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(857).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(858).Value = CType(Original_inddiscur5_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(858).Value = CType(Original_inddiscur3_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(857).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(858).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur6_1.HasValue = true) Then
+            If (Original_inddiscur4_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(859).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(860).Value = CType(Original_inddiscur6_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(860).Value = CType(Original_inddiscur4_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(859).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(860).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur7_1.HasValue = true) Then
+            If (Original_inddiscur5_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(861).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(862).Value = CType(Original_inddiscur7_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(862).Value = CType(Original_inddiscur5_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(861).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(862).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur8_1.HasValue = true) Then
+            If (Original_inddiscur6_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(863).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(864).Value = CType(Original_inddiscur8_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(864).Value = CType(Original_inddiscur6_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(863).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(864).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur9_1.HasValue = true) Then
+            If (Original_inddiscur7_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(865).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(866).Value = CType(Original_inddiscur9_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(866).Value = CType(Original_inddiscur7_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(865).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(866).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur10_1.HasValue = true) Then
+            If (Original_inddiscur8_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(867).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(868).Value = CType(Original_inddiscur10_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(868).Value = CType(Original_inddiscur8_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(867).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(868).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur11_1.HasValue = true) Then
+            If (Original_inddiscur9_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(869).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(870).Value = CType(Original_inddiscur11_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(870).Value = CType(Original_inddiscur9_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(869).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(870).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur12_1.HasValue = true) Then
+            If (Original_inddiscur10_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(871).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(872).Value = CType(Original_inddiscur12_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(872).Value = CType(Original_inddiscur10_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(871).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(872).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur13_1.HasValue = true) Then
+            If (Original_inddiscur11_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(873).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(874).Value = CType(Original_inddiscur13_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(874).Value = CType(Original_inddiscur11_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(873).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(874).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur14_1.HasValue = true) Then
+            If (Original_inddiscur12_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(875).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(876).Value = CType(Original_inddiscur14_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(876).Value = CType(Original_inddiscur12_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(875).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(876).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur15_1.HasValue = true) Then
+            If (Original_inddiscur13_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(877).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(878).Value = CType(Original_inddiscur15_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(878).Value = CType(Original_inddiscur13_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(877).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(878).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur1_2.HasValue = true) Then
+            If (Original_inddiscur14_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(879).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(880).Value = CType(Original_inddiscur1_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(880).Value = CType(Original_inddiscur14_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(879).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(880).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur2_2.HasValue = true) Then
+            If (Original_inddiscur15_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(881).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(882).Value = CType(Original_inddiscur2_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(882).Value = CType(Original_inddiscur15_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(881).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(882).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur3_2.HasValue = true) Then
+            If (Original_inddiscur1_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(883).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(884).Value = CType(Original_inddiscur3_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(884).Value = CType(Original_inddiscur1_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(883).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(884).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur4_2.HasValue = true) Then
+            If (Original_inddiscur2_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(885).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(886).Value = CType(Original_inddiscur4_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(886).Value = CType(Original_inddiscur2_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(885).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(886).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur5_2.HasValue = true) Then
+            If (Original_inddiscur3_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(887).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(888).Value = CType(Original_inddiscur5_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(888).Value = CType(Original_inddiscur3_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(887).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(888).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur6_2.HasValue = true) Then
+            If (Original_inddiscur4_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(889).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(890).Value = CType(Original_inddiscur6_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(890).Value = CType(Original_inddiscur4_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(889).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(890).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur7_2.HasValue = true) Then
+            If (Original_inddiscur5_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(891).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(892).Value = CType(Original_inddiscur7_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(892).Value = CType(Original_inddiscur5_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(891).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(892).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur8_2.HasValue = true) Then
+            If (Original_inddiscur6_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(893).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(894).Value = CType(Original_inddiscur8_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(894).Value = CType(Original_inddiscur6_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(893).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(894).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur9_2.HasValue = true) Then
+            If (Original_inddiscur7_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(895).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(896).Value = CType(Original_inddiscur9_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(896).Value = CType(Original_inddiscur7_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(895).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(896).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur10_2.HasValue = true) Then
+            If (Original_inddiscur8_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(897).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(898).Value = CType(Original_inddiscur10_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(898).Value = CType(Original_inddiscur8_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(897).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(898).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur11_2.HasValue = true) Then
+            If (Original_inddiscur9_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(899).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(900).Value = CType(Original_inddiscur11_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(900).Value = CType(Original_inddiscur9_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(899).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(900).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur12_2.HasValue = true) Then
+            If (Original_inddiscur10_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(901).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(902).Value = CType(Original_inddiscur12_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(902).Value = CType(Original_inddiscur10_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(901).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(902).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur13_2.HasValue = true) Then
+            If (Original_inddiscur11_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(903).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(904).Value = CType(Original_inddiscur13_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(904).Value = CType(Original_inddiscur11_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(903).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(904).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur14_2.HasValue = true) Then
+            If (Original_inddiscur12_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(905).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(906).Value = CType(Original_inddiscur14_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(906).Value = CType(Original_inddiscur12_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(905).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(906).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddiscur15_2.HasValue = true) Then
+            If (Original_inddiscur13_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(907).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(908).Value = CType(Original_inddiscur15_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(908).Value = CType(Original_inddiscur13_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(907).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(908).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln1_1.HasValue = true) Then
+            If (Original_inddiscur14_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(909).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(910).Value = CType(Original_inddispln1_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(910).Value = CType(Original_inddiscur14_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(909).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(910).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln2_1.HasValue = true) Then
+            If (Original_inddiscur15_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(911).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(912).Value = CType(Original_inddispln2_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(912).Value = CType(Original_inddiscur15_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(911).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(912).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln3_1.HasValue = true) Then
+            If (Original_inddispln1_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(913).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(914).Value = CType(Original_inddispln3_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(914).Value = CType(Original_inddispln1_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(913).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(914).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln4_1.HasValue = true) Then
+            If (Original_inddispln2_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(915).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(916).Value = CType(Original_inddispln4_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(916).Value = CType(Original_inddispln2_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(915).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(916).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln5_1.HasValue = true) Then
+            If (Original_inddispln3_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(917).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(918).Value = CType(Original_inddispln5_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(918).Value = CType(Original_inddispln3_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(917).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(918).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln6_1.HasValue = true) Then
+            If (Original_inddispln4_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(919).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(920).Value = CType(Original_inddispln6_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(920).Value = CType(Original_inddispln4_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(919).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(920).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln7_1.HasValue = true) Then
+            If (Original_inddispln5_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(921).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(922).Value = CType(Original_inddispln7_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(922).Value = CType(Original_inddispln5_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(921).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(922).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln8_1.HasValue = true) Then
+            If (Original_inddispln6_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(923).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(924).Value = CType(Original_inddispln8_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(924).Value = CType(Original_inddispln6_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(923).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(924).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln9_1.HasValue = true) Then
+            If (Original_inddispln7_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(925).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(926).Value = CType(Original_inddispln9_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(926).Value = CType(Original_inddispln7_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(925).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(926).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln10_1.HasValue = true) Then
+            If (Original_inddispln8_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(927).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(928).Value = CType(Original_inddispln10_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(928).Value = CType(Original_inddispln8_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(927).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(928).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln11_1.HasValue = true) Then
+            If (Original_inddispln9_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(929).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(930).Value = CType(Original_inddispln11_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(930).Value = CType(Original_inddispln9_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(929).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(930).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln12_1.HasValue = true) Then
+            If (Original_inddispln10_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(931).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(932).Value = CType(Original_inddispln12_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(932).Value = CType(Original_inddispln10_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(931).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(932).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln13_1.HasValue = true) Then
+            If (Original_inddispln11_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(933).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(934).Value = CType(Original_inddispln13_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(934).Value = CType(Original_inddispln11_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(933).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(934).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln14_1.HasValue = true) Then
+            If (Original_inddispln12_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(935).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(936).Value = CType(Original_inddispln14_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(936).Value = CType(Original_inddispln12_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(935).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(936).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln15_1.HasValue = true) Then
+            If (Original_inddispln13_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(937).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(938).Value = CType(Original_inddispln15_1.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(938).Value = CType(Original_inddispln13_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(937).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(938).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln1_2.HasValue = true) Then
+            If (Original_inddispln14_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(939).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(940).Value = CType(Original_inddispln1_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(940).Value = CType(Original_inddispln14_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(939).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(940).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln2_2.HasValue = true) Then
+            If (Original_inddispln15_1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(941).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(942).Value = CType(Original_inddispln2_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(942).Value = CType(Original_inddispln15_1.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(941).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(942).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln3_2.HasValue = true) Then
+            If (Original_inddispln1_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(943).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(944).Value = CType(Original_inddispln3_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(944).Value = CType(Original_inddispln1_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(943).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(944).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln4_2.HasValue = true) Then
+            If (Original_inddispln2_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(945).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(946).Value = CType(Original_inddispln4_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(946).Value = CType(Original_inddispln2_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(945).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(946).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln5_2.HasValue = true) Then
+            If (Original_inddispln3_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(947).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(948).Value = CType(Original_inddispln5_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(948).Value = CType(Original_inddispln3_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(947).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(948).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln6_2.HasValue = true) Then
+            If (Original_inddispln4_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(949).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(950).Value = CType(Original_inddispln6_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(950).Value = CType(Original_inddispln4_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(949).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(950).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln7_2.HasValue = true) Then
+            If (Original_inddispln5_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(951).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(952).Value = CType(Original_inddispln7_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(952).Value = CType(Original_inddispln5_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(951).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(952).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln8_2.HasValue = true) Then
+            If (Original_inddispln6_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(953).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(954).Value = CType(Original_inddispln8_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(954).Value = CType(Original_inddispln6_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(953).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(954).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln9_2.HasValue = true) Then
+            If (Original_inddispln7_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(955).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(956).Value = CType(Original_inddispln9_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(956).Value = CType(Original_inddispln7_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(955).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(956).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln10_2.HasValue = true) Then
+            If (Original_inddispln8_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(957).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(958).Value = CType(Original_inddispln10_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(958).Value = CType(Original_inddispln8_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(957).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(958).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln11_2.HasValue = true) Then
+            If (Original_inddispln9_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(959).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(960).Value = CType(Original_inddispln11_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(960).Value = CType(Original_inddispln9_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(959).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(960).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln12_2.HasValue = true) Then
+            If (Original_inddispln10_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(961).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(962).Value = CType(Original_inddispln12_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(962).Value = CType(Original_inddispln10_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(961).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(962).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln13_2.HasValue = true) Then
+            If (Original_inddispln11_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(963).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(964).Value = CType(Original_inddispln13_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(964).Value = CType(Original_inddispln11_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(963).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(964).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln14_2.HasValue = true) Then
+            If (Original_inddispln12_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(965).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(966).Value = CType(Original_inddispln14_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(966).Value = CType(Original_inddispln12_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(965).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(966).Value = Global.System.DBNull.Value
             End If
-            If (Original_inddispln15_2.HasValue = true) Then
+            If (Original_inddispln13_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(967).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(968).Value = CType(Original_inddispln15_2.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(968).Value = CType(Original_inddispln13_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(967).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(968).Value = Global.System.DBNull.Value
             End If
-            If (Original_tpbx.HasValue = true) Then
+            If (Original_inddispln14_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(969).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(970).Value = CType(Original_tpbx.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(970).Value = CType(Original_inddispln14_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(969).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(970).Value = Global.System.DBNull.Value
             End If
-            If (Original_tpsx.HasValue = true) Then
+            If (Original_inddispln15_2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(971).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(972).Value = CType(Original_tpsx.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(972).Value = CType(Original_inddispln15_2.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(971).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(972).Value = Global.System.DBNull.Value
             End If
-            If (Original_tpmz.HasValue = true) Then
+            If (Original_tpbx.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(973).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(974).Value = CType(Original_tpmz.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(974).Value = CType(Original_tpbx.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(973).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(974).Value = Global.System.DBNull.Value
             End If
-            If (Original_envw.HasValue = true) Then
+            If (Original_tpsx.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(975).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(976).Value = CType(Original_envw.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(976).Value = CType(Original_tpsx.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(975).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(976).Value = Global.System.DBNull.Value
             End If
-            If (Original_ecow.HasValue = true) Then
+            If (Original_tpmz.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(977).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(978).Value = CType(Original_ecow.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(978).Value = CType(Original_tpmz.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(977).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(978).Value = Global.System.DBNull.Value
             End If
-            If (Original_socw.HasValue = true) Then
+            If (Original_envw.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(979).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(980).Value = CType(Original_socw.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(980).Value = CType(Original_envw.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(979).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(980).Value = Global.System.DBNull.Value
             End If
-            If (Original_totpla.HasValue = true) Then
+            If (Original_ecow.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(981).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(982).Value = CType(Original_totpla.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(982).Value = CType(Original_ecow.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(981).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(982).Value = Global.System.DBNull.Value
             End If
-            If (Original_bod1.HasValue = true) Then
+            If (Original_socw.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(983).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(984).Value = CType(Original_bod1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(984).Value = CType(Original_socw.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(983).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(984).Value = Global.System.DBNull.Value
             End If
-            If (Original_bod2.HasValue = true) Then
+            If (Original_totpla.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(985).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(986).Value = CType(Original_bod2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(986).Value = CType(Original_totpla.Value,Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(985).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(986).Value = Global.System.DBNull.Value
             End If
-            If (Original_bod3.HasValue = true) Then
+            If (Original_bod1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(987).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(988).Value = CType(Original_bod3.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(988).Value = CType(Original_bod1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(987).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(988).Value = Global.System.DBNull.Value
             End If
-            If (Original_bod4.HasValue = true) Then
+            If (Original_bod2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(989).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(990).Value = CType(Original_bod4.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(990).Value = CType(Original_bod2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(989).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(990).Value = Global.System.DBNull.Value
             End If
-            If (Original_bod5.HasValue = true) Then
+            If (Original_bod3.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(991).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(992).Value = CType(Original_bod5.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(992).Value = CType(Original_bod3.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(991).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(992).Value = Global.System.DBNull.Value
             End If
-            If (Original_bod6.HasValue = true) Then
+            If (Original_bod4.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(993).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(994).Value = CType(Original_bod6.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(994).Value = CType(Original_bod4.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(993).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(994).Value = Global.System.DBNull.Value
             End If
-            If (Original_bod7.HasValue = true) Then
+            If (Original_bod5.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(995).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(996).Value = CType(Original_bod7.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(996).Value = CType(Original_bod5.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(995).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(996).Value = Global.System.DBNull.Value
             End If
-            If (Original_bod8.HasValue = true) Then
+            If (Original_bod6.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(997).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(998).Value = CType(Original_bod8.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(998).Value = CType(Original_bod6.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(997).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(998).Value = Global.System.DBNull.Value
             End If
-            If (Original_bod9.HasValue = true) Then
+            If (Original_bod7.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(999).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1000).Value = CType(Original_bod9.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1000).Value = CType(Original_bod7.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(999).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1000).Value = Global.System.DBNull.Value
             End If
-            If (Original_bod10.HasValue = true) Then
+            If (Original_bod8.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1001).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1002).Value = CType(Original_bod10.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1002).Value = CType(Original_bod8.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1001).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1002).Value = Global.System.DBNull.Value
             End If
-            If (Original_bod11.HasValue = true) Then
+            If (Original_bod9.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1003).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1004).Value = CType(Original_bod11.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1004).Value = CType(Original_bod9.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1003).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1004).Value = Global.System.DBNull.Value
             End If
-            If (Original_bod12.HasValue = true) Then
+            If (Original_bod10.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1005).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1006).Value = CType(Original_bod12.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1006).Value = CType(Original_bod10.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1005).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1006).Value = Global.System.DBNull.Value
             End If
-            If (Original_bod13.HasValue = true) Then
+            If (Original_bod11.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1007).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1008).Value = CType(Original_bod13.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1008).Value = CType(Original_bod11.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1007).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1008).Value = Global.System.DBNull.Value
             End If
-            If (Original_bod14.HasValue = true) Then
+            If (Original_bod12.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1009).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1010).Value = CType(Original_bod14.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1010).Value = CType(Original_bod12.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1009).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1010).Value = Global.System.DBNull.Value
             End If
-            If (Original_bod15.HasValue = true) Then
+            If (Original_bod13.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1011).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1012).Value = CType(Original_bod15.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1012).Value = CType(Original_bod13.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1011).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1012).Value = Global.System.DBNull.Value
             End If
-            If (Original_tds1.HasValue = true) Then
+            If (Original_bod14.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1013).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1014).Value = CType(Original_tds1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1014).Value = CType(Original_bod14.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1013).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1014).Value = Global.System.DBNull.Value
             End If
-            If (Original_tds2.HasValue = true) Then
+            If (Original_bod15.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1015).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1016).Value = CType(Original_tds2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1016).Value = CType(Original_bod15.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1015).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1016).Value = Global.System.DBNull.Value
             End If
-            If (Original_tds3.HasValue = true) Then
+            If (Original_tds1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1017).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1018).Value = CType(Original_tds3.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1018).Value = CType(Original_tds1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1017).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1018).Value = Global.System.DBNull.Value
             End If
-            If (Original_tds4.HasValue = true) Then
+            If (Original_tds2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1019).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1020).Value = CType(Original_tds4.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1020).Value = CType(Original_tds2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1019).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1020).Value = Global.System.DBNull.Value
             End If
-            If (Original_tds5.HasValue = true) Then
+            If (Original_tds3.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1021).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1022).Value = CType(Original_tds5.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1022).Value = CType(Original_tds3.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1021).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1022).Value = Global.System.DBNull.Value
             End If
-            If (Original_tds6.HasValue = true) Then
+            If (Original_tds4.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1023).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1024).Value = CType(Original_tds6.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1024).Value = CType(Original_tds4.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1023).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1024).Value = Global.System.DBNull.Value
             End If
-            If (Original_tds7.HasValue = true) Then
+            If (Original_tds5.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1025).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1026).Value = CType(Original_tds7.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1026).Value = CType(Original_tds5.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1025).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1026).Value = Global.System.DBNull.Value
             End If
-            If (Original_tds8.HasValue = true) Then
+            If (Original_tds6.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1027).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1028).Value = CType(Original_tds8.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1028).Value = CType(Original_tds6.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1027).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1028).Value = Global.System.DBNull.Value
             End If
-            If (Original_tds9.HasValue = true) Then
+            If (Original_tds7.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1029).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1030).Value = CType(Original_tds9.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1030).Value = CType(Original_tds7.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1029).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1030).Value = Global.System.DBNull.Value
             End If
-            If (Original_tds10.HasValue = true) Then
+            If (Original_tds8.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1031).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1032).Value = CType(Original_tds10.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1032).Value = CType(Original_tds8.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1031).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1032).Value = Global.System.DBNull.Value
             End If
-            If (Original_tds11.HasValue = true) Then
+            If (Original_tds9.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1033).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1034).Value = CType(Original_tds11.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1034).Value = CType(Original_tds9.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1033).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1034).Value = Global.System.DBNull.Value
             End If
-            If (Original_tds12.HasValue = true) Then
+            If (Original_tds10.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1035).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1036).Value = CType(Original_tds12.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1036).Value = CType(Original_tds10.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1035).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1036).Value = Global.System.DBNull.Value
             End If
-            If (Original_tds13.HasValue = true) Then
+            If (Original_tds11.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1037).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1038).Value = CType(Original_tds13.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1038).Value = CType(Original_tds11.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1037).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1038).Value = Global.System.DBNull.Value
             End If
-            If (Original_tds14.HasValue = true) Then
+            If (Original_tds12.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1039).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1040).Value = CType(Original_tds14.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1040).Value = CType(Original_tds12.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1039).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1040).Value = Global.System.DBNull.Value
             End If
-            If (Original_tds15.HasValue = true) Then
+            If (Original_tds13.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1041).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1042).Value = CType(Original_tds15.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1042).Value = CType(Original_tds13.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1041).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1042).Value = Global.System.DBNull.Value
             End If
-            If (Original_tss1.HasValue = true) Then
+            If (Original_tds14.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1043).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1044).Value = CType(Original_tss1.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1044).Value = CType(Original_tds14.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1043).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1044).Value = Global.System.DBNull.Value
             End If
-            If (Original_tss2.HasValue = true) Then
+            If (Original_tds15.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1045).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1046).Value = CType(Original_tss2.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1046).Value = CType(Original_tds15.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1045).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1046).Value = Global.System.DBNull.Value
             End If
-            If (Original_tss3.HasValue = true) Then
+            If (Original_tss1.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1047).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1048).Value = CType(Original_tss3.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1048).Value = CType(Original_tss1.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1047).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1048).Value = Global.System.DBNull.Value
             End If
-            If (Original_tss4.HasValue = true) Then
+            If (Original_tss2.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1049).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1050).Value = CType(Original_tss4.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1050).Value = CType(Original_tss2.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1049).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1050).Value = Global.System.DBNull.Value
             End If
-            If (Original_tss5.HasValue = true) Then
+            If (Original_tss3.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1051).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1052).Value = CType(Original_tss5.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1052).Value = CType(Original_tss3.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1051).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1052).Value = Global.System.DBNull.Value
             End If
-            If (Original_tss6.HasValue = true) Then
+            If (Original_tss4.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1053).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1054).Value = CType(Original_tss6.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1054).Value = CType(Original_tss4.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1053).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1054).Value = Global.System.DBNull.Value
             End If
-            If (Original_tss7.HasValue = true) Then
+            If (Original_tss5.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1055).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1056).Value = CType(Original_tss7.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1056).Value = CType(Original_tss5.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1055).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1056).Value = Global.System.DBNull.Value
             End If
-            If (Original_tss8.HasValue = true) Then
+            If (Original_tss6.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1057).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1058).Value = CType(Original_tss8.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1058).Value = CType(Original_tss6.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1057).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1058).Value = Global.System.DBNull.Value
             End If
-            If (Original_tss9.HasValue = true) Then
+            If (Original_tss7.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1059).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1060).Value = CType(Original_tss9.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1060).Value = CType(Original_tss7.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1059).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1060).Value = Global.System.DBNull.Value
             End If
-            If (Original_tss10.HasValue = true) Then
+            If (Original_tss8.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1061).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1062).Value = CType(Original_tss10.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1062).Value = CType(Original_tss8.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1061).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1062).Value = Global.System.DBNull.Value
             End If
-            If (Original_tss11.HasValue = true) Then
+            If (Original_tss9.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1063).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1064).Value = CType(Original_tss11.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1064).Value = CType(Original_tss9.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1063).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1064).Value = Global.System.DBNull.Value
             End If
-            If (Original_tss12.HasValue = true) Then
+            If (Original_tss10.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1065).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1066).Value = CType(Original_tss12.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1066).Value = CType(Original_tss10.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1065).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1066).Value = Global.System.DBNull.Value
             End If
-            If (Original_tss13.HasValue = true) Then
+            If (Original_tss11.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1067).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1068).Value = CType(Original_tss13.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1068).Value = CType(Original_tss11.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1067).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1068).Value = Global.System.DBNull.Value
             End If
-            If (Original_tss14.HasValue = true) Then
+            If (Original_tss12.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1069).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1070).Value = CType(Original_tss14.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1070).Value = CType(Original_tss12.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1069).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1070).Value = Global.System.DBNull.Value
             End If
-            If (Original_tss15.HasValue = true) Then
+            If (Original_tss13.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1071).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1072).Value = CType(Original_tss15.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1072).Value = CType(Original_tss13.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1071).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1072).Value = Global.System.DBNull.Value
             End If
-            If (Original_agruf.HasValue = true) Then
+            If (Original_tss14.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1073).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1074).Value = CType(Original_agruf.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1074).Value = CType(Original_tss14.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1073).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1074).Value = Global.System.DBNull.Value
             End If
-            If (Original_agrufro.HasValue = true) Then
+            If (Original_tss15.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1075).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1076).Value = CType(Original_agrufro.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1076).Value = CType(Original_tss15.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1075).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1076).Value = Global.System.DBNull.Value
             End If
-            If (Original_induf.HasValue = true) Then
+            If (Original_agruf.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1077).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1078).Value = CType(Original_induf.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1078).Value = CType(Original_agruf.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1077).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1078).Value = Global.System.DBNull.Value
             End If
-            If (Original_indufro.HasValue = true) Then
+            If (Original_agrufro.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1079).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1080).Value = CType(Original_indufro.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1080).Value = CType(Original_agrufro.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1079).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1080).Value = Global.System.DBNull.Value
             End If
-            If (Original_lanuf.HasValue = true) Then
+            If (Original_induf.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1081).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1082).Value = CType(Original_lanuf.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1082).Value = CType(Original_induf.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1081).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1082).Value = Global.System.DBNull.Value
             End If
-            If (Original_lanufro.HasValue = true) Then
+            If (Original_indufro.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1083).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1084).Value = CType(Original_lanufro.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1084).Value = CType(Original_indufro.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1083).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1084).Value = Global.System.DBNull.Value
             End If
-            If (Original_gwsp.HasValue = true) Then
+            If (Original_lanuf.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1085).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1086).Value = CType(Original_gwsp.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1086).Value = CType(Original_lanuf.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1085).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1086).Value = Global.System.DBNull.Value
             End If
-            If (Original_sbqi.HasValue = true) Then
+            If (Original_lanufro.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1087).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1088).Value = CType(Original_sbqi.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1088).Value = CType(Original_lanufro.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1087).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1088).Value = Global.System.DBNull.Value
             End If
-            If (Original_ssqi.HasValue = true) Then
+            If (Original_gwsp.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1089).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1090).Value = CType(Original_ssqi.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1090).Value = CType(Original_gwsp.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1089).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1090).Value = Global.System.DBNull.Value
             End If
-            If (Original_smqi.HasValue = true) Then
+            If (Original_sbqi.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1091).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1092).Value = CType(Original_smqi.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(1092).Value = CType(Original_sbqi.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1091).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1092).Value = Global.System.DBNull.Value
             End If
-            If (Original_DataCreazione.HasValue = true) Then
+            If (Original_ssqi.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1093).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1094).Value = CType(Original_DataCreazione.Value,Date)
+                Me.Adapter.UpdateCommand.Parameters(1094).Value = CType(Original_ssqi.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1093).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1094).Value = Global.System.DBNull.Value
             End If
-            If (Original_UtenteCreazione.HasValue = true) Then
+            If (Original_smqi.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1095).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1096).Value = CType(Original_UtenteCreazione.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(1096).Value = CType(Original_smqi.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1095).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1096).Value = Global.System.DBNull.Value
             End If
-            If (Original_DataAggiornamento.HasValue = true) Then
+            If (Original_salt.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1097).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1098).Value = CType(Original_DataAggiornamento.Value,Date)
+                Me.Adapter.UpdateCommand.Parameters(1098).Value = CType(Original_salt.Value,Boolean)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1097).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1098).Value = Global.System.DBNull.Value
             End If
-            If (Original_UtenteAggiornamento.HasValue = true) Then
+            If (Original_agrw.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1099).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1100).Value = CType(Original_UtenteAggiornamento.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(1100).Value = CType(Original_agrw.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1099).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1100).Value = Global.System.DBNull.Value
             End If
-            If (Original_Annullato.HasValue = true) Then
+            If (Original_indw.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1101).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1102).Value = CType(Original_Annullato.Value,Boolean)
+                Me.Adapter.UpdateCommand.Parameters(1102).Value = CType(Original_indw.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1101).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1102).Value = Global.System.DBNull.Value
             End If
-            If (Original_DataEstrazione.HasValue = true) Then
+            If (Original_lanw.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(1103).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(1104).Value = CType(Original_DataEstrazione.Value,Date)
+                Me.Adapter.UpdateCommand.Parameters(1104).Value = CType(Original_lanw.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1103).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(1104).Value = Global.System.DBNull.Value
             End If
-            Me.Adapter.UpdateCommand.Parameters(1105).Value = CType(datID,Integer)
+            If (Original_DataCreazione.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(1105).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(1106).Value = CType(Original_DataCreazione.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(1105).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(1106).Value = Global.System.DBNull.Value
+            End If
+            If (Original_UtenteCreazione.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(1107).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(1108).Value = CType(Original_UtenteCreazione.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(1107).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(1108).Value = Global.System.DBNull.Value
+            End If
+            If (Original_DataAggiornamento.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(1109).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(1110).Value = CType(Original_DataAggiornamento.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(1109).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(1110).Value = Global.System.DBNull.Value
+            End If
+            If (Original_UtenteAggiornamento.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(1111).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(1112).Value = CType(Original_UtenteAggiornamento.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(1111).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(1112).Value = Global.System.DBNull.Value
+            End If
+            If (Original_Annullato.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(1113).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(1114).Value = CType(Original_Annullato.Value,Boolean)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(1113).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(1114).Value = Global.System.DBNull.Value
+            End If
+            If (Original_DataEstrazione.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(1115).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(1116).Value = CType(Original_DataEstrazione.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(1115).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(1116).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.UpdateCommand.Parameters(1117).Value = CType(datID,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -30347,6 +30716,10 @@ Namespace DSDataTableAdapters
                     ByVal sbqi As Global.System.Nullable(Of Double),  _
                     ByVal ssqi As Global.System.Nullable(Of Double),  _
                     ByVal smqi As Global.System.Nullable(Of Double),  _
+                    ByVal salt As Global.System.Nullable(Of Boolean),  _
+                    ByVal agrw As Global.System.Nullable(Of Double),  _
+                    ByVal indw As Global.System.Nullable(Of Double),  _
+                    ByVal lanw As Global.System.Nullable(Of Double),  _
                     ByVal DataCreazione As Global.System.Nullable(Of Date),  _
                     ByVal UtenteCreazione As Global.System.Nullable(Of Integer),  _
                     ByVal DataAggiornamento As Global.System.Nullable(Of Date),  _
@@ -30716,13 +31089,17 @@ Namespace DSDataTableAdapters
                     ByVal Original_sbqi As Global.System.Nullable(Of Double),  _
                     ByVal Original_ssqi As Global.System.Nullable(Of Double),  _
                     ByVal Original_smqi As Global.System.Nullable(Of Double),  _
+                    ByVal Original_salt As Global.System.Nullable(Of Boolean),  _
+                    ByVal Original_agrw As Global.System.Nullable(Of Double),  _
+                    ByVal Original_indw As Global.System.Nullable(Of Double),  _
+                    ByVal Original_lanw As Global.System.Nullable(Of Double),  _
                     ByVal Original_DataCreazione As Global.System.Nullable(Of Date),  _
                     ByVal Original_UtenteCreazione As Global.System.Nullable(Of Integer),  _
                     ByVal Original_DataAggiornamento As Global.System.Nullable(Of Date),  _
                     ByVal Original_UtenteAggiornamento As Global.System.Nullable(Of Integer),  _
                     ByVal Original_Annullato As Global.System.Nullable(Of Boolean),  _
                     ByVal Original_DataEstrazione As Global.System.Nullable(Of Date)) As Integer
-            Return Me.Update(indcc1_1, indcc2_1, indcc3_1, indcc4_1, indcc5_1, indcc6_1, indcc7_1, indcc8_1, indcc9_1, indcc10_1, indcc11_1, indcc12_1, indcc13_1, indcc14_1, indcc15_1, indcc1_2, indcc2_2, indcc3_2, indcc4_2, indcc5_2, indcc6_2, indcc7_2, indcc8_2, indcc9_2, indcc10_2, indcc11_2, indcc12_2, indcc13_2, indcc14_2, indcc15_2, agrcc1_1, agrcc2_1, agrcc3_1, agrcc4_1, agrcc5_1, agrcc6_1, agrcc7_1, agrcc8_1, agrcc9_1, agrcc10_1, agrcc11_1, agrcc12_1, agrcc13_1, agrcc14_1, agrcc15_1, agrcc1_2, agrcc2_2, agrcc3_2, agrcc4_2, agrcc5_2, agrcc6_2, agrcc7_2, agrcc8_2, agrcc9_2, agrcc10_2, agrcc11_2, agrcc12_2, agrcc13_2, agrcc14_2, agrcc15_2, lancc1_1, lancc2_1, lancc3_1, lancc4_1, lancc5_1, lancc6_1, lancc7_1, lancc8_1, lancc9_1, lancc10_1, lancc11_1, lancc12_1, lancc13_1, lancc14_1, lancc15_1, lancc1_2, lancc2_2, lancc3_2, lancc4_2, lancc5_2, lancc6_2, lancc7_2, lancc8_2, lancc9_2, lancc10_2, lancc11_2, lancc12_2, lancc13_2, lancc14_2, lancc15_2, lbqi1_1, lbqi2_1, lbqi3_1, lbqi4_1, lbqi5_1, lbqi6_1, lbqi7_1, lbqi8_1, lbqi9_1, lbqi10_1, lbqi11_1, lbqi12_1, lbqi13_1, lbqi14_1, lbqi15_1, lbqi1_2, lbqi2_2, lbqi3_2, lbqi4_2, lbqi5_2, lbqi6_2, lbqi7_2, lbqi8_2, lbqi9_2, lbqi10_2, lbqi11_2, lbqi12_2, lbqi13_2, lbqi14_2, lbqi15_2, lsqi1_1, lsqi2_1, lsqi3_1, lsqi4_1, lsqi5_1, lsqi6_1, lsqi7_1, lsqi8_1, lsqi9_1, lsqi10_1, lsqi11_1, lsqi12_1, lsqi13_1, lsqi14_1, lsqi15_1, lsqi1_2, lsqi2_2, lsqi3_2, lsqi4_2, lsqi5_2, lsqi6_2, lsqi7_2, lsqi8_2, lsqi9_2, lsqi10_2, lsqi11_2, lsqi12_2, lsqi13_2, lsqi14_2, lsqi15_2, lmqi1_1, lmqi2_1, lmqi3_1, lmqi4_1, lmqi5_1, lmqi6_1, lmqi7_1, lmqi8_1, lmqi9_1, lmqi10_1, lmqi11_1, lmqi12_1, lmqi13_1, lmqi14_1, lmqi15_1, lmqi1_2, lmqi2_2, lmqi3_2, lmqi4_2, lmqi5_2, lmqi6_2, lmqi7_2, lmqi8_2, lmqi9_2, lmqi10_2, lmqi11_2, lmqi12_2, lmqi13_2, lmqi14_2, lmqi15_2, pop20_1_1, pop20_2_1, pop20_3_1, pop20_4_1, pop20_5_1, pop20_6_1, pop20_7_1, pop20_8_1, pop20_9_1, pop20_10_1, pop20_11_1, pop20_12_1, pop20_13_1, pop20_14_1, pop20_15_1, pop20_1_2, pop20_2_2, pop20_3_2, pop20_4_2, pop20_5_2, pop20_6_2, pop20_7_2, pop20_8_2, pop20_9_2, pop20_10_2, pop20_11_2, pop20_12_2, pop20_13_2, pop20_14_2, pop20_15_2, inddis1_1, inddis2_1, inddis3_1, inddis4_1, inddis5_1, inddis6_1, inddis7_1, inddis8_1, inddis9_1, inddis10_1, inddis11_1, inddis12_1, inddis13_1, inddis14_1, inddis15_1, inddis1_2, inddis2_2, inddis3_2, inddis4_2, inddis5_2, inddis6_2, inddis7_2, inddis8_2, inddis9_2, inddis10_2, inddis11_2, inddis12_2, inddis13_2, inddis14_2, inddis15_2, inddiscur1_1, inddiscur2_1, inddiscur3_1, inddiscur4_1, inddiscur5_1, inddiscur6_1, inddiscur7_1, inddiscur8_1, inddiscur9_1, inddiscur10_1, inddiscur11_1, inddiscur12_1, inddiscur13_1, inddiscur14_1, inddiscur15_1, inddiscur1_2, inddiscur2_2, inddiscur3_2, inddiscur4_2, inddiscur5_2, inddiscur6_2, inddiscur7_2, inddiscur8_2, inddiscur9_2, inddiscur10_2, inddiscur11_2, inddiscur12_2, inddiscur13_2, inddiscur14_2, inddiscur15_2, inddispln1_1, inddispln2_1, inddispln3_1, inddispln4_1, inddispln5_1, inddispln6_1, inddispln7_1, inddispln8_1, inddispln9_1, inddispln10_1, inddispln11_1, inddispln12_1, inddispln13_1, inddispln14_1, inddispln15_1, inddispln1_2, inddispln2_2, inddispln3_2, inddispln4_2, inddispln5_2, inddispln6_2, inddispln7_2, inddispln8_2, inddispln9_2, inddispln10_2, inddispln11_2, inddispln12_2, inddispln13_2, inddispln14_2, inddispln15_2, tpbx, tpsx, tpmz, envw, ecow, socw, totpla, bod1, bod2, bod3, bod4, bod5, bod6, bod7, bod8, bod9, bod10, bod11, bod12, bod13, bod14, bod15, tds1, tds2, tds3, tds4, tds5, tds6, tds7, tds8, tds9, tds10, tds11, tds12, tds13, tds14, tds15, tss1, tss2, tss3, tss4, tss5, tss6, tss7, tss8, tss9, tss10, tss11, tss12, tss13, tss14, tss15, agruf, agrufro, induf, indufro, lanuf, lanufro, gwsp, sbqi, ssqi, smqi, DataCreazione, UtenteCreazione, DataAggiornamento, UtenteAggiornamento, Annullato, DataEstrazione, Original_datID, Original_indcc1_1, Original_indcc2_1, Original_indcc3_1, Original_indcc4_1, Original_indcc5_1, Original_indcc6_1, Original_indcc7_1, Original_indcc8_1, Original_indcc9_1, Original_indcc10_1, Original_indcc11_1, Original_indcc12_1, Original_indcc13_1, Original_indcc14_1, Original_indcc15_1, Original_indcc1_2, Original_indcc2_2, Original_indcc3_2, Original_indcc4_2, Original_indcc5_2, Original_indcc6_2, Original_indcc7_2, Original_indcc8_2, Original_indcc9_2, Original_indcc10_2, Original_indcc11_2, Original_indcc12_2, Original_indcc13_2, Original_indcc14_2, Original_indcc15_2, Original_agrcc1_1, Original_agrcc2_1, Original_agrcc3_1, Original_agrcc4_1, Original_agrcc5_1, Original_agrcc6_1, Original_agrcc7_1, Original_agrcc8_1, Original_agrcc9_1, Original_agrcc10_1, Original_agrcc11_1, Original_agrcc12_1, Original_agrcc13_1, Original_agrcc14_1, Original_agrcc15_1, Original_agrcc1_2, Original_agrcc2_2, Original_agrcc3_2, Original_agrcc4_2, Original_agrcc5_2, Original_agrcc6_2, Original_agrcc7_2, Original_agrcc8_2, Original_agrcc9_2, Original_agrcc10_2, Original_agrcc11_2, Original_agrcc12_2, Original_agrcc13_2, Original_agrcc14_2, Original_agrcc15_2, Original_lancc1_1, Original_lancc2_1, Original_lancc3_1, Original_lancc4_1, Original_lancc5_1, Original_lancc6_1, Original_lancc7_1, Original_lancc8_1, Original_lancc9_1, Original_lancc10_1, Original_lancc11_1, Original_lancc12_1, Original_lancc13_1, Original_lancc14_1, Original_lancc15_1, Original_lancc1_2, Original_lancc2_2, Original_lancc3_2, Original_lancc4_2, Original_lancc5_2, Original_lancc6_2, Original_lancc7_2, Original_lancc8_2, Original_lancc9_2, Original_lancc10_2, Original_lancc11_2, Original_lancc12_2, Original_lancc13_2, Original_lancc14_2, Original_lancc15_2, Original_lbqi1_1, Original_lbqi2_1, Original_lbqi3_1, Original_lbqi4_1, Original_lbqi5_1, Original_lbqi6_1, Original_lbqi7_1, Original_lbqi8_1, Original_lbqi9_1, Original_lbqi10_1, Original_lbqi11_1, Original_lbqi12_1, Original_lbqi13_1, Original_lbqi14_1, Original_lbqi15_1, Original_lbqi1_2, Original_lbqi2_2, Original_lbqi3_2, Original_lbqi4_2, Original_lbqi5_2, Original_lbqi6_2, Original_lbqi7_2, Original_lbqi8_2, Original_lbqi9_2, Original_lbqi10_2, Original_lbqi11_2, Original_lbqi12_2, Original_lbqi13_2, Original_lbqi14_2, Original_lbqi15_2, Original_lsqi1_1, Original_lsqi2_1, Original_lsqi3_1, Original_lsqi4_1, Original_lsqi5_1, Original_lsqi6_1, Original_lsqi7_1, Original_lsqi8_1, Original_lsqi9_1, Original_lsqi10_1, Original_lsqi11_1, Original_lsqi12_1, Original_lsqi13_1, Original_lsqi14_1, Original_lsqi15_1, Original_lsqi1_2, Original_lsqi2_2, Original_lsqi3_2, Original_lsqi4_2, Original_lsqi5_2, Original_lsqi6_2, Original_lsqi7_2, Original_lsqi8_2, Original_lsqi9_2, Original_lsqi10_2, Original_lsqi11_2, Original_lsqi12_2, Original_lsqi13_2, Original_lsqi14_2, Original_lsqi15_2, Original_lmqi1_1, Original_lmqi2_1, Original_lmqi3_1, Original_lmqi4_1, Original_lmqi5_1, Original_lmqi6_1, Original_lmqi7_1, Original_lmqi8_1, Original_lmqi9_1, Original_lmqi10_1, Original_lmqi11_1, Original_lmqi12_1, Original_lmqi13_1, Original_lmqi14_1, Original_lmqi15_1, Original_lmqi1_2, Original_lmqi2_2, Original_lmqi3_2, Original_lmqi4_2, Original_lmqi5_2, Original_lmqi6_2, Original_lmqi7_2, Original_lmqi8_2, Original_lmqi9_2, Original_lmqi10_2, Original_lmqi11_2, Original_lmqi12_2, Original_lmqi13_2, Original_lmqi14_2, Original_lmqi15_2, Original_pop20_1_1, Original_pop20_2_1, Original_pop20_3_1, Original_pop20_4_1, Original_pop20_5_1, Original_pop20_6_1, Original_pop20_7_1, Original_pop20_8_1, Original_pop20_9_1, Original_pop20_10_1, Original_pop20_11_1, Original_pop20_12_1, Original_pop20_13_1, Original_pop20_14_1, Original_pop20_15_1, Original_pop20_1_2, Original_pop20_2_2, Original_pop20_3_2, Original_pop20_4_2, Original_pop20_5_2, Original_pop20_6_2, Original_pop20_7_2, Original_pop20_8_2, Original_pop20_9_2, Original_pop20_10_2, Original_pop20_11_2, Original_pop20_12_2, Original_pop20_13_2, Original_pop20_14_2, Original_pop20_15_2, Original_inddis1_1, Original_inddis2_1, Original_inddis3_1, Original_inddis4_1, Original_inddis5_1, Original_inddis6_1, Original_inddis7_1, Original_inddis8_1, Original_inddis9_1, Original_inddis10_1, Original_inddis11_1, Original_inddis12_1, Original_inddis13_1, Original_inddis14_1, Original_inddis15_1, Original_inddis1_2, Original_inddis2_2, Original_inddis3_2, Original_inddis4_2, Original_inddis5_2, Original_inddis6_2, Original_inddis7_2, Original_inddis8_2, Original_inddis9_2, Original_inddis10_2, Original_inddis11_2, Original_inddis12_2, Original_inddis13_2, Original_inddis14_2, Original_inddis15_2, Original_inddiscur1_1, Original_inddiscur2_1, Original_inddiscur3_1, Original_inddiscur4_1, Original_inddiscur5_1, Original_inddiscur6_1, Original_inddiscur7_1, Original_inddiscur8_1, Original_inddiscur9_1, Original_inddiscur10_1, Original_inddiscur11_1, Original_inddiscur12_1, Original_inddiscur13_1, Original_inddiscur14_1, Original_inddiscur15_1, Original_inddiscur1_2, Original_inddiscur2_2, Original_inddiscur3_2, Original_inddiscur4_2, Original_inddiscur5_2, Original_inddiscur6_2, Original_inddiscur7_2, Original_inddiscur8_2, Original_inddiscur9_2, Original_inddiscur10_2, Original_inddiscur11_2, Original_inddiscur12_2, Original_inddiscur13_2, Original_inddiscur14_2, Original_inddiscur15_2, Original_inddispln1_1, Original_inddispln2_1, Original_inddispln3_1, Original_inddispln4_1, Original_inddispln5_1, Original_inddispln6_1, Original_inddispln7_1, Original_inddispln8_1, Original_inddispln9_1, Original_inddispln10_1, Original_inddispln11_1, Original_inddispln12_1, Original_inddispln13_1, Original_inddispln14_1, Original_inddispln15_1, Original_inddispln1_2, Original_inddispln2_2, Original_inddispln3_2, Original_inddispln4_2, Original_inddispln5_2, Original_inddispln6_2, Original_inddispln7_2, Original_inddispln8_2, Original_inddispln9_2, Original_inddispln10_2, Original_inddispln11_2, Original_inddispln12_2, Original_inddispln13_2, Original_inddispln14_2, Original_inddispln15_2, Original_tpbx, Original_tpsx, Original_tpmz, Original_envw, Original_ecow, Original_socw, Original_totpla, Original_bod1, Original_bod2, Original_bod3, Original_bod4, Original_bod5, Original_bod6, Original_bod7, Original_bod8, Original_bod9, Original_bod10, Original_bod11, Original_bod12, Original_bod13, Original_bod14, Original_bod15, Original_tds1, Original_tds2, Original_tds3, Original_tds4, Original_tds5, Original_tds6, Original_tds7, Original_tds8, Original_tds9, Original_tds10, Original_tds11, Original_tds12, Original_tds13, Original_tds14, Original_tds15, Original_tss1, Original_tss2, Original_tss3, Original_tss4, Original_tss5, Original_tss6, Original_tss7, Original_tss8, Original_tss9, Original_tss10, Original_tss11, Original_tss12, Original_tss13, Original_tss14, Original_tss15, Original_agruf, Original_agrufro, Original_induf, Original_indufro, Original_lanuf, Original_lanufro, Original_gwsp, Original_sbqi, Original_ssqi, Original_smqi, Original_DataCreazione, Original_UtenteCreazione, Original_DataAggiornamento, Original_UtenteAggiornamento, Original_Annullato, Original_DataEstrazione, Original_datID)
+            Return Me.Update(indcc1_1, indcc2_1, indcc3_1, indcc4_1, indcc5_1, indcc6_1, indcc7_1, indcc8_1, indcc9_1, indcc10_1, indcc11_1, indcc12_1, indcc13_1, indcc14_1, indcc15_1, indcc1_2, indcc2_2, indcc3_2, indcc4_2, indcc5_2, indcc6_2, indcc7_2, indcc8_2, indcc9_2, indcc10_2, indcc11_2, indcc12_2, indcc13_2, indcc14_2, indcc15_2, agrcc1_1, agrcc2_1, agrcc3_1, agrcc4_1, agrcc5_1, agrcc6_1, agrcc7_1, agrcc8_1, agrcc9_1, agrcc10_1, agrcc11_1, agrcc12_1, agrcc13_1, agrcc14_1, agrcc15_1, agrcc1_2, agrcc2_2, agrcc3_2, agrcc4_2, agrcc5_2, agrcc6_2, agrcc7_2, agrcc8_2, agrcc9_2, agrcc10_2, agrcc11_2, agrcc12_2, agrcc13_2, agrcc14_2, agrcc15_2, lancc1_1, lancc2_1, lancc3_1, lancc4_1, lancc5_1, lancc6_1, lancc7_1, lancc8_1, lancc9_1, lancc10_1, lancc11_1, lancc12_1, lancc13_1, lancc14_1, lancc15_1, lancc1_2, lancc2_2, lancc3_2, lancc4_2, lancc5_2, lancc6_2, lancc7_2, lancc8_2, lancc9_2, lancc10_2, lancc11_2, lancc12_2, lancc13_2, lancc14_2, lancc15_2, lbqi1_1, lbqi2_1, lbqi3_1, lbqi4_1, lbqi5_1, lbqi6_1, lbqi7_1, lbqi8_1, lbqi9_1, lbqi10_1, lbqi11_1, lbqi12_1, lbqi13_1, lbqi14_1, lbqi15_1, lbqi1_2, lbqi2_2, lbqi3_2, lbqi4_2, lbqi5_2, lbqi6_2, lbqi7_2, lbqi8_2, lbqi9_2, lbqi10_2, lbqi11_2, lbqi12_2, lbqi13_2, lbqi14_2, lbqi15_2, lsqi1_1, lsqi2_1, lsqi3_1, lsqi4_1, lsqi5_1, lsqi6_1, lsqi7_1, lsqi8_1, lsqi9_1, lsqi10_1, lsqi11_1, lsqi12_1, lsqi13_1, lsqi14_1, lsqi15_1, lsqi1_2, lsqi2_2, lsqi3_2, lsqi4_2, lsqi5_2, lsqi6_2, lsqi7_2, lsqi8_2, lsqi9_2, lsqi10_2, lsqi11_2, lsqi12_2, lsqi13_2, lsqi14_2, lsqi15_2, lmqi1_1, lmqi2_1, lmqi3_1, lmqi4_1, lmqi5_1, lmqi6_1, lmqi7_1, lmqi8_1, lmqi9_1, lmqi10_1, lmqi11_1, lmqi12_1, lmqi13_1, lmqi14_1, lmqi15_1, lmqi1_2, lmqi2_2, lmqi3_2, lmqi4_2, lmqi5_2, lmqi6_2, lmqi7_2, lmqi8_2, lmqi9_2, lmqi10_2, lmqi11_2, lmqi12_2, lmqi13_2, lmqi14_2, lmqi15_2, pop20_1_1, pop20_2_1, pop20_3_1, pop20_4_1, pop20_5_1, pop20_6_1, pop20_7_1, pop20_8_1, pop20_9_1, pop20_10_1, pop20_11_1, pop20_12_1, pop20_13_1, pop20_14_1, pop20_15_1, pop20_1_2, pop20_2_2, pop20_3_2, pop20_4_2, pop20_5_2, pop20_6_2, pop20_7_2, pop20_8_2, pop20_9_2, pop20_10_2, pop20_11_2, pop20_12_2, pop20_13_2, pop20_14_2, pop20_15_2, inddis1_1, inddis2_1, inddis3_1, inddis4_1, inddis5_1, inddis6_1, inddis7_1, inddis8_1, inddis9_1, inddis10_1, inddis11_1, inddis12_1, inddis13_1, inddis14_1, inddis15_1, inddis1_2, inddis2_2, inddis3_2, inddis4_2, inddis5_2, inddis6_2, inddis7_2, inddis8_2, inddis9_2, inddis10_2, inddis11_2, inddis12_2, inddis13_2, inddis14_2, inddis15_2, inddiscur1_1, inddiscur2_1, inddiscur3_1, inddiscur4_1, inddiscur5_1, inddiscur6_1, inddiscur7_1, inddiscur8_1, inddiscur9_1, inddiscur10_1, inddiscur11_1, inddiscur12_1, inddiscur13_1, inddiscur14_1, inddiscur15_1, inddiscur1_2, inddiscur2_2, inddiscur3_2, inddiscur4_2, inddiscur5_2, inddiscur6_2, inddiscur7_2, inddiscur8_2, inddiscur9_2, inddiscur10_2, inddiscur11_2, inddiscur12_2, inddiscur13_2, inddiscur14_2, inddiscur15_2, inddispln1_1, inddispln2_1, inddispln3_1, inddispln4_1, inddispln5_1, inddispln6_1, inddispln7_1, inddispln8_1, inddispln9_1, inddispln10_1, inddispln11_1, inddispln12_1, inddispln13_1, inddispln14_1, inddispln15_1, inddispln1_2, inddispln2_2, inddispln3_2, inddispln4_2, inddispln5_2, inddispln6_2, inddispln7_2, inddispln8_2, inddispln9_2, inddispln10_2, inddispln11_2, inddispln12_2, inddispln13_2, inddispln14_2, inddispln15_2, tpbx, tpsx, tpmz, envw, ecow, socw, totpla, bod1, bod2, bod3, bod4, bod5, bod6, bod7, bod8, bod9, bod10, bod11, bod12, bod13, bod14, bod15, tds1, tds2, tds3, tds4, tds5, tds6, tds7, tds8, tds9, tds10, tds11, tds12, tds13, tds14, tds15, tss1, tss2, tss3, tss4, tss5, tss6, tss7, tss8, tss9, tss10, tss11, tss12, tss13, tss14, tss15, agruf, agrufro, induf, indufro, lanuf, lanufro, gwsp, sbqi, ssqi, smqi, salt, agrw, indw, lanw, DataCreazione, UtenteCreazione, DataAggiornamento, UtenteAggiornamento, Annullato, DataEstrazione, Original_datID, Original_indcc1_1, Original_indcc2_1, Original_indcc3_1, Original_indcc4_1, Original_indcc5_1, Original_indcc6_1, Original_indcc7_1, Original_indcc8_1, Original_indcc9_1, Original_indcc10_1, Original_indcc11_1, Original_indcc12_1, Original_indcc13_1, Original_indcc14_1, Original_indcc15_1, Original_indcc1_2, Original_indcc2_2, Original_indcc3_2, Original_indcc4_2, Original_indcc5_2, Original_indcc6_2, Original_indcc7_2, Original_indcc8_2, Original_indcc9_2, Original_indcc10_2, Original_indcc11_2, Original_indcc12_2, Original_indcc13_2, Original_indcc14_2, Original_indcc15_2, Original_agrcc1_1, Original_agrcc2_1, Original_agrcc3_1, Original_agrcc4_1, Original_agrcc5_1, Original_agrcc6_1, Original_agrcc7_1, Original_agrcc8_1, Original_agrcc9_1, Original_agrcc10_1, Original_agrcc11_1, Original_agrcc12_1, Original_agrcc13_1, Original_agrcc14_1, Original_agrcc15_1, Original_agrcc1_2, Original_agrcc2_2, Original_agrcc3_2, Original_agrcc4_2, Original_agrcc5_2, Original_agrcc6_2, Original_agrcc7_2, Original_agrcc8_2, Original_agrcc9_2, Original_agrcc10_2, Original_agrcc11_2, Original_agrcc12_2, Original_agrcc13_2, Original_agrcc14_2, Original_agrcc15_2, Original_lancc1_1, Original_lancc2_1, Original_lancc3_1, Original_lancc4_1, Original_lancc5_1, Original_lancc6_1, Original_lancc7_1, Original_lancc8_1, Original_lancc9_1, Original_lancc10_1, Original_lancc11_1, Original_lancc12_1, Original_lancc13_1, Original_lancc14_1, Original_lancc15_1, Original_lancc1_2, Original_lancc2_2, Original_lancc3_2, Original_lancc4_2, Original_lancc5_2, Original_lancc6_2, Original_lancc7_2, Original_lancc8_2, Original_lancc9_2, Original_lancc10_2, Original_lancc11_2, Original_lancc12_2, Original_lancc13_2, Original_lancc14_2, Original_lancc15_2, Original_lbqi1_1, Original_lbqi2_1, Original_lbqi3_1, Original_lbqi4_1, Original_lbqi5_1, Original_lbqi6_1, Original_lbqi7_1, Original_lbqi8_1, Original_lbqi9_1, Original_lbqi10_1, Original_lbqi11_1, Original_lbqi12_1, Original_lbqi13_1, Original_lbqi14_1, Original_lbqi15_1, Original_lbqi1_2, Original_lbqi2_2, Original_lbqi3_2, Original_lbqi4_2, Original_lbqi5_2, Original_lbqi6_2, Original_lbqi7_2, Original_lbqi8_2, Original_lbqi9_2, Original_lbqi10_2, Original_lbqi11_2, Original_lbqi12_2, Original_lbqi13_2, Original_lbqi14_2, Original_lbqi15_2, Original_lsqi1_1, Original_lsqi2_1, Original_lsqi3_1, Original_lsqi4_1, Original_lsqi5_1, Original_lsqi6_1, Original_lsqi7_1, Original_lsqi8_1, Original_lsqi9_1, Original_lsqi10_1, Original_lsqi11_1, Original_lsqi12_1, Original_lsqi13_1, Original_lsqi14_1, Original_lsqi15_1, Original_lsqi1_2, Original_lsqi2_2, Original_lsqi3_2, Original_lsqi4_2, Original_lsqi5_2, Original_lsqi6_2, Original_lsqi7_2, Original_lsqi8_2, Original_lsqi9_2, Original_lsqi10_2, Original_lsqi11_2, Original_lsqi12_2, Original_lsqi13_2, Original_lsqi14_2, Original_lsqi15_2, Original_lmqi1_1, Original_lmqi2_1, Original_lmqi3_1, Original_lmqi4_1, Original_lmqi5_1, Original_lmqi6_1, Original_lmqi7_1, Original_lmqi8_1, Original_lmqi9_1, Original_lmqi10_1, Original_lmqi11_1, Original_lmqi12_1, Original_lmqi13_1, Original_lmqi14_1, Original_lmqi15_1, Original_lmqi1_2, Original_lmqi2_2, Original_lmqi3_2, Original_lmqi4_2, Original_lmqi5_2, Original_lmqi6_2, Original_lmqi7_2, Original_lmqi8_2, Original_lmqi9_2, Original_lmqi10_2, Original_lmqi11_2, Original_lmqi12_2, Original_lmqi13_2, Original_lmqi14_2, Original_lmqi15_2, Original_pop20_1_1, Original_pop20_2_1, Original_pop20_3_1, Original_pop20_4_1, Original_pop20_5_1, Original_pop20_6_1, Original_pop20_7_1, Original_pop20_8_1, Original_pop20_9_1, Original_pop20_10_1, Original_pop20_11_1, Original_pop20_12_1, Original_pop20_13_1, Original_pop20_14_1, Original_pop20_15_1, Original_pop20_1_2, Original_pop20_2_2, Original_pop20_3_2, Original_pop20_4_2, Original_pop20_5_2, Original_pop20_6_2, Original_pop20_7_2, Original_pop20_8_2, Original_pop20_9_2, Original_pop20_10_2, Original_pop20_11_2, Original_pop20_12_2, Original_pop20_13_2, Original_pop20_14_2, Original_pop20_15_2, Original_inddis1_1, Original_inddis2_1, Original_inddis3_1, Original_inddis4_1, Original_inddis5_1, Original_inddis6_1, Original_inddis7_1, Original_inddis8_1, Original_inddis9_1, Original_inddis10_1, Original_inddis11_1, Original_inddis12_1, Original_inddis13_1, Original_inddis14_1, Original_inddis15_1, Original_inddis1_2, Original_inddis2_2, Original_inddis3_2, Original_inddis4_2, Original_inddis5_2, Original_inddis6_2, Original_inddis7_2, Original_inddis8_2, Original_inddis9_2, Original_inddis10_2, Original_inddis11_2, Original_inddis12_2, Original_inddis13_2, Original_inddis14_2, Original_inddis15_2, Original_inddiscur1_1, Original_inddiscur2_1, Original_inddiscur3_1, Original_inddiscur4_1, Original_inddiscur5_1, Original_inddiscur6_1, Original_inddiscur7_1, Original_inddiscur8_1, Original_inddiscur9_1, Original_inddiscur10_1, Original_inddiscur11_1, Original_inddiscur12_1, Original_inddiscur13_1, Original_inddiscur14_1, Original_inddiscur15_1, Original_inddiscur1_2, Original_inddiscur2_2, Original_inddiscur3_2, Original_inddiscur4_2, Original_inddiscur5_2, Original_inddiscur6_2, Original_inddiscur7_2, Original_inddiscur8_2, Original_inddiscur9_2, Original_inddiscur10_2, Original_inddiscur11_2, Original_inddiscur12_2, Original_inddiscur13_2, Original_inddiscur14_2, Original_inddiscur15_2, Original_inddispln1_1, Original_inddispln2_1, Original_inddispln3_1, Original_inddispln4_1, Original_inddispln5_1, Original_inddispln6_1, Original_inddispln7_1, Original_inddispln8_1, Original_inddispln9_1, Original_inddispln10_1, Original_inddispln11_1, Original_inddispln12_1, Original_inddispln13_1, Original_inddispln14_1, Original_inddispln15_1, Original_inddispln1_2, Original_inddispln2_2, Original_inddispln3_2, Original_inddispln4_2, Original_inddispln5_2, Original_inddispln6_2, Original_inddispln7_2, Original_inddispln8_2, Original_inddispln9_2, Original_inddispln10_2, Original_inddispln11_2, Original_inddispln12_2, Original_inddispln13_2, Original_inddispln14_2, Original_inddispln15_2, Original_tpbx, Original_tpsx, Original_tpmz, Original_envw, Original_ecow, Original_socw, Original_totpla, Original_bod1, Original_bod2, Original_bod3, Original_bod4, Original_bod5, Original_bod6, Original_bod7, Original_bod8, Original_bod9, Original_bod10, Original_bod11, Original_bod12, Original_bod13, Original_bod14, Original_bod15, Original_tds1, Original_tds2, Original_tds3, Original_tds4, Original_tds5, Original_tds6, Original_tds7, Original_tds8, Original_tds9, Original_tds10, Original_tds11, Original_tds12, Original_tds13, Original_tds14, Original_tds15, Original_tss1, Original_tss2, Original_tss3, Original_tss4, Original_tss5, Original_tss6, Original_tss7, Original_tss8, Original_tss9, Original_tss10, Original_tss11, Original_tss12, Original_tss13, Original_tss14, Original_tss15, Original_agruf, Original_agrufro, Original_induf, Original_indufro, Original_lanuf, Original_lanufro, Original_gwsp, Original_sbqi, Original_ssqi, Original_smqi, Original_salt, Original_agrw, Original_indw, Original_lanw, Original_DataCreazione, Original_UtenteCreazione, Original_DataAggiornamento, Original_UtenteAggiornamento, Original_Annullato, Original_DataEstrazione, Original_datID)
         End Function
     End Class
 End Namespace
