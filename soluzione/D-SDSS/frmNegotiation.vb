@@ -54,7 +54,7 @@ Public Class frmNegotiation
 		' Aggiungere le eventuali istruzioni di inizializzazione dopo la chiamata a InitializeComponent().
 		Me.SqlConnection.ConnectionString = My.Settings.DSDSSConnectionString
 
-		Me.daLocations.Fill(Me.DSLocations)
+		Me.DALocations.Fill(Me.DSLocations)
 
 		Me.myMap = DirectCast(Me.ElementHost1.Child, mapControl.mapControl)
 
@@ -1330,8 +1330,22 @@ Public Class frmNegotiation
 	''' Read locations data from DB and set GUI controls accordingly
 	''' </summary>
 	Private Sub SetLocations()
+		'refresh table data
+		Me.TAParameters.Fill(Me.dsParameters.parameters)
+		Me.DALocations.Fill(Me.DSLocations)
+
 		Me.SetLocations(Me)
 		Me.AdaptGUIToUsedDimensions()
+		Me.SetMapCenter()
+	End Sub
+
+	Private Sub SetMapCenter()
+		Dim latitude, longitude As Double
+
+		latitude = CInt(Me.dsParameters.Tables("parameters").Rows(0).Item("parMapLatitude"))
+		longitude = CInt(Me.dsParameters.Tables("parameters").Rows(0).Item("parMapLongitude"))
+
+		Me.mapControl.SetMapCenter(latitude, longitude)
 	End Sub
 
 	Private Sub AdaptGUIToUsedDimensions()

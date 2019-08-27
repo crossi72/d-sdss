@@ -49,6 +49,8 @@ Public Class frmParameters
 			Me.txtParKernelPath.Text = CStr(Me.DSParameters.Tables(0).Rows(0).Item("parKernelPath"))
 			Me.nudparLocations.Value = CInt(Me.DSParameters.Tables(0).Rows(0).Item("parLocations"))
 			Me.nudparDimensions.Value = CInt(Me.DSParameters.Tables(0).Rows(0).Item("parDimensions"))
+			Me.nudMapLatitude.Value = CInt(Me.DSParameters.Tables(0).Rows(0).Item("parMapLatitude"))
+			Me.nudMapLongitude.Value = CInt(Me.DSParameters.Tables(0).Rows(0).Item("parMapLongitude"))
 		Catch ex As Exception
 
 		End Try
@@ -83,7 +85,9 @@ Public Class frmParameters
 		sqlQuery.AppendLine("UPDATE parameters")
 		sqlQuery.AppendLine("SET parKernelPath = '" & Me.txtParKernelPath.Text & "'")
 		sqlQuery.AppendLine(", parLocations = " & Me.nudparLocations.Value)
-		sqlQuery.Append(", parDimensions = " & Me.nudparDimensions.Value)
+		sqlQuery.AppendLine(", parDimensions = " & Me.nudparDimensions.Value)
+		sqlQuery.AppendLine(", parMapLatitude = " & Me.nudMapLatitude.Value)
+		sqlQuery.Append(", parMapLongitude = " & Me.nudMapLongitude.Value)
 
 		Utility.ExecuteSQL(sqlQuery.ToString, Me.TAParameters.Connection)
 
@@ -102,7 +106,7 @@ Public Class frmParameters
 
 					sqlQuery.AppendLine("UPDATE locations")
 					sqlQuery.AppendLine("SET locName = '" & tpa.Controls.Item("txtLocation" & i).Text & "'")
-					sqlQuery.AppendLine(", locLatitude = '" & tpa.Controls.Item("nudLatitude" & i).Text & "'")
+		sqlQuery.AppendLine(", locLatitude = '" & tpa.Controls.Item("nudLatitude" & i).Text & "'")
 					sqlQuery.AppendLine(", locLongitude = '" & tpa.Controls.Item("nudLongitude" & i).Text & "'")
 					sqlQuery.Append("WHERE locID = " & i)
 

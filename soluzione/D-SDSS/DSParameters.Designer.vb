@@ -289,6 +289,10 @@ Partial Public Class DSParameters
         
         Private columnparDimensions As Global.System.Data.DataColumn
         
+        Private columnparMapLatitude As Global.System.Data.DataColumn
+        
+        Private columnparMapLongitude As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub New()
@@ -349,6 +353,22 @@ Partial Public Class DSParameters
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property parMapLatitudeColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnparMapLatitude
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property parMapLongitudeColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnparMapLongitude
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -385,9 +405,9 @@ Partial Public Class DSParameters
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Overloads Function AddparametersRow(ByVal parKernelPath As String, ByVal parLocations As Integer, ByVal parDimensions As Integer) As parametersRow
+        Public Overloads Function AddparametersRow(ByVal parKernelPath As String, ByVal parLocations As Integer, ByVal parDimensions As Integer, ByVal parMapLatitude As Single, ByVal parMapLongitude As Single) As parametersRow
             Dim rowparametersRow As parametersRow = CType(Me.NewRow,parametersRow)
-            Dim columnValuesArray() As Object = New Object() {parKernelPath, parLocations, parDimensions}
+            Dim columnValuesArray() As Object = New Object() {parKernelPath, parLocations, parDimensions, parMapLatitude, parMapLongitude}
             rowparametersRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowparametersRow)
             Return rowparametersRow
@@ -413,6 +433,8 @@ Partial Public Class DSParameters
             Me.columnparKernelPath = MyBase.Columns("parKernelPath")
             Me.columnparLocations = MyBase.Columns("parLocations")
             Me.columnparDimensions = MyBase.Columns("parDimensions")
+            Me.columnparMapLatitude = MyBase.Columns("parMapLatitude")
+            Me.columnparMapLongitude = MyBase.Columns("parMapLongitude")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -424,6 +446,10 @@ Partial Public Class DSParameters
             MyBase.Columns.Add(Me.columnparLocations)
             Me.columnparDimensions = New Global.System.Data.DataColumn("parDimensions", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnparDimensions)
+            Me.columnparMapLatitude = New Global.System.Data.DataColumn("parMapLatitude", GetType(Single), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnparMapLatitude)
+            Me.columnparMapLongitude = New Global.System.Data.DataColumn("parMapLongitude", GetType(Single), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnparMapLongitude)
             Me.columnparKernelPath.MaxLength = 250
         End Sub
         
@@ -616,6 +642,36 @@ Partial Public Class DSParameters
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property parMapLatitude() As Single
+            Get
+                Try 
+                    Return CType(Me(Me.tableparameters.parMapLatitudeColumn),Single)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("Il valore della colonna 'parMapLatitude' nella tabella 'parameters' è DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableparameters.parMapLatitudeColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property parMapLongitude() As Single
+            Get
+                Try 
+                    Return CType(Me(Me.tableparameters.parMapLongitudeColumn),Single)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("Il valore della colonna 'parMapLongitude' nella tabella 'parameters' è DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableparameters.parMapLongitudeColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Function IsparKernelPathNull() As Boolean
             Return Me.IsNull(Me.tableparameters.parKernelPathColumn)
         End Function
@@ -648,6 +704,30 @@ Partial Public Class DSParameters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub SetparDimensionsNull()
             Me(Me.tableparameters.parDimensionsColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsparMapLatitudeNull() As Boolean
+            Return Me.IsNull(Me.tableparameters.parMapLatitudeColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetparMapLatitudeNull()
+            Me(Me.tableparameters.parMapLatitudeColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsparMapLongitudeNull() As Boolean
+            Return Me.IsNull(Me.tableparameters.parMapLongitudeColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetparMapLongitudeNull()
+            Me(Me.tableparameters.parMapLongitudeColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -820,15 +900,20 @@ Namespace DSParametersTableAdapters
             tableMapping.ColumnMappings.Add("parKernelPath", "parKernelPath")
             tableMapping.ColumnMappings.Add("parLocations", "parLocations")
             tableMapping.ColumnMappings.Add("parDimensions", "parDimensions")
+            tableMapping.ColumnMappings.Add("parMapLatitude", "parMapLatitude")
+            tableMapping.ColumnMappings.Add("parMapLongitude", "parMapLongitude")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [parameters] ([parKernelPath], [parLocations], [parDimensions]) VALUE"& _ 
-                "S (@parKernelPath, @parLocations, @parDimensions)"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [parameters] ([parKernelPath], [parLocations], [parDimensions], [parM"& _ 
+                "apLatitude], [parMapLongitude]) VALUES (@parKernelPath, @parLocations, @parDimen"& _ 
+                "sions, @parMapLatitude, @parMapLongitude)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@parKernelPath", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "parKernelPath", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@parLocations", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "parLocations", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@parDimensions", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "parDimensions", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@parMapLatitude", Global.System.Data.SqlDbType.Real, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "parMapLatitude", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@parMapLongitude", Global.System.Data.SqlDbType.Real, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "parMapLongitude", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -844,8 +929,8 @@ Namespace DSParametersTableAdapters
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT        parKernelPath, parLocations, parDimensions"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            paramet"& _ 
-                "ers"
+            Me._commandCollection(0).CommandText = "SELECT        parKernelPath, parLocations, parDimensions, parMapLatitude, parMapL"& _ 
+                "ongitude"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            parameters"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -905,7 +990,7 @@ Namespace DSParametersTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal parKernelPath As String, ByVal parLocations As Global.System.Nullable(Of Integer), ByVal parDimensions As Global.System.Nullable(Of Integer)) As Integer
+        Public Overloads Overridable Function Insert(ByVal parKernelPath As String, ByVal parLocations As Global.System.Nullable(Of Integer), ByVal parDimensions As Global.System.Nullable(Of Integer), ByVal parMapLatitude As Global.System.Nullable(Of Single), ByVal parMapLongitude As Global.System.Nullable(Of Single)) As Integer
             If (parKernelPath Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
             Else
@@ -920,6 +1005,16 @@ Namespace DSParametersTableAdapters
                 Me.Adapter.InsertCommand.Parameters(2).Value = CType(parDimensions.Value,Integer)
             Else
                 Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
+            End If
+            If (parMapLatitude.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(3).Value = CType(parMapLatitude.Value,Single)
+            Else
+                Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
+            End If
+            If (parMapLongitude.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(4).Value = CType(parMapLongitude.Value,Single)
+            Else
+                Me.Adapter.InsertCommand.Parameters(4).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _

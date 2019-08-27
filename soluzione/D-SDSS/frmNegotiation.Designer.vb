@@ -34,7 +34,7 @@ Partial Class frmNegotiation
 		Me.btnLoadData = New System.Windows.Forms.Button()
 		Me.dsParameters = New DSDSS.DSParameters()
 		Me.TAParameters = New DSDSS.DSParametersTableAdapters.parametersTableAdapter()
-		Me.daLocations = New System.Data.SqlClient.SqlDataAdapter()
+		Me.DALocations = New System.Data.SqlClient.SqlDataAdapter()
 		Me.SqlCommand2 = New System.Data.SqlClient.SqlCommand()
 		Me.DSLocations = New DSDSS.DSLocations()
 		Me.pnlMain = New System.Windows.Forms.Panel()
@@ -840,8 +840,8 @@ Partial Class frmNegotiation
 		'
 		'daLocations
 		'
-		Me.daLocations.SelectCommand = Me.SqlCommand2
-		Me.daLocations.TableMappings.AddRange(New System.Data.Common.DataTableMapping() {New System.Data.Common.DataTableMapping("Table", "locations", New System.Data.Common.DataColumnMapping() {New System.Data.Common.DataColumnMapping("locID", "locID"), New System.Data.Common.DataColumnMapping("locName", "locName"), New System.Data.Common.DataColumnMapping("locLatitude", "locLatitude"), New System.Data.Common.DataColumnMapping("locLongitude", "locLongitude")})})
+		Me.DALocations.SelectCommand = Me.SqlCommand2
+		Me.DALocations.TableMappings.AddRange(New System.Data.Common.DataTableMapping() {New System.Data.Common.DataTableMapping("Table", "locations", New System.Data.Common.DataColumnMapping() {New System.Data.Common.DataColumnMapping("locID", "locID"), New System.Data.Common.DataColumnMapping("locName", "locName"), New System.Data.Common.DataColumnMapping("locLatitude", "locLatitude"), New System.Data.Common.DataColumnMapping("locLongitude", "locLongitude")})})
 		'
 		'SqlCommand2
 		'
@@ -8433,7 +8433,7 @@ Partial Class frmNegotiation
 	Friend WithEvents SqlSelectCommand As System.Data.SqlClient.SqlCommand
 	Friend WithEvents ElementHost1 As System.Windows.Forms.Integration.ElementHost
 	Friend mapControl As mapControl.mapControl
-	Friend WithEvents daLocations As System.Data.SqlClient.SqlDataAdapter
+	Friend WithEvents DALocations As System.Data.SqlClient.SqlDataAdapter
 	Friend WithEvents SqlCommand2 As System.Data.SqlClient.SqlCommand
 	Friend WithEvents DSLocations As DSDSS.DSLocations
 	Friend WithEvents pnlMain As System.Windows.Forms.Panel

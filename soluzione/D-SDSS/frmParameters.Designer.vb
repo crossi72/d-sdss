@@ -40,6 +40,11 @@ Partial Class frmParameters
 		Me.DSParameters = New DSDSS.DSParameters()
 		Me.TabControl1 = New System.Windows.Forms.TabControl()
 		Me.tpaGeneric = New System.Windows.Forms.TabPage()
+		Me.Label7 = New System.Windows.Forms.Label()
+		Me.nudMapLongitude = New System.Windows.Forms.NumericUpDown()
+		Me.Label5 = New System.Windows.Forms.Label()
+		Me.Label6 = New System.Windows.Forms.Label()
+		Me.nudMapLatitude = New System.Windows.Forms.NumericUpDown()
 		Me.tpaLocationNames = New System.Windows.Forms.TabPage()
 		Me.nudLongitude14 = New System.Windows.Forms.NumericUpDown()
 		Me.nudLongitude15 = New System.Windows.Forms.NumericUpDown()
@@ -112,6 +117,8 @@ Partial Class frmParameters
 		CType(Me.DSParameters, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.TabControl1.SuspendLayout()
 		Me.tpaGeneric.SuspendLayout()
+		CType(Me.nudMapLongitude, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.nudMapLatitude, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.tpaLocationNames.SuspendLayout()
 		CType(Me.nudLongitude14, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.nudLongitude15, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -279,6 +286,11 @@ Partial Class frmParameters
 		'
 		'tpaGeneric
 		'
+		Me.tpaGeneric.Controls.Add(Me.Label7)
+		Me.tpaGeneric.Controls.Add(Me.nudMapLongitude)
+		Me.tpaGeneric.Controls.Add(Me.Label5)
+		Me.tpaGeneric.Controls.Add(Me.Label6)
+		Me.tpaGeneric.Controls.Add(Me.nudMapLatitude)
 		Me.tpaGeneric.Controls.Add(Me.txtParKernelPath)
 		Me.tpaGeneric.Controls.Add(Me.nudparDimensions)
 		Me.tpaGeneric.Controls.Add(Me.lblParKernelPath)
@@ -295,6 +307,51 @@ Partial Class frmParameters
 		Me.tpaGeneric.TabIndex = 0
 		Me.tpaGeneric.Text = "Basic parameters"
 		Me.tpaGeneric.UseVisualStyleBackColor = True
+		'
+		'Label7
+		'
+		Me.Label7.AutoSize = True
+		Me.Label7.Location = New System.Drawing.Point(24, 248)
+		Me.Label7.Name = "Label7"
+		Me.Label7.Size = New System.Drawing.Size(61, 13)
+		Me.Label7.TabIndex = 205
+		Me.Label7.Text = "Map center"
+		'
+		'nudMapLongitude
+		'
+		Me.nudMapLongitude.DecimalPlaces = 5
+		Me.nudMapLongitude.Location = New System.Drawing.Point(225, 246)
+		Me.nudMapLongitude.Name = "nudMapLongitude"
+		Me.nudMapLongitude.Size = New System.Drawing.Size(120, 20)
+		Me.nudMapLongitude.TabIndex = 6
+		Me.nudMapLongitude.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
+		'Label5
+		'
+		Me.Label5.Location = New System.Drawing.Point(225, 226)
+		Me.Label5.Name = "Label5"
+		Me.Label5.Size = New System.Drawing.Size(120, 13)
+		Me.Label5.TabIndex = 201
+		Me.Label5.Text = "Longitude"
+		Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'Label6
+		'
+		Me.Label6.Location = New System.Drawing.Point(93, 226)
+		Me.Label6.Name = "Label6"
+		Me.Label6.Size = New System.Drawing.Size(120, 13)
+		Me.Label6.TabIndex = 202
+		Me.Label6.Text = "Latitude"
+		Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		'
+		'nudMapLatitude
+		'
+		Me.nudMapLatitude.DecimalPlaces = 5
+		Me.nudMapLatitude.Location = New System.Drawing.Point(93, 246)
+		Me.nudMapLatitude.Name = "nudMapLatitude"
+		Me.nudMapLatitude.Size = New System.Drawing.Size(120, 20)
+		Me.nudMapLatitude.TabIndex = 5
+		Me.nudMapLatitude.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		'
 		'tpaLocationNames
 		'
@@ -933,6 +990,8 @@ Partial Class frmParameters
 		Me.TabControl1.ResumeLayout(False)
 		Me.tpaGeneric.ResumeLayout(False)
 		Me.tpaGeneric.PerformLayout()
+		CType(Me.nudMapLongitude, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.nudMapLatitude, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.tpaLocationNames.ResumeLayout(False)
 		Me.tpaLocationNames.PerformLayout()
 		CType(Me.nudLongitude14, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1052,4 +1111,9 @@ Partial Class frmParameters
 	Friend WithEvents Label3 As Label
 	Friend WithEvents Label1 As Label
 	Friend WithEvents nudLatitude1 As NumericUpDown
+	Friend WithEvents Label7 As Label
+	Friend WithEvents nudMapLongitude As NumericUpDown
+	Friend WithEvents Label5 As Label
+	Friend WithEvents Label6 As Label
+	Friend WithEvents nudMapLatitude As NumericUpDown
 End Class
