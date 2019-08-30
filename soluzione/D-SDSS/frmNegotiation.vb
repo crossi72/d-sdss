@@ -213,20 +213,41 @@ Public Class frmNegotiation
 		Me._MathWrapper.WaitAndDiscardAnswer("lanw=" & NumberAsString(Me._lanw / 100))
 
 		'(*potential costs*)
-		For i = 0 To Me._usedLocations - 1
-			Me._MathWrapper.WaitAndDiscardAnswer("agrpc[" & i + 1 & "][1]=If[lsqi[" & i + 1 & "][1]>ssqi,agrUFRO,agrUF]")
-			Me._MathWrapper.WaitAndDiscardAnswer("agrpc[" & i + 1 & "][2]=agrpc[" & i + 1 & "][1]")
-		Next
+		If Me._salt Then
+			'salt have to be considered
+			For i = 0 To Me._usedLocations - 1
+				Me._MathWrapper.WaitAndDiscardAnswer("agrpc[" & i + 1 & "][1]=If[lsqi[" & i + 1 & "][1]>ssqi,agrUFRO,agrUF]")
+				Me._MathWrapper.WaitAndDiscardAnswer("agrpc[" & i + 1 & "][2]=agrpc[" & i + 1 & "][1]")
+			Next
+
+			For i = 0 To Me._usedLocations - 1
+				Me._MathWrapper.WaitAndDiscardAnswer("indpc[" & i + 1 & "][1]=If[lsqi[" & i + 1 & "][1]>ssqi,indUFRO,indUF]")
+				Me._MathWrapper.WaitAndDiscardAnswer("indpc[" & i + 1 & "][2]=indpc[" & i + 1 & "][1]")
+			Next
+
+			For i = 0 To Me._usedLocations - 1
+				Me._MathWrapper.WaitAndDiscardAnswer("lanpc[" & i + 1 & "][1]=If[lsqi[" & i + 1 & "][1]>ssqi,lanUFRO,lanUF]")
+				Me._MathWrapper.WaitAndDiscardAnswer("lanpc[" & i + 1 & "][2]=lanpc[" & i + 1 & "][1]")
+			Next
+		Else
+			'salt have to be ignored
+			For i = 0 To Me._usedLocations - 1
+				Me._MathWrapper.WaitAndDiscardAnswer("agrpc[" & i + 1 & "][1]=3.5")
+				Me._MathWrapper.WaitAndDiscardAnswer("agrpc[" & i + 1 & "][2]=3.5")
+			Next
+
+			For i = 0 To Me._usedLocations - 1
+				Me._MathWrapper.WaitAndDiscardAnswer("indpc[" & i + 1 & "][1]=1.75")
+				Me._MathWrapper.WaitAndDiscardAnswer("indpc[" & i + 1 & "][2]=1.75")
+			Next
+
+			For i = 0 To Me._usedLocations - 1
+				Me._MathWrapper.WaitAndDiscardAnswer("lanpc[" & i + 1 & "][1]=3.5")
+				Me._MathWrapper.WaitAndDiscardAnswer("lanpc[" & i + 1 & "][2]=3.5")
+			Next
+		End If
 
 		For i = 0 To Me._usedLocations - 1
-			Me._MathWrapper.WaitAndDiscardAnswer("indpc[" & i + 1 & "][1]=If[lsqi[" & i + 1 & "][1]>ssqi,indUFRO,indUF]")
-			Me._MathWrapper.WaitAndDiscardAnswer("indpc[" & i + 1 & "][2]=indpc[" & i + 1 & "][1]")
-		Next
-
-		For i = 0 To Me._usedLocations - 1
-			Me._MathWrapper.WaitAndDiscardAnswer("lanpc[" & i + 1 & "][1]=If[lsqi[" & i + 1 & "][1]>ssqi,lanUFRO,lanUF]")
-			Me._MathWrapper.WaitAndDiscardAnswer("lanpc[" & i + 1 & "][2]=lanpc[" & i + 1 & "][1]")
-
 			'industrial districts are calculated as current + planned
 			Me._inddis(i, 0) = 0
 			Me._inddis(i, 1) = Me._inddiscur(i, 1) + Me._inddispln(i, 1)
