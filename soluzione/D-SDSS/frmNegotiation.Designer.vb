@@ -554,6 +554,8 @@ Partial Class frmNegotiation
 		Me.btnSettings = New System.Windows.Forms.Button()
 		Me.DSData = New DSDSS.DSData()
 		Me.TAData = New DSDSS.DSDataTableAdapters.dataTableAdapter()
+		Me.cboMatemathicaMethod = New System.Windows.Forms.ComboBox()
+		Me.Label1 = New System.Windows.Forms.Label()
 		CType(Me.DSParameters, System.ComponentModel.ISupportInitialize).BeginInit
 		CType(Me.DSLocations, System.ComponentModel.ISupportInitialize).BeginInit
 		Me.pnlMain.SuspendLayout
@@ -878,6 +880,8 @@ Partial Class frmNegotiation
 		'
 		'DssPanel1
 		'
+		Me.DssPanel1.Controls.Add(Me.Label1)
+		Me.DssPanel1.Controls.Add(Me.cboMatemathicaMethod)
 		Me.DssPanel1.Controls.Add(Me.Agr)
 		Me.DssPanel1.Controls.Add(Me.Lan)
 		Me.DssPanel1.Controls.Add(Me.Ind)
@@ -919,7 +923,7 @@ Partial Class frmNegotiation
 		Me.DssPanel1.Controls.Add(Me.nudIndUF)
 		Me.DssPanel1.Location = New System.Drawing.Point(178, 16)
 		Me.DssPanel1.Name = "DssPanel1"
-		Me.DssPanel1.Size = New System.Drawing.Size(581, 450)
+		Me.DssPanel1.Size = New System.Drawing.Size(581, 475)
 		Me.DssPanel1.TabIndex = 193
 		'
 		'Agr
@@ -994,11 +998,11 @@ Partial Class frmNegotiation
 		'chkSalt
 		'
 		Me.chkSalt.AutoSize = True
-		Me.chkSalt.Location = New System.Drawing.Point(3, 385)
+		Me.chkSalt.Location = New System.Drawing.Point(2, 385)
 		Me.chkSalt.Name = "chkSalt"
-		Me.chkSalt.Size = New System.Drawing.Size(44, 17)
+		Me.chkSalt.Size = New System.Drawing.Size(59, 17)
 		Me.chkSalt.TabIndex = 193
-		Me.chkSalt.Text = "Salt"
+		Me.chkSalt.Text = "Salinity"
 		Me.chkSalt.UseVisualStyleBackColor = True
 		'
 		'Label10
@@ -8046,6 +8050,24 @@ Partial Class frmNegotiation
 		'
 		Me.TAData.ClearBeforeFill = True
 		'
+		'cboMatemathicaMethod
+		'
+		Me.cboMatemathicaMethod.FormattingEnabled = True
+		Me.cboMatemathicaMethod.Items.AddRange(New Object() {"Automatic", "Differential Evolution", "Nelder Mead", "Random Search", "Simulated Annealing"})
+		Me.cboMatemathicaMethod.Location = New System.Drawing.Point(2, 434)
+		Me.cboMatemathicaMethod.Name = "cboMatemathicaMethod"
+		Me.cboMatemathicaMethod.Size = New System.Drawing.Size(264, 21)
+		Me.cboMatemathicaMethod.TabIndex = 200
+		'
+		'Label1
+		'
+		Me.Label1.AutoSize = True
+		Me.Label1.Location = New System.Drawing.Point(2, 414)
+		Me.Label1.Name = "Label1"
+		Me.Label1.Size = New System.Drawing.Size(102, 13)
+		Me.Label1.TabIndex = 201
+		Me.Label1.Text = "Optimization method"
+		'
 		'frmNegotiation
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -8887,4 +8909,6 @@ Partial Class frmNegotiation
 	Friend WithEvents nudLanw As DSSNumericUpDown
 	Friend WithEvents nudIndw As DSSNumericUpDown
 	Friend WithEvents TAData As DSDataTableAdapters.dataTableAdapter
+	Friend WithEvents Label1 As Label
+	Friend WithEvents cboMatemathicaMethod As ComboBox
 End Class

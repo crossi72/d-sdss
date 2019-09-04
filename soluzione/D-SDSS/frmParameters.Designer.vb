@@ -424,7 +424,7 @@ Partial Class frmParameters
 		Me.tpaLocationNames.Padding = New System.Windows.Forms.Padding(3)
 		Me.tpaLocationNames.Size = New System.Drawing.Size(558, 432)
 		Me.tpaLocationNames.TabIndex = 1
-		Me.tpaLocationNames.Text = "Location names"
+		Me.tpaLocationNames.Text = "Location data"
 		Me.tpaLocationNames.UseVisualStyleBackColor = True
 		'
 		'nudLongitude14

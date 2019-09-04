@@ -40,6 +40,7 @@ Public Class frmNegotiation
 	Private _outecomean1, _outecomean2, _outecogini1, _outecogini2, _outsocmean1, _outsocmean2, _outsocgini1, _outsocgini2, _outenvmean1, _outenvmean2, _outenvgini1, _outenvgini2 As Double
 
 	Private _usedLocations, _usedDimensions As Integer
+	Private _mathematicaMethod As String
 
 	Private _salt As Boolean
 
@@ -72,6 +73,9 @@ Public Class frmNegotiation
 
 			'Adapt GUI to used location
 			Me.SetLocations()
+
+			'set default optimization method
+			Me.cboMatemathicaMethod.SelectedIndex = 0
 		Else
 			End
 		End If
@@ -401,7 +405,7 @@ Public Class frmNegotiation
 
 		tmpString.Length -= ", ".Length
 
-		Me._MathWrapper.WaitAndDiscardAnswer("m = NMinimize[{totobj20r*100, (" & tmpString.ToString & "}]")
+		Me._MathWrapper.WaitAndDiscardAnswer("m = NMinimize[{totobj20r*100, (" & tmpString.ToString & "}, Method -> " & Me._mathematicaMethod & "]")
 
 		Me._MathWrapper.WaitAndDiscardAnswer("mobj = m[[1]]")
 		Me._MathWrapper.WaitAndDiscardAnswer("marg = m[[2]]")
@@ -1294,6 +1298,22 @@ Public Class frmNegotiation
 		Me._indw = Me.nudIndw.Value
 		Me._lanw = Me.nudLanw.Value
 		Me._salt = Me.chkSalt.Checked
+
+		Select Case Me.cboMatemathicaMethod.SelectedIndex
+			Case 0
+				Me._mathematicaMethod = "Automatic"
+			Case 1
+				Me._mathematicaMethod = "DifferentialEvolution"
+			Case 2
+				Me._mathematicaMethod = "NelderMead"
+			Case 3
+				Me._mathematicaMethod = "RandomSearch"
+			Case 4
+				Me._mathematicaMethod = "SimulatedAnnealing"
+			Case Else
+				Me._mathematicaMethod = "Automatic"
+		End Select
+
 	End Sub
 
 	''' <summary>
